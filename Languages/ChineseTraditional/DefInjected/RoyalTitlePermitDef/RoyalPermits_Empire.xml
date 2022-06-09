@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Permits from royal titles -->
+
+  <CallMilitaryAidMercenary.label>呼叫傭兵</CallMilitaryAidMercenary.label>
+  <CallMilitaryAidMercenary.description>呼叫一組六名傭兵組成的小隊協助戰鬥。 每名傭兵都有戰鬥經驗，且裝備了皮甲、十字弓和雙手斧。</CallMilitaryAidMercenary.description>
+</LanguageData>

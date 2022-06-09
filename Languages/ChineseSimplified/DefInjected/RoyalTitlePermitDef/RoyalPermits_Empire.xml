@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Permits from royal titles -->
+
+  <CallMilitaryAidMercenary.label>呼叫雇佣兵</CallMilitaryAidMercenary.label>
+  <CallMilitaryAidMercenary.description>呼叫一组六名雇佣兵组成的小队协助战斗。 每名雇佣兵都有战斗经验，且装备了皮甲、十字弓和双手斧。</CallMilitaryAidMercenary.description>
+
+
+</LanguageData>

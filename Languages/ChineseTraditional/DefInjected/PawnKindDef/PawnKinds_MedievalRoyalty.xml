@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Tier 0 : Commoner, Laborer, Trader -->
+
+  <Accurex_Medieval_Empire_Peasant.label>帝國農民</Accurex_Medieval_Empire_Peasant.label>
+  <Accurex_Medieval_Empire_Peasant.labelPlural>帝國農民</Accurex_Medieval_Empire_Peasant.labelPlural>
+
+  <Accurex_Medieval_Empire_Laborer.label>帝國勞工</Accurex_Medieval_Empire_Laborer.label>
+  <Accurex_Medieval_Empire_Laborer.labelPlural>帝國勞工</Accurex_Medieval_Empire_Laborer.labelPlural>
+
+  <Accurex_Medieval_Empire_Trader.label>帝國貿易商</Accurex_Medieval_Empire_Trader.label>
+  <Accurex_Medieval_Empire_Trader.labelPlural>帝國貿易商</Accurex_Medieval_Empire_Trader.labelPlural>
+
+
+  <!-- Tier 1 : Mercenary -->
+
+  <Accurex_Medieval_Empire_Mercenary.label>帝國傭兵</Accurex_Medieval_Empire_Mercenary.label>
+  <Accurex_Medieval_Empire_Mercenary.labelPlural>帝國傭兵</Accurex_Medieval_Empire_Mercenary.labelPlural>
+
+
+  <!-- Tier 2 : Light Infantry -->
+
+  <Accurex_Medieval_Empire_Light_Infantry.label>帝國輕步兵</Accurex_Medieval_Empire_Light_Infantry.label>
+  <Accurex_Medieval_Empire_Light_Infantry.labelPlural>帝國輕步兵</Accurex_Medieval_Empire_Light_Infantry.labelPlural>
+
+
+  <!-- Tier 3 : Heavy Infantry -->
+
+  <Accurex_Medieval_Empire_Grenadier.label>帝國重步兵</Accurex_Medieval_Empire_Grenadier.label>
+  <Accurex_Medieval_Empire_Grenadier.labelPlural>帝國重步兵</Accurex_Medieval_Empire_Grenadier.labelPlural>
+
+  <Accurex_Medieval_Empire_Heavy_Infantry.label>帝國重步兵</Accurex_Medieval_Empire_Heavy_Infantry.label>
+  <Accurex_Medieval_Empire_Heavy_Infantry.labelPlural>帝國重步兵</Accurex_Medieval_Empire_Heavy_Infantry.labelPlural>
+
+
+  <!-- Tier 4 : Crusader & Lord -->
+
+  <Accurex_Medieval_Empire_Crusader.label>帝國十字軍</Accurex_Medieval_Empire_Crusader.label>
+  <Accurex_Medieval_Empire_Crusader.labelPlural>帝國十字軍</Accurex_Medieval_Empire_Crusader.labelPlural>
+
+  <Accurex_Medieval_Empire_Lord.label>帝國貴族</Accurex_Medieval_Empire_Lord.label>
+  <Accurex_Medieval_Empire_Lord.labelPlural>帝國貴族</Accurex_Medieval_Empire_Lord.labelPlural>
+</LanguageData>

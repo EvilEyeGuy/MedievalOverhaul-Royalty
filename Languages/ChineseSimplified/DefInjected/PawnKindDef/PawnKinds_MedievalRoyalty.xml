@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Tier 0 : Commoner, Laborer, Trader -->
+
+  <Accurex_Medieval_Empire_Peasant.label>帝国农民</Accurex_Medieval_Empire_Peasant.label>
+  <Accurex_Medieval_Empire_Peasant.labelPlural>帝国农民</Accurex_Medieval_Empire_Peasant.labelPlural>
+
+  <Accurex_Medieval_Empire_Laborer.label>帝国劳工</Accurex_Medieval_Empire_Laborer.label>
+  <Accurex_Medieval_Empire_Laborer.labelPlural>帝国劳工</Accurex_Medieval_Empire_Laborer.labelPlural>
+
+  <Accurex_Medieval_Empire_Trader.label>帝国贸易商</Accurex_Medieval_Empire_Trader.label>
+  <Accurex_Medieval_Empire_Trader.labelPlural>帝国贸易商</Accurex_Medieval_Empire_Trader.labelPlural>
+
+
+  <!-- Tier 1 : Mercenary -->
+
+  <Accurex_Medieval_Empire_Mercenary.label>帝国雇佣兵</Accurex_Medieval_Empire_Mercenary.label>
+  <Accurex_Medieval_Empire_Mercenary.labelPlural>帝国雇佣兵</Accurex_Medieval_Empire_Mercenary.labelPlural>
+
+
+  <!-- Tier 2 : Light Infantry -->
+
+  <Accurex_Medieval_Empire_Light_Infantry.label>帝国轻步兵</Accurex_Medieval_Empire_Light_Infantry.label>
+  <Accurex_Medieval_Empire_Light_Infantry.labelPlural>帝国轻步兵</Accurex_Medieval_Empire_Light_Infantry.labelPlural>
+
+
+  <!-- Tier 3 : Heavy Infantry -->
+
+  <Accurex_Medieval_Empire_Grenadier.label>帝国重步兵</Accurex_Medieval_Empire_Grenadier.label>
+  <Accurex_Medieval_Empire_Grenadier.labelPlural>帝国重步兵</Accurex_Medieval_Empire_Grenadier.labelPlural>
+
+  <Accurex_Medieval_Empire_Heavy_Infantry.label>帝国重步兵</Accurex_Medieval_Empire_Heavy_Infantry.label>
+  <Accurex_Medieval_Empire_Heavy_Infantry.labelPlural>帝国重步兵</Accurex_Medieval_Empire_Heavy_Infantry.labelPlural>
+
+
+  <!-- Tier 4 : Crusader & Lord -->
+
+  <Accurex_Medieval_Empire_Crusader.label>帝国十字军</Accurex_Medieval_Empire_Crusader.label>
+  <Accurex_Medieval_Empire_Crusader.labelPlural>帝国十字军</Accurex_Medieval_Empire_Crusader.labelPlural>
+
+  <Accurex_Medieval_Empire_Lord.label>帝国贵族</Accurex_Medieval_Empire_Lord.label>
+  <Accurex_Medieval_Empire_Lord.labelPlural>帝国贵族</Accurex_Medieval_Empire_Lord.labelPlural>
+
+
+</LanguageData>

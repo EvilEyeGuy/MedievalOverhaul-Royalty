@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+        <mods>
+			<li>Medieval Medicines</li>
+        </mods>
+		
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/RoyalTitlePermitDef[defName="GlitterMedDrop"]/uiPosition</xpath>
+					<value>
+						<uiPosition>(0,5)</uiPosition>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/RoyalTitlePermitDef[defName="GlitterMedDrop"]/label</xpath>
+					<value>
+						<label>paresian medicine drop</label>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/RoyalTitlePermitDef[defName="GlitterMedDrop"]/description</xpath>
+					<value>
+						<description>Call for a drop of 5 paresian medicine.</description>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/RoyalTitlePermitDef[defName="GlitterMedDrop"]/royalAid</xpath>
+					<value>
+						<royalAid Inherit="False">
+						  <itemsToDrop>
+							<MedicineParesianMM>5</MedicineParesianMM>
+						  </itemsToDrop>
+						  <favorCost>8</favorCost>
+						</royalAid>
+					</value>
+				</li>
+			</operations>
+		</match>
+		
+		<nomatch Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/RoyalTitlePermitDef[defName="GlitterMedDrop"]/uiPosition</xpath>
+					<value>
+						<uiPosition>(0,5)</uiPosition>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/RoyalTitlePermitDef[defName="GlitterMedDrop"]/label</xpath>
+					<value>
+						<label>herbal medicine drop</label>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/RoyalTitlePermitDef[defName="GlitterMedDrop"]/description</xpath>
+					<value>
+						<description>Call for a drop of 25 herbal medicine.</description>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/RoyalTitlePermitDef[defName="GlitterMedDrop"]/royalAid</xpath>
+					<value>
+						<royalAid Inherit="False">
+						  <itemsToDrop>
+							<MedicineHerbal>25</MedicineHerbal>
+						  </itemsToDrop>
+						  <favorCost>8</favorCost>
+						</royalAid>
+					</value>
+				</li>
+			</operations>
+		</nomatch>		
+	</Operation>
+<!--
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Medieval Medicines</li>
+        </mods>
+        <nomatch Class="PatchOperationRemove">
+            <xpath>/Defs/RoyalTitlePermitDef[defName="GlitterMedDrop"]</xpath>
+        </nomatch>
+    </Operation>
+-->
+
+<!--
+
+	<Operation Class="PatchOperationFindMod">
+        <mods>
+			<li>Medieval Medicines</li>
+        </mods>
+		
+		<nomatch Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationRemove">
+					<xpath>/Defs/RoyalTitlePermitDef[defName="GlitterMedDrop"]</xpath>
+				</li>
+				
+			</operations>
+		</nomatch>
+	</Operation>-->
+
+<!--
+	<Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Medieval Medicines</li>
+        </mods>
+        <nomatch Class="PatchOperationReplace">
+            <xpath>/Defs/RoyalTitlePermitDef[defName="GlitterMedDrop"]/royalAid</xpath>
+			<value>
+				<royalAid Inherit="False">
+				  <itemsToDrop>
+					<MedicineParesianMM>5</MedicineParesianMM>
+				  </itemsToDrop>
+				  <favorCost>8</favorCost>
+				</royalAid>
+			</value>
+        </nomatch>
+    </Operation>
+-->
+    <!-- Events that you don't want to show up as a Quest, or would likely error when not triggered naturally.  -->
+    <!--Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>RimQuest</li>
+        </mods>
+        <match Class="PatchOperationRemove">
+            <xpath>Defs/IncidentDef[defName="MFI_DiplomaticMarriage" or defName="MFI_HuntersLodge" or defName="MFI_SettlementBaseAttack" or defName="MFI_Quest_PeaceTalks"]</xpath>
+            <value>
+                <li Class = "RimQuest.RimQuest_ModExtension">
+                    <canBeARimQuest>false</canBeARimQuest>
+                </li>
+            </value>
+        </match>
+    </Operation>-->
+
+
+</Patch>

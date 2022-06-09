@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Royalty</li>
+        </mods>
+		
+		<match Class="PatchOperationSequence">
+			<operations>
+
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/FactionDef[defName="Empire"]/techLevel</xpath>
+					<value>
+						<techLevel>Medieval</techLevel>
+					</value>
+				</li>
+
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/FactionDef[defName="Empire"]/apparelStuffFilter</xpath>
+					<value>
+						<apparelStuffFilter>
+						  <stuffCategoriesToAllow>
+							<li>Metallic</li>
+							<li>Leathery</li>
+							<li>Fabric</li>
+						  </stuffCategoriesToAllow>
+						  <disallowedThingDefs>
+							<li>DevilstrandCloth</li>
+						  </disallowedThingDefs>
+						</apparelStuffFilter>
+					</value>
+				</li>
+
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/FactionDef[defName="Empire"]/pawnGroupMakers</xpath>
+					<value>
+						<pawnGroupMakers>
+						  <!-- Traders - TODO -->
+							  <li>
+								<kindDef>Trader</kindDef>
+								<traders>
+								  <Accurex_Medieval_Empire_Trader>1</Accurex_Medieval_Empire_Trader>
+								</traders>
+								<carriers>
+								  <Muffalo>6</Muffalo>
+								  <Dromedary>5</Dromedary>
+								  <Alpaca>2</Alpaca>
+								  <Elephant>1</Elephant>
+								</carriers>
+								<guards>
+								  <Accurex_Medieval_Empire_Peasant>3</Accurex_Medieval_Empire_Peasant>
+								  <Accurex_Medieval_Empire_Mercenary>10</Accurex_Medieval_Empire_Mercenary>
+								  <Accurex_Medieval_Empire_Lord>1.5</Accurex_Medieval_Empire_Lord>
+								  <Accurex_Medieval_Empire_Light_Infantry>7</Accurex_Medieval_Empire_Light_Infantry>
+								  <Accurex_Medieval_Empire_Heavy_Infantry>10</Accurex_Medieval_Empire_Heavy_Infantry>
+								</guards>
+							  </li>
+							  <li>
+								<!-- Normal fights -->
+								<kindDef>Combat</kindDef>
+								<commonality>100</commonality>
+								<options>
+								  <Accurex_Medieval_Empire_Mercenary>5</Accurex_Medieval_Empire_Mercenary>
+								  <Accurex_Medieval_Empire_Light_Infantry>3.5</Accurex_Medieval_Empire_Light_Infantry>
+								  <Accurex_Medieval_Empire_Lord>2</Accurex_Medieval_Empire_Lord>
+								  <Accurex_Medieval_Empire_Heavy_Infantry>4</Accurex_Medieval_Empire_Heavy_Infantry>
+								  <Accurex_Medieval_Empire_Grenadier>2</Accurex_Medieval_Empire_Grenadier>
+								</options>
+							  </li>
+							  <li>
+								<!-- breach fights -->
+								<kindDef>Combat</kindDef>
+								<commonality>10</commonality>
+								<options>
+								  <Accurex_Medieval_Empire_Grenadier>2</Accurex_Medieval_Empire_Grenadier>
+								  <Accurex_Medieval_Empire_Mercenary>5</Accurex_Medieval_Empire_Mercenary>
+								  <Accurex_Medieval_Empire_Light_Infantry>3.5</Accurex_Medieval_Empire_Light_Infantry>
+								  <Accurex_Medieval_Empire_Lord>2</Accurex_Medieval_Empire_Lord>
+								  <Accurex_Medieval_Empire_Heavy_Infantry>4</Accurex_Medieval_Empire_Heavy_Infantry>
+								</options>
+							  </li>
+							  <li>
+								<!-- Base defense, mainly ranged with melee mix-ins -->
+								<kindDef>Settlement</kindDef>
+								<options>
+								  <Accurex_Medieval_Empire_Mercenary>5</Accurex_Medieval_Empire_Mercenary>
+								  <Accurex_Medieval_Empire_Light_Infantry>3.5</Accurex_Medieval_Empire_Light_Infantry>
+								  <Accurex_Medieval_Empire_Lord>2</Accurex_Medieval_Empire_Lord>
+								  <Accurex_Medieval_Empire_Heavy_Infantry>4</Accurex_Medieval_Empire_Heavy_Infantry>
+								  <Accurex_Medieval_Empire_Grenadier>2</Accurex_Medieval_Empire_Grenadier>
+							  </options>
+							  </li>
+						</pawnGroupMakers>
+					</value>
+				</li>
+				
+			</operations>
+		</match>
+		
+	</Operation>
+</Patch>
