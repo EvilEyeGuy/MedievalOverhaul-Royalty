@@ -83,17 +83,36 @@
 								<!-- Base defense, mainly ranged with melee mix-ins -->
 								<kindDef>Settlement</kindDef>
 								<options>
-								  <Accurex_Medieval_Empire_Mercenary>5</Accurex_Medieval_Empire_Mercenary>
-								  <Accurex_Medieval_Empire_Light_Infantry>3.5</Accurex_Medieval_Empire_Light_Infantry>
-								  <Accurex_Medieval_Empire_Lord>2</Accurex_Medieval_Empire_Lord>
-								  <Accurex_Medieval_Empire_Heavy_Infantry>4</Accurex_Medieval_Empire_Heavy_Infantry>
-								  <Accurex_Medieval_Empire_Grenadier>2</Accurex_Medieval_Empire_Grenadier>
+								  <Accurex_Medieval_Settlement_Mercenary>6</Accurex_Medieval_Settlement_Mercenary>
+								  <Accurex_Medieval_Settlement_Light_Infantry>4</Accurex_Medieval_Settlement_Light_Infantry>
+								  <Accurex_Medieval_Settlement_Heavy_Infantry>1</Accurex_Medieval_Settlement_Heavy_Infantry>
+								<!--
+								  <Accurex_Medieval_Settlement_Peasant>2</Accurex_Medieval_Settlement_Peasant>
+								  <Accurex_Medieval_Settlement_Mercenary>7</Accurex_Medieval_Settlement_Mercenary>
+								  <Accurex_Medieval_Settlement_Light_Infantry>7</Accurex_Medieval_Settlement_Light_Infantry>
+								  <Accurex_Medieval_Settlement_Grenadier>5</Accurex_Medieval_Settlement_Grenadier>
+								  <Accurex_Medieval_Settlement_Heavy_Infantry>5</Accurex_Medieval_Settlement_Heavy_Infantry>
+								  <Accurex_Medieval_Settlement_Crusader_M>3</Accurex_Medieval_Settlement_Crusader_M>
+								  <Accurex_Medieval_Settlement_Crusader_R>3</Accurex_Medieval_Settlement_Crusader_R>
+								  <Accurex_Medieval_Settlement_Lord>1</Accurex_Medieval_Settlement_Lord>-->
 							  </options>
 							  </li>
 						</pawnGroupMakers>
 					</value>
 				</li>
-				
+
+				<li Class="PatchOperationAddModExtension">
+					<xpath>/Defs/FactionDef[defName="Empire"]</xpath>
+					<value>
+						  <li Class="KCSG.FactionSettlement">
+							<useStructureLayout>True</useStructureLayout>
+							<chooseFromlayouts>
+							  <li>Accurex_EmpireFortress_1</li>
+							</chooseFromlayouts>
+						  </li>
+					</value>
+				 </li>
+
 			</operations>
 		</match>
 		
