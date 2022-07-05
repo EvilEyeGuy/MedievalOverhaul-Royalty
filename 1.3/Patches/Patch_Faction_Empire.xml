@@ -107,7 +107,8 @@
 						  <li Class="KCSG.FactionSettlement">
 							<useStructureLayout>True</useStructureLayout>
 							<chooseFromlayouts>
-							  <li>Accurex_EmpireFortress_1</li>
+								<li>Accurex_Placeholder</li>
+								<!--li>Accurex_EmpireFortress_1</li-->
 							</chooseFromlayouts>
 						  </li>
 					</value>

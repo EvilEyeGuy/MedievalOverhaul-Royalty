@@ -254,7 +254,314 @@
   <rotation>North</rotation>
 </KCSG.SymbolDef>
 
+<!-- Sack -->
 
+<KCSG.SymbolDef>
+  <defName>Accurex_SackPotato_lootable_North</defName>
+  <thing>Accurex_SackPotato_lootable</thing>
+  <rotation>North</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>Accurex_SackEmpty_North</defName>
+  <thing>Accurex_SackEmpty</thing>
+  <rotation>North</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>Accurex_SackFlour_lootable_North</defName>
+  <thing>Accurex_SackFlour_lootable</thing>
+  <rotation>North</rotation>
+</KCSG.SymbolDef>
+
+<!-- Cupboard -->
+
+<KCSG.SymbolDef>
+  <defName>Accurex_StackEmpty_WoodLog_North</defName>
+  <thing>Accurex_StackEmpty</thing>
+  <stuff>WoodLog</stuff>
+  <rotation>North</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>Accurex_StackEmpty_WoodLog_East</defName>
+  <thing>Accurex_StackEmpty</thing>
+  <stuff>WoodLog</stuff>
+  <rotation>East</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>Accurex_StackEmpty_WoodLog_South</defName>
+  <thing>Accurex_StackEmpty</thing>
+  <stuff>WoodLog</stuff>
+  <rotation>South</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>Accurex_StackEmpty_WoodLog_West</defName>
+  <thing>Accurex_StackEmpty</thing>
+  <stuff>WoodLog</stuff>
+  <rotation>West</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>Accurex_StackBread_lootable_WoodLog_North</defName>
+  <thing>Accurex_StackBread_lootable</thing>
+  <stuff>WoodLog</stuff>
+  <rotation>North</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>Accurex_StackBread_lootable_WoodLog_East</defName>
+  <thing>Accurex_StackBread_lootable</thing>
+  <stuff>WoodLog</stuff>
+  <rotation>East</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>Accurex_StackBread_lootable_WoodLog_South</defName>
+  <thing>Accurex_StackBread_lootable</thing>
+  <stuff>WoodLog</stuff>
+  <rotation>South</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>Accurex_StackBread_lootable_WoodLog_West</defName>
+  <thing>Accurex_StackBread_lootable</thing>
+  <stuff>WoodLog</stuff>
+  <rotation>West</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>Accurex_StackCheese_lootable_WoodLog_North</defName>
+  <thing>Accurex_StackCheese_lootable</thing>
+  <stuff>WoodLog</stuff>
+  <rotation>North</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>Accurex_StackCheese_lootable_WoodLog_East</defName>
+  <thing>Accurex_StackCheese_lootable</thing>
+  <stuff>WoodLog</stuff>
+  <rotation>East</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>Accurex_StackCheese_lootable_WoodLog_South</defName>
+  <thing>Accurex_StackCheese_lootable</thing>
+  <stuff>WoodLog</stuff>
+  <rotation>South</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>Accurex_StackCheese_lootable_WoodLog_West</defName>
+  <thing>Accurex_StackCheese_lootable</thing>
+  <stuff>WoodLog</stuff>
+  <rotation>West</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>Accurex_StackDrug_lootable_WoodLog_North</defName>
+  <thing>Accurex_StackDrug_lootable</thing>
+  <stuff>WoodLog</stuff>
+  <rotation>North</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>Accurex_StackDrug_lootable_WoodLog_East</defName>
+  <thing>Accurex_StackDrug_lootable</thing>
+  <stuff>WoodLog</stuff>
+  <rotation>East</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>Accurex_StackDrug_lootable_WoodLog_South</defName>
+  <thing>Accurex_StackDrug_lootable</thing>
+  <stuff>WoodLog</stuff>
+  <rotation>South</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>Accurex_StackDrug_lootable_WoodLog_West</defName>
+  <thing>Accurex_StackDrug_lootable</thing>
+  <stuff>WoodLog</stuff>
+  <rotation>West</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>Accurex_StackFlour_lootable_WoodLog_North</defName>
+  <thing>Accurex_StackFlour_lootable</thing>
+  <stuff>WoodLog</stuff>
+  <rotation>North</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>Accurex_StackFlour_lootable_WoodLog_East</defName>
+  <thing>Accurex_StackFlour_lootable</thing>
+  <stuff>WoodLog</stuff>
+  <rotation>East</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>Accurex_StackFlour_lootable_WoodLog_South</defName>
+  <thing>Accurex_StackFlour_lootable</thing>
+  <stuff>WoodLog</stuff>
+  <rotation>South</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>Accurex_StackFlour_lootable_WoodLog_West</defName>
+  <thing>Accurex_StackFlour_lootable</thing>
+  <stuff>WoodLog</stuff>
+  <rotation>West</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>Accurex_StackMead_lootable_WoodLog_North</defName>
+  <thing>Accurex_StackMead_lootable</thing>
+  <stuff>WoodLog</stuff>
+  <rotation>North</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>Accurex_StackMead_lootable_WoodLog_East</defName>
+  <thing>Accurex_StackMead_lootable</thing>
+  <stuff>WoodLog</stuff>
+  <rotation>East</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>Accurex_StackMead_lootable_WoodLog_South</defName>
+  <thing>Accurex_StackMead_lootable</thing>
+  <stuff>WoodLog</stuff>
+  <rotation>South</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>Accurex_StackMead_lootable_WoodLog_West</defName>
+  <thing>Accurex_StackMead_lootable</thing>
+  <stuff>WoodLog</stuff>
+  <rotation>West</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>Accurex_StackMeat_lootable_WoodLog_North</defName>
+  <thing>Accurex_StackMeat_lootable</thing>
+  <stuff>WoodLog</stuff>
+  <rotation>North</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>Accurex_StackMeat_lootable_WoodLog_East</defName>
+  <thing>Accurex_StackMeat_lootable</thing>
+  <stuff>WoodLog</stuff>
+  <rotation>East</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>Accurex_StackMeat_lootable_WoodLog_South</defName>
+  <thing>Accurex_StackMeat_lootable</thing>
+  <stuff>WoodLog</stuff>
+  <rotation>South</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>Accurex_StackMeat_lootable_WoodLog_West</defName>
+  <thing>Accurex_StackMeat_lootable</thing>
+  <stuff>WoodLog</stuff>
+  <rotation>West</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>Accurex_StackVeggy_lootable_WoodLog_North</defName>
+  <thing>Accurex_StackVeggy_lootable</thing>
+  <stuff>WoodLog</stuff>
+  <rotation>North</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>Accurex_StackVeggy_lootable_WoodLog_East</defName>
+  <thing>Accurex_StackVeggy_lootable</thing>
+  <stuff>WoodLog</stuff>
+  <rotation>East</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>Accurex_StackVeggy_lootable_WoodLog_South</defName>
+  <thing>Accurex_StackVeggy_lootable</thing>
+  <stuff>WoodLog</stuff>
+  <rotation>South</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>Accurex_StackVeggy_lootable_WoodLog_West</defName>
+  <thing>Accurex_StackVeggy_lootable</thing>
+  <stuff>WoodLog</stuff>
+  <rotation>West</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>Accurex_SackApple_lootable_North</defName>
+  <thing>Accurex_SackApple_lootable</thing>
+  <rotation>North</rotation>
+</KCSG.SymbolDef>
+
+<!-- Barrels -->
+
+<KCSG.SymbolDef>
+  <defName>Accurex_BarrelClosed_North</defName>
+  <thing>Accurex_BarrelClosed</thing>
+  <rotation>North</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>Accurex_BarrelCoalOre_lootable_WoodLog_North</defName>
+  <thing>Accurex_BarrelCoalOre_lootable</thing>
+  <stuff>WoodLog</stuff>
+  <rotation>North</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>Accurex_BarrelComponentBasic_lootable_WoodLog_North</defName>
+  <thing>Accurex_BarrelComponentBasic_lootable</thing>
+  <stuff>WoodLog</stuff>
+  <rotation>North</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>Accurex_BarrelGoldOre_lootable_WoodLog_North</defName>
+  <thing>Accurex_BarrelGoldOre_lootable</thing>
+  <stuff>WoodLog</stuff>
+  <rotation>North</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>Accurex_BarrelIronOre_lootable_WoodLog_North</defName>
+  <thing>Accurex_BarrelIronOre_lootable</thing>
+  <stuff>WoodLog</stuff>
+  <rotation>North</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>Accurex_BarrelSilverOre_lootable_WoodLog_North</defName>
+  <thing>Accurex_BarrelSilverOre_lootable</thing>
+  <stuff>WoodLog</stuff>
+  <rotation>North</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>Accurex_BarrelLeather_lootable_WoodLog_North</defName>
+  <thing>Accurex_BarrelLeather_lootable</thing>
+  <stuff>WoodLog</stuff>
+  <rotation>North</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>Accurex_BarrelTextiles_lootable_WoodLog_North</defName>
+  <thing>Accurex_BarrelTextiles_lootable</thing>
+  <stuff>WoodLog</stuff>
+  <rotation>North</rotation>
+</KCSG.SymbolDef>
 
 <!-- F U R N I T U R E -->
 

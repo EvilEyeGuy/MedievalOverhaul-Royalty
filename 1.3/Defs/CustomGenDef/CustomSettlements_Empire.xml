@@ -1,5 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
+
+<KCSG.StructureLayoutDef>
+  <defName>Accurex_Placeholder</defName>
+  <layouts>
+    <li>
+      <li>Soil,Soil,Soil,Soil,Soil,Soil,Soil,Soil,Soil,Soil,Soil,Soil</li>
+      <li>Soil,Soil,Soil,Soil,Soil,Soil,Soil,Soil,Soil,Soil,Soil,Soil</li>
+      <li>Soil,Soil,Soil,Soil,Soil,Soil,Soil,Soil,Soil,Soil,Soil,Soil</li>
+      <li>Soil,Soil,Soil,Soil,Soil,Soil,Soil,Soil,Soil,Soil,Soil,Soil</li>
+      <li>Soil,Soil,Soil,Soil,Soil,Soil,Soil,Soil,Soil,Soil,Soil,Soil</li>
+      <li>Soil,Soil,Soil,Soil,Soil,Soil,Soil,Soil,Soil,Soil,Soil,Soil</li>
+      <li>Soil,Soil,Soil,Soil,Soil,Soil,Soil,Soil,Soil,Soil,Soil,Soil</li>
+      <li>Soil,Soil,Soil,Soil,Soil,Soil,Soil,Soil,Soil,Soil,Soil,Soil</li>
+      <li>Soil,Soil,Soil,Soil,Soil,Soil,Soil,Soil,Soil,Soil,Soil,Soil</li>
+      <li>Soil,Soil,Soil,Soil,Soil,Soil,Soil,Soil,Soil,Soil,Soil,Soil</li>
+    </li>
+    <li>
+      <li>.,.,.,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,Accurex_SackEmpty_North,Accurex_SackPotato_lootable_North,Accurex_SackFlour_lootable_North,Accurex_SackApple_lootable_North,.,.,.,.,.,.</li>
+      <li>.,.,Accurex_BarrelClosed_North,Accurex_BarrelCoalOre_lootable_WoodLog_North,Accurex_BarrelComponentBasic_lootable_WoodLog_North,Accurex_BarrelGoldOre_lootable_WoodLog_North,Accurex_BarrelIronOre_lootable_WoodLog_North,Accurex_BarrelSilverOre_lootable_WoodLog_North,Accurex_BarrelLeather_lootable_WoodLog_North,Accurex_BarrelTextiles_lootable_WoodLog_North,.,.</li>
+      <li>.,.,Accurex_StackEmpty_WoodLog_South,Accurex_StackBread_lootable_WoodLog_South,Accurex_StackCheese_lootable_WoodLog_South,Accurex_StackDrug_lootable_WoodLog_South,Accurex_StackFlour_lootable_WoodLog_South,Accurex_StackMead_lootable_WoodLog_South,Accurex_StackMeat_lootable_WoodLog_South,Accurex_StackVeggy_lootable_WoodLog_South,.,.</li>
+      <li>.,.,Accurex_StackEmpty_WoodLog_East,Accurex_StackBread_lootable_WoodLog_East,Accurex_StackCheese_lootable_WoodLog_East,Accurex_StackDrug_lootable_WoodLog_East,Accurex_StackFlour_lootable_WoodLog_East,Accurex_StackMead_lootable_WoodLog_East,Accurex_StackMeat_lootable_WoodLog_East,Accurex_StackVeggy_lootable_WoodLog_East,.,.</li>
+      <li>.,.,Accurex_StackEmpty_WoodLog_North,Accurex_StackBread_lootable_WoodLog_North,Accurex_StackCheese_lootable_WoodLog_North,Accurex_StackDrug_lootable_WoodLog_North,Accurex_StackFlour_lootable_WoodLog_North,Accurex_StackMead_lootable_WoodLog_North,Accurex_StackMeat_lootable_WoodLog_North,Accurex_StackVeggy_lootable_WoodLog_North,.,.</li>
+      <li>.,.,Accurex_StackEmpty_WoodLog_West,Accurex_StackBread_lootable_WoodLog_West,Accurex_StackCheese_lootable_WoodLog_West,Accurex_StackDrug_lootable_WoodLog_West,Accurex_StackFlour_lootable_WoodLog_West,Accurex_StackMead_lootable_WoodLog_West,Accurex_StackMeat_lootable_WoodLog_West,Accurex_StackVeggy_lootable_WoodLog_West,.,.</li>
+      <li>.,.,.,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,.,.,.,.,.</li>
+    </li>
+  </layouts>
+  <modRequirements>
+    <li>accurex.medievalempireoverhaul</li>
+  </modRequirements>
+  <spawnConduits>false</spawnConduits>
+  <forceGenerateRoof>true</forceGenerateRoof>
+  <needRoofClearance>true</needRoofClearance>
+</KCSG.StructureLayoutDef>
+
 <KCSG.StructureLayoutDef>
   <defName>Accurex_EmpireFortress_1</defName>
   <layouts>

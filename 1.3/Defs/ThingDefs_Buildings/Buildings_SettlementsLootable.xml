@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+
 	<DesignationCategoryDef>
 		<defName>Accurex_EmpireLootableStorage</defName>
 		<label>Empire Lootable</label>
@@ -26,7 +27,7 @@
     <ThingDef ParentName="Accurex_BuildingBase">
         <defName>Accurex_EmpireShelfEmpty</defName>
         <label>empty shelf</label>
-        <description>A imperial shelf.</description>
+        <description>An imperial shelf.</description>
         <graphicData>
             <texPath>Storage/ShelfEmpty</texPath>
             <graphicClass>Graphic_Multi</graphicClass>
@@ -58,7 +59,8 @@
         <thingClass>MedievalOverhaul.Building_Lootable</thingClass>
         <tickerType>Normal</tickerType>
     </ThingDef>
-    <!--======================= Lootable Shelf ==============================-->
+	
+    <!--======================= Lootable Shelf 1x2 ==============================-->
     <ThingDef ParentName="Accurex_LootBuilding" Name="Accurex_LootShelfBase">
         <defName>Accurex_LootableEmpireShelf_ChaliceSilver</defName>
         <label>filled shelf</label>
@@ -822,41 +824,76 @@
 			</li>
 		</modExtensions>
 	</ThingDef>
-
-    <!--======================= Lootable Resource Barrels ==============================-->
-<!-- "SirLalaPyon: wait, dont use any barrels for now. im remaking them"
-
-    <ThingDef ParentName="Accurex_LootBuilding" Name="Accurex_EmpireLootableBarrel_Base">
-        <defName>Accurex_LootableBarrel_WoodLog</defName>
-        <label>barrel of wood logs</label>
-        <description>A cylindrical barrel reserved for wood ore to save space. Can hold up to 5 stacks of wood. Items stored in this will not affect room beauty and they won't deteriorate, even if outside.</description>
+	
+    <!--======================= Lootable RusticCupboard (1x1) ==============================-->
+	
+    <ThingDef ParentName="Accurex_BuildingBase">
+        <defName>Accurex_StackEmpty</defName>
+        <label>empty shelf</label>
+        <description>A shelf.</description>
         <graphicData>
-            <texPath>Storage/BarrelWoodLog</texPath>
+            <texPath>Storage/StackEmpty</texPath>
             <graphicClass>Graphic_Multi</graphicClass>
-            <drawSize>(1.8,1.8)</drawSize>
-			<drawRotated>false</drawRotated>
+            <drawSize>(2,2)</drawSize>
         </graphicData>
 
-        <fillPercent>0.3</fillPercent>
+        <tickerType>Normal</tickerType>
         <castEdgeShadows>true</castEdgeShadows>
-        <pathCost>30</pathCost>
-
-		<costList>
-		  <WoodLog>30</WoodLog>
-		</costList>
+        <pathCost>50</pathCost>
+        <fillPercent>0.4</fillPercent>
+        
+        <stuffCategories>
+            <li>Woody</li>
+        </stuffCategories>
+        <costStuffCount>35</costStuffCount>
 
         <statBases>
-        <MaxHitPoints>100</MaxHitPoints>
-        <Mass>8</Mass>
-        <WorkToBuild>500</WorkToBuild>
-        <Flammability>1.0</Flammability>
-        <Beauty>3</Beauty>
+            <MaxHitPoints>50</MaxHitPoints>
+            <Mass>12</Mass>
+            <WorkToBuild>500</WorkToBuild>
+            <Flammability>1.0</Flammability>
         </statBases>
-
         <size>(1,1)</size>
-        <staticSunShadowHeight>0.5</staticSunShadowHeight>
+        <defaultPlacingRot>South</defaultPlacingRot>
+    </ThingDef>
+	
+    <ThingDef ParentName="Accurex_LootBuilding" Name="Accurex_LootableCupboard_Base">
+        <defName>Accurex_StackBread_lootable</defName>
+        <label>filled cupboard</label>
+        <description>A nice looking cupboard.</description>
+		
+        <thingClass>MedievalOverhaul.Building_Lootable</thingClass>
+		
+        <graphicData>
+            <texPath>Storage/StackBread</texPath>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <drawSize>(2,2)</drawSize>
+            <shaderType>CutoutComplex</shaderType>
+        </graphicData>
 
-        <modExtensions Inherit="False">
+        <building>
+            <destroySound>BuildingDestroyed_Wood_Medium</destroySound>
+        </building>
+
+        <castEdgeShadows>true</castEdgeShadows>
+        <pathCost>50</pathCost>
+        <fillPercent>0.4</fillPercent>
+
+        <stuffCategories>
+			<li>Woody</li>
+		</stuffCategories>
+		<costStuffCount>65</costStuffCount>
+
+        <statBases>
+            <MaxHitPoints>90</MaxHitPoints>
+            <Mass>12</Mass>
+            <WorkToBuild>900</WorkToBuild>
+            <Flammability>1.0</Flammability>
+        </statBases>
+        <size>(1,1)</size>
+        <defaultPlacingRot>South</defaultPlacingRot>
+
+        <modExtensions>
 			<li Class="MedievalOverhaul.BuildingLootableExtension">
 				<enemysToSpawn>
 				    <li>Rat</li>
@@ -864,61 +901,34 @@
 				<enemySpawnChance>0.10</enemySpawnChance>
                 <hostileEnemy>false</hostileEnemy>
                 <emptyGraphicData>
-                    <texPath>Furniture/BarrelClosed</texPath>
+                    <texPath>Storage/StackEmpty</texPath>
                     <graphicClass>Graphic_Multi</graphicClass>
-                    <drawSize>(1.8,1.8)</drawSize>
+                    <drawSize>(2,2)</drawSize>
                 </emptyGraphicData>
 				<searchSound>BuildingDestroyed_Wood_Medium</searchSound>
 				<searchEffect>DustPuff</searchEffect>
 				<effectSize>2.5</effectSize>
-				<lootCount>100~300</lootCount>
-				<lootChance>1</lootChance>
+				<lootCount>10~30</lootCount>
+				<lootChance>0.90</lootChance>
 				<isRandom>true</isRandom>
 				<randomItems>
-                    <li>WoodLog</li>
-                    <li>WoodLog</li>
-                    <li>WoodLog</li>
-                    <li>WoodLog</li>
-                    <li>WoodLog</li>
-                    <li>DankPyon_DarkWoodLog</li>
-                    <li>DankPyon_DarkWoodLog</li>
-                    <li>DankPyon_DarkWoodLog</li>
-                    <li>DankPyon_DarkWoodLog</li>
-                    <li>DankPyon_DarkWoodLog</li>
+                    <li>DankPyon_MealBread</li>
+                    <li>DankPyon_MealBread</li>
+                    <li>DankPyon_MealBread</li>
 				</randomItems>
 			</li>
 		</modExtensions>
     </ThingDef>
 	
-    <ThingDef ParentName="Accurex_EmpireLootableBarrel_Base">
-        <defName>Accurex_LootableBarrel_IronOre</defName>
-        <label>barrel of iron ore</label>
-        <description>A cylindrical barrel reserved for iron ore to save space. Can hold up to 5 stacks of iron ore. Items stored in this will not affect room beauty and they won't deteriorate, even if outside.</description>
+    <ThingDef ParentName="Accurex_LootableCupboard_Base">
+        <defName>Accurex_StackCheese_lootable</defName>
+		
         <graphicData>
-            <texPath>Storage/BarrelIronOre</texPath>
+            <texPath>Storage/StackCheese</texPath>
             <graphicClass>Graphic_Multi</graphicClass>
-            <drawSize>(1.8,1.8)</drawSize>
-			<drawRotated>false</drawRotated>
+            <drawSize>(2,2)</drawSize>
+            <shaderType>CutoutComplex</shaderType>
         </graphicData>
-
-        <fillPercent>0.3</fillPercent>
-        <castEdgeShadows>true</castEdgeShadows>
-        <pathCost>30</pathCost>
-
-		<costList>
-		  <WoodLog>30</WoodLog>
-		</costList>
-
-        <statBases>
-        <MaxHitPoints>100</MaxHitPoints>
-        <Mass>8</Mass>
-        <WorkToBuild>500</WorkToBuild>
-        <Flammability>1.0</Flammability>
-        <Beauty>3</Beauty>
-        </statBases>
-
-        <size>(1,1)</size>
-        <staticSunShadowHeight>0.5</staticSunShadowHeight>
 
         <modExtensions Inherit="False">
 			<li Class="MedievalOverhaul.BuildingLootableExtension">
@@ -928,15 +938,600 @@
 				<enemySpawnChance>0.10</enemySpawnChance>
                 <hostileEnemy>false</hostileEnemy>
                 <emptyGraphicData>
-                    <texPath>Furniture/BarrelClosed</texPath>
+                    <texPath>Storage/StackEmpty</texPath>
                     <graphicClass>Graphic_Multi</graphicClass>
-                    <drawSize>(1.8,1.8)</drawSize>
+                    <drawSize>(2,2)</drawSize>
                 </emptyGraphicData>
 				<searchSound>BuildingDestroyed_Wood_Medium</searchSound>
 				<searchEffect>DustPuff</searchEffect>
 				<effectSize>2.5</effectSize>
-				<lootCount>100~300</lootCount>
-				<lootChance>1</lootChance>
+				<lootCount>10~50</lootCount>
+				<lootChance>0.90</lootChance>
+				<isRandom>true</isRandom>
+				<randomItems>
+                    <li>DankPyon_MealCheese</li>
+                    <li>DankPyon_MealCheese</li>
+                    <li>DankPyon_MealCheese</li>
+				</randomItems>
+			</li>
+		</modExtensions>
+    </ThingDef>    
+	
+    <ThingDef ParentName="Accurex_LootableCupboard_Base">
+        <defName>Accurex_StackDrug_lootable</defName>
+		
+        <graphicData>
+            <texPath>Storage/StackDrug</texPath>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <drawSize>(2,2)</drawSize>
+            <shaderType>CutoutComplex</shaderType>
+        </graphicData>
+
+        <modExtensions Inherit="False">
+			<li Class="MedievalOverhaul.BuildingLootableExtension">
+				<enemysToSpawn>
+				    <li>Rat</li>
+				</enemysToSpawn>
+				<enemySpawnChance>0.10</enemySpawnChance>
+                <hostileEnemy>false</hostileEnemy>
+                <emptyGraphicData>
+                    <texPath>Storage/StackEmpty</texPath>
+                    <graphicClass>Graphic_Multi</graphicClass>
+                    <drawSize>(2,2)</drawSize>
+                </emptyGraphicData>
+				<searchSound>BuildingDestroyed_Wood_Medium</searchSound>
+				<searchEffect>DustPuff</searchEffect>
+				<effectSize>2.5</effectSize>
+				<lootCount>5~10</lootCount>
+				<lootChance>0.90</lootChance>
+				<isRandom>true</isRandom>
+				<randomItems>
+                    <li>DankPyon_Wine</li>
+                    <!--li>DankPyon_Ale</li>
+                    <li>DankPyon_Cider</li-->
+				</randomItems>
+			</li>
+		</modExtensions>
+    </ThingDef>
+	
+    <ThingDef ParentName="Accurex_LootableCupboard_Base">
+        <defName>Accurex_StackFlour_lootable</defName>
+		
+        <graphicData>
+            <texPath>Storage/StackFlour</texPath>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <drawSize>(2,2)</drawSize>
+            <shaderType>CutoutComplex</shaderType>
+        </graphicData>
+
+        <modExtensions Inherit="False">
+			<li Class="MedievalOverhaul.BuildingLootableExtension">
+				<enemysToSpawn>
+				    <li>Rat</li>
+				</enemysToSpawn>
+				<enemySpawnChance>0.10</enemySpawnChance>
+                <hostileEnemy>false</hostileEnemy>
+                <emptyGraphicData>
+                    <texPath>Storage/StackEmpty</texPath>
+                    <graphicClass>Graphic_Multi</graphicClass>
+                    <drawSize>(2,2)</drawSize>
+                </emptyGraphicData>
+				<searchSound>BuildingDestroyed_Wood_Medium</searchSound>
+				<searchEffect>DustPuff</searchEffect>
+				<effectSize>2.5</effectSize>
+				<lootCount>50~100</lootCount>
+				<lootChance>0.90</lootChance>
+				<isRandom>true</isRandom>
+				<randomItems>
+                    <li>DankPyon_Flour</li>
+				</randomItems>
+			</li>
+		</modExtensions>
+    </ThingDef>
+	
+    <ThingDef ParentName="Accurex_LootableCupboard_Base">
+        <defName>Accurex_StackMead_lootable</defName>
+		
+        <graphicData>
+            <texPath>Storage/StackMead</texPath>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <drawSize>(2,2)</drawSize>
+            <shaderType>CutoutComplex</shaderType>
+        </graphicData>
+
+        <modExtensions Inherit="False">
+			<li Class="MedievalOverhaul.BuildingLootableExtension">
+				<enemysToSpawn>
+				    <li>Rat</li>
+				</enemysToSpawn>
+				<enemySpawnChance>0.10</enemySpawnChance>
+                <hostileEnemy>false</hostileEnemy>
+                <emptyGraphicData>
+                    <texPath>Storage/StackEmpty</texPath>
+                    <graphicClass>Graphic_Multi</graphicClass>
+                    <drawSize>(2,2)</drawSize>
+                </emptyGraphicData>
+				<searchSound>BuildingDestroyed_Wood_Medium</searchSound>
+				<searchEffect>DustPuff</searchEffect>
+				<effectSize>2.5</effectSize>
+				<lootCount>10~20</lootCount>
+				<lootChance>0.90</lootChance>
+				<isRandom>true</isRandom>
+				<randomItems>
+                    <li>DankPyon_Ale</li>
+					<li>DankPyon_Cider</li>
+				</randomItems>
+			</li>
+		</modExtensions>
+    </ThingDef>
+	
+    <ThingDef ParentName="Accurex_LootableCupboard_Base">
+        <defName>Accurex_StackMeat_lootable</defName>
+		
+        <graphicData>
+            <texPath>Storage/StackMeat</texPath>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <drawSize>(2,2)</drawSize>
+            <shaderType>CutoutComplex</shaderType>
+        </graphicData>
+
+        <modExtensions Inherit="False">
+			<li Class="MedievalOverhaul.BuildingLootableExtension">
+				<enemysToSpawn>
+				    <li>Rat</li>
+				</enemysToSpawn>
+				<enemySpawnChance>0.10</enemySpawnChance>
+                <hostileEnemy>false</hostileEnemy>
+                <emptyGraphicData>
+                    <texPath>Storage/StackEmpty</texPath>
+                    <graphicClass>Graphic_Multi</graphicClass>
+                    <drawSize>(2,2)</drawSize>
+                </emptyGraphicData>
+				<searchSound>BuildingDestroyed_Wood_Medium</searchSound>
+				<searchEffect>DustPuff</searchEffect>
+				<effectSize>2.5</effectSize>
+				<lootCount>20~50</lootCount>
+				<lootChance>0.90</lootChance>
+				<isRandom>true</isRandom>
+				<randomItems>
+                    <li>DankPyon_DriedMeat</li>
+					<li>DankPyon_SmokedMeat</li>
+				</randomItems>
+			</li>
+		</modExtensions>
+    </ThingDef>
+	
+    <ThingDef ParentName="Accurex_LootableCupboard_Base">
+        <defName>Accurex_StackVeggy_lootable</defName>
+		
+        <graphicData>
+            <texPath>Storage/StackVegetables</texPath>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <drawSize>(2,2)</drawSize>
+            <shaderType>CutoutComplex</shaderType>
+        </graphicData>
+
+        <modExtensions Inherit="False">
+			<li Class="MedievalOverhaul.BuildingLootableExtension">
+				<enemysToSpawn>
+				    <li>Rat</li>
+				</enemysToSpawn>
+				<enemySpawnChance>0.10</enemySpawnChance>
+                <hostileEnemy>false</hostileEnemy>
+                <emptyGraphicData>
+                    <texPath>Storage/StackEmpty</texPath>
+                    <graphicClass>Graphic_Multi</graphicClass>
+                    <drawSize>(2,2)</drawSize>
+                </emptyGraphicData>
+				<searchSound>BuildingDestroyed_Wood_Medium</searchSound>
+				<searchEffect>DustPuff</searchEffect>
+				<effectSize>2.5</effectSize>
+				<lootCount>20~50</lootCount>
+				<lootChance>0.90</lootChance>
+				<isRandom>true</isRandom>
+				<randomItems>
+                    <li>DankPyon_RawPumpkins</li>
+					<li>DankPyon_RawOnions</li>
+					<li>DankPyon_RawLentils</li>
+					<li>DankPyon_RawGarlic</li>
+					<li>DankPyon_RawCarrots</li>
+					<li>DankPyon_RawCabbages</li>
+				</randomItems>
+			</li>
+		</modExtensions>
+    </ThingDef>
+	
+    <!--======================= Lootable Sack (1x1) ==============================-->
+	
+    <ThingDef ParentName="Accurex_BuildingBase">
+        <defName>Accurex_SackEmpty</defName>
+        <label>empty sack</label>
+        <description>A sack.</description>
+        <graphicData>
+            <texPath>Storage/SackClosed</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+            <drawSize>(2,2)</drawSize>
+        </graphicData>
+
+        <tickerType>Normal</tickerType>
+        <castEdgeShadows>true</castEdgeShadows>
+        <pathCost>50</pathCost>
+        <fillPercent>0.4</fillPercent>
+        
+		<costList>
+			<DankPyon_Linen>30</DankPyon_Linen>
+		</costList>
+
+        <statBases>
+            <MaxHitPoints>60</MaxHitPoints>
+            <Mass>12</Mass>
+            <WorkToBuild>300</WorkToBuild>
+            <Flammability>1.0</Flammability>
+        </statBases>
+        <size>(1,1)</size>
+        <!--defaultPlacingRot>South</defaultPlacingRot-->
+    </ThingDef>
+	
+    <ThingDef ParentName="Accurex_LootBuilding" Name="Accurex_LootableSack_Base">
+        <defName>Accurex_SackFlour_lootable</defName>
+        <label>filled sack</label>
+        <description>A nice looking sack.</description>
+		
+        <thingClass>MedievalOverhaul.Building_Lootable</thingClass>
+		
+        <graphicData>
+            <texPath>Storage/SackFlour</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+            <drawSize>(2,2)</drawSize>
+        </graphicData>
+
+        <building>
+            <destroySound>BuildingDestroyed_Wood_Medium</destroySound>
+        </building>
+
+        <castEdgeShadows>true</castEdgeShadows>
+        <pathCost>50</pathCost>
+        <fillPercent>0.4</fillPercent>
+
+		<costList>
+			<DankPyon_Linen>30</DankPyon_Linen>
+		</costList>
+
+        <statBases>
+            <MaxHitPoints>60</MaxHitPoints>
+            <Mass>12</Mass>
+            <WorkToBuild>300</WorkToBuild>
+            <Flammability>1.0</Flammability>
+        </statBases>
+        <size>(1,1)</size>
+        <!--defaultPlacingRot>South</defaultPlacingRot-->
+
+        <modExtensions>
+			<li Class="MedievalOverhaul.BuildingLootableExtension">
+				<enemysToSpawn>
+				    <li>Rat</li>
+				</enemysToSpawn>
+				<enemySpawnChance>0.10</enemySpawnChance>
+                <hostileEnemy>false</hostileEnemy>
+                <emptyGraphicData>
+                    <texPath>Storage/SackClosed</texPath>
+					<graphicClass>Graphic_Single</graphicClass>
+					<shaderType>CutoutComplex</shaderType>
+                    <drawSize>(2,2)</drawSize>
+                </emptyGraphicData>
+				<searchSound>BuildingDestroyed_Wood_Medium</searchSound>
+				<searchEffect>DustPuff</searchEffect>
+				<effectSize>2.5</effectSize>
+				<lootCount>50~100</lootCount>
+				<lootChance>0.90</lootChance>
+				<isRandom>true</isRandom>
+				<randomItems>
+                    <li>DankPyon_Flour</li>
+				</randomItems>
+			</li>
+		</modExtensions>
+    </ThingDef>
+	
+    <ThingDef ParentName="Accurex_LootableSack_Base">
+        <defName>Accurex_SackPotato_lootable</defName>
+		
+        <graphicData>
+            <texPath>Storage/SackPotato</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+            <drawSize>(2,2)</drawSize>
+        </graphicData>
+
+        <modExtensions Inherit="False">
+			<li Class="MedievalOverhaul.BuildingLootableExtension">
+				<enemysToSpawn>
+				    <li>Rat</li>
+				</enemysToSpawn>
+				<enemySpawnChance>0.10</enemySpawnChance>
+                <hostileEnemy>false</hostileEnemy>
+                <emptyGraphicData>
+                    <texPath>Storage/SackClosed</texPath>
+					<graphicClass>Graphic_Single</graphicClass>
+					<shaderType>CutoutComplex</shaderType>
+                    <drawSize>(2,2)</drawSize>
+                </emptyGraphicData>
+				<searchSound>BuildingDestroyed_Wood_Medium</searchSound>
+				<searchEffect>DustPuff</searchEffect>
+				<effectSize>2.5</effectSize>
+				<lootCount>50~100</lootCount>
+				<lootChance>0.90</lootChance>
+				<isRandom>true</isRandom>
+				<randomItems>
+                    <li>RawPotatoes</li>
+				</randomItems>
+			</li>
+		</modExtensions>
+    </ThingDef>
+	
+    <ThingDef ParentName="Accurex_LootableSack_Base">
+        <defName>Accurex_SackWheat_lootable</defName>
+		
+        <graphicData>
+            <texPath>Storage/SackWheat</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+            <drawSize>(2,2)</drawSize>
+        </graphicData>
+
+        <modExtensions Inherit="False">
+			<li Class="MedievalOverhaul.BuildingLootableExtension">
+				<enemysToSpawn>
+				    <li>Rat</li>
+				</enemysToSpawn>
+				<enemySpawnChance>0.10</enemySpawnChance>
+                <hostileEnemy>false</hostileEnemy>
+                <emptyGraphicData>
+                    <texPath>Storage/SackClosed</texPath>
+					<graphicClass>Graphic_Single</graphicClass>
+					<shaderType>CutoutComplex</shaderType>
+                    <drawSize>(2,2)</drawSize>
+                </emptyGraphicData>
+				<searchSound>BuildingDestroyed_Wood_Medium</searchSound>
+				<searchEffect>DustPuff</searchEffect>
+				<effectSize>2.5</effectSize>
+				<lootCount>50~100</lootCount>
+				<lootChance>0.90</lootChance>
+				<isRandom>true</isRandom>
+				<randomItems>
+                    <li>DankPyon_RawWheat</li>
+				</randomItems>
+			</li>
+		</modExtensions>
+    </ThingDef>
+	
+    <ThingDef ParentName="Accurex_LootableSack_Base">
+        <defName>Accurex_SackApple_lootable</defName>
+		
+        <graphicData>
+            <texPath>Storage/SackApple</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+            <drawSize>(2,2)</drawSize>
+        </graphicData>
+
+        <modExtensions Inherit="False">
+			<li Class="MedievalOverhaul.BuildingLootableExtension">
+				<enemysToSpawn>
+				    <li>Rat</li>
+				</enemysToSpawn>
+				<enemySpawnChance>0.10</enemySpawnChance>
+                <hostileEnemy>false</hostileEnemy>
+                <emptyGraphicData>
+                    <texPath>Storage/SackClosed</texPath>
+					<graphicClass>Graphic_Single</graphicClass>
+					<shaderType>CutoutComplex</shaderType>
+                    <drawSize>(2,2)</drawSize>
+                </emptyGraphicData>
+				<searchSound>BuildingDestroyed_Wood_Medium</searchSound>
+				<searchEffect>DustPuff</searchEffect>
+				<effectSize>2.5</effectSize>
+				<lootCount>50~100</lootCount>
+				<lootChance>0.90</lootChance>
+				<isRandom>true</isRandom>
+				<randomItems>
+                    <li>DankPyon_RawApples</li>
+				</randomItems>
+			</li>
+		</modExtensions>
+    </ThingDef>
+	
+    <!--======================= Lootable Barrels (1x1) ==============================-->
+	
+    <ThingDef ParentName="Accurex_BuildingBase">
+        <defName>Accurex_BarrelClosed</defName>
+        <label>empty barrel</label>
+        <description>A barrel.</description>
+        <graphicData>
+            <texPath>Storage/BarrelClosed</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>(2,2)</drawSize>
+        </graphicData>
+
+        <tickerType>Normal</tickerType>
+        <castEdgeShadows>true</castEdgeShadows>
+        <pathCost>50</pathCost>
+        <fillPercent>0.4</fillPercent>
+        
+        <stuffCategories>
+			<li>Woody</li>
+		</stuffCategories>
+		<costStuffCount>65</costStuffCount>
+
+        <statBases>
+            <MaxHitPoints>50</MaxHitPoints>
+            <Mass>12</Mass>
+            <WorkToBuild>500</WorkToBuild>
+            <Flammability>1.0</Flammability>
+        </statBases>
+        <size>(1,1)</size>
+        <!--defaultPlacingRot>South</defaultPlacingRot-->
+    </ThingDef>
+	
+    <ThingDef ParentName="Accurex_LootBuilding" Name="Accurex_LootableBarrel_Base">
+        <defName>Accurex_BarrelCoalOre_lootable</defName>
+        <label>Filled barrel</label>
+        <description>A nice looking barrel.</description>
+		
+        <thingClass>MedievalOverhaul.Building_Lootable</thingClass>
+		
+        <graphicData>
+            <texPath>Storage/BarrelCoalOre</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+            <drawSize>(2,2)</drawSize>
+        </graphicData>
+
+        <building>
+            <destroySound>BuildingDestroyed_Wood_Medium</destroySound>
+        </building>
+
+        <castEdgeShadows>true</castEdgeShadows>
+        <pathCost>50</pathCost>
+        <fillPercent>0.4</fillPercent>
+
+        <stuffCategories>
+			<li>Woody</li>
+		</stuffCategories>
+		<costStuffCount>65</costStuffCount>
+
+        <statBases>
+            <MaxHitPoints>100</MaxHitPoints>
+            <Mass>12</Mass>
+            <WorkToBuild>600</WorkToBuild>
+            <Flammability>1.0</Flammability>
+        </statBases>
+        <size>(1,1)</size>
+        <!--defaultPlacingRot>South</defaultPlacingRot-->
+
+        <modExtensions>
+			<li Class="MedievalOverhaul.BuildingLootableExtension">
+				<enemysToSpawn>
+				    <li>Rat</li>
+				</enemysToSpawn>
+				<enemySpawnChance>0.10</enemySpawnChance>
+                <hostileEnemy>false</hostileEnemy>
+                <emptyGraphicData>
+                    <texPath>Storage/BarrelClosed</texPath>
+					<graphicClass>Graphic_Single</graphicClass>
+                    <drawSize>(2,2)</drawSize>
+                </emptyGraphicData>
+				<searchSound>BuildingDestroyed_Wood_Medium</searchSound>
+				<searchEffect>DustPuff</searchEffect>
+				<effectSize>2.5</effectSize>
+				<lootCount>50~100</lootCount>
+				<lootChance>0.90</lootChance>
+				<isRandom>true</isRandom>
+				<randomItems>
+                    <li>DankPyon_Coal</li>
+				</randomItems>
+			</li>
+		</modExtensions>
+    </ThingDef>
+	
+    <ThingDef ParentName="Accurex_LootableBarrel_Base">
+        <defName>Accurex_BarrelComponentBasic_lootable</defName>
+		
+        <graphicData>
+            <texPath>Storage/BarrelComponentBasic</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+            <drawSize>(2,2)</drawSize>
+        </graphicData>
+
+        <modExtensions Inherit="False">
+			<li Class="MedievalOverhaul.BuildingLootableExtension">
+				<enemysToSpawn>
+				    <li>Rat</li>
+				</enemysToSpawn>
+				<enemySpawnChance>0.10</enemySpawnChance>
+                <hostileEnemy>false</hostileEnemy>
+                <emptyGraphicData>
+                    <texPath>Storage/BarrelClosed</texPath>
+					<graphicClass>Graphic_Single</graphicClass>
+                    <drawSize>(2,2)</drawSize>
+                </emptyGraphicData>
+				<searchSound>BuildingDestroyed_Wood_Medium</searchSound>
+				<searchEffect>DustPuff</searchEffect>
+				<effectSize>2.5</effectSize>
+				<lootCount>5~10</lootCount>
+				<lootChance>0.90</lootChance>
+				<isRandom>true</isRandom>
+				<randomItems>
+                    <li>DankPyon_ComponentBasic</li>
+				</randomItems>
+			</li>
+		</modExtensions>
+    </ThingDef>
+	
+    <ThingDef ParentName="Accurex_LootableBarrel_Base">
+        <defName>Accurex_BarrelGoldOre_lootable</defName>
+		
+        <graphicData>
+            <texPath>Storage/BarrelGoldOre</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+            <drawSize>(2,2)</drawSize>
+        </graphicData>
+
+        <modExtensions Inherit="False">
+			<li Class="MedievalOverhaul.BuildingLootableExtension">
+				<enemysToSpawn>
+				    <li>Rat</li>
+				</enemysToSpawn>
+				<enemySpawnChance>0.10</enemySpawnChance>
+                <hostileEnemy>false</hostileEnemy>
+                <emptyGraphicData>
+                    <texPath>Storage/BarrelClosed</texPath>
+					<graphicClass>Graphic_Single</graphicClass>
+                    <drawSize>(2,2)</drawSize>
+                </emptyGraphicData>
+				<searchSound>BuildingDestroyed_Wood_Medium</searchSound>
+				<searchEffect>DustPuff</searchEffect>
+				<effectSize>2.5</effectSize>
+				<lootCount>15~50</lootCount>
+				<lootChance>0.90</lootChance>
+				<isRandom>true</isRandom>
+				<randomItems>
+                    <li>DankPyon_GoldOre</li>
+				</randomItems>
+			</li>
+		</modExtensions>
+    </ThingDef>
+	
+    <ThingDef ParentName="Accurex_LootableBarrel_Base">
+        <defName>Accurex_BarrelIronOre_lootable</defName>
+		
+        <graphicData>
+            <texPath>Storage/BarrelIronOre</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+            <drawSize>(2,2)</drawSize>
+        </graphicData>
+
+        <modExtensions Inherit="False">
+			<li Class="MedievalOverhaul.BuildingLootableExtension">
+				<enemysToSpawn>
+				    <li>Rat</li>
+				</enemysToSpawn>
+				<enemySpawnChance>0.10</enemySpawnChance>
+                <hostileEnemy>false</hostileEnemy>
+                <emptyGraphicData>
+                    <texPath>Storage/BarrelClosed</texPath>
+					<graphicClass>Graphic_Single</graphicClass>
+                    <drawSize>(2,2)</drawSize>
+                </emptyGraphicData>
+				<searchSound>BuildingDestroyed_Wood_Medium</searchSound>
+				<searchEffect>DustPuff</searchEffect>
+				<effectSize>2.5</effectSize>
+				<lootCount>50~100</lootCount>
+				<lootChance>0.90</lootChance>
 				<isRandom>true</isRandom>
 				<randomItems>
                     <li>DankPyon_IronOre</li>
@@ -945,35 +1540,15 @@
 		</modExtensions>
     </ThingDef>
 	
-    <ThingDef ParentName="Accurex_EmpireLootableBarrel_Base">
-        <defName>Accurex_LootableBarrel_SilverOre</defName>
-        <label>barrel of silver ore</label>
-        <description>A cylindrical barrel reserved for silver ore to save space. Can hold up to 5 stacks of silver ore. Items stored in this will not affect room beauty and they won't deteriorate, even if outside.</description>
+    <ThingDef ParentName="Accurex_LootableBarrel_Base">
+        <defName>Accurex_BarrelSilverOre_lootable</defName>
+		
         <graphicData>
             <texPath>Storage/BarrelSilverOre</texPath>
-            <graphicClass>Graphic_Multi</graphicClass>
-            <drawSize>(1.8,1.8)</drawSize>
-			<drawRotated>false</drawRotated>
+            <graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+            <drawSize>(2,2)</drawSize>
         </graphicData>
-
-        <fillPercent>0.3</fillPercent>
-        <castEdgeShadows>true</castEdgeShadows>
-        <pathCost>30</pathCost>
-
-		<costList>
-		  <WoodLog>30</WoodLog>
-		</costList>
-
-        <statBases>
-        <MaxHitPoints>100</MaxHitPoints>
-        <Mass>8</Mass>
-        <WorkToBuild>500</WorkToBuild>
-        <Flammability>1.0</Flammability>
-        <Beauty>3</Beauty>
-        </statBases>
-
-        <size>(1,1)</size>
-        <staticSunShadowHeight>0.5</staticSunShadowHeight>
 
         <modExtensions Inherit="False">
 			<li Class="MedievalOverhaul.BuildingLootableExtension">
@@ -983,15 +1558,15 @@
 				<enemySpawnChance>0.10</enemySpawnChance>
                 <hostileEnemy>false</hostileEnemy>
                 <emptyGraphicData>
-                    <texPath>Furniture/BarrelClosed</texPath>
-                    <graphicClass>Graphic_Multi</graphicClass>
-                    <drawSize>(1.8,1.8)</drawSize>
+                    <texPath>Storage/BarrelClosed</texPath>
+					<graphicClass>Graphic_Single</graphicClass>
+                    <drawSize>(2,2)</drawSize>
                 </emptyGraphicData>
 				<searchSound>BuildingDestroyed_Wood_Medium</searchSound>
 				<searchEffect>DustPuff</searchEffect>
 				<effectSize>2.5</effectSize>
-				<lootCount>50~150</lootCount>
-				<lootChance>1</lootChance>
+				<lootCount>25~75</lootCount>
+				<lootChance>0.90</lootChance>
 				<isRandom>true</isRandom>
 				<randomItems>
                     <li>DankPyon_SilverOre</li>
@@ -1000,35 +1575,15 @@
 		</modExtensions>
     </ThingDef>
 	
-    <ThingDef ParentName="Accurex_EmpireLootableBarrel_Base">
-        <defName>Accurex_LootableBarrel_GoldOre</defName>
-        <label>barrel of gold ore</label>
-        <description>A cylindrical barrel reserved for gold ore to save space. Can hold up to 5 stacks of gold ore. Items stored in this will not affect room beauty and they won't deteriorate, even if outside.</description>
+    <ThingDef ParentName="Accurex_LootableBarrel_Base">
+        <defName>Accurex_BarrelWoodLog_lootable</defName>
+		
         <graphicData>
-            <texPath>Storage/BarrelGoldOre</texPath>
-            <graphicClass>Graphic_Multi</graphicClass>
-            <drawSize>(1.8,1.8)</drawSize>
-			<drawRotated>false</drawRotated>
+            <texPath>Storage/BarrelIronOre</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+            <drawSize>(2,2)</drawSize>
         </graphicData>
-
-        <fillPercent>0.3</fillPercent>
-        <castEdgeShadows>true</castEdgeShadows>
-        <pathCost>30</pathCost>
-
-		<costList>
-		  <WoodLog>30</WoodLog>
-		</costList>
-
-        <statBases>
-        <MaxHitPoints>100</MaxHitPoints>
-        <Mass>8</Mass>
-        <WorkToBuild>500</WorkToBuild>
-        <Flammability>1.0</Flammability>
-        <Beauty>3</Beauty>
-        </statBases>
-
-        <size>(1,1)</size>
-        <staticSunShadowHeight>0.5</staticSunShadowHeight>
 
         <modExtensions Inherit="False">
 			<li Class="MedievalOverhaul.BuildingLootableExtension">
@@ -1038,21 +1593,101 @@
 				<enemySpawnChance>0.10</enemySpawnChance>
                 <hostileEnemy>false</hostileEnemy>
                 <emptyGraphicData>
-                    <texPath>Furniture/BarrelClosed</texPath>
-                    <graphicClass>Graphic_Multi</graphicClass>
-                    <drawSize>(1.8,1.8)</drawSize>
+                    <texPath>Storage/BarrelClosed</texPath>
+					<graphicClass>Graphic_Single</graphicClass>
+                    <drawSize>(2,2)</drawSize>
                 </emptyGraphicData>
 				<searchSound>BuildingDestroyed_Wood_Medium</searchSound>
 				<searchEffect>DustPuff</searchEffect>
 				<effectSize>2.5</effectSize>
-				<lootCount>50~150</lootCount>
-				<lootChance>1</lootChance>
+				<lootCount>50~100</lootCount>
+				<lootChance>0.90</lootChance>
 				<isRandom>true</isRandom>
 				<randomItems>
-                    <li>DankPyon_GoldOre</li>
+                    <li>DankPyon_RawWood</li>
 				</randomItems>
 			</li>
 		</modExtensions>
     </ThingDef>
--->
+	
+    <ThingDef ParentName="Accurex_LootableBarrel_Base">
+        <defName>Accurex_BarrelLeather_lootable</defName>
+		
+        <graphicData>
+            <texPath>Storage/BarrelLeather</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+            <drawSize>(2,2)</drawSize>
+        </graphicData>
+
+        <modExtensions Inherit="False">
+			<li Class="MedievalOverhaul.BuildingLootableExtension">
+				<enemysToSpawn>
+				    <li>Rat</li>
+				</enemysToSpawn>
+				<enemySpawnChance>0.10</enemySpawnChance>
+                <hostileEnemy>false</hostileEnemy>
+                <emptyGraphicData>
+                    <texPath>Storage/BarrelClosed</texPath>
+					<graphicClass>Graphic_Single</graphicClass>
+                    <drawSize>(2,2)</drawSize>
+                </emptyGraphicData>
+				<searchSound>BuildingDestroyed_Wood_Medium</searchSound>
+				<searchEffect>DustPuff</searchEffect>
+				<effectSize>2.5</effectSize>
+				<lootCount>50~100</lootCount>
+				<lootChance>0.90</lootChance>
+				<isRandom>true</isRandom>
+				<randomItems>
+                    <li>Leather_Plain</li>
+                    <li>Leather_Plain</li>
+                    <li>Leather_Plain</li>
+                    <li>Leather_Plain</li>
+                    <li>Leather_Plain</li>
+                    <li>Leather_Plain</li>
+                    <li>Leather_Plain</li>
+                    <li>Leather_Plain</li>
+                    <li>Leather_Plain</li>
+					<li>DankPyon_Leather_Daer</li>
+				</randomItems>
+			</li>
+		</modExtensions>
+    </ThingDef>
+	
+    <ThingDef ParentName="Accurex_LootableBarrel_Base">
+        <defName>Accurex_BarrelTextiles_lootable</defName>
+		
+        <graphicData>
+            <texPath>Storage/BarrelTextiles</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+            <drawSize>(2,2)</drawSize>
+        </graphicData>
+
+        <modExtensions Inherit="False">
+			<li Class="MedievalOverhaul.BuildingLootableExtension">
+				<enemysToSpawn>
+				    <li>Rat</li>
+				</enemysToSpawn>
+				<enemySpawnChance>0.10</enemySpawnChance>
+                <hostileEnemy>false</hostileEnemy>
+                <emptyGraphicData>
+                    <texPath>Storage/BarrelClosed</texPath>
+					<graphicClass>Graphic_Single</graphicClass>
+                    <drawSize>(2,2)</drawSize>
+                </emptyGraphicData>
+				<searchSound>BuildingDestroyed_Wood_Medium</searchSound>
+				<searchEffect>DustPuff</searchEffect>
+				<effectSize>2.5</effectSize>
+				<lootCount>50~100</lootCount>
+				<lootChance>0.90</lootChance>
+				<isRandom>true</isRandom>
+				<randomItems>
+                    <li>Cloth</li>
+					<li>DankPyon_Linen</li>
+				</randomItems>
+			</li>
+		</modExtensions>
+    </ThingDef>
+	
 </Defs>
