@@ -16,6 +16,13 @@
 				</li>
 
 				<li Class="PatchOperationReplace">
+					<xpath>/Defs/FactionDef[defName="Empire"]/description</xpath>
+					<value>
+						<description>A medieval society that has ruled over all of Rimworld's humanity for centuries. Their culture is based on a code of honour, a strict class system and enforced social stasis.\n\nThey refuse to trade with anyone who does not have the appropriate royal title.</description>
+					</value>
+				</li>
+
+				<li Class="PatchOperationReplace">
 					<xpath>/Defs/FactionDef[defName="Empire"]/apparelStuffFilter</xpath>
 					<value>
 						<apparelStuffFilter>
@@ -101,18 +108,35 @@
 					</value>
 				</li>
 
-				<li Class="PatchOperationAddModExtension">
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/FactionDef[defName="Empire"]/factionIconPath</xpath>
+					<value>
+						<factionIconPath>World/WorldObjects/Expanding/EmpireOverhaul</factionIconPath>
+					</value>
+				</li>
+
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/FactionDef[defName="Empire"]/colorSpectrum</xpath>
+					<value>
+						<colorSpectrum>
+						  <li>(250, 250, 250)</li>
+						</colorSpectrum>
+					</value>
+				</li>
+				
+				<!--li Class="PatchOperationAddModExtension">
 					<xpath>/Defs/FactionDef[defName="Empire"]</xpath>
 					<value>
 						  <li Class="KCSG.FactionSettlement">
 							<useStructureLayout>True</useStructureLayout>
 							<chooseFromlayouts>
 								<li>Accurex_Placeholder</li>
-								<!--li>Accurex_EmpireFortress_1</li-->
+								<li>Accurex_EmpireFortress_1</li>
 							</chooseFromlayouts>
 						  </li>
 					</value>
-				 </li>
+				 </li-->
+				 
 
 			</operations>
 		</match>

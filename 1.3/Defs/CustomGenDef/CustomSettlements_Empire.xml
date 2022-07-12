@@ -34,7 +34,6 @@
   </modRequirements>
   <spawnConduits>false</spawnConduits>
   <forceGenerateRoof>true</forceGenerateRoof>
-  <needRoofClearance>true</needRoofClearance>
 </KCSG.StructureLayoutDef>
 
 <KCSG.StructureLayoutDef>

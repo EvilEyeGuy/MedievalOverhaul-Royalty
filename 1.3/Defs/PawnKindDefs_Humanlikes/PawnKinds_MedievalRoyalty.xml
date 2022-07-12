@@ -191,7 +191,7 @@
 	<trader>true</trader>
     <apparelMoney>0</apparelMoney>
 	<apparelRequired>
-		<li>Apparel_Slicecap</li>
+		<li MayRequire="Ludeon.RimWorld.Ideology">Apparel_Slicecap</li>
 		<li>Dankpyon_Apparel_Gambeson</li>
 		<li>DankPyon_Apparel_Leather_Tunic</li>
 		<li>DankPyon_Footwear_BootsLeather</li>
@@ -200,7 +200,7 @@
 		<li>Apparel_Cape</li>
 	</apparelRequired>
 	<specificApparelRequirements Inherit="False">
-		<li>
+		<li MayRequire="Ludeon.RimWorld.Ideology">
 			<bodyPartGroup>UpperHead</bodyPartGroup>
 			<requiredTag>Apparel_Slicecap</requiredTag>
 			<color>(105,41,41)</color>
