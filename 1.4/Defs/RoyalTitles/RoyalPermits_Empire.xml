@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- ============================= Permits from royal titles ============================= -->
+  <RoyalTitlePermitDef>
+    <defName>CallMilitaryAidMercenary</defName>
+    <label>call mercenaries</label>
+    <description>Call a group of 6 mercenaries to aid you in battle. Each mercenary has some combat expierence and comes equipped with a leather armor, a crossbow or a two-handed axe.</description>
+    <workerClass>RoyalTitlePermitWorker_CallAid</workerClass>
+    <minTitle>Acolyte</minTitle>
+    <faction>Empire</faction>
+    <permitPointCost>1</permitPointCost>
+    <uiPosition>(0,2)</uiPosition>
+    <royalAid>
+      <favorCost>4</favorCost>
+      <pawnKindDef>Accurex_Medieval_Empire_Mercenary</pawnKindDef>
+      <pawnCount>6</pawnCount>
+      <targetingRange>39.9</targetingRange>
+    </royalAid>
+    <cooldownDays>40</cooldownDays>
+  </RoyalTitlePermitDef>
+
+</Defs>

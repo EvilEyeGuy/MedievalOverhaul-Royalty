@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Royalty</li>
+        </mods>
+		
+		<match Class="PatchOperationSequence">
+			<operations>
+				<!-- uiPosition -->
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/RoyalTitlePermitDef[defName="SteelDrop"]/uiPosition</xpath>
+					<value>
+						<uiPosition>(1,0)</uiPosition>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/RoyalTitlePermitDef[defName="CallLaborerTeam"]/uiPosition</xpath>
+					<value>
+						<uiPosition>(0,1)</uiPosition>
+					</value>
+				</li>
+
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/RoyalTitlePermitDef[defName="CallLaborerGang"]/uiPosition</xpath>
+					<value>
+						<uiPosition>(1,1)</uiPosition>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/RoyalTitlePermitDef[defName="CallMilitaryAidLarge"]/uiPosition</xpath>
+					<value>
+						<uiPosition>(0,4)</uiPosition>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/RoyalTitlePermitDef[defName="CallMilitaryAidGrand"]/uiPosition</xpath>
+					<value>
+						<uiPosition>(1,4)</uiPosition>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/RoyalTitlePermitDef[defName="SilverDrop"]/uiPosition</xpath>
+					<value>
+						<uiPosition>(0,0)</uiPosition>
+					</value>
+				</li>
+
+				<li Class="PatchOperationRemove">
+					<xpath>/Defs/RoyalTitlePermitDef[defName="FoodDrop"]</xpath>
+				</li>
+								
+				<li Class="PatchOperationRemove">
+					<xpath>/Defs/RoyalTitlePermitDef[defName="CallOrbitalStrike"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<xpath>/Defs/RoyalTitlePermitDef[defName="CallOrbitalSalvo"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/RoyalTitlePermitDef[defName="CallLaborerTeam"]/royalAid</xpath>
+					<value>
+						<royalAid>
+						<favorCost>4</favorCost>
+						<pawnKindDef>Accurex_Medieval_Empire_Laborer</pawnKindDef>
+						<pawnCount>4</pawnCount>
+						<aidDurationDays>4</aidDurationDays>
+						</royalAid>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/RoyalTitlePermitDef[defName="CallLaborerGang"]/royalAid</xpath>
+					<value>
+						<royalAid>
+						<favorCost>8</favorCost>
+						<pawnKindDef>Accurex_Medieval_Empire_Laborer</pawnKindDef>
+						<pawnCount>8</pawnCount>
+						<aidDurationDays>4</aidDurationDays>
+						</royalAid>
+					</value>
+				</li>
+
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/RoyalTitlePermitDef[defName="CallMilitaryAidSmall"]/label</xpath>
+					<value>
+						<label>call light soldiers</label>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/RoyalTitlePermitDef[defName="CallMilitaryAidSmall"]/description</xpath>
+					<value>
+						<description>Call a group of 5 light soldiers to aid you in battle. Every soldier is trained (7-11) in melee and ranged combat and comes equipped with a chain armor and a pike or crossbow.</description>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/RoyalTitlePermitDef[defName="CallMilitaryAidSmall"]/royalAid</xpath>
+					<value>
+						<royalAid>
+						<favorCost>4</favorCost>
+						<pawnKindDef>Accurex_Medieval_Empire_Light_Infantry</pawnKindDef>
+						<pawnCount>5</pawnCount>
+						<targetingRange>39.9</targetingRange>
+						</royalAid>
+					</value>
+				</li>
+
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/RoyalTitlePermitDef[defName="CallMilitaryAidLarge"]/label</xpath>
+					<value>
+						<label>call heavy infantry</label>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/RoyalTitlePermitDef[defName="CallMilitaryAidLarge"]/description</xpath>
+					<value>
+						<description>Call a group of 5 heavy soldiers to aid you in battle. Every soldier is well trained (12-16) in melee and ranged combat and comes equipped with a full platemail and a two-handed mace or a heavy crossbow.</description>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/RoyalTitlePermitDef[defName="CallMilitaryAidLarge"]/royalAid</xpath>
+					<value>
+						<royalAid>
+						<favorCost>6</favorCost>
+						<pawnKindDef>Accurex_Medieval_Empire_Heavy_Infantry</pawnKindDef>
+						<pawnCount>5</pawnCount>
+						<targetingRange>39.9</targetingRange>
+						</royalAid>
+					</value>
+				</li>
+
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/RoyalTitlePermitDef[defName="CallMilitaryAidLarge"]/minTitle</xpath>
+					<value>
+						<minTitle>Knight</minTitle>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/RoyalTitlePermitDef[defName="CallMilitaryAidGrand"]/label</xpath>
+					<value>
+						<label>call crusaders</label>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/RoyalTitlePermitDef[defName="CallMilitaryAidGrand"]/description</xpath>
+					<value>
+						<description>Call a group of 5 crusaders to aid you in battle. Every Crusader is battle-hardened and exceptionally well trained (17-20) in melee combat and comes equipped with a full platemail armor and a two-handed weapon.</description>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/RoyalTitlePermitDef[defName="CallMilitaryAidGrand"]/royalAid</xpath>
+					<value>
+						<royalAid>
+						<favorCost>8</favorCost>
+						<pawnKindDef>Accurex_Medieval_Empire_Crusader</pawnKindDef>
+						<pawnCount>5</pawnCount>
+						<targetingRange>39.9</targetingRange>
+						</royalAid>
+					</value>
+				</li>
+				
+			</operations>
+		</match>
+		
+	</Operation>
+</Patch>

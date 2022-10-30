@@ -1,0 +1,38 @@
+Probleme mit der Eroberung der Siedlung? Hier ein paar Tipps
+
+Solltest du Probleme mit der Belagerung haben, dann habe ich ein paar Tipps für dich zusammengefasst. So habe ich meine Probebelagerungen durchgeführt:
+
+[u][b]Eure Armeestärke[/b][/u]
+Für die Testbelagerungen habe ich Armeen mit einer Stärke von 25 pawns erstellt. Diese waren mit einer Kettenrüstung ausgerüstet und hatten entweder einen ranged oder melee skill zwischen 8 und 13. 
+[b]Ranged[/b]
+Wegen dem etwas höheren Schaden und der besseren Treffsicherheit in close range habe ich die Fernkämpfer mit Arbalsts ausgerüstet, davon hatte ich etwa 15 Stück. 
+[b]Melee[/b]
+Die Nahkämpfer hatten unterschiedliche Waffen. Alles von Zweihandäxten bis hin zu Einhandschwerter inkl Schild. Das waren die restlichen 10 soldaten.
+[b]Belagerungswaffen[/b]
+Um die Trebuchets zu bedienen habe ich noch ein paar pawns mitgebracht, welche keine wirklich guten Kampfskills hatten.
+
+[u][b]Garrisos composition[/b][/u]
+Zuerst solltest du wissen, dass die Truppen innerhalb der Siedlung in 2 Arten unterteilt sind. Es gibt etwa 30 Wachen, welche sich in den Türmen beifinden, und einen Angriffstrupp, 25-30 Mann stark.
+Der Angriffstrupp verlässt die Stadt, sobald diese in irgendeiner Art und weise Schaden nimmt.
+
+[u][b]Set up Belagerungscamp [/b][/u]
+Errichte zu beginn ein kleines Camp um verundete zu versorgen. Wenn du den [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2407128339]Zelt mod[/url] verwendest, kannst du auch ein paar Zelter errichten. Es ist wichtig, dass deine pawns schlafmöglichkeiten haben und dass deine verwundeten so rasch wie möglich versorgt werden können.
+
+[u][b]Erster Angriff[/b][/u]
+Baue hierfür ein paar Trebuchets und stelle ein paar Boulder bereit. Für mehr kollateralschaden kannst du auch tarred boulder verwenden - jedoch wird dadurch der Loot in mitgleidenschaft gezogen. Anschließend feuere auf einen Teil der Stadtmauer. Triffst du, dann wirst du demnächst bekanntschaft mit dem Angriffstrupp machen. 
+
+[u][b]Angriffstrupp abwähren[/b][/u]
+Im Idealfall habe ich meine Fernkämpfer hinter einer Reihe aus Barrikaden aufgestellt um die herannahenden Soldaten aus einem geschützten Bereich zu eliminieren. Meine Nahkämpfer waren direkt davor positioniert um die herannahenden Truppen aufzuhalten. 
+Achtung: Hier wird es auf jeden Fall hohe Verluste unter den Nahkämpfern geben. und wenn diese nicht lange genug standhalten, fällt damit die ganze Belagerung.
+
+[u][b]Wundversorgung & Erholung[/b][/u]
+Um etwaige breakdowns zu verhindern empfiehlt es sich den Pawns eine Nacht ruhe zu geben, damit die Wunden versorgt werden können und sie wieder zu kräften kommen. 
+
+[u][b]Zweiter Angriff[/b][/u]
+Nachdem der Angriffssquad abgewährt wurde, können deine Einheiten langsam in die Stadt vorrücken. Wo und wie du das machst, bleibt dir überlassen. Entweder Frontal gegen einen Turm oder vieleicht doch lieber eine Schwachstelle suchen und dort die Mauer durchbrechen. Die meisten Kämpfe innerhalb der Stadt finden in close range bis melee statt. Hierfür solltest du auf jeden Fall ein paar Fernkämpfer und einige Nahkämpfer mitführen. Du begegnest leicht bewaffneten bürgern aber auch Elitesoldaten des Herrschers.
+
+[u][b]Plündern[/b][/u]
+In der Stadt sind unzählige Regale, Kisten und Waffenständer verteilt. Stelle sicher, dass du jeden Raum aufdeckst und um alle Objekte plündern zu können.
+
+[u][b]Habe Spaß[/b][/u]
+Wie für Rimworld üblich, kann die Belagerung durchaus das Ende deiner Kolonie darstellen, solltest du überwältigt werden. Das wichtigste ist jedoch, dass du dabei Spaß hast. Die Belagerungen bieten einem neue Möglichkeiten, die es so mit den Vanilla generierten Strukturen nicht gab.
