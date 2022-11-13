@@ -124,17 +124,20 @@
 					</value>
 				</li>
 				
-				<!--li Class="PatchOperationAddModExtension">
+				<li Class="PatchOperationAddModExtension">
 					<xpath>/Defs/FactionDef[defName="Empire"]</xpath>
 					<value>
-						  <li Class="KCSG.FactionSettlement">
-							<useStructureLayout>True</useStructureLayout>
-							<chooseFromlayouts>
-								<li>Accurex_EmpireFortress_1</li>
-							</chooseFromlayouts>
+						  <li Class="KCSG.CustomGenOption">
+						  	<chooseFromSettlements>
+							  <li>MO_Empire_Settlement_1</li>
+							</chooseFromSettlements>
+							<preventBridgeable>true</preventBridgeable>
+							<!--chooseFromlayouts>
+								<li>Accurex_Empire_Castle_01</li>
+							</chooseFromlayouts-->
 						  </li>
 					</value>
-				 </li-->
+				 </li>
 				 
 
 			</operations>

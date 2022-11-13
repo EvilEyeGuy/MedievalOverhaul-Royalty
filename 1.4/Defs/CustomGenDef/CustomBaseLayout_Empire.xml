@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+  <KCSG.SettlementLayoutDef Abstract="True" Name="MO_EmpireBase">
+    <settlementSize>100,100</settlementSize>
+    <avoidBridgeable>true</avoidBridgeable>
+    <avoidMountains>false</avoidMountains>
+    <centerBuildings>
+      <centerSize>95,95</centerSize>
+      <!--allowedStructures>
+        <li>
+          <count>1~1</count>
+          <tag>Brigand_Bakery</tag>
+        </li>
+        <li>
+          <count>1~1</count>
+          <tag>Brigand_Smithery</tag>
+        </li>
+        <li>
+          <count>1~1</count>
+          <tag>Brigand_Guardpost</tag>
+        </li>
+        <li>
+          <count>1~1</count>
+          <tag>Brigand_Forestry</tag>
+        </li>
+      </allowedStructures-->
+    </centerBuildings>
+    <stockpileOptions>
+      <stockpileValueMultiplier>4.0</stockpileValueMultiplier>
+    </stockpileOptions>
+  </KCSG.SettlementLayoutDef>
+  
+  <KCSG.SettlementLayoutDef ParentName="MO_EmpireBase">
+    <defName>MO_Empire_Settlement_1</defName>
+    <centerBuildings>
+      <centralBuildingTags>
+        <li>Accurex_Empire_Castle_01</li>
+      </centralBuildingTags>
+      <!--allowedStructures>
+        <li>
+          <count>1~1</count>
+          <tag>Accurex_Empire_Castle_01</tag>
+        </li>
+      </allowedStructures-->
+    </centerBuildings>
+    <stockpileOptions>
+      <fillStorageBuildings>true</fillStorageBuildings>
+      <fillWithDefs>
+        <li>Beer</li>
+        <li>Steel</li>
+        <li>Silver</li>
+        <li>Silver</li>
+        <li>Silver</li>
+        <li>Silver</li>
+        <li>Silver</li>
+        <li>Silver</li>
+        <li>Silver</li>
+        <li>Silver</li>
+        <li>Silver</li>
+        <li>Silver</li>
+		<li>DankPyon_Ruby</li>
+		<li>MedicineHerbal</li>
+		<li>DankPyon_IronOre</li>
+		<li>DankPyon_IronOre</li>
+		<li>DankPyon_IronOre</li>
+		<li>DankPyon_IronOre</li>
+		<li>DankPyon_IronOre</li>
+		<li>DankPyon_GoldOre</li>
+		<li>DankPyon_GoldOre</li>
+		<li>DankPyon_GoldOre</li>
+		<li>DankPyon_IronIngot</li>
+		<li>DankPyon_DriedMeat</li>
+		<li>DankPyon_SmokedMeat</li>
+		<li>DankPyon_ChaliceGold</li>
+		<li>DankPyon_ChaliceSilver</li>
+		<li>DankPyon_ComponentBasic</li>
+		<li>DankPyon_DiceGold</li>
+        <li>DankPyon_Book</li>
+        <li>DankPyon_Book</li>
+		<li>DankPyon_Book</li>
+		<li>DankPyon_MealRations</li>
+		<li>DankPyon_MealRations</li>
+		<li>DankPyon_MealRationsVegetarian</li>
+		<li>DankPyon_MealRationsVegetarian</li>
+		<li>DankPyon_DiceSapphire</li>
+		<li>DankPyon_DiceEmerald</li>
+		<li>DankPyon_DiceRuby</li>
+		<li>DankPyon_DiceGold</li>
+		<li>DankPyon_DiceRuby</li>
+      </fillWithDefs>
+    </stockpileOptions>
+  </KCSG.SettlementLayoutDef>
+
+</Defs>
+
