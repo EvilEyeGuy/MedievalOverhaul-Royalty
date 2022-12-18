@@ -9,21 +9,43 @@
 			<operations>
 
 				<li Class="PatchOperationReplace">
-					<xpath>/Defs/FactionDef[defName="Empire"]/techLevel</xpath>
+					<xpath>Defs/FactionDef[defName="Empire"]/techLevel</xpath>
 					<value>
 						<techLevel>Medieval</techLevel>
 					</value>
 				</li>
 
 				<li Class="PatchOperationReplace">
-					<xpath>/Defs/FactionDef[defName="Empire"]/description</xpath>
+					<xpath>Defs/FactionDef[defName="Empire"]/description</xpath>
 					<value>
 						<description>A medieval society that has ruled over all of Rimworld's humanity for centuries. Their culture is based on a code of honour, a strict class system and enforced social stasis.\n\nThey refuse to trade with anyone who does not have the appropriate royal title.</description>
 					</value>
 				</li>
 
+				<!--li Class="PatchOperationAdd">
+					<xpath>Defs/FactionDef[defName="Empire"]/disallowedPrecepts</xpath>
+					<value>
+
+						<li MayRequire="Ludeon.RimWorld.Ideology">ApparelDesired_Strong_Subordinate</li>
+						<li MayRequire="Ludeon.RimWorld.Ideology">ApparelDesired_Soft_Subordinate</li>
+
+						<li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Male_Mandatory</li>
+						<li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Female_Mandatory</li>
+						<li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Male_CoveringAnythingButGroinDisapproved</li>
+						<li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Female_CoveringAnythingButGroinDisapproved</li>
+						<li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Male_UncoveredGroinDisapproved</li>
+						<li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Female_UncoveredGroinDisapproved</li>
+						<li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Male_UncoveredGroinOrChestDisapproved</li>
+						<li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Female_UncoveredGroinOrChestDisapproved</li>
+						<li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Male_UncoveredGroinChestOrHairDisapproved</li>
+						<li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Female_UncoveredGroinChestOrHairDisapproved</li>
+						<li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Male_UncoveredGroinChestHairOrFaceDisapproved</li>
+						<li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Female_UncoveredGroinChestHairOrFaceDisapproved</li>						
+					</value>
+				</li-->
+				
 				<li Class="PatchOperationReplace">
-					<xpath>/Defs/FactionDef[defName="Empire"]/apparelStuffFilter</xpath>
+					<xpath>Defs/FactionDef[defName="Empire"]/apparelStuffFilter</xpath>
 					<value>
 						<apparelStuffFilter>
 						  <stuffCategoriesToAllow>
@@ -39,7 +61,7 @@
 				</li>
 
 				<li Class="PatchOperationReplace">
-					<xpath>/Defs/FactionDef[defName="Empire"]/pawnGroupMakers</xpath>
+					<xpath>Defs/FactionDef[defName="Empire"]/pawnGroupMakers</xpath>
 					<value>
 						<pawnGroupMakers>
 						  <!-- Traders - TODO -->
@@ -109,37 +131,20 @@
 				</li>
 
 				<li Class="PatchOperationReplace">
-					<xpath>/Defs/FactionDef[defName="Empire"]/factionIconPath</xpath>
+					<xpath>Defs/FactionDef[defName="Empire"]/factionIconPath</xpath>
 					<value>
 						<factionIconPath>World/WorldObjects/Expanding/EmpireOverhaul</factionIconPath>
 					</value>
 				</li>
 
 				<li Class="PatchOperationReplace">
-					<xpath>/Defs/FactionDef[defName="Empire"]/colorSpectrum</xpath>
+					<xpath>Defs/FactionDef[defName="Empire"]/colorSpectrum</xpath>
 					<value>
 						<colorSpectrum>
 						  <li>(250, 250, 250)</li>
 						</colorSpectrum>
 					</value>
 				</li>
-				
-				<li Class="PatchOperationAddModExtension">
-					<xpath>/Defs/FactionDef[defName="Empire"]</xpath>
-					<value>
-						  <li Class="KCSG.CustomGenOption">
-						  	<chooseFromSettlements>
-							  <li>MO_Empire_Settlement_1</li>
-							</chooseFromSettlements>
-							<preventBridgeable>true</preventBridgeable>
-							<!--chooseFromlayouts>
-								<li>Accurex_Empire_Castle_01</li>
-							</chooseFromlayouts-->
-						  </li>
-					</value>
-				 </li>
-				 
-
 			</operations>
 		</match>
 		

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+  <Operation Class="VFECore.PatchOperationToggableSequence">
+    <enabled>False</enabled>
+    <mods>
+      <li>Royalty</li>
+    </mods>
+    <label>Empire Fortress Hard Difficulty:</label>
+    <operations>
+
+        <li Class="PatchOperationTest">
+            <xpath>Defs/KCSG.SymbolDef[defName="Accurex_Medieval_Empire_Mercenary"]</xpath>
+        </li>
+        <li Class="PatchOperationConditional">
+            <xpath>Defs/KCSG.SymbolDef[defName="Accurex_Medieval_Empire_Mercenary"]/pawnKindDef</xpath>
+            <match Class="PatchOperationReplace">
+            <xpath>Defs/KCSG.SymbolDef[defName="Accurex_Medieval_Empire_Mercenary"]/pawnKindDef</xpath>
+                <value>
+                  <pawnKindDef>Empire_Fighter_StellicGuardMelee</pawnKindDef>
+                </value>
+            </match>
+        </li>
+
+        <li Class="PatchOperationTest">
+            <xpath>Defs/KCSG.SymbolDef[defName="Accurex_Medieval_Empire_Peasant"]</xpath>
+        </li>
+        <li Class="PatchOperationConditional">
+            <xpath>Defs/KCSG.SymbolDef[defName="Accurex_Medieval_Empire_Peasant"]/pawnKindDef</xpath>
+            <match Class="PatchOperationReplace">
+            <xpath>Defs/KCSG.SymbolDef[defName="Accurex_Medieval_Empire_Peasant"]/pawnKindDef</xpath>
+                <value>
+                  <pawnKindDef>Empire_Fighter_StellicGuardMelee</pawnKindDef>
+                </value>
+            </match>
+        </li>
+
+        <li Class="PatchOperationTest">
+            <xpath>Defs/KCSG.SymbolDef[defName="Accurex_Medieval_Settlement_WallGuard"]</xpath>
+        </li>
+        <li Class="PatchOperationConditional">
+            <xpath>Defs/KCSG.SymbolDef[defName="Accurex_Medieval_Settlement_WallGuard"]/pawnKindDef</xpath>
+            <match Class="PatchOperationReplace">
+            <xpath>Defs/KCSG.SymbolDef[defName="Accurex_Medieval_Settlement_WallGuard"]/pawnKindDef</xpath>
+                <value>
+                  <pawnKindDef>Empire_Fighter_StellicGuardRanged</pawnKindDef>
+                </value>
+            </match>
+        </li>
+
+        <li Class="PatchOperationTest">
+            <xpath>Defs/KCSG.SymbolDef[defName="Empire_Common_Laborer"]</xpath>
+        </li>
+        <li Class="PatchOperationConditional">
+            <xpath>Defs/KCSG.SymbolDef[defName="Empire_Common_Laborer"]/pawnKindDef</xpath>
+            <match Class="PatchOperationReplace">
+            <xpath>Defs/KCSG.SymbolDef[defName="Empire_Common_Laborer"]/pawnKindDef</xpath>
+                <value>
+                  <pawnKindDef>Empire_Fighter_StellicGuardRanged</pawnKindDef>
+                </value>
+            </match>
+        </li>
+
+        <li Class="PatchOperationTest">
+            <xpath>Defs/FactionDef[defName="Empire"]/pawnGroupMakers/li[4]/options</xpath>
+        </li>
+        <li Class="PatchOperationConditional">
+            <xpath>Defs/FactionDef[defName="Empire"]/pawnGroupMakers/li[4]/options</xpath>
+            <match Class="PatchOperationReplace">
+            <xpath>Defs/FactionDef[defName="Empire"]/pawnGroupMakers/li[4]/options</xpath>
+                <value>
+					<options>
+					  <Empire_Fighter_StellicGuardRanged>4</Empire_Fighter_StellicGuardRanged>
+					  <Empire_Fighter_StellicGuardMelee>3</Empire_Fighter_StellicGuardMelee>
+				  </options>
+                </value>
+            </match>
+        </li>
+	
+		<li Class="PatchOperationTest">
+			<xpath>Defs/PawnKindDef[@Name="StellicGuardBase"]</xpath>
+		</li>
+		<li Class="PatchOperationConditional">
+			<xpath>Defs/PawnKindDef[@Name="StellicGuardBase"]/combatPower</xpath>
+			<nomatch Class="PatchOperationAdd">
+				<xpath>Defs/PawnKindDef[@Name="StellicGuardBase"]/combatPower</xpath>
+				<value>
+					<combatPower>90</combatPower>
+				</value>
+			</nomatch>
+			<match Class="PatchOperationReplace">
+				<xpath>Defs/PawnKindDef[@Name="StellicGuardBase"]/combatPower</xpath>
+				<value>
+					<combatPower>90</combatPower>
+				</value>
+			</match>
+		</li>
+
+        <li Class="PatchOperationTest">
+            <xpath>Defs/KCSG.SettlementLayoutDef[defName="MO_Empire_Settlement_1"]</xpath>
+        </li>
+        <li Class="PatchOperationConditional">
+            <xpath>Defs/KCSG.SettlementLayoutDef[defName="MO_Empire_Settlement_1"]/centerBuildings/centralBuildingTags</xpath>
+            <match Class="PatchOperationReplace">
+            <xpath>Defs/KCSG.SettlementLayoutDef[defName="MO_Empire_Settlement_1"]/centerBuildings/centralBuildingTags</xpath>
+                <value>
+					<centralBuildingTags>
+						<li>Accurex_Empire_Castle_01_hard</li>
+					</centralBuildingTags>
+				</value>
+			</match>
+		</li>
+
+    </operations>
+  </Operation>
+</Patch>

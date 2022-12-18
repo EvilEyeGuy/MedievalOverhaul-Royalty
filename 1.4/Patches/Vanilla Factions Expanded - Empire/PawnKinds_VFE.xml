@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Factions Expanded - Empire</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+			
+			<!-- Empire_Common_Laborer -->
+			
+				<li Class="PatchOperationTest">
+					<xpath>Defs/PawnKindDef[defName="Empire_Common_Laborer"]</xpath>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/PawnKindDef[defName="Empire_Common_Laborer"]/styleItemTags</xpath>
+					<match Class="PatchOperationRemove">
+					<xpath>Defs/PawnKindDef[defName="Empire_Common_Laborer"]/styleItemTags</xpath>
+					</match>
+				</li>
+			
+				<li Class="PatchOperationTest">
+					<xpath>Defs/PawnKindDef[defName="Empire_Common_Laborer"]</xpath>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/PawnKindDef[defName="Empire_Common_Laborer"]/apparelTags</xpath>
+					<match Class="PatchOperationRemove">
+					<xpath>Defs/PawnKindDef[defName="Empire_Common_Laborer"]/apparelTags</xpath>
+					</match>
+				</li>	
+			</operations>
+		</match>
+	</Operation>	
+</Patch>

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
   <KCSG.SettlementLayoutDef Abstract="True" Name="MO_EmpireBase">
-    <settlementSize>100,100</settlementSize>
-    <avoidBridgeable>true</avoidBridgeable>
+    <settlementSize>110,110</settlementSize>
+    <avoidBridgeable>false</avoidBridgeable>
     <avoidMountains>false</avoidMountains>
     <centerBuildings>
-      <centerSize>95,95</centerSize>
+      <centerSize>105,105</centerSize>
       <!--allowedStructures>
         <li>
           <count>1~1</count>
@@ -44,7 +44,7 @@
       </allowedStructures-->
     </centerBuildings>
     <stockpileOptions>
-      <fillStorageBuildings>true</fillStorageBuildings>
+      <fillStorageBuildings>false</fillStorageBuildings>
       <fillWithDefs>
         <li>Beer</li>
         <li>Steel</li>
