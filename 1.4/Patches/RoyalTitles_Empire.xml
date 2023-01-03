@@ -8,228 +8,36 @@
 		<match Class="PatchOperationSequence">
 			<operations>
 
-				<li Class="PatchOperationReplace">
-					<xpath>/Defs/RoyalTitleDef[defName="Acolyte"]/requiredApparel</xpath>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/RoyalTitleDef/requiredApparel/li[bodyPartGroupsMatchAny/li="Torso"]/allowedTags</xpath>
 					<value>
-						<requiredApparel>
-						  <li>
-							<bodyPartGroupsMatchAny>
-							  <li>Torso</li>
-							</bodyPartGroupsMatchAny>
-							<requiredTags>
-							  <li>RoyalTier2</li>
-							</requiredTags>
-							<allowedTags>
-							  <li>Cape</li>
-							  <li>MedievalPrestigeCombatGear</li>
-							  <li>PrestigeCombatGear</li>
-							  <li>Psychic</li>
-							</allowedTags>
-						  </li>
-						  <li>
-							<bodyPartGroupsMatchAny>
-							  <li>UpperHead</li>
-							  <li>FullHead</li>
-							</bodyPartGroupsMatchAny>
-							<requiredTags>
-							  <li>RoyalTier2</li>
-							</requiredTags>
-							<allowedTags>
-							  <li>PrestigeCombatGear</li>
-							  <li>DankPyon_LordHelmet</li>
-							  <li>Psychic</li>
-							</allowedTags>
-						  </li>
-						</requiredApparel>
+						<li>MedievalPrestigeCombatGear</li>
 					</value>
 				</li>
 
-				<li Class="PatchOperationReplace">
-					<xpath>/Defs/RoyalTitleDef[defName="Knight"]/requiredApparel</xpath>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/RoyalTitleDef/requiredApparel/li[bodyPartGroupsMatchAny/li="FullHead"]/allowedTags</xpath>
 					<value>
-						<requiredApparel>
-						  <li>
-							<bodyPartGroupsMatchAny>
-							  <li>Torso</li>
-							</bodyPartGroupsMatchAny>
-							<requiredTags>
-							  <li>RoyalTier2</li>
-							</requiredTags>
-							<allowedTags>
-							  <li>Cape</li>
-							  <li>MedievalPrestigeCombatGear</li>
-							  <li>PrestigeCombatGear</li>
-							  <li>Psychic</li>
-							</allowedTags>
-						  </li>
-						  <li>
-							<bodyPartGroupsMatchAny>
-							  <li>UpperHead</li>
-							  <li>FullHead</li>
-							</bodyPartGroupsMatchAny>
-							<requiredTags>
-							  <li>RoyalTier2</li>
-							</requiredTags>
-							<allowedTags>
-							  <li>PrestigeCombatGear</li>
-							  <li>DankPyon_LordHelmet</li>
-							  <li>Psychic</li>
-							</allowedTags>
-						  </li>
-						</requiredApparel>
+						<li>DankPyon_LordHelmet</li>
 					</value>
 				</li>
-				
-				<li Class="PatchOperationReplace">
-					<xpath>/Defs/RoyalTitleDef[defName="Praetor"]/requiredApparel</xpath>
+
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef/apparel[tags/li="MedievalPrestigeCombatGear"]/tags</xpath>
 					<value>
-						<requiredApparel>
-						  <li>
-							<bodyPartGroupsMatchAny>
-							  <li>Torso</li>
-							</bodyPartGroupsMatchAny>
-							<requiredTags>
-							  <li>RoyalTier2</li>
-							</requiredTags>
-							<allowedTags>
-							  <li>Cape</li>
-							  <li>PrestigeCombatGear</li>
-							  <li>MedievalPrestigeCombatGear</li>
-							  <li>Psychic</li>
-							</allowedTags>
-						  </li>
-						  <li>
-							<bodyPartGroupsMatchAny>
-							  <li>UpperHead</li>
-							  <li>FullHead</li>
-							</bodyPartGroupsMatchAny>
-							<requiredTags>
-							  <li>RoyalTier2</li>
-							</requiredTags>
-							<allowedTags>
-							  <li>PrestigeCombatGear</li>
-							  <li>DankPyon_LordHelmet</li>
-							  <li>Psychic</li>
-							</allowedTags>
-						  </li>
-						</requiredApparel>
+						<li>RoyalTier2</li>
+						<li>RoyalTier5</li>
 					</value>
 				</li>
-				
-				<li Class="PatchOperationReplace">
-					<xpath>/Defs/RoyalTitleDef[defName="Baron"]/requiredApparel</xpath>
+
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef/apparel[tags/li="DankPyon_LordHelmet"]/tags</xpath>
 					<value>
-						<requiredApparel>
-						  <li>
-							<bodyPartGroupsMatchAny>
-							  <li>Torso</li>
-							</bodyPartGroupsMatchAny>
-							<requiredTags>
-							  <li>RoyalTier2</li>
-							</requiredTags>
-							<allowedTags>
-							  <li>Cape</li>
-							  <li>PrestigeCombatGear</li>
-							  <li>MedievalPrestigeCombatGear</li>
-							  <li>Psychic</li>
-							</allowedTags>
-						  </li>
-						  <li>
-							<bodyPartGroupsMatchAny>
-							  <li>Torso</li>
-							</bodyPartGroupsMatchAny>
-							<requiredTags>
-							  <li>RoyalTier5</li>
-							</requiredTags>
-							<allowedTags>
-							  <li>PrestigeCombatGear</li>
-							  <li>MedievalPrestigeCombatGear</li>
-							  <li>Psychic</li>
-							</allowedTags>
-						  </li>
-						  <li>
-							<bodyPartGroupsMatchAny>
-							  <li>UpperHead</li>
-							  <li>FullHead</li>
-							</bodyPartGroupsMatchAny>
-							<requiredTags>
-							  <li>RoyalTier5</li>
-							</requiredTags>
-							<allowedTags>
-							  <li>PrestigeCombatGear</li>
-							  <li>DankPyon_LordHelmet</li>
-							  <li>Psychic</li>
-							</allowedTags>
-						  </li>
-						</requiredApparel>
+						<li>RoyalTier2</li>
+						<li>RoyalTier5</li>
 					</value>
-				</li>
-				
-				<li Class="PatchOperationReplace">
-					<xpath>/Defs/RoyalTitleDef[defName="Count"]/requiredApparel</xpath>
-					<value>
-						<requiredApparel>
-						  <li>
-							<bodyPartGroupsMatchAny>
-							  <li>Torso</li>
-							</bodyPartGroupsMatchAny>
-							<requiredTags>
-							  <li>RoyalTier2</li>
-							</requiredTags>
-							<allowedTags>
-							  <li>Cape</li>
-							  <li>PrestigeCombatGear</li>
-							  <li>MedievalPrestigeCombatGear</li>
-							  <li>Psychic</li>
-							</allowedTags>
-						  </li>
-						  <li>
-							<bodyPartGroupsMatchAny>
-							  <li>Torso</li>
-							</bodyPartGroupsMatchAny>
-							<requiredTags>
-							  <li>RoyalTier5</li>
-							</requiredTags>
-							<allowedTags>
-							  <li>Cape</li>
-							  <li>PrestigeCombatGear</li>
-							  <li>MedievalPrestigeCombatGear</li>
-							  <li>Psychic</li>
-							</allowedTags>
-						  </li>
-						  <li>
-							<bodyPartGroupsMatchAny>
-							  <li>Torso</li>
-							</bodyPartGroupsMatchAny>
-							<requiredTags>
-							  <li>RoyalTier6</li>
-							</requiredTags>
-							<allowedTags>
-							  <li>Cape</li>
-							  <li>PrestigeCombatGear</li>
-							  <li>MedievalPrestigeCombatGear</li>
-							  <li>Psychic</li>
-							</allowedTags>
-						  </li>
-						  <li>
-							<bodyPartGroupsMatchAny>
-							  <li>UpperHead</li>
-							  <li>FullHead</li>
-							</bodyPartGroupsMatchAny>
-							<requiredTags>
-							  <li>RoyalTier5</li>
-							</requiredTags>
-							<allowedTags>
-							  <li>PrestigeCombatGear</li>
-							  <li>DankPyon_LordHelmet</li>
-							  <li>Psychic</li>
-							</allowedTags>
-						  </li>
-						</requiredApparel>
-					</value>
-				</li>
+				</li>				
 			</operations>
 		</match>
-		
 	</Operation>
 </Patch>

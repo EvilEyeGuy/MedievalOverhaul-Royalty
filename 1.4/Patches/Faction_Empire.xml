@@ -22,7 +22,7 @@
 					</value>
 				</li>
 
-				<!--li Class="PatchOperationAdd">
+				<li Class="PatchOperationAdd">
 					<xpath>Defs/FactionDef[defName="Empire"]/disallowedPrecepts</xpath>
 					<value>
 
@@ -42,7 +42,7 @@
 						<li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Male_UncoveredGroinChestHairOrFaceDisapproved</li>
 						<li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Female_UncoveredGroinChestHairOrFaceDisapproved</li>						
 					</value>
-				</li-->
+				</li>
 				
 				<li Class="PatchOperationReplace">
 					<xpath>Defs/FactionDef[defName="Empire"]/apparelStuffFilter</xpath>
