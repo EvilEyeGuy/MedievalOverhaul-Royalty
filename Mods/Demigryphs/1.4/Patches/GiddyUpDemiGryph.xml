@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+  <Operation Class="PatchOperationSequence">
+      <operations>
+
+        <!--li Class="PatchOperationReplace">
+          <xpath>Defs/FactionDef[defName="Empire"]/modExtensions/li[@Class="GiddyUpCore.FactionRestrictionsPatch"]/allowedWildAnimalsCSV</xpath>
+          <value>
+              <allowedWildAnimalsCSV>pphhyy_Demigryph</allowedWildAnimalsCSV>
+          </value>
+        </li>
+
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/FactionDef[defName="Empire"]/modExtensions/li[@Class="GiddyUpCore.FactionRestrictionsPatch"]/allowedNonWildAnimalsCSV</xpath>
+          <value>
+              <allowedNonWildAnimalsCSV>pphhyy_Demigryph</allowedNonWildAnimalsCSV>
+          </value>
+        </li-->
+
+        <li Class="PatchOperationAddModExtension">
+          <xpath>Defs/PawnKindDef[defName="Accurex_Medieval_Empire_Cavalry"]</xpath>
+          <value>
+            <li Class="GiddyUpCore.CustomMountsPatch">
+              <mountChance>99</mountChance>
+              <possibleMounts>
+                <li>
+                  <key>EEG_Demigryph_armored</key>
+                  <value>1</value>
+                </li>
+              </possibleMounts>
+            </li>
+          </value>
+        </li>
+
+      </operations>
+  </Operation>
+
+</Patch>

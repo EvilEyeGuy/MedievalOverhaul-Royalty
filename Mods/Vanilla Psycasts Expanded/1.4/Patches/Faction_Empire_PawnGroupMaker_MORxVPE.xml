@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationSequence">
+		<operations>
+			<li Class="PatchOperationFindMod">
+				<mods>
+				  <li>pphhyy's Demigryphs</li>
+				</mods>
+				<match Class="PatchOperationAdd">
+				<xpath>Defs/FactionDef[defName="Empire"]/pawnGroupMakers/li[kindDef="Combat"][options[not(Accurex_Medieval_Empire_Cavalry)]]/options</xpath>
+				<value>
+					<li>
+						<Accurex_Medieval_Empire_Protector>10</Accurex_Medieval_Empire_Protector>
+						<Accurex_Medieval_Empire_Archotechist>10</Accurex_Medieval_Empire_Archotechist>
+						<Accurex_Medieval_Empire_Conflagrator>10</Accurex_Medieval_Empire_Conflagrator>
+					</li>
+				</value>
+				</match>
+				<nomatch Class="PatchOperationAdd">
+				<xpath>Defs/FactionDef[defName="Empire"]/pawnGroupMakers/li[kindDef="Combat"]/options</xpath>
+				<value>
+					<li>
+						<Accurex_Medieval_Empire_Protector>10</Accurex_Medieval_Empire_Protector>
+						<Accurex_Medieval_Empire_Archotechist>10</Accurex_Medieval_Empire_Archotechist>
+						<Accurex_Medieval_Empire_Conflagrator>10</Accurex_Medieval_Empire_Conflagrator>
+					</li>
+				</value>
+				</nomatch>
+			</li>	
+		</operations>		
+	</Operation>
+</Patch>

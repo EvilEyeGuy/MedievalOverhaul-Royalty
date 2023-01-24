@@ -1194,7 +1194,7 @@
 					<nomatch Class="PatchOperationAdd">
 						<xpath>Defs/PawnKindDef[defName="Empire_Fighter_Champion"]</xpath>
 						<value>
-							<label>Heavy Infantry</label>
+							<label>Cavalry</label>
 						</value>
 					</nomatch>
 					<match Class="PatchOperationReplace">

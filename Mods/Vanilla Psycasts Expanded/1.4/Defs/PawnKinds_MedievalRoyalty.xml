@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+ <!-- ================== Tier 3 : Caster ================== -->
+
+  <PawnKindDef ParentName="Accurex_EmpireFigtherBase" Name="Accurex_EmpirePsycasterBase" Abstract="True">
+    <minTitleRequired>Knight</minTitleRequired>
+    <combatPower>85</combatPower>
+    <apparelMoney>0</apparelMoney>
+		
+	<apparelRequired>
+		<li>Apparel_EltexSkullcap</li>
+		<li>Dankpyon_Apparel_Gambeson</li>
+		<li>DankPyon_Apparel_Leather_Tunic</li>
+		<li>DankPyon_Apparel_Trousers</li>
+		<li>Apparel_Cape</li>
+		<li>DankPyon_Handwear_GlovesPlate</li>
+		<li>DankPyon_Footwear_BootsPlate</li>
+	</apparelRequired>
+	
+	<specificApparelRequirements>
+		<!-- FullHead -->
+		<!-- Torso -->
+		<li>
+			<bodyPartGroup>Torso</bodyPartGroup>
+			<apparelLayer>OnSkin</apparelLayer>
+			<requiredTag>Dankpyon_Apparel_Gambeson</requiredTag>
+			<stuff>WoolMegasloth</stuff>
+		</li>
+		<li>
+			<bodyPartGroup>Torso</bodyPartGroup>
+			<apparelLayer>Middle</apparelLayer>
+			<requiredTag>DankPyon_Apparel_Leather_Tunic</requiredTag>
+			<stuff>DankPyon_Leather_Daer</stuff>
+		</li>
+		<!-- Legs -->
+		<li>
+			<bodyPartGroup>Legs</bodyPartGroup>
+			<apparelLayer>OnSkin</apparelLayer>
+			<requiredTag>DankPyon_Apparel_Trousers</requiredTag>
+			<stuff>WoolMegasloth</stuff>
+		</li>
+		<!-- Hands -->
+		<li>
+			<bodyPartGroup>Hands</bodyPartGroup>
+			<apparelLayer>Middle</apparelLayer>
+			<requiredTag>DankPyon_Handwear_GlovesPlate</requiredTag>
+			<stuff>Plasteel</stuff>
+		</li>
+		<!-- Feet -->
+		<li>
+			<bodyPartGroup>Feet</bodyPartGroup>
+			<apparelLayer>Middle</apparelLayer>
+			<requiredTag>DankPyon_Footwear_BootsPlate</requiredTag>
+			<stuff>Plasteel</stuff>
+		</li>
+		<!-- Shield -->
+    </specificApparelRequirements>
+
+    <weaponTags>
+		<li>EltexStaff</li>
+    </weaponTags>
+	<skills>
+		<li>
+			<skill>Melee</skill>
+			<range>12~16</range>
+		</li>
+		<li>
+			<skill>Shooting</skill>
+			<range>12~16</range>
+		</li>
+    </skills>
+	
+	<techHediffsMaxAmount>3</techHediffsMaxAmount>
+	<initialWillRange>6~8</initialWillRange>
+	<initialResistanceRange>30~46</initialResistanceRange>
+  </PawnKindDef> 
+  
+ <PawnKindDef ParentName="Accurex_EmpirePsycasterBase">
+    <defName>Accurex_Medieval_Empire_Conflagrator</defName>
+	<label>royal conflagrator</label>
+  	
+	<specificApparelRequirements>
+		<!-- FullHead -->
+		<li>
+			<bodyPartGroup>FullHead</bodyPartGroup>
+			<apparelLayer>Overhead</apparelLayer>
+			<requiredTag>Apparel_EltexSkullcap</requiredTag>
+			<color>(95,0,31)</color> <!-- (57,87,93) -->
+			<stuff>Plasteel</stuff>
+		</li>
+				<li>
+			<bodyPartGroup>Torso</bodyPartGroup>
+			<apparelLayer>Shell</apparelLayer>
+			<requiredTag>Apparel_Cape</requiredTag>
+			<color>(95,0,31)</color>
+			<stuff>WoolMegasloth</stuff>
+		</li>
+    </specificApparelRequirements>
+
+	<modExtensions>
+	 <li Class="VanillaPsycastsExpanded.PawnKindAbilityExtension_Psycasts">
+		<implantDef>VPE_PsycastAbilityImplant</implantDef>
+		<initialLevel>2</initialLevel>
+		<statUpgradePoints>2~6</statUpgradePoints>
+		<unlockedPaths>
+		   <VPE_Conflagrator>1~4|2~10</VPE_Conflagrator>
+		</unlockedPaths>
+	 </li>
+	</modExtensions>
+  </PawnKindDef>   
+  
+ <PawnKindDef ParentName="Accurex_EmpirePsycasterBase">
+    <defName>Accurex_Medieval_Empire_Archotechist</defName>
+	<label>royal archotechist</label>
+  	
+	<specificApparelRequirements>
+		<!-- FullHead -->
+		<li>
+			<bodyPartGroup>FullHead</bodyPartGroup>
+			<apparelLayer>Overhead</apparelLayer>
+			<requiredTag>Apparel_EltexSkullcap</requiredTag>
+			<color>(56,32,90)</color> <!-- (57,87,93) -->
+			<stuff>Plasteel</stuff>
+		</li>
+				<li>
+			<bodyPartGroup>Torso</bodyPartGroup>
+			<apparelLayer>Shell</apparelLayer>
+			<requiredTag>Apparel_Cape</requiredTag>
+			<color>(56,32,90)</color>
+			<stuff>WoolMegasloth</stuff>
+		</li>
+    </specificApparelRequirements>
+
+      <modExtensions>
+         <li Class="VanillaPsycastsExpanded.PawnKindAbilityExtension_Psycasts">
+            <implantDef>VPE_PsycastAbilityImplant</implantDef>
+            <initialLevel>2</initialLevel>
+            <statUpgradePoints>6~12</statUpgradePoints>
+            <unlockedPaths>
+               <VPE_Archotechist>1~4|2~10</VPE_Archotechist>
+            </unlockedPaths>
+         </li>
+      </modExtensions>
+  </PawnKindDef>   
+  
+ <PawnKindDef ParentName="Accurex_EmpirePsycasterBase">
+    <defName>Accurex_Medieval_Empire_Protector</defName>
+	<label>royal protector</label>
+  	
+	<specificApparelRequirements>
+		<!-- FullHead -->
+		<li>
+			<bodyPartGroup>FullHead</bodyPartGroup>
+			<apparelLayer>Overhead</apparelLayer>
+			<requiredTag>Apparel_EltexSkullcap</requiredTag>
+			<color>(57,87,93)</color> <!-- (57,87,93) -->
+			<stuff>Plasteel</stuff>
+		</li>
+				<li>
+			<bodyPartGroup>Torso</bodyPartGroup>
+			<apparelLayer>Shell</apparelLayer>
+			<requiredTag>Apparel_Cape</requiredTag>
+			<color>(57,87,93)</color>
+			<stuff>WoolMegasloth</stuff>
+		</li>
+    </specificApparelRequirements>
+
+	<modExtensions>
+	 <li Class="VanillaPsycastsExpanded.PawnKindAbilityExtension_Psycasts">
+		<implantDef>VPE_PsycastAbilityImplant</implantDef>
+		<initialLevel>2</initialLevel>
+		<statUpgradePoints>2~6</statUpgradePoints>
+		<unlockedPaths>
+		   <VPE_Protector>1~4|2~12</VPE_Protector>
+		</unlockedPaths>
+	 </li>
+	</modExtensions>
+	</PawnKindDef> 
+
+</Defs>

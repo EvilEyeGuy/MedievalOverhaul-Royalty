@@ -8,13 +8,6 @@
 		<match Class="PatchOperationSequence">
 			<operations>
 				<li Class="PatchOperationReplace">
-					<xpath>/Defs/RoyalTitlePermitDef[defName="GlitterMedDrop"]/uiPosition</xpath>
-					<value>
-						<uiPosition>(0,5)</uiPosition>
-					</value>
-				</li>
-				
-				<li Class="PatchOperationReplace">
 					<xpath>/Defs/RoyalTitlePermitDef[defName="GlitterMedDrop"]/label</xpath>
 					<value>
 						<label>paresian medicine drop</label>
@@ -44,13 +37,6 @@
 		
 		<nomatch Class="PatchOperationSequence">
 			<operations>
-				<li Class="PatchOperationReplace">
-					<xpath>/Defs/RoyalTitlePermitDef[defName="GlitterMedDrop"]/uiPosition</xpath>
-					<value>
-						<uiPosition>(0,5)</uiPosition>
-					</value>
-				</li>
-				
 				<li Class="PatchOperationReplace">
 					<xpath>/Defs/RoyalTitlePermitDef[defName="GlitterMedDrop"]/label</xpath>
 					<value>

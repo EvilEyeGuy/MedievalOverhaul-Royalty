@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+ <!-- ================== Tier 4 : Cavalry ================== -->
+
+  <PawnKindDef ParentName="Accurex_EmpireFigtherBase">
+    <defName>Accurex_Medieval_Empire_Cavalry</defName>
+	<label>royal cavalry</label>
+    <combatPower>135</combatPower>
+    <apparelMoney>0</apparelMoney>
+	<apparelColor>(105,105,105,255)</apparelColor>
+		
+	<apparelRequired>
+		<li>pphhyy_Human_DemigyryphGildedHelm</li>
+		<li>Dankpyon_Apparel_Gambeson</li>
+		<li>DankPyon_Apparel_Hauberk</li>
+		<li>DankPyon_Apparel_Trousers</li>
+		<li>DankPyon_Apparel_FullPlate</li>
+		<li>DankPyon_Handwear_GlovesPlate</li>
+		<li>DankPyon_Footwear_BootsPlate</li>
+	</apparelRequired>
+	
+	<specificApparelRequirements>
+		<!-- FullHead -->
+		<li>
+			<bodyPartGroup>FullHead</bodyPartGroup>
+			<apparelLayer>Overhead</apparelLayer>
+			<requiredTag>pphhyy_Human_DemigyryphGildedHelm</requiredTag>
+			<stuff>Plasteel</stuff>
+		</li>
+		<!-- Torso -->
+		<li>
+			<bodyPartGroup>Torso</bodyPartGroup>
+			<apparelLayer>OnSkin</apparelLayer>
+			<requiredTag>Dankpyon_Apparel_Gambeson</requiredTag>
+			<stuff>WoolMegasloth</stuff>
+		</li>
+		<li>
+			<bodyPartGroup>Torso</bodyPartGroup>
+			<apparelLayer>Middle</apparelLayer>
+			<requiredTag>DankPyon_Apparel_Hauberk</requiredTag>
+			<stuff>Plasteel</stuff>
+		</li>
+		<li>
+			<bodyPartGroup>Torso</bodyPartGroup>
+			<apparelLayer>Shell</apparelLayer>
+			<requiredTag>DankPyon_Apparel_FullPlate</requiredTag>
+			<stuff>Plasteel</stuff>
+		</li>
+		<!-- Legs -->
+		<li>
+			<bodyPartGroup>Legs</bodyPartGroup>
+			<apparelLayer>OnSkin</apparelLayer>
+			<requiredTag>DankPyon_Apparel_Trousers</requiredTag>
+			<stuff>WoolMegasloth</stuff>
+		</li>
+		<!-- Hands -->
+		<li>
+			<bodyPartGroup>Hands</bodyPartGroup>
+			<apparelLayer>Middle</apparelLayer>
+			<requiredTag>DankPyon_Handwear_GlovesPlate</requiredTag>
+			<stuff>Plasteel</stuff>
+		</li>
+		<!-- Feet -->
+		<li>
+			<bodyPartGroup>Feet</bodyPartGroup>
+			<apparelLayer>Middle</apparelLayer>
+			<requiredTag>DankPyon_Footwear_BootsPlate</requiredTag>
+			<stuff>Plasteel</stuff>
+		</li>
+		<!-- Shield -->
+    </specificApparelRequirements>
+
+    <weaponTags>
+		<li>DankPyon_Arbelest</li>
+		<li>DankPyon_Longsword</li>
+    </weaponTags>
+	<skills>
+		<li>
+			<skill>Melee</skill>
+			<range>17~20</range>
+		</li>
+		<li>
+			<skill>Shooting</skill>
+			<range>17~20</range>
+		</li>
+    </skills>
+  </PawnKindDef> 
+
+</Defs>

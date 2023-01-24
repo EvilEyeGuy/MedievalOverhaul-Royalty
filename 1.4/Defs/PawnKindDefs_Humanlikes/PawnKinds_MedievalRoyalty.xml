@@ -448,7 +448,7 @@
 
     <PawnKindDef ParentName="Accurex_EmpireFigtherBase">
     <defName>Accurex_Medieval_Empire_Grenadier</defName>
-    <label>Heavy Infantry</label>
+    <label>Cavalry</label>
     <combatPower>100</combatPower>
     <apparelMoney>0</apparelMoney>
 		

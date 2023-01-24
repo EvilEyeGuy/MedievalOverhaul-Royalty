@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationSequence">
+		<operations>
+
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/FactionDef[defName="Empire"]/pawnGroupMakers</xpath>
+				<value>
+				  <li>
+					<!-- Normal fights -->
+					<kindDef>Combat</kindDef>
+					<commonality>40</commonality>
+					<options>
+					  <Accurex_Medieval_Empire_Cavalry>30</Accurex_Medieval_Empire_Cavalry>
+					</options>
+				  </li>
+				</value>
+			</li>
+
+		</operations>		
+	</Operation>
+</Patch>

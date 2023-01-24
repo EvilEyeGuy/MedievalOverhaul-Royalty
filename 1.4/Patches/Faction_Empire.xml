@@ -1,11 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
-	<Operation Class="PatchOperationFindMod">
-        <mods>
-            <li>Royalty</li>
-        </mods>
-		
-		<match Class="PatchOperationSequence">
+	<Operation Class="PatchOperationSequence">
 			<operations>
 
 				<li Class="PatchOperationReplace">
@@ -87,7 +82,7 @@
 							  <li>
 								<!-- Normal fights -->
 								<kindDef>Combat</kindDef>
-								<commonality>100</commonality>
+								<commonality>60</commonality>
 								<options>
 								  <Accurex_Medieval_Empire_Mercenary>5</Accurex_Medieval_Empire_Mercenary>
 								  <Accurex_Medieval_Empire_Light_Infantry>3.5</Accurex_Medieval_Empire_Light_Infantry>
@@ -145,8 +140,6 @@
 						</colorSpectrum>
 					</value>
 				</li>
-			</operations>
-		</match>
-		
+			</operations>		
 	</Operation>
 </Patch>
