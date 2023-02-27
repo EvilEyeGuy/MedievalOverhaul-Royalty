@@ -40,14 +40,14 @@
 				<li Class="PatchOperationReplace">
 					<xpath>/Defs/RoyalTitlePermitDef[defName="GlitterMedDrop"]/label</xpath>
 					<value>
-						<label>herbal medicine drop</label>
+						<label>large herbal medicine drop</label>
 					</value>
 				</li>
 				
 				<li Class="PatchOperationReplace">
 					<xpath>/Defs/RoyalTitlePermitDef[defName="GlitterMedDrop"]/description</xpath>
 					<value>
-						<description>Call for a drop of 25 herbal medicine.</description>
+						<description>Call for a drop of 100 herbal medicine.</description>
 					</value>
 				</li>
 				
@@ -56,7 +56,7 @@
 					<value>
 						<royalAid Inherit="False">
 						  <itemsToDrop>
-							<MedicineHerbal>25</MedicineHerbal>
+							<MedicineHerbal>100</MedicineHerbal>
 						  </itemsToDrop>
 						  <favorCost>8</favorCost>
 						</royalAid>

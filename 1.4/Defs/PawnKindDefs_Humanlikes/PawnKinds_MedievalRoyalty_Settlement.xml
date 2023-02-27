@@ -12,7 +12,7 @@
     <gearHealthRange>0.8~2</gearHealthRange>
     <apparelMoney>0</apparelMoney>
 	<apparelRequired>
-		<li>Dankpyon_Apparel_Gambeson</li>
+		<li>DankPyon_Apparel_Padded_Surcoat</li>
 		<li>DankPyon_Footwear_BootsLeather</li>
 		<li>DankPyon_Handwear_GlovesLeather</li>
 		<li>Apparel_Pants</li>
@@ -21,7 +21,7 @@
 		<li>
 			<bodyPartGroup>Torso</bodyPartGroup>
 			<apparelLayer>OnSkin</apparelLayer>
-			<requiredTag>Dankpyon_Apparel_Gambeson</requiredTag>
+			<requiredTag>DankPyon_Apparel_Padded_Surcoat</requiredTag>
 			<stuff>WoolMegasloth</stuff>
 		</li>
 		<li>
@@ -63,7 +63,7 @@
 	
 <apparelRequired>
 		<li>DankPyon_Headgear_PaddedKettleHelmet</li>		<!-- bodyPartGroups: FullHead				| layers: Overhead -->
-		<li>Dankpyon_Apparel_Gambeson</li>			<!-- bodyPartGroups: Neck, Shoulder, Torso	| layers: OnSkin -->
+		<li>DankPyon_Apparel_Padded_Surcoat</li>			<!-- bodyPartGroups: Neck, Shoulder, Torso	| layers: OnSkin -->
 		<li>DankPyon_Apparel_Leather_Tunic</li>		<!-- bodyPartGroups: Neck, Shoulder, Torso	| layers: Middle -->
 		<li>DankPyon_Apparel_Light_Lamellar</li>	<!-- bodyPartGroups: Neck, Shoulder, Torso	| layers: Shell -->
 		<li>DankPyon_Apparel_Trousers</li>			<!-- bodyPartGroups: Legs; 					| layers: OnSkin -->
@@ -82,7 +82,7 @@
 		<li>
 			<bodyPartGroup>Torso</bodyPartGroup>
 			<apparelLayer>OnSkin</apparelLayer>
-			<requiredTag>Dankpyon_Apparel_Gambeson</requiredTag>
+			<requiredTag>DankPyon_Apparel_Padded_Surcoat</requiredTag>
 			<stuff>WoolMegasloth</stuff>
 		</li>
 		<li>
@@ -149,7 +149,7 @@
 	
 	<apparelRequired>
 		<li>DankPyon_Headgear_ChainNasalHelmet</li>	<!-- bodyPartGroups: FullHead				| layers: Overhead -->
-		<li>Dankpyon_Apparel_Gambeson</li>			<!-- bodyPartGroups: Neck, Shoulder, Torso	| layers: OnSkin -->
+		<li>DankPyon_Apparel_Padded_Surcoat</li>			<!-- bodyPartGroups: Neck, Shoulder, Torso	| layers: OnSkin -->
 		<!-- li>DankPyon_Apparel_Hauberk</li-->		<!-- bodyPartGroups: Neck, Shoulder, Torso	| layers: Middle -->
 		<li>DankPyon_Apparel_Heavy_Hauberk</li>		<!-- bodyPartGroups: Neck, Shoulder, Torso, Arms, Legs	| layers: Shell -->
 		<li>DankPyon_Apparel_Trousers</li>			<!-- bodyPartGroups: Legs; 					| layers: OnSkin -->
@@ -170,7 +170,7 @@
 		<li>
 			<bodyPartGroup>Torso</bodyPartGroup>
 			<apparelLayer>OnSkin</apparelLayer>
-			<requiredTag>Dankpyon_Apparel_Gambeson</requiredTag>
+			<requiredTag>DankPyon_Apparel_Padded_Surcoat</requiredTag>
 			<stuff>WoolMegasloth</stuff>
 		</li>
 		<li>
@@ -234,7 +234,7 @@
 	
 	<apparelRequired>
 		<li>DankPyon_Headgear_ChainNasalHelmet</li>	<!-- bodyPartGroups: FullHead				| layers: Overhead -->
-		<li>Dankpyon_Apparel_Gambeson</li>			<!-- bodyPartGroups: Neck, Shoulder, Torso	| layers: OnSkin -->
+		<li>DankPyon_Apparel_Padded_Surcoat</li>			<!-- bodyPartGroups: Neck, Shoulder, Torso	| layers: OnSkin -->
 		<!-- li>DankPyon_Apparel_Hauberk</li-->		<!-- bodyPartGroups: Neck, Shoulder, Torso	| layers: Middle -->
 		<li>DankPyon_Apparel_Heavy_Hauberk</li>		<!-- bodyPartGroups: Neck, Shoulder, Torso, Arms, Legs	| layers: Shell -->
 		<li>DankPyon_Apparel_Trousers</li>			<!-- bodyPartGroups: Legs; 					| layers: OnSkin -->
@@ -255,7 +255,7 @@
 		<li>
 			<bodyPartGroup>Torso</bodyPartGroup>
 			<apparelLayer>OnSkin</apparelLayer>
-			<requiredTag>Dankpyon_Apparel_Gambeson</requiredTag>
+			<requiredTag>DankPyon_Apparel_Padded_Surcoat</requiredTag>
 			<stuff>WoolMegasloth</stuff>
 		</li>
 		<li>
@@ -320,7 +320,7 @@
 		
 	<apparelRequired>
 		<li>DankPyon_Headgear_ClosedBascinetHelmet</li>	<!-- bodyPartGroups: FullHead			| layers: Overhead -->
-		<li>Dankpyon_Apparel_Gambeson</li>			<!-- bodyPartGroups: Neck, Shoulder, Torso	| layers: OnSkin -->
+		<li>DankPyon_Apparel_Padded_Surcoat</li>			<!-- bodyPartGroups: Neck, Shoulder, Torso	| layers: OnSkin -->
 		<li>DankPyon_Apparel_Hauberk</li>			<!-- bodyPartGroups: Neck, Shoulder, Torso	| layers: Middle -->
 		<li>DankPyon_Apparel_Trousers</li>			<!-- bodyPartGroups: Legs; 					| layers: OnSkin -->
 		<li>DankPyon_Apparel_FullPlate</li>			<!-- bodyPartGroups: Neck, Shoulder, Torso, Arms, Legs	| layers: Shell -->
@@ -340,7 +340,7 @@
 		<li>
 			<bodyPartGroup>Torso</bodyPartGroup>
 			<apparelLayer>OnSkin</apparelLayer>
-			<requiredTag>Dankpyon_Apparel_Gambeson</requiredTag>
+			<requiredTag>DankPyon_Apparel_Padded_Surcoat</requiredTag>
 			<stuff>WoolMegasloth</stuff>
 		</li>
 		<li>
@@ -403,7 +403,7 @@
 		
 	<apparelRequired>
 		<li>DankPyon_Headgear_ClosedBascinetHelmet</li>	<!-- bodyPartGroups: FullHead			| layers: Overhead -->
-		<li>Dankpyon_Apparel_Gambeson</li>			<!-- bodyPartGroups: Neck, Shoulder, Torso	| layers: OnSkin -->
+		<li>DankPyon_Apparel_Padded_Surcoat</li>			<!-- bodyPartGroups: Neck, Shoulder, Torso	| layers: OnSkin -->
 		<li>DankPyon_Apparel_Hauberk</li>			<!-- bodyPartGroups: Neck, Shoulder, Torso	| layers: Middle -->
 		<li>DankPyon_Apparel_Trousers</li>			<!-- bodyPartGroups: Legs; 					| layers: OnSkin -->
 		<li>DankPyon_Apparel_FullPlate</li>			<!-- bodyPartGroups: Neck, Shoulder, Torso, Arms, Legs	| layers: Shell -->
@@ -424,7 +424,7 @@
 		<li>
 			<bodyPartGroup>Torso</bodyPartGroup>
 			<apparelLayer>OnSkin</apparelLayer>
-			<requiredTag>Dankpyon_Apparel_Gambeson</requiredTag>
+			<requiredTag>DankPyon_Apparel_Padded_Surcoat</requiredTag>
 			<stuff>WoolMegasloth</stuff>
 		</li>
 		<li>
@@ -496,7 +496,7 @@
 		
 	<apparelRequired>
 		<li>DankPyon_Headgear_ArmetGilded</li>		<!-- bodyPartGroups: FullHead			| layers: Overhead -->
-		<li>Dankpyon_Apparel_Gambeson</li>			<!-- bodyPartGroups: Neck, Shoulder, Torso	| layers: OnSkin -->
+		<li>DankPyon_Apparel_Padded_Surcoat</li>			<!-- bodyPartGroups: Neck, Shoulder, Torso	| layers: OnSkin -->
 		<li>DankPyon_Apparel_Hauberk</li>			<!-- bodyPartGroups: Neck, Shoulder, Torso	| layers: Middle -->
 		<li>DankPyon_Apparel_Trousers</li>			<!-- bodyPartGroups: Legs; 					| layers: OnSkin -->
 		<li>DankPyon_Apparel_FullPlate</li>			<!-- bodyPartGroups: Neck, Shoulder, Torso, Arms, Legs	| layers: Shell -->
@@ -516,7 +516,7 @@
 		<li>
 			<bodyPartGroup>Torso</bodyPartGroup>
 			<apparelLayer>OnSkin</apparelLayer>
-			<requiredTag>Dankpyon_Apparel_Gambeson</requiredTag>
+			<requiredTag>DankPyon_Apparel_Padded_Surcoat</requiredTag>
 			<stuff>WoolMegasloth</stuff>
 		</li>
 		<li>
@@ -575,7 +575,7 @@
 		
 	<apparelRequired>
 		<li>DankPyon_Headgear_ArmetGilded</li>		<!-- bodyPartGroups: FullHead			| layers: Overhead -->
-		<li>Dankpyon_Apparel_Gambeson</li>			<!-- bodyPartGroups: Neck, Shoulder, Torso	| layers: OnSkin -->
+		<li>DankPyon_Apparel_Padded_Surcoat</li>			<!-- bodyPartGroups: Neck, Shoulder, Torso	| layers: OnSkin -->
 		<li>DankPyon_Apparel_Hauberk</li>			<!-- bodyPartGroups: Neck, Shoulder, Torso	| layers: Middle -->
 		<li>DankPyon_Apparel_Trousers</li>			<!-- bodyPartGroups: Legs; 					| layers: OnSkin -->
 		<li>DankPyon_Apparel_FullPlate</li>			<!-- bodyPartGroups: Neck, Shoulder, Torso, Arms, Legs	| layers: Shell -->
@@ -595,7 +595,7 @@
 		<li>
 			<bodyPartGroup>Torso</bodyPartGroup>
 			<apparelLayer>OnSkin</apparelLayer>
-			<requiredTag>Dankpyon_Apparel_Gambeson</requiredTag>
+			<requiredTag>DankPyon_Apparel_Padded_Surcoat</requiredTag>
 			<stuff>WoolMegasloth</stuff>
 		</li>
 		<li>
@@ -655,7 +655,7 @@
 	
 	<apparelRequired>
 		<li>DankPyon_Headgear_ArmetGilded</li>
-		<li>Dankpyon_Apparel_Gambeson</li>
+		<li>DankPyon_Apparel_Padded_Surcoat</li>
 		<li>DankPyon_Apparel_Hauberk</li>
 		<li>DankPyon_Apparel_Trousers</li>			<!-- bodyPartGroups: Legs; 					| layers: OnSkin -->
 		<li>DankPyon_Apparel_FullPlateGilded</li>
@@ -675,7 +675,7 @@
 		<li>
 			<bodyPartGroup>Torso</bodyPartGroup>
 			<apparelLayer>OnSkin</apparelLayer>
-			<requiredTag>Dankpyon_Apparel_Gambeson</requiredTag>
+			<requiredTag>DankPyon_Apparel_Padded_Surcoat</requiredTag>
 			<stuff>WoolMegasloth</stuff>
 		</li>
 		<li>
@@ -739,7 +739,7 @@
 	
 	<apparelRequired>
 		<li>DankPyon_Headgear_ArmetGilded</li>
-		<li>Dankpyon_Apparel_Gambeson</li>
+		<li>DankPyon_Apparel_Padded_Surcoat</li>
 		<li>DankPyon_Apparel_Hauberk</li>
 		<li>DankPyon_Apparel_Trousers</li>			<!-- bodyPartGroups: Legs; 					| layers: OnSkin -->
 		<li>DankPyon_Apparel_FullPlateGilded</li>
@@ -759,7 +759,7 @@
 		<li>
 			<bodyPartGroup>Torso</bodyPartGroup>
 			<apparelLayer>OnSkin</apparelLayer>
-			<requiredTag>Dankpyon_Apparel_Gambeson</requiredTag>
+			<requiredTag>DankPyon_Apparel_Padded_Surcoat</requiredTag>
 			<stuff>WoolMegasloth</stuff>
 		</li>
 		<li>

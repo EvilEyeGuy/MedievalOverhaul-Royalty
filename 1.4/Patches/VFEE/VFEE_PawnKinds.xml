@@ -1,0 +1,173 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Factions Expanded - Empire</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+			
+			<!-- Empire_Common_Laborer -->
+			
+				<li Class="PatchOperationTest">
+					<xpath>Defs/PawnKindDef[defName="Empire_Common_Laborer"]</xpath>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/PawnKindDef[defName="Empire_Common_Laborer"]/styleItemTags</xpath>
+					<match Class="PatchOperationRemove">
+						<xpath>Defs/PawnKindDef[defName="Empire_Common_Laborer"]/styleItemTags</xpath>
+					</match>
+				</li>
+			
+				<li Class="PatchOperationTest">
+					<xpath>Defs/PawnKindDef[defName="Empire_Common_Laborer"]</xpath>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/PawnKindDef[defName="Empire_Common_Laborer"]/apparelTags</xpath>
+					<match Class="PatchOperationRemove">
+						<xpath>Defs/PawnKindDef[defName="Empire_Common_Laborer"]/apparelTags</xpath>
+					</match>
+				</li>	
+
+			<!-- VFEE_Deserter -->
+			
+				<li Class="PatchOperationTest">
+					<xpath>Defs/PawnKindDef[defName="VFEE_Deserter"]</xpath>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/PawnKindDef[defName="VFEE_Deserter"]/apparelRequired</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/PawnKindDef[defName="VFEE_Deserter"]/apparelRequired</xpath>
+						<value>
+							<apparelRequired Inherit="False">
+								<li>DankPyon_Apparel_AdornedWarriorArmor</li>
+								<li>DankPyon_Adorned_FlatTop</li>
+								<li>DankPyon_Apparel_Padded_Surcoat</li>
+								<li>DankPyon_Apparel_Hauberk</li>
+								<li>DankPyon_Apparel_Trousers</li>
+								<li>DankPyon_Handwear_GlovesPlate</li>
+								<li>DankPyon_Footwear_BootsPlate</li>
+							</apparelRequired>
+						</value>
+					</match>
+				</li>	
+			
+				<li Class="PatchOperationTest">
+					<xpath>Defs/PawnKindDef[defName="VFEE_Deserter"]</xpath>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/PawnKindDef[defName="VFEE_Deserter"]/specificApparelRequirements</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/PawnKindDef[defName="VFEE_Deserter"]/specificApparelRequirements</xpath>
+						<value>
+							<specificApparelRequirements Inherit="False">
+								<li>
+									<bodyPartGroup>FullHead</bodyPartGroup>
+									<apparelLayer>Overhead</apparelLayer>
+									<requiredTag>DankPyon_Adorned_FlatTop</requiredTag>
+									<stuff>Uranium</stuff>
+								</li>
+								<!-- Torso -->
+								<li>
+									<bodyPartGroup>Torso</bodyPartGroup>
+									<apparelLayer>OnSkin</apparelLayer>
+									<requiredTag>DankPyon_Apparel_Padded_Surcoat</requiredTag>
+									<stuff>WoolMegasloth</stuff>
+								</li>
+								<li>
+									<bodyPartGroup>Torso</bodyPartGroup>
+									<apparelLayer>Middle</apparelLayer>
+									<requiredTag>DankPyon_Apparel_Hauberk</requiredTag>
+									<stuff>Uranium</stuff>
+								</li>
+								<li>
+									<bodyPartGroup>Torso</bodyPartGroup>
+									<apparelLayer>Shell</apparelLayer>
+									<requiredTag>DankPyon_Apparel_AdornedWarriorArmor</requiredTag>
+									<stuff>Uranium</stuff>
+								</li>
+								<!-- Legs -->
+								<li>
+									<bodyPartGroup>Legs</bodyPartGroup>
+									<apparelLayer>OnSkin</apparelLayer>
+									<requiredTag>DankPyon_Apparel_Trousers</requiredTag>
+									<stuff>WoolMegasloth</stuff>
+								</li>
+								<!-- Hands -->
+								<li>
+									<bodyPartGroup>Hands</bodyPartGroup>
+									<apparelLayer>Middle</apparelLayer>
+									<requiredTag>DankPyon_Handwear_GlovesPlate</requiredTag>
+									<stuff>Uranium</stuff>
+								</li>
+								<!-- Feet -->
+								<li>
+									<bodyPartGroup>Feet</bodyPartGroup>
+									<apparelLayer>Middle</apparelLayer>
+									<requiredTag>DankPyon_Footwear_BootsPlate</requiredTag>
+									<stuff>Uranium</stuff>
+								</li>
+							</specificApparelRequirements>							
+						</value>
+					</match>
+				</li>	
+			
+				<li Class="PatchOperationTest">
+					<xpath>Defs/PawnKindDef[defName="VFEE_Deserter"]</xpath>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/PawnKindDef[defName="VFEE_Deserter"]/weaponTags</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/PawnKindDef[defName="VFEE_Deserter"]/weaponTags</xpath>
+						<value>
+							<weaponTags Inherit="False">
+								<li>DankPyon_Arbelest</li>
+								<li>DankPyon_Greatsword</li>
+								<li>DankPyon_TwoHandedHammer</li>
+								<li>DankPyon_TwoHandedMace</li>	  
+							</weaponTags>
+						</value>
+					</match>
+				</li>	
+			
+				<li Class="PatchOperationTest">
+					<xpath>Defs/PawnKindDef[defName="VFEE_Deserter"]</xpath>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/PawnKindDef[defName="VFEE_Deserter"]/skills</xpath>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/PawnKindDef[defName="VFEE_Deserter"]</xpath>
+						<value>
+							<skills Inherit="False">
+							  <li>
+								<skill>Melee</skill>
+								<range>11~16</range>
+							  </li>	 
+							  <li>
+								<skill>Shooting</skill>
+								<range>11~16</range>
+							  </li>	  
+							</skills>
+						</value>
+					</nomatch>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/PawnKindDef[defName="VFEE_Deserter"]/skills</xpath>
+						<value>
+							<skills Inherit="False">
+							  <li>
+								<skill>Melee</skill>
+								<range>11~16</range>
+							  </li>	 
+							  <li>
+								<skill>Shooting</skill>
+								<range>11~16</range>
+							  </li>	  
+							</skills>
+						</value>
+					</match>
+				</li>			
+				
+			</operations>
+		</match>
+	</Operation>	
+</Patch>

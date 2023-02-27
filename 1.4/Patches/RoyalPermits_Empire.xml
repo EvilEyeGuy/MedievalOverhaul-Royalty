@@ -195,22 +195,59 @@
 				</li>
 				
 				<li Class="PatchOperationReplace">
+					<xpath>Defs/RoyalTitlePermitDef[defName="VFEI_HerbalMedDrop"]/description</xpath>
+					<value>
+						<description>Call for a drop of 25 herbal medicine.</description>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/RoyalTitlePermitDef[defName="VFEI_HerbalMedDrop"]/royalAid/itemsToDrop</xpath>
+					<value>
+						<itemsToDrop>
+							<MedicineHerbal>25</MedicineHerbal>
+						</itemsToDrop>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
 					<xpath>Defs/RoyalTitlePermitDef[defName="VFEI_MedDrop"]/label</xpath>
 					<value>
-						<label>large herbal med drop</label>
+						<label>herbal med drop</label>
 					</value>
 				</li>
 				<li Class="PatchOperationReplace">
 					<xpath>Defs/RoyalTitlePermitDef[defName="VFEI_MedDrop"]/description</xpath>
 					<value>
-						<description>Call for a drop of 80 herbal medicine.</description>
+						<description>Call for a drop of 50 herbal medicine.</description>
 					</value>
-				</li>
+				</li>				
 				<li Class="PatchOperationReplace">
 					<xpath>Defs/RoyalTitlePermitDef[defName="VFEI_MedDrop"]/royalAid/itemsToDrop</xpath>
 					<value>
 						<itemsToDrop>
-							<MedicineHerbal>80</MedicineHerbal>
+							<MedicineHerbal>50</MedicineHerbal>
+						</itemsToDrop>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/RoyalTitlePermitDef[defName="GlitterMedDrop"]/label</xpath>
+					<value>
+						<label>large herbal med drop</label>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/RoyalTitlePermitDef[defName="GlitterMedDrop"]/description</xpath>
+					<value>
+						<description>Call for a drop of 100 herbal medicine.</description>
+					</value>
+				</li>				
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/RoyalTitlePermitDef[defName="GlitterMedDrop"]/royalAid/itemsToDrop</xpath>
+					<value>
+						<itemsToDrop>
+							<MedicineHerbal>100</MedicineHerbal>
 						</itemsToDrop>
 					</value>
 				</li>
@@ -258,19 +295,19 @@
 				</li>
 				
 				<li Class="PatchOperationReplace">
-					<xpath>Defs/RoyalTitlePermitDef[defName="VFEI_ComponentDrop"]/label</xpath>
+					<xpath>Defs/RoyalTitlePermitDef[defName="VFEI_ComponentSpacerDrop"]/label</xpath>
 					<value>
 						<label>large basic components drop</label>
 					</value>
 				</li>
 				<li Class="PatchOperationReplace">
-					<xpath>Defs/RoyalTitlePermitDef[defName="VFEI_ComponentDrop"]/description</xpath>
+					<xpath>Defs/RoyalTitlePermitDef[defName="VFEI_ComponentSpacerDrop"]/description</xpath>
 					<value>
 						<description>Call for a drop of 30 basic components.</description>
 					</value>
 				</li>
 				<li Class="PatchOperationReplace">
-					<xpath>Defs/RoyalTitlePermitDef[defName="VFEI_ComponentDrop"]/royalAid/itemsToDrop</xpath>
+					<xpath>Defs/RoyalTitlePermitDef[defName="VFEI_ComponentSpacerDrop"]/royalAid/itemsToDrop</xpath>
 					<value>
 						<itemsToDrop>
 							<DankPyon_ComponentBasic>30</DankPyon_ComponentBasic>
@@ -409,6 +446,18 @@
 				
 				<li Class="PatchOperationRemove">
 					<xpath>Defs/RoyalTitlePermitDef[defName="VFEI_StrikerTurretDrop"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/RoyalTitlePermitDef[defName="VFEI_CallOrbitalSlicingBeam"]</xpath>
+				</li>
+								
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/RoyalTitlePermitDef[defName="CallOrbitalStrike"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/RoyalTitlePermitDef[defName="CallOrbitalSalvo"]</xpath>
 				</li>
 				
 				

@@ -85,7 +85,7 @@
   <thing>DankPyon_Lootable_ArmorStatueNamed</thing>
 </KCSG.SymbolDef>
 
-<KCSG.SymbolDef>
+<!--KCSG.SymbolDef>
   <defName>Accurex_LootableChest_RusticChest_WoodLog_North</defName>
   <thing>Accurex_LootableChest_RusticChest</thing>
   <stuff>WoodLog</stuff>
@@ -95,7 +95,8 @@
   <defName>Accurex_LootableChest_RoyalChest_North</defName>
   <thing>Accurex_LootableChest_RoyalChest</thing>
   <rotation>North</rotation>
-</KCSG.SymbolDef>
+</KCSG.SymbolDef-->
+
 <KCSG.SymbolDef>
   <defName>Lootable_ShelfFilledWine_WoodLog_South</defName>
   <thing>Lootable_ShelfFilledWine</thing>

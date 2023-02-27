@@ -10,7 +10,7 @@
 		
 	<apparelRequired>
 		<li>Apparel_EltexSkullcap</li>
-		<li>Dankpyon_Apparel_Gambeson</li>
+		<li>DankPyon_Apparel_Padded_Surcoat</li>
 		<li>DankPyon_Apparel_Leather_Tunic</li>
 		<li>DankPyon_Apparel_Trousers</li>
 		<li>Apparel_Cape</li>
@@ -24,7 +24,7 @@
 		<li>
 			<bodyPartGroup>Torso</bodyPartGroup>
 			<apparelLayer>OnSkin</apparelLayer>
-			<requiredTag>Dankpyon_Apparel_Gambeson</requiredTag>
+			<requiredTag>DankPyon_Apparel_Padded_Surcoat</requiredTag>
 			<stuff>WoolMegasloth</stuff>
 		</li>
 		<li>

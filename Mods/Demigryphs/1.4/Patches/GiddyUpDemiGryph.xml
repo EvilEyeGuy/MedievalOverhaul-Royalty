@@ -18,7 +18,7 @@
           </value>
         </li-->
 
-        <li Class="PatchOperationAddModExtension">
+        <!--li Class="PatchOperationAddModExtension">
           <xpath>Defs/PawnKindDef[defName="Accurex_Medieval_Empire_Cavalry"]</xpath>
           <value>
             <li Class="GiddyUpCore.CustomMountsPatch">
@@ -31,7 +31,7 @@
               </possibleMounts>
             </li>
           </value>
-        </li>
+        </li-->
 
       </operations>
   </Operation>

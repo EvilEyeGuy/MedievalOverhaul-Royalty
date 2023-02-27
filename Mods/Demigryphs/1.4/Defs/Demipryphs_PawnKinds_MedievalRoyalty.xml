@@ -12,7 +12,7 @@
 		
 	<apparelRequired>
 		<li>pphhyy_Human_DemigyryphGildedHelm</li>
-		<li>Dankpyon_Apparel_Gambeson</li>
+		<li>DankPyon_Apparel_Padded_Surcoat</li>
 		<li>DankPyon_Apparel_Hauberk</li>
 		<li>DankPyon_Apparel_Trousers</li>
 		<li>DankPyon_Apparel_FullPlate</li>
@@ -32,7 +32,7 @@
 		<li>
 			<bodyPartGroup>Torso</bodyPartGroup>
 			<apparelLayer>OnSkin</apparelLayer>
-			<requiredTag>Dankpyon_Apparel_Gambeson</requiredTag>
+			<requiredTag>DankPyon_Apparel_Padded_Surcoat</requiredTag>
 			<stuff>WoolMegasloth</stuff>
 		</li>
 		<li>
