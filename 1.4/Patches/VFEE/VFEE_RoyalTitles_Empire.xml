@@ -6,7 +6,9 @@
 		</mods>
 		<match Class="PatchOperationSequence">
 			<operations>
-
+			
+			<!-- Bedroom -->
+			
 				<li Class="PatchOperationReplace">
 					<xpath>Defs/RoyalTitleDef[defName="Acolyte"]/bedroomRequirements</xpath>
 					<value>
@@ -236,6 +238,15 @@
 								</things>
 								<count>1</count>
 							</li>
+							<li Class="RoomRequirement_ThingAnyOfCount">
+								<things>
+									<li>DankPyon_CandleStand</li>
+									<li>DankPyon_CandleStand_Beeswax</li>
+									<li>DankPyon_Candles</li>
+									<li>DankPyon_Candles_Beeswax</li>
+								</things>
+								<count>1</count>
+							</li>
 						</bedroomRequirements>
 					</value>
 				</li>
@@ -315,6 +326,15 @@
 									<li>DankPyon_RusticTable2x2c</li>
 									<li>DankPyon_ReinforcedRusticTable2x2c</li>
 									<li>DankPyon_RoyalTable2x2c</li>
+								</things>
+								<count>1</count>
+							</li>
+							<li Class="RoomRequirement_ThingAnyOfCount">
+								<things>
+									<li>DankPyon_CandleStand</li>
+									<li>DankPyon_CandleStand_Beeswax</li>
+									<li>DankPyon_Candles</li>
+									<li>DankPyon_Candles_Beeswax</li>
 								</things>
 								<count>1</count>
 							</li>
@@ -407,6 +427,15 @@
 								</things>
 								<count>1</count>
 							</li>
+							<li Class="RoomRequirement_ThingAnyOfCount">
+								<things>
+									<li>DankPyon_CandleStand</li>
+									<li>DankPyon_CandleStand_Beeswax</li>
+									<li>DankPyon_Candles</li>
+									<li>DankPyon_Candles_Beeswax</li>
+								</things>
+								<count>1</count>
+							</li>
 						</bedroomRequirements>
 					</value>
 				</li>
@@ -502,120 +531,10 @@
 								</things>
 								<count>1</count>
 							</li>
-						</bedroomRequirements>
-					</value>
-				</li>
-			
-			
-			
-			
-			
-			<!-- VFEE_HighStellarch -->
-				
-				<li Class="PatchOperationReplace">
-					<xpath>Defs/RoyalTitleDef[defName="VFEE_HighStellarch"]/description</xpath>
-					<value>
-						<description>The noble title of High Stellarch symbolizes the authority over vast stretches of land and holdings, and the stewardship of one of the greatest houses in the empire. Their allegiance is only to the emperor, and they are tasked with not only preserving but also expanding their influence and power throughout the realm. Only a select few are deemed worthy of such a title, and even fewer are willing to accept the heavy burden of responsibilities that come with it.</description>					
-					</value>
-				</li>
-<!--				
-				<li Class="PatchOperationReplace">
-					<xpath>Defs/RoyalTitleDef[defName="VFEE_HighStellarch"]/bedroomRequirements</xpath>
-					<value>
-						<bedroomRequirements Inherit="False">
-							<li Class="RoomRequirement_Area">
-								<area>69</area>
-							</li>
-							<li Class="RoomRequirement_Impressiveness">
-								<impressiveness>165</impressiveness>
-							</li>
-							<li Class="RoomRequirement_TerrainWithTags">
-								<labelKey>RoomRequirementAllFloored</labelKey>
-								<tags>
-									<li>Floor</li>
-								</tags>
-							</li>
-							<li Class="RoomRequirement_ThingAnyOf">
-								<disablingPrecepts>
-									<li MayRequire="Ludeon.RimWorld.Ideology">SlabBed_Preferred</li>
-								</disablingPrecepts>
-								<things>
-									<li>DankPyon_RoyalTudorBed</li>
-									<li MayRequire="Ludeon.RimWorld.Biotech">DeathrestCasket</li>
-								</things>
-							</li>
-							<li Class="RoomRequirement_Thing">
-								<thingDef>DankPyon_RoyalEndTable</thingDef>
-							</li>
-							<li Class="RoomRequirement_ThingCount">
-								<thingDef>DankPyon_RoyalDresser</thingDef>
-								<count>3</count>
-							</li>	
-							<li Class="RoomRequirement_Thing">
-								<thingDef>DankPyon_RoyalCloset</thingDef>
-							</li>		
-							<li Class="RoomRequirement_Thing">
-								<thingDef>DankPyon_RoyalChest</thingDef>
-							</li>
-							<li Class="RoomRequirement_ThingCount">
-								<thingDef>DankPyon_RoyalBookshelf</thingDef>
-								<count>2</count>
-							</li>	
-							<li Class="RoomRequirement_Thing">
-								<thingDef>VFEE_RoyalMirror</thingDef>
-							</li>
-							<li Class="RoomRequirement_ThingCount">
-								<thingDef>DankPyon_RoyalArmchair</thingDef>
-								<count>4</count>
-							</li>
-							<li Class="RoomRequirement_Thing">
-								<thingDef>DankPyon_RoyalTable2x2c</thingDef>
-							</li>
-							<li Class="RoomRequirement_Thing">
-								<thingDef>DankPyon_RusticHearth</thingDef>
-							</li>
-							<li Class="RoomRequirement_Thing">
-								<thingDef>DankPyon_ArmorStatue</thingDef>
-							</li>
-							<li Class="RoomRequirement_Thing">
-								<thingDef>DankPyon_ShelfFilledGoldware</thingDef>
-							</li>		
-							<li Class="RoomRequirement_Thing">
-								<thingDef>DankPyon_RugDaer4x4c</thingDef>
-							</li>	
-							<li Class="RoomRequirement_ThingAnyOf">
-								<things>
-									<li>DankPyon_RugHyena2x2c</li>
-									<li>DankPyon_RugWolfTimber2x2c</li>
-									<li>DankPyon_RugWolfArctic2x2c</li>
-									<li>DankPyon_RugCougar2x2c</li>
-									<li>DankPyon_RugPanther2x2c</li>
-									<li>DankPyon_RugHuman1x2c</li>
-								</things>
-							</li>
-							<li Class="RoomRequirement_ThingAnyOfCount">
-								<things>
-									<li>DankPyon_Building_SkullGold</li>
-									<li>DankPyon_Building_SkullEmerald</li>
-									<li>DankPyon_Building_SkullSapphire</li>
-									<li>DankPyon_Building_SkullRuby</li>
-									<li>DankPyon_Building_AncientCodex</li>
-									<li>DankPyon_Building_BowlSilver</li>
-									<li>DankPyon_Building_BowlGold</li>
-									<li>DankPyon_Building_ChaliceSilver</li>
-									<li>DankPyon_Building_ChaliceGold</li>
-								</things>
-								<count>2</count>
-							</li>
 							<li Class="RoomRequirement_ThingAnyOfCount">
 								<things>
 									<li>DankPyon_CandleStand</li>
 									<li>DankPyon_CandleStand_Beeswax</li>
-								</things>
-								<count>4</count>
-							</li>
-							<li Class="RoomRequirement_ThingAnyOfCount">
-								<things>
 									<li>DankPyon_Candles</li>
 									<li>DankPyon_Candles_Beeswax</li>
 								</things>
@@ -625,950 +544,12 @@
 					</value>
 				</li>
 
-				<li Class="PatchOperationAdd">
-					<xpath>Defs/RoyalTitleDef[defName="VFEE_HighStellarch"]/foodRequirement/allowedDefs</xpath>
-					<value>
-						<li>DankPyon_Wine</li>
-						<li>DankPyon_Wine_Mulberry</li>
-						
-						<li>DankPyon_Ale</li>
-						<li>DankPyon_Cider</li>
-						<li>DankPyon_Mead</li>
-						
-						<li>DankPyon_JuiceApple</li>
-						<li>DankPyon_Honey</li>
-					</value>
-				</li>
--->
-			
-			<!-- Stellarch -->
-				<!--
-				<li Class="PatchOperationReplace">
-					<xpath>Defs/RoyalTitleDef[defName="Stellarch"]/description</xpath>
-					<value>
-						<description>The noble title of Stellarch represents the governance of a sizable territory within the empire, with significant political and economic influence. They are responsible for the welfare of their people and the preservation of their lands, as well as for maintaining a strong military presence to protect against external threats. To be granted this title is a great honor, but it comes with great responsibility and the expectation of unwavering loyalty to the emperor.</description>
-					</value>
-				</li>
-				
-				<li Class="PatchOperationTest">
-					<xpath>Defs/RoyalTitleDef[defName="Stellarch"]</xpath>
-				</li>
-				<li Class="PatchOperationConditional">
-					<xpath>Defs/RoyalTitleDef[defName="Stellarch"]/bedroomRequirements</xpath>
-						<match Class="PatchOperationReplace">
-						<xpath>Defs/RoyalTitleDef[defName="Stellarch"]/bedroomRequirements</xpath>
-						<value>
-							<bedroomRequirements Inherit="False">
-								<li Class="RoomRequirement_Area">
-									<area>69</area>
-								</li>
-								<li Class="RoomRequirement_Impressiveness">
-									<impressiveness>165</impressiveness>
-								</li>
-								<li Class="RoomRequirement_TerrainWithTags">
-									<labelKey>RoomRequirementAllFloored</labelKey>
-									<tags>
-										<li>Floor</li>
-									</tags>
-								</li>
-								<li Class="RoomRequirement_ThingAnyOf">
-									<disablingPrecepts>
-										<li MayRequire="Ludeon.RimWorld.Ideology">SlabBed_Preferred</li>
-									</disablingPrecepts>
-									<things>
-										<li>DankPyon_RoyalTudorBed</li>
-										<li MayRequire="Ludeon.RimWorld.Biotech">DeathrestCasket</li>
-									</things>
-								</li>
-								<li Class="RoomRequirement_Thing">
-									<thingDef>DankPyon_RoyalEndTable</thingDef>
-								</li>
-								<li Class="RoomRequirement_ThingCount">
-									<thingDef>DankPyon_RoyalDresser</thingDef>
-									<count>2</count>
-								</li>	
-								<li Class="RoomRequirement_Thing">
-									<thingDef>DankPyon_RoyalCloset</thingDef>
-								</li>		
-								<li Class="RoomRequirement_Thing">
-									<thingDef>DankPyon_RoyalChest</thingDef>
-								</li>
-								<li Class="RoomRequirement_ThingCount">
-									<thingDef>DankPyon_RoyalBookshelf</thingDef>
-									<count>2</count>
-								</li>	
-								<li Class="RoomRequirement_Thing">
-									<thingDef>VFEE_RoyalMirror</thingDef>
-								</li>
-								<li Class="RoomRequirement_ThingCount">
-									<thingDef>DankPyon_RoyalArmchair</thingDef>
-									<count>4</count>
-								</li>
-								<li Class="RoomRequirement_Thing">
-									<thingDef>DankPyon_RoyalTable2x2c</thingDef>
-								</li>
-								<li Class="RoomRequirement_Thing">
-									<thingDef>DankPyon_RusticHearth</thingDef>
-								</li>
-								<li Class="RoomRequirement_Thing">
-									<thingDef>DankPyon_ArmorStatue</thingDef>
-								</li>
-								<li Class="RoomRequirement_Thing">
-									<thingDef>DankPyon_ShelfFilledGoldware</thingDef>
-								</li>		
-								<li Class="RoomRequirement_Thing">
-									<thingDef>DankPyon_RugDaer4x4c</thingDef>
-								</li>	
-								<li Class="RoomRequirement_ThingAnyOf">
-									<things>
-										<li>DankPyon_RugHyena2x2c</li>
-										<li>DankPyon_RugWolfTimber2x2c</li>
-										<li>DankPyon_RugWolfArctic2x2c</li>
-										<li>DankPyon_RugCougar2x2c</li>
-										<li>DankPyon_RugPanther2x2c</li>
-										<li>DankPyon_RugHuman1x2c</li>
-									</things>
-								</li>
-								<li Class="RoomRequirement_ThingAnyOfCount">
-									<things>
-										<li>DankPyon_Building_SkullGold</li>
-										<li>DankPyon_Building_SkullEmerald</li>
-										<li>DankPyon_Building_SkullSapphire</li>
-										<li>DankPyon_Building_SkullRuby</li>
-										<li>DankPyon_Building_AncientCodex</li>
-										<li>DankPyon_Building_BowlSilver</li>
-										<li>DankPyon_Building_BowlGold</li>
-										<li>DankPyon_Building_ChaliceSilver</li>
-										<li>DankPyon_Building_ChaliceGold</li>
-									</things>
-									<count>2</count>
-								</li>
-								<li Class="RoomRequirement_ThingAnyOfCount">
-									<things>
-										<li>DankPyon_CandleStand</li>
-										<li>DankPyon_CandleStand_Beeswax</li>
-									</things>
-									<count>4</count>
-								</li>
-								<li Class="RoomRequirement_ThingAnyOfCount">
-									<things>
-										<li>DankPyon_Candles</li>
-										<li>DankPyon_Candles_Beeswax</li>
-									</things>
-									<count>2</count>
-								</li>
-							</bedroomRequirements>
-						</value>
-					</match>	
-					<nomatch Class="PatchOperationAdd">
-						<xpath>Defs/RoyalTitleDef[defName="Stellarch"]</xpath>
-						<value>
-							<bedroomRequirements Inherit="False">
-								<li Class="RoomRequirement_Area">
-									<area>69</area>
-								</li>
-								<li Class="RoomRequirement_Impressiveness">
-									<impressiveness>165</impressiveness>
-								</li>
-								<li Class="RoomRequirement_TerrainWithTags">
-									<labelKey>RoomRequirementAllFloored</labelKey>
-									<tags>
-										<li>Floor</li>
-									</tags>
-								</li>
-								<li Class="RoomRequirement_ThingAnyOf">
-									<disablingPrecepts>
-										<li MayRequire="Ludeon.RimWorld.Ideology">SlabBed_Preferred</li>
-									</disablingPrecepts>
-									<things>
-										<li>DankPyon_RoyalTudorBed</li>
-										<li MayRequire="Ludeon.RimWorld.Biotech">DeathrestCasket</li>
-									</things>
-								</li>
-								<li Class="RoomRequirement_Thing">
-									<thingDef>DankPyon_RoyalEndTable</thingDef>
-								</li>
-								<li Class="RoomRequirement_ThingCount">
-									<thingDef>DankPyon_RoyalDresser</thingDef>
-									<count>2</count>
-								</li>	
-								<li Class="RoomRequirement_Thing">
-									<thingDef>DankPyon_RoyalCloset</thingDef>
-								</li>		
-								<li Class="RoomRequirement_Thing">
-									<thingDef>DankPyon_RoyalChest</thingDef>
-								</li>
-								<li Class="RoomRequirement_ThingCount">
-									<thingDef>DankPyon_RoyalBookshelf</thingDef>
-									<count>2</count>
-								</li>	
-								<li Class="RoomRequirement_Thing">
-									<thingDef>VFEE_RoyalMirror</thingDef>
-								</li>
-								<li Class="RoomRequirement_ThingCount">
-									<thingDef>DankPyon_RoyalArmchair</thingDef>
-									<count>4</count>
-								</li>
-								<li Class="RoomRequirement_Thing">
-									<thingDef>DankPyon_RoyalTable2x2c</thingDef>
-								</li>
-								<li Class="RoomRequirement_Thing">
-									<thingDef>DankPyon_RusticHearth</thingDef>
-								</li>
-								<li Class="RoomRequirement_Thing">
-									<thingDef>DankPyon_ArmorStatue</thingDef>
-								</li>
-								<li Class="RoomRequirement_Thing">
-									<thingDef>DankPyon_ShelfFilledGoldware</thingDef>
-								</li>		
-								<li Class="RoomRequirement_Thing">
-									<thingDef>DankPyon_RugDaer4x4c</thingDef>
-								</li>	
-								<li Class="RoomRequirement_ThingAnyOf">
-									<things>
-										<li>DankPyon_RugHyena2x2c</li>
-										<li>DankPyon_RugWolfTimber2x2c</li>
-										<li>DankPyon_RugWolfArctic2x2c</li>
-										<li>DankPyon_RugCougar2x2c</li>
-										<li>DankPyon_RugPanther2x2c</li>
-										<li>DankPyon_RugHuman1x2c</li>
-									</things>
-								</li>
-								<li Class="RoomRequirement_ThingAnyOfCount">
-									<things>
-										<li>DankPyon_Building_SkullGold</li>
-										<li>DankPyon_Building_SkullEmerald</li>
-										<li>DankPyon_Building_SkullSapphire</li>
-										<li>DankPyon_Building_SkullRuby</li>
-										<li>DankPyon_Building_AncientCodex</li>
-										<li>DankPyon_Building_BowlSilver</li>
-										<li>DankPyon_Building_BowlGold</li>
-										<li>DankPyon_Building_ChaliceSilver</li>
-										<li>DankPyon_Building_ChaliceGold</li>
-									</things>
-									<count>2</count>
-								</li>
-								<li Class="RoomRequirement_ThingAnyOfCount">
-									<things>
-										<li>DankPyon_CandleStand</li>
-										<li>DankPyon_CandleStand_Beeswax</li>
-									</things>
-									<count>4</count>
-								</li>
-								<li Class="RoomRequirement_ThingAnyOfCount">
-									<things>
-										<li>DankPyon_Candles</li>
-										<li>DankPyon_Candles_Beeswax</li>
-									</things>
-									<count>2</count>
-								</li>
-							</bedroomRequirements>
-						</value>
-					</nomatch>						
-				</li>
-
-				<li Class="PatchOperationAdd">
-					<xpath>Defs/RoyalTitleDef[defName="Stellarch"]/foodRequirement/allowedDefs</xpath>
-					<value>
-						<li>DankPyon_Wine</li>
-						<li>DankPyon_Wine_Mulberry</li>
-						
-						<li>DankPyon_Ale</li>
-						<li>DankPyon_Cider</li>
-						<li>DankPyon_Mead</li>
-						
-						<li>DankPyon_JuiceApple</li>
-						<li>DankPyon_Honey</li>
-					</value>
-				</li>
-				
-
-				
-				<li Class="PatchOperationReplace">
-					<xpath>Defs/RoyalTitleDef[defName="VFEE_Despot"]/description</xpath>
-					<value>
-						<description>The noble title of Despot signifies dominion over a strategically significant region within the empire. Despots are tasked with maintaining a tight grip over the region to ensure the steady flow of resources and wealth to the empire's coffers and factories. The Despot's major House holds important administrative positions throughout the system of governance, allowing them to wield considerable power and influence. Though despised by many for their ruthless tactics, despots are seen as essential to the empire's stability and expansion.</description>
-					</value>
-				</li>
-				<li Class="PatchOperationReplace">
-					<xpath>Defs/RoyalTitleDef[defName="VFEE_Despot"]/bedroomRequirements</xpath>
-					<value>
-						<bedroomRequirements Inherit="False">
-							<li Class="RoomRequirement_Area">
-								<area>64</area>
-							</li>
-							<li Class="RoomRequirement_Impressiveness">
-								<impressiveness>140</impressiveness>
-							</li>
-							<li Class="RoomRequirement_TerrainWithTags">
-								<labelKey>RoomRequirementAllFloored</labelKey>
-								<tags>
-									<li>Floor</li>
-								</tags>
-							</li>
-							<li Class="RoomRequirement_ThingAnyOf">
-								<disablingPrecepts>
-									<li MayRequire="Ludeon.RimWorld.Ideology">SlabBed_Preferred</li>
-								</disablingPrecepts>
-								<things>
-									<li>DankPyon_RoyalTudorBed</li>
-									<li MayRequire="Ludeon.RimWorld.Biotech">DeathrestCasket</li>
-								</things>
-							</li>
-							<li Class="RoomRequirement_Thing">
-								<thingDef>DankPyon_RoyalEndTable</thingDef>
-							</li>
-							<li Class="RoomRequirement_ThingCount">
-								<thingDef>DankPyon_RoyalDresser</thingDef>
-								<count>2</count>
-							</li>	
-							<li Class="RoomRequirement_Thing">
-								<thingDef>DankPyon_RoyalCloset</thingDef>
-							</li>		
-							<li Class="RoomRequirement_Thing">
-								<thingDef>DankPyon_RoyalChest</thingDef>
-							</li>
-							<li Class="RoomRequirement_ThingCount">
-								<thingDef>DankPyon_RoyalBookshelf</thingDef>
-								<count>1</count>
-							</li>	
-							<li Class="RoomRequirement_Thing">
-								<thingDef>DankPyon_RusticBookshelf</thingDef>
-							</li>
-							<li Class="RoomRequirement_Thing">
-								<thingDef>VFEE_RoyalMirror</thingDef>
-							</li>
-							<li Class="RoomRequirement_ThingCount">
-								<thingDef>DankPyon_RoyalArmchair</thingDef>
-								<count>2</count>
-							</li>
-							<li Class="RoomRequirement_Thing">
-								<thingDef>DankPyon_RoyalTable2x2c</thingDef>
-							</li>
-							<li Class="RoomRequirement_Thing">
-								<thingDef>DankPyon_RusticHearth</thingDef>
-							</li>
-							<li Class="RoomRequirement_Thing">
-								<thingDef>DankPyon_ArmorStatue</thingDef>
-							</li>
-							<li Class="RoomRequirement_Thing">
-								<thingDef>DankPyon_ShelfFilledGoldware</thingDef>
-							</li>
-							<li Class="RoomRequirement_ThingAnyOf">
-								<things>
-									<li>DankPyon_RugHyena2x2c</li>
-									<li>DankPyon_RugWolfTimber2x2c</li>
-									<li>DankPyon_RugWolfArctic2x2c</li>
-									<li>DankPyon_RugCougar2x2c</li>
-									<li>DankPyon_RugPanther2x2c</li>
-									<li>DankPyon_RugHuman1x2c</li>
-								</things>
-							</li>
-							<li Class="RoomRequirement_ThingAnyOfCount">
-								<things>
-									<li>DankPyon_Building_SkullGold</li>
-									<li>DankPyon_Building_SkullEmerald</li>
-									<li>DankPyon_Building_SkullSapphire</li>
-									<li>DankPyon_Building_SkullRuby</li>
-									<li>DankPyon_Building_AncientCodex</li>
-									<li>DankPyon_Building_BowlSilver</li>
-									<li>DankPyon_Building_BowlGold</li>
-									<li>DankPyon_Building_ChaliceSilver</li>
-									<li>DankPyon_Building_ChaliceGold</li>
-								</things>
-								<count>1</count>
-							</li>
-							<li Class="RoomRequirement_ThingAnyOfCount">
-								<things>
-									<li>DankPyon_CandleStand</li>
-									<li>DankPyon_CandleStand_Beeswax</li>
-								</things>
-								<count>4</count>
-							</li>
-							<li Class="RoomRequirement_ThingAnyOfCount">
-								<things>
-									<li>DankPyon_Candles</li>
-									<li>DankPyon_Candles_Beeswax</li>
-								</things>
-								<count>2</count>
-							</li>
-						</bedroomRequirements>
-					</value>
-				</li>
-
-				<li Class="PatchOperationAdd">
-					<xpath>Defs/RoyalTitleDef[defName="VFEE_Despot"]/foodRequirement/allowedDefs</xpath>
-					<value>
-						<li>DankPyon_Wine</li>
-						<li>DankPyon_Wine_Mulberry</li>
-						
-						<li>DankPyon_Ale</li>
-						<li>DankPyon_Cider</li>
-						<li>DankPyon_Mead</li>
-						
-						<li>DankPyon_JuiceApple</li>
-						<li>DankPyon_Honey</li>
-					</value>
-				</li>
-				
-
-				
-				<li Class="PatchOperationReplace">
-					<xpath>Defs/RoyalTitleDef[defName="VFEE_Magister"]/description</xpath>
-					<value>
-						<description>The noble title of Magister represents a significant rank within the high nobility of the empire, serving as a crucial link between the military and the civilian leadership. Magisters are responsible for coordinating and overseeing the vast military capabilities of the empire, both in times of peace and war, while also serving as a representative of the emperor on the battlefield. This requires not only exceptional tactical skill but also great diplomatic finesse to manage the complex interplay between various factions within the empire. Only those who have proven themselves in both battle and politics are deemed worthy of this esteemed title.</description>
-					</value>
-				</li>
-				<li Class="PatchOperationReplace">
-					<xpath>Defs/RoyalTitleDef[defName="VFEE_Magister"]/bedroomRequirements</xpath>
-					<value>
-						<bedroomRequirements Inherit="False">
-							<li Class="RoomRequirement_Area">
-								<area>59</area>
-							</li>
-							<li Class="RoomRequirement_Impressiveness">
-								<impressiveness>130</impressiveness>
-							</li>
-							<li Class="RoomRequirement_TerrainWithTags">
-								<labelKey>RoomRequirementAllFloored</labelKey>
-								<tags>
-									<li>Floor</li>
-								</tags>
-							</li>
-							<li Class="RoomRequirement_ThingAnyOf">
-								<disablingPrecepts>
-									<li MayRequire="Ludeon.RimWorld.Ideology">SlabBed_Preferred</li>
-								</disablingPrecepts>
-								<things>
-									<li>DankPyon_RoyalTudorBed</li>
-									<li MayRequire="Ludeon.RimWorld.Biotech">DeathrestCasket</li>
-								</things>
-							</li>
-							<li Class="RoomRequirement_Thing">
-								<thingDef>DankPyon_RoyalEndTable</thingDef>
-							</li>
-							<li Class="RoomRequirement_ThingCount">
-								<thingDef>DankPyon_RoyalDresser</thingDef>
-								<count>2</count>
-							</li>	
-							<li Class="RoomRequirement_Thing">
-								<thingDef>DankPyon_RoyalCloset</thingDef>
-							</li>		
-							<li Class="RoomRequirement_Thing">
-								<thingDef>DankPyon_RoyalChest</thingDef>
-							</li>
-							<li Class="RoomRequirement_ThingCount">
-								<thingDef>DankPyon_RoyalBookshelf</thingDef>
-								<count>1</count>
-							</li>
-							<li Class="RoomRequirement_Thing">
-								<thingDef>DankPyon_RusticBookshelf</thingDef>
-							</li>
-							<li Class="RoomRequirement_ThingCount">
-								<thingDef>DankPyon_RoyalArmchair</thingDef>
-								<count>2</count>
-							</li>
-							<li Class="RoomRequirement_Thing">
-								<thingDef>DankPyon_RoyalTable2x2c</thingDef>
-							</li>
-							<li Class="RoomRequirement_Thing">
-								<thingDef>DankPyon_RusticHearth</thingDef>
-							</li>
-							<li Class="RoomRequirement_ThingAnyOf">
-								<things>
-									<li>DankPyon_RugHyena2x2c</li>
-									<li>DankPyon_RugWolfTimber2x2c</li>
-									<li>DankPyon_RugWolfArctic2x2c</li>
-									<li>DankPyon_RugCougar2x2c</li>
-									<li>DankPyon_RugPanther2x2c</li>
-									<li>DankPyon_RugHuman1x2c</li>
-								</things>
-							</li>
-							<li Class="RoomRequirement_ThingAnyOfCount">
-								<things>
-									<li>DankPyon_Building_SkullGold</li>
-									<li>DankPyon_Building_SkullEmerald</li>
-									<li>DankPyon_Building_SkullSapphire</li>
-									<li>DankPyon_Building_SkullRuby</li>
-									<li>DankPyon_Building_AncientCodex</li>
-									<li>DankPyon_Building_BowlSilver</li>
-									<li>DankPyon_Building_BowlGold</li>
-									<li>DankPyon_Building_ChaliceSilver</li>
-									<li>DankPyon_Building_ChaliceGold</li>
-								</things>
-								<count>1</count>
-							</li>
-							<li Class="RoomRequirement_ThingAnyOfCount">
-								<things>
-									<li>DankPyon_CandleStand</li>
-									<li>DankPyon_CandleStand_Beeswax</li>
-								</things>
-								<count>2</count>
-							</li>
-							<li Class="RoomRequirement_ThingAnyOfCount">
-								<things>
-									<li>DankPyon_Candles</li>
-									<li>DankPyon_Candles_Beeswax</li>
-								</things>
-								<count>1</count>
-							</li>
-						</bedroomRequirements>
-					</value>
-				</li>
-
-				<li Class="PatchOperationAdd">
-					<xpath>Defs/RoyalTitleDef[defName="VFEE_Magister"]/foodRequirement/allowedDefs</xpath>
-					<value>
-						<li>DankPyon_Wine</li>
-						<li>DankPyon_Wine_Mulberry</li>
-						
-						<li>DankPyon_Ale</li>
-						<li>DankPyon_Cider</li>
-						<li>DankPyon_Mead</li>
-						
-						<li>DankPyon_JuiceApple</li>
-						<li>DankPyon_Honey</li>
-					</value>
-				</li>
-				
-
-				
-				<li Class="PatchOperationReplace">
-					<xpath>Defs/RoyalTitleDef[defName="Consul"]/description</xpath>
-					<value>
-						<description>The noble title of Consul represents an important position within the empire's bureaucracy, tasked with managing the day-to-day affairs of a specific province or region. Consuls are responsible for ensuring that the empire's laws are upheld, taxes are collected, and justice is served. They act as a bridge between the imperial court and the local nobility, working to balance the needs of both. Though not as prestigious as some of the higher noble titles, the role of Consul is essential to the smooth functioning of the empire's administrative machinery.</description>
-					</value>
-				</li>
-				<li Class="PatchOperationReplace">
-					<xpath>Defs/RoyalTitleDef[defName="Consul"]/bedroomRequirements</xpath>
-					<value>
-						<bedroomRequirements Inherit="False">
-							<li Class="RoomRequirement_Area">
-								<area>54</area>
-							</li>
-							<li Class="RoomRequirement_Impressiveness">
-								<impressiveness>120</impressiveness>
-							</li>
-							<li Class="RoomRequirement_TerrainWithTags">
-								<labelKey>RoomRequirementAllFloored</labelKey>
-								<tags>
-									<li>Floor</li>
-								</tags>
-							</li>
-							<li Class="RoomRequirement_ThingAnyOf">
-								<disablingPrecepts>
-									<li MayRequire="Ludeon.RimWorld.Ideology">SlabBed_Preferred</li>
-								</disablingPrecepts>
-								<things>
-									<li>DankPyon_RoyalTudorBed</li>
-									<li MayRequire="Ludeon.RimWorld.Biotech">DeathrestCasket</li>
-								</things>
-							</li>
-							<li Class="RoomRequirement_Thing">
-								<thingDef>DankPyon_RoyalEndTable</thingDef>
-							</li>
-							<li Class="RoomRequirement_ThingCount">
-								<thingDef>DankPyon_RoyalDresser</thingDef>
-								<count>2</count>
-							</li>	
-							<li Class="RoomRequirement_Thing">
-								<thingDef>DankPyon_RoyalCloset</thingDef>
-							</li>		
-							<li Class="RoomRequirement_Thing">
-								<thingDef>DankPyon_RoyalChest</thingDef>
-							</li>
-							<li Class="RoomRequirement_Thing">
-								<thingDef>DankPyon_RoyalBookshelf</thingDef>
-							</li>
-							<li Class="RoomRequirement_Thing">
-								<thingDef>DankPyon_RusticBookshelf</thingDef>
-							</li>
-							<li Class="RoomRequirement_ThingCount">
-								<thingDef>DankPyon_RoyalArmchair</thingDef>
-								<count>1</count>
-							</li>
-							<li Class="RoomRequirement_Thing">
-								<thingDef>DankPyon_RoyalTable2x2c</thingDef>
-							</li>
-							<li Class="RoomRequirement_Thing">
-								<thingDef>DankPyon_RusticHearth</thingDef>
-							</li>
-							<li Class="RoomRequirement_ThingAnyOf">
-								<things>
-									<li>DankPyon_RugHyena2x2c</li>
-									<li>DankPyon_RugWolfTimber2x2c</li>
-									<li>DankPyon_RugWolfArctic2x2c</li>
-									<li>DankPyon_RugCougar2x2c</li>
-									<li>DankPyon_RugPanther2x2c</li>
-									<li>DankPyon_RugHuman1x2c</li>
-								</things>
-							</li>
-							<li Class="RoomRequirement_ThingAnyOfCount">
-								<things>
-									<li>DankPyon_Building_SkullGold</li>
-									<li>DankPyon_Building_SkullEmerald</li>
-									<li>DankPyon_Building_SkullSapphire</li>
-									<li>DankPyon_Building_SkullRuby</li>
-									<li>DankPyon_Building_AncientCodex</li>
-									<li>DankPyon_Building_BowlSilver</li>
-									<li>DankPyon_Building_BowlGold</li>
-									<li>DankPyon_Building_ChaliceSilver</li>
-									<li>DankPyon_Building_ChaliceGold</li>
-								</things>
-								<count>1</count>
-							</li>
-							<li Class="RoomRequirement_ThingAnyOfCount">
-								<things>
-									<li>DankPyon_CandleStand</li>
-									<li>DankPyon_CandleStand_Beeswax</li>
-								</things>
-								<count>1</count>
-							</li>
-							<li Class="RoomRequirement_ThingAnyOfCount">
-								<things>
-									<li>DankPyon_Candles</li>
-									<li>DankPyon_Candles_Beeswax</li>
-								</things>
-								<count>1</count>
-							</li>
-						</bedroomRequirements>
-					</value>
-				</li>
-
-				<li Class="PatchOperationAdd">
-					<xpath>Defs/RoyalTitleDef[defName="Consul"]/foodRequirement/allowedDefs</xpath>
-					<value>
-						<li>DankPyon_Wine</li>
-						<li>DankPyon_Wine_Mulberry</li>
-						
-						<li>DankPyon_Ale</li>
-						<li>DankPyon_Cider</li>
-						<li>DankPyon_Mead</li>
-						
-						<li>DankPyon_JuiceApple</li>
-						<li>DankPyon_Honey</li>
-					</value>
-				</li>
-				
-
-				
-				<li Class="PatchOperationReplace">
-					<xpath>Defs/RoyalTitleDef[defName="VFEE_Archduke"]/description</xpath>
-					<value>
-						<description>The noble title of Archduke is granted to dukes whose lands require a significant retinue to maintain order and security. Archdukes are responsible for training and commanding their own divisions, as well as hosting military exercises and competitions to showcase their soldiers' skills. During times of peace, Archdukes may establish their own minor House and further strengthen their position within the empire's political hierarchy. However, with great power comes great responsibility, and Archdukes must be prepared to defend their lands and people against any external threats or internal rebellions.</description>
-					</value>
-				</li>
-				<li Class="PatchOperationReplace">
-					<xpath>Defs/RoyalTitleDef[defName="VFEE_Archduke"]/bedroomRequirements</xpath>
-					<value>
-						<bedroomRequirements Inherit="False">
-							<li Class="RoomRequirement_Area">
-								<area>50</area>
-							</li>
-							<li Class="RoomRequirement_Impressiveness">
-								<impressiveness>110</impressiveness>
-							</li>
-							<li Class="RoomRequirement_TerrainWithTags">
-								<labelKey>RoomRequirementAllFloored</labelKey>
-								<tags>
-									<li>Floor</li>
-								</tags>
-							</li>
-							<li Class="RoomRequirement_ThingAnyOf">
-								<disablingPrecepts>
-									<li MayRequire="Ludeon.RimWorld.Ideology">SlabBed_Preferred</li>
-								</disablingPrecepts>
-								<things>
-									<li>DankPyon_RoyalTudorBed</li>
-									<li MayRequire="Ludeon.RimWorld.Biotech">DeathrestCasket</li>
-								</things>
-							</li>
-							<li Class="RoomRequirement_Thing">
-								<thingDef>DankPyon_RoyalEndTable</thingDef>
-							</li>
-							<li Class="RoomRequirement_ThingCount">
-								<thingDef>DankPyon_RoyalDresser</thingDef>
-								<count>1</count>
-							</li>	
-							<li Class="RoomRequirement_ThingCount">
-								<thingDef>DankPyon_RusticDresser</thingDef>
-								<count>1</count>
-							</li>
-							<li Class="RoomRequirement_Thing">
-								<thingDef>DankPyon_RoyalCloset</thingDef>
-							</li>		
-							<li Class="RoomRequirement_Thing">
-								<thingDef>DankPyon_RoyalChest</thingDef>
-							</li>
-							<li Class="RoomRequirement_ThingCount">
-								<thingDef>DankPyon_RusticBookshelf</thingDef>
-								<count>2</count>
-							</li>
-							<li Class="RoomRequirement_ThingCount">
-								<thingDef>Armchair</thingDef>
-								<count>4</count>
-							</li>
-							<li Class="RoomRequirement_Thing">
-								<thingDef>DankPyon_RoyalTable2x2c</thingDef>
-							</li>
-							<li Class="RoomRequirement_Thing">
-								<thingDef>DankPyon_RusticHearth</thingDef>
-							</li>
-							<li Class="RoomRequirement_ThingAnyOf">
-								<things>
-									<li>DankPyon_RugHyena2x2c</li>
-									<li>DankPyon_RugWolfTimber2x2c</li>
-									<li>DankPyon_RugWolfArctic2x2c</li>
-									<li>DankPyon_RugCougar2x2c</li>
-									<li>DankPyon_RugPanther2x2c</li>
-									<li>DankPyon_RugHuman1x2c</li>
-								</things>
-							</li>
-							<li Class="RoomRequirement_ThingAnyOfCount">
-								<things>
-									<li>DankPyon_Building_SkullGold</li>
-									<li>DankPyon_Building_SkullEmerald</li>
-									<li>DankPyon_Building_SkullSapphire</li>
-									<li>DankPyon_Building_SkullRuby</li>
-									<li>DankPyon_Building_AncientCodex</li>
-									<li>DankPyon_Building_BowlSilver</li>
-									<li>DankPyon_Building_BowlGold</li>
-									<li>DankPyon_Building_ChaliceSilver</li>
-									<li>DankPyon_Building_ChaliceGold</li>
-								</things>
-								<count>1</count>
-							</li>
-							<li Class="RoomRequirement_ThingAnyOfCount">
-								<things>
-									<li>DankPyon_CandleStand</li>
-									<li>DankPyon_CandleStand_Beeswax</li>
-								</things>
-								<count>1</count>
-							</li>
-							<li Class="RoomRequirement_ThingAnyOfCount">
-								<things>
-									<li>DankPyon_Candles</li>
-									<li>DankPyon_Candles_Beeswax</li>
-								</things>
-								<count>1</count>
-							</li>
-						</bedroomRequirements>
-					</value>
-				</li>
-
-				<li Class="PatchOperationAdd">
-					<xpath>Defs/RoyalTitleDef[defName="VFEE_Archduke"]/foodRequirement/allowedDefs</xpath>
-					<value>
-						<li>DankPyon_Wine</li>
-						<li>DankPyon_Wine_Mulberry</li>
-						
-						<li>DankPyon_Ale</li>
-						<li>DankPyon_Cider</li>
-						<li>DankPyon_Mead</li>
-						
-						<li>DankPyon_JuiceApple</li>
-						<li>DankPyon_Honey</li>
-					</value>
-				</li>
-				
-
-				
-				<li Class="PatchOperationReplace">
-					<xpath>Defs/RoyalTitleDef[defName="Duke"]/description</xpath>
-					<value>
-						<description>The noble title of Duke is granted to those who hold significant power and influence within the empire, commanding respect and loyalty from their vassals and subjects. Dukes are responsible for the governance of a large region or province, managing everything from agriculture to trade to defense. They must balance the needs of their people with their obligations to the empire, ensuring that taxes are collected and that justice is served. In times of war, Dukes are expected to raise and lead their own armies, fighting to defend their lands and their people.</description>
-					</value>
-				</li>
-				<li Class="PatchOperationReplace">
-					<xpath>Defs/RoyalTitleDef[defName="Duke"]/bedroomRequirements</xpath>
-					<value>
-						<bedroomRequirements Inherit="False">
-							<li Class="RoomRequirement_Area">
-								<area>50</area>
-							</li>
-							<li Class="RoomRequirement_Impressiveness">
-								<impressiveness>105</impressiveness>
-							</li>
-							<li Class="RoomRequirement_TerrainWithTags">
-								<labelKey>RoomRequirementAllFloored</labelKey>
-								<tags>
-									<li>Floor</li>
-								</tags>
-							</li>
-							<li Class="RoomRequirement_ThingAnyOf">
-								<disablingPrecepts>
-									<li MayRequire="Ludeon.RimWorld.Ideology">SlabBed_Preferred</li>
-								</disablingPrecepts>
-								<things>
-									<li>DankPyon_RoyalTudorBed</li>
-									<li MayRequire="Ludeon.RimWorld.Biotech">DeathrestCasket</li>
-								</things>
-							</li>
-							<li Class="RoomRequirement_Thing">
-								<thingDef>DankPyon_RoyalEndTable</thingDef>
-							</li>
-							<li Class="RoomRequirement_ThingCount">
-								<thingDef>DankPyon_RoyalDresser</thingDef>
-								<count>1</count>
-							</li>	
-							<li Class="RoomRequirement_ThingCount">
-								<thingDef>DankPyon_RusticDresser</thingDef>
-								<count>1</count>
-							</li>	
-							<li Class="RoomRequirement_Thing">
-								<thingDef>DankPyon_RoyalCloset</thingDef>
-							</li>		
-							<li Class="RoomRequirement_Thing">
-								<thingDef>DankPyon_RoyalChest</thingDef>
-							</li>
-							<li Class="RoomRequirement_ThingCount">
-								<thingDef>DankPyon_RusticBookshelf</thingDef>
-								<count>2</count>
-							</li>
-							<li Class="RoomRequirement_ThingCount">
-								<thingDef>Armchair</thingDef>
-								<count>2</count>
-							</li>
-							<li Class="RoomRequirement_Thing">
-								<thingDef>DankPyon_RoyalTable2x2c</thingDef>
-							</li>
-							<li Class="RoomRequirement_Thing">
-								<thingDef>DankPyon_RusticHearth</thingDef>
-							</li>
-							<li Class="RoomRequirement_ThingAnyOfCount">
-								<things>
-									<li>DankPyon_CandleStand</li>
-									<li>DankPyon_CandleStand_Beeswax</li>
-								</things>
-								<count>1</count>
-							</li>
-							<li Class="RoomRequirement_ThingAnyOfCount">
-								<things>
-									<li>DankPyon_Candles</li>
-									<li>DankPyon_Candles_Beeswax</li>
-								</things>
-								<count>1</count>
-							</li>
-						</bedroomRequirements>
-					</value>
-				</li>
-
-				<li Class="PatchOperationAdd">
-					<xpath>Defs/RoyalTitleDef[defName="Duke"]/foodRequirement/allowedDefs</xpath>
-					<value>
-						<li>DankPyon_Wine</li>
-						<li>DankPyon_Wine_Mulberry</li>
-						
-						<li>DankPyon_Ale</li>
-						<li>DankPyon_Cider</li>
-						<li>DankPyon_Mead</li>
-						
-						<li>DankPyon_JuiceApple</li>
-						<li>DankPyon_Honey</li>
-					</value>
-				</li>
-				
-
-				
-				<li Class="PatchOperationReplace">
-					<xpath>Defs/RoyalTitleDef[defName="VFEE_Marquess"]/description</xpath>
-					<value>
-						<description>The noble title of Marquess is the highest rank within the lower nobility, granting significant authority and responsibility over the empire's border colonies. Marquesses are tasked with maintaining the security and prosperity of these vital outposts, ensuring that they are defended against any threats from beyond the empire's borders. In times of war, Marquesses are expected to raise and command their own fleets, working either to prevent enemy incursions or to support friendly forces in battle. With their position comes great prestige and respect, but also the weight of significant responsibility for the safety and success of the empire's far-flung holdings.</description>
-					</value>
-				</li>
 				<li Class="PatchOperationReplace">
 					<xpath>Defs/RoyalTitleDef[defName="VFEE_Marquess"]/bedroomRequirements</xpath>
 					<value>
 						<bedroomRequirements Inherit="False">
 							<li Class="RoomRequirement_Area">
-								<area>50</area>
-							</li>
-							<li Class="RoomRequirement_Impressiveness">
-								<impressiveness>105</impressiveness>
-							</li>
-							<li Class="RoomRequirement_TerrainWithTags">
-								<labelKey>RoomRequirementAllFloored</labelKey>
-								<tags>
-									<li>Floor</li>
-								</tags>
-							</li>
-							<li Class="RoomRequirement_ThingAnyOf">
-								<disablingPrecepts>
-									<li MayRequire="Ludeon.RimWorld.Ideology">SlabBed_Preferred</li>
-								</disablingPrecepts>
-								<things>
-									<li>DankPyon_RoyalTudorBed</li>
-									<li MayRequire="Ludeon.RimWorld.Biotech">DeathrestCasket</li>
-								</things>
-							</li>
-							<li Class="RoomRequirement_Thing">
-								<thingDef>DankPyon_RusticEndTable</thingDef>
-							</li>
-							<li Class="RoomRequirement_ThingCount">
-								<thingDef>DankPyon_RusticDresser</thingDef>
-								<count>2</count>
-							</li>	
-							<li Class="RoomRequirement_Thing">
-								<thingDef>DankPyon_RusticCloset</thingDef>
-							</li>		
-							<li Class="RoomRequirement_Thing">
-								<thingDef>DankPyon_RusticChest</thingDef>
-							</li>
-							<li Class="RoomRequirement_ThingCount">
-								<thingDef>DankPyon_RusticBookshelf</thingDef>
-								<count>2</count>
-							</li>
-							<li Class="RoomRequirement_ThingCount">
-								<thingDef>Armchair</thingDef>
-								<count>2</count>
-							</li>
-							<li Class="RoomRequirement_Thing">
-								<thingDef>DankPyon_RoyalTable2x2c</thingDef>
-							</li>
-							<li Class="RoomRequirement_Thing">
-								<thingDef>DankPyon_RusticHearth</thingDef>
-							</li>
-							<li Class="RoomRequirement_ThingAnyOfCount">
-								<things>
-									<li>DankPyon_CandleStand</li>
-									<li>DankPyon_CandleStand_Beeswax</li>
-								</things>
-								<count>1</count>
-							</li>
-							<li Class="RoomRequirement_ThingAnyOfCount">
-								<things>
-									<li>DankPyon_Candles</li>
-									<li>DankPyon_Candles_Beeswax</li>
-								</things>
-								<count>1</count>
-							</li>
-						</bedroomRequirements>
-					</value>
-				</li>
-
-				<li Class="PatchOperationAdd">
-					<xpath>Defs/RoyalTitleDef[defName="VFEE_Marquess"]/foodRequirement/allowedDefs</xpath>
-					<value>
-						<li>DankPyon_Wine</li>
-						<li>DankPyon_Wine_Mulberry</li>
-						
-						<li>DankPyon_Ale</li>
-						<li>DankPyon_Cider</li>
-						<li>DankPyon_Mead</li>
-						
-						<li>DankPyon_JuiceApple</li>
-						<li>DankPyon_Honey</li>
-					</value>
-				</li>
-
-
-				
-				<li Class="PatchOperationReplace">
-					<xpath>Defs/RoyalTitleDef[defName="VFEE_Archcount"]/bedroomRequirements</xpath>
-					<value>
-						<bedroomRequirements Inherit="False">
-							<li Class="RoomRequirement_Area">
-								<area>50</area>
+								<area>45</area>
 							</li>
 							<li Class="RoomRequirement_Impressiveness">
 								<impressiveness>100</impressiveness>
@@ -1584,78 +565,995 @@
 									<li MayRequire="Ludeon.RimWorld.Ideology">SlabBed_Preferred</li>
 								</disablingPrecepts>
 								<things>
+									<li>DankPyon_BedFurDouble</li>
+									<li>RoyalBed</li>
 									<li>DankPyon_RoyalTudorBed</li>
 									<li MayRequire="Ludeon.RimWorld.Biotech">DeathrestCasket</li>
 								</things>
 							</li>
-							<li Class="RoomRequirement_Thing">
-								<thingDef>DankPyon_RusticEndTable</thingDef>
+							<li Class="RoomRequirement_ThingAnyOfCount">
+								<things>
+									<li>DankPyon_RusticEndTable</li>
+									<li>DankPyon_RoyalEndTable</li>
+								</things>
+								<count>1</count>
 							</li>
-							<li Class="RoomRequirement_ThingCount">
-								<thingDef>DankPyon_RusticDresser</thingDef>
+							<li Class="RoomRequirement_ThingAnyOfCount">
+								<things>
+									<li>DankPyon_RusticDresser</li>
+									<li>DankPyon_RoyalDresser</li>
+								</things>
+								<count>1</count>
+							</li>
+							<li Class="RoomRequirement_ThingAnyOfCount">
+								<things>
+									<li>DankPyon_RusticCloset</li>
+									<li>DankPyon_RoyalCloset</li>
+								</things>
+								<count>1</count>
+							</li>
+							<li Class="RoomRequirement_ThingAnyOfCount">
+								<things>
+									<li>DankPyon_RoyalCloset</li>
+								</things>
+								<count>1</count>
+							</li>
+							<li Class="RoomRequirement_ThingAnyOfCount">
+								<things>
+									<li>DankPyon_RoyalChest</li>
+								</things>
+								<count>1</count>
+							</li>
+							<li Class="RoomRequirement_ThingAnyOfCount">
+								<things>
+									<li>DankPyon_WoodBurningStove</li>
+									<li>DankPyon_RusticHearth</li>
+								</things>
+								<count>1</count>
+							</li>
+							<li Class="RoomRequirement_ThingAnyOfCount">
+								<things>
+									<li>DankPyon_RusticNobleChair</li>
+									<li>Armchair</li>
+									<li>DankPyon_RoyalArmchair</li>
+								</things>
 								<count>2</count>
-							</li>	
-							<li Class="RoomRequirement_Thing">
-								<thingDef>DankPyon_RusticCloset</thingDef>
-							</li>		
-							<li Class="RoomRequirement_Thing">
-								<thingDef>DankPyon_RusticChest</thingDef>
 							</li>
-							<li Class="RoomRequirement_ThingCount">
-								<thingDef>DankPyon_RusticBookshelf</thingDef>
+							<li Class="RoomRequirement_ThingAnyOfCount">
+								<things>
+									<li>Armchair</li>
+									<li>DankPyon_RoyalArmchair</li>
+								</things>
 								<count>2</count>
 							</li>
-							<li Class="RoomRequirement_ThingCount">
-								<thingDef>Armchair</thingDef>
+							<li Class="RoomRequirement_ThingAnyOfCount">
+								<things>
+									<li>DankPyon_RoyalTable2x2c</li>
+								</things>
+								<count>1</count>
+							</li>
+							<li Class="RoomRequirement_ThingAnyOfCount">
+								<things>
+									<li>DankPyon_RusticBookshelf</li>
+									<li>DankPyon_RoyalBookshelf</li>
+								</things>
 								<count>1</count>
 							</li>
 							<li Class="RoomRequirement_Thing">
-								<thingDef>DankPyon_ReinforcedRusticTable2x2c</thingDef>
-							</li>
-							<li Class="RoomRequirement_Thing">
-								<thingDef>DankPyon_WoodBurningStove</thingDef>
+								<thingDef>VFEE_RoyalMirror</thingDef>
 							</li>
 							<li Class="RoomRequirement_ThingAnyOfCount">
 								<things>
 									<li>DankPyon_CandleStand</li>
 									<li>DankPyon_CandleStand_Beeswax</li>
-								</things>
-								<count>1</count>
-							</li>
-							<li Class="RoomRequirement_ThingAnyOfCount">
-								<things>
 									<li>DankPyon_Candles</li>
 									<li>DankPyon_Candles_Beeswax</li>
 								</things>
-								<count>1</count>
+								<count>2</count>
 							</li>
 						</bedroomRequirements>
 					</value>
 				</li>
 
-				<li Class="PatchOperationAdd">
-					<xpath>Defs/RoyalTitleDef[defName="VFEE_Archcount"]/foodRequirement/allowedDefs</xpath>
-					<value>
-						<li>DankPyon_Wine</li>
-						<li>DankPyon_Wine_Mulberry</li>
-						
-						<li>DankPyon_Ale</li>
-						<li>DankPyon_Cider</li>
-						<li>DankPyon_Mead</li>
-						
-						<li>DankPyon_JuiceApple</li>
-						<li>DankPyon_Honey</li>
-					</value>
-				</li>
-				
-
-				
 				<li Class="PatchOperationReplace">
-					<xpath>Defs/RoyalTitleDef[defName="Count"]/bedroomRequirements</xpath>
+					<xpath>Defs/RoyalTitleDef[@ParentName="DukeBase"]/bedroomRequirements</xpath>
 					<value>
 						<bedroomRequirements Inherit="False">
 							<li Class="RoomRequirement_Area">
-								<area>50</area>
+								<area>45</area>
+							</li>
+							<li Class="RoomRequirement_Impressiveness">
+								<impressiveness>110</impressiveness>
+							</li>
+							<li Class="RoomRequirement_TerrainWithTags">
+								<labelKey>RoomRequirementAllFloored</labelKey>
+								<tags>
+									<li>Floor</li>
+								</tags>
+							</li>
+							<li Class="RoomRequirement_ThingAnyOf">
+								<disablingPrecepts>
+									<li MayRequire="Ludeon.RimWorld.Ideology">SlabBed_Preferred</li>
+								</disablingPrecepts>
+								<things>
+									<li>RoyalBed</li>
+									<li>DankPyon_RoyalTudorBed</li>
+									<li MayRequire="Ludeon.RimWorld.Biotech">DeathrestCasket</li>
+								</things>
+							</li>
+							<li Class="RoomRequirement_ThingAnyOfCount">
+								<things>
+									<li>DankPyon_RoyalEndTable</li>
+								</things>
+								<count>1</count>
+							</li>
+							<li Class="RoomRequirement_ThingAnyOfCount">
+								<things>
+									<li>DankPyon_RoyalDresser</li>
+								</things>
+								<count>1</count>
+							</li>
+							<li Class="RoomRequirement_ThingAnyOfCount">
+								<things>
+									<li>DankPyon_RusticCloset</li>
+									<li>DankPyon_RoyalCloset</li>
+								</things>
+								<count>1</count>
+							</li>
+							<li Class="RoomRequirement_ThingAnyOfCount">
+								<things>
+									<li>DankPyon_RoyalCloset</li>
+								</things>
+								<count>1</count>
+							</li>
+							<li Class="RoomRequirement_ThingAnyOfCount">
+								<things>
+									<li>DankPyon_RoyalChest</li>
+								</things>
+								<count>1</count>
+							</li>
+							<li Class="RoomRequirement_ThingAnyOfCount">
+								<things>
+									<li>DankPyon_WoodBurningStove</li>
+									<li>DankPyon_RusticHearth</li>
+								</things>
+								<count>1</count>
+							</li>
+							<li Class="RoomRequirement_ThingAnyOfCount">
+								<things>
+									<li>Armchair</li>
+									<li>DankPyon_RoyalArmchair</li>
+								</things>
+								<count>4</count>
+							</li>
+							<li Class="RoomRequirement_ThingAnyOfCount">
+								<things>
+									<li>DankPyon_RoyalTable2x2c</li>
+								</things>
+								<count>1</count>
+							</li>
+							<li Class="RoomRequirement_ThingAnyOfCount">
+								<things>
+									<li>DankPyon_RusticBookshelf</li>
+									<li>DankPyon_RoyalBookshelf</li>
+								</things>
+								<count>2</count>
+							</li>
+							<li Class="RoomRequirement_Thing">
+								<thingDef>VFEE_RoyalMirror</thingDef>
+							</li>
+							<li Class="RoomRequirement_ThingAnyOfCount">
+								<things>
+									<li>DankPyon_CandleStand</li>
+									<li>DankPyon_CandleStand_Beeswax</li>
+									<li>DankPyon_Candles</li>
+									<li>DankPyon_Candles_Beeswax</li>
+								</things>
+								<count>2</count>
+							</li>
+						</bedroomRequirements>
+					</value>
+				</li>
+
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/RoyalTitleDef[defName="VFEE_Archduke"]/bedroomRequirements</xpath>
+					<value>
+						<bedroomRequirements Inherit="False">
+							<li Class="RoomRequirement_Area">
+								<area>53</area>
+							</li>
+							<li Class="RoomRequirement_Impressiveness">
+								<impressiveness>120</impressiveness>
+							</li>
+							<li Class="RoomRequirement_TerrainWithTags">
+								<labelKey>RoomRequirementAllFloored</labelKey>
+								<tags>
+									<li>Floor</li>
+								</tags>
+							</li>
+							<li Class="RoomRequirement_ThingAnyOf">
+								<disablingPrecepts>
+									<li MayRequire="Ludeon.RimWorld.Ideology">SlabBed_Preferred</li>
+								</disablingPrecepts>
+								<things>
+									<li>RoyalBed</li>
+									<li>DankPyon_RoyalTudorBed</li>
+									<li MayRequire="Ludeon.RimWorld.Biotech">DeathrestCasket</li>
+								</things>
+							</li>
+							<li Class="RoomRequirement_ThingAnyOfCount">
+								<things>
+									<li>DankPyon_RoyalEndTable</li>
+								</things>
+								<count>1</count>
+							</li>
+							<li Class="RoomRequirement_ThingAnyOfCount">
+								<things>
+									<li>DankPyon_RoyalDresser</li>
+								</things>
+								<count>1</count>
+							</li>
+							<li Class="RoomRequirement_ThingAnyOfCount">
+								<things>
+									<li>DankPyon_RusticCloset</li>
+									<li>DankPyon_RoyalCloset</li>
+								</things>
+								<count>1</count>
+							</li>
+							<li Class="RoomRequirement_ThingAnyOfCount">
+								<things>
+									<li>DankPyon_RoyalCloset</li>
+								</things>
+								<count>1</count>
+							</li>
+							<li Class="RoomRequirement_ThingAnyOfCount">
+								<things>
+									<li>DankPyon_RoyalChest</li>
+								</things>
+								<count>1</count>
+							</li>
+							<li Class="RoomRequirement_ThingAnyOfCount">
+								<things>
+									<li>DankPyon_RusticHearth</li>
+								</things>
+								<count>1</count>
+							</li>
+							<li Class="RoomRequirement_ThingAnyOfCount">
+								<things>
+									<li>Armchair</li>
+									<li>DankPyon_RoyalArmchair</li>
+								</things>
+								<count>4</count>
+							</li>
+							<li Class="RoomRequirement_ThingAnyOfCount">
+								<things>
+									<li>DankPyon_RoyalTable2x2c</li>
+								</things>
+								<count>1</count>
+							</li>
+							<li Class="RoomRequirement_ThingAnyOfCount">
+								<things>
+									<li>DankPyon_RusticBookshelf</li>
+									<li>DankPyon_RoyalBookshelf</li>
+								</things>
+								<count>2</count>
+							</li>
+							<li Class="RoomRequirement_Thing">
+								<thingDef>VFEE_RoyalMirror</thingDef>
+							</li>
+							<li Class="RoomRequirement_ThingAnyOfCount">
+								<things>
+									<li>DankPyon_RugHyena2x2c</li>
+									<li>DankPyon_RugWolfTimber2x2c</li>
+									<li>DankPyon_RugWolfArctic2x2c</li>
+									<li>DankPyon_RugCougar2x2c</li>
+									<li>DankPyon_RugPanther2x2c</li>
+									<li>DankPyon_RugGrizzlyBear3x3c</li>
+									<li>DankPyon_RugPolarBear3x3c</li>
+									<li>DankPyon_RugRox3x3c</li>
+									<li>DankPyon_RugThrumbo3x3c</li>
+									<li>DankPyon_RugHuman1x2c</li>
+									<li>DankPyon_RugDaer4x4c</li>
+								</things>
+								<count>1</count>
+							</li>
+							<li Class="RoomRequirement_ThingAnyOfCount">
+								<things>
+									<li>DankPyon_CandleStand</li>
+									<li>DankPyon_CandleStand_Beeswax</li>
+									<li>DankPyon_Candles</li>
+									<li>DankPyon_Candles_Beeswax</li>
+								</things>
+								<count>3</count>
+							</li>
+						</bedroomRequirements>
+					</value>
+				</li>
+
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/RoyalTitleDef[@ParentName="ConsulBase"]/bedroomRequirements</xpath>
+					<value>
+						<bedroomRequirements Inherit="False">
+							<li Class="RoomRequirement_Area">
+								<area>53</area>
+							</li>
+							<li Class="RoomRequirement_Impressiveness">
+								<impressiveness>130</impressiveness>
+							</li>
+							<li Class="RoomRequirement_TerrainWithTags">
+								<labelKey>RoomRequirementAllFloored</labelKey>
+								<tags>
+									<li>Floor</li>
+								</tags>
+							</li>
+							<li Class="RoomRequirement_ThingAnyOf">
+								<disablingPrecepts>
+									<li MayRequire="Ludeon.RimWorld.Ideology">SlabBed_Preferred</li>
+								</disablingPrecepts>
+								<things>
+									<li>RoyalBed</li>
+									<li>DankPyon_RoyalTudorBed</li>
+									<li MayRequire="Ludeon.RimWorld.Biotech">DeathrestCasket</li>
+								</things>
+							</li>
+							<li Class="RoomRequirement_ThingAnyOfCount">
+								<things>
+									<li>DankPyon_RoyalEndTable</li>
+								</things>
+								<count>1</count>
+							</li>
+							<li Class="RoomRequirement_ThingAnyOfCount">
+								<things>
+									<li>DankPyon_RoyalDresser</li>
+								</things>
+								<count>1</count>
+							</li>
+							<li Class="RoomRequirement_ThingAnyOfCount">
+								<things>
+									<li>DankPyon_RoyalCloset</li>
+								</things>
+								<count>2</count>
+							</li>
+							<li Class="RoomRequirement_ThingAnyOfCount">
+								<things>
+									<li>DankPyon_RoyalChest</li>
+								</things>
+								<count>1</count>
+							</li>
+							<li Class="RoomRequirement_ThingAnyOfCount">
+								<things>
+									<li>DankPyon_RusticHearth</li>
+								</things>
+								<count>1</count>
+							</li>
+							<li Class="RoomRequirement_ThingAnyOfCount">
+								<things>
+									<li>Armchair</li>
+									<li>DankPyon_RoyalArmchair</li>
+								</things>
+								<count>4</count>
+							</li>
+							<li Class="RoomRequirement_ThingAnyOfCount">
+								<things>
+									<li>DankPyon_RoyalArmchair</li>
+								</things>
+								<count>2</count>
+							</li>
+							<li Class="RoomRequirement_ThingAnyOfCount">
+								<things>
+									<li>DankPyon_RoyalTable2x2c</li>
+								</things>
+								<count>1</count>
+							</li>
+							<li Class="RoomRequirement_ThingAnyOfCount">
+								<things>
+									<li>DankPyon_RusticBookshelf</li>
+									<li>DankPyon_RoyalBookshelf</li>
+								</things>
+								<count>2</count>
+							</li>
+							<li Class="RoomRequirement_ThingAnyOfCount">
+								<things>
+									<li>DankPyon_RoyalBookshelf</li>
+								</things>
+								<count>1</count>
+							</li>
+							<li Class="RoomRequirement_Thing">
+								<thingDef>VFEE_RoyalMirror</thingDef>
+							</li>
+							<li Class="RoomRequirement_Thing">
+								<thingDef>DankPyon_RugDaer4x4c</thingDef>
+							</li>							
+							<li Class="RoomRequirement_ThingAnyOfCount">
+								<things>
+									<li>DankPyon_RugHyena2x2c</li>
+									<li>DankPyon_RugWolfTimber2x2c</li>
+									<li>DankPyon_RugWolfArctic2x2c</li>
+									<li>DankPyon_RugCougar2x2c</li>
+									<li>DankPyon_RugPanther2x2c</li>
+									<li>DankPyon_RugGrizzlyBear3x3c</li>
+									<li>DankPyon_RugPolarBear3x3c</li>
+									<li>DankPyon_RugRox3x3c</li>
+									<li>DankPyon_RugThrumbo3x3c</li>
+									<li>DankPyon_RugHuman1x2c</li>
+									<li>DankPyon_RugDaer4x4c</li>
+								</things>
+								<count>2</count>
+							</li>
+							<li Class="RoomRequirement_ThingAnyOfCount">
+								<things>
+									<li>DankPyon_CandleStand</li>
+									<li>DankPyon_CandleStand_Beeswax</li>
+									<li>DankPyon_Candles</li>
+									<li>DankPyon_Candles_Beeswax</li>
+								</things>
+								<count>3</count>
+							</li>
+						</bedroomRequirements>
+					</value>
+				</li>
+
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/RoyalTitleDef[defName="VFEE_Magister"]/bedroomRequirements</xpath>
+					<value>
+						<bedroomRequirements Inherit="False">
+							<li Class="RoomRequirement_Area">
+								<area>53</area>
+							</li>
+							<li Class="RoomRequirement_Impressiveness">
+								<impressiveness>140</impressiveness>
+							</li>
+							<li Class="RoomRequirement_TerrainWithTags">
+								<labelKey>RoomRequirementAllFloored</labelKey>
+								<tags>
+									<li>Floor</li>
+								</tags>
+							</li>
+							<li Class="RoomRequirement_ThingAnyOf">
+								<disablingPrecepts>
+									<li MayRequire="Ludeon.RimWorld.Ideology">SlabBed_Preferred</li>
+								</disablingPrecepts>
+								<things>
+									<li>RoyalBed</li>
+									<li>DankPyon_RoyalTudorBed</li>
+									<li MayRequire="Ludeon.RimWorld.Biotech">DeathrestCasket</li>
+								</things>
+							</li>
+							<li Class="RoomRequirement_ThingAnyOfCount">
+								<things>
+									<li>DankPyon_RoyalEndTable</li>
+								</things>
+								<count>1</count>
+							</li>
+							<li Class="RoomRequirement_ThingAnyOfCount">
+								<things>
+									<li>DankPyon_RoyalDresser</li>
+								</things>
+								<count>1</count>
+							</li>
+							<li Class="RoomRequirement_ThingAnyOfCount">
+								<things>
+									<li>DankPyon_RoyalCloset</li>
+								</things>
+								<count>2</count>
+							</li>
+							<li Class="RoomRequirement_ThingAnyOfCount">
+								<things>
+									<li>DankPyon_RoyalChest</li>
+								</things>
+								<count>1</count>
+							</li>
+							<li Class="RoomRequirement_ThingAnyOfCount">
+								<things>
+									<li>DankPyon_RusticHearth</li>
+								</things>
+								<count>1</count>
+							</li>
+							<li Class="RoomRequirement_ThingAnyOfCount">
+								<things>
+									<li>Armchair</li>
+									<li>DankPyon_RoyalArmchair</li>
+								</things>
+								<count>2</count>
+							</li>
+							<li Class="RoomRequirement_ThingAnyOfCount">
+								<things>
+									<li>DankPyon_RoyalArmchair</li>
+								</things>
+								<count>2</count>
+							</li>
+							<li Class="RoomRequirement_ThingAnyOfCount">
+								<things>
+									<li>DankPyon_RoyalTable2x2c</li>
+								</things>
+								<count>1</count>
+							</li>
+							<li Class="RoomRequirement_ThingAnyOfCount">
+								<things>
+									<li>DankPyon_RoyalBookshelf</li>
+								</things>
+								<count>2</count>
+							</li>
+							<li Class="RoomRequirement_Thing">
+								<thingDef>VFEE_RoyalMirror</thingDef>
+							</li>
+							<li Class="RoomRequirement_Thing">
+								<thingDef>DankPyon_RugDaer4x4c</thingDef>
+							</li>							
+							<li Class="RoomRequirement_ThingAnyOfCount">
+								<things>
+									<li>DankPyon_RugHyena2x2c</li>
+									<li>DankPyon_RugWolfTimber2x2c</li>
+									<li>DankPyon_RugWolfArctic2x2c</li>
+									<li>DankPyon_RugCougar2x2c</li>
+									<li>DankPyon_RugPanther2x2c</li>
+									<li>DankPyon_RugGrizzlyBear3x3c</li>
+									<li>DankPyon_RugPolarBear3x3c</li>
+									<li>DankPyon_RugRox3x3c</li>
+									<li>DankPyon_RugThrumbo3x3c</li>
+									<li>DankPyon_RugHuman1x2c</li>
+									<li>DankPyon_RugDaer4x4c</li>
+								</things>
+								<count>2</count>
+							</li>
+							<li Class="RoomRequirement_ThingAnyOfCount">
+								<things>
+									<li>DankPyon_CandleStand</li>
+									<li>DankPyon_CandleStand_Beeswax</li>
+									<li>DankPyon_Candles</li>
+									<li>DankPyon_Candles_Beeswax</li>
+								</things>
+								<count>3</count>
+							</li>
+						</bedroomRequirements>
+					</value>
+				</li>
+
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/RoyalTitleDef[defName="VFEE_Despot"]/bedroomRequirements</xpath>
+					<value>
+						<bedroomRequirements Inherit="False">
+							<li Class="RoomRequirement_Area">
+								<area>62</area>
+							</li>
+							<li Class="RoomRequirement_Impressiveness">
+								<impressiveness>150</impressiveness>
+							</li>
+							<li Class="RoomRequirement_TerrainWithTags">
+								<labelKey>RoomRequirementAllFloored</labelKey>
+								<tags>
+									<li>Floor</li>
+								</tags>
+							</li>
+							<li Class="RoomRequirement_ThingAnyOf">
+								<disablingPrecepts>
+									<li MayRequire="Ludeon.RimWorld.Ideology">SlabBed_Preferred</li>
+								</disablingPrecepts>
+								<things>
+									<li>RoyalBed</li>
+									<li>DankPyon_RoyalTudorBed</li>
+									<li MayRequire="Ludeon.RimWorld.Biotech">DeathrestCasket</li>
+								</things>
+							</li>
+							<li Class="RoomRequirement_ThingAnyOfCount">
+								<things>
+									<li>DankPyon_RoyalEndTable</li>
+								</things>
+								<count>1</count>
+							</li>
+							<li Class="RoomRequirement_ThingAnyOfCount">
+								<things>
+									<li>DankPyon_RoyalDresser</li>
+								</things>
+								<count>1</count>
+							</li>
+							<li Class="RoomRequirement_ThingAnyOfCount">
+								<things>
+									<li>DankPyon_RoyalCloset</li>
+								</things>
+								<count>2</count>
+							</li>
+							<li Class="RoomRequirement_ThingAnyOfCount">
+								<things>
+									<li>DankPyon_RoyalChest</li>
+								</things>
+								<count>1</count>
+							</li>
+							<li Class="RoomRequirement_ThingAnyOfCount">
+								<things>
+									<li>DankPyon_RusticHearth</li>
+								</things>
+								<count>1</count>
+							</li>
+							<li Class="RoomRequirement_ThingAnyOfCount">
+								<things>
+									<li>DankPyon_RoyalArmchair</li>
+								</things>
+								<count>4</count>
+							</li>
+							<li Class="RoomRequirement_ThingAnyOfCount">
+								<things>
+									<li>DankPyon_RoyalTable2x2c</li>
+								</things>
+								<count>1</count>
+							</li>
+							<li Class="RoomRequirement_ThingAnyOfCount">
+								<things>
+									<li>DankPyon_RoyalBookshelf</li>
+								</things>
+								<count>2</count>
+							</li>
+							<li Class="RoomRequirement_ThingAnyOfCount">
+								<things>
+									<li>DankPyon_ArmorStatue</li>
+								</things>
+								<count>1</count>
+							</li>
+							<li Class="RoomRequirement_Thing">
+								<thingDef>VFEE_RoyalMirror</thingDef>
+							</li>
+							<li Class="RoomRequirement_Thing">
+								<thingDef>DankPyon_RugDaer4x4c</thingDef>
+							</li>							
+							<li Class="RoomRequirement_ThingAnyOfCount">
+								<things>
+									<li>DankPyon_RugHyena2x2c</li>
+									<li>DankPyon_RugWolfTimber2x2c</li>
+									<li>DankPyon_RugWolfArctic2x2c</li>
+									<li>DankPyon_RugCougar2x2c</li>
+									<li>DankPyon_RugPanther2x2c</li>
+									<li>DankPyon_RugGrizzlyBear3x3c</li>
+									<li>DankPyon_RugPolarBear3x3c</li>
+									<li>DankPyon_RugRox3x3c</li>
+									<li>DankPyon_RugThrumbo3x3c</li>
+									<li>DankPyon_RugHuman1x2c</li>
+									<li>DankPyon_RugDaer4x4c</li>
+								</things>
+								<count>2</count>
+							</li>
+							<li Class="RoomRequirement_ThingAnyOfCount">
+								<things>
+									<li>DankPyon_CandleStand</li>
+									<li>DankPyon_CandleStand_Beeswax</li>
+									<li>DankPyon_Candles</li>
+									<li>DankPyon_Candles_Beeswax</li>
+								</things>
+								<count>4</count>
+							</li>
+						</bedroomRequirements>
+					</value>
+				</li>
+
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/RoyalTitleDef[@ParentName="StellarchBase"]/bedroomRequirements</xpath>
+					<value>
+						<bedroomRequirements Inherit="False">
+							<li Class="RoomRequirement_Area">
+								<area>62</area>
+							</li>
+							<li Class="RoomRequirement_Impressiveness">
+								<impressiveness>160</impressiveness>
+							</li>
+							<li Class="RoomRequirement_TerrainWithTags">
+								<labelKey>RoomRequirementAllFloored</labelKey>
+								<tags>
+									<li>Floor</li>
+								</tags>
+							</li>
+							<li Class="RoomRequirement_ThingAnyOf">
+								<disablingPrecepts>
+									<li MayRequire="Ludeon.RimWorld.Ideology">SlabBed_Preferred</li>
+								</disablingPrecepts>
+								<things>
+									<li>RoyalBed</li>
+									<li>DankPyon_RoyalTudorBed</li>
+									<li MayRequire="Ludeon.RimWorld.Biotech">DeathrestCasket</li>
+								</things>
+							</li>
+							<li Class="RoomRequirement_ThingAnyOfCount">
+								<things>
+									<li>DankPyon_RoyalEndTable</li>
+								</things>
+								<count>1</count>
+							</li>
+							<li Class="RoomRequirement_ThingAnyOfCount">
+								<things>
+									<li>DankPyon_RoyalDresser</li>
+								</things>
+								<count>2</count>
+							</li>
+							<li Class="RoomRequirement_ThingAnyOfCount">
+								<things>
+									<li>DankPyon_RoyalCloset</li>
+								</things>
+								<count>3</count>
+							</li>
+							<li Class="RoomRequirement_ThingAnyOfCount">
+								<things>
+									<li>DankPyon_RoyalChest</li>
+								</things>
+								<count>1</count>
+							</li>
+							<li Class="RoomRequirement_ThingAnyOfCount">
+								<things>
+									<li>DankPyon_RusticHearth</li>
+								</things>
+								<count>1</count>
+							</li>
+							<li Class="RoomRequirement_ThingAnyOfCount">
+								<things>
+									<li>DankPyon_RoyalArmchair</li>
+								</things>
+								<count>4</count>
+							</li>
+							<li Class="RoomRequirement_ThingAnyOfCount">
+								<things>
+									<li>DankPyon_RoyalTable2x2c</li>
+								</things>
+								<count>1</count>
+							</li>
+							<li Class="RoomRequirement_ThingAnyOfCount">
+								<things>
+									<li>DankPyon_RoyalBookshelf</li>
+								</things>
+								<count>2</count>
+							</li>
+							<li Class="RoomRequirement_ThingAnyOfCount">
+								<things>
+									<li>DankPyon_ArmorStatue</li>
+								</things>
+								<count>1</count>
+							</li>
+							<li Class="RoomRequirement_Thing">
+								<thingDef>VFEE_RoyalMirror</thingDef>
+							</li>
+							<li Class="RoomRequirement_Thing">
+								<thingDef>DankPyon_RugDaer4x4c</thingDef>
+							</li>							
+							<li Class="RoomRequirement_ThingAnyOfCount">
+								<things>
+									<li>DankPyon_RugHyena2x2c</li>
+									<li>DankPyon_RugWolfTimber2x2c</li>
+									<li>DankPyon_RugWolfArctic2x2c</li>
+									<li>DankPyon_RugCougar2x2c</li>
+									<li>DankPyon_RugPanther2x2c</li>
+									<li>DankPyon_RugGrizzlyBear3x3c</li>
+									<li>DankPyon_RugPolarBear3x3c</li>
+									<li>DankPyon_RugRox3x3c</li>
+									<li>DankPyon_RugThrumbo3x3c</li>
+									<li>DankPyon_RugHuman1x2c</li>
+									<li>DankPyon_RugDaer4x4c</li>
+								</things>
+								<count>3</count>
+							</li>
+							<li Class="RoomRequirement_ThingAnyOfCount">
+								<things>
+									<li>DankPyon_CandleStand</li>
+									<li>DankPyon_CandleStand_Beeswax</li>
+									<li>DankPyon_Candles</li>
+									<li>DankPyon_Candles_Beeswax</li>
+								</things>
+								<count>4</count>
+							</li>
+						</bedroomRequirements>
+					</value>
+				</li>
+
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/RoyalTitleDef[defName="VFEE_HighStellarch"]/bedroomRequirements</xpath>
+					<value>
+						<bedroomRequirements Inherit="False">
+							<li Class="RoomRequirement_Area">
+								<area>64</area>
+							</li>
+							<li Class="RoomRequirement_Impressiveness">
+								<impressiveness>170</impressiveness>
+							</li>
+							<li Class="RoomRequirement_TerrainWithTags">
+								<labelKey>RoomRequirementAllFloored</labelKey>
+								<tags>
+									<li>Floor</li>
+								</tags>
+							</li>
+							<li Class="RoomRequirement_ThingAnyOf">
+								<disablingPrecepts>
+									<li MayRequire="Ludeon.RimWorld.Ideology">SlabBed_Preferred</li>
+								</disablingPrecepts>
+								<things>
+									<li>RoyalBed</li>
+									<li>DankPyon_RoyalTudorBed</li>
+									<li MayRequire="Ludeon.RimWorld.Biotech">DeathrestCasket</li>
+								</things>
+							</li>
+							<li Class="RoomRequirement_ThingAnyOfCount">
+								<things>
+									<li>DankPyon_RoyalEndTable</li>
+								</things>
+								<count>2</count>
+							</li>
+							<li Class="RoomRequirement_ThingAnyOfCount">
+								<things>
+									<li>DankPyon_RoyalDresser</li>
+								</things>
+								<count>2</count>
+							</li>
+							<li Class="RoomRequirement_ThingAnyOfCount">
+								<things>
+									<li>DankPyon_RoyalCloset</li>
+								</things>
+								<count>3</count>
+							</li>
+							<li Class="RoomRequirement_ThingAnyOfCount">
+								<things>
+									<li>DankPyon_RoyalChest</li>
+								</things>
+								<count>1</count>
+							</li>
+							<li Class="RoomRequirement_ThingAnyOfCount">
+								<things>
+									<li>DankPyon_RusticHearth</li>
+								</things>
+								<count>1</count>
+							</li>
+							<li Class="RoomRequirement_ThingAnyOfCount">
+								<things>
+									<li>DankPyon_RoyalArmchair</li>
+								</things>
+								<count>4</count>
+							</li>
+							<li Class="RoomRequirement_ThingAnyOfCount">
+								<things>
+									<li>DankPyon_RoyalTable2x2c</li>
+								</things>
+								<count>1</count>
+							</li>
+							<li Class="RoomRequirement_ThingAnyOfCount">
+								<things>
+									<li>DankPyon_RoyalBookshelf</li>
+								</things>
+								<count>2</count>
+							</li>
+							<li Class="RoomRequirement_ThingAnyOfCount">
+								<things>
+									<li>DankPyon_ArmorStatue</li>
+								</things>
+								<count>2</count>
+							</li>
+							<li Class="RoomRequirement_Thing">
+								<thingDef>VFEE_RoyalMirror</thingDef>
+							</li>
+							<li Class="RoomRequirement_ThingAnyOfCount">
+								<things>
+									<li>DankPyon_RugDaer4x4c</li>
+								</things>
+								<count>2</count>
+							</li>					
+							<li Class="RoomRequirement_ThingAnyOfCount">
+								<things>
+									<li>DankPyon_RugHyena2x2c</li>
+									<li>DankPyon_RugWolfTimber2x2c</li>
+									<li>DankPyon_RugWolfArctic2x2c</li>
+									<li>DankPyon_RugCougar2x2c</li>
+									<li>DankPyon_RugPanther2x2c</li>
+									<li>DankPyon_RugGrizzlyBear3x3c</li>
+									<li>DankPyon_RugPolarBear3x3c</li>
+									<li>DankPyon_RugRox3x3c</li>
+									<li>DankPyon_RugThrumbo3x3c</li>
+									<li>DankPyon_RugHuman1x2c</li>
+									<li>DankPyon_RugDaer4x4c</li>
+								</things>
+								<count>3</count>
+							</li>
+							<li Class="RoomRequirement_ThingAnyOfCount">
+								<things>
+									<li>DankPyon_CandleStand</li>
+									<li>DankPyon_CandleStand_Beeswax</li>
+									<li>DankPyon_Candles</li>
+									<li>DankPyon_Candles_Beeswax</li>
+								</things>
+								<count>4</count>
+							</li>
+						</bedroomRequirements>
+					</value>
+				</li>
+			
+			<!-- Thromeroom -->
+			
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/RoyalTitleDef[defName="Acolyte"]/throneRoomRequirements</xpath>
+					<value>
+						<throneRoomRequirements Inherit="False">
+							<li Class="RoomRequirement_HasAssignedThroneAnyOf">
+								<things>
+									<li>VFEE_GrandChair</li>
+									<li>GrandThrone</li>
+									<li>VFEE_StellicThrone</li>
+								</things>
+							</li>
+							<li Class="RoomRequirement_Area">
+								<area>24</area>
+							</li>
+							<li Class="RoomRequirement_Impressiveness">
+								<impressiveness>50</impressiveness>
+							</li>
+							<li Class="RoomRequirement_TerrainWithTags">
+								<labelKey>RoomRequirementAllFloored</labelKey>
+								<tags>
+									<li>Floor</li>
+								</tags>
+							</li>
+							<li Class="RoomRequirement_ThingAnyOfCount">
+								<things>
+									<li>Brazier</li>
+									<li MayRequire="Ludeon.RimWorld.Royalty,Ludeon.RimWorld.Ideology">DarklightBrazier</li>
+									<li MayRequire="Ludeon.RimWorld.Royalty,DevDesigner.Blood">DevDesigner_BloodBrazier</li>
+								</things>
+								<count>2</count>
+							</li>							
+						</throneRoomRequirements>
+					</value>
+				</li>
+			
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/RoyalTitleDef[defName="Knight"]/throneRoomRequirements</xpath>
+					<value>
+						<throneRoomRequirements Inherit="False">
+							<li Class="RoomRequirement_HasAssignedThroneAnyOf">
+								<things>
+									<li>VFEE_GrandChair</li>
+									<li>GrandThrone</li>
+									<li>VFEE_StellicThrone</li>
+								</things>
+							</li>
+							<li Class="RoomRequirement_Area">
+								<area>30</area>
+							</li>
+							<li Class="RoomRequirement_Impressiveness">
+								<impressiveness>60</impressiveness>
+							</li>
+							<li Class="RoomRequirement_TerrainWithTags">
+								<labelKey>RoomRequirementAllFloored</labelKey>
+								<tags>
+									<li>Floor</li>
+								</tags>
+							</li>
+							<li Class="RoomRequirement_ThingAnyOfCount">
+								<things>
+									<li>Brazier</li>
+									<li MayRequire="Ludeon.RimWorld.Royalty,Ludeon.RimWorld.Ideology">DarklightBrazier</li>
+									<li MayRequire="Ludeon.RimWorld.Royalty,DevDesigner.Blood">DevDesigner_BloodBrazier</li>
+								</things>
+								<count>2</count>
+							</li>
+							<li Class="RoomRequirement_ThingAnyOfCount">
+								<things>
+									<li>DankPyon_LogColumn</li>
+									<li>Column</li>
+									<li>DankPyon_RoyalColumn</li>
+									<li>DankPyon_Ancient_Column</li>
+								</things>
+								<count>2</count>
+							</li>	
+							<li Class="RoomRequirement_Thing">
+								<thingDef>Harp</thingDef>
+							</li>						
+						</throneRoomRequirements>
+					</value>
+				</li>
+			
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/RoyalTitleDef[defName="Praetor"]/throneRoomRequirements</xpath>
+					<value>
+						<throneRoomRequirements Inherit="False">
+							<li Class="RoomRequirement_HasAssignedThroneAnyOf">
+								<things>
+									<li>VFEE_GrandChair</li>
+									<li>GrandThrone</li>
+									<li>VFEE_StellicThrone</li>
+								</things>
+							</li>
+							<li Class="RoomRequirement_Area">
+								<area>40</area>
 							</li>
 							<li Class="RoomRequirement_Impressiveness">
 								<impressiveness>90</impressiveness>
@@ -1666,90 +1564,105 @@
 									<li>Floor</li>
 								</tags>
 							</li>
-							<li Class="RoomRequirement_ThingAnyOf">
-								<disablingPrecepts>
-									<li MayRequire="Ludeon.RimWorld.Ideology">SlabBed_Preferred</li>
-								</disablingPrecepts>
+							<li Class="RoomRequirement_ThingAnyOfCount">
 								<things>
-									<li>DankPyon_RoyalTudorBed</li>
-									<li MayRequire="Ludeon.RimWorld.Biotech">DeathrestCasket</li>
+									<li>Brazier</li>
+									<li MayRequire="Ludeon.RimWorld.Royalty,Ludeon.RimWorld.Ideology">DarklightBrazier</li>
+									<li MayRequire="Ludeon.RimWorld.Royalty,DevDesigner.Blood">DevDesigner_BloodBrazier</li>
 								</things>
-							</li>
-							<li Class="RoomRequirement_Thing">
-								<thingDef>DankPyon_RusticEndTable</thingDef>
-							</li>
-							<li Class="RoomRequirement_ThingCount">
-								<thingDef>DankPyon_RusticDresser</thingDef>
-								<count>2</count>
-							</li>	
-							<li Class="RoomRequirement_Thing">
-								<thingDef>DankPyon_RusticCloset</thingDef>
-							</li>		
-							<li Class="RoomRequirement_Thing">
-								<thingDef>DankPyon_RusticChest</thingDef>
-							</li>
-							<li Class="RoomRequirement_ThingCount">
-								<thingDef>DankPyon_RusticBookshelf</thingDef>
-								<count>2</count>
+								<count>4</count>
 							</li>
 							<li Class="RoomRequirement_ThingAnyOfCount">
 								<things>
-									<li>DankPyon_RoyalArmchair</li>
-									<li>Armchair</li>
-									<li>DankPyon_RusticNobleChair</li>
+									<li>DankPyon_LogColumn</li>
+									<li>Column</li>
+									<li>DankPyon_RoyalColumn</li>
+									<li>DankPyon_Ancient_Column</li>
+								</things>
+								<count>4</count>
+							</li>
+							<li Class="RoomRequirement_Thing">
+								<thingDef>Harp</thingDef>
+							</li>						
+						</throneRoomRequirements>
+					</value>
+				</li>
+			
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/RoyalTitleDef[defName="Baron"]/throneRoomRequirements</xpath>
+					<value>
+						<throneRoomRequirements Inherit="False">
+							<li Class="RoomRequirement_HasAssignedThroneAnyOf">
+								<things>
+									<li>GrandThrone</li>
+									<li>VFEE_StellicThrone</li>
+								</things>
+							</li>
+							<li Class="RoomRequirement_Area">
+								<area>60</area>
+							</li>
+							<li Class="RoomRequirement_Impressiveness">
+								<impressiveness>120</impressiveness>
+							</li>
+							<li Class="RoomRequirement_TerrainWithTags">
+								<labelKey>RoomRequirementAllFloored</labelKey>
+								<tags>
+									<li>Floor</li>
+								</tags>
+							</li>
+							<li Class="RoomRequirement_ThingAnyOfCount">
+								<things>
+									<li>Brazier</li>
+									<li MayRequire="Ludeon.RimWorld.Royalty,Ludeon.RimWorld.Ideology">DarklightBrazier</li>
+									<li MayRequire="Ludeon.RimWorld.Royalty,DevDesigner.Blood">DevDesigner_BloodBrazier</li>
+								</things>
+								<count>4</count>
+							</li>
+							<li Class="RoomRequirement_ThingAnyOfCount">
+								<things>
+									<li>Column</li>
+									<li>DankPyon_RoyalColumn</li>
+									<li>DankPyon_Ancient_Column</li>
 								</things>
 								<count>4</count>
 							</li>	
-							<li Class="RoomRequirement_Thing">
-								<thingDef>DankPyon_ReinforcedRusticTable2x2c</thingDef>
-							</li>
-							<li Class="RoomRequirement_Thing">
-								<thingDef>DankPyon_WoodBurningStove</thingDef>
+							<li Class="RoomRequirement_ThingAnyOfCount">
+								<things>
+									<li>DankPyon_Building_BowlSilver</li>
+									<li>DankPyon_Building_BowlGold</li>
+									<li>DankPyon_Building_ChaliceSilver</li>
+									<li>DankPyon_Building_ChaliceGold</li>
+								</things>
+								<count>2</count>
 							</li>
 							<li Class="RoomRequirement_ThingAnyOfCount">
 								<things>
-									<li>DankPyon_CandleStand</li>
-									<li>DankPyon_CandleStand_Beeswax</li>
+									<li>DankPyon_ArmorStatue</li>
 								</things>
-								<count>1</count>
+								<count>2</count>
 							</li>
-							<li Class="RoomRequirement_ThingAnyOfCount">
-								<things>
-									<li>DankPyon_Candles</li>
-									<li>DankPyon_Candles_Beeswax</li>
-								</things>
-								<count>1</count>
-							</li>
-						</bedroomRequirements>
+							<li Class="RoomRequirement_Thing">
+								<thingDef>Harp</thingDef>
+							</li>						
+						</throneRoomRequirements>
 					</value>
 				</li>
-
-				<li Class="PatchOperationAdd">
-					<xpath>Defs/RoyalTitleDef[defName="Count"]/foodRequirement/allowedDefs</xpath>
-					<value>
-						<li>DankPyon_Wine</li>
-						<li>DankPyon_Wine_Mulberry</li>
-						
-						<li>DankPyon_Ale</li>
-						<li>DankPyon_Cider</li>
-						<li>DankPyon_Mead</li>
-						
-						<li>DankPyon_JuiceApple</li>
-						<li>DankPyon_Honey</li>
-					</value>
-				</li>
-				
-
-				
+			
 				<li Class="PatchOperationReplace">
-					<xpath>Defs/RoyalTitleDef[defName="Baron"]/bedroomRequirements</xpath>
+					<xpath>Defs/RoyalTitleDef[defName="Count"]/throneRoomRequirements</xpath>
 					<value>
-						<bedroomRequirements Inherit="False">
+						<throneRoomRequirements Inherit="False">
+							<li Class="RoomRequirement_HasAssignedThroneAnyOf">
+								<things>
+									<li>GrandThrone</li>
+									<li>VFEE_StellicThrone</li>
+								</things>
+							</li>
 							<li Class="RoomRequirement_Area">
-								<area>50</area>
+								<area>80</area>
 							</li>
 							<li Class="RoomRequirement_Impressiveness">
-								<impressiveness>70</impressiveness>
+								<impressiveness>140</impressiveness>
 							</li>
 							<li Class="RoomRequirement_TerrainWithTags">
 								<labelKey>RoomRequirementAllFloored</labelKey>
@@ -1757,86 +1670,345 @@
 									<li>Floor</li>
 								</tags>
 							</li>
-							<li Class="RoomRequirement_ThingAnyOf">
-								<disablingPrecepts>
-									<li MayRequire="Ludeon.RimWorld.Ideology">SlabBed_Preferred</li>
-								</disablingPrecepts>
+							<li Class="RoomRequirement_ThingAnyOfCount">
 								<things>
-									<li>DankPyon_RoyalTudorBed</li>
-									<li MayRequire="Ludeon.RimWorld.Biotech">DeathrestCasket</li>
+									<li>Brazier</li>
+									<li MayRequire="Ludeon.RimWorld.Royalty,Ludeon.RimWorld.Ideology">DarklightBrazier</li>
+									<li MayRequire="Ludeon.RimWorld.Royalty,DevDesigner.Blood">DevDesigner_BloodBrazier</li>
 								</things>
-							</li>
-							<li Class="RoomRequirement_Thing">
-								<thingDef>DankPyon_RusticEndTable</thingDef>
-							</li>
-							<li Class="RoomRequirement_ThingCount">
-								<thingDef>DankPyon_RusticDresser</thingDef>
-								<count>1</count>
-							</li>	
-							<li Class="RoomRequirement_Thing">
-								<thingDef>DankPyon_RusticCloset</thingDef>
-							</li>		
-							<li Class="RoomRequirement_Thing">
-								<thingDef>DankPyon_RusticChest</thingDef>
+								<count>4</count>
 							</li>
 							<li Class="RoomRequirement_ThingAnyOfCount">
 								<things>
-									<li>DankPyon_RoyalArmchair</li>
-									<li>Armchair</li>
-									<li>DankPyon_RusticNobleChair</li>
+									<li>Column</li>
+									<li>DankPyon_RoyalColumn</li>
+									<li>DankPyon_Ancient_Column</li>
+								</things>
+								<count>6</count>
+							</li>	
+							<li Class="RoomRequirement_ThingAnyOfCount">
+								<things>
+									<li>DankPyon_Building_BowlSilver</li>
+									<li>DankPyon_Building_BowlGold</li>
+									<li>DankPyon_Building_ChaliceSilver</li>
+									<li>DankPyon_Building_ChaliceGold</li>
+								</things>
+								<count>2</count>
+							</li>
+							<li Class="RoomRequirement_ThingAnyOfCount">
+								<things>
+									<li>DankPyon_ArmorStatue</li>
+								</things>
+								<count>4</count>
+							</li>
+							<li Class="RoomRequirement_Thing">
+								<thingDef>Harpsichord</thingDef>
+							</li>						
+						</throneRoomRequirements>
+					</value>
+				</li>
+			
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/RoyalTitleDef[defName="VFEE_Archcount"]/throneRoomRequirements</xpath>
+					<value>
+						<throneRoomRequirements Inherit="False">
+							<li Class="RoomRequirement_HasAssignedThroneAnyOf">
+								<things>
+									<li>GrandThrone</li>
+									<li>VFEE_StellicThrone</li>
+								</things>
+							</li>
+							<li Class="RoomRequirement_Area">
+								<area>100</area>
+							</li>
+							<li Class="RoomRequirement_Impressiveness">
+								<impressiveness>160</impressiveness>
+							</li>
+							<li Class="RoomRequirement_TerrainWithTags">
+								<labelKey>RoomRequirementAllFloored</labelKey>
+								<tags>
+									<li>Floor</li>
+								</tags>
+							</li>
+							<li Class="RoomRequirement_ThingAnyOfCount">
+								<things>
+									<li>Brazier</li>
+									<li MayRequire="Ludeon.RimWorld.Royalty,Ludeon.RimWorld.Ideology">DarklightBrazier</li>
+									<li MayRequire="Ludeon.RimWorld.Royalty,DevDesigner.Blood">DevDesigner_BloodBrazier</li>
+								</things>
+								<count>4</count>
+							</li>
+							<li Class="RoomRequirement_ThingAnyOfCount">
+								<things>
+									<li>Column</li>
+									<li>DankPyon_RoyalColumn</li>
+									<li>DankPyon_Ancient_Column</li>
+								</things>
+								<count>8</count>
+							</li>	
+							<li Class="RoomRequirement_ThingAnyOfCount">
+								<things>
+									<li>DankPyon_Building_BowlSilver</li>
+									<li>DankPyon_Building_BowlGold</li>
+									<li>DankPyon_Building_ChaliceSilver</li>
+									<li>DankPyon_Building_ChaliceGold</li>
+								</things>
+								<count>4</count>
+							</li>
+							<li Class="RoomRequirement_ThingAnyOfCount">
+								<things>
+									<li>VFEE_GrandTable</li>
+								</things>
+								<count>1</count>
+							</li>
+							<li Class="RoomRequirement_ThingAnyOfCount">
+								<things>
+									<li>DankPyon_ArmorStatue</li>
+								</things>
+								<count>6</count>
+							</li>
+							<li Class="RoomRequirement_Thing">
+								<thingDef>Harpsichord</thingDef>
+							</li>						
+						</throneRoomRequirements>
+					</value>
+				</li>
+			
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/RoyalTitleDef[defName="VFEE_Marquess"]/throneRoomRequirements</xpath>
+					<value>
+						<throneRoomRequirements Inherit="False">
+							<li Class="RoomRequirement_HasAssignedThroneAnyOf">
+								<things>
+									<li>GrandThrone</li>
+									<li>VFEE_StellicThrone</li>
+								</things>
+							</li>
+							<li Class="RoomRequirement_Area">
+								<area>120</area>
+							</li>
+							<li Class="RoomRequirement_Impressiveness">
+								<impressiveness>180</impressiveness>
+							</li>
+							<li Class="RoomRequirement_TerrainWithTags">
+								<labelKey>RoomRequirementAllFloored</labelKey>
+								<tags>
+									<li>Floor</li>
+								</tags>
+							</li>
+							<li Class="RoomRequirement_ThingAnyOfCount">
+								<things>
+									<li>Brazier</li>
+									<li MayRequire="Ludeon.RimWorld.Royalty,Ludeon.RimWorld.Ideology">DarklightBrazier</li>
+									<li MayRequire="Ludeon.RimWorld.Royalty,DevDesigner.Blood">DevDesigner_BloodBrazier</li>
+								</things>
+								<count>6</count>
+							</li>
+							<li Class="RoomRequirement_ThingAnyOfCount">
+								<things>
+									<li>DankPyon_RoyalColumn</li>
+									<li>DankPyon_Ancient_Column</li>
+								</things>
+								<count>10</count>
+							</li>	
+							<li Class="RoomRequirement_ThingAnyOfCount">
+								<things>
+									<li>DankPyon_Building_BowlSilver</li>
+									<li>DankPyon_Building_BowlGold</li>
+									<li>DankPyon_Building_ChaliceSilver</li>
+									<li>DankPyon_Building_ChaliceGold</li>
+								</things>
+								<count>6</count>
+							</li>
+							<li Class="RoomRequirement_ThingAnyOfCount">
+								<things>
+									<li>VFEE_GrandTable</li>
+								</things>
+								<count>1</count>
+							</li>
+							<li Class="RoomRequirement_ThingAnyOfCount">
+								<things>
+									<li>DankPyon_ArmorStatue</li>
+								</things>
+								<count>8</count>
+							</li>
+							<li Class="RoomRequirement_Thing">
+								<thingDef>Harpsichord</thingDef>
+							</li>						
+						</throneRoomRequirements>
+					</value>
+				</li>
+			
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/RoyalTitleDef[@ParentName="DukeBase"]/throneRoomRequirements</xpath>
+					<value>
+						<throneRoomRequirements Inherit="False">
+							<li Class="RoomRequirement_HasAssignedThroneAnyOf">
+								<things>
+									<li>GrandThrone</li>
+									<li>VFEE_StellicThrone</li>
+								</things>
+							</li>
+							<li Class="RoomRequirement_Area">
+								<area>140</area>
+							</li>
+							<li Class="RoomRequirement_Impressiveness">
+								<impressiveness>200</impressiveness>
+							</li>
+							<li Class="RoomRequirement_TerrainWithTags">
+								<labelKey>RoomRequirementAllFloored</labelKey>
+								<tags>
+									<li>Floor</li>
+								</tags>
+							</li>
+							<li Class="RoomRequirement_ThingAnyOfCount">
+								<things>
+									<li>Brazier</li>
+									<li MayRequire="Ludeon.RimWorld.Royalty,Ludeon.RimWorld.Ideology">DarklightBrazier</li>
+									<li MayRequire="Ludeon.RimWorld.Royalty,DevDesigner.Blood">DevDesigner_BloodBrazier</li>
+								</things>
+								<count>8</count>
+							</li>
+							<li Class="RoomRequirement_ThingAnyOfCount">
+								<things>
+									<li>DankPyon_RoyalColumn</li>
+									<li>DankPyon_Ancient_Column</li>
+								</things>
+								<count>12</count>
+							</li>	
+							<li Class="RoomRequirement_ThingAnyOfCount">
+								<things>
+									<li>DankPyon_Building_BowlSilver</li>
+									<li>DankPyon_Building_BowlGold</li>
+									<li>DankPyon_Building_ChaliceSilver</li>
+									<li>DankPyon_Building_ChaliceGold</li>
+								</things>
+								<count>6</count>
+							</li>
+							<li Class="RoomRequirement_ThingAnyOfCount">
+								<things>
+									<li>VFEE_GrandTable</li>
+								</things>
+								<count>1</count>
+							</li>
+							<li Class="RoomRequirement_ThingAnyOfCount">
+								<things>
+									<li>VFEE_GrandChair</li>
+								</things>
+								<count>2</count>
+							</li>
+							<li Class="RoomRequirement_ThingAnyOfCount">
+								<things>
+									<li>DankPyon_ArmorStatue</li>
+								</things>
+								<count>10</count>
+							</li>
+							<li Class="RoomRequirement_Thing">
+								<thingDef>Piano</thingDef>
+							</li>						
+						</throneRoomRequirements>
+					</value>
+				</li>
+			
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/RoyalTitleDef[defName="VFEE_Archduke"]/throneRoomRequirements</xpath>
+					<value>
+						<throneRoomRequirements Inherit="False">
+							<li Class="RoomRequirement_HasAssignedThroneAnyOf">
+								<things>
+									<li>GrandThrone</li>
+									<li>VFEE_StellicThrone</li>
+								</things>
+							</li>
+							<li Class="RoomRequirement_Area">
+								<area>160</area>
+							</li>
+							<li Class="RoomRequirement_Impressiveness">
+								<impressiveness>220</impressiveness>
+							</li>
+							<li Class="RoomRequirement_TerrainWithTags">
+								<labelKey>RoomRequirementAllFloored</labelKey>
+								<tags>
+									<li>Floor</li>
+								</tags>
+							</li>
+							<li Class="RoomRequirement_ThingAnyOfCount">
+								<things>
+									<li>Brazier</li>
+									<li MayRequire="Ludeon.RimWorld.Royalty,Ludeon.RimWorld.Ideology">DarklightBrazier</li>
+									<li MayRequire="Ludeon.RimWorld.Royalty,DevDesigner.Blood">DevDesigner_BloodBrazier</li>
+								</things>
+								<count>10</count>
+							</li>
+							<li Class="RoomRequirement_ThingAnyOfCount">
+								<things>
+									<li>DankPyon_RoyalColumn</li>
+									<li>DankPyon_Ancient_Column</li>
+								</things>
+								<count>14</count>
+							</li>	
+							<li Class="RoomRequirement_ThingAnyOfCount">
+								<things>
+									<li>DankPyon_Ancient_Column</li>
 								</things>
 								<count>2</count>
 							</li>	
-							<li Class="RoomRequirement_Thing">
-								<thingDef>DankPyon_ReinforcedRusticTable2x2c</thingDef>
-							</li>
-							<li Class="RoomRequirement_Thing">
-								<thingDef>DankPyon_WoodBurningStove</thingDef>
+							<li Class="RoomRequirement_ThingAnyOfCount">
+								<things>
+									<li>DankPyon_Building_BowlSilver</li>
+									<li>DankPyon_Building_BowlGold</li>
+									<li>DankPyon_Building_ChaliceSilver</li>
+									<li>DankPyon_Building_ChaliceGold</li>
+								</things>
+								<count>6</count>
 							</li>
 							<li Class="RoomRequirement_ThingAnyOfCount">
 								<things>
-									<li>DankPyon_CandleStand</li>
-									<li>DankPyon_CandleStand_Beeswax</li>
+									<li>VFEE_GrandTable</li>
 								</things>
 								<count>1</count>
 							</li>
 							<li Class="RoomRequirement_ThingAnyOfCount">
 								<things>
-									<li>DankPyon_Candles</li>
-									<li>DankPyon_Candles_Beeswax</li>
+									<li>VFEE_GrandChair</li>
+								</things>
+								<count>4</count>
+							</li>
+							<li Class="RoomRequirement_ThingAnyOfCount">
+								<things>
+									<li>VFEE_RoyalStool</li>
 								</things>
 								<count>1</count>
 							</li>
-						</bedroomRequirements>
+							<li Class="RoomRequirement_ThingAnyOfCount">
+								<things>
+									<li>DankPyon_ArmorStatue</li>
+								</things>
+								<count>12</count>
+							</li>
+							
+							<li Class="RoomRequirement_Thing">
+								<thingDef>Piano</thingDef>
+							</li>						
+						</throneRoomRequirements>
 					</value>
 				</li>
-
-				<li Class="PatchOperationAdd">
-					<xpath>Defs/RoyalTitleDef[defName="Baron"]/foodRequirement/allowedDefs</xpath>
-					<value>
-						<li>DankPyon_Wine</li>
-						<li>DankPyon_Wine_Mulberry</li>
-						
-						<li>DankPyon_Ale</li>
-						<li>DankPyon_Cider</li>
-						<li>DankPyon_Mead</li>
-						
-						<li>DankPyon_JuiceApple</li>
-						<li>DankPyon_Honey</li>
-					</value>
-				</li>
-				
-
-				
+			
 				<li Class="PatchOperationReplace">
-					<xpath>Defs/RoyalTitleDef[defName="Preator"]/bedroomRequirements</xpath>
+					<xpath>Defs/RoyalTitleDef[@ParentName="ConsulBase"]/throneRoomRequirements</xpath>
 					<value>
-						<bedroomRequirements Inherit="False">
+						<throneRoomRequirements Inherit="False">
+							<li Class="RoomRequirement_HasAssignedThroneAnyOf">
+								<things>
+									<li>GrandThrone</li>
+									<li>VFEE_StellicThrone</li>
+								</things>
+							</li>
 							<li Class="RoomRequirement_Area">
-								<area>50</area>
+								<area>180</area>
 							</li>
 							<li Class="RoomRequirement_Impressiveness">
-								<impressiveness>65</impressiveness>
+								<impressiveness>240</impressiveness>
 							</li>
 							<li Class="RoomRequirement_TerrainWithTags">
 								<labelKey>RoomRequirementAllFloored</labelKey>
@@ -1844,87 +2016,165 @@
 									<li>Floor</li>
 								</tags>
 							</li>
-							<li Class="RoomRequirement_ThingAnyOf">
-								<disablingPrecepts>
-									<li MayRequire="Ludeon.RimWorld.Ideology">SlabBed_Preferred</li>
-								</disablingPrecepts>
+							<li Class="RoomRequirement_ThingAnyOfCount">
 								<things>
-									<li>DankPyon_BedFurDouble</li>
-									<li>RoyalBed</li>
-									<li MayRequire="Ludeon.RimWorld.Biotech">DeathrestCasket</li>
+									<li>Brazier</li>
+									<li MayRequire="Ludeon.RimWorld.Royalty,Ludeon.RimWorld.Ideology">DarklightBrazier</li>
+									<li MayRequire="Ludeon.RimWorld.Royalty,DevDesigner.Blood">DevDesigner_BloodBrazier</li>
 								</things>
-							</li>
-							<li Class="RoomRequirement_Thing">
-								<thingDef>DankPyon_RusticEndTable</thingDef>
-							</li>
-							<li Class="RoomRequirement_ThingCount">
-								<thingDef>DankPyon_RusticDresser</thingDef>
-								<count>1</count>
-							</li>	
-							<li Class="RoomRequirement_Thing">
-								<thingDef>DankPyon_RusticCloset</thingDef>
-							</li>		
-							<li Class="RoomRequirement_Thing">
-								<thingDef>DankPyon_RusticChest</thingDef>
+								<count>10</count>
 							</li>
 							<li Class="RoomRequirement_ThingAnyOfCount">
 								<things>
-									<li>DankPyon_RoyalArmchair</li>
-									<li>Armchair</li>
-									<li>DankPyon_RusticNobleChair</li>
+									<li>DankPyon_RoyalColumn</li>
+									<li>DankPyon_Ancient_Column</li>
+								</things>
+								<count>16</count>
+							</li>	
+							<li Class="RoomRequirement_ThingAnyOfCount">
+								<things>
+									<li>DankPyon_Ancient_Column</li>
+								</things>
+								<count>4</count>
+							</li>	
+							<li Class="RoomRequirement_ThingAnyOfCount">
+								<things>
+									<li>DankPyon_Building_BowlSilver</li>
+									<li>DankPyon_Building_BowlGold</li>
+									<li>DankPyon_Building_ChaliceSilver</li>
+									<li>DankPyon_Building_ChaliceGold</li>
+								</things>
+								<count>8</count>
+							</li>
+							<li Class="RoomRequirement_ThingAnyOfCount">
+								<things>
+									<li>VFEE_GrandTable</li>
+								</things>
+								<count>1</count>
+							</li>
+							<li Class="RoomRequirement_ThingAnyOfCount">
+								<things>
+									<li>VFEE_GrandChair</li>
+								</things>
+								<count>6</count>
+							</li>
+							<li Class="RoomRequirement_ThingAnyOfCount">
+								<things>
+									<li>VFEE_RoyalStool</li>
+								</things>
+								<count>1</count>
+							</li>
+							<li Class="RoomRequirement_ThingAnyOfCount">
+								<things>
+									<li>DankPyon_ArmorStatue</li>
+								</things>
+								<count>16</count>
+							</li>
+							
+							<li Class="RoomRequirement_Thing">
+								<thingDef>Piano</thingDef>
+							</li>						
+						</throneRoomRequirements>
+					</value>
+				</li>
+			
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/RoyalTitleDef[defName="VFEE_Magister"]/throneRoomRequirements</xpath>
+					<value>
+						<throneRoomRequirements Inherit="False">
+							<li Class="RoomRequirement_HasAssignedThroneAnyOf">
+								<things>
+									<li>VFEE_StellicThrone</li>
+								</things>
+							</li>
+							<li Class="RoomRequirement_Area">
+								<area>200</area>
+							</li>
+							<li Class="RoomRequirement_Impressiveness">
+								<impressiveness>260</impressiveness>
+							</li>
+							<li Class="RoomRequirement_TerrainWithTags">
+								<labelKey>RoomRequirementAllFloored</labelKey>
+								<tags>
+									<li>Floor</li>
+								</tags>
+							</li>
+							<li Class="RoomRequirement_ThingAnyOfCount">
+								<things>
+									<li>Brazier</li>
+									<li MayRequire="Ludeon.RimWorld.Royalty,Ludeon.RimWorld.Ideology">DarklightBrazier</li>
+									<li MayRequire="Ludeon.RimWorld.Royalty,DevDesigner.Blood">DevDesigner_BloodBrazier</li>
+								</things>
+								<count>10</count>
+							</li>
+							<li Class="RoomRequirement_ThingAnyOfCount">
+								<things>
+									<li>DankPyon_RoyalColumn</li>
+									<li>DankPyon_Ancient_Column</li>
+								</things>
+								<count>18</count>
+							</li>	
+							<li Class="RoomRequirement_ThingAnyOfCount">
+								<things>
+									<li>DankPyon_Ancient_Column</li>
+								</things>
+								<count>6</count>
+							</li>	
+							<li Class="RoomRequirement_ThingAnyOfCount">
+								<things>
+									<li>DankPyon_Building_BowlSilver</li>
+									<li>DankPyon_Building_BowlGold</li>
+									<li>DankPyon_Building_ChaliceSilver</li>
+									<li>DankPyon_Building_ChaliceGold</li>
+								</things>
+								<count>8</count>
+							</li>
+							<li Class="RoomRequirement_ThingAnyOfCount">
+								<things>
+									<li>VFEE_GrandTable</li>
 								</things>
 								<count>2</count>
-							</li>	
-							<li Class="RoomRequirement_Thing">
-								<thingDef>DankPyon_ReinforcedRusticTable2x2c</thingDef>
-							</li>
-							<li Class="RoomRequirement_Thing">
-								<thingDef>DankPyon_WoodBurningStove</thingDef>
 							</li>
 							<li Class="RoomRequirement_ThingAnyOfCount">
 								<things>
-									<li>DankPyon_CandleStand</li>
-									<li>DankPyon_CandleStand_Beeswax</li>
+									<li>VFEE_GrandChair</li>
+								</things>
+								<count>8</count>
+							</li>
+							<li Class="RoomRequirement_ThingAnyOfCount">
+								<things>
+									<li>VFEE_RoyalStool</li>
 								</things>
 								<count>1</count>
 							</li>
 							<li Class="RoomRequirement_ThingAnyOfCount">
 								<things>
-									<li>DankPyon_Candles</li>
-									<li>DankPyon_Candles_Beeswax</li>
+									<li>DankPyon_ArmorStatue</li>
 								</things>
-								<count>1</count>
+								<count>20</count>
 							</li>
-						</bedroomRequirements>
+							
+							<li Class="RoomRequirement_Thing">
+								<thingDef>VFEE_PipeOrgan</thingDef>
+							</li>						
+						</throneRoomRequirements>
 					</value>
 				</li>
-
-				<li Class="PatchOperationAdd">
-					<xpath>Defs/RoyalTitleDef[defName="Preator"]/foodRequirement/allowedDefs</xpath>
-					<value>
-						<li>DankPyon_Wine</li>
-						<li>DankPyon_Wine_Mulberry</li>
-						
-						<li>DankPyon_Ale</li>
-						<li>DankPyon_Cider</li>
-						<li>DankPyon_Mead</li>
-						
-						<li>DankPyon_JuiceApple</li>
-						<li>DankPyon_Honey</li>
-					</value>
-				</li>
-				
-
-				
+			
 				<li Class="PatchOperationReplace">
-					<xpath>Defs/RoyalTitleDef[defName="Knight"]/bedroomRequirements</xpath>
+					<xpath>Defs/RoyalTitleDef[defName="VFEE_Despot"]/throneRoomRequirements</xpath>
 					<value>
-						<bedroomRequirements Inherit="False">
+						<throneRoomRequirements Inherit="False">
+							<li Class="RoomRequirement_HasAssignedThroneAnyOf">
+								<things>
+									<li>VFEE_StellicThrone</li>
+								</things>
+							</li>
 							<li Class="RoomRequirement_Area">
-								<area>50</area>
+								<area>220</area>
 							</li>
 							<li Class="RoomRequirement_Impressiveness">
-								<impressiveness>65</impressiveness>
+								<impressiveness>280</impressiveness>
 							</li>
 							<li Class="RoomRequirement_TerrainWithTags">
 								<labelKey>RoomRequirementAllFloored</labelKey>
@@ -1932,80 +2182,82 @@
 									<li>Floor</li>
 								</tags>
 							</li>
-							<li Class="RoomRequirement_ThingAnyOf">
-								<disablingPrecepts>
-									<li MayRequire="Ludeon.RimWorld.Ideology">SlabBed_Preferred</li>
-								</disablingPrecepts>
+							<li Class="RoomRequirement_ThingAnyOfCount">
 								<things>
-									<li>DankPyon_BedFurDouble</li>
-									<li>RoyalBed</li>
-									<li MayRequire="Ludeon.RimWorld.Biotech">DeathrestCasket</li>
+									<li>Brazier</li>
+									<li MayRequire="Ludeon.RimWorld.Royalty,Ludeon.RimWorld.Ideology">DarklightBrazier</li>
+									<li MayRequire="Ludeon.RimWorld.Royalty,DevDesigner.Blood">DevDesigner_BloodBrazier</li>
 								</things>
-							</li>
-							<li Class="RoomRequirement_Thing">
-								<thingDef>DankPyon_RusticEndTable</thingDef>
-							</li>
-							<li Class="RoomRequirement_ThingCount">
-								<thingDef>DankPyon_RusticDresser</thingDef>
-								<count>1</count>
-							</li>	
-							<li Class="RoomRequirement_Thing">
-								<thingDef>DankPyon_RusticCloset</thingDef>
-							</li>		
-							<li Class="RoomRequirement_Thing">
-								<thingDef>DankPyon_RusticChest</thingDef>
+								<count>10</count>
 							</li>
 							<li Class="RoomRequirement_ThingAnyOfCount">
 								<things>
-									<li>DankPyon_RoyalArmchair</li>
-									<li>Armchair</li>
-									<li>DankPyon_RusticNobleChair</li>
+									<li>DankPyon_RoyalColumn</li>
+									<li>DankPyon_Ancient_Column</li>
+								</things>
+								<count>24</count>
+							</li>	
+							<li Class="RoomRequirement_ThingAnyOfCount">
+								<things>
+									<li>DankPyon_Ancient_Column</li>
+								</things>
+								<count>10</count>
+							</li>
+							<li Class="RoomRequirement_ThingAnyOfCount">
+								<things>
+									<li>DankPyon_Building_BowlSilver</li>
+									<li>DankPyon_Building_BowlGold</li>
+									<li>DankPyon_Building_ChaliceSilver</li>
+									<li>DankPyon_Building_ChaliceGold</li>
+								</things>
+								<count>10</count>
+							</li>
+							<li Class="RoomRequirement_ThingAnyOfCount">
+								<things>
+									<li>VFEE_GrandTable</li>
 								</things>
 								<count>2</count>
-							</li>	
-							<li Class="RoomRequirement_Thing">
-								<thingDef>DankPyon_RusticTable2x2c</thingDef>
-							</li>
-							<li Class="RoomRequirement_Thing">
-								<thingDef>DankPyon_WoodBurningStove</thingDef>
 							</li>
 							<li Class="RoomRequirement_ThingAnyOfCount">
 								<things>
-									<li>DankPyon_Candles</li>
-									<li>DankPyon_Candles_Beeswax</li>
+									<li>VFEE_GrandChair</li>
+								</things>
+								<count>10</count>
+							</li>
+							<li Class="RoomRequirement_ThingAnyOfCount">
+								<things>
+									<li>VFEE_RoyalStool</li>
 								</things>
 								<count>1</count>
 							</li>
-						</bedroomRequirements>
+							<li Class="RoomRequirement_ThingAnyOfCount">
+								<things>
+									<li>DankPyon_ArmorStatue</li>
+								</things>
+								<count>24</count>
+							</li>
+							
+							<li Class="RoomRequirement_Thing">
+								<thingDef>VFEE_PipeOrgan</thingDef>
+							</li>						
+						</throneRoomRequirements>
 					</value>
 				</li>
-
-				<li Class="PatchOperationAdd">
-					<xpath>Defs/RoyalTitleDef[defName="Knight"]/foodRequirement/allowedDefs</xpath>
-					<value>
-						<li>DankPyon_Wine</li>
-						<li>DankPyon_Wine_Mulberry</li>
-						
-						<li>DankPyon_Ale</li>
-						<li>DankPyon_Cider</li>
-						<li>DankPyon_Mead</li>
-						
-						<li>DankPyon_JuiceApple</li>
-						<li>DankPyon_Honey</li>
-					</value>
-				</li>
-				
-
-				
+			
 				<li Class="PatchOperationReplace">
-					<xpath>Defs/RoyalTitleDef[defName="Acolyte"]/bedroomRequirements</xpath>
+					<xpath>Defs/RoyalTitleDef[@ParentName="StellarchBase"]/throneRoomRequirements</xpath>
 					<value>
-						<bedroomRequirements Inherit="False">
+						<throneRoomRequirements Inherit="False">
+							<li Class="RoomRequirement_HasAssignedThroneAnyOf">
+								<things>
+									<li>VFEE_StellicThrone</li>
+								</things>
+							</li>
 							<li Class="RoomRequirement_Area">
-								<area>50</area>
+								<area>240</area>
 							</li>
 							<li Class="RoomRequirement_Impressiveness">
-								<impressiveness>60</impressiveness>
+								<impressiveness>300</impressiveness>
 							</li>
 							<li Class="RoomRequirement_TerrainWithTags">
 								<labelKey>RoomRequirementAllFloored</labelKey>
@@ -2013,74 +2265,82 @@
 									<li>Floor</li>
 								</tags>
 							</li>
-							<li Class="RoomRequirement_ThingAnyOf">
-								<disablingPrecepts>
-									<li MayRequire="Ludeon.RimWorld.Ideology">SlabBed_Preferred</li>
-								</disablingPrecepts>
+							<li Class="RoomRequirement_ThingAnyOfCount">
 								<things>
-									<li>DankPyon_BedFur</li>
-									<li>DankPyon_BedFurDouble</li>
-									<li>RoyalBed</li>
-									<li MayRequire="Ludeon.RimWorld.Biotech">DeathrestCasket</li>
+									<li>Brazier</li>
+									<li MayRequire="Ludeon.RimWorld.Royalty,Ludeon.RimWorld.Ideology">DarklightBrazier</li>
+									<li MayRequire="Ludeon.RimWorld.Royalty,DevDesigner.Blood">DevDesigner_BloodBrazier</li>
 								</things>
-							</li>
-							<li Class="RoomRequirement_Thing">
-								<thingDef>DankPyon_RusticEndTable</thingDef>
-							</li>
-							<li Class="RoomRequirement_ThingCount">
-								<thingDef>DankPyon_RusticDresser</thingDef>
-								<count>1</count>
-							</li>	
-							<li Class="RoomRequirement_Thing">
-								<thingDef>DankPyon_RusticCloset</thingDef>
-							</li>		
-							<li Class="RoomRequirement_Thing">
-								<thingDef>DankPyon_RusticChest</thingDef>
+								<count>10</count>
 							</li>
 							<li Class="RoomRequirement_ThingAnyOfCount">
 								<things>
-									<li>DankPyon_RoyalArmchair</li>
-									<li>Armchair</li>
-									<li>DankPyon_RusticNobleChair</li>
+									<li>DankPyon_RoyalColumn</li>
+									<li>DankPyon_Ancient_Column</li>
+								</things>
+								<count>28</count>
+							</li>	
+							<li Class="RoomRequirement_ThingAnyOfCount">
+								<things>
+									<li>DankPyon_Ancient_Column</li>
+								</things>
+								<count>14</count>
+							</li>
+							<li Class="RoomRequirement_ThingAnyOfCount">
+								<things>
+									<li>DankPyon_Building_BowlSilver</li>
+									<li>DankPyon_Building_BowlGold</li>
+									<li>DankPyon_Building_ChaliceSilver</li>
+									<li>DankPyon_Building_ChaliceGold</li>
+								</things>
+								<count>12</count>
+							</li>
+							<li Class="RoomRequirement_ThingAnyOfCount">
+								<things>
+									<li>VFEE_GrandTable</li>
+								</things>
+								<count>2</count>
+							</li>
+							<li Class="RoomRequirement_ThingAnyOfCount">
+								<things>
+									<li>VFEE_GrandChair</li>
+								</things>
+								<count>12</count>
+							</li>
+							<li Class="RoomRequirement_ThingAnyOfCount">
+								<things>
+									<li>VFEE_RoyalStool</li>
 								</things>
 								<count>1</count>
-							</li>							
-							<li Class="RoomRequirement_Thing">
-								<thingDef>DankPyon_RusticTable2x2c</thingDef>
 							</li>
-							<li Class="RoomRequirement_Thing">
-								<thingDef>DankPyon_WoodBurningStove</thingDef>
+							<li Class="RoomRequirement_ThingAnyOfCount">
+								<things>
+									<li>DankPyon_ArmorStatue</li>
+								</things>
+								<count>28</count>
 							</li>
-						</bedroomRequirements>
+							
+							<li Class="RoomRequirement_Thing">
+								<thingDef>VFEE_PipeOrgan</thingDef>
+							</li>						
+						</throneRoomRequirements>
 					</value>
 				</li>
-
-
-
-				<li Class="PatchOperationAdd">
-					<xpath>Defs/RoyalTitleDef[defName="Acolyte"]/foodRequirement/allowedDefs</xpath>
-					<value>
-						<li>DankPyon_Wine</li>
-						<li>DankPyon_Wine_Mulberry</li>
-						
-						<li>DankPyon_Ale</li>
-						<li>DankPyon_Cider</li>
-						<li>DankPyon_Mead</li>
-						
-						<li>DankPyon_JuiceApple</li>
-						<li>DankPyon_Honey</li>
-					</value>
-				</li>
-
+			
 				<li Class="PatchOperationReplace">
-					<xpath>Defs/RoyalTitleDef[defName="Yeoman"]/bedroomRequirements</xpath>
+					<xpath>Defs/RoyalTitleDef[defName="VFEE_HighStellarch"]/throneRoomRequirements</xpath>
 					<value>
-						<bedroomRequirements Inherit="False">
+						<throneRoomRequirements Inherit="False">
+							<li Class="RoomRequirement_HasAssignedThroneAnyOf">
+								<things>
+									<li>VFEE_StellicThrone</li>
+								</things>
+							</li>
 							<li Class="RoomRequirement_Area">
-								<area>50</area>
+								<area>260</area>
 							</li>
 							<li Class="RoomRequirement_Impressiveness">
-								<impressiveness>60</impressiveness>
+								<impressiveness>320</impressiveness>
 							</li>
 							<li Class="RoomRequirement_TerrainWithTags">
 								<labelKey>RoomRequirementAllFloored</labelKey>
@@ -2088,56 +2348,72 @@
 									<li>Floor</li>
 								</tags>
 							</li>
-							<li Class="RoomRequirement_ThingAnyOf">
-								<disablingPrecepts>
-									<li MayRequire="Ludeon.RimWorld.Ideology">SlabBed_Preferred</li>
-								</disablingPrecepts>
+							<li Class="RoomRequirement_ThingAnyOfCount">
 								<things>
-									<li>DankPyon_BedFur</li>
-									<li>DankPyon_BedFurDouble</li>
-									<li>RoyalBed</li>
-									<li MayRequire="Ludeon.RimWorld.Biotech">DeathrestCasket</li>
+									<li>Brazier</li>
+									<li MayRequire="Ludeon.RimWorld.Royalty,Ludeon.RimWorld.Ideology">DarklightBrazier</li>
+									<li MayRequire="Ludeon.RimWorld.Royalty,DevDesigner.Blood">DevDesigner_BloodBrazier</li>
 								</things>
+								<count>12</count>
 							</li>
-							<li Class="RoomRequirement_Thing">
-								<thingDef>DankPyon_RusticEndTable</thingDef>
-							</li>
-							<li Class="RoomRequirement_ThingCount">
-								<thingDef>DankPyon_RusticDresser</thingDef>
-								<count>1</count>
+							<li Class="RoomRequirement_ThingAnyOfCount">
+								<things>
+									<li>DankPyon_RoyalColumn</li>
+									<li>DankPyon_Ancient_Column</li>
+								</things>
+								<count>34</count>
 							</li>	
-							<li Class="RoomRequirement_Thing">
-								<thingDef>DankPyon_RusticCloset</thingDef>
-							</li>		
-							<li Class="RoomRequirement_Thing">
-								<thingDef>DankPyon_RusticChest</thingDef>
-							</li>				
-							<li Class="RoomRequirement_Thing">
-								<thingDef>DankPyon_RusticTable2x2c</thingDef>
+							<li Class="RoomRequirement_ThingAnyOfCount">
+								<things>
+									<li>DankPyon_Ancient_Column</li>
+								</things>
+								<count>18</count>
 							</li>
-							<li Class="RoomRequirement_Thing">
-								<thingDef>DankPyon_WoodBurningStove</thingDef>
+							<li Class="RoomRequirement_ThingAnyOfCount">
+								<things>
+									<li>DankPyon_Building_BowlSilver</li>
+									<li>DankPyon_Building_BowlGold</li>
+									<li>DankPyon_Building_ChaliceSilver</li>
+									<li>DankPyon_Building_ChaliceGold</li>
+								</things>
+								<count>14</count>
 							</li>
-						</bedroomRequirements>
+							<li Class="RoomRequirement_ThingAnyOfCount">
+								<things>
+									<li>VFEE_GrandTable</li>
+								</things>
+								<count>4</count>
+							</li>
+							<li Class="RoomRequirement_ThingAnyOfCount">
+								<things>
+									<li>VFEE_GrandChair</li>
+								</things>
+								<count>24</count>
+							</li>
+							<li Class="RoomRequirement_ThingAnyOfCount">
+								<things>
+									<li>VFEE_RoyalStool</li>
+								</things>
+								<count>2</count>
+							</li>
+							<li Class="RoomRequirement_ThingAnyOfCount">
+								<things>
+									<li>DankPyon_ArmorStatue</li>
+								</things>
+								<count>28</count>
+							</li>
+							
+							<li Class="RoomRequirement_ThingCount">
+								<thingDef>VFEE_PipeOrgan</thingDef>
+								<count>2</count>
+							</li>						
+						</throneRoomRequirements>
 					</value>
 				</li>
-
-				<li Class="PatchOperationAdd">
-					<xpath>Defs/RoyalTitleDef[defName="Yeoman"]/foodRequirement/allowedDefs</xpath>
-					<value>
-						<li>DankPyon_Wine</li>
-						<li>DankPyon_Wine_Mulberry</li>
-						
-						<li>DankPyon_Ale</li>
-						<li>DankPyon_Cider</li>
-						<li>DankPyon_Mead</li>
-						
-						<li>DankPyon_JuiceApple</li>
-						<li>DankPyon_Honey</li>
-					</value>
-				</li>
+			
+			<!-- Food Stuff -->
 				
-				-->
+			
 			</operations>
 		</match>
 	</Operation>	
