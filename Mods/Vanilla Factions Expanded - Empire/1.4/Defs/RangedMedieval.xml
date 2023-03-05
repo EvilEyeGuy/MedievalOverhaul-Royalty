@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="BaseWeaponNeolithic">
+    <defName>EEG_AbsolverCrossbow</defName>
+    <label>absolver's crossbow</label>
+    <description>Although cumbersome to carry, the heavy crossbow is capable of inflicting heavy damage and piercing armored foes. Longer range and higher damage than the crossbow but takes time to reload. This makes the heavy crossbow a formidable defensive weapon and otherwise most effective in a group.</description>
+    <graphicData>
+      <texPath>WeaponRanged/CrossbowHeavy</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1.17,1.17)</drawSize>
+	  <color>(80,75,72)</color>
+    </graphicData>
+    <soundInteract>Bow_Large</soundInteract>
+    <costList>
+      <WoodLog>600</WoodLog>
+      <DankPyon_IronIngot>250</DankPyon_IronIngot>
+    </costList>
+    <statBases>
+      <WorkToMake>160000</WorkToMake>
+      <Mass>4</Mass>
+      <AccuracyTouch>0.86</AccuracyTouch>
+      <AccuracyShort>0.9</AccuracyShort>
+      <AccuracyMedium>0.80</AccuracyMedium>
+      <AccuracyLong>0.78</AccuracyLong>
+      <RangedWeapon_Cooldown>3</RangedWeapon_Cooldown>
+    </statBases>
+    <equippedStatOffsets>
+      <ShootingAccuracyPawn>2</ShootingAccuracyPawn>
+    </equippedStatOffsets>
+    <weaponTags>
+      <li>EEG_AbsolversCrossbow</li>
+    </weaponTags>
+    <weaponClasses>
+      <li>Ranged</li>
+      <li>RangedHeavy</li>
+    </weaponClasses>
+    <!--recipeMaker>
+      <recipeUsers Inherit="False">
+      </recipeUsers>
+      <researchPrerequisite>DankPyon_HeavyCrossbow</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>20</Crafting>
+      </skillRequirements>
+    </recipeMaker-->
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>EEG_AbsolversBolt</defaultProjectile>
+        <warmupTime>1.35</warmupTime>
+        <range>45</range>
+        <soundCast>Bow_Large</soundCast>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>limb</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseProjectileNeolithic">
+    <defName>EEG_AbsolversBolt</defName>
+    <label>absolver's corssbow bolt</label>
+    <graphicData>
+      <texPath>Things/Projectile/Arrow_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>ArrowHighVelocity</damageDef>
+      <damageAmountBase>25</damageAmountBase>
+      <stoppingPower>1.6</stoppingPower>
+      <armorPenetrationBase>0.35</armorPenetrationBase>
+      <speed>75</speed>
+    </projectile>
+  </ThingDef>
+
+</Defs>

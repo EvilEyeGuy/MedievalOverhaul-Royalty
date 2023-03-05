@@ -9,5 +9,6 @@
     <li IfModActive="Ludeon.RimWorld.Royalty">1.4</li>
     <li IfModActive="pphhyy.demigryphsmod">Mods\Demigryphs\1.4</li>
     <li IfModActive="vanillaexpanded.vpsycastse">Mods\Vanilla Psycasts Expanded\1.4</li>
+    <li MayRequire="oskarpotocki.vfe.empire">Mods\Vanilla Factions Expanded - Empire\1.4</li>
   </v1.4>
 </loadFolders>

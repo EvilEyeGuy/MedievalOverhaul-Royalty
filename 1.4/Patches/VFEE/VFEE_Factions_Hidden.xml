@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Factions Expanded - Empire</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+			
+				<li Class="PatchOperationTest">
+					<xpath>Defs/FactionDef/pawnGroupMakers/li/options[./VFEE_Deserter]</xpath>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/FactionDef/pawnGroupMakers/li/options[./VFEE_Deserter]</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>Defs/FactionDef/pawnGroupMakers/li/options[./VFEE_Deserter]</xpath>
+						<value>
+						<EEG_Deserter_L_Melee>35</EEG_Deserter_L_Melee>
+						<EEG_Deserter_L_Ranged>45</EEG_Deserter_L_Ranged>
+						<EEG_Deserter_H_Melee>15</EEG_Deserter_H_Melee>
+						<EEG_Deserter_H_Ranged>25</EEG_Deserter_H_Ranged>
+						</value>
+					</match>
+				</li>
+			
+				<li Class="PatchOperationTest">
+					<xpath>Defs/FactionDef/pawnGroupMakers/li[kindDef='Combat' and options/VFEE_Deserter]/commonality</xpath>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/FactionDef/pawnGroupMakers/li[kindDef='Combat' and options/VFEE_Deserter]/commonality</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/FactionDef/pawnGroupMakers/li[kindDef='Combat' and options/VFEE_Deserter]/commonality</xpath>
+						<value>
+							<commonality>65</commonality>
+						</value>
+					</match>
+				</li>
+			
+				<li Class="PatchOperationTest">
+					<xpath>Defs/FactionDef/pawnGroupMakers/li/options/VFEE_Deserter</xpath>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/FactionDef/pawnGroupMakers/li/options/VFEE_Deserter</xpath>
+					<match Class="PatchOperationRemove">
+						<xpath>Defs/FactionDef/pawnGroupMakers/li/options/VFEE_Deserter</xpath>
+					</match>
+				</li>
+
+				<li Class="PatchOperationTest">
+					<xpath>Defs/FactionDef[defName="VFEE_Deserters"]/pawnGroupMakers</xpath>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/FactionDef[defName="VFEE_Deserters"]/pawnGroupMakers</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>Defs/FactionDef[defName="VFEE_Deserters"]/pawnGroupMakers</xpath>
+						<value>
+							<li>
+								<kindDef>Combat</kindDef>
+								<commonality>35</commonality>
+								<options>
+									<EEG_Deserter_H_Melee>40</EEG_Deserter_H_Melee>
+									<EEG_Deserter_H_Ranged>60</EEG_Deserter_H_Ranged>
+								</options>
+							</li>			
+						</value>
+					</match>
+				</li>			
+			</operations>
+		</match>
+	</Operation>	
+</Patch>

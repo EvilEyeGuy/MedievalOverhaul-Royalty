@@ -1474,7 +1474,7 @@
 								<area>24</area>
 							</li>
 							<li Class="RoomRequirement_Impressiveness">
-								<impressiveness>50</impressiveness>
+								<impressiveness>30</impressiveness>
 							</li>
 							<li Class="RoomRequirement_TerrainWithTags">
 								<labelKey>RoomRequirementAllFloored</labelKey>
@@ -1530,7 +1530,7 @@
 									<li>DankPyon_LogColumn</li>
 									<li>Column</li>
 									<li>DankPyon_RoyalColumn</li>
-									<li>DankPyon_Ancient_Column</li>
+									<li>EEG_GrandColumn</li>
 								</things>
 								<count>2</count>
 							</li>	
@@ -1577,7 +1577,7 @@
 									<li>DankPyon_LogColumn</li>
 									<li>Column</li>
 									<li>DankPyon_RoyalColumn</li>
-									<li>DankPyon_Ancient_Column</li>
+									<li>EEG_GrandColumn</li>
 								</things>
 								<count>4</count>
 							</li>
@@ -1602,7 +1602,7 @@
 								<area>60</area>
 							</li>
 							<li Class="RoomRequirement_Impressiveness">
-								<impressiveness>120</impressiveness>
+								<impressiveness>100</impressiveness>
 							</li>
 							<li Class="RoomRequirement_TerrainWithTags">
 								<labelKey>RoomRequirementAllFloored</labelKey>
@@ -1622,7 +1622,7 @@
 								<things>
 									<li>Column</li>
 									<li>DankPyon_RoyalColumn</li>
-									<li>DankPyon_Ancient_Column</li>
+									<li>EEG_GrandColumn</li>
 								</things>
 								<count>4</count>
 							</li>	
@@ -1662,7 +1662,7 @@
 								<area>80</area>
 							</li>
 							<li Class="RoomRequirement_Impressiveness">
-								<impressiveness>140</impressiveness>
+								<impressiveness>110</impressiveness>
 							</li>
 							<li Class="RoomRequirement_TerrainWithTags">
 								<labelKey>RoomRequirementAllFloored</labelKey>
@@ -1682,7 +1682,7 @@
 								<things>
 									<li>Column</li>
 									<li>DankPyon_RoyalColumn</li>
-									<li>DankPyon_Ancient_Column</li>
+									<li>EEG_GrandColumn</li>
 								</things>
 								<count>6</count>
 							</li>	
@@ -1722,7 +1722,7 @@
 								<area>100</area>
 							</li>
 							<li Class="RoomRequirement_Impressiveness">
-								<impressiveness>160</impressiveness>
+								<impressiveness>120</impressiveness>
 							</li>
 							<li Class="RoomRequirement_TerrainWithTags">
 								<labelKey>RoomRequirementAllFloored</labelKey>
@@ -1742,7 +1742,7 @@
 								<things>
 									<li>Column</li>
 									<li>DankPyon_RoyalColumn</li>
-									<li>DankPyon_Ancient_Column</li>
+									<li>EEG_GrandColumn</li>
 								</things>
 								<count>8</count>
 							</li>	
@@ -1788,7 +1788,7 @@
 								<area>120</area>
 							</li>
 							<li Class="RoomRequirement_Impressiveness">
-								<impressiveness>180</impressiveness>
+								<impressiveness>130</impressiveness>
 							</li>
 							<li Class="RoomRequirement_TerrainWithTags">
 								<labelKey>RoomRequirementAllFloored</labelKey>
@@ -1807,7 +1807,7 @@
 							<li Class="RoomRequirement_ThingAnyOfCount">
 								<things>
 									<li>DankPyon_RoyalColumn</li>
-									<li>DankPyon_Ancient_Column</li>
+									<li>EEG_GrandColumn</li>
 								</things>
 								<count>10</count>
 							</li>	
@@ -1853,7 +1853,7 @@
 								<area>140</area>
 							</li>
 							<li Class="RoomRequirement_Impressiveness">
-								<impressiveness>200</impressiveness>
+								<impressiveness>140</impressiveness>
 							</li>
 							<li Class="RoomRequirement_TerrainWithTags">
 								<labelKey>RoomRequirementAllFloored</labelKey>
@@ -1872,7 +1872,7 @@
 							<li Class="RoomRequirement_ThingAnyOfCount">
 								<things>
 									<li>DankPyon_RoyalColumn</li>
-									<li>DankPyon_Ancient_Column</li>
+									<li>EEG_GrandColumn</li>
 								</things>
 								<count>12</count>
 							</li>	
@@ -1924,7 +1924,7 @@
 								<area>160</area>
 							</li>
 							<li Class="RoomRequirement_Impressiveness">
-								<impressiveness>220</impressiveness>
+								<impressiveness>150</impressiveness>
 							</li>
 							<li Class="RoomRequirement_TerrainWithTags">
 								<labelKey>RoomRequirementAllFloored</labelKey>
@@ -1943,13 +1943,13 @@
 							<li Class="RoomRequirement_ThingAnyOfCount">
 								<things>
 									<li>DankPyon_RoyalColumn</li>
-									<li>DankPyon_Ancient_Column</li>
+									<li>EEG_GrandColumn</li>
 								</things>
 								<count>14</count>
 							</li>	
 							<li Class="RoomRequirement_ThingAnyOfCount">
 								<things>
-									<li>DankPyon_Ancient_Column</li>
+									<li>EEG_GrandColumn</li>
 								</things>
 								<count>2</count>
 							</li>	
@@ -2008,7 +2008,7 @@
 								<area>180</area>
 							</li>
 							<li Class="RoomRequirement_Impressiveness">
-								<impressiveness>240</impressiveness>
+								<impressiveness>160</impressiveness>
 							</li>
 							<li Class="RoomRequirement_TerrainWithTags">
 								<labelKey>RoomRequirementAllFloored</labelKey>
@@ -2027,13 +2027,13 @@
 							<li Class="RoomRequirement_ThingAnyOfCount">
 								<things>
 									<li>DankPyon_RoyalColumn</li>
-									<li>DankPyon_Ancient_Column</li>
+									<li>EEG_GrandColumn</li>
 								</things>
 								<count>16</count>
 							</li>	
 							<li Class="RoomRequirement_ThingAnyOfCount">
 								<things>
-									<li>DankPyon_Ancient_Column</li>
+									<li>EEG_GrandColumn</li>
 								</things>
 								<count>4</count>
 							</li>	
@@ -2091,7 +2091,7 @@
 								<area>200</area>
 							</li>
 							<li Class="RoomRequirement_Impressiveness">
-								<impressiveness>260</impressiveness>
+								<impressiveness>170</impressiveness>
 							</li>
 							<li Class="RoomRequirement_TerrainWithTags">
 								<labelKey>RoomRequirementAllFloored</labelKey>
@@ -2110,13 +2110,13 @@
 							<li Class="RoomRequirement_ThingAnyOfCount">
 								<things>
 									<li>DankPyon_RoyalColumn</li>
-									<li>DankPyon_Ancient_Column</li>
+									<li>EEG_GrandColumn</li>
 								</things>
 								<count>18</count>
 							</li>	
 							<li Class="RoomRequirement_ThingAnyOfCount">
 								<things>
-									<li>DankPyon_Ancient_Column</li>
+									<li>EEG_GrandColumn</li>
 								</things>
 								<count>6</count>
 							</li>	
@@ -2174,7 +2174,7 @@
 								<area>220</area>
 							</li>
 							<li Class="RoomRequirement_Impressiveness">
-								<impressiveness>280</impressiveness>
+								<impressiveness>190</impressiveness>
 							</li>
 							<li Class="RoomRequirement_TerrainWithTags">
 								<labelKey>RoomRequirementAllFloored</labelKey>
@@ -2193,13 +2193,13 @@
 							<li Class="RoomRequirement_ThingAnyOfCount">
 								<things>
 									<li>DankPyon_RoyalColumn</li>
-									<li>DankPyon_Ancient_Column</li>
+									<li>EEG_GrandColumn</li>
 								</things>
 								<count>24</count>
 							</li>	
 							<li Class="RoomRequirement_ThingAnyOfCount">
 								<things>
-									<li>DankPyon_Ancient_Column</li>
+									<li>EEG_GrandColumn</li>
 								</things>
 								<count>10</count>
 							</li>
@@ -2254,10 +2254,10 @@
 								</things>
 							</li>
 							<li Class="RoomRequirement_Area">
-								<area>240</area>
+								<area>300</area>
 							</li>
 							<li Class="RoomRequirement_Impressiveness">
-								<impressiveness>300</impressiveness>
+								<impressiveness>210</impressiveness>
 							</li>
 							<li Class="RoomRequirement_TerrainWithTags">
 								<labelKey>RoomRequirementAllFloored</labelKey>
@@ -2276,13 +2276,13 @@
 							<li Class="RoomRequirement_ThingAnyOfCount">
 								<things>
 									<li>DankPyon_RoyalColumn</li>
-									<li>DankPyon_Ancient_Column</li>
+									<li>EEG_GrandColumn</li>
 								</things>
 								<count>28</count>
 							</li>	
 							<li Class="RoomRequirement_ThingAnyOfCount">
 								<things>
-									<li>DankPyon_Ancient_Column</li>
+									<li>EEG_GrandColumn</li>
 								</things>
 								<count>14</count>
 							</li>
@@ -2340,7 +2340,7 @@
 								<area>260</area>
 							</li>
 							<li Class="RoomRequirement_Impressiveness">
-								<impressiveness>320</impressiveness>
+								<impressiveness>230</impressiveness>
 							</li>
 							<li Class="RoomRequirement_TerrainWithTags">
 								<labelKey>RoomRequirementAllFloored</labelKey>
@@ -2359,13 +2359,13 @@
 							<li Class="RoomRequirement_ThingAnyOfCount">
 								<things>
 									<li>DankPyon_RoyalColumn</li>
-									<li>DankPyon_Ancient_Column</li>
+									<li>EEG_GrandColumn</li>
 								</things>
-								<count>34</count>
+								<count>32</count>
 							</li>	
 							<li Class="RoomRequirement_ThingAnyOfCount">
 								<things>
-									<li>DankPyon_Ancient_Column</li>
+									<li>EEG_GrandColumn</li>
 								</things>
 								<count>18</count>
 							</li>
@@ -2376,7 +2376,7 @@
 									<li>DankPyon_Building_ChaliceSilver</li>
 									<li>DankPyon_Building_ChaliceGold</li>
 								</things>
-								<count>14</count>
+								<count>24</count>
 							</li>
 							<li Class="RoomRequirement_ThingAnyOfCount">
 								<things>
@@ -2412,8 +2412,20 @@
 				</li>
 			
 			<!-- Food Stuff -->
-				
 			
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/RoyalTitleDef/foodRequirement/allowedDefs</xpath>
+					<value>						
+						<li>DankPyon_Wine</li>
+						<li>DankPyon_Wine_Mulberry</li>
+						
+						<li>DankPyon_Ale</li>
+						<li>DankPyon_Cider</li>
+						<li>DankPyon_Mead</li>
+						
+						<li>DankPyon_JuiceApple</li>
+					</value>
+				</li>
 			</operations>
 		</match>
 	</Operation>	
