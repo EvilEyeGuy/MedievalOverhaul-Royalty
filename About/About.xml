@@ -29,8 +29,13 @@
 	<li>Ogam.Rimedieval.Royalty</li>
 	<li>VanillaExpanded.BaseGeneration</li>
 	<li>NunahurAlShamikh.MedMed</li>
-	<li>OskarPotocki.VFE.Empire</li>
+	<li>oskarpotocki.vfe.empire</li>
 	<li>pphhyy.demigryphsmod</li>
 	<li>vanillaexpanded.vpsycastse</li>
   </loadAfter>
+  <forceLoadAfter>
+	<li>oskarpotocki.vanillafactionsexpanded.core</li>
+	<li>DankPyon.Medieval.Overhaul</li>
+	<li>oskarpotocki.vfe.empire</li>
+  </forceLoadAfter>  
 </ModMetaData>

@@ -1665,7 +1665,7 @@
 						<throneRoomRequirements Inherit="False">
 							<li Class="RoomRequirement_HasAssignedThroneAnyOf">
 								<things>
-									<li>VFEE_GrandChair</li>
+									<li>EEG_SimpleThrone</li>
 									<li>GrandThrone</li>
 									<li>VFEE_StellicThrone</li>
 								</things>
@@ -1712,7 +1712,7 @@
 						<throneRoomRequirements Inherit="False">
 							<li Class="RoomRequirement_HasAssignedThroneAnyOf">
 								<things>
-									<li>VFEE_GrandChair</li>
+									<li>EEG_SimpleThrone</li>
 									<li>GrandThrone</li>
 									<li>VFEE_StellicThrone</li>
 								</things>
@@ -2591,6 +2591,121 @@
 						<li>DankPyon_JuiceApple</li>
 					</value>
 				</li>
+			
+			<!-- Descriptions -->
+			
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/RoyalTitleDef[defName="Freeholder"]/description</xpath>
+					<value>						
+						<description>The Imperial title of freeholder is granted to those who have earned the respect and trust of the Empire through their service or loyalty. Freeholders are individuals of high standing who are respected and recognized as contributing members of society.</description>
+					</value>
+				</li>
+			
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/RoyalTitleDef[defName="Yeoman"]/description</xpath>
+					<value>						
+						<description>The Imperial title of yeoman is held by those who serve a noble lord with loyalty and dedication. Yeomen are often skilled and accomplished individuals who have earned the trust of their lord and are granted certain privileges and responsibilities, such as the use of low-level magic or psychic abilities.</description>
+					</value>
+				</li>
+			
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/RoyalTitleDef[defName="Acolyte"]/description</xpath>
+					<value>						
+						<description>The title of acolyte is granted to individuals who have demonstrated their dedication and commitment to the nobility. Acolytes serve in various positions, including as students learning the ways of warfare, politics, or magic. Others may own land, buildings, or farms, and manage them with diligence and responsibility. Acolytes may also serve as advisors or commanders in times of war.</description>
+					</value>
+				</li>
+			
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/RoyalTitleDef[defName="Knight"]/description</xpath>
+					<value>						
+						<description>The title of knight is held by those who have completed their training and have demonstrated their valor and skill in battle. Knights are often respected for their wisdom and experience, and they may serve as advisors, managers, or commanders in times of peace or war.</description>
+					</value>
+				</li>
+			
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/RoyalTitleDef[defName="Praetor"]/description</xpath>
+					<value>						
+						<description>The title of praetor is a prestigious position granted to those who have shown exceptional leadership and skill in both military and political matters. Praetors are responsible for the management of cities, regions, or armies, and may lead small independent forces in times of war.</description>
+					</value>
+				</li>
+			
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/RoyalTitleDef[defName="Baron"]/description</xpath>
+					<value>						
+						<description>The title of baron is granted to those who have proven their loyalty and service to the noble class. Barons are semi-independent rulers who own lands, such as towns, castles, or estates, and provide support to their liege lord in the form of wealth, troops, or resources.</description>
+					</value>
+				</li>
+			
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/RoyalTitleDef[defName="Count"]/description</xpath>
+					<value>						
+						<description>The title of count is a prestigious position granted to those who have shown exceptional skill in both military and political matters. Counts are responsible for the management of cities, regions, or armies, and may hold a small fleet of ships.</description>
+					</value>
+				</li>
+			
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/RoyalTitleDef[defName="VFEE_Archcount"]/description</xpath>
+					<value>						
+						<description>The Imperial title of archcount is bestowed upon those counts who have established impressive holdings and are capable of entertaining important guests. Archcounts are respected members of the noble class and may hold lands, such as cities or large estates, and command armies or fleets.</description>
+					</value>
+				</li>
+			
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/RoyalTitleDef[defName="VFEE_Marquess"]/description</xpath>
+					<value>						
+						<description>The Imperial title of marquess is a highly respected position granted to those who have demonstrated their loyalty, service, and skill in both military and political matters. Marquesses control colonies or regions that border the edge of the kingdom and may lead fleets or armies in times of war.</description>
+					</value>
+				</li>
+			
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/RoyalTitleDef[defName="Duke"]/description</xpath>
+					<value>						
+						<description>The Imperial title of duke is the highest title of the middle nobility, granted to those who have demonstrated exceptional leadership, valor, and service to the kingdom. Dukes are responsible for the management of provinces, large cities, or strategic territories, and may lead armies or fleets in times of war.</description>
+					</value>
+				</li>
+			
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/RoyalTitleDef[defName="VFEE_Archduke"]/description</xpath>
+					<value>						
+						<description>The Imperial title of archduke is bestowed upon dukes who are responsible for maintaining order and stability in their territories, which require a competent retinue. Archdukes are expected to host their own divisions as well as their training, and in peacetime can establish a minor House.</description>
+					</value>
+				</li>
+			
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/RoyalTitleDef[defName="Consul"]/description</xpath>
+					<value>						
+						<description>The noble title of consul is held by individuals who oversee an entire province or region. They are responsible for maintaining law and order, collecting taxes, and enforcing the king's decrees. During times of war, a consul may lead a large army of knights, foot soldiers, and archers into battle, accompanied by a retinue of loyal advisors and bodyguards.</description>
+					</value>
+				</li>
+			
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/RoyalTitleDef[defName="VFEE_Magister"]/description</xpath>
+					<value>						
+						<description>The title of magister is held by the highest-ranking advisers and generals of the king's army. Magisters are responsible for organizing and leading the kingdom's armies in battle. They are expected to have mastery over tactics and strategy, and their decisions can determine the outcome of a war.</description>
+					</value>
+				</li>
+			
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/RoyalTitleDef[defName="VFEE_Despot"]/description</xpath>
+					<value>						
+						<description>The title of despot is held by a ruler who maintains absolute control over their territory. They are often seen as oppressive and tyrannical, ruling with an iron fist to maintain their power. Despots are usually wealthy and powerful, and their armies are feared by their enemies.</description>
+					</value>
+				</li>
+			
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/RoyalTitleDef[defName="Stellarch"]/description</xpath>
+					<value>						
+						<description>The noble title of stellarch is held by individuals who have been granted land and authority by the king. They are responsible for governing a specific region or city within the kingdom, and are expected to collect taxes, maintain order, and defend their land against invaders. Stellarchs often have a small army of knights and soldiers at their disposal.</description>
+					</value>
+				</li>
+			
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/RoyalTitleDef[defName="VFEE_HighStellarch"]/description</xpath>
+					<value>						
+						<description>The noble title of high stellarch is held by individuals who have been granted significant land and power by the king. They are responsible for maintaining law and order, and defending their land from enemy attacks. High stellarchs often have a larger army than stellarchs, with a mix of knights, soldiers, and archers.</description>
+					</value>
+				</li>
+				
 			</operations>
 		</match>
 	</Operation>	
