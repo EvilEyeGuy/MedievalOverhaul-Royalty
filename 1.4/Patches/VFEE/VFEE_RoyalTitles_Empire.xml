@@ -31,7 +31,9 @@
 								</disablingPrecepts>
 								<things>
 									<li>DankPyon_BedFur</li>
+									<li MayRequire="oskarpotocki.vfe.vikings">VFEV_FurBed</li>
 									<li>DankPyon_BedFurDouble</li>
+									<li MayRequire="oskarpotocki.vfe.vikings">VFEV_DoubleFurBed</li>
 									<li>RoyalBed</li>
 									<li>DankPyon_RoyalTudorBed</li>
 									<li MayRequire="Ludeon.RimWorld.Biotech">DeathrestCasket</li>
@@ -39,6 +41,7 @@
 							</li>
 							<li Class="RoomRequirement_ThingAnyOfCount">
 								<things>
+									<li>EndTable</li>
 									<li>DankPyon_RusticEndTable</li>
 									<li>DankPyon_RoyalEndTable</li>
 								</things>
@@ -46,6 +49,7 @@
 							</li>
 							<li Class="RoomRequirement_ThingAnyOfCount">
 								<things>
+									<li>Dresser</li>
 									<li>DankPyon_RusticDresser</li>
 									<li>DankPyon_RoyalDresser</li>
 								</things>
@@ -98,7 +102,9 @@
 								</disablingPrecepts>
 								<things>
 									<li>DankPyon_BedFur</li>
+									<li MayRequire="oskarpotocki.vfe.vikings">VFEV_FurBed</li>
 									<li>DankPyon_BedFurDouble</li>
+									<li MayRequire="oskarpotocki.vfe.vikings">VFEV_DoubleFurBed</li>
 									<li>RoyalBed</li>
 									<li>DankPyon_RoyalTudorBed</li>
 									<li MayRequire="Ludeon.RimWorld.Biotech">DeathrestCasket</li>
@@ -106,6 +112,7 @@
 							</li>
 							<li Class="RoomRequirement_ThingAnyOfCount">
 								<things>
+									<li>EndTable</li>
 									<li>DankPyon_RusticEndTable</li>
 									<li>DankPyon_RoyalEndTable</li>
 								</things>
@@ -113,6 +120,7 @@
 							</li>
 							<li Class="RoomRequirement_ThingAnyOfCount">
 								<things>
+									<li>Dresser</li>
 									<li>DankPyon_RusticDresser</li>
 									<li>DankPyon_RoyalDresser</li>
 								</things>
@@ -181,7 +189,9 @@
 								</disablingPrecepts>
 								<things>
 									<li>DankPyon_BedFur</li>
+									<li MayRequire="oskarpotocki.vfe.vikings">VFEV_FurBed</li>
 									<li>DankPyon_BedFurDouble</li>
+									<li MayRequire="oskarpotocki.vfe.vikings">VFEV_DoubleFurBed</li>
 									<li>RoyalBed</li>
 									<li>DankPyon_RoyalTudorBed</li>
 									<li MayRequire="Ludeon.RimWorld.Biotech">DeathrestCasket</li>
@@ -189,6 +199,7 @@
 							</li>
 							<li Class="RoomRequirement_ThingAnyOfCount">
 								<things>
+									<li>EndTable</li>
 									<li>DankPyon_RusticEndTable</li>
 									<li>DankPyon_RoyalEndTable</li>
 								</things>
@@ -196,6 +207,7 @@
 							</li>
 							<li Class="RoomRequirement_ThingAnyOfCount">
 								<things>
+									<li>Dresser</li>
 									<li>DankPyon_RusticDresser</li>
 									<li>DankPyon_RoyalDresser</li>
 								</things>
@@ -273,6 +285,7 @@
 								</disablingPrecepts>
 								<things>
 									<li>DankPyon_BedFurDouble</li>
+									<li MayRequire="oskarpotocki.vfe.vikings">VFEV_DoubleFurBed</li>
 									<li>RoyalBed</li>
 									<li>DankPyon_RoyalTudorBed</li>
 									<li MayRequire="Ludeon.RimWorld.Biotech">DeathrestCasket</li>
@@ -280,6 +293,7 @@
 							</li>
 							<li Class="RoomRequirement_ThingAnyOfCount">
 								<things>
+									<li>EndTable</li>
 									<li>DankPyon_RusticEndTable</li>
 									<li>DankPyon_RoyalEndTable</li>
 								</things>
@@ -287,6 +301,7 @@
 							</li>
 							<li Class="RoomRequirement_ThingAnyOfCount">
 								<things>
+									<li>Dresser</li>
 									<li>DankPyon_RusticDresser</li>
 									<li>DankPyon_RoyalDresser</li>
 								</things>
@@ -379,6 +394,7 @@
 								</disablingPrecepts>
 								<things>
 									<li>DankPyon_BedFurDouble</li>
+									<li MayRequire="oskarpotocki.vfe.vikings">VFEV_DoubleFurBed</li>
 									<li>RoyalBed</li>
 									<li>DankPyon_RoyalTudorBed</li>
 									<li MayRequire="Ludeon.RimWorld.Biotech">DeathrestCasket</li>
@@ -386,6 +402,7 @@
 							</li>
 							<li Class="RoomRequirement_ThingAnyOfCount">
 								<things>
+									<li>EndTable</li>
 									<li>DankPyon_RusticEndTable</li>
 									<li>DankPyon_RoyalEndTable</li>
 								</things>
@@ -393,6 +410,7 @@
 							</li>
 							<li Class="RoomRequirement_ThingAnyOfCount">
 								<things>
+									<li>Dresser</li>
 									<li>DankPyon_RusticDresser</li>
 									<li>DankPyon_RoyalDresser</li>
 								</things>
@@ -492,6 +510,7 @@
 								</disablingPrecepts>
 								<things>
 									<li>DankPyon_BedFurDouble</li>
+									<li MayRequire="oskarpotocki.vfe.vikings">VFEV_DoubleFurBed</li>
 									<li>RoyalBed</li>
 									<li>DankPyon_RoyalTudorBed</li>
 									<li MayRequire="Ludeon.RimWorld.Biotech">DeathrestCasket</li>
@@ -499,6 +518,7 @@
 							</li>
 							<li Class="RoomRequirement_ThingAnyOfCount">
 								<things>
+									<li>EndTable</li>
 									<li>DankPyon_RusticEndTable</li>
 									<li>DankPyon_RoyalEndTable</li>
 								</things>
@@ -506,6 +526,7 @@
 							</li>
 							<li Class="RoomRequirement_ThingAnyOfCount">
 								<things>
+									<li>Dresser</li>
 									<li>DankPyon_RusticDresser</li>
 									<li>DankPyon_RoyalDresser</li>
 								</things>
@@ -611,6 +632,7 @@
 								</disablingPrecepts>
 								<things>
 									<li>DankPyon_BedFurDouble</li>
+									<li MayRequire="oskarpotocki.vfe.vikings">VFEV_DoubleFurBed</li>
 									<li>RoyalBed</li>
 									<li>DankPyon_RoyalTudorBed</li>
 									<li MayRequire="Ludeon.RimWorld.Biotech">DeathrestCasket</li>
@@ -618,6 +640,7 @@
 							</li>
 							<li Class="RoomRequirement_ThingAnyOfCount">
 								<things>
+									<li>EndTable</li>
 									<li>DankPyon_RusticEndTable</li>
 									<li>DankPyon_RoyalEndTable</li>
 								</things>
@@ -625,6 +648,7 @@
 							</li>
 							<li Class="RoomRequirement_ThingAnyOfCount">
 								<things>
+									<li>Dresser</li>
 									<li>DankPyon_RusticDresser</li>
 									<li>DankPyon_RoyalDresser</li>
 								</things>
@@ -1630,7 +1654,7 @@
 						<throneRoomRequirements Inherit="False">
 							<li Class="RoomRequirement_HasAssignedThroneAnyOf">
 								<things>
-									<li>VFEE_GrandChair</li>
+									<li>EEG_SimpleThrone</li>
 									<li>GrandThrone</li>
 									<li>VFEE_StellicThrone</li>
 								</things>

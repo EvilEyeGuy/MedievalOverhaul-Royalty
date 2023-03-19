@@ -1,12 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <loadFolders>
    <v1.3>
-    <li></li>
+    <li>/</li>
     <li IfModActive="Ludeon.RimWorld.Royalty">1.3</li>
   </v1.3>
    <v1.4>
-    <li></li>
+    <li>/</li>
     <li IfModActive="Ludeon.RimWorld.Royalty">1.4</li>
+	<!-- <li IfModNotActive="eeg.treasurehunter.moedition,eeg.treasurehunter.moedition_steam">Mods/LootableBuildings/1.4</li> -->
     <!--li IfModActive="pphhyy.demigryphsmod">Mods\Demigryphs\1.4</li>
     <li IfModActive="vanillaexpanded.vpsycastse">Mods\Vanilla Psycasts Expanded\1.4</li>
     <li IfModActive="oskarpotocki.vfe.empire">Mods\Vanilla Factions Expanded - Empire\1.4</li-->
