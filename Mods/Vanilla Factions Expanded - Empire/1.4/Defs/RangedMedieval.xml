@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <ThingDef ParentName="BaseWeaponNeolithic">
+  <ThingDef>
     <defName>EEG_AbsolverCrossbow</defName>
     <label>absolver's crossbow</label>
     <description>Although cumbersome to carry, the heavy crossbow is capable of inflicting heavy damage and piercing armored foes. Longer range and higher damage than the crossbow but takes time to reload. This makes the heavy crossbow a formidable defensive weapon and otherwise most effective in a group.</description>
@@ -12,10 +12,8 @@
 	  <color>(80,75,72)</color>
     </graphicData>
     <soundInteract>Bow_Large</soundInteract>
-    <costList>
-      <WoodLog>600</WoodLog>
-      <DankPyon_IronIngot>250</DankPyon_IronIngot>
-    </costList>
+	<burnableByRecipe>true</burnableByRecipe>
+	<techLevel>Medieval</techLevel>
     <statBases>
       <WorkToMake>160000</WorkToMake>
       <Mass>4</Mass>
@@ -31,18 +29,13 @@
     <weaponTags>
       <li>EEG_AbsolversCrossbow</li>
     </weaponTags>
-    <weaponClasses>
-      <li>Ranged</li>
-      <li>RangedHeavy</li>
-    </weaponClasses>
-    <!--recipeMaker>
-      <recipeUsers Inherit="False">
+    <recipeMaker>
+      <recipeUsers>
       </recipeUsers>
-      <researchPrerequisite>DankPyon_HeavyCrossbow</researchPrerequisite>
       <skillRequirements>
         <Crafting>20</Crafting>
       </skillRequirements>
-    </recipeMaker-->
+    </recipeMaker>
     <verbs>
       <li>
         <verbClass>Verb_Shoot</verbClass>
@@ -64,6 +57,11 @@
         <cooldownTime>2</cooldownTime>
       </li>
     </tools>
+    <comps>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+    </comps>	
   </ThingDef>
   
   <ThingDef ParentName="BaseProjectileNeolithic">

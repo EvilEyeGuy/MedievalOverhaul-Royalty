@@ -49,14 +49,14 @@
 							  <li>Ranged</li>
 							  <li>RangedHeavy</li>
 							</weaponClasses>
-							<!--recipeMaker>
+							<recipeMaker>
 							  <recipeUsers Inherit="False">
 							  </recipeUsers>
 							  <researchPrerequisite>DankPyon_HeavyCrossbow</researchPrerequisite>
 							  <skillRequirements>
 								<Crafting>20</Crafting>
 							  </skillRequirements>
-							</recipeMaker-->
+							</recipeMaker>
 							<verbs>
 							  <li>
 								<verbClass>Verb_Shoot</verbClass>
