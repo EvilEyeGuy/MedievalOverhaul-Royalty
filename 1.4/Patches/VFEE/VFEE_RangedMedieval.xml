@@ -108,8 +108,7 @@
 						  </ThingDef>
 						</value>
 					</nomatch>
-				</li>
-					
+				</li>					
 			</operations>
 		</match>
 	</Operation>	

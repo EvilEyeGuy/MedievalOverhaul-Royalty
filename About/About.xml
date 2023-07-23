@@ -24,14 +24,16 @@
   <loadAfter>
     <li>Ludeon.RimWorld</li>
     <li>Ludeon.RimWorld.Royalty</li>
-	<li>DankPyon.Medieval.Overhaul</li>
 	<li>Ogam.Rimedieval</li>
-	<li>Ogam.Rimedieval.Royalty</li>
-	<li>VanillaExpanded.BaseGeneration</li>
+	<li>pphhyy.demigryphsmod</li>
+	<li>vanillaexpanded.varme</li>
 	<li>NunahurAlShamikh.MedMed</li>
 	<li>oskarpotocki.vfe.empire</li>
-	<li>pphhyy.demigryphsmod</li>
+	<li>Ogam.Rimedieval.Royalty</li>
 	<li>vanillaexpanded.vpsycastse</li>
+	<li>DankPyon.Medieval.Overhaul</li>
+	<li>VanillaExpanded.BaseGeneration</li>
+	<li>oskarpotocki.vanillafactionsexpanded.medievalmodule</li>
   </loadAfter>
   <forceLoadAfter>
 	<li>oskarpotocki.vanillafactionsexpanded.core</li>

@@ -12,7 +12,7 @@
     </weaponTags>
     <apparelRequired Inherit="False">
       <li>DankPyon_Headgear_PaddedFlatTopHelmet</li>
-	  <li>DankPyon_Apparel_Padded_Surcoat</li>
+	  <li>DankPyon_Apparel_Gambeson</li>
       <li>DankPyon_Apparel_Leather_Tunic</li>
 	  <li>DankPyon_Apparel_Heavy_Hauberk</li>
 	  <li>DankPyon_Handwear_GlovesLeather</li>
@@ -86,7 +86,7 @@
     </weaponTags>
     <apparelRequired Inherit="False">
       <li>DankPyon_Headgear_PaddedFlatTopHelmet</li>
-	  <li>DankPyon_Apparel_Padded_Surcoat</li>
+	  <li>DankPyon_Apparel_Gambeson</li>
       <li>DankPyon_Apparel_Leather_Tunic</li>
 	  <li>DankPyon_Apparel_Heavy_Hauberk</li>
 	  <li>DankPyon_Handwear_GlovesLeather</li>
@@ -162,7 +162,7 @@
     </weaponTags>
     <apparelRequired Inherit="False">
       <li>DankPyon_Headgear_KlappvisorBascinet</li>
-	  <li>DankPyon_Apparel_Padded_Surcoat</li>
+	  <li>DankPyon_Apparel_Gambeson</li>
       <li>DankPyon_Apparel_Leather_Tunic</li>
 	  <li>DankPyon_Apparel_Brigandine</li>
 	  <li>DankPyon_Handwear_GlovesLeather</li>
@@ -242,7 +242,7 @@
     </weaponTags>
     <apparelRequired Inherit="False">
       <li>DankPyon_Headgear_WolfBascinet</li>
-	  <li>DankPyon_Apparel_Padded_Surcoat</li>
+	  <li>DankPyon_Apparel_Gambeson</li>
       <li>DankPyon_Apparel_Leather_Tunic</li>
 	  <li>DankPyon_Apparel_Brigandine</li>
 	  <li>DankPyon_Handwear_GlovesLeather</li>
