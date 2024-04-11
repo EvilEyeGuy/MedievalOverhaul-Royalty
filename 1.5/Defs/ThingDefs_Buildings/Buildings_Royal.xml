@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="DankPyon_SculptureBase">
+		<defName>EEG_GrandColumn</defName>
+		<label>grand column</label>
+		<description>A tall pillar of ornate design.</description>
+		<designationCategory>DankPyon_RusticFurniture</designationCategory>
+		<graphicData>
+			<texPath>Art/Column1x1</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(5,5)</drawSize>
+			<damageData>
+			  <cornerTL>Damage/Corner</cornerTL>
+			  <cornerTR>Damage/Corner</cornerTR>
+			  <cornerBL>Damage/Corner</cornerBL>
+			  <cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<uiIconScale>0.5</uiIconScale>
+		<castEdgeShadows>true</castEdgeShadows>
+		<rotatable>True</rotatable>
+		<altitudeLayer>PawnUnused</altitudeLayer>
+		<passability>Impassable</passability>
+
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Woody</li>
+			<li>Stony</li>
+		</stuffCategories>
+		<costStuffCount>100</costStuffCount>
+
+		<statBases>
+			<MaxHitPoints>800</MaxHitPoints>
+			<Mass>7</Mass>
+			<Beauty>100</Beauty>
+			<WorkToMake>30000</WorkToMake>
+			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">20</StyleDominance>
+		</statBases>
+		
+		<holdsRoof>true</holdsRoof>
+		<disableImpassableShotOverConfigError>true</disableImpassableShotOverConfigError>
+		<size>(1,1)</size>
+		<recipeMaker>
+		  <skillRequirements>
+			<Construction>15</Construction>
+		  </skillRequirements>
+		</recipeMaker>
+	</ThingDef>
+
+</Defs>

@@ -6,6 +6,7 @@
   <supportedVersions>
     <li>1.3</li>
     <li>1.4</li>
+    <li>1.5</li>
   </supportedVersions>
   <description>This is just a patch for the Empire faction in the game and some mechanics related to them. It does not contain any graphics and works only in combination with Medieval Overhaul</description>
   <modDependencies>
@@ -14,6 +15,10 @@
       <displayName>Harmony</displayName>
       <downloadUrl>https://github.com/pardeike/HarmonyRimWorld/releases/latest</downloadUrl>
       <steamWorkshopUrl>https://steamcommunity.com/workshop/filedetails/?id=2009463077</steamWorkshopUrl>
+    </li>
+    <li>
+      <packageId>ludeon.rimworld.royalty</packageId>
+      <displayName>Royalty</displayName>
     </li>
     <li>
       <packageId>DankPyon.Medieval.Overhaul</packageId>

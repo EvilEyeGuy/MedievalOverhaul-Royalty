@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+  <Operation Class="PatchOperationSequence">
+      <operations>
+	  
+			<li Class="PatchOperationConditional">
+				<xpath>Defs/TraderKindDef[defName="DankPyon_Caravan_Medieval_BulkGoodsMerchant"]/stockGenerators/li[@Class='StockGenerator_BuyTradeTag' and tag='DankPyon_Loot']</xpath>
+				<nomatch Class="PatchOperationAdd">
+					<xpath>Defs/TraderKindDef[defName="DankPyon_Caravan_Medieval_BulkGoodsMerchant"]/stockGenerators</xpath>
+					<value>
+						<li Class="StockGenerator_BuyTradeTag"><tag>DankPyon_Loot</tag></li>
+					</value>
+				</nomatch>
+			</li>
+	  
+			<li Class="PatchOperationConditional">
+				<xpath>Defs/TraderKindDef[defName="DankPyon_Caravan_Medieval_ArtPatron"]/stockGenerators/li[@Class='StockGenerator_BuyTradeTag' and tag='DankPyon_Loot']</xpath>
+				<nomatch Class="PatchOperationAdd">
+					<xpath>Defs/TraderKindDef[defName="DankPyon_Caravan_Medieval_ArtPatron"]/stockGenerators</xpath>
+					<value>
+						<li Class="StockGenerator_BuyTradeTag"><tag>DankPyon_Loot</tag></li>
+					</value>
+				</nomatch>
+			</li>
+	  
+			<li Class="PatchOperationConditional">
+				<xpath>Defs/TraderKindDef[defName="DankPyon_Caravan_Medieval_RuinsMerchant"]/stockGenerators/li[@Class='StockGenerator_BuyTradeTag' and tag='DankPyon_Loot']</xpath>
+				<nomatch Class="PatchOperationAdd">
+					<xpath>Defs/TraderKindDef[defName="DankPyon_Caravan_Medieval_RuinsMerchant"]/stockGenerators</xpath>
+					<value>
+						<li Class="StockGenerator_BuyTradeTag"><tag>DankPyon_Loot</tag></li>
+					</value>
+				</nomatch>
+			</li>
+			
+      </operations>
+  </Operation>
+
+</Patch>

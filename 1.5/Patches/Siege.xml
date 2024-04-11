@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+	<mods>
+	  <li>Medieval Overhaul</li>
+	</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/FactionDef[@Name="DankPyon_NobleHouseFactionBase"]</xpath>
+					<value>
+						<canSiege>true</canSiege>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs</xpath>
+					<value>
+						<VFECore.SiegeParameterSetDef>
+							<defName>MORoyalty_Siege</defName>
+							<coverDef>DankPyon_CavalrySpike</coverDef>
+							<artilleryBuildingTags>
+								<li>ArtilleryMedieval_BaseDestroyer</li>
+							</artilleryBuildingTags>
+							<artilleryCountRange>1~2</artilleryCountRange>
+							<mealDef>DankPyon_DriedMeat</mealDef>
+						</VFECore.SiegeParameterSetDef>
+					</value>
+				</li>
+				<li Class="PatchOperationAddModExtension">
+					<xpath>/Defs/FactionDef[@Name="DankPyon_NobleHouseFactionBase"]</xpath>
+					<value>
+						<li Class="VFECore.FactionDefExtension">
+							<siegeParameterSet>MORoyalty_Siege</siegeParameterSet>
+						</li>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>

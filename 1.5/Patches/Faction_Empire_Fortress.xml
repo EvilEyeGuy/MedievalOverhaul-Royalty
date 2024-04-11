@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Royalty</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+			
+			
+				<li Class="PatchOperationTest">
+					<xpath>Defs/FactionDef[defName="Empire"]</xpath>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/FactionDef[defName="Empire"]/modExtensions/li[@Class="KCSG.CustomGenOption"]</xpath>
+					<match Class="PatchOperationRemove">
+						<xpath>Defs/FactionDef[defName="Empire"]/modExtensions/li[@Class="KCSG.CustomGenOption"]</xpath>		
+					</match>
+				</li>
+			
+				<li Class="PatchOperationTest">
+					<xpath>Defs/FactionDef[defName="Empire"]</xpath>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/FactionDef[defName="Empire"]/modExtensions</xpath>
+					<nomatch Class="PatchOperationAddModExtension">
+						<xpath>Defs/FactionDef[defName="Empire"]</xpath>
+						<value>
+							<li Class="KCSG.CustomGenOption">
+								<preventBridgeable>true</preventBridgeable>
+								<chooseFromlayouts>
+									<li>Accurex_Empire_Castle_01</li>
+								</chooseFromlayouts>
+							</li>
+						</value>
+					</nomatch>
+					<match Class="PatchOperationAdd">
+						<xpath>Defs/FactionDef[defName="Empire"]/modExtensions</xpath>
+						<value>
+							<li Class="KCSG.CustomGenOption">
+								<preventBridgeable>true</preventBridgeable>
+								<chooseFromlayouts>
+									<li>Accurex_Empire_Castle_01</li>
+								</chooseFromlayouts>
+							</li>
+						</value>					
+					</match>
+				</li>
+			</operations>
+		</match>	
+	</Operation>
+</Patch>

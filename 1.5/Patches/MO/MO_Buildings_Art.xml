@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Medieval Overhaul</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationTest">
+					<xpath>Defs/ThingDef[defName="DankPyon_ArmorStatue"]</xpath>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ThingDef[defName="DankPyon_ArmorStatue"]/graphicData</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName="DankPyon_ArmorStatue"]/graphicData</xpath>
+						<value>
+							<drawOffset>(0,0,0.21)</drawOffset>
+						</value>
+					</match>
+				</li>
+				
+				<li Class="PatchOperationTest">
+					<xpath>Defs/ThingDef[defName="DankPyon_ArmorStatue"]</xpath>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ThingDef[defName="DankPyon_ArmorStatue"]</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName="DankPyon_ArmorStatue"]</xpath>
+						<value>
+							<altitudeLayer>PawnUnused</altitudeLayer>
+						</value>
+					</match>
+				</li>
+				
+				<li Class="PatchOperationTest">
+					<xpath>Defs/ThingDef[defName="DankPyon_ArmorStatue"]</xpath>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ThingDef[defName="DankPyon_ArmorStatue"]</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName="DankPyon_ArmorStatue"]</xpath>
+						<value>
+							<passability>Impassable</passability>
+						</value>
+					</match>
+				</li>
+				
+			</operations>
+		</match>
+	</Operation>	
+</Patch>
+		
