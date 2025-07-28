@@ -1,0 +1,178 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+<Operation Class="PatchOperationConditional">
+	<xpath>Defs/PawnKindDef[@Name="EmpireCommonerBase"]/specificApparelRequirements</xpath>
+	<nomatch Class="PatchOperationAdd">
+		<xpath>Defs/PawnKindDef[@Name="EmpireCommonerBase"]</xpath>
+		<value>
+			<specificApparelRequirements Inherit="False">
+				<li>
+					<colorGenerator Class="ColorGenerator_Options">
+						<options>
+							<li>
+								<only>(0.7, 0.7, 0.7)</only>
+							</li>
+							<li>
+								<only>(0.5, 0.5, 0.5)</only>
+							</li>
+							<li>
+								<only>(0.6, 0.6, 0.6)</only>
+							</li>
+							<li>
+								<only>(104, 120, 119)</only> <!-- drab dark blue -->
+							</li>
+							<li>
+								<only>(119, 145, 121)</only> <!-- drab light green -->
+							</li>
+							<li>
+								<only>(106, 120, 104)</only> <!-- drab dark green -->
+							</li>
+							<li>
+								<only>(140, 140, 119)</only> <!-- tan -->
+							</li>
+							<li>
+								<only>(99, 87, 67)</only> <!-- muted brown -->
+							</li>
+							<li>
+								<only>(128, 116, 84)</only> <!-- light brown -->
+							</li>
+							<li>
+								<only>(107, 94, 64)</only> <!-- mid brown -->
+							</li>
+							<li>
+								<only>(77, 66, 45)</only> <!-- dark brown -->
+							</li>
+						</options>
+					</colorGenerator>
+				</li>
+			</specificApparelRequirements>
+		</value>
+	</nomatch>
+	<match Class="PatchOperationReplace">
+	<xpath>Defs/PawnKindDef[@Name="EmpireCommonerBase"]/specificApparelRequirements</xpath>
+		<value>
+			<specificApparelRequirements Inherit="False">
+				<li>
+					<colorGenerator Class="ColorGenerator_Options">
+						<options>
+							<li>
+								<only>(0.7, 0.7, 0.7)</only>
+							</li>
+							<li>
+								<only>(0.5, 0.5, 0.5)</only>
+							</li>
+							<li>
+								<only>(0.6, 0.6, 0.6)</only>
+							</li>
+							<li>
+								<only>(104, 120, 119)</only> <!-- drab dark blue -->
+							</li>
+							<li>
+								<only>(119, 145, 121)</only> <!-- drab light green -->
+							</li>
+							<li>
+								<only>(106, 120, 104)</only> <!-- drab dark green -->
+							</li>
+							<li>
+								<only>(140, 140, 119)</only> <!-- tan -->
+							</li>
+							<li>
+								<only>(99, 87, 67)</only> <!-- muted brown -->
+							</li>
+							<li>
+								<only>(128, 116, 84)</only> <!-- light brown -->
+							</li>
+							<li>
+								<only>(107, 94, 64)</only> <!-- mid brown -->
+							</li>
+							<li>
+								<only>(77, 66, 45)</only> <!-- dark brown -->
+							</li>
+						</options>
+					</colorGenerator>
+				</li>
+			</specificApparelRequirements>
+		</value>
+	</match>
+</Operation>
+
+<!--==== R O Y A L S ====-->
+
+<!-- RoyalBase -->
+<Operation Class="PatchOperationConditional">
+	<xpath>Defs/PawnKindDef[@Name="RoyalBase"]/weaponTags</xpath>
+	<nomatch Class="PatchOperationAdd">
+		<xpath>Defs/PawnKindDef[@Name="RoyalBase"]</xpath>
+		<value>
+			<weaponTags>
+				<li>DankPyon_Bludgeon</li>
+				<li>MedievalMeleeBasic</li>
+			</weaponTags>
+		</value>
+	</nomatch>
+	<match Class="PatchOperationReplace">
+		<xpath>Defs/PawnKindDef[@Name="RoyalBase"]/weaponTags</xpath>
+		<value>
+			<weaponTags>
+				<li>DankPyon_Bludgeon</li>
+				<li>MedievalMeleeBasic</li>
+			</weaponTags>
+		</value>
+	</match>
+</Operation>
+
+<Operation Class="PatchOperationConditional">
+	<xpath>Defs/PawnKindDef[@Name="RoyalBase"]/apparelTags</xpath>
+	<nomatch Class="PatchOperationAdd">
+		<xpath>Defs/PawnKindDef[@Name="RoyalBase"]</xpath>
+		<value>
+			<apparelTags>
+				<li>MedievalMilitaryAdvanced</li>
+				<li>MedievalMilitaryDecent</li>
+				<li>MedievalMilitaryBasic</li>
+				<li>MedievalBasic</li>
+			</apparelTags>
+		</value>
+	</nomatch>
+	<match Class="PatchOperationReplace">
+		<xpath>Defs/PawnKindDef[@Name="RoyalBase"]/apparelTags</xpath>
+		<value>
+			<apparelTags>
+				<li>MedievalMilitaryAdvanced</li>
+				<li>MedievalMilitaryDecent</li>
+				<li>MedievalMilitaryBasic</li>
+				<li>MedievalBasic</li>
+			</apparelTags>
+		</value>
+	</match>
+</Operation>
+
+<Operation Class="PatchOperationConditional">
+	<xpath>Defs/PawnKindDef[@Name="RoyalBase"]/apparelDisallowTags</xpath>
+	<nomatch Class="PatchOperationAdd">
+		<xpath>Defs/PawnKindDef[@Name="RoyalBase"]</xpath>
+		<value>
+			<apparelDisallowTags>
+				<li>IndustrialMilitaryAdvanced</li>
+				<li>IndustrialMilitaryBasic</li>
+				<li>IndustrialAdvanced</li>
+				<li>IndustrialBasic</li>
+				<li>Western</li>
+			</apparelDisallowTags>
+		</value>
+	</nomatch>
+	<match Class="PatchOperationReplace">
+		<xpath>Defs/PawnKindDef[@Name="RoyalBase"]/apparelDisallowTags</xpath>
+		<value>
+			<apparelDisallowTags>
+				<li>IndustrialMilitaryAdvanced</li>
+				<li>IndustrialMilitaryBasic</li>
+				<li>IndustrialAdvanced</li>
+				<li>IndustrialBasic</li>
+				<li>Western</li>
+			</apparelDisallowTags>
+		</value>
+	</match>
+</Operation>
+	
+</Patch>

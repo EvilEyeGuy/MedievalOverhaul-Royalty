@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+<Operation Class="PatchOperationAdd">
+	<xpath>Defs</xpath>
+	<value>		
+	  <ThingDef ParentName="ArtableFurnitureBase">
+		<defName>EEG_SimpleThrone</defName>
+		<label>simple throne</label>
+		<description>Crafted from sturdy oak and designed with functional elegance in mind, this simple wooden throne provides a comfortable seat for any lower class noble. The backrest and armrests are carefully carved with ornate patterns, adding a touch of regality to its humble design. Though not as imposing as its grander counterparts, this throne is well-suited for smaller courts or chambers, where a more understated presence is desired. With its solid construction and timeless appeal, this throne is sure to be a cherished piece of furniture for generations to come.</description>
+		<thingClass>Building_Throne</thingClass>
+		<graphicData>
+		  <texPath>Furniture/GrandChair</texPath>
+		  <graphicClass>Graphic_Multi</graphicClass>
+		  <drawSize>(3,3)</drawSize>
+		  <damageData>
+			<rectN>(0.25,0.234375,0.5,0.28125)</rectN>
+			<rectS>(0.25,0.234375,0.5,0.28125)</rectS>
+			<rectE>(0.28125,0.25,0.453125,0.25)</rectE>
+			<rectW>(0.28125,0.25,0.453125,0.25)</rectW>
+		  </damageData>
+		  <shadowData>
+			<volume>(0.23, 0.26, 0.23)</volume>
+		  </shadowData>
+		</graphicData>
+		<altitudeLayer>Building</altitudeLayer>
+		<uiIconScale>0.7</uiIconScale>
+		<statBases>
+		  <MaxHitPoints>100</MaxHitPoints>
+		  <WorkToBuild>10000</WorkToBuild>
+		  <Mass>8</Mass>
+		  <Flammability>1.0</Flammability>
+		  <Beauty>80</Beauty>
+		  <Comfort>0.70</Comfort>
+		</statBases>
+		<socialPropernessMatters>true</socialPropernessMatters>
+		<stuffCategories>
+		  <li>Metallic</li>
+		  <li>Woody</li>
+		  <li>Stony</li>
+		</stuffCategories>
+		<costStuffCount>100</costStuffCount>
+		<pathCost>30</pathCost>
+		<fillPercent>0.35</fillPercent>
+		<defaultPlacingRot>South</defaultPlacingRot>
+		<uiIconOffset>0,0.15</uiIconOffset>
+		<building>
+		  <isSittable>true</isSittable>
+		</building>
+		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+		<researchPrerequisites>
+		  <li>VFEE_NobleDecorations</li>
+		</researchPrerequisites>
+		<comps>
+		  <li Class="CompProperties_AssignableToPawn">
+			<drawAssignmentOverlay>true</drawAssignmentOverlay>
+			<compClass>CompAssignableToPawn_Throne</compClass>
+		  </li>
+		  <li Class="CompProperties_MeditationFocus">
+			<statDef>MeditationFocusStrength</statDef>
+			<focusTypes>
+			  <li>Dignified</li>
+			</focusTypes>
+			<offsets>
+			  <li Class="FocusStrengthOffset_ThroneSatisfiesRequirements">
+				<offset>0.08</offset>
+			  </li>
+			  <li Class="FocusStrengthOffset_RoomImpressiveness">
+				<curve>
+				  <points>
+					<li>(0,   -0.05)</li>
+					<li>(30,   0.00)</li>
+					<li>(60,   0.04)</li>
+					<li>(100,  0.08)</li>
+					<li>(170,  0.10)</li>
+				  </points>
+				</curve>
+			  </li>
+			</offsets>
+		  </li>
+		</comps>
+		<drawGUIOverlay>true</drawGUIOverlay>
+		<ritualFocus>
+		  <spectateDistance>2</spectateDistance>
+		  <allowedSpectateSides>Up</allowedSpectateSides>
+		</ritualFocus>
+		<placeWorkers>
+		  <li>PlaceWorker_RitualFocus</li>
+		</placeWorkers>
+		<drawPlaceWorkersWhileSelected>True</drawPlaceWorkersWhileSelected>
+		<interactionCellOffset>(0,0,0)</interactionCellOffset>
+		<hasInteractionCell>true</hasInteractionCell>
+	  </ThingDef>
+	</value>
+</Operation>
+
+</Patch>
+		

@@ -1,0 +1,208 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+<!-- Trader -->
+
+<Operation Class="PatchOperationConditional">
+	<xpath>Defs/PawnKindDef[defName="Empire_Common_Trader"]/weaponTags</xpath>
+	<nomatch Class="PatchOperationAdd">
+		<xpath>Defs/PawnKindDef[defName="Empire_Common_Trader"]</xpath>
+		<value>
+			<weaponTags Inherit="False">
+			  <li>DankPyon_WoodcuttersAxe</li>
+			  <li>DankPyon_Warfork</li>
+			  <li>DankPyon_Pitchfork</li>
+			  <li>DankPyon_Pickaxe</li>
+			</weaponTags>
+		</value>
+	</nomatch>
+	<match Class="PatchOperationReplace">
+		<xpath>Defs/PawnKindDef[defName="Empire_Common_Trader"]/weaponTags</xpath>
+		<value>
+			<weaponTags Inherit="False">
+			  <li>DankPyon_WoodcuttersAxe</li>
+			  <li>DankPyon_Warfork</li>
+			  <li>DankPyon_Pitchfork</li>
+			  <li>DankPyon_Pickaxe</li>
+			</weaponTags>
+		</value>
+	</match>
+</Operation>
+
+<Operation Class="PatchOperationConditional">
+	<xpath>Defs/PawnKindDef[defName="Empire_Common_Trader"]/weaponMoney</xpath>
+	<nomatch Class="PatchOperationAdd">
+		<xpath>Defs/PawnKindDef[defName="Empire_Common_Trader"]</xpath>
+		<value>
+			<weaponMoney>2000</weaponMoney>
+		</value>
+	</nomatch>
+	<match Class="PatchOperationReplace">
+		<xpath>Defs/PawnKindDef[defName="Empire_Common_Trader"]/weaponMoney</xpath>
+		<value>
+			<weaponMoney>2000</weaponMoney>
+		</value>
+	</match>
+</Operation>
+
+<Operation Class="PatchOperationConditional">
+	<xpath>Defs/PawnKindDef[defName="Empire_Common_Trader"]/apparelDisallowTags</xpath>
+	<nomatch Class="PatchOperationAdd">
+		<xpath>Defs/PawnKindDef[defName="Empire_Common_Trader"]</xpath>
+		<value>
+			<apparelDisallowTags>
+				<li>IndustrialMilitaryAdvanced</li>
+				<li>IndustrialMilitaryBasic</li>
+				<li>IndustrialAdvanced</li>
+				<li>IndustrialBasic</li>
+				<li>Western</li>
+			</apparelDisallowTags>
+		</value>
+	</nomatch>
+	<match Class="PatchOperationReplace">
+		<xpath>Defs/PawnKindDef[defName="Empire_Common_Trader"]/apparelDisallowTags</xpath>
+		<value>
+			<apparelDisallowTags>
+				<li>IndustrialMilitaryAdvanced</li>
+				<li>IndustrialMilitaryBasic</li>
+				<li>IndustrialAdvanced</li>
+				<li>IndustrialBasic</li>
+				<li>Western</li>
+			</apparelDisallowTags>
+		</value>
+	</match>
+</Operation>
+
+<Operation Class="PatchOperationConditional">
+	<xpath>Defs/PawnKindDef[defName="Empire_Common_Trader"]/techHediffsMoney</xpath>
+	<nomatch Class="PatchOperationAdd">
+		<xpath>Defs/PawnKindDef[defName="Empire_Common_Trader"]</xpath>
+		<value>
+			<techHediffsMoney>0</techHediffsMoney>
+		</value>
+	</nomatch>
+	<match Class="PatchOperationReplace">
+		<xpath>Defs/PawnKindDef[defName="Empire_Common_Trader"]/techHediffsMoney</xpath>
+		<value>
+			<techHediffsMoney>0</techHediffsMoney>
+		</value>
+	</match>
+</Operation>
+
+<Operation Class="PatchOperationConditional">
+	<xpath>Defs/PawnKindDef[defName="Empire_Common_Trader"]/techHediffsTags</xpath>
+	<match Class="PatchOperationRemove">
+		<xpath>Defs/PawnKindDef[defName="Empire_Common_Trader"]/techHediffsTags</xpath>
+	</match>
+</Operation>
+
+<Operation Class="PatchOperationConditional">
+	<xpath>Defs/PawnKindDef[defName="Empire_Common_Trader"]/apparelRequired</xpath>
+	<nomatch Class="PatchOperationAdd">
+		<xpath>Defs/PawnKindDef[defName="Empire_Common_Trader"]</xpath>
+		<value>
+			<apparelRequired>
+				<li MayRequire="Ludeon.RimWorld.Ideology">Apparel_Slicecap</li>
+				<li>Apparel_Cape</li>
+				<li>DankPyon_Apparel_Leather_Tunic</li>
+				<li>DankPyon_Footwear_BootsSplinted</li>
+				<li>DankPyon_Handwear_GlovesSplinted</li>
+				<li>DankPyon_Apparel_Padded_Surcoat</li>
+				<li>Apparel_Pants</li>
+			</apparelRequired>
+		</value>
+	</nomatch>
+	<match Class="PatchOperationReplace">
+		<xpath>Defs/PawnKindDef[defName="Empire_Common_Trader"]/apparelRequired</xpath>
+		<value>
+			<apparelRequired>
+				<li MayRequire="Ludeon.RimWorld.Ideology">Apparel_Slicecap</li>
+				<li>Apparel_Cape</li>
+				<li>DankPyon_Apparel_Leather_Tunic</li>
+				<li>DankPyon_Footwear_BootsSplinted</li>
+				<li>DankPyon_Handwear_GlovesSplinted</li>
+				<li>DankPyon_Apparel_Padded_Surcoat</li>
+				<li>Apparel_Pants</li>
+			</apparelRequired>
+		</value>
+	</match>
+</Operation>
+
+<Operation Class="PatchOperationConditional">
+	<xpath>Defs/PawnKindDef[defName="Empire_Common_Trader"]/specificApparelRequirements</xpath>
+	<nomatch Class="PatchOperationAdd">
+		<xpath>Defs/PawnKindDef[defName="Empire_Common_Trader"]</xpath>
+		<value>
+			<specificApparelRequirements>
+				<li MayRequire="Ludeon.RimWorld.Ideology">
+					<bodyPartGroup>UpperHead</bodyPartGroup>
+					<requiredTag>Apparel_Slicecap</requiredTag>
+					<color>(105,41,41)</color>
+				</li>
+				<li>
+					<bodyPartGroup>Torso</bodyPartGroup>
+					<apparelLayer>Shell</apparelLayer>
+					<requiredTag>Cape</requiredTag>
+					<stuff>Hyperweave</stuff>
+					<color>(105,41,41)</color>
+				</li>
+				<li>
+					<bodyPartGroup>Torso</bodyPartGroup>
+					<apparelLayer>Middle</apparelLayer>
+					<requiredTag>DankPyon_Apparel_Leather_Tunic</requiredTag>
+					<stuff>Leather_Plain</stuff>
+				</li>
+			</specificApparelRequirements>
+		</value>
+	</nomatch>
+	<match Class="PatchOperationReplace">
+		<xpath>Defs/PawnKindDef[defName="Empire_Common_Trader"]/specificApparelRequirements</xpath>
+		<value>
+			<specificApparelRequirements>
+				<li MayRequire="Ludeon.RimWorld.Ideology">
+					<bodyPartGroup>UpperHead</bodyPartGroup>
+					<requiredTag>Apparel_Slicecap</requiredTag>
+					<color>(105,41,41)</color>
+				</li>
+				<li>
+					<bodyPartGroup>Torso</bodyPartGroup>
+					<apparelLayer>Shell</apparelLayer>
+					<requiredTag>Cape</requiredTag>
+					<stuff>Hyperweave</stuff>
+					<color>(105,41,41)</color>
+				</li>
+				<li>
+					<bodyPartGroup>Torso</bodyPartGroup>
+					<apparelLayer>Middle</apparelLayer>
+					<requiredTag>DankPyon_Apparel_Leather_Tunic</requiredTag>
+					<stuff>Leather_Plain</stuff>
+				</li>
+			</specificApparelRequirements>
+		</value>
+	</match>
+</Operation>
+
+<Operation Class="PatchOperationConditional">
+	<xpath>Defs/PawnKindDef[defName="Empire_Common_Trader"]/apparelTags</xpath>
+	<match Class="PatchOperationRemove">
+		<xpath>Defs/PawnKindDef[defName="Empire_Common_Trader"]/apparelTags</xpath>
+	</match>
+</Operation>
+
+<Operation Class="PatchOperationConditional">
+	<xpath>Defs/PawnKindDef[defName="Empire_Common_Trader"]/apparelIgnoreSeasons</xpath>
+	<nomatch Class="PatchOperationAdd">
+		<xpath>Defs/PawnKindDef[defName="Empire_Common_Trader"]</xpath>
+		<value>
+			<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+		</value>
+	</nomatch>
+	<match Class="PatchOperationReplace">
+		<xpath>Defs/PawnKindDef[defName="Empire_Common_Trader"]/apparelIgnoreSeasons</xpath>
+		<value>
+			<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+		</value>
+	</match>
+</Operation>
+
+</Patch>

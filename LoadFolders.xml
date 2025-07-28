@@ -14,6 +14,11 @@
   </v1.5>
    <v1.6>
     <li>/</li>
-    <li IfModActive="Ludeon.RimWorld.Royalty">1.6</li>
+    <li>1.6</li>
+    <li IfModActive="Ludeon.RimWorld.Royalty">1.6/Mods/Royalty</li>
+    <li IfModActive="Ludeon.RimWorld.Ideology">1.6/Mods/Ideology</li>
+    <li IfModActive="owlchemist.giddyup">1.6/Mods/GiddyUpTwoForked</li>
+	<li IfModActive="dankpyon.medieval.overhaul">1.6/Mods/MedievalOverhaul</li>
+	<li IfModActive="oskarpotocki.vfe.empire">1.6/Mods/VanillaFactionExpandedEmpire</li>
   </v1.6>
 </loadFolders>

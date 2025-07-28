@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+<Operation Class="PatchOperationConditional">
+	<xpath>Defs/ResearchProjectDef[defName="VFEE_StellicThrone"]/techLevel</xpath>
+	<match Class="PatchOperationReplace">
+		<xpath>Defs/ResearchProjectDef[defName="VFEE_StellicThrone"]/techLevel</xpath>
+		<value>
+			<techLevel>Medieval</techLevel>
+		</value>
+	</match>
+</Operation>
+
+<Operation Class="PatchOperationConditional">
+	<xpath>Defs/ResearchProjectDef[defName="VFEE_PipeOrgans"]/techLevel</xpath>
+	<match Class="PatchOperationReplace">
+		<xpath>Defs/ResearchProjectDef[defName="VFEE_PipeOrgans"]/techLevel</xpath>
+		<value>
+			<techLevel>Medieval</techLevel>
+		</value>
+	</match>
+</Operation>	
+</Patch>

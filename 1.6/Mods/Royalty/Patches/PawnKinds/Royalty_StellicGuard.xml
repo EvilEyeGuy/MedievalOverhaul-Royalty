@@ -1,0 +1,387 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+<!-- BASE: StellicGuardBase -->
+
+<Operation Class="PatchOperationConditional">
+	<xpath>Defs/PawnKindDef[@Name="StellicGuardBase"]/weaponMoney</xpath>
+	<nomatch Class="PatchOperationAdd">
+		<xpath>Defs/PawnKindDef[@Name="StellicGuardBase"]</xpath>
+		<value>
+			<weaponMoney>8000</weaponMoney>
+		</value>						
+	</nomatch>
+	<match Class="PatchOperationReplace">
+		<xpath>Defs/PawnKindDef[@Name="StellicGuardBase"]/weaponMoney</xpath>
+		<value>
+			<weaponMoney>8000</weaponMoney>
+		</value>						
+	</match>
+</Operation>
+
+<Operation Class="PatchOperationConditional">
+	<xpath>Defs/PawnKindDef[@Name="StellicGuardBase"]/apparelColor</xpath>
+	<match Class="PatchOperationRemove">
+		<xpath>Defs/PawnKindDef[@Name="StellicGuardBase"]/apparelColor</xpath>
+	</match>
+</Operation>
+
+<!--li Class="PatchOperationTest">
+	<xpath>Defs/PawnKindDef[@Name="StellicGuardBase"]</xpath>
+</li>
+<Operation Class="PatchOperationConditional">
+	<xpath>Defs/PawnKindDef[@Name="StellicGuardBase"]/apparelColor</xpath>
+	<nomatch Class="PatchOperationAdd">
+		<xpath>Defs/PawnKindDef[@Name="StellicGuardBase"]</xpath>
+		<value>
+			<apparelColor>(250,250,250)</apparelColor>
+		</value>
+	</nomatch>
+	<match Class="PatchOperationReplace">
+		<xpath>Defs/PawnKindDef[@Name="StellicGuardBase"]/apparelColor</xpath>
+		<value>
+			<apparelColor>(250,250,250)</apparelColor>
+		</value>
+	</match>
+</li-->
+
+<Operation Class="PatchOperationConditional">
+	<xpath>Defs/PawnKindDef[@Name="StellicGuardBase"]/specificApparelRequirements</xpath>
+	<nomatch Class="PatchOperationAdd">
+		<xpath>Defs/PawnKindDef[@Name="StellicGuardBase"]</xpath>
+		<value>
+			<specificApparelRequirements Inherit="False">
+				<!-- FullHead -->
+				<li>
+					<bodyPartGroup>FullHead</bodyPartGroup>
+					<apparelLayer>Overhead</apparelLayer>
+					<requiredTag>DankPyon_Headgear_ArmetNamed</requiredTag>
+				</li>
+				<!-- Torso -->
+				<li>
+					<bodyPartGroup>Torso</bodyPartGroup>
+					<apparelLayer>OnSkin</apparelLayer>
+					<requiredTag>DankPyon_Apparel_Padded_Surcoat</requiredTag>
+					<stuff>WoolMegasloth</stuff>
+				</li>
+				<li>
+					<bodyPartGroup>Torso</bodyPartGroup>
+					<apparelLayer>Middle</apparelLayer>
+					<requiredTag>DankPyon_Apparel_Hauberk</requiredTag>
+					<stuff>Plasteel</stuff>
+				</li>
+				<li>
+					<bodyPartGroup>Torso</bodyPartGroup>
+					<apparelLayer>Shell</apparelLayer>
+					<requiredTag>DankPyon_Apparel_FullPlateNamed</requiredTag>
+				</li>
+				<!-- Legs -->
+				<li>
+					<bodyPartGroup>Legs</bodyPartGroup>
+					<apparelLayer>OnSkin</apparelLayer>
+					<requiredTag>DankPyon_Apparel_Trousers</requiredTag>
+					<stuff>WoolMegasloth</stuff>
+				</li>
+				<!-- Hands -->
+				<li>
+					<bodyPartGroup>Hands</bodyPartGroup>
+					<apparelLayer>Middle</apparelLayer>
+					<requiredTag>DankPyon_Handwear_GlovesPlate</requiredTag>
+					<stuff>Plasteel</stuff>
+				</li>
+				<!-- Feet -->
+				<li>
+					<bodyPartGroup>Feet</bodyPartGroup>
+					<apparelLayer>Middle</apparelLayer>
+					<requiredTag>DankPyon_Footwear_BootsPlate</requiredTag>
+					<stuff>Plasteel</stuff>
+				</li>
+				<!-- Shield -->
+			</specificApparelRequirements>
+		</value>
+	</nomatch>
+	<match Class="PatchOperationReplace">
+		<xpath>Defs/PawnKindDef[@Name="StellicGuardBase"]/specificApparelRequirements</xpath>
+		<value>
+			<specificApparelRequirements Inherit="False">
+				<!-- FullHead -->
+				<li>
+					<bodyPartGroup>FullHead</bodyPartGroup>
+					<apparelLayer>Overhead</apparelLayer>
+					<requiredTag>DankPyon_Headgear_ArmetNamed</requiredTag>
+				</li>
+				<!-- Torso -->
+				<li>
+					<bodyPartGroup>Torso</bodyPartGroup>
+					<apparelLayer>OnSkin</apparelLayer>
+					<requiredTag>DankPyon_Apparel_Padded_Surcoat</requiredTag>
+					<stuff>WoolMegasloth</stuff>
+				</li>
+				<li>
+					<bodyPartGroup>Torso</bodyPartGroup>
+					<apparelLayer>Middle</apparelLayer>
+					<requiredTag>DankPyon_Apparel_Hauberk</requiredTag>
+					<stuff>Plasteel</stuff>
+				</li>
+				<li>
+					<bodyPartGroup>Torso</bodyPartGroup>
+					<apparelLayer>Shell</apparelLayer>
+					<requiredTag>DankPyon_Apparel_FullPlateNamed</requiredTag>
+				</li>
+				<!-- Legs -->
+				<li>
+					<bodyPartGroup>Legs</bodyPartGroup>
+					<apparelLayer>OnSkin</apparelLayer>
+					<requiredTag>DankPyon_Apparel_Trousers</requiredTag>
+					<stuff>WoolMegasloth</stuff>
+				</li>
+				<!-- Hands -->
+				<li>
+					<bodyPartGroup>Hands</bodyPartGroup>
+					<apparelLayer>Middle</apparelLayer>
+					<requiredTag>DankPyon_Handwear_GlovesPlate</requiredTag>
+					<stuff>Plasteel</stuff>
+				</li>
+				<!-- Feet -->
+				<li>
+					<bodyPartGroup>Feet</bodyPartGroup>
+					<apparelLayer>Middle</apparelLayer>
+					<requiredTag>DankPyon_Footwear_BootsPlate</requiredTag>
+					<stuff>Plasteel</stuff>
+				</li>
+				<!-- Shield -->
+			</specificApparelRequirements>
+		</value>
+	</match>
+</Operation>
+
+<Operation Class="PatchOperationConditional">
+	<xpath>Defs/PawnKindDef[@Name="StellicGuardBase"]/techHediffsRequired</xpath>
+	<nomatch Class="PatchOperationAdd">
+		<xpath>Defs/PawnKindDef[@Name="StellicGuardBase"]</xpath>
+		<value>
+			<techHediffsRequired Inherit="False">
+				<li>ArmorskinGland</li>
+			</techHediffsRequired>
+		</value>
+	</nomatch>
+	<match Class="PatchOperationReplace">
+		<xpath>Defs/PawnKindDef[@Name="StellicGuardBase"]/techHediffsRequired</xpath>
+		<value>
+			<techHediffsRequired Inherit="False">
+				<li>ArmorskinGland</li>
+			</techHediffsRequired>
+		</value>
+	</match>
+</Operation>
+
+<!-- Empire_Fighter_StellicGuardRanged -->
+
+<Operation Class="PatchOperationConditional">
+	<xpath>Defs/PawnKindDef[defName="Empire_Fighter_StellicGuardRanged"]/weaponTags</xpath>
+	<nomatch Class="PatchOperationAdd">
+		<xpath>Defs/PawnKindDef[defName="Empire_Fighter_StellicGuardRanged"]</xpath>
+		<value>
+			<weaponTags Inherit="False">
+				<li>DankPyon_Arbelest</li>
+			</weaponTags>
+		</value>
+	</nomatch>
+	<match Class="PatchOperationReplace">
+		<xpath>Defs/PawnKindDef[defName="Empire_Fighter_StellicGuardRanged"]/weaponTags</xpath>
+		<value>
+			<weaponTags Inherit="False">
+				<li>DankPyon_Arbelest</li>
+			</weaponTags>
+		</value>
+	</match>
+</Operation>
+
+<Operation Class="PatchOperationConditional">
+	<xpath>Defs/PawnKindDef[defName="Empire_Fighter_StellicGuardRanged"]/skills</xpath>
+	<nomatch Class="PatchOperationAdd">
+		<xpath>Defs/PawnKindDef[defName="Empire_Fighter_StellicGuardRanged"]</xpath>
+		<value>
+			<skills>
+				<li>
+					<skill>Melee</skill>
+					<range>17~20</range>
+				</li>
+				<li>
+					<skill>Shooting</skill>
+					<range>17~20</range>
+				</li>
+			</skills>
+		</value>
+	</nomatch>
+	<match Class="PatchOperationReplace">
+		<xpath>Defs/PawnKindDef[defName="Empire_Fighter_StellicGuardRanged"]/skills</xpath>
+		<value>
+			<skills>
+				<li>
+					<skill>Melee</skill>
+					<range>17~20</range>
+				</li>
+				<li>
+					<skill>Shooting</skill>
+					<range>17~20</range>
+				</li>
+			</skills>
+		</value>
+	</match>
+</Operation>
+
+<Operation Class="PatchOperationConditional">
+	<xpath>Defs/PawnKindDef[defName="Empire_Fighter_StellicGuardRanged"]/apparelRequired</xpath>
+	<nomatch Class="PatchOperationAdd">
+		<xpath>Defs/PawnKindDef[defName="Empire_Fighter_StellicGuardRanged"]</xpath>
+		<value>
+			<apparelRequired Inherit="False">
+				<li>DankPyon_Headgear_ArmetNamed</li>
+				<li>DankPyon_Apparel_Padded_Surcoat</li>
+				<li>DankPyon_Apparel_Hauberk</li>
+				<li>DankPyon_Apparel_Trousers</li>
+				<li>DankPyon_Apparel_FullPlateNamed</li>
+				<li>DankPyon_Footwear_BootsPlate</li>
+				<li>DankPyon_Handwear_GlovesPlate</li>
+				<li>DankPyon_Apparel_Quiver</li>
+			</apparelRequired>
+		</value>
+	</nomatch>
+	<match Class="PatchOperationReplace">
+		<xpath>Defs/PawnKindDef[defName="Empire_Fighter_StellicGuardRanged"]/apparelRequired</xpath>
+		<value>
+			<apparelRequired Inherit="False">
+				<li>DankPyon_Headgear_ArmetNamed</li>
+				<li>DankPyon_Apparel_Padded_Surcoat</li>
+				<li>DankPyon_Apparel_Hauberk</li>
+				<li>DankPyon_Apparel_Trousers</li>
+				<li>DankPyon_Apparel_FullPlateNamed</li>
+				<li>DankPyon_Footwear_BootsPlate</li>
+				<li>DankPyon_Handwear_GlovesPlate</li>
+				<li>DankPyon_Apparel_Quiver</li>
+			</apparelRequired>
+		</value>
+	</match>
+</Operation>
+
+<Operation Class="PatchOperationConditional">
+	<xpath>Defs/PawnKindDef[defName="Empire_Fighter_StellicGuardRanged"]/label</xpath>
+	<nomatch Class="PatchOperationAdd">
+		<xpath>Defs/PawnKindDef[defName="Empire_Fighter_StellicGuardRanged"]</xpath>
+		<value>
+			<label>Stellic Guard</label>
+		</value>
+	</nomatch>
+	<match Class="PatchOperationReplace">
+		<xpath>Defs/PawnKindDef[defName="Empire_Fighter_StellicGuardRanged"]/label</xpath>
+		<value>
+			<label>Stellic Guard</label>
+		</value>
+	</match>
+</Operation>
+
+<!-- Empire_Fighter_StellicGuardMelee -->
+
+<Operation Class="PatchOperationConditional">
+	<xpath>Defs/PawnKindDef[defName="Empire_Fighter_StellicGuardMelee"]/weaponTags</xpath>
+	<nomatch Class="PatchOperationAdd">
+		<xpath>Defs/PawnKindDef[defName="Empire_Fighter_StellicGuardMelee"]</xpath>
+		<value>
+			<weaponTags Inherit="False">
+				<li>DankPyon_NamedTwoHandedFlangedMace</li>
+			</weaponTags>
+		</value>
+	</nomatch>
+	<match Class="PatchOperationReplace">
+		<xpath>Defs/PawnKindDef[defName="Empire_Fighter_StellicGuardMelee"]/weaponTags</xpath>
+		<value>
+			<weaponTags Inherit="False">
+				<li>DankPyon_NamedTwoHandedFlangedMace</li>
+			</weaponTags>
+		</value>
+	</match>
+</Operation>
+
+<Operation Class="PatchOperationConditional">
+	<xpath>Defs/PawnKindDef[defName="Empire_Fighter_StellicGuardMelee"]/skills</xpath>
+	<nomatch Class="PatchOperationAdd">
+		<xpath>Defs/PawnKindDef[defName="Empire_Fighter_StellicGuardMelee"]</xpath>
+		<value>
+			<skills>
+				<li>
+					<skill>Melee</skill>
+					<range>17~20</range>
+				</li>
+				<li>
+					<skill>Shooting</skill>
+					<range>17~20</range>
+				</li>
+			</skills>
+		</value>
+	</nomatch>
+	<match Class="PatchOperationReplace">
+		<xpath>Defs/PawnKindDef[defName="Empire_Fighter_StellicGuardMelee"]/skills</xpath>
+		<value>
+			<skills>
+				<li>
+					<skill>Melee</skill>
+					<range>17~20</range>
+				</li>
+				<li>
+					<skill>Shooting</skill>
+					<range>17~20</range>
+				</li>
+			</skills>
+		</value>
+	</match>
+</Operation>
+
+<Operation Class="PatchOperationConditional">
+	<xpath>Defs/PawnKindDef[defName="Empire_Fighter_StellicGuardMelee"]/apparelRequired</xpath>
+	<nomatch Class="PatchOperationAdd">
+		<xpath>Defs/PawnKindDef[defName="Empire_Fighter_StellicGuardMelee"]</xpath>
+		<value>
+			<apparelRequired Inherit="False">
+				<li>DankPyon_Headgear_ArmetNamed</li>
+				<li>DankPyon_Apparel_Padded_Surcoat</li>
+				<li>DankPyon_Apparel_Hauberk</li>
+				<li>DankPyon_Apparel_Trousers</li>
+				<li>DankPyon_Apparel_FullPlateNamed</li>
+				<li>DankPyon_Footwear_BootsPlate</li>
+				<li>DankPyon_Handwear_GlovesPlate</li>
+			</apparelRequired>
+		</value>
+	</nomatch>
+	<match Class="PatchOperationReplace">
+		<xpath>Defs/PawnKindDef[defName="Empire_Fighter_StellicGuardMelee"]/apparelRequired</xpath>
+		<value>
+			<apparelRequired Inherit="False">
+				<li>DankPyon_Headgear_ArmetNamed</li>
+				<li>DankPyon_Apparel_Padded_Surcoat</li>
+				<li>DankPyon_Apparel_Hauberk</li>
+				<li>DankPyon_Apparel_Trousers</li>
+				<li>DankPyon_Apparel_FullPlateNamed</li>
+				<li>DankPyon_Footwear_BootsPlate</li>
+				<li>DankPyon_Handwear_GlovesPlate</li>
+			</apparelRequired>
+		</value>
+	</match>
+</Operation>
+
+<Operation Class="PatchOperationConditional">
+	<xpath>Defs/PawnKindDef[defName="Empire_Fighter_StellicGuardMelee"]/label</xpath>
+	<nomatch Class="PatchOperationAdd">
+		<xpath>Defs/PawnKindDef[defName="Empire_Fighter_StellicGuardMelee"]</xpath>
+		<value>
+			<label>Stellic Guard</label>
+		</value>
+	</nomatch>
+	<match Class="PatchOperationReplace">
+		<xpath>Defs/PawnKindDef[defName="Empire_Fighter_StellicGuardMelee"]/label</xpath>
+		<value>
+			<label>Stellic Guard</label>
+		</value>
+	</match>
+</Operation>
+
+</Patch>

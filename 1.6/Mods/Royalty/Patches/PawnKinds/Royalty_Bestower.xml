@@ -1,0 +1,200 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+<!-- Empire_Royal_Bestower -->
+
+<Operation Class="PatchOperationConditional">
+	<xpath>Defs/PawnKindDef[defName="Empire_Royal_Bestower"]/apparelColor</xpath>
+	<nomatch Class="PatchOperationAdd">
+		<xpath>Defs/PawnKindDef[defName="Empire_Royal_Bestower"]</xpath>
+		<value>
+			<apparelColor>(72,72,74)</apparelColor>
+		</value>
+	</nomatch>
+	<match Class="PatchOperationReplace">
+		<xpath>Defs/PawnKindDef[defName="Empire_Royal_Bestower"]/apparelColor</xpath>
+		<value>
+			<apparelColor>(72,72,74)</apparelColor>
+		</value>
+	</match>
+</Operation>
+
+<Operation Class="PatchOperationConditional">
+	<xpath>Defs/PawnKindDef[defName="Empire_Royal_Bestower"]/apparelRequired</xpath>
+	<nomatch Class="PatchOperationAdd">
+		<xpath>Defs/PawnKindDef[defName="Empire_Royal_Bestower"]</xpath>
+		<value>
+			<apparelRequired Inherit="False">
+			<li>DankPyon_Headgear_ZweihandersHat</li>
+			<li>DankPyon_Apparel_Padded_Surcoat</li>
+			<li>DankPyon_Apparel_FullPlateGilded</li>
+			<li>DankPyon_Apparel_Trousers</li>
+			<li>DankPyon_Footwear_BootsPlate</li>
+			<li>DankPyon_Handwear_GlovesPlate</li>
+			</apparelRequired>
+		</value>
+	</nomatch>
+	<match Class="PatchOperationReplace">
+		<xpath>Defs/PawnKindDef[defName="Empire_Royal_Bestower"]/apparelRequired</xpath>
+		<value>
+			<apparelRequired Inherit="False">
+			<li>DankPyon_Headgear_ZweihandersHat</li>
+			<li>DankPyon_Apparel_Padded_Surcoat</li>
+			<li>DankPyon_Apparel_FullPlateGilded</li>
+			<li>DankPyon_Apparel_Trousers</li>
+			<li>DankPyon_Footwear_BootsPlate</li>
+			<li>DankPyon_Handwear_GlovesPlate</li>
+			</apparelRequired>
+		</value>
+	</match>
+</Operation>
+
+<Operation Class="PatchOperationConditional">
+	<xpath>Defs/PawnKindDef[defName="Empire_Royal_Bestower"]/specificApparelRequirements</xpath>
+	<nomatch Class="PatchOperationAdd">
+		<xpath>Defs/PawnKindDef[defName="Empire_Royal_Bestower"]</xpath>
+		<value>
+			<specificApparelRequirements Inherit="False">
+				<!-- FullHead -->
+				<li>
+					<bodyPartGroup>UpperHead</bodyPartGroup>
+					<requiredTag>DankPyon_Headgear_ZweihandersHat</requiredTag>
+					<color>(125,49,49)</color>
+				</li>
+				<!-- Torso -->
+				<li>
+					<bodyPartGroup>Torso</bodyPartGroup>
+					<apparelLayer>OnSkin</apparelLayer>
+					<requiredTag>DankPyon_Apparel_Padded_Surcoat</requiredTag>
+					<stuff>WoolMegasloth</stuff>
+				</li>
+				<li>
+					<bodyPartGroup>Torso</bodyPartGroup>
+					<apparelLayer>Middle</apparelLayer>
+					<requiredTag>DankPyon_Apparel_Leather_Tunic</requiredTag>
+					<stuff>DankPyon_Leather_Daer</stuff>
+				</li>
+				<li>
+					<bodyPartGroup>Torso</bodyPartGroup>
+					<apparelLayer>Shell</apparelLayer>
+					<requiredTag>DankPyon_Apparel_FullPlateGilded</requiredTag>
+					<stuff>Steel</stuff>
+				</li>
+				<!-- Legs -->
+				<li>
+					<bodyPartGroup>Legs</bodyPartGroup>
+					<apparelLayer>OnSkin</apparelLayer>
+					<requiredTag>DankPyon_Apparel_Trousers</requiredTag>
+					<stuff>WoolMegasloth</stuff>
+				</li>
+				<!-- Hands -->
+				<li>
+					<bodyPartGroup>Hands</bodyPartGroup>
+					<apparelLayer>Middle</apparelLayer>
+					<requiredTag>DankPyon_Handwear_GlovesPlate</requiredTag>
+					<stuff>Steel</stuff>
+				</li>
+				<!-- Feet -->
+				<li>
+					<bodyPartGroup>Feet</bodyPartGroup>
+					<apparelLayer>Middle</apparelLayer>
+					<requiredTag>DankPyon_Footwear_BootsPlate</requiredTag>
+					<stuff>Steel</stuff>
+				</li>
+				<!-- Shield -->
+			</specificApparelRequirements>
+		</value>
+	</nomatch>
+	<match Class="PatchOperationReplace">
+		<xpath>Defs/PawnKindDef[defName="Empire_Royal_Bestower"]/specificApparelRequirements</xpath>
+		<value>
+			<specificApparelRequirements Inherit="False">
+				<!-- FullHead -->
+				<li>
+					<bodyPartGroup>UpperHead</bodyPartGroup>
+					<requiredTag>DankPyon_Headgear_ZweihandersHat</requiredTag>
+					<color>(125,49,49)</color>
+				</li>
+				<!-- Torso -->
+				<li>
+					<bodyPartGroup>Torso</bodyPartGroup>
+					<apparelLayer>OnSkin</apparelLayer>
+					<requiredTag>DankPyon_Apparel_Padded_Surcoat</requiredTag>
+					<stuff>WoolMegasloth</stuff>
+				</li>
+				<li>
+					<bodyPartGroup>Torso</bodyPartGroup>
+					<apparelLayer>Middle</apparelLayer>
+					<requiredTag>DankPyon_Apparel_Leather_Tunic</requiredTag>
+					<stuff>DankPyon_Leather_Daer</stuff>
+				</li>
+				<li>
+					<bodyPartGroup>Torso</bodyPartGroup>
+					<apparelLayer>Shell</apparelLayer>
+					<requiredTag>DankPyon_Apparel_FullPlateGilded</requiredTag>
+					<stuff>Steel</stuff>
+				</li>
+				<!-- Legs -->
+				<li>
+					<bodyPartGroup>Legs</bodyPartGroup>
+					<apparelLayer>OnSkin</apparelLayer>
+					<requiredTag>DankPyon_Apparel_Trousers</requiredTag>
+					<stuff>WoolMegasloth</stuff>
+				</li>
+				<!-- Hands -->
+				<li>
+					<bodyPartGroup>Hands</bodyPartGroup>
+					<apparelLayer>Middle</apparelLayer>
+					<requiredTag>DankPyon_Handwear_GlovesPlate</requiredTag>
+					<stuff>Steel</stuff>
+				</li>
+				<!-- Feet -->
+				<li>
+					<bodyPartGroup>Feet</bodyPartGroup>
+					<apparelLayer>Middle</apparelLayer>
+					<requiredTag>DankPyon_Footwear_BootsPlate</requiredTag>
+					<stuff>Steel</stuff>
+				</li>
+				<!-- Shield -->
+			</specificApparelRequirements>
+		</value>
+	</match>
+</Operation>
+
+<Operation Class="PatchOperationConditional">
+	<xpath>Defs/PawnKindDef[defName="Empire_Royal_Bestower"]/weaponMoney</xpath>
+	<nomatch Class="PatchOperationAdd">
+		<xpath>Defs/PawnKindDef[defName="Empire_Royal_Bestower"]</xpath>
+		<value>
+			<weaponMoney>8000</weaponMoney>
+		</value>						
+	</nomatch>
+	<match Class="PatchOperationReplace">
+		<xpath>Defs/PawnKindDef[defName="Empire_Royal_Bestower"]/weaponMoney</xpath>
+		<value>
+			<weaponMoney>8000</weaponMoney>
+		</value>						
+	</match>
+</Operation>
+
+<Operation Class="PatchOperationConditional">
+	<xpath>Defs/PawnKindDef[defName="Empire_Royal_Bestower"]/weaponTags</xpath>
+	<nomatch Class="PatchOperationAdd">
+		<xpath>Defs/PawnKindDef[defName="Empire_Royal_Bestower"]</xpath>
+		<value>
+			<weaponTags Inherit="False">
+				<li>DankPyon_NamedGreatsword</li>
+			</weaponTags>
+		</value>
+	</nomatch>
+	<match Class="PatchOperationReplace">
+		<xpath>Defs/PawnKindDef[defName="Empire_Royal_Bestower"]/weaponTags</xpath>
+		<value>
+			<weaponTags Inherit="False">
+				<li>DankPyon_NamedGreatsword</li>
+			</weaponTags>
+		</value>
+	</match>
+</Operation>
+
+</Patch>

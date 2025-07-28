@@ -15,7 +15,7 @@
 					<nomatch Class="PatchOperationAdd">
 						<xpath>Defs/PawnKindDef[@Name="EmpireCommonerBase"]</xpath>
 						<value>
-							<specificApparelRequirements Inherit="Flase">
+							<specificApparelRequirements Inherit="False">
 								<li>
 									<colorGenerator Class="ColorGenerator_Options">
 										<options>
@@ -146,7 +146,7 @@
 					<nomatch Class="PatchOperationAdd">
 						<xpath>Defs/PawnKindDef[defName="Empire_Common_Laborer"]</xpath>
 						<value>
-							<apparelRequired Inherit="Flase">
+							<apparelRequired Inherit="False">
 								<li>DankPyon_Apparel_Padded_Surcoat</li>
 								<li>DankPyon_Apparel_Trousers</li>			
 								<li>DankPyon_Handwear_GlovesLeather</li>
@@ -175,7 +175,7 @@
 					<nomatch Class="PatchOperationAdd">
 						<xpath>Defs/PawnKindDef[defName="Empire_Common_Laborer"]</xpath>
 						<value>
-							<specificApparelRequirements Inherit="Flase">
+							<specificApparelRequirements Inherit="False">
 								<li>
 									<bodyPartGroup>Torso</bodyPartGroup>
 									<apparelLayer>OnSkin</apparelLayer>
@@ -203,7 +203,7 @@
 					<match Class="PatchOperationReplace">
 						<xpath>Defs/PawnKindDef[defName="Empire_Common_Laborer"]/specificApparelRequirements</xpath>
 						<value>
-							<specificApparelRequirements Inherit="Flase">
+							<specificApparelRequirements Inherit="False">
 								<li>
 									<bodyPartGroup>Torso</bodyPartGroup>
 									<apparelLayer>OnSkin</apparelLayer>

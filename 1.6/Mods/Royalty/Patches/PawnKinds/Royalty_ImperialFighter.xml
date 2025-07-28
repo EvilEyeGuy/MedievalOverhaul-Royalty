@@ -1,0 +1,605 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+<!-- BASE: ImperialFighterBase -->
+
+<Operation Class="PatchOperationConditional">
+	<xpath>Defs/PawnKindDef[@Name="ImperialFighterBase"]/styleItemTags</xpath>
+	<match Class="PatchOperationRemove">
+	<xpath>Defs/PawnKindDef[@Name="ImperialFighterBase"]/styleItemTags</xpath>
+	</match>
+</Operation>
+
+<Operation Class="PatchOperationConditional">
+	<xpath>Defs/PawnKindDef[@Name="ImperialFighterBase"]/itemQuality</xpath>
+	<nomatch Class="PatchOperationAdd">
+		<xpath>Defs/PawnKindDef[@Name="ImperialFighterBase"]</xpath>
+		<value>
+			<itemQuality>Masterwork</itemQuality>
+		</value>
+	</nomatch>
+	<match Class="PatchOperationReplace">
+		<xpath>Defs/PawnKindDef[@Name="ImperialFighterBase"]/itemQuality</xpath>
+		<value>
+			<itemQuality>Masterwork</itemQuality>
+		</value>
+	</match>
+</Operation>
+
+<Operation Class="PatchOperationConditional">
+	<xpath>Defs/PawnKindDef[@Name="ImperialFighterBase"]/apparelMoney</xpath>
+	<nomatch Class="PatchOperationAdd">
+		<xpath>Defs/PawnKindDef[@Name="ImperialFighterBase"]</xpath>
+		<value>
+			<apparelMoney>0</apparelMoney>
+		</value>
+	</nomatch>
+	<match Class="PatchOperationReplace">
+		<xpath>Defs/PawnKindDef[@Name="ImperialFighterBase"]/apparelMoney</xpath>
+		<value>
+			<apparelMoney>0</apparelMoney>
+		</value>
+	</match>
+</Operation>
+
+<Operation Class="PatchOperationConditional">
+	<xpath>Defs/PawnKindDef[@Name="ImperialFighterBase"]/apparelTags</xpath>
+	<match Class="PatchOperationRemove">
+		<xpath>Defs/PawnKindDef[@Name="ImperialFighterBase"]/apparelTags</xpath>
+	</match>
+</Operation>
+
+<Operation Class="PatchOperationConditional">
+	<xpath>Defs/PawnKindDef[@Name="ImperialFighterBase"]/apparelDisallowTags</xpath>
+	<nomatch Class="PatchOperationAdd">
+		<xpath>Defs/PawnKindDef[@Name="ImperialFighterBase"]</xpath>
+		<value>
+			<apparelDisallowTags Inherit="False">
+				<li>IndustrialMilitaryAdvanced</li>
+				<li>IndustrialMilitaryBasic</li>
+				<li>IndustrialAdvanced</li>
+				<li>IndustrialBasic</li>
+				<li>Western</li>
+			</apparelDisallowTags>
+		</value>
+	</nomatch>
+	<match Class="PatchOperationReplace">
+		<xpath>Defs/PawnKindDef[@Name="ImperialFighterBase"]/apparelDisallowTags</xpath>
+		<value>
+			<apparelDisallowTags Inherit="False">
+				<li>IndustrialMilitaryAdvanced</li>
+				<li>IndustrialMilitaryBasic</li>
+				<li>IndustrialAdvanced</li>
+				<li>IndustrialBasic</li>
+				<li>Western</li>
+			</apparelDisallowTags>
+		</value>
+	</match>
+</Operation>
+
+<Operation Class="PatchOperationConditional">
+	<xpath>Defs/PawnKindDef[@Name="ImperialFighterBase"]/specificApparelRequirements</xpath>
+	<nomatch Class="PatchOperationAdd">
+		<xpath>Defs/PawnKindDef[@Name="ImperialFighterBase"]</xpath>
+		<value>
+			<specificApparelRequirements Inherit="False">
+				<!-- FullHead -->
+				<!-- Torso -->
+				<li>
+					<bodyPartGroup>Torso</bodyPartGroup>
+					<apparelLayer>OnSkin</apparelLayer>
+					<requiredTag>DankPyon_Apparel_Padded_Surcoat</requiredTag>
+					<stuff>WoolMegasloth</stuff>
+				</li>
+				<!-- Legs -->
+				<li>
+					<bodyPartGroup>Legs</bodyPartGroup>
+					<apparelLayer>OnSkin</apparelLayer>
+					<requiredTag>DankPyon_Apparel_Trousers</requiredTag>
+					<stuff>WoolMegasloth</stuff>
+				</li>
+				<!-- Hands -->
+				<!-- Feet -->
+				<!-- Shield -->
+				<!-- Color -->
+			</specificApparelRequirements>
+		</value>
+	</nomatch>
+	<match Class="PatchOperationReplace">
+		<xpath>Defs/PawnKindDef[@Name="ImperialFighterBase"]/specificApparelRequirements</xpath>
+		<value>
+			<specificApparelRequirements Inherit="False">
+				<!-- FullHead -->
+				<!-- Torso -->
+				<li>
+					<bodyPartGroup>Torso</bodyPartGroup>
+					<apparelLayer>OnSkin</apparelLayer>
+					<requiredTag>DankPyon_Apparel_Padded_Surcoat</requiredTag>
+					<stuff>WoolMegasloth</stuff>
+				</li>
+				<!-- Legs -->
+				<li>
+					<bodyPartGroup>Legs</bodyPartGroup>
+					<apparelLayer>OnSkin</apparelLayer>
+					<requiredTag>DankPyon_Apparel_Trousers</requiredTag>
+					<stuff>WoolMegasloth</stuff>
+				</li>
+				<!-- Hands -->
+				<!-- Feet -->
+				<!-- Shield -->
+				<!-- Color -->
+			</specificApparelRequirements>
+		</value>
+	</match>
+</Operation>
+
+<!-- PAWN: Empire_Fighter_Grenadier (HI:Ranged)-->
+
+<Operation Class="PatchOperationConditional">
+	<xpath>Defs/PawnKindDef[defName="Empire_Fighter_Grenadier"]/label</xpath>
+	<nomatch Class="PatchOperationAdd">
+		<xpath>Defs/PawnKindDef[defName="Empire_Fighter_Grenadier"]</xpath>
+		<value>
+			<label>Heavy Ranged Infantry</label>
+		</value>
+	</nomatch>
+	<match Class="PatchOperationReplace">
+		<xpath>Defs/PawnKindDef[defName="Empire_Fighter_Grenadier"]/label</xpath>
+		<value>
+			<label>Heavy Ranged Infantry</label>
+		</value>
+	</match>
+</Operation>
+
+<Operation Class="PatchOperationConditional">
+	<xpath>Defs/PawnKindDef[defName="Empire_Fighter_Grenadier"]/apparelColor</xpath>
+	<match Class="PatchOperationRemove">
+		<xpath>Defs/PawnKindDef[defName="Empire_Fighter_Grenadier"]/apparelColor</xpath>
+	</match>
+</Operation>
+
+<Operation Class="PatchOperationConditional">
+	<xpath>Defs/PawnKindDef[defName="Empire_Fighter_Grenadier"]/weaponTags</xpath>
+	<nomatch Class="PatchOperationAdd">
+		<xpath>Defs/PawnKindDef[defName="Empire_Fighter_Grenadier"]</xpath>
+		<value>
+			<weaponTags Inherit="False">
+				<li>DankPyon_Arbelest</li>
+			</weaponTags>
+		</value>
+	</nomatch>
+	<match Class="PatchOperationReplace">
+		<xpath>Defs/PawnKindDef[defName="Empire_Fighter_Grenadier"]/weaponTags</xpath>
+		<value>
+			<weaponTags Inherit="False">
+				<li>DankPyon_Arbelest</li>
+			</weaponTags>
+		</value>
+	</match>
+</Operation>
+
+<Operation Class="PatchOperationConditional">
+	<xpath>Defs/PawnKindDef[defName="Empire_Fighter_Grenadier"]/apparelMoney</xpath>
+	<nomatch Class="PatchOperationAdd">
+		<xpath>Defs/PawnKindDef[defName="Empire_Fighter_Grenadier"]</xpath>
+		<value>
+			<apparelMoney>0</apparelMoney>
+		</value>
+	</nomatch>
+	<match Class="PatchOperationReplace">
+		<xpath>Defs/PawnKindDef[defName="Empire_Fighter_Grenadier"]/apparelMoney</xpath>
+		<value>
+			<apparelMoney>0</apparelMoney>
+		</value>
+	</match>
+</Operation>
+
+<Operation Class="PatchOperationConditional">
+	<xpath>Defs/PawnKindDef[defName="Empire_Fighter_Grenadier"]/apparelRequired</xpath>
+	<nomatch Class="PatchOperationAdd">
+		<xpath>Defs/PawnKindDef[defName="Empire_Fighter_Grenadier"]</xpath>
+		<value>
+			<apparelRequired Inherit="False">
+				<li>DankPyon_Headgear_ClosedBascinetHelmet</li>
+				<li>DankPyon_Apparel_Padded_Surcoat</li>
+				<li>DankPyon_Apparel_Hauberk</li>
+				<li>DankPyon_Apparel_Trousers</li>
+				<li>DankPyon_Apparel_FullPlate</li>
+				<li>DankPyon_Handwear_GlovesPlate</li>
+				<li>DankPyon_Footwear_BootsPlate</li>
+			</apparelRequired>
+		</value>
+	</nomatch>
+	<match Class="PatchOperationReplace">
+		<xpath>Defs/PawnKindDef[defName="Empire_Fighter_Grenadier"]/apparelRequired</xpath>
+		<value>
+			<apparelRequired Inherit="False">
+				<li>DankPyon_Headgear_ClosedBascinetHelmet</li>	
+				<li>DankPyon_Apparel_Padded_Surcoat</li>
+				<li>DankPyon_Apparel_Hauberk</li>
+				<li>DankPyon_Apparel_Trousers</li>
+				<li>DankPyon_Apparel_FullPlate</li>
+				<li>DankPyon_Handwear_GlovesPlate</li>
+				<li>DankPyon_Footwear_BootsPlate</li>
+				<li>DankPyon_Apparel_Quiver</li>
+			</apparelRequired>
+		</value>
+	</match>
+</Operation>
+
+<Operation Class="PatchOperationConditional">
+	<xpath>Defs/PawnKindDef[defName="Empire_Fighter_Grenadier"]/specificApparelRequirements</xpath>
+	<nomatch Class="PatchOperationAdd">
+		<xpath>Defs/PawnKindDef[defName="Empire_Fighter_Grenadier"]</xpath>
+		<value>
+			<specificApparelRequirements Inherit="False">
+				<!-- FullHead -->
+				<li>
+					<bodyPartGroup>FullHead</bodyPartGroup>
+					<apparelLayer>Overhead</apparelLayer>
+					<requiredTag>DankPyon_Headgear_ClosedBascinetHelmet</requiredTag>
+					<stuff>Steel</stuff>
+				</li>
+				<!-- Torso -->
+				<li>
+					<bodyPartGroup>Torso</bodyPartGroup>
+					<apparelLayer>Middle</apparelLayer>
+					<requiredTag>DankPyon_Apparel_Hauberk</requiredTag>
+					<stuff>Steel</stuff>
+				</li>
+				<li>
+					<bodyPartGroup>Torso</bodyPartGroup>
+					<apparelLayer>Shell</apparelLayer>
+					<requiredTag>DankPyon_Apparel_FullPlate</requiredTag>
+					<stuff>Steel</stuff>
+				</li>
+				<!-- Legs -->
+				<!-- Hands -->
+				<li>
+					<bodyPartGroup>Hands</bodyPartGroup>
+					<apparelLayer>Middle</apparelLayer>
+					<requiredTag>DankPyon_Handwear_GlovesPlate</requiredTag>
+					<stuff>Steel</stuff>
+				</li>
+				<!-- Feet -->
+				<li>
+					<bodyPartGroup>Feet</bodyPartGroup>
+					<apparelLayer>Middle</apparelLayer>
+					<requiredTag>DankPyon_Footwear_BootsPlate</requiredTag>
+					<stuff>Steel</stuff>
+				</li>
+				<!-- Shield -->
+				<li>
+					<bodyPartGroup>Shoulders</bodyPartGroup>
+					<apparelLayer>Belt</apparelLayer>
+					<requiredTag>DankPyon_Apparel_Quiver</requiredTag>
+				</li>
+			</specificApparelRequirements>
+		</value>
+	</nomatch>
+	<match Class="PatchOperationReplace">
+		<xpath>Defs/PawnKindDef[defName="Empire_Fighter_Grenadier"]/specificApparelRequirements</xpath>
+		<value>
+			<specificApparelRequirements Inherit="False">
+				<!-- FullHead -->
+				<li>
+					<bodyPartGroup>FullHead</bodyPartGroup>
+					<apparelLayer>Overhead</apparelLayer>
+					<requiredTag>DankPyon_Headgear_ClosedBascinetHelmet</requiredTag>
+					<stuff>Steel</stuff>
+				</li>
+				<!-- Torso -->
+				<li>
+					<bodyPartGroup>Torso</bodyPartGroup>
+					<apparelLayer>Middle</apparelLayer>
+					<requiredTag>DankPyon_Apparel_Hauberk</requiredTag>
+					<stuff>Steel</stuff>
+				</li>
+				<li>
+					<bodyPartGroup>Torso</bodyPartGroup>
+					<apparelLayer>Shell</apparelLayer>
+					<requiredTag>DankPyon_Apparel_FullPlate</requiredTag>
+					<stuff>Steel</stuff>
+				</li>
+				<!-- Legs -->
+				<!-- Hands -->
+				<li>
+					<bodyPartGroup>Hands</bodyPartGroup>
+					<apparelLayer>Middle</apparelLayer>
+					<requiredTag>DankPyon_Handwear_GlovesPlate</requiredTag>
+					<stuff>Steel</stuff>
+				</li>
+				<!-- Feet -->
+				<li>
+					<bodyPartGroup>Feet</bodyPartGroup>
+					<apparelLayer>Middle</apparelLayer>
+					<requiredTag>DankPyon_Footwear_BootsPlate</requiredTag>
+					<stuff>Steel</stuff>
+				</li>
+				<!-- Shield -->
+				<li>
+					<bodyPartGroup>Shoulders</bodyPartGroup>
+					<apparelLayer>Belt</apparelLayer>
+					<requiredTag>DankPyon_Apparel_Quiver</requiredTag>
+				</li>
+			</specificApparelRequirements>
+		</value>
+	</match>
+</Operation>
+
+<Operation Class="PatchOperationConditional">
+	<xpath>Defs/PawnKindDef[defName="Empire_Fighter_Grenadier"]/skills</xpath>
+	<nomatch Class="PatchOperationAdd">
+		<xpath>Defs/PawnKindDef[defName="Empire_Fighter_Grenadier"]</xpath>
+		<value>
+			<skills>
+				<li>
+					<skill>Melee</skill>
+					<range>12~16</range>
+				</li>
+				<li>
+					<skill>Shooting</skill>
+					<range>12~16</range>
+				</li>
+			</skills>
+		</value>
+	</nomatch>
+	<match Class="PatchOperationReplace">
+		<xpath>Defs/PawnKindDef[defName="Empire_Fighter_Grenadier"]/skills</xpath>
+		<value>
+			<skills>
+				<li>
+					<skill>Melee</skill>
+					<range>12~16</range>
+				</li>
+				<li>
+					<skill>Shooting</skill>
+					<range>12~16</range>
+				</li>
+			</skills>
+		</value>
+	</match>
+</Operation>
+
+<!-- PAWN: Empire_Fighter_Champion (HI:Both)-->
+
+<Operation Class="PatchOperationConditional">
+	<xpath>Defs/PawnKindDef[defName="Empire_Fighter_Champion"]/label</xpath>
+	<nomatch Class="PatchOperationAdd">
+		<xpath>Defs/PawnKindDef[defName="Empire_Fighter_Champion"]</xpath>
+		<value>
+			<label>Cavalry</label>
+		</value>
+	</nomatch>
+	<match Class="PatchOperationReplace">
+		<xpath>Defs/PawnKindDef[defName="Empire_Fighter_Champion"]/label</xpath>
+		<value>
+			<label>Heavy Infantry</label>
+		</value>
+	</match>
+</Operation>
+
+<Operation Class="PatchOperationConditional">
+	<xpath>Defs/PawnKindDef[defName="Empire_Fighter_Champion"]/weaponTags</xpath>
+	<nomatch Class="PatchOperationAdd">
+		<xpath>Defs/PawnKindDef[defName="Empire_Fighter_Champion"]</xpath>
+		<value>
+			<weaponTags Inherit="False">
+					<li>DankPyon_Arbelest</li>
+					<li>DankPyon_NobleSword</li>
+			</weaponTags>
+		</value>
+	</nomatch>
+	<match Class="PatchOperationReplace">
+		<xpath>Defs/PawnKindDef[defName="Empire_Fighter_Champion"]/weaponTags</xpath>
+		<value>
+			<weaponTags Inherit="False">
+					<li>DankPyon_Arbelest</li>
+					<li>DankPyon_NobleSword</li>
+			</weaponTags>
+		</value>
+	</match>
+</Operation>
+
+<Operation Class="PatchOperationConditional">
+	<xpath>Defs/PawnKindDef[defName="Empire_Fighter_Champion"]/apparelRequired</xpath>
+	<nomatch Class="PatchOperationAdd">
+		<xpath>Defs/PawnKindDef[defName="Empire_Fighter_Champion"]</xpath>
+		<value>
+			<apparelRequired Inherit="False">
+				<li>DankPyon_Headgear_ClosedBascinetHelmet</li>
+				<li>DankPyon_Apparel_Padded_Surcoat</li>
+				<li>DankPyon_Apparel_Hauberk</li>
+				<li>DankPyon_Apparel_Trousers</li>
+				<li>DankPyon_Apparel_FullPlate</li>
+				<li>DankPyon_Handwear_GlovesPlate</li>
+				<li>DankPyon_Footwear_BootsPlate</li>
+				<li>DankPyon_ShieldHeater</li>
+			</apparelRequired>
+		</value>
+	</nomatch>
+	<match Class="PatchOperationReplace">
+		<xpath>Defs/PawnKindDef[defName="Empire_Fighter_Champion"]/apparelRequired</xpath>
+		<value>
+			<apparelRequired Inherit="False">
+				<li>DankPyon_Headgear_ClosedBascinetHelmet</li>
+				<li>DankPyon_Apparel_Padded_Surcoat</li>
+				<li>DankPyon_Apparel_Hauberk</li>
+				<li>DankPyon_Apparel_Trousers</li>
+				<li>DankPyon_Apparel_FullPlate</li>
+				<li>DankPyon_Handwear_GlovesPlate</li>
+				<li>DankPyon_Footwear_BootsPlate</li>
+				<li>DankPyon_ShieldHeater</li>
+			</apparelRequired>
+		</value>
+	</match>
+</Operation>
+
+<Operation Class="PatchOperationConditional">
+	<xpath>Defs/PawnKindDef[defName="Empire_Fighter_Champion"]/apparelColor</xpath>
+	<match Class="PatchOperationRemove">
+		<xpath>Defs/PawnKindDef[defName="Empire_Fighter_Champion"]/apparelColor</xpath>
+	</match>
+</Operation>
+
+<Operation Class="PatchOperationConditional">
+	<xpath>Defs/PawnKindDef[defName="Empire_Fighter_Champion"]/skills</xpath>
+	<nomatch Class="PatchOperationAdd">
+		<xpath>Defs/PawnKindDef[defName="Empire_Fighter_Champion"]</xpath>
+		<value>
+			<skills>
+				<li>
+					<skill>Melee</skill>
+					<range>12~16</range>
+				</li>
+				<li>
+					<skill>Shooting</skill>
+					<range>12~16</range>
+				</li>
+			</skills>
+		</value>
+	</nomatch>
+	<match Class="PatchOperationReplace">
+		<xpath>Defs/PawnKindDef[defName="Empire_Fighter_Champion"]/skills</xpath>
+		<value>
+			<skills>
+				<li>
+					<skill>Melee</skill>
+					<range>12~16</range>
+				</li>
+				<li>
+					<skill>Shooting</skill>
+					<range>12~16</range>
+				</li>
+			</skills>
+		</value>
+	</match>
+</Operation>
+
+<Operation Class="PatchOperationConditional">
+	<xpath>Defs/PawnKindDef[defName="Empire_Fighter_Champion"]/specificApparelRequirements</xpath>
+	<nomatch Class="PatchOperationAdd">
+		<xpath>Defs/PawnKindDef[defName="Empire_Fighter_Champion"]</xpath>
+		<value>
+			<specificApparelRequirements Inherit="False">
+				<!-- FullHead -->
+				<li>
+					<bodyPartGroup>FullHead</bodyPartGroup>
+					<apparelLayer>Overhead</apparelLayer>
+					<requiredTag>DankPyon_Headgear_ClosedBascinetHelmet</requiredTag>
+					<stuff>Steel</stuff>
+				</li>
+				<!-- Torso -->
+				<li>
+					<bodyPartGroup>Torso</bodyPartGroup>
+					<apparelLayer>OnSkin</apparelLayer>
+					<requiredTag>DankPyon_Apparel_Padded_Surcoat</requiredTag>
+					<stuff>WoolMegasloth</stuff>
+				</li>
+				<li>
+					<bodyPartGroup>Torso</bodyPartGroup>
+					<apparelLayer>Middle</apparelLayer>
+					<requiredTag>DankPyon_Apparel_Hauberk</requiredTag>
+					<stuff>Steel</stuff>
+				</li>
+				<li>
+					<bodyPartGroup>Torso</bodyPartGroup>
+					<apparelLayer>Shell</apparelLayer>
+					<requiredTag>DankPyon_Apparel_FullPlate</requiredTag>
+					<stuff>Steel</stuff>
+				</li>
+				<!-- Legs -->
+				<li>
+					<bodyPartGroup>Legs</bodyPartGroup>
+					<apparelLayer>OnSkin</apparelLayer>
+					<requiredTag>DankPyon_Apparel_Trousers</requiredTag>
+					<stuff>WoolMegasloth</stuff>
+				</li>
+				<!-- Hands -->
+				<li>
+					<bodyPartGroup>Hands</bodyPartGroup>
+					<apparelLayer>Middle</apparelLayer>
+					<requiredTag>DankPyon_Handwear_GlovesPlate</requiredTag>
+					<stuff>Steel</stuff>
+				</li>
+				<!-- Feet -->
+				<li>
+					<bodyPartGroup>Feet</bodyPartGroup>
+					<apparelLayer>Middle</apparelLayer>
+					<requiredTag>DankPyon_Footwear_BootsPlate</requiredTag>
+					<stuff>Steel</stuff>
+				</li>
+				<!-- Shield -->
+				<li>
+					<bodyPartGroup>LeftHand</bodyPartGroup>
+					<apparelLayer>VFEC_OuterShell</apparelLayer>
+					<requiredTag>DankPyon_ShieldHeater</requiredTag>
+					<stuff>Steel</stuff>
+				</li>
+			</specificApparelRequirements>
+		</value>
+	</nomatch>
+	<match Class="PatchOperationReplace">
+		<xpath>Defs/PawnKindDef[defName="Empire_Fighter_Champion"]/specificApparelRequirements</xpath>
+		<value>
+			<specificApparelRequirements Inherit="False">
+				<!-- FullHead -->
+				<li>
+					<bodyPartGroup>FullHead</bodyPartGroup>
+					<apparelLayer>Overhead</apparelLayer>
+					<requiredTag>DankPyon_Headgear_ClosedBascinetHelmet</requiredTag>
+					<stuff>Steel</stuff>
+				</li>
+				<!-- Torso -->
+				<li>
+					<bodyPartGroup>Torso</bodyPartGroup>
+					<apparelLayer>OnSkin</apparelLayer>
+					<requiredTag>DankPyon_Apparel_Padded_Surcoat</requiredTag>
+					<stuff>WoolMegasloth</stuff>
+				</li>
+				<li>
+					<bodyPartGroup>Torso</bodyPartGroup>
+					<apparelLayer>Middle</apparelLayer>
+					<requiredTag>DankPyon_Apparel_Hauberk</requiredTag>
+					<stuff>Steel</stuff>
+				</li>
+				<li>
+					<bodyPartGroup>Torso</bodyPartGroup>
+					<apparelLayer>Shell</apparelLayer>
+					<requiredTag>DankPyon_Apparel_FullPlate</requiredTag>
+					<stuff>Steel</stuff>
+				</li>
+				<!-- Legs -->
+				<li>
+					<bodyPartGroup>Legs</bodyPartGroup>
+					<apparelLayer>OnSkin</apparelLayer>
+					<requiredTag>DankPyon_Apparel_Trousers</requiredTag>
+					<stuff>WoolMegasloth</stuff>
+				</li>
+				<!-- Hands -->
+				<li>
+					<bodyPartGroup>Hands</bodyPartGroup>
+					<apparelLayer>Middle</apparelLayer>
+					<requiredTag>DankPyon_Handwear_GlovesPlate</requiredTag>
+					<stuff>Steel</stuff>
+				</li>
+				<!-- Feet -->
+				<li>
+					<bodyPartGroup>Feet</bodyPartGroup>
+					<apparelLayer>Middle</apparelLayer>
+					<requiredTag>DankPyon_Footwear_BootsPlate</requiredTag>
+					<stuff>Steel</stuff>
+				</li>
+				<!-- Shield -->
+				<li>
+					<bodyPartGroup>LeftHand</bodyPartGroup>
+					<apparelLayer>VFEC_OuterShell</apparelLayer>
+					<requiredTag>DankPyon_ShieldHeater</requiredTag>
+					<stuff>Steel</stuff>
+				</li>
+			</specificApparelRequirements>
+		</value>
+	</match>
+</Operation>
+
+
+</Patch>

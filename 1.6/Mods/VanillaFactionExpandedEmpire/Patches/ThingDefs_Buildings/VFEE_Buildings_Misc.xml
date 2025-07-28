@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+<Operation Class="PatchOperationConditional">
+	<xpath>Defs/ThingDef[defName="VFEE_Bomb"]/graphicData/texPath</xpath>
+	<match Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="VFEE_Bomb"]/graphicData/texPath</xpath>
+		<value>
+			<texPath>Things/Projectile/FirePot</texPath>
+		</value>
+	</match>
+</Operation>
+
+<Operation Class="PatchOperationConditional">
+	<xpath>Defs/ThingDef[defName="VFEE_Bomb"]/killedLeavings</xpath>
+	<match Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="VFEE_Bomb"]/killedLeavings</xpath>
+		<value>
+			<killedLeavings>
+			  <Cloth>50</Cloth>
+			  <DankPyon_Tar>160</DankPyon_Tar>						
+			</killedLeavings>
+		</value>
+	</match>
+</Operation>
+</Patch>
+		

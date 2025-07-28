@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+<Operation Class="PatchOperationReplace">
+	<xpath>Defs/FactionDef[defName="Empire"]/techLevel</xpath>
+	<value>
+		<techLevel>Medieval</techLevel>
+	</value>
+</Operation>
+
+<Operation Class="PatchOperationReplace">
+	<xpath>Defs/FactionDef[defName="Empire"]/description</xpath>
+	<value>
+		<description>A medieval society that has ruled over all of Rimworld's humanity for centuries. Their culture is based on a code of honour, a strict class system and enforced social stasis.\n\nThey refuse to trade with anyone who does not have the appropriate royal title.</description>
+	</value>
+</Operation>
+
+<Operation Class="PatchOperationAdd">
+	<xpath>Defs/FactionDef[defName="Empire"]/disallowedPrecepts</xpath>
+	<value>
+
+		<li MayRequire="Ludeon.RimWorld.Ideology">ApparelDesired_Strong_Subordinate</li>
+		<li MayRequire="Ludeon.RimWorld.Ideology">ApparelDesired_Soft_Subordinate</li>
+
+		<li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Male_Mandatory</li>
+		<li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Female_Mandatory</li>
+		<li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Male_CoveringAnythingButGroinDisapproved</li>
+		<li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Female_CoveringAnythingButGroinDisapproved</li>
+		<li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Male_UncoveredGroinDisapproved</li>
+		<li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Female_UncoveredGroinDisapproved</li>
+		<li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Male_UncoveredGroinOrChestDisapproved</li>
+		<li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Female_UncoveredGroinOrChestDisapproved</li>
+		<li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Male_UncoveredGroinChestOrHairDisapproved</li>
+		<li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Female_UncoveredGroinChestOrHairDisapproved</li>
+		<li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Male_UncoveredGroinChestHairOrFaceDisapproved</li>
+		<li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Female_UncoveredGroinChestHairOrFaceDisapproved</li>						
+	</value>
+</Operation>
+
+<Operation Class="PatchOperationReplace">
+	<xpath>Defs/FactionDef[defName="Empire"]/apparelStuffFilter</xpath>
+	<value>
+		<apparelStuffFilter>
+		  <stuffCategoriesToAllow>
+			<li>Metallic</li>
+			<li>Leathery</li>
+			<li>Fabric</li>
+		  </stuffCategoriesToAllow>
+		  <disallowedThingDefs>
+			<li>DevilstrandCloth</li>
+		  </disallowedThingDefs>
+		</apparelStuffFilter>
+	</value>
+</Operation>
+
+<Operation Class="PatchOperationReplace">
+	<xpath>Defs/FactionDef[defName="Empire"]/pawnGroupMakers</xpath>
+	<value>
+		<pawnGroupMakers>
+		  <!-- Traders - TODO -->
+			  <li>
+				<kindDef>Trader</kindDef>
+				<traders>
+				  <Accurex_Medieval_Empire_Trader>1</Accurex_Medieval_Empire_Trader>
+				</traders>
+				<carriers>
+				  <Muffalo>6</Muffalo>
+				  <Dromedary>5</Dromedary>
+				  <Alpaca>2</Alpaca>
+				  <Elephant>1</Elephant>
+				</carriers>
+				<guards>
+				  <Accurex_Medieval_Empire_Peasant>3</Accurex_Medieval_Empire_Peasant>
+				  <Accurex_Medieval_Empire_Mercenary>10</Accurex_Medieval_Empire_Mercenary>
+				  <Accurex_Medieval_Empire_Lord>1.5</Accurex_Medieval_Empire_Lord>
+				  <Accurex_Medieval_Empire_Light_Infantry>7</Accurex_Medieval_Empire_Light_Infantry>
+				  <Accurex_Medieval_Empire_Heavy_Infantry>10</Accurex_Medieval_Empire_Heavy_Infantry>
+				</guards>
+			  </li>
+			  <li>
+				<!-- Normal fights -->
+				<kindDef>Combat</kindDef>
+				<commonality>60</commonality>
+				<options>
+				  <Accurex_Medieval_Empire_Mercenary>5</Accurex_Medieval_Empire_Mercenary>
+				  <Accurex_Medieval_Empire_Light_Infantry>3.5</Accurex_Medieval_Empire_Light_Infantry>
+				  <Accurex_Medieval_Empire_Lord>2</Accurex_Medieval_Empire_Lord>
+				  <Accurex_Medieval_Empire_Heavy_Infantry>4</Accurex_Medieval_Empire_Heavy_Infantry>
+				  <Accurex_Medieval_Empire_Grenadier>2</Accurex_Medieval_Empire_Grenadier>
+				</options>
+			  </li>
+			  <li>
+				<!-- breach fights -->
+				<kindDef>Combat</kindDef>
+				<commonality>10</commonality>
+				<options>
+				  <Accurex_Medieval_Empire_Grenadier>2</Accurex_Medieval_Empire_Grenadier>
+				  <Accurex_Medieval_Empire_Mercenary>5</Accurex_Medieval_Empire_Mercenary>
+				  <Accurex_Medieval_Empire_Light_Infantry>3.5</Accurex_Medieval_Empire_Light_Infantry>
+				  <Accurex_Medieval_Empire_Lord>2</Accurex_Medieval_Empire_Lord>
+				  <Accurex_Medieval_Empire_Heavy_Infantry>4</Accurex_Medieval_Empire_Heavy_Infantry>
+				</options>
+			  </li>
+			  <li>
+				<!-- Base defense, mainly ranged with melee mix-ins -->
+				<kindDef>Settlement</kindDef>
+				<options>
+				  <Accurex_Medieval_Empire_Mercenary>6</Accurex_Medieval_Empire_Mercenary>
+				  <Accurex_Medieval_Empire_Light_Infantry>4</Accurex_Medieval_Empire_Light_Infantry>
+				  <Accurex_Medieval_Empire_Heavy_Infantry>1</Accurex_Medieval_Empire_Heavy_Infantry>
+				<!--
+				  <Accurex_Medieval_Empire_Peasant>2</Accurex_Medieval_Empire_Peasant>
+				  <Accurex_Medieval_Empire_Mercenary>7</Accurex_Medieval_Empire_Mercenary>
+				  <Accurex_Medieval_Empire_Light_Infantry>7</Accurex_Medieval_Empire_Light_Infantry>
+				  <Accurex_Medieval_Empire_Grenadier>5</Accurex_Medieval_Empire_Grenadier>
+				  <Accurex_Medieval_Empire_Heavy_Infantry>5</Accurex_Medieval_Empire_Heavy_Infantry>
+				  <Accurex_Medieval_Empire_Crusader_M>3</Accurex_Medieval_Empire_Crusader_M>
+				  <Accurex_Medieval_Empire_Crusader_R>3</Accurex_Medieval_Empire_Crusader_R>
+				  <Accurex_Medieval_Empire_Lord>1</Accurex_Medieval_Empire_Lord>-->
+			  </options>
+			  </li>
+		</pawnGroupMakers>
+	</value>
+</Operation>
+
+<Operation Class="PatchOperationReplace">
+	<xpath>Defs/FactionDef[defName="Empire"]/factionIconPath</xpath>
+	<value>
+		<factionIconPath>World/WorldObjects/Expanding/EmpireOverhaul</factionIconPath>
+	</value>
+</Operation>
+
+<Operation Class="PatchOperationReplace">
+	<xpath>Defs/FactionDef[defName="Empire"]/colorSpectrum</xpath>
+	<value>
+		<colorSpectrum>
+		  <li>(250, 250, 250)</li>
+		</colorSpectrum>
+	</value>
+</Operation>
+
+<Operation Class="PatchOperationConditional">
+	<xpath>Defs/FactionDef[defName="Empire"]/modExtensions/li[@Class="KCSG.CustomGenOption"]</xpath>
+	<match Class="PatchOperationRemove">
+		<xpath>Defs/FactionDef[defName="Empire"]/modExtensions/li[@Class="KCSG.CustomGenOption"]</xpath>		
+	</match>
+</Operation>
+
+<Operation Class="PatchOperationConditional">
+	<xpath>Defs/FactionDef[defName="Empire"]/modExtensions</xpath>
+	<nomatch Class="PatchOperationAddModExtension">
+		<xpath>Defs/FactionDef[defName="Empire"]</xpath>
+		<value>
+			<li Class="KCSG.CustomGenOption">
+				<preventBridgeable>true</preventBridgeable>
+				<chooseFromlayouts>
+					<li>Accurex_Empire_Castle_01</li>
+				</chooseFromlayouts>
+			</li>
+		</value>
+	</nomatch>
+	<match Class="PatchOperationAdd">
+		<xpath>Defs/FactionDef[defName="Empire"]/modExtensions</xpath>
+		<value>
+			<li Class="KCSG.CustomGenOption">
+				<preventBridgeable>true</preventBridgeable>
+				<chooseFromlayouts>
+					<li>Accurex_Empire_Castle_01</li>
+				</chooseFromlayouts>
+			</li>
+		</value>					
+	</match>
+</Operation>
+
+</Patch>

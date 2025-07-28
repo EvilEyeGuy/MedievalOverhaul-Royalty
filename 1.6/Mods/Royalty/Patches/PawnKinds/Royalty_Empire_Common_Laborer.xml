@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+<!-- Empire_Common_Laborer -->
+
+<Operation Class="PatchOperationConditional">
+	<xpath>Defs/PawnKindDef[defName="Empire_Common_Laborer"]/styleItemTags</xpath>
+	<match Class="PatchOperationRemove">
+	<xpath>Defs/PawnKindDef[defName="Empire_Common_Laborer"]/styleItemTags</xpath>
+	</match>
+</Operation>
+
+<Operation Class="PatchOperationConditional">
+	<xpath>Defs/PawnKindDef[defName="Empire_Common_Laborer"]/apparelTags</xpath>
+	<match Class="PatchOperationRemove">
+	<xpath>Defs/PawnKindDef[defName="Empire_Common_Laborer"]/apparelTags</xpath>
+	</match>
+</Operation>
+
+<Operation Class="PatchOperationConditional">
+	<xpath>Defs/PawnKindDef[defName="Empire_Common_Laborer"]/apparelMoney</xpath>
+	<match Class="PatchOperationRemove">
+	<xpath>Defs/PawnKindDef[defName="Empire_Common_Laborer"]/apparelMoney</xpath>
+	</match>
+</Operation>
+
+<Operation Class="PatchOperationConditional">
+	<xpath>Defs/PawnKindDef[defName="Empire_Common_Laborer"]/apparelRequired</xpath>
+	<nomatch Class="PatchOperationAdd">
+		<xpath>Defs/PawnKindDef[defName="Empire_Common_Laborer"]</xpath>
+		<value>
+			<apparelRequired Inherit="False">
+				<li>DankPyon_Apparel_Padded_Surcoat</li>
+				<li>DankPyon_Apparel_Trousers</li>			
+				<li>DankPyon_Handwear_GlovesLeather</li>
+				<li>DankPyon_Footwear_BootsLeather</li>	
+			</apparelRequired>
+		</value>
+	</nomatch>
+	<match Class="PatchOperationReplace">
+		<xpath>Defs/PawnKindDef[defName="Empire_Common_Laborer"]/apparelRequired</xpath>
+		<value>
+			<apparelRequired Inherit="False">
+				<li>DankPyon_Apparel_Padded_Surcoat</li>
+				<li>DankPyon_Apparel_Trousers</li>			
+				<li>DankPyon_Handwear_GlovesLeather</li>
+				<li>DankPyon_Footwear_BootsLeather</li>	
+			</apparelRequired>
+		</value>
+	</match>
+</Operation>
+
+<Operation Class="PatchOperationConditional">
+	<xpath>Defs/PawnKindDef[defName="Empire_Common_Laborer"]/specificApparelRequirements</xpath>
+	<nomatch Class="PatchOperationAdd">
+		<xpath>Defs/PawnKindDef[defName="Empire_Common_Laborer"]</xpath>
+		<value>
+			<specificApparelRequirements Inherit="False">
+				<li>
+					<bodyPartGroup>Torso</bodyPartGroup>
+					<apparelLayer>OnSkin</apparelLayer>
+					<requiredTag>DankPyon_Apparel_Padded_Surcoat</requiredTag>
+					<stuff>WoolMegasloth</stuff>
+				</li>
+				<li>
+					<bodyPartGroup>Hands</bodyPartGroup>
+					<requiredTag>DankPyon_Handwear_GlovesLeather</requiredTag>
+					<stuff>Leather_Plain</stuff>
+				</li>
+				<li>
+					<bodyPartGroup>Feet</bodyPartGroup>
+					<requiredTag>DankPyon_Footwear_BootsLeather</requiredTag>
+					<stuff>Leather_Plain</stuff>
+				</li>
+				<li>
+					<bodyPartGroup>Legs</bodyPartGroup>
+					<requiredTag>DankPyon_Apparel_Trousers</requiredTag>
+					<stuff>WoolMegasloth</stuff>
+				</li>
+			</specificApparelRequirements>
+		</value>
+	</nomatch>
+	<match Class="PatchOperationReplace">
+		<xpath>Defs/PawnKindDef[defName="Empire_Common_Laborer"]/specificApparelRequirements</xpath>
+		<value>
+			<specificApparelRequirements Inherit="False">
+				<li>
+					<bodyPartGroup>Torso</bodyPartGroup>
+					<apparelLayer>OnSkin</apparelLayer>
+					<requiredTag>DankPyon_Apparel_Padded_Surcoat</requiredTag>
+					<stuff>WoolMegasloth</stuff>
+				</li>
+				<li>
+					<bodyPartGroup>Hands</bodyPartGroup>
+					<requiredTag>DankPyon_Handwear_GlovesLeather</requiredTag>
+					<stuff>Leather_Plain</stuff>
+				</li>
+				<li>
+					<bodyPartGroup>Feet</bodyPartGroup>
+					<requiredTag>DankPyon_Footwear_BootsLeather</requiredTag>
+					<stuff>Leather_Plain</stuff>
+				</li>
+				<li>
+					<bodyPartGroup>Legs</bodyPartGroup>
+					<requiredTag>DankPyon_Apparel_Trousers</requiredTag>
+					<stuff>WoolMegasloth</stuff>
+				</li>
+			</specificApparelRequirements>
+		</value>
+	</match>
+</Operation>
+
+<Operation Class="PatchOperationConditional">
+	<xpath>Defs/PawnKindDef[defName="Empire_Common_Laborer"]/apparelDisallowTags</xpath>
+	<nomatch Class="PatchOperationAdd">
+		<xpath>Defs/PawnKindDef[defName="Empire_Common_Laborer"]</xpath>
+		<value>
+			<apparelDisallowTags>
+				<li>IndustrialMilitaryAdvanced</li>
+				<li>IndustrialMilitaryBasic</li>
+				<li>IndustrialAdvanced</li>
+				<li>IndustrialBasic</li>
+				<li>Western</li>
+			</apparelDisallowTags>
+		</value>
+	</nomatch>
+	<match Class="PatchOperationReplace">
+		<xpath>Defs/PawnKindDef[defName="Empire_Common_Laborer"]/apparelDisallowTags</xpath>
+		<value>
+			<apparelDisallowTags>
+				<li>IndustrialMilitaryAdvanced</li>
+				<li>IndustrialMilitaryBasic</li>
+				<li>IndustrialAdvanced</li>
+				<li>IndustrialBasic</li>
+				<li>Western</li>
+			</apparelDisallowTags>
+		</value>
+	</match>
+</Operation>
+
+<Operation Class="PatchOperationConditional">
+	<xpath>Defs/PawnKindDef[defName="Empire_Common_Laborer"]/itemQuality</xpath>
+	<nomatch Class="PatchOperationAdd">
+		<xpath>Defs/PawnKindDef[defName="Empire_Common_Laborer"]</xpath>
+		<value>
+			<itemQuality>Masterwork</itemQuality>
+		</value>
+	</nomatch>
+	<match Class="PatchOperationReplace">
+		<xpath>Defs/PawnKindDef[defName="Empire_Common_Laborer"]/itemQuality</xpath>
+		<value>
+			<itemQuality>Masterwork</itemQuality>
+		</value>
+	</match>
+</Operation>
+
+</Patch>

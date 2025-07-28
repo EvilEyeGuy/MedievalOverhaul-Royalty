@@ -1,0 +1,456 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+<Operation Class="PatchOperationReplace">
+	<xpath>Defs/RoyalTitlePermitDef[defName="SteelDrop"]/label</xpath>
+	<value>
+		<label>Iron ingots drop</label>
+	</value>
+</Operation>
+<Operation Class="PatchOperationReplace">
+	<xpath>Defs/RoyalTitlePermitDef[defName="SteelDrop"]/description</xpath>
+	<value>
+		<description>Call for a drop of 400 iron ingots.</description>
+	</value>
+</Operation>
+<Operation Class="PatchOperationReplace">
+	<xpath>Defs/RoyalTitlePermitDef[defName="SteelDrop"]/royalAid/itemsToDrop</xpath>
+	<value>
+		<itemsToDrop>
+			<DankPyon_IronIngot>400</DankPyon_IronIngot>
+		</itemsToDrop>
+	</value>
+</Operation>
+
+<Operation Class="PatchOperationReplace">
+	<xpath>Defs/RoyalTitlePermitDef[defName="FoodDrop"]/description</xpath>
+	<value>
+		<description>Call for a drop of 20 packed meal rations.</description>
+	</value>
+</Operation>
+<Operation Class="PatchOperationReplace">
+	<xpath>Defs/RoyalTitlePermitDef[defName="FoodDrop"]/royalAid/itemsToDrop</xpath>
+	<value>
+		<itemsToDrop>
+			<DankPyon_MealRations>20</DankPyon_MealRations>
+		</itemsToDrop>
+	</value>
+</Operation>
+
+<Operation Class="PatchOperationReplace">
+	<xpath>Defs/RoyalTitlePermitDef[defName="CallLaborerTeam"]/royalAid/pawnKindDef</xpath>
+	<value>
+		<pawnKindDef>Accurex_Medieval_Empire_Laborer</pawnKindDef>
+	</value>
+</Operation>
+
+<Operation Class="PatchOperationReplace">
+	<xpath>Defs/RoyalTitlePermitDef[defName="CallLaborerGang"]/royalAid/pawnKindDef</xpath>
+	<value>
+		<pawnKindDef>Accurex_Medieval_Empire_Laborer</pawnKindDef>
+	</value>
+</Operation>
+
+<!-- Combat -->
+
+<Operation Class="PatchOperationReplace">
+	<xpath>Defs/RoyalTitlePermitDef[defName="CallMilitaryAidSmall"]/label</xpath>
+	<value>
+		<label>call light soldiers</label>
+	</value>
+</Operation>				
+<Operation Class="PatchOperationReplace">
+	<xpath>Defs/RoyalTitlePermitDef[defName="CallMilitaryAidSmall"]/description</xpath>
+	<value>
+		<description>Call a group of 5 light infantry soldiers to aid you in battle. Every soldier is trained (7-11) in melee and ranged combat and comes equipped with a chain armor and a pike or crossbow.</description>
+	</value>
+</Operation>				
+<Operation Class="PatchOperationReplace">
+	<xpath>Defs/RoyalTitlePermitDef[defName="CallMilitaryAidSmall"]/royalAid</xpath>
+	<value>
+		<royalAid>
+		<favorCost>4</favorCost>
+		<pawnKindDef>Accurex_Medieval_Empire_Light_Infantry</pawnKindDef>
+		<pawnCount>5</pawnCount>
+		<targetingRange>39.9</targetingRange>
+		</royalAid>
+	</value>
+</Operation>
+
+<Operation Class="PatchOperationReplace">
+	<xpath>Defs/RoyalTitlePermitDef[defName="CallMilitaryAidLarge"]/label</xpath>
+	<value>
+		<label>call heavy infantry</label>
+	</value>
+</Operation>
+<Operation Class="PatchOperationReplace">
+	<xpath>Defs/RoyalTitlePermitDef[defName="CallMilitaryAidLarge"]/description</xpath>
+	<value>
+		<description>Call a group of 5 heavy infantry soldiers to aid you in battle. Every soldier is well trained (12-16) in melee and ranged combat and comes equipped with a full platemail, a sword and shield or a heavy crossbow.</description>
+	</value>
+</Operation>
+<Operation Class="PatchOperationReplace">
+	<xpath>Defs/RoyalTitlePermitDef[defName="CallMilitaryAidLarge"]/royalAid</xpath>
+	<value>
+		<royalAid>
+		<favorCost>6</favorCost>
+		<pawnKindDef>Accurex_Medieval_Empire_Heavy_Infantry</pawnKindDef>
+		<pawnCount>5</pawnCount>
+		<targetingRange>39.9</targetingRange>
+		</royalAid>
+	</value>
+</Operation>
+
+<Operation Class="PatchOperationReplace">
+	<xpath>Defs/RoyalTitlePermitDef[defName="CallMilitaryAidGrand"]/label</xpath>
+	<value>
+		<label>call crusaders</label>
+	</value>
+</Operation>
+<Operation Class="PatchOperationReplace">
+	<xpath>Defs/RoyalTitlePermitDef[defName="CallMilitaryAidGrand"]/description</xpath>
+	<value>
+		<description>Call a group of 5 crusaders to aid you in battle. Every Crusader is battle-hardened and exceptionally well trained (17-20) in melee combat and comes equipped with a full platemail armor and a two-handed weapon.</description>
+	</value>
+</Operation>
+<Operation Class="PatchOperationReplace">
+	<xpath>Defs/RoyalTitlePermitDef[defName="CallMilitaryAidGrand"]/royalAid</xpath>
+	<value>
+		<royalAid>
+		<favorCost>8</favorCost>
+		<pawnKindDef>Accurex_Medieval_Empire_Crusader</pawnKindDef>
+		<pawnCount>5</pawnCount>
+		<targetingRange>39.9</targetingRange>
+		</royalAid>
+	</value>
+</Operation>
+
+<!-- VFE-Empire permits -->
+
+<Operation Class="PatchOperationReplace">
+	<xpath>Defs/RoyalTitlePermitDef[defName="VFEI_PlasteelDrop"]/label</xpath>
+	<value>
+		<label>Steel ingot drop</label>
+	</value>
+</Operation>
+<Operation Class="PatchOperationReplace">
+	<xpath>Defs/RoyalTitlePermitDef[defName="VFEI_PlasteelDrop"]/description</xpath>
+	<value>
+		<description>Call for a drop of 150 steel ingots.</description>
+	</value>
+</Operation>
+<Operation Class="PatchOperationReplace">
+	<xpath>Defs/RoyalTitlePermitDef[defName="VFEI_PlasteelDrop"]/royalAid/itemsToDrop</xpath>
+	<value>
+		<itemsToDrop>
+			<Steel>150</Steel>
+		</itemsToDrop>
+	</value>
+</Operation>
+
+<Operation Class="PatchOperationReplace">
+	<xpath>Defs/RoyalTitlePermitDef[defName="VFEI_WoodDrop"]/label</xpath>
+	<value>
+		<label>Timber drop</label>
+	</value>
+</Operation>
+<Operation Class="PatchOperationReplace">
+	<xpath>Defs/RoyalTitlePermitDef[defName="VFEI_WoodDrop"]/description</xpath>
+	<value>
+		<description>Call for a drop of 400 timber.</description>
+	</value>
+</Operation>
+
+<Operation Class="PatchOperationReplace">
+	<xpath>Defs/RoyalTitlePermitDef[defName="VFEI_SynthreadDrop"]/label</xpath>
+	<value>
+		<label>Silk drop</label>
+	</value>
+</Operation>
+<Operation Class="PatchOperationReplace">
+	<xpath>Defs/RoyalTitlePermitDef[defName="VFEI_SynthreadDrop"]/description</xpath>
+	<value>
+		<description>Call for a drop of 125 silk.</description>
+	</value>
+</Operation>
+<Operation Class="PatchOperationReplace">
+	<xpath>Defs/RoyalTitlePermitDef[defName="VFEI_SynthreadDrop"]/royalAid/itemsToDrop</xpath>
+	<value>
+		<itemsToDrop>
+			<DankPyon_Silk>125</DankPyon_Silk>
+		</itemsToDrop>
+	</value>
+</Operation>
+
+<Operation Class="PatchOperationReplace">
+	<xpath>Defs/RoyalTitlePermitDef[defName="VFEI_HerbalMedDrop"]/label</xpath>
+	<value>
+		<label>small herbal med drop</label>
+	</value>
+</Operation>
+
+<Operation Class="PatchOperationReplace">
+	<xpath>Defs/RoyalTitlePermitDef[defName="VFEI_HerbalMedDrop"]/description</xpath>
+	<value>
+		<description>Call for a drop of 25 herbal medicine.</description>
+	</value>
+</Operation>
+
+<Operation Class="PatchOperationReplace">
+	<xpath>Defs/RoyalTitlePermitDef[defName="VFEI_HerbalMedDrop"]/royalAid/itemsToDrop</xpath>
+	<value>
+		<itemsToDrop>
+			<MedicineHerbal>25</MedicineHerbal>
+		</itemsToDrop>
+	</value>
+</Operation>
+
+<Operation Class="PatchOperationReplace">
+	<xpath>Defs/RoyalTitlePermitDef[defName="VFEI_MedDrop"]/label</xpath>
+	<value>
+		<label>herbal med drop</label>
+	</value>
+</Operation>
+<Operation Class="PatchOperationReplace">
+	<xpath>Defs/RoyalTitlePermitDef[defName="VFEI_MedDrop"]/description</xpath>
+	<value>
+		<description>Call for a drop of 50 herbal medicine.</description>
+	</value>
+</Operation>				
+<Operation Class="PatchOperationReplace">
+	<xpath>Defs/RoyalTitlePermitDef[defName="VFEI_MedDrop"]/royalAid/itemsToDrop</xpath>
+	<value>
+		<itemsToDrop>
+			<MedicineHerbal>50</MedicineHerbal>
+		</itemsToDrop>
+	</value>
+</Operation>
+
+<Operation Class="PatchOperationReplace">
+	<xpath>Defs/RoyalTitlePermitDef[defName="GlitterMedDrop"]/label</xpath>
+	<value>
+		<label>large herbal med drop</label>
+	</value>
+</Operation>
+<Operation Class="PatchOperationReplace">
+	<xpath>Defs/RoyalTitlePermitDef[defName="GlitterMedDrop"]/description</xpath>
+	<value>
+		<description>Call for a drop of 100 herbal medicine.</description>
+	</value>
+</Operation>				
+<Operation Class="PatchOperationReplace">
+	<xpath>Defs/RoyalTitlePermitDef[defName="GlitterMedDrop"]/royalAid/itemsToDrop</xpath>
+	<value>
+		<itemsToDrop>
+			<MedicineHerbal>100</MedicineHerbal>
+		</itemsToDrop>
+	</value>
+</Operation>
+
+<Operation Class="PatchOperationReplace">
+	<xpath>Defs/RoyalTitlePermitDef[defName="VFEI_ChemfuelDrop"]/label</xpath>
+	<value>
+		<label>Coal drop</label>
+	</value>
+</Operation>
+<Operation Class="PatchOperationReplace">
+	<xpath>Defs/RoyalTitlePermitDef[defName="VFEI_ChemfuelDrop"]/description</xpath>
+	<value>
+		<description>Call for a drop of 220 coal.</description>
+	</value>
+</Operation>
+<Operation Class="PatchOperationReplace">
+	<xpath>Defs/RoyalTitlePermitDef[defName="VFEI_ChemfuelDrop"]/royalAid/itemsToDrop</xpath>
+	<value>
+		<itemsToDrop>
+			<DankPyon_Coal>220</DankPyon_Coal>
+		</itemsToDrop>
+	</value>
+</Operation>
+
+<Operation Class="PatchOperationReplace">
+	<xpath>Defs/RoyalTitlePermitDef[defName="VFEI_ComponentDrop"]/label</xpath>
+	<value>
+		<label>small basic components drop</label>
+	</value>
+</Operation>
+<Operation Class="PatchOperationReplace">
+	<xpath>Defs/RoyalTitlePermitDef[defName="VFEI_ComponentDrop"]/description</xpath>
+	<value>
+		<description>Call for a drop of 15 basic components.</description>
+	</value>
+</Operation>
+<Operation Class="PatchOperationReplace">
+	<xpath>Defs/RoyalTitlePermitDef[defName="VFEI_ComponentDrop"]/royalAid/itemsToDrop</xpath>
+	<value>
+		<itemsToDrop>
+			<DankPyon_ComponentBasic>15</DankPyon_ComponentBasic>
+		</itemsToDrop>
+	</value>
+</Operation>
+
+<Operation Class="PatchOperationReplace">
+	<xpath>Defs/RoyalTitlePermitDef[defName="VFEI_ComponentSpacerDrop"]/label</xpath>
+	<value>
+		<label>large basic components drop</label>
+	</value>
+</Operation>
+<Operation Class="PatchOperationReplace">
+	<xpath>Defs/RoyalTitlePermitDef[defName="VFEI_ComponentSpacerDrop"]/description</xpath>
+	<value>
+		<description>Call for a drop of 30 basic components.</description>
+	</value>
+</Operation>
+<Operation Class="PatchOperationReplace">
+	<xpath>Defs/RoyalTitlePermitDef[defName="VFEI_ComponentSpacerDrop"]/royalAid/itemsToDrop</xpath>
+	<value>
+		<itemsToDrop>
+			<DankPyon_ComponentBasic>30</DankPyon_ComponentBasic>
+		</itemsToDrop>
+	</value>
+</Operation>
+
+<Operation Class="PatchOperationReplace">
+	<xpath>Defs/RoyalTitlePermitDef[defName="VFEI_HEShellsDrop"]/label</xpath>
+	<value>
+		<label>Ballista bolts drop</label>
+	</value>
+</Operation>
+<Operation Class="PatchOperationReplace">
+	<xpath>Defs/RoyalTitlePermitDef[defName="VFEI_HEShellsDrop"]/description</xpath>
+	<value>
+		<description>Call for a drop of 20 balista bolts.</description>
+	</value>
+</Operation>
+<Operation Class="PatchOperationReplace">
+	<xpath>Defs/RoyalTitlePermitDef[defName="VFEI_HEShellsDrop"]/royalAid/itemsToDrop</xpath>
+	<value>
+		<itemsToDrop>
+			<DankPyon_BallistaBolt>20</DankPyon_BallistaBolt>
+		</itemsToDrop>
+	</value>
+</Operation>
+
+<Operation Class="PatchOperationReplace">
+	<xpath>Defs/RoyalTitlePermitDef[defName="VFEI_NobleFoodDrop"]/label</xpath>
+	<value>
+		<label>Ballista bolts drop</label>
+	</value>
+</Operation>
+<Operation Class="PatchOperationReplace">
+	<xpath>Defs/RoyalTitlePermitDef[defName="VFEI_NobleFoodDrop"]/description</xpath>
+	<value>
+		<description>Call for a drop of 15 rox steaks.</description>
+	</value>
+</Operation>
+<Operation Class="PatchOperationReplace">
+	<xpath>Defs/RoyalTitlePermitDef[defName="VFEI_NobleFoodDrop"]/royalAid/itemsToDrop</xpath>
+	<value>
+		<itemsToDrop>
+			<DankPyon_MealRoxSteak>15</DankPyon_MealRoxSteak>
+		</itemsToDrop>
+	</value>
+</Operation>
+
+<Operation Class="PatchOperationReplace">
+	<xpath>Defs/RoyalTitlePermitDef[defName="VFEI_CallTrooperPlatoon"]/label</xpath>
+	<value>
+		<label>call light soldiers</label>
+	</value>
+</Operation>				
+<Operation Class="PatchOperationReplace">
+	<xpath>Defs/RoyalTitlePermitDef[defName="VFEI_CallTrooperPlatoon"]/description</xpath>
+	<value>
+		<description>Call a group of 10 light infantry soldiers to aid you in battle. Every soldier is trained (7-11) in melee and ranged combat and comes equipped with a chain armor and a pike or crossbow.</description>
+	</value>
+</Operation>				
+<Operation Class="PatchOperationReplace">
+	<xpath>Defs/RoyalTitlePermitDef[defName="VFEI_CallTrooperPlatoon"]/royalAid</xpath>
+	<value>
+		<royalAid>
+		<favorCost>8</favorCost>
+		<pawnKindDef>Accurex_Medieval_Empire_Light_Infantry</pawnKindDef>
+		<pawnCount>10</pawnCount>
+		<targetingRange>39.9</targetingRange>
+		</royalAid>
+	</value>
+</Operation>
+
+<Operation Class="PatchOperationReplace">
+	<xpath>Defs/RoyalTitlePermitDef[defName="VFEI_CallJanissaryPlatoon"]/label</xpath>
+	<value>
+		<label>call heavy infantry</label>
+	</value>
+</Operation>
+<Operation Class="PatchOperationReplace">
+	<xpath>Defs/RoyalTitlePermitDef[defName="VFEI_CallJanissaryPlatoon"]/description</xpath>
+	<value>
+		<description>Call a group of 10 heavy infantry soldiers to aid you in battle. Every soldier is well trained (12-16) in melee and ranged combat and comes equipped with a full platemail, a sword and shield or a heavy crossbow.</description>
+	</value>
+</Operation>
+<Operation Class="PatchOperationReplace">
+	<xpath>Defs/RoyalTitlePermitDef[defName="VFEI_CallJanissaryPlatoon"]/royalAid</xpath>
+	<value>
+		<royalAid>
+		<favorCost>10</favorCost>
+		<pawnKindDef>Accurex_Medieval_Empire_Heavy_Infantry</pawnKindDef>
+		<pawnCount>10</pawnCount>
+		<targetingRange>39.9</targetingRange>
+		</royalAid>
+	</value>
+</Operation>
+
+<Operation Class="PatchOperationReplace">
+	<xpath>Defs/RoyalTitlePermitDef[defName="VFEI_CallCataphractPlatoon"]/label</xpath>
+	<value>
+		<label>call crusaders</label>
+	</value>
+</Operation>
+<Operation Class="PatchOperationReplace">
+	<xpath>Defs/RoyalTitlePermitDef[defName="VFEI_CallCataphractPlatoon"]/description</xpath>
+	<value>
+		<description>Call a group of 10 crusaders to aid you in battle. Every Crusader is battle-hardened and exceptionally well trained (17-20) in melee combat and comes equipped with a full platemail armor and a two-handed weapon.</description>
+	</value>
+</Operation>
+<Operation Class="PatchOperationReplace">
+	<xpath>Defs/RoyalTitlePermitDef[defName="VFEI_CallCataphractPlatoon"]/royalAid</xpath>
+	<value>
+		<royalAid>
+		<favorCost>12</favorCost>
+		<pawnKindDef>Accurex_Medieval_Empire_Crusader</pawnKindDef>
+		<pawnCount>10</pawnCount>
+		<targetingRange>39.9</targetingRange>
+		</royalAid>
+	</value>
+</Operation>
+
+<Operation Class="PatchOperationReplace">
+	<xpath>Defs/RoyalTitlePermitDef[defName="VFEI_CallLaborerUnion"]/royalAid/pawnKindDef</xpath>
+	<value>
+		<pawnKindDef>Accurex_Medieval_Empire_Laborer</pawnKindDef>
+	</value>
+</Operation>
+
+<!-- Removed Stuff -->
+
+<Operation Class="PatchOperationRemove">
+	<xpath>Defs/RoyalTitlePermitDef[defName="VFEI_HyperweaveDrop"]</xpath>
+</Operation>
+
+<Operation Class="PatchOperationRemove">
+	<xpath>Defs/RoyalTitlePermitDef[defName="VFEI_StrikerTurretDrop"]</xpath>
+</Operation>
+
+<Operation Class="PatchOperationRemove">
+	<xpath>Defs/RoyalTitlePermitDef[defName="VFEI_CallOrbitalSlicingBeam"]</xpath>
+</Operation>
+				
+<Operation Class="PatchOperationRemove">
+	<xpath>Defs/RoyalTitlePermitDef[defName="CallOrbitalStrike"]</xpath>
+</Operation>
+
+<Operation Class="PatchOperationRemove">
+	<xpath>Defs/RoyalTitlePermitDef[defName="CallOrbitalSalvo"]</xpath>
+</Operation>
+
+</Patch>
