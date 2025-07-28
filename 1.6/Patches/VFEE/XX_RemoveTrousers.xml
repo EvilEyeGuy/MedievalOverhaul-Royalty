@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Combat Extended</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/PawnKindDef[contains(apparelRequired, 'DankPyon_Apparel_Padded_Surcoat') and contains(apparelRequired, 'DankPyon_Apparel_Trousers')]/apparelRequired/li[contains(text(), 'DankPyon_Apparel_Trousers')]</xpath>
+					<match Class="PatchOperationRemove">
+						<xpath>Defs/PawnKindDef[contains(apparelRequired, 'DankPyon_Apparel_Padded_Surcoat') and contains(apparelRequired, 'DankPyon_Apparel_Trousers')]/apparelRequired/li[contains(text(), 'DankPyon_Apparel_Trousers')]</xpath>
+					</match>
+				</li>
+				
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/PawnKindDef[contains(apparelRequired, 'DankPyon_Apparel_Padded_Surcoat') and contains(apparelRequired, 'Apparel_Pants')]/apparelRequired/li[contains(text(), 'Apparel_Pants')]</xpath>
+					<match Class="PatchOperationRemove">
+						<xpath>Defs/PawnKindDef[contains(apparelRequired, 'DankPyon_Apparel_Padded_Surcoat') and contains(apparelRequired, 'Apparel_Pants')]/apparelRequired/li[contains(text(), 'Apparel_Pants')]</xpath>
+					</match>
+				</li>
+				
+			</operations>
+		</match>
+	</Operation>	
+</Patch>

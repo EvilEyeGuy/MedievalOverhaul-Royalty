@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Royalty</li>
+        </mods>
+		
+		<match Class="PatchOperationSequence">
+			<operations>
+
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/RoyalTitleDef/requiredApparel/li[bodyPartGroupsMatchAny/li="Torso"]/allowedTags</xpath>
+					<value>
+						<li>MedievalPrestigeCombatGear</li>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/RoyalTitleDef/requiredApparel/li[bodyPartGroupsMatchAny/li="FullHead"]/allowedTags</xpath>
+					<value>
+						<li>DankPyon_LordHelmet</li>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef/apparel[tags/li="MedievalPrestigeCombatGear"]/tags</xpath>
+					<value>
+						<li>RoyalTier2</li>
+						<li>RoyalTier5</li>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef/apparel[tags/li="DankPyon_LordHelmet"]/tags</xpath>
+					<value>
+						<li>RoyalTier2</li>
+						<li>RoyalTier5</li>
+					</value>
+				</li>
+				
+			<!-- Thronerooms -->
+			
+				
+			</operations>
+		</match>
+	</Operation>
+</Patch>

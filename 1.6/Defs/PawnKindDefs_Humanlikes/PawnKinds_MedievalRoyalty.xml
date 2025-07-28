@@ -1,0 +1,792 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+<!-- ================== Commoner Base ================== -->
+
+  <PawnKindDef Name="Accurex_EmpireCommonerBase" Abstract="True">
+    <race>Human</race>
+    <defaultFactionType>Empire</defaultFactionType>
+    <backstoryFilters>
+      <li>
+        <categories>
+          <li>ImperialCommon</li>
+        </categories>
+      </li>
+    </backstoryFilters>
+    <chemicalAddictionChance>0</chemicalAddictionChance>
+	<!--baseRecruitDifficulty>0.99</baseRecruitDifficulty-->
+    <invNutrition>3</invNutrition>
+    <invFoodDef>DankPyon_MealBread</invFoodDef>
+    <itemQuality>Masterwork</itemQuality>
+    <backstoryCryptosleepCommonality>1.0</backstoryCryptosleepCommonality>
+    <maxGenerationAge>53</maxGenerationAge>
+	<minGenerationAge>25</minGenerationAge>
+    <combatEnhancingDrugsChance>0.15</combatEnhancingDrugsChance>
+    <combatEnhancingDrugsCount>0~2</combatEnhancingDrugsCount>
+	<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+    <specificApparelRequirements>
+		<li>
+			<colorGenerator Class="ColorGenerator_Options">
+				<options>
+					<li>
+						<only>(0.7, 0.7, 0.7)</only>
+					</li>
+					<li>
+						<only>(0.5, 0.5, 0.5)</only>
+					</li>
+					<li>
+						<only>(0.6, 0.6, 0.6)</only>
+					</li>
+					<li>
+						<only>(104, 120, 119)</only> <!-- drab dark blue -->
+					</li>
+					<li>
+						<only>(119, 145, 121)</only> <!-- drab light green -->
+					</li>
+					<li>
+						<only>(106, 120, 104)</only> <!-- drab dark green -->
+					</li>
+					<li>
+						<only>(140, 140, 119)</only> <!-- tan -->
+					</li>
+					<li>
+						<only>(99, 87, 67)</only> <!-- muted brown -->
+					</li>
+					<li>
+						<only>(128, 116, 84)</only> <!-- light brown -->
+					</li>
+					<li>
+						<only>(107, 94, 64)</only> <!-- mid brown -->
+					</li>
+					<li>
+						<only>(77, 66, 45)</only> <!-- dark brown -->
+					</li>
+				</options>
+			</colorGenerator>
+		</li>
+    </specificApparelRequirements>
+    <inventoryOptions>
+     <skipChance>0.70</skipChance>
+     <subOptionsTakeAll>
+       <li>
+         <thingDef>Silver</thingDef>
+         <countRange>30~100</countRange>
+       </li>
+     </subOptionsTakeAll>
+   </inventoryOptions>
+	<disallowedTraits>
+      <li>Brawler</li>
+      <li>Wimp</li>
+	  <li>Pyromaniac</li>
+	  <li>Nudist</li>
+    </disallowedTraits>    
+    <initialWillRange>3~5</initialWillRange>
+    <initialResistanceRange>16~25</initialResistanceRange>
+	<techHediffsRequired>
+		<li>DeathAcidifier</li>
+    </techHediffsRequired>
+  </PawnKindDef>
+
+<!-- ================== Tier 0 : Commoner, Laborer, Trader ================== -->
+
+  <PawnKindDef ParentName="Accurex_EmpireCommonerBase">
+    <defName>Accurex_Medieval_Empire_Peasant</defName>
+    <label>Peasant</label>
+    <combatPower>35</combatPower>
+    <canBeSapper>false</canBeSapper>
+    <isFighter>true</isFighter>
+    <gearHealthRange>0.8~2</gearHealthRange>
+    <apparelMoney>0</apparelMoney>
+	<apparelRequired>
+		<li>DankPyon_Apparel_Padded_Surcoat</li>
+		<li>DankPyon_Footwear_BootsLeather</li>
+		<li>DankPyon_Handwear_GlovesLeather</li>
+		<li>Apparel_Pants</li>
+	</apparelRequired>
+	<specificApparelRequirements>
+		<li>
+			<bodyPartGroup>Torso</bodyPartGroup>
+			<apparelLayer>OnSkin</apparelLayer>
+			<requiredTag>DankPyon_Apparel_Padded_Surcoat</requiredTag>
+			<stuff>WoolMegasloth</stuff>
+		</li>
+		<li>
+			<bodyPartGroup>Hands</bodyPartGroup>
+			<stuff>Leather_Plain</stuff>
+		</li>
+		<li>
+			<bodyPartGroup>Feet</bodyPartGroup>
+			<stuff>Leather_Plain</stuff>
+		</li>
+		<li>
+			<bodyPartGroup>Legs</bodyPartGroup>
+			<requiredTag>Apparel_Pants</requiredTag>
+			<stuff>WoolMegasloth</stuff>
+		</li>
+    </specificApparelRequirements>
+    <weaponMoney>400</weaponMoney>
+    <weaponTags>
+	  <li>DankPyon_WoodcuttersAxe</li>
+	  <li>DankPyon_Warfork</li>
+	  <li>DankPyon_Pitchfork</li>
+	  <li>DankPyon_Pickaxe</li>
+    </weaponTags>
+	<skills>
+	  <li>
+        <skill>Melee</skill>
+        <range>3~8</range>
+      </li>	  
+    </skills>
+  </PawnKindDef> 
+
+  <PawnKindDef ParentName="Accurex_EmpireCommonerBase">
+    <defName>Accurex_Medieval_Empire_Laborer</defName>
+    <label>Royal Laborer</label>
+    <maxGenerationAge>50</maxGenerationAge>
+    <combatPower>30</combatPower>
+    <isFighter>false</isFighter>
+    <requiredWorkTags> <!-- Must be capable of labor, as this pawn kind is used in laborer quests. -->
+		<li>ManualDumb</li>
+		<li>ManualSkilled</li>
+		<li>Cleaning</li>
+		<li>Hauling</li>
+		<li>Mining</li>
+		<li>Firefighting</li>
+    </requiredWorkTags>
+    <apparelMoney>0</apparelMoney>
+	<apparelRequired>
+		<li>DankPyon_Apparel_Padded_Surcoat</li>
+		<li>DankPyon_Footwear_BootsLeather</li>
+		<li>DankPyon_Handwear_GlovesLeather</li>
+		<li>Apparel_Pants</li>
+	</apparelRequired>
+	<specificApparelRequirements>
+		<li>
+			<bodyPartGroup>Torso</bodyPartGroup>
+			<apparelLayer>OnSkin</apparelLayer>
+			<requiredTag>DankPyon_Apparel_Padded_Surcoat</requiredTag>
+		</li>
+		<li>
+			<bodyPartGroup>Hands</bodyPartGroup>
+			<stuff>Leather_Plain</stuff>
+		</li>
+		<li>
+			<bodyPartGroup>Feet</bodyPartGroup>
+			<stuff>Leather_Plain</stuff>
+		</li>
+		<li>
+			<bodyPartGroup>Legs</bodyPartGroup>
+			<stuff>WoolMegasloth</stuff>
+			<requiredTag>Apparel_Pants</requiredTag>
+		</li>
+    </specificApparelRequirements>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="Accurex_EmpireCommonerBase">
+    <defName>Accurex_Medieval_Empire_Trader</defName>
+    <label>Royal Trader</label>
+    <maxGenerationAge>50</maxGenerationAge>
+    <combatPower>30</combatPower>
+    <isFighter>false</isFighter>
+	<trader>true</trader>
+    <apparelMoney>0</apparelMoney>
+	<apparelRequired>
+		<li MayRequire="Ludeon.RimWorld.Ideology">Apparel_Slicecap</li>
+		<li>DankPyon_Apparel_Padded_Surcoat</li>
+		<li>DankPyon_Apparel_Leather_Tunic</li>
+		<li>DankPyon_Footwear_BootsLeather</li>
+		<li>DankPyon_Handwear_GlovesLeather</li>
+		<li>Apparel_Pants</li>
+		<li>Apparel_Cape</li>
+	</apparelRequired>
+	<specificApparelRequirements Inherit="False">
+		<li MayRequire="Ludeon.RimWorld.Ideology">
+			<bodyPartGroup>UpperHead</bodyPartGroup>
+			<requiredTag>Apparel_Slicecap</requiredTag>
+			<color>(105,41,41)</color>
+		</li>
+		<li>
+			<bodyPartGroup>Torso</bodyPartGroup>
+			<apparelLayer>Shell</apparelLayer>
+			<requiredTag>Cape</requiredTag>
+			<stuff>WoolMegasloth</stuff>
+			<color>(105,41,41)</color>
+		</li>
+		<li>
+			<bodyPartGroup>Torso</bodyPartGroup>
+			<apparelLayer>Middle</apparelLayer>
+			<requiredTag>DankPyon_Apparel_Leather_Tunic</requiredTag>
+			<stuff>Leather_Plain</stuff>
+		</li>
+	</specificApparelRequirements>
+  </PawnKindDef>
+  
+<!-- ================== Fighter Base ================== -->
+
+  <PawnKindDef Name="Accurex_EmpireFigtherBase" Abstract="True">
+    <race>Human</race>
+    <defaultFactionType>Empire</defaultFactionType>
+    <backstoryFilters>
+      <li>
+        <categories>
+          <li>ImperialFighter</li>
+        </categories>
+      </li>
+    </backstoryFilters>
+	
+	<canBeSapper>true</canBeSapper>
+    <isFighter>true</isFighter>
+	
+    <chemicalAddictionChance>0</chemicalAddictionChance>
+	<!--baseRecruitDifficulty>0.99</baseRecruitDifficulty-->
+    <invNutrition>3</invNutrition>
+    <invFoodDef>DankPyon_MealBread</invFoodDef>
+    <itemQuality>Masterwork</itemQuality>
+    <backstoryCryptosleepCommonality>1.0</backstoryCryptosleepCommonality>
+    <maxGenerationAge>53</maxGenerationAge>
+	<minGenerationAge>25</minGenerationAge>
+    <combatEnhancingDrugsChance>0.15</combatEnhancingDrugsChance>
+    <combatEnhancingDrugsCount>0~2</combatEnhancingDrugsCount>
+	<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+    <inventoryOptions>
+     <skipChance>0.70</skipChance>
+     <subOptionsTakeAll>
+       <li>
+         <thingDef>Silver</thingDef>
+         <countRange>30~100</countRange>
+       </li>
+     </subOptionsTakeAll>
+   </inventoryOptions>
+	<disallowedTraits>
+      <li>Brawler</li>
+      <li>Wimp</li>
+	  <li>Pyromaniac</li>
+	  <li>Nudist</li>
+    </disallowedTraits>    
+    <initialWillRange>3~5</initialWillRange>
+    <initialResistanceRange>16~25</initialResistanceRange>
+	<techHediffsRequired>
+		<li>DeathAcidifier</li>
+    </techHediffsRequired>
+    <weaponMoney>3000</weaponMoney>
+  </PawnKindDef>
+
+<!-- ================== Tier 1 : Mercenary ================== -->
+
+  <PawnKindDef ParentName="Accurex_EmpireFigtherBase">
+    <defName>Accurex_Medieval_Empire_Mercenary</defName>
+    <label>Mercenary</label>
+    <combatPower>60</combatPower>
+    <apparelMoney>0</apparelMoney>
+	
+<apparelRequired>
+		<li>DankPyon_Headgear_PaddedKettleHelmet</li>		<!-- bodyPartGroups: FullHead				| layers: Overhead -->
+		<li>DankPyon_Apparel_Padded_Surcoat</li>			<!-- bodyPartGroups: Neck, Shoulder, Torso	| layers: OnSkin -->
+		<li>DankPyon_Apparel_Leather_Tunic</li>		<!-- bodyPartGroups: Neck, Shoulder, Torso	| layers: Middle -->
+		<li>DankPyon_Apparel_Light_Lamellar</li>	<!-- bodyPartGroups: Neck, Shoulder, Torso	| layers: Shell -->
+		<li>DankPyon_Apparel_Trousers</li>			<!-- bodyPartGroups: Legs; 					| layers: OnSkin -->
+		<li>DankPyon_Handwear_GlovesLeather</li>	<!-- bodyPartGroups: Hands; 				| layers: Middle -->
+		<li>DankPyon_Footwear_BootsLeather</li>		<!-- bodyPartGroups: Feet; 					| layers: Middle -->
+	</apparelRequired>
+	
+	<specificApparelRequirements>
+		<!-- FullHead -->
+		<li>
+			<bodyPartGroup>FullHead</bodyPartGroup>
+			<apparelLayer>Overhead</apparelLayer>
+			<requiredTag>DankPyon_Headgear_PaddedKettleHelmet</requiredTag>
+		</li>
+		<!-- Torso -->
+		<li>
+			<bodyPartGroup>Torso</bodyPartGroup>
+			<apparelLayer>OnSkin</apparelLayer>
+			<requiredTag>DankPyon_Apparel_Padded_Surcoat</requiredTag>
+			<stuff>WoolMegasloth</stuff>
+		</li>
+		<li>
+			<bodyPartGroup>Torso</bodyPartGroup>
+			<apparelLayer>Middle</apparelLayer>
+			<requiredTag>DankPyon_Apparel_Leather_Tunic</requiredTag>
+			<stuff>Leather_Plain</stuff>
+		</li>
+		<li>
+			<bodyPartGroup>Torso</bodyPartGroup>
+			<apparelLayer>Shell</apparelLayer>
+			<requiredTag>DankPyon_Apparel_Light_Lamellar</requiredTag>
+			<stuff>Leather_Plain</stuff>
+		</li>
+		<!-- Legs -->
+		<li>
+			<bodyPartGroup>Legs</bodyPartGroup>
+			<apparelLayer>OnSkin</apparelLayer>
+			<requiredTag>DankPyon_Apparel_Trousers</requiredTag>
+			<stuff>WoolMegasloth</stuff>
+		</li>
+		<!-- Hands -->
+		<li>
+			<bodyPartGroup>Hands</bodyPartGroup>
+			<apparelLayer>Middle</apparelLayer>
+			<requiredTag>DankPyon_Handwear_GlovesLeather</requiredTag>
+			<stuff>Leather_Plain</stuff>
+		</li>
+		<!-- Feet -->
+		<li>
+			<bodyPartGroup>Feet</bodyPartGroup>
+			<apparelLayer>Middle</apparelLayer>
+			<requiredTag>DankPyon_Footwear_BootsLeather</requiredTag>
+			<stuff>Leather_Plain</stuff>
+		</li>
+		<!-- Shield -->
+    </specificApparelRequirements>
+	
+    <weaponTags>
+	  <li>DankPyon_Greataxe</li>
+	  <li>DankPyon_Crossbow</li>
+	  <li>DankPyon_WoodcuttersAxe</li>
+    </weaponTags>
+	
+	<skills>
+	  <li>
+        <skill>Melee</skill>
+        <range>5~14</range>
+      </li>
+	  <li>
+        <skill>Shooting</skill>
+        <range>5~14</range>
+      </li>	  
+    </skills>
+  </PawnKindDef> 
+  
+<!-- ================== Tier 2 : Light Infantry ================== -->
+
+  <PawnKindDef ParentName="Accurex_EmpireFigtherBase">
+    <defName>Accurex_Medieval_Empire_Light_Infantry</defName>
+    <label>Light Infantry</label>
+    <combatPower>60</combatPower>
+    <apparelMoney>0</apparelMoney>
+	
+	<apparelRequired>
+		<li>DankPyon_Headgear_ChainNasalHelmet</li>	<!-- bodyPartGroups: FullHead				| layers: Overhead -->
+		<li>DankPyon_Apparel_Padded_Surcoat</li>			<!-- bodyPartGroups: Neck, Shoulder, Torso	| layers: OnSkin -->
+		<!-- li>DankPyon_Apparel_Hauberk</li-->		<!-- bodyPartGroups: Neck, Shoulder, Torso	| layers: Middle -->
+		<li>DankPyon_Apparel_Heavy_Hauberk</li>		<!-- bodyPartGroups: Neck, Shoulder, Torso, Arms, Legs	| layers: Shell -->
+		<li>DankPyon_Apparel_Trousers</li>			<!-- bodyPartGroups: Legs; 					| layers: OnSkin -->
+		<li>DankPyon_Footwear_BootsSplinted</li>	<!-- bodyPartGroups: Hands; 				| layers: Middle -->
+		<li>DankPyon_Handwear_GlovesSplinted</li>	<!-- bodyPartGroups: Feet; 					| layers: Middle -->
+		<li>DankPyon_ShieldKite</li>				<!-- bodyPartGroups: LeftHand				| layers: VFEC_OuterShell -->
+	</apparelRequired>
+
+	<specificApparelRequirements>
+		<!-- FullHead -->
+		<li>
+			<bodyPartGroup>FullHead</bodyPartGroup>
+			<apparelLayer>Overhead</apparelLayer>
+			<requiredTag>DankPyon_Headgear_ChainNasalHelmet</requiredTag>
+			<stuff>Steel</stuff>
+		</li>
+		<!-- Torso -->
+		<li>
+			<bodyPartGroup>Torso</bodyPartGroup>
+			<apparelLayer>OnSkin</apparelLayer>
+			<requiredTag>DankPyon_Apparel_Padded_Surcoat</requiredTag>
+			<stuff>WoolMegasloth</stuff>
+		</li>
+		<li>
+			<bodyPartGroup>Torso</bodyPartGroup>
+			<apparelLayer>Shell</apparelLayer>
+			<requiredTag>DankPyon_Apparel_Heavy_Hauberk</requiredTag>
+			<stuff>Steel</stuff>
+		</li>
+		<!-- Legs -->
+		<li>
+			<bodyPartGroup>Legs</bodyPartGroup>
+			<apparelLayer>OnSkin</apparelLayer>
+			<requiredTag>DankPyon_Apparel_Trousers</requiredTag>
+			<stuff>WoolMegasloth</stuff>
+		</li>
+		<!-- Hands -->
+		<li>
+			<bodyPartGroup>Hands</bodyPartGroup>
+			<apparelLayer>Middle</apparelLayer>
+			<requiredTag>DankPyon_Handwear_GlovesSplinted</requiredTag>
+			<stuff>Steel</stuff>
+		</li>
+		<!-- Feet -->
+		<li>
+			<bodyPartGroup>Feet</bodyPartGroup>
+			<apparelLayer>Middle</apparelLayer>
+			<requiredTag>DankPyon_Footwear_BootsSplinted</requiredTag>
+			<stuff>Steel</stuff>
+		</li>
+		<!-- Shield -->
+		<li>
+			<bodyPartGroup>LeftHand</bodyPartGroup>
+			<apparelLayer>VFEC_OuterShell</apparelLayer>
+			<requiredTag>DankPyon_ShieldKite</requiredTag>
+			<stuff>Steel</stuff>
+		</li>
+    </specificApparelRequirements>
+
+    <weaponTags>
+		<li>DankPyon_Crossbow</li>
+		<li>DankPyon_ArmingSword</li>
+    </weaponTags>
+	
+	<skills>
+	  <li>
+        <skill>Melee</skill>
+        <range>7~11</range>
+      </li>	 
+	  <li>
+        <skill>Shooting</skill>
+        <range>7~11</range>
+      </li>	  
+    </skills>
+  </PawnKindDef>
+  
+ <!-- ================== Tier 3 : Heavy Infantry ================== -->
+
+    <PawnKindDef ParentName="Accurex_EmpireFigtherBase">
+    <defName>Accurex_Medieval_Empire_Grenadier</defName>
+    <label>Cavalry</label>
+    <combatPower>100</combatPower>
+    <apparelMoney>0</apparelMoney>
+		
+	<apparelRequired>
+		<li>DankPyon_Headgear_ClosedBascinetHelmet</li>	<!-- bodyPartGroups: FullHead			| layers: Overhead -->
+		<li>DankPyon_Apparel_Padded_Surcoat</li>			<!-- bodyPartGroups: Neck, Shoulder, Torso	| layers: OnSkin -->
+		<li>DankPyon_Apparel_Hauberk</li>			<!-- bodyPartGroups: Neck, Shoulder, Torso	| layers: Middle -->
+		<li>DankPyon_Apparel_Trousers</li>			<!-- bodyPartGroups: Legs; 					| layers: OnSkin -->
+		<li>DankPyon_Apparel_FullPlate</li>			<!-- bodyPartGroups: Neck, Shoulder, Torso, Arms, Legs	| layers: Shell -->
+		<li>DankPyon_Handwear_GlovesPlate</li>		<!-- bodyPartGroups: Hands; 				| layers: Middle -->
+		<li>DankPyon_Footwear_BootsPlate</li>		<!-- bodyPartGroups: Feet; 					| layers: Middle -->
+	</apparelRequired>
+	
+	<specificApparelRequirements>
+		<!-- FullHead -->
+		<li>
+			<bodyPartGroup>FullHead</bodyPartGroup>
+			<apparelLayer>Overhead</apparelLayer>
+			<requiredTag>DankPyon_Headgear_ClosedBascinetHelmet</requiredTag>
+			<stuff>Steel</stuff>
+		</li>
+		<!-- Torso -->
+		<li>
+			<bodyPartGroup>Torso</bodyPartGroup>
+			<apparelLayer>OnSkin</apparelLayer>
+			<requiredTag>DankPyon_Apparel_Padded_Surcoat</requiredTag>
+			<stuff>WoolMegasloth</stuff>
+		</li>
+		<li>
+			<bodyPartGroup>Torso</bodyPartGroup>
+			<apparelLayer>Middle</apparelLayer>
+			<requiredTag>DankPyon_Apparel_Hauberk</requiredTag>
+			<stuff>Steel</stuff>
+		</li>
+		<li>
+			<bodyPartGroup>Torso</bodyPartGroup>
+			<apparelLayer>Shell</apparelLayer>
+			<requiredTag>DankPyon_Apparel_FullPlate</requiredTag>
+			<stuff>Steel</stuff>
+		</li>
+		<!-- Legs -->
+		<li>
+			<bodyPartGroup>Legs</bodyPartGroup>
+			<apparelLayer>OnSkin</apparelLayer>
+			<requiredTag>DankPyon_Apparel_Trousers</requiredTag>
+			<stuff>WoolMegasloth</stuff>
+		</li>
+		<!-- Hands -->
+		<li>
+			<bodyPartGroup>Hands</bodyPartGroup>
+			<apparelLayer>Middle</apparelLayer>
+			<requiredTag>DankPyon_Handwear_GlovesPlate</requiredTag>
+			<stuff>Steel</stuff>
+		</li>
+		<!-- Feet -->
+		<li>
+			<bodyPartGroup>Feet</bodyPartGroup>
+			<apparelLayer>Middle</apparelLayer>
+			<requiredTag>DankPyon_Footwear_BootsPlate</requiredTag>
+			<stuff>Steel</stuff>
+		</li>
+		<!-- Shield -->
+    </specificApparelRequirements>
+
+	<weaponTags>
+			<li>DankPyon_Arbelest</li>
+	</weaponTags>
+	
+	<skills>
+		<li>
+			<skill>Melee</skill>
+			<range>12~16</range>
+		</li>
+		<li>
+			<skill>Shooting</skill>
+			<range>12~16</range>
+		</li>
+    </skills>
+  </PawnKindDef>
+ 
+	<PawnKindDef ParentName="Accurex_EmpireFigtherBase">
+		<defName>Accurex_Medieval_Empire_Heavy_Infantry</defName>
+		<label>Heavy Infantry</label>
+		<combatPower>100</combatPower>
+		<apparelMoney>0</apparelMoney>
+		
+	<apparelRequired>
+		<li>DankPyon_Headgear_ClosedBascinetHelmet</li>	<!-- bodyPartGroups: FullHead			| layers: Overhead -->
+		<li>DankPyon_Apparel_Padded_Surcoat</li>			<!-- bodyPartGroups: Neck, Shoulder, Torso	| layers: OnSkin -->
+		<li>DankPyon_Apparel_Hauberk</li>			<!-- bodyPartGroups: Neck, Shoulder, Torso	| layers: Middle -->
+		<li>DankPyon_Apparel_Trousers</li>			<!-- bodyPartGroups: Legs; 					| layers: OnSkin -->
+		<li>DankPyon_Apparel_FullPlate</li>			<!-- bodyPartGroups: Neck, Shoulder, Torso, Arms, Legs	| layers: Shell -->
+		<li>DankPyon_Handwear_GlovesPlate</li>		<!-- bodyPartGroups: Hands; 				| layers: Middle -->
+		<li>DankPyon_Footwear_BootsPlate</li>		<!-- bodyPartGroups: Feet; 					| layers: Middle -->
+		<li>DankPyon_ShieldHeater</li>				<!-- bodyPartGroups: LeftHand				| layers: VFEC_OuterShell -->
+	</apparelRequired>
+	
+	<specificApparelRequirements>
+		<!-- FullHead -->
+		<li>
+			<bodyPartGroup>FullHead</bodyPartGroup>
+			<apparelLayer>Overhead</apparelLayer>
+			<requiredTag>DankPyon_Headgear_ClosedBascinetHelmet</requiredTag>
+			<stuff>Steel</stuff>
+		</li>
+		<!-- Torso -->
+		<li>
+			<bodyPartGroup>Torso</bodyPartGroup>
+			<apparelLayer>OnSkin</apparelLayer>
+			<requiredTag>DankPyon_Apparel_Padded_Surcoat</requiredTag>
+			<stuff>WoolMegasloth</stuff>
+		</li>
+		<li>
+			<bodyPartGroup>Torso</bodyPartGroup>
+			<apparelLayer>Middle</apparelLayer>
+			<requiredTag>DankPyon_Apparel_Hauberk</requiredTag>
+			<stuff>Steel</stuff>
+		</li>
+		<li>
+			<bodyPartGroup>Torso</bodyPartGroup>
+			<apparelLayer>Shell</apparelLayer>
+			<requiredTag>DankPyon_Apparel_FullPlate</requiredTag>
+			<stuff>Steel</stuff>
+		</li>
+		<!-- Legs -->
+		<li>
+			<bodyPartGroup>Legs</bodyPartGroup>
+			<apparelLayer>OnSkin</apparelLayer>
+			<requiredTag>DankPyon_Apparel_Trousers</requiredTag>
+			<stuff>WoolMegasloth</stuff>
+		</li>
+		<!-- Hands -->
+		<li>
+			<bodyPartGroup>Hands</bodyPartGroup>
+			<apparelLayer>Middle</apparelLayer>
+			<requiredTag>DankPyon_Handwear_GlovesPlate</requiredTag>
+			<stuff>Steel</stuff>
+		</li>
+		<!-- Feet -->
+		<li>
+			<bodyPartGroup>Feet</bodyPartGroup>
+			<apparelLayer>Middle</apparelLayer>
+			<requiredTag>DankPyon_Footwear_BootsPlate</requiredTag>
+			<stuff>Steel</stuff>
+		</li>
+		<!-- Shield -->
+		<li>
+			<bodyPartGroup>LeftHand</bodyPartGroup>
+			<apparelLayer>VFEC_OuterShell</apparelLayer>
+			<requiredTag>DankPyon_ShieldHeater</requiredTag>
+			<stuff>Steel</stuff>
+		</li>
+    </specificApparelRequirements>
+
+	<weaponTags>
+			<li>DankPyon_Arbelest</li>
+			<li>DankPyon_NobleSword</li>
+	</weaponTags>
+	
+	<skills>
+		<li>
+			<skill>Melee</skill>
+			<range>12~16</range>
+		</li>
+		<li>
+			<skill>Shooting</skill>
+			<range>12~16</range>
+		</li>
+	</skills>
+	</PawnKindDef>
+  
+ <!-- ================== Tier 4 : Crusader & Lord ================== -->
+
+  <PawnKindDef ParentName="Accurex_EmpireFigtherBase">
+    <defName>Accurex_Medieval_Empire_Crusader</defName>
+	<label>Crusader</label>
+    <combatPower>130</combatPower>
+    <apparelMoney>0</apparelMoney>
+	<apparelColor>(105,105,105,255)</apparelColor>
+		
+	<apparelRequired>
+		<li>DankPyon_Headgear_ArmetGilded</li>		<!-- bodyPartGroups: FullHead			| layers: Overhead -->
+		<li>DankPyon_Apparel_Padded_Surcoat</li>			<!-- bodyPartGroups: Neck, Shoulder, Torso	| layers: OnSkin -->
+		<li>DankPyon_Apparel_Hauberk</li>			<!-- bodyPartGroups: Neck, Shoulder, Torso	| layers: Middle -->
+		<li>DankPyon_Apparel_Trousers</li>			<!-- bodyPartGroups: Legs; 					| layers: OnSkin -->
+		<li>DankPyon_Apparel_FullPlate</li>			<!-- bodyPartGroups: Neck, Shoulder, Torso, Arms, Legs	| layers: Shell -->
+		<li>DankPyon_Handwear_GlovesPlate</li>		<!-- bodyPartGroups: Hands; 				| layers: Middle -->
+		<li>DankPyon_Footwear_BootsPlate</li>		<!-- bodyPartGroups: Feet; 					| layers: Middle -->
+	</apparelRequired>
+	
+	<specificApparelRequirements>
+		<!-- FullHead -->
+		<li>
+			<bodyPartGroup>FullHead</bodyPartGroup>
+			<apparelLayer>Overhead</apparelLayer>
+			<requiredTag>DankPyon_Headgear_ArmetGilded</requiredTag>
+			<stuff>Plasteel</stuff>
+		</li>
+		<!-- Torso -->
+		<li>
+			<bodyPartGroup>Torso</bodyPartGroup>
+			<apparelLayer>OnSkin</apparelLayer>
+			<requiredTag>DankPyon_Apparel_Padded_Surcoat</requiredTag>
+			<stuff>WoolMegasloth</stuff>
+		</li>
+		<li>
+			<bodyPartGroup>Torso</bodyPartGroup>
+			<apparelLayer>Middle</apparelLayer>
+			<requiredTag>DankPyon_Apparel_Hauberk</requiredTag>
+			<stuff>Plasteel</stuff>
+		</li>
+		<li>
+			<bodyPartGroup>Torso</bodyPartGroup>
+			<apparelLayer>Shell</apparelLayer>
+			<requiredTag>DankPyon_Apparel_FullPlate</requiredTag>
+			<stuff>Plasteel</stuff>
+		</li>
+		<!-- Legs -->
+		<li>
+			<bodyPartGroup>Legs</bodyPartGroup>
+			<apparelLayer>OnSkin</apparelLayer>
+			<requiredTag>DankPyon_Apparel_Trousers</requiredTag>
+			<stuff>WoolMegasloth</stuff>
+		</li>
+		<!-- Hands -->
+		<li>
+			<bodyPartGroup>Hands</bodyPartGroup>
+			<apparelLayer>Middle</apparelLayer>
+			<requiredTag>DankPyon_Handwear_GlovesPlate</requiredTag>
+			<stuff>Plasteel</stuff>
+		</li>
+		<!-- Feet -->
+		<li>
+			<bodyPartGroup>Feet</bodyPartGroup>
+			<apparelLayer>Middle</apparelLayer>
+			<requiredTag>DankPyon_Footwear_BootsPlate</requiredTag>
+			<stuff>Plasteel</stuff>
+		</li>
+		<!-- Shield -->
+    </specificApparelRequirements>
+
+    <weaponTags>
+		<li>DankPyon_Arbelest</li>
+		<li>DankPyon_Longsword</li>
+    </weaponTags>
+	<skills>
+		<li>
+			<skill>Melee</skill>
+			<range>17~20</range>
+		</li>
+		<li>
+			<skill>Shooting</skill>
+			<range>17~20</range>
+		</li>
+    </skills>
+  </PawnKindDef> 
+
+<PawnKindDef ParentName="Accurex_EmpireFigtherBase">
+    <defName>Accurex_Medieval_Empire_Lord</defName>
+    <label>Praetorian Guard</label>
+	<minTitleRequired>Baron</minTitleRequired>
+    <combatPower>130</combatPower>
+    <apparelMoney>0</apparelMoney>
+	<apparelColor>(105,105,105,255)</apparelColor>
+	
+	<apparelRequired>
+		<li>DankPyon_Headgear_ArmetGilded</li>
+		<li>DankPyon_Apparel_Padded_Surcoat</li>
+		<li>DankPyon_Apparel_Hauberk</li>
+		<li>DankPyon_Apparel_Trousers</li>			<!-- bodyPartGroups: Legs; 					| layers: OnSkin -->
+		<li>DankPyon_Apparel_FullPlateGilded</li>
+		<li>DankPyon_Footwear_BootsPlate</li>
+		<li>DankPyon_Handwear_GlovesPlate</li>
+	</apparelRequired>
+
+	<specificApparelRequirements>
+		<!-- FullHead -->
+		<li>
+			<bodyPartGroup>FullHead</bodyPartGroup>
+			<apparelLayer>Overhead</apparelLayer>
+			<requiredTag>DankPyon_Headgear_ArmetGilded</requiredTag>
+			<stuff>Uranium</stuff>
+		</li>
+		<!-- Torso -->
+		<li>
+			<bodyPartGroup>Torso</bodyPartGroup>
+			<apparelLayer>OnSkin</apparelLayer>
+			<requiredTag>DankPyon_Apparel_Padded_Surcoat</requiredTag>
+			<stuff>WoolMegasloth</stuff>
+		</li>
+		<li>
+			<bodyPartGroup>Torso</bodyPartGroup>
+			<apparelLayer>Middle</apparelLayer>
+			<requiredTag>DankPyon_Apparel_Hauberk</requiredTag>
+			<stuff>Uranium</stuff>
+		</li>
+		<li>
+			<bodyPartGroup>Torso</bodyPartGroup>
+			<apparelLayer>Shell</apparelLayer>
+			<requiredTag>DankPyon_Apparel_FullPlateGilded</requiredTag>
+			<stuff>Uranium</stuff>
+		</li>
+		<!-- Legs -->
+		<li>
+			<bodyPartGroup>Legs</bodyPartGroup>
+			<apparelLayer>OnSkin</apparelLayer>
+			<requiredTag>DankPyon_Apparel_Trousers</requiredTag>
+			<stuff>WoolMegasloth</stuff>
+		</li>
+		<!-- Hands -->
+		<li>
+			<bodyPartGroup>Hands</bodyPartGroup>
+			<apparelLayer>Middle</apparelLayer>
+			<requiredTag>DankPyon_Handwear_GlovesPlate</requiredTag>
+			<stuff>Uranium</stuff>
+		</li>
+		<!-- Feet -->
+		<li>
+			<bodyPartGroup>Feet</bodyPartGroup>
+			<apparelLayer>Middle</apparelLayer>
+			<requiredTag>DankPyon_Footwear_BootsPlate</requiredTag>
+			<stuff>Uranium</stuff>
+		</li>
+		<!-- Shield -->
+    </specificApparelRequirements>
+	
+    <weaponTags>
+		<li>DankPyon_Greatsword</li>
+    </weaponTags>
+	<skills>
+		<li>
+			<skill>Melee</skill>
+			<range>17~20</range>
+		</li>
+		<li>
+			<skill>Shooting</skill>
+			<range>17~20</range>
+		</li>
+    </skills>
+  </PawnKindDef>  
+</Defs>

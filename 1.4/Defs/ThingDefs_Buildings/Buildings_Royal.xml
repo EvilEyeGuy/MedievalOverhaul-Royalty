@@ -7,7 +7,7 @@
 		<description>A tall pillar of ornate design.</description>
 		<designationCategory>DankPyon_RusticFurniture</designationCategory>
 		<graphicData>
-			<texPath>Art/Column1x1</texPath>
+			<texPath>Things/Building/Art/Column1x1</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(5,5)</drawSize>
 			<damageData>

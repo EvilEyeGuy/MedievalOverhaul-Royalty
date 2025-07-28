@@ -127,7 +127,16 @@
 										<li MayRequire="oskarpotocki.vfe.vikings">VFEV_DoubleFurBed</li>
 										<li>RoyalBed</li>
 										<li>DankPyon_RoyalTudorBed</li>
+										<li MayRequire="mingtuwuxiang.GothicDecorative">MUS_Gothicstyle_DoubleBed</li>
 										<li MayRequire="Ludeon.RimWorld.Biotech">DeathrestCasket</li>
+										<li MayRequire="mingtuwuxiang.GothicDecorative">MUS_Gothicstyle_CoffinBed</li>
+										<li>DankPyon_Bed_Rustic_Red</li>
+										<li>DankPyon_Bed_Rustic_Blue</li>
+										<li>DankPyon_Bed_Rustic_Green</li>
+										<li MayRequire="mingtuwuxiang.GothicDecorative">MUS_Gothicstyle_Bed</li>
+										<li>DankPyon_Bed_RusticDouble_Red</li>
+										<li>DankPyon_Bed_RusticDouble_Blue</li>
+										<li>DankPyon_Bed_RusticDouble_Green</li>
 									</things>
 								</li>
 								<li Class="RoomRequirement_ThingAnyOfCount">
@@ -135,21 +144,26 @@
 										<li>EndTable</li>
 										<li>DankPyon_RusticEndTable</li>
 										<li>DankPyon_RoyalEndTable</li>
+										<li MayRequire="mingtuwuxiang.GothicDecorative">MUS_Gothicstyle_BedsideTable</li>
 									</things>
 									<count>1</count>
 								</li>
 								<li Class="RoomRequirement_ThingAnyOfCount">
 									<things>
 										<li>Dresser</li>
+										<li MayRequire="mingtuwuxiang.GothicDecorative">MUS_Gothicstyle_Mirror</li>
 										<li>DankPyon_RusticDresser</li>
 										<li>DankPyon_RoyalDresser</li>
+										<li MayRequire="mingtuwuxiang.GothicDecorative">MUS_Gothicstyle_Mirror</li>
 									</things>
 									<count>1</count>
 								</li>
 								<li Class="RoomRequirement_ThingAnyOfCount">
 									<things>
 										<li>DankPyon_RusticCloset</li>
+										<li>DankPyon_RusticCloset1x2c</li>
 										<li>DankPyon_RoyalCloset</li>
+										<li MayRequire="mingtuwuxiang.GothicDecorative">MUS_Gothicstyle_Wardrobe</li>
 									</things>
 									<count>1</count>
 								</li>
@@ -198,7 +212,16 @@
 										<li MayRequire="oskarpotocki.vfe.vikings">VFEV_DoubleFurBed</li>
 										<li>RoyalBed</li>
 										<li>DankPyon_RoyalTudorBed</li>
+										<li MayRequire="mingtuwuxiang.GothicDecorative">MUS_Gothicstyle_DoubleBed</li>
 										<li MayRequire="Ludeon.RimWorld.Biotech">DeathrestCasket</li>
+										<li MayRequire="mingtuwuxiang.GothicDecorative">MUS_Gothicstyle_CoffinBed</li>
+										<li>DankPyon_Bed_Rustic_Red</li>
+										<li>DankPyon_Bed_Rustic_Blue</li>
+										<li>DankPyon_Bed_Rustic_Green</li>
+										<li MayRequire="mingtuwuxiang.GothicDecorative">MUS_Gothicstyle_Bed</li>
+										<li>DankPyon_Bed_RusticDouble_Red</li>
+										<li>DankPyon_Bed_RusticDouble_Blue</li>
+										<li>DankPyon_Bed_RusticDouble_Green</li>
 									</things>
 								</li>
 								<li Class="RoomRequirement_ThingAnyOfCount">
@@ -206,21 +229,26 @@
 										<li>EndTable</li>
 										<li>DankPyon_RusticEndTable</li>
 										<li>DankPyon_RoyalEndTable</li>
+										<li MayRequire="mingtuwuxiang.GothicDecorative">MUS_Gothicstyle_BedsideTable</li>
 									</things>
 									<count>1</count>
 								</li>
 								<li Class="RoomRequirement_ThingAnyOfCount">
 									<things>
 										<li>Dresser</li>
+										<li MayRequire="mingtuwuxiang.GothicDecorative">MUS_Gothicstyle_Mirror</li>
 										<li>DankPyon_RusticDresser</li>
 										<li>DankPyon_RoyalDresser</li>
+										<li MayRequire="mingtuwuxiang.GothicDecorative">MUS_Gothicstyle_Mirror</li>
 									</things>
 									<count>1</count>
 								</li>
 								<li Class="RoomRequirement_ThingAnyOfCount">
 									<things>
 										<li>DankPyon_RusticCloset</li>
+										<li>DankPyon_RusticCloset1x2c</li>
 										<li>DankPyon_RoyalCloset</li>
+										<li MayRequire="mingtuwuxiang.GothicDecorative">MUS_Gothicstyle_Wardrobe</li>
 									</things>
 									<count>2</count>
 								</li>
@@ -257,7 +285,7 @@
 								<li Class="RoomRequirement_ThingAnyOfCount">
 									<things>
 										<li>DankPyon_CandleStand</li>
-										<li>DankPyon_CandleStand_Beeswax</li>
+										<!--li>DankPyon_CandleStand_Beeswax</li-->
 										<li>DankPyon_Candles</li>
 										<li>DankPyon_Candles_Beeswax</li>
 									</things>
@@ -292,7 +320,12 @@
 										<li MayRequire="oskarpotocki.vfe.vikings">VFEV_DoubleFurBed</li>
 										<li>RoyalBed</li>
 										<li>DankPyon_RoyalTudorBed</li>
+										<li MayRequire="mingtuwuxiang.GothicDecorative">MUS_Gothicstyle_DoubleBed</li>
 										<li MayRequire="Ludeon.RimWorld.Biotech">DeathrestCasket</li>
+										<li MayRequire="mingtuwuxiang.GothicDecorative">MUS_Gothicstyle_CoffinBed</li>
+										<li>DankPyon_Bed_RusticDouble_Red</li>
+										<li>DankPyon_Bed_RusticDouble_Blue</li>
+										<li>DankPyon_Bed_RusticDouble_Green</li>
 									</things>
 								</li>
 								<li Class="RoomRequirement_ThingAnyOfCount">
@@ -300,21 +333,26 @@
 										<li>EndTable</li>
 										<li>DankPyon_RusticEndTable</li>
 										<li>DankPyon_RoyalEndTable</li>
+										<li MayRequire="mingtuwuxiang.GothicDecorative">MUS_Gothicstyle_BedsideTable</li>
 									</things>
 									<count>1</count>
 								</li>
 								<li Class="RoomRequirement_ThingAnyOfCount">
 									<things>
 										<li>Dresser</li>
+										<li MayRequire="mingtuwuxiang.GothicDecorative">MUS_Gothicstyle_Mirror</li>
 										<li>DankPyon_RusticDresser</li>
 										<li>DankPyon_RoyalDresser</li>
+										<li MayRequire="mingtuwuxiang.GothicDecorative">MUS_Gothicstyle_Mirror</li>
 									</things>
 									<count>1</count>
 								</li>
 								<li Class="RoomRequirement_ThingAnyOfCount">
 									<things>
 										<li>DankPyon_RusticCloset</li>
+										<li>DankPyon_RusticCloset1x2c</li>
 										<li>DankPyon_RoyalCloset</li>
+										<li MayRequire="mingtuwuxiang.GothicDecorative">MUS_Gothicstyle_Wardrobe</li>
 									</things>
 									<count>2</count>
 								</li>
@@ -358,7 +396,7 @@
 								<li Class="RoomRequirement_ThingAnyOfCount">
 									<things>
 										<li>DankPyon_CandleStand</li>
-										<li>DankPyon_CandleStand_Beeswax</li>
+										<!--li>DankPyon_CandleStand_Beeswax</li-->
 										<li>DankPyon_Candles</li>
 										<li>DankPyon_Candles_Beeswax</li>
 									</things>
@@ -406,31 +444,38 @@
 									<things>
 										<li>RoyalBed</li>
 										<li>DankPyon_RoyalTudorBed</li>
+										<li MayRequire="mingtuwuxiang.GothicDecorative">MUS_Gothicstyle_DoubleBed</li>
 										<li MayRequire="Ludeon.RimWorld.Biotech">DeathrestCasket</li>
+										<li MayRequire="mingtuwuxiang.GothicDecorative">MUS_Gothicstyle_CoffinBed</li>
 									</things>
 								</li>
 								<li Class="RoomRequirement_ThingAnyOfCount">
 									<things>
 										<li>DankPyon_RoyalEndTable</li>
+										<li MayRequire="mingtuwuxiang.GothicDecorative">MUS_Gothicstyle_BedsideTable</li>
 									</things>
 									<count>1</count>
 								</li>
 								<li Class="RoomRequirement_ThingAnyOfCount">
 									<things>
 										<li>DankPyon_RoyalDresser</li>
+										<li MayRequire="mingtuwuxiang.GothicDecorative">MUS_Gothicstyle_Mirror</li>
 									</things>
 									<count>1</count>
 								</li>
 								<li Class="RoomRequirement_ThingAnyOfCount">
 									<things>
 										<li>DankPyon_RusticCloset</li>
+										<li>DankPyon_RusticCloset1x2c</li>
 										<li>DankPyon_RoyalCloset</li>
+										<li MayRequire="mingtuwuxiang.GothicDecorative">MUS_Gothicstyle_Wardrobe</li>
 									</things>
 									<count>2</count>
 								</li>
 								<li Class="RoomRequirement_ThingAnyOfCount">
 									<things>
 										<li>DankPyon_RoyalCloset</li>
+										<li MayRequire="mingtuwuxiang.GothicDecorative">MUS_Gothicstyle_Wardrobe</li>
 									</things>
 									<count>1</count>
 								</li>
@@ -485,7 +530,7 @@
 								<li Class="RoomRequirement_ThingAnyOfCount">
 									<things>
 										<li>DankPyon_CandleStand</li>
-										<li>DankPyon_CandleStand_Beeswax</li>
+										<!--li>DankPyon_CandleStand_Beeswax</li-->
 										<li>DankPyon_Candles</li>
 										<li>DankPyon_Candles_Beeswax</li>
 									</things>
@@ -533,24 +578,29 @@
 									<things>
 										<li>RoyalBed</li>
 										<li>DankPyon_RoyalTudorBed</li>
+										<li MayRequire="mingtuwuxiang.GothicDecorative">MUS_Gothicstyle_DoubleBed</li>
 										<li MayRequire="Ludeon.RimWorld.Biotech">DeathrestCasket</li>
+										<li MayRequire="mingtuwuxiang.GothicDecorative">MUS_Gothicstyle_CoffinBed</li>
 									</things>
 								</li>
 								<li Class="RoomRequirement_ThingAnyOfCount">
 									<things>
 										<li>DankPyon_RoyalEndTable</li>
+										<li MayRequire="mingtuwuxiang.GothicDecorative">MUS_Gothicstyle_BedsideTable</li>
 									</things>
 									<count>1</count>
 								</li>
 								<li Class="RoomRequirement_ThingAnyOfCount">
 									<things>
 										<li>DankPyon_RoyalDresser</li>
+										<li MayRequire="mingtuwuxiang.GothicDecorative">MUS_Gothicstyle_Mirror</li>
 									</things>
 									<count>2</count>
 								</li>
 								<li Class="RoomRequirement_ThingAnyOfCount">
 									<things>
 										<li>DankPyon_RoyalCloset</li>
+										<li MayRequire="mingtuwuxiang.GothicDecorative">MUS_Gothicstyle_Wardrobe</li>
 									</things>
 									<count>3</count>
 								</li>
@@ -586,7 +636,9 @@
 								</li>
 								<li Class="RoomRequirement_ThingAnyOfCount">
 									<things>
-										<li>DankPyon_ArmorStatue</li>
+	
+									<li>DankPyon_ArmorStatue</li>
+									<li MayRequire="mingtuwuxiang.GothicDecorative">MUS_Gothicstyle_DecorativeArmor</li>
 									</things>
 									<count>1</count>
 								</li>
@@ -612,7 +664,7 @@
 								<li Class="RoomRequirement_ThingAnyOfCount">
 									<things>
 										<li>DankPyon_CandleStand</li>
-										<li>DankPyon_CandleStand_Beeswax</li>
+										<!--li>DankPyon_CandleStand_Beeswax</li-->
 										<li>DankPyon_Candles</li>
 										<li>DankPyon_Candles_Beeswax</li>
 									</things>

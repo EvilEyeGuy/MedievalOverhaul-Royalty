@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Factions Expanded - Empire</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+			
+				<li Class="PatchOperationTest">
+					<xpath>Defs/ResearchProjectDef[defName="VFEE_StellicThrone"]/techLevel</xpath>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ResearchProjectDef[defName="VFEE_StellicThrone"]/techLevel</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/ResearchProjectDef[defName="VFEE_StellicThrone"]/techLevel</xpath>
+						<value>
+							<techLevel>Medieval</techLevel>
+						</value>
+					</match>
+				</li>	
+			
+				<li Class="PatchOperationTest">
+					<xpath>Defs/ResearchProjectDef[defName="VFEE_PipeOrgans"]/techLevel</xpath>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ResearchProjectDef[defName="VFEE_PipeOrgans"]/techLevel</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/ResearchProjectDef[defName="VFEE_PipeOrgans"]/techLevel</xpath>
+						<value>
+							<techLevel>Medieval</techLevel>
+						</value>
+					</match>
+				</li>	
+				
+			</operations>
+		</match>
+	</Operation>	
+</Patch>

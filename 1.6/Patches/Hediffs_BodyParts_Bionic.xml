@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/HediffDef[defName="DeathAcidifier"]/label</xpath>
+					<value>
+						<label>curse of vanishing</label>
+					</value>				
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/HediffDef[defName="DeathAcidifier"]/description</xpath>
+					<value>
+						<description>A powerful curse that ensures disappearance of equipment in the event of death.</description>
+					</value>				
+				</li>
+			</operations>	
+	</Operation>
+</Patch>
