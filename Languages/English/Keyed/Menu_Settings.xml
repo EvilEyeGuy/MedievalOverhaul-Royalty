@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+	<!-- Menu Title -->
+	<EEGRoyalty_Title>Medieval Overhaul: Royalty</EEGRoyalty_Title>
+
+	<!-- Royalty Title Options -->
+	<EEG_Settings_RoyaltyTitle>Production Chain Options</EEG_Settings_RoyaltyTitle>
+	<EEG_Settings_RoyaltyTitle_Tooltip>Leather Production Chain:</EEG_Settings_RoyaltyTitle_Tooltip>
+
+</LanguageData>
