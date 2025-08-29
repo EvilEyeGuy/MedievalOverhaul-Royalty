@@ -1,723 +1,589 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
-
 	<Operation Class="MedievalOverhaul.PatchOperation_ToggleSettings">
 		<settings>
 			<li>EEG_RoyaltyTitle</li>
 		</settings>
 		<active Class="PatchOperationSequence">
 			<operations>
-
-				<li Class="PatchOperationAdd">
-					<xpath>Defs/RoyalTitleDef/requiredApparel/li[bodyPartGroupsMatchAny/li="Torso"]/allowedTags</xpath>
-					<value>
-						<li>MedievalPrestigeCombatGear</li>
-					</value>
-				</li>
-
-				<li Class="PatchOperationAdd">
-					<xpath>Defs/RoyalTitleDef/requiredApparel/li[bodyPartGroupsMatchAny/li="FullHead"]/allowedTags</xpath>
-					<value>
-						<li>DankPyon_LordHelmet</li>
-					</value>
-				</li>
-
-				<li Class="PatchOperationAdd">
-					<xpath>Defs/ThingDef/apparel[tags/li="MedievalPrestigeCombatGear"]/tags</xpath>
-					<value>
-						<li>RoyalTier2</li>
-						<li>RoyalTier5</li>
-					</value>
-				</li>
-
-				<li Class="PatchOperationAdd">
-					<xpath>Defs/ThingDef/apparel[tags/li="DankPyon_LordHelmet"]/tags</xpath>
-					<value>
-						<li>RoyalTier2</li>
-						<li>RoyalTier5</li>
-					</value>
-				</li>
-				<!-- Thronerooms -->
-
-				<li Class="PatchOperationAdd">
-					<xpath>Defs/RoyalTitleDef[defName="Acolyte"]/throneRoomRequirements</xpath>
-					<value>
-						<li Class="RoomRequirement_Impressiveness">
-							<impressiveness>30</impressiveness>
-						</li>
-					</value>
-				</li>
-
-				<li Class="PatchOperationAdd">
-					<xpath>Defs/RoyalTitleDef[defName="Acolyte"]/throneRoomRequirements/li[contains(., 'Brazier')]/things</xpath>
-					<value>
-						<li MayRequire="Ludeon.RimWorld.Royalty,DevDesigner.Blood">DevDesigner_BloodBrazier</li>
-					</value>
-				</li>
-
-				<!-- Knight = VFEE Preator -->
-
-				<li Class="PatchOperationAdd">
-					<xpath>Defs/RoyalTitleDef[defName="Knight"]/throneRoomRequirements/li[contains(., 'Brazier')]/things</xpath>
-					<value>
-						<li MayRequire="Ludeon.RimWorld.Royalty,DevDesigner.Blood">DevDesigner_BloodBrazier</li>
-					</value>
-				</li>
-
-				<li Class="PatchOperationAdd">
-					<xpath>Defs/RoyalTitleDef[defName="Knight"]/throneRoomRequirements/li[contains(., 'Column')]/things</xpath>
-					<value>
-						<li>DankPyon_LogColumn</li>
-						<li>DankPyon_RoyalColumn</li>
-						<li>EEG_GrandColumn</li>
-					</value>
-				</li>
-
-				<!-- Praetor = VFEE Count -->
-
-				<li Class="PatchOperationAdd">
-					<xpath>Defs/RoyalTitleDef[defName="Praetor"]/throneRoomRequirements/li[contains(., 'Brazier')]/things</xpath>
-					<value>
-						<li MayRequire="Ludeon.RimWorld.Royalty,DevDesigner.Blood">DevDesigner_BloodBrazier</li>
-					</value>
-				</li>
-
-				<li Class="PatchOperationAdd">
-					<xpath>Defs/RoyalTitleDef[defName="Praetor"]/throneRoomRequirements/li[contains(., 'Column')]/things</xpath>
-					<value>
-						<li>DankPyon_LogColumn</li>
-						<li>DankPyon_RoyalColumn</li>
-						<li>EEG_GrandColumn</li>
-					</value>
-				</li>
-
-				<!-- Baron = VFEE Archduke -->
-
-				<li Class="PatchOperationAdd">
-					<xpath>Defs/RoyalTitleDef[defName="Baron"]/throneRoomRequirements/li[contains(., 'Brazier')]/things</xpath>
-					<value>
-						<li MayRequire="Ludeon.RimWorld.Royalty,DevDesigner.Blood">DevDesigner_BloodBrazier</li>
-					</value>
-				</li>
-
-				<li Class="PatchOperationAdd">
-					<xpath>Defs/RoyalTitleDef[defName="Baron"]/throneRoomRequirements/li[contains(., 'Column')]/things</xpath>
-					<value>
-						<li>DankPyon_LogColumn</li>
-						<li>DankPyon_RoyalColumn</li>
-						<li>EEG_GrandColumn</li>
-					</value>
-				</li>
-
-				<!-- Count = VFEE StellarchBase -->
-
-				<li Class="PatchOperationAdd">
-					<xpath>Defs/RoyalTitleDef[defName="Count"]/throneRoomRequirements/li[contains(., 'Brazier')]/things</xpath>
-					<value>
-						<li MayRequire="Ludeon.RimWorld.Royalty,DevDesigner.Blood">DevDesigner_BloodBrazier</li>
-					</value>
-				</li>
-
-				<li Class="PatchOperationAdd">
-					<xpath>Defs/RoyalTitleDef[defName="Count"]/throneRoomRequirements/li[contains(., 'Column')]/things</xpath>
-					<value>
-						<li>DankPyon_LogColumn</li>
-						<li>DankPyon_RoyalColumn</li>
-						<li>EEG_GrandColumn</li>
-					</value>
-				</li>
-
-				<!-- bedrooms -->
-
-				<li Class="PatchOperationReplace">
-					<xpath>Defs/RoyalTitleDef[defName="Acolyte"]/bedroomRequirements</xpath>
-					<value>
-						<bedroomRequirements Inherit="False">
-							<li Class="RoomRequirement_Area">
-								<area>21</area>
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Vanilla Factions Expanded - Empire</li>
+					</mods>
+					<nomatch Class="PatchOperationSequence">
+						<operations>
+							<li Class="PatchOperationAdd">
+								<xpath>//RoyalTitleDef/throneRoomRequirements/li[things/li[text()="Throne"]]/things</xpath>
+								<value>
+									<li>DankPyon_RoyalThrone</li>
+								</value>
 							</li>
-							<li Class="RoomRequirement_Impressiveness">
-								<impressiveness>30</impressiveness>
+							
+							<li Class="PatchOperationAdd">
+								<xpath>//RoyalTitleDef/throneRoomRequirements/li[contains(., "Brazier")]/things</xpath>
+								<value>
+									<li>DankPyon_CandleStand</li>
+								</value>
 							</li>
-							<li Class="RoomRequirement_TerrainWithTags">
-								<labelKey>RoomRequirementAllFloored</labelKey>
-								<tags>
-									<li>Floor</li>
-								</tags>
+							
+							<li Class="PatchOperationAdd">
+								<xpath>//RoyalTitleDef/throneRoomRequirements/li[contains(., "Column")]/things</xpath>
+								<value>
+									<li>DankPyon_DividerColumn</li>
+									<li>DankPyon_LogColumn</li>
+									<li>EEG_GrandColumn</li>
+								</value>
 							</li>
-							<li Class="RoomRequirement_ThingAnyOf">
-								<disablingPrecepts>
-									<li MayRequire="Ludeon.RimWorld.Ideology">SlabBed_Preferred</li>
-								</disablingPrecepts>
-								<things>
+
+							<li Class="PatchOperationAdd">
+								<xpath>//RoyalTitleDef/bedroomRequirements/li[contains(., "DoubleBed")]/things</xpath>
+								<value>
 									<li>DankPyon_BedFur</li>
-									<li MayRequire="oskarpotocki.vfe.vikings">VFEV_FurBed</li>
 									<li>DankPyon_BedFurDouble</li>
-									<li MayRequire="oskarpotocki.vfe.vikings">VFEV_DoubleFurBed</li>
 									<li>RoyalBed</li>
 									<li>DankPyon_RoyalTudorBed</li>
 									<li MayRequire="mingtuwuxiang.GothicDecorative">MUS_Gothicstyle_DoubleBed</li>
-									<li MayRequire="Ludeon.RimWorld.Biotech">DeathrestCasket</li>
 									<li MayRequire="mingtuwuxiang.GothicDecorative">MUS_Gothicstyle_CoffinBed</li>
+									<li MayRequire="mingtuwuxiang.GothicDecorative">MUS_Gothicstyle_Bed</li>
 									<li>DankPyon_Bed_Rustic_Red</li>
 									<li>DankPyon_Bed_Rustic_Blue</li>
 									<li>DankPyon_Bed_Rustic_Green</li>
-									<li MayRequire="mingtuwuxiang.GothicDecorative">MUS_Gothicstyle_Bed</li>
 									<li>DankPyon_Bed_RusticDouble_Red</li>
 									<li>DankPyon_Bed_RusticDouble_Blue</li>
 									<li>DankPyon_Bed_RusticDouble_Green</li>
-								</things>
+								</value>
 							</li>
-							<li Class="RoomRequirement_ThingAnyOfCount">
-								<things>
-									<li>EndTable</li>
+							
+							<li Class="PatchOperationAdd">
+								<xpath>//RoyalTitleDef/bedroomRequirements[li[things/li[contains(., "DoubleBed")]]]/li[contains(., "EndTable")]/things</xpath>
+								<value>
 									<li>DankPyon_RusticEndTable</li>
 									<li>DankPyon_RoyalEndTable</li>
-									<li MayRequire="mingtuwuxiang.GothicDecorative">MUS_Gothicstyle_BedsideTable</li>
-								</things>
-								<count>1</count>
-							</li>
-							<li Class="RoomRequirement_ThingAnyOfCount">
-								<things>
-									<li>Dresser</li>
 									<li MayRequire="mingtuwuxiang.GothicDecorative">MUS_Gothicstyle_Mirror</li>
+								</value>
+							</li>	
+							
+							<li Class="PatchOperationAdd">
+								<xpath>//RoyalTitleDef/bedroomRequirements[li[things and things[li[contains(., "RoyalBed")] and not(li[contains(., "DoubleBed")])]]]//li[contains(., "EndTable")]/things</xpath>
+								<value>
+									<li>DankPyon_RoyalEndTable</li>
+									<li MayRequire="mingtuwuxiang.GothicDecorative">MUS_Gothicstyle_Mirror</li>
+								</value>
+							</li>
+							
+							<li Class="PatchOperationAdd">
+								<xpath>//RoyalTitleDef/bedroomRequirements[li[things/li[contains(., "DoubleBed")]]]/li[contains(., "Dresser")]/things</xpath>
+								<value>
 									<li>DankPyon_RusticDresser</li>
-									<li>DankPyon_RoyalDresser</li>
-									<li MayRequire="mingtuwuxiang.GothicDecorative">MUS_Gothicstyle_Mirror</li>
-								</things>
-								<count>1</count>
-							</li>
-							<li Class="RoomRequirement_ThingAnyOfCount">
-								<things>
 									<li>DankPyon_RusticCloset</li>
 									<li>DankPyon_RusticCloset1x2c</li>
-									<li>DankPyon_RoyalCloset</li>
-									<li MayRequire="mingtuwuxiang.GothicDecorative">MUS_Gothicstyle_Wardrobe</li>
-								</things>
-								<count>1</count>
-							</li>
-							<li Class="RoomRequirement_ThingAnyOfCount">
-								<things>
-									<li>DankPyon_RusticChest</li>
-									<li>DankPyon_RoyalChest</li>
-								</things>
-								<count>1</count>
-							</li>
-							<li Class="RoomRequirement_ThingAnyOfCount">
-								<things>
-									<li>DankPyon_WoodBurningStove</li>
-									<li>DankPyon_RusticHearth</li>
-								</things>
-								<count>1</count>
-							</li>
-						</bedroomRequirements>
-					</value>
-				</li>
-
-				<li Class="PatchOperationReplace">
-					<xpath>Defs/RoyalTitleDef[defName="Knight"]/bedroomRequirements</xpath>
-					<value>
-						<bedroomRequirements Inherit="False">
-							<li Class="RoomRequirement_Area">
-								<area>38</area>
-							</li>
-							<li Class="RoomRequirement_Impressiveness">
-								<impressiveness>40</impressiveness>
-							</li>
-							<li Class="RoomRequirement_TerrainWithTags">
-								<labelKey>RoomRequirementAllFloored</labelKey>
-								<tags>
-									<li>Floor</li>
-								</tags>
-							</li>
-							<li Class="RoomRequirement_ThingAnyOf">
-								<disablingPrecepts>
-									<li MayRequire="Ludeon.RimWorld.Ideology">SlabBed_Preferred</li>
-								</disablingPrecepts>
-								<things>
-									<li>DankPyon_BedFur</li>
-									<li MayRequire="oskarpotocki.vfe.vikings">VFEV_FurBed</li>
-									<li>DankPyon_BedFurDouble</li>
-									<li MayRequire="oskarpotocki.vfe.vikings">VFEV_DoubleFurBed</li>
-									<li>RoyalBed</li>
-									<li>DankPyon_RoyalTudorBed</li>
-									<li MayRequire="mingtuwuxiang.GothicDecorative">MUS_Gothicstyle_DoubleBed</li>
-									<li MayRequire="Ludeon.RimWorld.Biotech">DeathrestCasket</li>
-									<li MayRequire="mingtuwuxiang.GothicDecorative">MUS_Gothicstyle_CoffinBed</li>
-									<li>DankPyon_Bed_Rustic_Red</li>
-									<li>DankPyon_Bed_Rustic_Blue</li>
-									<li>DankPyon_Bed_Rustic_Green</li>
-									<li MayRequire="mingtuwuxiang.GothicDecorative">MUS_Gothicstyle_Bed</li>
-									<li>DankPyon_Bed_RusticDouble_Red</li>
-									<li>DankPyon_Bed_RusticDouble_Blue</li>
-									<li>DankPyon_Bed_RusticDouble_Green</li>
-								</things>
-							</li>
-							<li Class="RoomRequirement_ThingAnyOfCount">
-								<things>
-									<li>EndTable</li>
-									<li>DankPyon_RusticEndTable</li>
-									<li>DankPyon_RoyalEndTable</li>
-									<li MayRequire="mingtuwuxiang.GothicDecorative">MUS_Gothicstyle_BedsideTable</li>
-								</things>
-								<count>1</count>
-							</li>
-							<li Class="RoomRequirement_ThingAnyOfCount">
-								<things>
-									<li>Dresser</li>
-									<li MayRequire="mingtuwuxiang.GothicDecorative">MUS_Gothicstyle_Mirror</li>
-									<li>DankPyon_RusticDresser</li>
 									<li>DankPyon_RoyalDresser</li>
-									<li MayRequire="mingtuwuxiang.GothicDecorative">MUS_Gothicstyle_Mirror</li>
-								</things>
-								<count>1</count>
-							</li>
-							<li Class="RoomRequirement_ThingAnyOfCount">
-								<things>
-									<li>DankPyon_RusticCloset</li>
-									<li>DankPyon_RusticCloset1x2c</li>
-									<li>DankPyon_RoyalCloset</li>
 									<li MayRequire="mingtuwuxiang.GothicDecorative">MUS_Gothicstyle_Wardrobe</li>
-								</things>
-								<count>2</count>
+								</value>
 							</li>
-							<li Class="RoomRequirement_ThingAnyOfCount">
-								<things>
-									<li>DankPyon_RusticChest</li>
-									<li>DankPyon_RoyalChest</li>
-								</things>
-								<count>1</count>
-							</li>
-							<li Class="RoomRequirement_ThingAnyOfCount">
-								<things>
-									<li>DankPyon_WoodBurningStove</li>
-									<li>DankPyon_RusticHearth</li>
-								</things>
-								<count>1</count>
-							</li>
-							<li Class="RoomRequirement_ThingAnyOfCount">
-								<things>
-									<li>DankPyon_RusticNobleChair</li>
-									<li>Armchair</li>
-									<li>DankPyon_RoyalArmchair</li>
-								</things>
-								<count>2</count>
-							</li>
-							<li Class="RoomRequirement_ThingAnyOfCount">
-								<things>
-									<li>DankPyon_RusticTable2x2c</li>
-									<li>DankPyon_ReinforcedRusticTable2x2c</li>
-									<li>DankPyon_RoyalTable2x2c</li>
-								</things>
-								<count>1</count>
-							</li>
-							<li Class="RoomRequirement_ThingAnyOfCount">
-								<things>
-									<li>DankPyon_CandleStand</li>
-									<!--li>DankPyon_CandleStand_Beeswax</li-->
-									<li>DankPyon_Candles</li>
-									<li>DankPyon_Candles_Beeswax</li>
-								</things>
-								<count>1</count>
-							</li>
-						</bedroomRequirements>
-					</value>
-				</li>
-
-				<li Class="PatchOperationReplace">
-					<xpath>Defs/RoyalTitleDef[defName="Praetor"]/bedroomRequirements</xpath>
-					<value>
-						<bedroomRequirements Inherit="False">
-							<li Class="RoomRequirement_Area">
-								<area>45</area>
-							</li>
-							<li Class="RoomRequirement_Impressiveness">
-								<impressiveness>60</impressiveness>
-							</li>
-							<li Class="RoomRequirement_TerrainWithTags">
-								<labelKey>RoomRequirementAllFloored</labelKey>
-								<tags>
-									<li>Floor</li>
-								</tags>
-							</li>
-							<li Class="RoomRequirement_ThingAnyOf">
-								<disablingPrecepts>
-									<li MayRequire="Ludeon.RimWorld.Ideology">SlabBed_Preferred</li>
-								</disablingPrecepts>
-								<things>
-									<li>DankPyon_BedFurDouble</li>
-									<li MayRequire="oskarpotocki.vfe.vikings">VFEV_DoubleFurBed</li>
-									<li>RoyalBed</li>
-									<li>DankPyon_RoyalTudorBed</li>
-									<li MayRequire="mingtuwuxiang.GothicDecorative">MUS_Gothicstyle_DoubleBed</li>
-									<li MayRequire="Ludeon.RimWorld.Biotech">DeathrestCasket</li>
-									<li MayRequire="mingtuwuxiang.GothicDecorative">MUS_Gothicstyle_CoffinBed</li>
-									<li>DankPyon_Bed_RusticDouble_Red</li>
-									<li>DankPyon_Bed_RusticDouble_Blue</li>
-									<li>DankPyon_Bed_RusticDouble_Green</li>
-								</things>
-							</li>
-							<li Class="RoomRequirement_ThingAnyOfCount">
-								<things>
-									<li>EndTable</li>
-									<li>DankPyon_RusticEndTable</li>
-									<li>DankPyon_RoyalEndTable</li>
-									<li MayRequire="mingtuwuxiang.GothicDecorative">MUS_Gothicstyle_BedsideTable</li>
-								</things>
-								<count>1</count>
-							</li>
-							<li Class="RoomRequirement_ThingAnyOfCount">
-								<things>
-									<li>Dresser</li>
-									<li MayRequire="mingtuwuxiang.GothicDecorative">MUS_Gothicstyle_Mirror</li>
-									<li>DankPyon_RusticDresser</li>
+							
+							<li Class="PatchOperationAdd">
+								<xpath>//RoyalTitleDef/bedroomRequirements[li[things and things[li[contains(., "RoyalBed")] and not(li[contains(., "DoubleBed")])]]]//li[contains(., "Dresser")]/things</xpath>
+								<value>
 									<li>DankPyon_RoyalDresser</li>
-									<li MayRequire="mingtuwuxiang.GothicDecorative">MUS_Gothicstyle_Mirror</li>
-								</things>
-								<count>1</count>
-							</li>
-							<li Class="RoomRequirement_ThingAnyOfCount">
-								<things>
-									<li>DankPyon_RusticCloset</li>
-									<li>DankPyon_RusticCloset1x2c</li>
-									<li>DankPyon_RoyalCloset</li>
 									<li MayRequire="mingtuwuxiang.GothicDecorative">MUS_Gothicstyle_Wardrobe</li>
-								</things>
-								<count>2</count>
+								</value>
 							</li>
-							<li Class="RoomRequirement_ThingAnyOfCount">
-								<things>
-									<li>DankPyon_RusticChest</li>
-									<li>DankPyon_RoyalChest</li>
-								</things>
-								<count>1</count>
+							
+							<li Class="PatchOperationAdd">
+								<xpath>//RoyalTitleDef/bedroomRequirements[li[things and things[li[contains(., "RoyalBed")] and not(li[contains(., "DoubleBed")])]]]</xpath>
+								<value>
+									<li Class="RoomRequirement_ThingAnyOfCount">
+										<things>
+											<li>DankPyon_RoyalChest</li>
+										</things>
+										<count>1</count>
+									</li>
+								</value>
 							</li>
-							<li Class="RoomRequirement_ThingAnyOfCount">
-								<things>
-									<li>DankPyon_WoodBurningStove</li>
-									<li>DankPyon_RusticHearth</li>
-								</things>
-								<count>1</count>
+							
+							<li Class="PatchOperationAdd">
+								<xpath>//RoyalTitleDef/bedroomRequirements[li[things and things[li[contains(., "RoyalBed")] and li[contains(., "DoubleBed")]]]]</xpath>
+								<value>
+									<li Class="RoomRequirement_ThingAnyOfCount">
+										<things>
+											<li>DankPyon_RusticChest</li>
+											<li>DankPyon_RoyalChest</li>
+										</things>
+										<count>1</count>
+									</li>
+								</value>
 							</li>
-							<li Class="RoomRequirement_ThingAnyOfCount">
-								<things>
-									<li>DankPyon_RusticNobleChair</li>
-									<li>Armchair</li>
-									<li>DankPyon_RoyalArmchair</li>
-								</things>
-								<count>4</count>
+							
+							<li Class="PatchOperationConditional">
+								<xpath>//RoyalTitleDef/bedroomRequirements/li[@Class="RoomRequirement_ThingCount" and thingDef="Drape"]</xpath>
+								<match Class="PatchOperationReplace">
+								<xpath>//RoyalTitleDef/bedroomRequirements/li[@Class="RoomRequirement_ThingCount" and thingDef="Drape"]</xpath>
+									<value>
+										<li Class="RoomRequirement_ThingAnyOfCount">
+											<things>
+												<li>DankPyon_RusticRoomDivider1x2c</li>
+												<li>DankPyon_RusticThickRoomDivider_Open1x2c</li>
+												<li>DankPyon_RusticThickRoomDivider_Closed1x2c</li>
+											</things>
+											<count>1</count>
+										</li>
+									</value>
+								</match>
+								<nomatch Class="PatchOperationAdd">
+									<xpath>//RoyalTitleDef/bedroomRequirements/li[contains(., "Drape")]/things</xpath>
+									<value>
+										<li>DankPyon_RusticRoomDivider1x2c</li>
+										<li>DankPyon_RusticThickRoomDivider_Open1x2c</li>
+										<li>DankPyon_RusticThickRoomDivider_Closed1x2c</li>
+									</value>
+								</nomatch>
 							</li>
-							<li Class="RoomRequirement_ThingAnyOfCount">
-								<things>
-									<li>DankPyon_RusticTable2x2c</li>
-									<li>DankPyon_ReinforcedRusticTable2x2c</li>
-									<li>DankPyon_RoyalTable2x2c</li>
-								</things>
-								<count>1</count>
+														
+							<li Class="PatchOperationAdd">
+								<xpath>//RoyalTitleDef/bedroomRequirements[li[contains(., "RoyalBed")]]</xpath>
+								<value>
+									<li Class="RoomRequirement_ThingAnyOfCount">
+										<things>
+											<li>DankPyon_WoodBurningStove</li>
+											<li>DankPyon_RusticHearth</li>
+										</things>
+										<count>1</count>
+									</li>
+								</value>
 							</li>
-							<li Class="RoomRequirement_ThingAnyOfCount">
-								<things>
-									<li>DankPyon_RusticBookshelf</li>
-									<li>DankPyon_RoyalBookshelf</li>
-								</things>
-								<count>1</count>
-							</li>
-							<li Class="RoomRequirement_ThingAnyOfCount">
-								<things>
-									<li>DankPyon_CandleStand</li>
-									<!--li>DankPyon_CandleStand_Beeswax</li-->
-									<li>DankPyon_Candles</li>
-									<li>DankPyon_Candles_Beeswax</li>
-								</things>
-								<count>1</count>
-							</li>
-							<li Class="RoomRequirement_ThingAnyOfCount">
-								<things>
-									<li>DankPyon_Building_BowlSilver</li>
-									<li>DankPyon_Building_BowlGold</li>
-					
-									<li>DankPyon_Building_ChaliceSilver</li>
-									<li>DankPyon_Building_ChaliceGold</li>
-					
-									<li>DankPyon_Building_SkullGold</li>
-									<li>DankPyon_Building_SkullEmerald</li>
-									<li>DankPyon_Building_SkullSapphire</li>
-									<li>DankPyon_Building_SkullRuby</li>
-								</things>
-								<count>1</count>
-							</li>
-						</bedroomRequirements>
-					</value>
-				</li>
 
-				<li Class="PatchOperationReplace">
-					<xpath>Defs/RoyalTitleDef[defName="Baron"]/bedroomRequirements</xpath>
-					<value>
-						<bedroomRequirements Inherit="False">
-							<li Class="RoomRequirement_Area">
-								<area>53</area>
+							<li Class="PatchOperationAdd">
+								<xpath>//RoyalTitleDef[defName="Knight"]/bedroomRequirements</xpath>
+								<value>
+									<li Class="RoomRequirement_ThingAnyOfCount">
+										<things>
+											<li>DankPyon_RusticNobleChair</li>
+											<li>Armchair</li>
+											<li>DankPyon_RoyalArmchair</li>
+										</things>
+										<count>2</count>
+									</li>
+									<li Class="RoomRequirement_ThingAnyOfCount">
+										<things>
+											<li>DankPyon_RusticTable2x2c</li>
+											<li>DankPyon_ReinforcedRusticTable2x2c</li>
+											<li>DankPyon_RoyalTable2x2c</li>
+										</things>
+										<count>1</count>
+									</li>
+									<li Class="RoomRequirement_ThingAnyOfCount">
+										<things>
+											<li>DankPyon_Candle</li>
+											<li>DankPyon_Candles</li>
+											<li>DankPyon_Candlebra</li>
+											<li>DankPyon_CandlesStand</li>
+										</things>
+										<count>1</count>
+									</li>
+								</value>
+							</li>		
+							
+							<li Class="PatchOperationAdd">
+								<xpath>//RoyalTitleDef[defName="Praetor"]/bedroomRequirements</xpath>
+								<value>
+									<li Class="RoomRequirement_ThingAnyOfCount">
+										<things>
+											<li>DankPyon_RusticNobleChair</li>
+											<li>Armchair</li>
+											<li>DankPyon_RoyalArmchair</li>
+										</things>
+										<count>4</count>
+									</li>
+									<li Class="RoomRequirement_ThingAnyOfCount">
+										<things>
+											<li>DankPyon_RusticTable2x2c</li>
+											<li>DankPyon_ReinforcedRusticTable2x2c</li>
+											<li>DankPyon_RoyalTable2x2c</li>
+										</things>
+										<count>1</count>
+									</li>
+									<li Class="RoomRequirement_ThingAnyOfCount">
+										<things>
+											<li>DankPyon_RusticBookshelf</li>
+											<li>DankPyon_RoyalBookshelf</li>
+										</things>
+										<count>1</count>
+									</li>
+									<li Class="RoomRequirement_ThingAnyOfCount">
+										<things>
+											<li>DankPyon_Candle</li>
+											<li>DankPyon_Candles</li>
+											<li>DankPyon_Candlebra</li>
+											<li>DankPyon_CandlesStand</li>
+										</things>
+										<count>2</count>
+									</li>
+									<li Class="RoomRequirement_ThingAnyOfCount">
+										<things>
+											<li>DankPyon_Building_BowlSilver</li>
+											<li>DankPyon_Building_BowlGold</li>
+							
+											<li>DankPyon_Building_ChaliceSilver</li>
+											<li>DankPyon_Building_ChaliceGold</li>
+							
+											<li>DankPyon_Building_SkullGold</li>
+											<li>DankPyon_Building_SkullEmerald</li>
+											<li>DankPyon_Building_SkullSapphire</li>
+											<li>DankPyon_Building_SkullRuby</li>
+										</things>
+										<count>1</count>
+									</li>
+								</value>
 							</li>
-							<li Class="RoomRequirement_Impressiveness">
-								<impressiveness>100</impressiveness>
-							</li>
-							<li Class="RoomRequirement_TerrainWithTags">
-								<labelKey>RoomRequirementAllFloored</labelKey>
-								<tags>
-									<li>Floor</li>
-								</tags>
-							</li>
-							<li Class="RoomRequirement_ThingAnyOf">
-								<disablingPrecepts>
-									<li MayRequire="Ludeon.RimWorld.Ideology">SlabBed_Preferred</li>
-								</disablingPrecepts>
-								<things>
-									<li>RoyalBed</li>
-									<li>DankPyon_RoyalTudorBed</li>
-									<li MayRequire="mingtuwuxiang.GothicDecorative">MUS_Gothicstyle_DoubleBed</li>
-									<li MayRequire="Ludeon.RimWorld.Biotech">DeathrestCasket</li>
-									<li MayRequire="mingtuwuxiang.GothicDecorative">MUS_Gothicstyle_CoffinBed</li>
-								</things>
-							</li>
-							<li Class="RoomRequirement_ThingAnyOfCount">
-								<things>
-									<li>DankPyon_RoyalEndTable</li>
-									<li MayRequire="mingtuwuxiang.GothicDecorative">MUS_Gothicstyle_BedsideTable</li>
-								</things>
-								<count>1</count>
-							</li>
-							<li Class="RoomRequirement_ThingAnyOfCount">
-								<things>
-									<li>DankPyon_RoyalDresser</li>
-									<li MayRequire="mingtuwuxiang.GothicDecorative">MUS_Gothicstyle_Mirror</li>
-								</things>
-								<count>1</count>
-							</li>
-							<li Class="RoomRequirement_ThingAnyOfCount">
-								<things>
-									<li>DankPyon_RusticCloset</li>
-									<li>DankPyon_RusticCloset1x2c</li>
-									<li>DankPyon_RoyalCloset</li>
-									<li MayRequire="mingtuwuxiang.GothicDecorative">MUS_Gothicstyle_Wardrobe</li>
-								</things>
-								<count>2</count>
-							</li>
-							<li Class="RoomRequirement_ThingAnyOfCount">
-								<things>
-									<li>DankPyon_RoyalCloset</li>
-									<li MayRequire="mingtuwuxiang.GothicDecorative">MUS_Gothicstyle_Wardrobe</li>
-								</things>
-								<count>1</count>
-							</li>
-							<li Class="RoomRequirement_ThingAnyOfCount">
-								<things>
-									<li>DankPyon_RoyalChest</li>
-								</things>
-								<count>1</count>
-							</li>
-							<li Class="RoomRequirement_ThingAnyOfCount">
-								<things>
-									<li>DankPyon_RusticHearth</li>
-								</things>
-								<count>1</count>
-							</li>
-							<li Class="RoomRequirement_ThingAnyOfCount">
-								<things>
-									<li>Armchair</li>
-									<li>DankPyon_RoyalArmchair</li>
-								</things>
-								<count>4</count>
-							</li>
-							<li Class="RoomRequirement_ThingAnyOfCount">
-								<things>
-									<li>DankPyon_RoyalTable2x2c</li>
-								</things>
-								<count>1</count>
-							</li>
-							<li Class="RoomRequirement_ThingAnyOfCount">
-								<things>
-									<li>DankPyon_RusticBookshelf</li>
-									<li>DankPyon_RoyalBookshelf</li>
-								</things>
-								<count>2</count>
-							</li>
-							<li Class="RoomRequirement_ThingAnyOfCount">
-								<things>
-									<li>DankPyon_RugHyena2x2c</li>
-									<li>DankPyon_RugWolfTimber2x2c</li>
-									<li>DankPyon_RugWolfArctic2x2c</li>
-									<li>DankPyon_RugCougar2x2c</li>
-									<li>DankPyon_RugPanther2x2c</li>
-									<li>DankPyon_RugGrizzlyBear3x3c</li>
-									<li>DankPyon_RugPolarBear3x3c</li>
-									<li>DankPyon_RugRox3x3c</li>
-									<li>DankPyon_RugThrumbo3x3c</li>
-									<li>DankPyon_RugHuman1x2c</li>
-									<li>DankPyon_RugDaer4x4c</li>
-								</things>
-								<count>1</count>
-							</li>
-							<li Class="RoomRequirement_ThingAnyOfCount">
-								<things>
-									<li>DankPyon_CandleStand</li>
-									<!--li>DankPyon_CandleStand_Beeswax</li-->
-									<li>DankPyon_Candles</li>
-									<li>DankPyon_Candles_Beeswax</li>
-								</things>
-								<count>3</count>
-							</li>
-							<li Class="RoomRequirement_ThingAnyOfCount">
-								<things>
-									<li>DankPyon_Building_BowlSilver</li>
-									<li>DankPyon_Building_BowlGold</li>
-					
-									<li>DankPyon_Building_ChaliceSilver</li>
-									<li>DankPyon_Building_ChaliceGold</li>
-					
-									<li>DankPyon_Building_SkullGold</li>
-									<li>DankPyon_Building_SkullEmerald</li>
-									<li>DankPyon_Building_SkullSapphire</li>
-									<li>DankPyon_Building_SkullRuby</li>
-								</things>
-								<count>2</count>
-							</li>
-						</bedroomRequirements>
-					</value>
-				</li>
 
-				<li Class="PatchOperationReplace">
-					<xpath>Defs/RoyalTitleDef[defName="Count"]/bedroomRequirements</xpath>
-					<value>
-						<bedroomRequirements Inherit="False">
-							<li Class="RoomRequirement_Area">
-								<area>62</area>
-							</li>
-							<li Class="RoomRequirement_Impressiveness">
-								<impressiveness>140</impressiveness>
-							</li>
-							<li Class="RoomRequirement_TerrainWithTags">
-								<labelKey>RoomRequirementAllFloored</labelKey>
-								<tags>
-									<li>Floor</li>
-								</tags>
-							</li>
-							<li Class="RoomRequirement_ThingAnyOf">
-								<disablingPrecepts>
-									<li MayRequire="Ludeon.RimWorld.Ideology">SlabBed_Preferred</li>
-								</disablingPrecepts>
-								<things>
-									<li>RoyalBed</li>
-									<li>DankPyon_RoyalTudorBed</li>
-									<li MayRequire="mingtuwuxiang.GothicDecorative">MUS_Gothicstyle_DoubleBed</li>
-									<li MayRequire="Ludeon.RimWorld.Biotech">DeathrestCasket</li>
-									<li MayRequire="mingtuwuxiang.GothicDecorative">MUS_Gothicstyle_CoffinBed</li>
-								</things>
-							</li>
-							<li Class="RoomRequirement_ThingAnyOfCount">
-								<things>
-									<li>DankPyon_RoyalEndTable</li>
-									<li MayRequire="mingtuwuxiang.GothicDecorative">MUS_Gothicstyle_BedsideTable</li>
-								</things>
-								<count>1</count>
-							</li>
-							<li Class="RoomRequirement_ThingAnyOfCount">
-								<things>
-									<li>DankPyon_RoyalDresser</li>
-									<li MayRequire="mingtuwuxiang.GothicDecorative">MUS_Gothicstyle_Mirror</li>
-								</things>
-								<count>2</count>
-							</li>
-							<li Class="RoomRequirement_ThingAnyOfCount">
-								<things>
-									<li>DankPyon_RoyalCloset</li>
-									<li MayRequire="mingtuwuxiang.GothicDecorative">MUS_Gothicstyle_Wardrobe</li>
-								</things>
-								<count>3</count>
-							</li>
-							<li Class="RoomRequirement_ThingAnyOfCount">
-								<things>
-									<li>DankPyon_RoyalChest</li>
-								</things>
-								<count>1</count>
-							</li>
-							<li Class="RoomRequirement_ThingAnyOfCount">
-								<things>
-									<li>DankPyon_RusticHearth</li>
-								</things>
-								<count>1</count>
-							</li>
-							<li Class="RoomRequirement_ThingAnyOfCount">
-								<things>
-									<li>DankPyon_RoyalArmchair</li>
-								</things>
-								<count>4</count>
-							</li>
-							<li Class="RoomRequirement_ThingAnyOfCount">
-								<things>
-									<li>DankPyon_RoyalTable2x2c</li>
-								</things>
-								<count>1</count>
-							</li>
-							<li Class="RoomRequirement_ThingAnyOfCount">
-								<things>
-									<li>DankPyon_RoyalBookshelf</li>
-								</things>
-								<count>2</count>
-							</li>
-							<li Class="RoomRequirement_ThingAnyOfCount">
-								<things>
+							<li Class="PatchOperationAdd">
+								<xpath>//RoyalTitleDef[defName="Baron"]/bedroomRequirements</xpath>
+								<value>
+									<li Class="RoomRequirement_ThingAnyOfCount">
+										<things>
+											<li>Armchair</li>
+											<li>DankPyon_RoyalArmchair</li>
+										</things>
+										<count>4</count>
+									</li>
+									<li Class="RoomRequirement_ThingAnyOfCount">
+										<things>
+											<li>DankPyon_RoyalTable2x2c</li>
+										</things>
+										<count>1</count>
+									</li>
+									<li Class="RoomRequirement_ThingAnyOfCount">
+										<things>
+											<li>DankPyon_RusticBookshelf</li>
+											<li>DankPyon_RoyalBookshelf</li>
+										</things>
+										<count>2</count>
+									</li>
+									<li Class="RoomRequirement_ThingAnyOfCount">
+										<things>
+											<li>DankPyon_Candle</li>
+											<li>DankPyon_Candles</li>
+											<li>DankPyon_Candlebra</li>
+											<li>DankPyon_CandlesStand</li>
+										</things>
+										<count>3</count>
+									</li>
+									<li Class="RoomRequirement_ThingAnyOfCount">
+										<things>
+											<li>DankPyon_Building_BowlSilver</li>
+											<li>DankPyon_Building_BowlGold</li>
+							
+											<li>DankPyon_Building_ChaliceSilver</li>
+											<li>DankPyon_Building_ChaliceGold</li>
+							
+											<li>DankPyon_Building_SkullGold</li>
+											<li>DankPyon_Building_SkullEmerald</li>
+											<li>DankPyon_Building_SkullSapphire</li>
+											<li>DankPyon_Building_SkullRuby</li>
+										</things>
+										<count>2</count>
+									</li>
+									<li Class="RoomRequirement_ThingAnyOfCount">
+										<things>
+											<li>DankPyon_RugHyena2x2c</li>
+											<li>DankPyon_RugWolfTimber2x2c</li>
+											<li>DankPyon_RugWolfArctic2x2c</li>
+											<li>DankPyon_RugCougar2x2c</li>
+											<li>DankPyon_RugPanther2x2c</li>
+											<li>DankPyon_RugGrizzlyBear3x3c</li>
+											<li>DankPyon_RugPolarBear3x3c</li>
+											<li>DankPyon_RugRox3x3c</li>
+											<li>DankPyon_RugThrumbo3x3c</li>
+											<li>DankPyon_RugHuman1x2c</li>
+											<li>DankPyon_RugDaer4x4c</li>
+										</things>
+										<count>1</count>
+									</li>
+								</value>
+							</li>							
 
-									<li>DankPyon_ArmorStatue</li>
-									<li MayRequire="mingtuwuxiang.GothicDecorative">MUS_Gothicstyle_DecorativeArmor</li>
-								</things>
-								<count>1</count>
+							<li Class="PatchOperationAdd">
+								<xpath>//RoyalTitleDef[defName="Count"]/bedroomRequirements</xpath>
+								<value>
+									<li Class="RoomRequirement_ThingAnyOfCount">
+										<things>
+											<li>Armchair</li>
+											<li>DankPyon_RoyalArmchair</li>
+										</things>
+										<count>4</count>
+									</li>							
+									<li Class="RoomRequirement_ThingAnyOfCount">
+										<things>
+											<li>DankPyon_RoyalTable2x2c</li>
+										</things>
+										<count>1</count>
+									</li>
+									<li Class="RoomRequirement_ThingAnyOfCount">
+										<things>
+											<li>DankPyon_RoyalBookshelf</li>
+										</things>
+										<count>2</count>
+									</li>
+									<li Class="RoomRequirement_ThingAnyOfCount">
+										<things>
+
+											<li>DankPyon_ArmorStatue</li>
+											<li MayRequire="mingtuwuxiang.GothicDecorative">MUS_Gothicstyle_DecorativeArmor</li>
+										</things>
+										<count>1</count>
+									</li>
+									<li Class="RoomRequirement_ThingAnyOfCount">
+										<things>
+											<li>DankPyon_Candle</li>
+											<li>DankPyon_Candles</li>
+											<li>DankPyon_Candlebra</li>
+											<li>DankPyon_CandlesStand</li>
+										</things>
+										<count>4</count>
+										<li Class="RoomRequirement_ThingAnyOfCount">
+											<things>
+												<li>DankPyon_Building_BowlSilver</li>
+												<li>DankPyon_Building_BowlGold</li>
+								
+												<li>DankPyon_Building_ChaliceSilver</li>
+												<li>DankPyon_Building_ChaliceGold</li>
+								
+												<li>DankPyon_Building_SkullGold</li>
+												<li>DankPyon_Building_SkullEmerald</li>
+												<li>DankPyon_Building_SkullSapphire</li>
+												<li>DankPyon_Building_SkullRuby</li>
+											</things>
+											<count>3</count>
+										</li>
+										<li Class="RoomRequirement_ThingAnyOfCount">
+											<things>
+												<li>DankPyon_RugHyena2x2c</li>
+												<li>DankPyon_RugWolfTimber2x2c</li>
+												<li>DankPyon_RugWolfArctic2x2c</li>
+												<li>DankPyon_RugCougar2x2c</li>
+												<li>DankPyon_RugPanther2x2c</li>
+												<li>DankPyon_RugGrizzlyBear3x3c</li>
+												<li>DankPyon_RugPolarBear3x3c</li>
+												<li>DankPyon_RugRox3x3c</li>
+												<li>DankPyon_RugThrumbo3x3c</li>
+												<li>DankPyon_RugHuman1x2c</li>
+												<li>DankPyon_RugDaer4x4c</li>
+											</things>
+											<count>3</count>
+										</li>
+										<li Class="RoomRequirement_Thing">
+											<thingDef>DankPyon_RugDaer4x4c</thingDef>
+										</li>
+									</li>
+								</value>
 							</li>
-							<li Class="RoomRequirement_Thing">
-								<thingDef>DankPyon_RugDaer4x4c</thingDef>
+
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/RoyalTitleDef/requiredApparel/li[bodyPartGroupsMatchAny/li="Torso"]/allowedTags</xpath>
+								<value>
+									<li>MedievalPrestigeCombatGear</li>
+								</value>
 							</li>
-							<li Class="RoomRequirement_ThingAnyOfCount">
-								<things>
-									<li>DankPyon_RugHyena2x2c</li>
-									<li>DankPyon_RugWolfTimber2x2c</li>
-									<li>DankPyon_RugWolfArctic2x2c</li>
-									<li>DankPyon_RugCougar2x2c</li>
-									<li>DankPyon_RugPanther2x2c</li>
-									<li>DankPyon_RugGrizzlyBear3x3c</li>
-									<li>DankPyon_RugPolarBear3x3c</li>
-									<li>DankPyon_RugRox3x3c</li>
-									<li>DankPyon_RugThrumbo3x3c</li>
-									<li>DankPyon_RugHuman1x2c</li>
-									<li>DankPyon_RugDaer4x4c</li>
-								</things>
-								<count>3</count>
+
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/RoyalTitleDef/requiredApparel/li[bodyPartGroupsMatchAny/li="FullHead"]/allowedTags</xpath>
+								<value>
+									<li>DankPyon_LordHelmet</li>
+								</value>
 							</li>
-							<li Class="RoomRequirement_ThingAnyOfCount">
-								<things>
-									<li>DankPyon_CandleStand</li>
-									<!--li>DankPyon_CandleStand_Beeswax</li-->
-									<li>DankPyon_Candles</li>
-									<li>DankPyon_Candles_Beeswax</li>
-								</things>
-								<count>4</count>
+
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef/apparel[tags/li="MedievalPrestigeCombatGear"]/tags</xpath>
+								<value>
+									<li>RoyalTier2</li>
+									<li>RoyalTier5</li>
+								</value>
 							</li>
-							<li Class="RoomRequirement_ThingAnyOfCount">
-								<things>
-									<li>DankPyon_Building_BowlSilver</li>
-									<li>DankPyon_Building_BowlGold</li>
-					
-									<li>DankPyon_Building_ChaliceSilver</li>
-									<li>DankPyon_Building_ChaliceGold</li>
-					
-									<li>DankPyon_Building_SkullGold</li>
-									<li>DankPyon_Building_SkullEmerald</li>
-									<li>DankPyon_Building_SkullSapphire</li>
-									<li>DankPyon_Building_SkullRuby</li>
-								</things>
-								<count>3</count>
+
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef/apparel[tags/li="DankPyon_LordHelmet"]/tags</xpath>
+								<value>
+									<li>RoyalTier2</li>
+									<li>RoyalTier5</li>
+								</value>
 							</li>
-						</bedroomRequirements>
-					</value>
+						</operations>
+					</nomatch>
 				</li>
 			</operations>
 		</active>
+		<inactive Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Vanilla Factions Expanded - Empire</li>
+					</mods>
+					<nomatch Class="PatchOperationSequence">
+						<operations>
+							<li Class="PatchOperationAdd">
+								<xpath>//RoyalTitleDef/throneRoomRequirements/li[things/li[text()="Throne"]]/things</xpath>
+								<value>
+									<li>DankPyon_RoyalThrone</li>
+								</value>
+							</li>
+							
+							<li Class="PatchOperationAdd">
+								<xpath>//RoyalTitleDef/throneRoomRequirements/li[contains(., "Brazier")]/things</xpath>
+								<value>
+									<li>DankPyon_CandleStand</li>
+								</value>
+							</li>
+							
+							<li Class="PatchOperationAdd">
+								<xpath>//RoyalTitleDef/throneRoomRequirements/li[contains(., "Column")]/things</xpath>
+								<value>
+									<li>DankPyon_DividerColumn</li>
+									<li>DankPyon_LogColumn</li>
+									<li>EEG_GrandColumn</li>
+								</value>
+							</li>
+
+							<!-- Bedroom --> 
+
+							<li Class="PatchOperationAdd">
+								<xpath>//RoyalTitleDef/bedroomRequirements/li[contains(., "DoubleBed")]/things</xpath>
+								<value>
+									<li>DankPyon_BedFurDouble</li>
+									<li>DankPyon_Bed_RusticDouble_Red</li>
+									<li>DankPyon_Bed_RusticDouble_Green</li>
+									<li>DankPyon_Bed_RusticDouble_Blue</li>
+									<li>DankPyon_RoyalTudorBed</li>
+								</value>
+							</li>
+							
+							<li Class="PatchOperationAdd">
+								<xpath>//RoyalTitleDef/bedroomRequirements[li[things/li[contains(., "DoubleBed")]]]/li[contains(., "EndTable")]/things</xpath>
+								<value>
+									<li>DankPyon_RusticEndTable</li>
+									<li>DankPyon_RoyalEndTable</li>
+								</value>
+							</li>	
+							
+							<li Class="PatchOperationAdd">
+								<xpath>//RoyalTitleDef/bedroomRequirements[li[things and things[li[contains(., "RoyalBed")] and not(li[contains(., "DoubleBed")])]]]//li[contains(., "EndTable")]/things</xpath>
+								<value>
+									<li>DankPyon_RoyalEndTable</li>
+								</value>
+							</li>
+							
+							<li Class="PatchOperationAdd">
+								<xpath>//RoyalTitleDef/bedroomRequirements[li[things/li[contains(., "DoubleBed")]]]/li[contains(., "Dresser")]/things</xpath>
+								<value>
+									<li>DankPyon_RusticDresser</li>
+									<li>DankPyon_RusticCloset</li>
+									<li>DankPyon_RusticCloset1x2c</li>
+									<li>DankPyon_RoyalDresser</li>
+								</value>
+							</li>
+							
+							<li Class="PatchOperationAdd">
+								<xpath>//RoyalTitleDef/bedroomRequirements[li[things and things[li[contains(., "RoyalBed")] and not(li[contains(., "DoubleBed")])]]]//li[contains(., "Dresser")]/things</xpath>
+								<value>
+									<li>DankPyon_RoyalDresser</li>
+								</value>
+							</li>
+							
+							<li Class="PatchOperationConditional">
+								<xpath>//RoyalTitleDef/bedroomRequirements/li[@Class="RoomRequirement_ThingCount" and thingDef="Drape"]</xpath>
+								<match Class="PatchOperationReplace">
+								<xpath>//RoyalTitleDef/bedroomRequirements/li[@Class="RoomRequirement_ThingCount" and thingDef="Drape"]</xpath>
+									<value>
+										<li Class="RoomRequirement_ThingAnyOfCount">
+											<things>
+												<li>DankPyon_RusticRoomDivider1x2c</li>
+												<li>DankPyon_RusticThickRoomDivider_Open1x2c</li>
+												<li>DankPyon_RusticThickRoomDivider_Closed1x2c</li>
+											</things>
+											<count>1</count>
+										</li>
+									</value>
+								</match>
+								<nomatch Class="PatchOperationAdd">
+									<xpath>//RoyalTitleDef/bedroomRequirements/li[contains(., "Drape")]/things</xpath>
+									<value>
+										<li>DankPyon_RusticRoomDivider1x2c</li>
+										<li>DankPyon_RusticThickRoomDivider_Open1x2c</li>
+										<li>DankPyon_RusticThickRoomDivider_Closed1x2c</li>
+									</value>
+								</nomatch>
+							</li>
+							
+							<li Class="PatchOperationAdd">
+								<xpath>//RoyalTitleDef[defName="Baron"]/bedroomRequirements</xpath>
+								<value>
+									<li Class="RoomRequirement_ThingAnyOfCount">
+										<things>
+											<li>Armchair</li>
+											<li>DankPyon_RoyalArmchair</li>
+										</things>
+										<count>4</count>
+									</li>
+									<li Class="RoomRequirement_ThingAnyOfCount">
+										<things>
+											<li>DankPyon_RoyalTable2x2c</li>
+										</things>
+										<count>1</count>
+									</li>
+									<li Class="RoomRequirement_ThingAnyOfCount">
+										<things>
+											<li>DankPyon_RusticBookshelf</li>
+											<li>DankPyon_RoyalBookshelf</li>
+										</things>
+										<count>2</count>
+									</li>
+									<li Class="RoomRequirement_ThingAnyOfCount">
+										<things>
+											<li>DankPyon_Candle</li>
+											<li>DankPyon_Candles</li>
+											<li>DankPyon_Candlebra</li>
+											<li>DankPyon_CandlesStand</li>
+										</things>
+										<count>3</count>
+									</li>
+									<li Class="RoomRequirement_ThingAnyOfCount">
+										<things>
+											<li>DankPyon_Building_BowlSilver</li>
+											<li>DankPyon_Building_BowlGold</li>
+							
+											<li>DankPyon_Building_ChaliceSilver</li>
+											<li>DankPyon_Building_ChaliceGold</li>
+							
+											<li>DankPyon_Building_SkullGold</li>
+											<li>DankPyon_Building_SkullEmerald</li>
+											<li>DankPyon_Building_SkullSapphire</li>
+											<li>DankPyon_Building_SkullRuby</li>
+										</things>
+										<count>2</count>
+									</li>
+									<li Class="RoomRequirement_ThingAnyOfCount">
+										<things>
+											<li>DankPyon_RugHyena2x2c</li>
+											<li>DankPyon_RugWolfTimber2x2c</li>
+											<li>DankPyon_RugWolfArctic2x2c</li>
+											<li>DankPyon_RugCougar2x2c</li>
+											<li>DankPyon_RugPanther2x2c</li>
+											<li>DankPyon_RugGrizzlyBear3x3c</li>
+											<li>DankPyon_RugPolarBear3x3c</li>
+											<li>DankPyon_RugRox3x3c</li>
+											<li>DankPyon_RugThrumbo3x3c</li>
+											<li>DankPyon_RugHuman1x2c</li>
+											<li>DankPyon_RugDaer4x4c</li>
+										</things>
+										<count>1</count>
+									</li>
+								</value>
+							</li>
+
+						</operations>
+					</nomatch>
+				</li>
+			</operations>	
+		</inactive>
 	</Operation>
 </Patch>

@@ -5,7 +5,7 @@
 	<EEGRoyalty_Title>Medieval Overhaul: Royalty</EEGRoyalty_Title>
 
 	<!-- Royalty Title Options -->
-	<EEG_Settings_RoyaltyTitle>Production Chain Options</EEG_Settings_RoyaltyTitle>
-	<EEG_Settings_RoyaltyTitle_Tooltip>Leather Production Chain:</EEG_Settings_RoyaltyTitle_Tooltip>
+	<EEG_Settings_RoyaltyTitle>Include Medieval Overhaul Items in Royal Title Rooms</EEG_Settings_RoyaltyTitle>
+	<EEG_Settings_RoyaltyTitle_Tooltip>When enabled (default), Throne Rooms and Bedrooms require multiple Medieval Overhaul items to be built. This includes, among other things, ruins loot, additional furniture, and rugs.</EEG_Settings_RoyaltyTitle_Tooltip>
 
 </LanguageData>
