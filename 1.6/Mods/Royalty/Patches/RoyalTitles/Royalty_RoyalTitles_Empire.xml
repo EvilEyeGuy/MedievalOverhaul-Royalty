@@ -341,40 +341,40 @@
 											<li>DankPyon_CandlesStand</li>
 										</things>
 										<count>4</count>
-										<li Class="RoomRequirement_ThingAnyOfCount">
-											<things>
-												<li>DankPyon_Building_BowlSilver</li>
-												<li>DankPyon_Building_BowlGold</li>
-								
-												<li>DankPyon_Building_ChaliceSilver</li>
-												<li>DankPyon_Building_ChaliceGold</li>
-								
-												<li>DankPyon_Building_SkullGold</li>
-												<li>DankPyon_Building_SkullEmerald</li>
-												<li>DankPyon_Building_SkullSapphire</li>
-												<li>DankPyon_Building_SkullRuby</li>
-											</things>
-											<count>3</count>
-										</li>
-										<li Class="RoomRequirement_ThingAnyOfCount">
-											<things>
-												<li>DankPyon_RugHyena2x2c</li>
-												<li>DankPyon_RugWolfTimber2x2c</li>
-												<li>DankPyon_RugWolfArctic2x2c</li>
-												<li>DankPyon_RugCougar2x2c</li>
-												<li>DankPyon_RugPanther2x2c</li>
-												<li>DankPyon_RugGrizzlyBear3x3c</li>
-												<li>DankPyon_RugPolarBear3x3c</li>
-												<li>DankPyon_RugRox3x3c</li>
-												<li>DankPyon_RugThrumbo3x3c</li>
-												<li>DankPyon_RugHuman1x2c</li>
-												<li>DankPyon_RugDaer4x4c</li>
-											</things>
-											<count>3</count>
-										</li>
-										<li Class="RoomRequirement_Thing">
-											<thingDef>DankPyon_RugDaer4x4c</thingDef>
-										</li>
+									</li>
+									<li Class="RoomRequirement_ThingAnyOfCount">
+										<things>
+											<li>DankPyon_Building_BowlSilver</li>
+											<li>DankPyon_Building_BowlGold</li>
+							
+											<li>DankPyon_Building_ChaliceSilver</li>
+											<li>DankPyon_Building_ChaliceGold</li>
+							
+											<li>DankPyon_Building_SkullGold</li>
+											<li>DankPyon_Building_SkullEmerald</li>
+											<li>DankPyon_Building_SkullSapphire</li>
+											<li>DankPyon_Building_SkullRuby</li>
+										</things>
+										<count>3</count>
+									</li>
+									<li Class="RoomRequirement_ThingAnyOfCount">
+										<things>
+											<li>DankPyon_RugHyena2x2c</li>
+											<li>DankPyon_RugWolfTimber2x2c</li>
+											<li>DankPyon_RugWolfArctic2x2c</li>
+											<li>DankPyon_RugCougar2x2c</li>
+											<li>DankPyon_RugPanther2x2c</li>
+											<li>DankPyon_RugGrizzlyBear3x3c</li>
+											<li>DankPyon_RugPolarBear3x3c</li>
+											<li>DankPyon_RugRox3x3c</li>
+											<li>DankPyon_RugThrumbo3x3c</li>
+											<li>DankPyon_RugHuman1x2c</li>
+											<li>DankPyon_RugDaer4x4c</li>
+										</things>
+										<count>3</count>
+									</li>
+									<li Class="RoomRequirement_Thing">
+										<thingDef>DankPyon_RugDaer4x4c</thingDef>
 									</li>
 								</value>
 							</li>
@@ -579,7 +579,6 @@
 									</li>
 								</value>
 							</li>
-
 						</operations>
 					</nomatch>
 				</li>
