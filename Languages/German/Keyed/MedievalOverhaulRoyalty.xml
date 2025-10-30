@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <EEG_RoyaltyTitle_Label>Königliche Titel aktivieren</EEG_RoyaltyTitle_Label>
+  <EEG_RoyaltyTitle_Desc>Wenn aktiviert, sind königliche Titel im Spiel verfügbar.</EEG_RoyaltyTitle_Desc>
+
+  <EEG_AnotherFeature_Label>Eine weitere Funktion aktivieren</EEG_AnotherFeature_Label>
+  <EEG_AnotherFeature_Desc>Diese Funktion verändert die Spielmechanik auf besondere Weise.</EEG_AnotherFeature_Desc>
+</LanguageData>
