@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
-  <EEG_RoyaltyTitle_Label>Königliche Titel aktivieren</EEG_RoyaltyTitle_Label>
-  <EEG_RoyaltyTitle_Desc>Wenn aktiviert, sind königliche Titel im Spiel verfügbar.</EEG_RoyaltyTitle_Desc>
+  <!-- Königliche Titel Setting -->
+  <EEG_RoyaltyTitle_Label>Königliche Titel - Medieval Overhaul Möbel</EEG_RoyaltyTitle_Label>
+  <EEG_RoyaltyTitle_Desc>Wenn AKTIV: Ersetze alle Möbelanforderungen der königlichen Titel durch Medieval Overhaul Items. Wenn INAKTIV: Füge Medieval Items als ergänzende Optionen zu Vanilla-Anforderungen hinzu.</EEG_RoyaltyTitle_Desc>
 
-  <EEG_AnotherFeature_Label>Eine weitere Funktion aktivieren</EEG_AnotherFeature_Label>
-  <EEG_AnotherFeature_Desc>Diese Funktion verändert die Spielmechanik auf besondere Weise.</EEG_AnotherFeature_Desc>
+  <!-- Empire Trader Setting -->
+  <EEG_RoyaltyTrader_Label>Empire Händler - Medieval Overhaul Bestand</EEG_RoyaltyTrader_Label>
+  <EEG_RoyaltyTrader_Desc>Wenn AKTIV: Ersetze Empire Trader Bestände durch Medieval Overhaul Waren. Wenn INAKTIV: Füge Medieval Items zu Vanilla Trader Optionen hinzu.</EEG_RoyaltyTrader_Desc>
 </LanguageData>

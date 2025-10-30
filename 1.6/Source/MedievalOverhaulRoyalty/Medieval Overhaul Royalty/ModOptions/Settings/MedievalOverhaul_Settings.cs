@@ -8,11 +8,13 @@ namespace EEGRoyalty
     {
         // These settings are used with the patch operation
         public bool EEG_RoyaltyTitle = true;
+        public bool EEG_RoyaltyTrader = true;
 
         // All fields need to be added to here so that they are properly saved
         public override void ExposeData()
         {
             Scribe_Values.Look(ref EEG_RoyaltyTitle, "EEG_RoyaltyTitle", true);
+            Scribe_Values.Look(ref EEG_RoyaltyTrader, "EEG_RoyaltyTrader", true);
             base.ExposeData();
         }
         private Vector2 scrollPosition;
@@ -26,6 +28,8 @@ namespace EEGRoyalty
             options.Begin(rect);
             options.Gap();
             options.CheckboxLabeled("EEG_Settings_RoyaltyTitle".Translate(), ref EEG_RoyaltyTitle, "EEG_Settings_RoyaltyTitle_Tooltip".Translate());
+            options.Gap();
+            options.CheckboxLabeled("EEG_Settings_RoyaltyTrader".Translate(), ref EEG_RoyaltyTrader, "EEG_Settings_RoyaltyTrader_Tooltip".Translate());
             options.Gap();
             options.GapLine();
             options.Gap();
@@ -42,6 +46,7 @@ namespace EEGRoyalty
         public void ResetSettingsToDefault()
         {
             EEG_RoyaltyTitle = true;
+            EEG_RoyaltyTrader = true;
         }
 
     }

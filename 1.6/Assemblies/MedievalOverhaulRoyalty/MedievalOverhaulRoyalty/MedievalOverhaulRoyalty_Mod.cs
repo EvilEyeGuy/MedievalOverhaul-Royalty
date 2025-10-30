@@ -18,6 +18,8 @@ namespace MedievalOverhaulRoyalty
             list.Begin(inRect);
 
             DrawToggleSetting(list, "EEG_RoyaltyTitle");
+            list.GapLine();
+            DrawToggleSetting(list, "EEG_RoyaltyTrader");
 
             list.End();
         }
