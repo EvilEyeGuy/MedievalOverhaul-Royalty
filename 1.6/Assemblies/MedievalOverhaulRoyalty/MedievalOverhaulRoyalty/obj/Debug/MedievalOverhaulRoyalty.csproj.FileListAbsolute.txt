@@ -1,5 +1,3 @@
-C:\Steam\steamapps\common\RimWorld\Mods\MedievalOverhaul-Royalty\1.6\Assemblies\MedievalOverhaulRoyalty\MedievalOverhaulRoyalty\obj\Debug\MedievalOverhaulRoyalty.csproj.AssemblyReference.cache
-C:\Steam\steamapps\common\RimWorld\Mods\MedievalOverhaul-Royalty\1.6\Assemblies\MedievalOverhaulRoyalty\MedievalOverhaulRoyalty\obj\Debug\MedievalOverhaulRoyalty.csproj.CoreCompileInputs.cache
 C:\Steam\steamapps\common\RimWorld\Mods\MedievalOverhaul-Royalty\1.6\Assemblies\MedievalOverhaulRoyalty\MedievalOverhaulRoyalty\bin\Debug\MedievalOverhaulRoyalty.dll
 C:\Steam\steamapps\common\RimWorld\Mods\MedievalOverhaul-Royalty\1.6\Assemblies\MedievalOverhaulRoyalty\MedievalOverhaulRoyalty\bin\Debug\MedievalOverhaulRoyalty.pdb
 C:\Steam\steamapps\common\RimWorld\Mods\MedievalOverhaul-Royalty\1.6\Assemblies\MedievalOverhaulRoyalty\MedievalOverhaulRoyalty\bin\Debug\0Harmony.dll
@@ -78,6 +76,8 @@ C:\Steam\steamapps\common\RimWorld\Mods\MedievalOverhaul-Royalty\1.6\Assemblies\
 C:\Steam\steamapps\common\RimWorld\Mods\MedievalOverhaul-Royalty\1.6\Assemblies\MedievalOverhaulRoyalty\MedievalOverhaulRoyalty\bin\Debug\UnityEngine.InputModule.dll
 C:\Steam\steamapps\common\RimWorld\Mods\MedievalOverhaul-Royalty\1.6\Assemblies\MedievalOverhaulRoyalty\MedievalOverhaulRoyalty\bin\Debug\Unity.Collections.LowLevel.ILSupport.dll
 C:\Steam\steamapps\common\RimWorld\Mods\MedievalOverhaul-Royalty\1.6\Assemblies\MedievalOverhaulRoyalty\MedievalOverhaulRoyalty\bin\Debug\Unity.Burst.Unsafe.dll
+C:\Steam\steamapps\common\RimWorld\Mods\MedievalOverhaul-Royalty\1.6\Assemblies\MedievalOverhaulRoyalty\MedievalOverhaulRoyalty\obj\Debug\MedievalOverhaulRoyalty.csproj.AssemblyReference.cache
+C:\Steam\steamapps\common\RimWorld\Mods\MedievalOverhaul-Royalty\1.6\Assemblies\MedievalOverhaulRoyalty\MedievalOverhaulRoyalty\obj\Debug\MedievalOverhaulRoyalty.csproj.CoreCompileInputs.cache
 C:\Steam\steamapps\common\RimWorld\Mods\MedievalOverhaul-Royalty\1.6\Assemblies\MedievalOverhaulRoyalty\MedievalOverhaulRoyalty\obj\Debug\MedievalOverhaulRoyalty.csproj.CopyComplete
 C:\Steam\steamapps\common\RimWorld\Mods\MedievalOverhaul-Royalty\1.6\Assemblies\MedievalOverhaulRoyalty\MedievalOverhaulRoyalty\obj\Debug\MedievalOverhaulRoyalty.dll
 C:\Steam\steamapps\common\RimWorld\Mods\MedievalOverhaul-Royalty\1.6\Assemblies\MedievalOverhaulRoyalty\MedievalOverhaulRoyalty\obj\Debug\MedievalOverhaulRoyalty.pdb

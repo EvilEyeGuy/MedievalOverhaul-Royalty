@@ -37,6 +37,11 @@
     <Compile Include="MedievalOverhaulRoyalty_Mod.cs" />
     <Compile Include="MedievalOverhaulRoyalty_ModSettings.cs" />
     <Compile Include="PatchOperation_ToggleSettings.cs" />
+    <Compile Include="MedievalOverhaulRoyalty_NewsLetter.cs" />
+    <Compile Include="Bootstrap.cs" />
+    <Compile Include="MOR_Save.cs" />
+    <Compile Include="MOR_ShowLetter.cs" />
+    <Compile Include="MOR_Harmony.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

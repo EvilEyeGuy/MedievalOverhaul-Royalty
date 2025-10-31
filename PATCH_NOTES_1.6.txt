@@ -1,0 +1,82 @@
+[size=14][b][u]Medieval Overhaul Royalty - Version 1.6 Patch Notes[/u][/b][/size]
+
+[size=12][b]New Features[/b][/size]
+
+[b]Mod Options Menu[/b]
+Medieval Overhaul Royalty now features a dedicated Mod Options menu! Access it through:
+[i]Options > Mod Options > Medieval Overhaul Royalty[/i]
+
+The menu includes two toggleable patches that let you customize how Medieval Overhaul integrates with the Royalty DLC:
+
+[size=12][b]Configuration Options[/b][/size]
+
+[b]1. Medieval Overhaul - Furniture Integration[/b]
+[i]Location: Options > Mod Options > Medieval Overhaul Royalty[/i]
+
+Replaces royal title furniture requirements (bedroom & throneroom) with Medieval Overhaul items. 
+
+When ACTIVE:
+• Comprehensive medieval integration for all royal titles
+
+When INACTIVE:
+• Medieval items added as supplementary options to vanilla requirements
+
+[b]2. Medieval Overhaul - Empire Trader Integration[/b]
+[i]Location: Options > Mod Options > Medieval Overhaul Royalty[/i]
+
+Controls how Medieval Overhaul items appear in Empire trader stocks.
+
+When ACTIVE:
+• Replace Empire trader stocks entirely with Medieval Overhaul goods
+• No orbital trader (removed)
+
+When INACTIVE:
+• Medieval goods added to vanilla Empire trader inventory
+• Both medieval and vanilla items available for trade
+• Standard orbital trader functionality maintained
+• Broader trade variety with mixed medieval and vanilla goods
+
+[size=12][b]Content Changes[/b][/size]
+
+[b]Royal Title Requirements (Furniture Integration Mode)[/b]
+
+[b]Knight[/b]
+Required Furniture:
+• 2× Rustic Noble Chair, Armchair, or Royal Armchair
+• 1× Rustic Table 2x2, Reinforced Rustic Table 2x2, or Royal Table 2x2
+• 1× Candle, Candles, Candelabra, or Candlestick Stand
+
+[b]Praetor[/b]
+Required Furniture:
+• 4× Rustic Noble Chair, Armchair, or Royal Armchair
+• 1× Rustic Table 2x2, Reinforced Rustic Table 2x2, or Royal Table 2x2
+• 1× Rustic Bookshelf or Royal Bookshelf
+• 2× Candle, Candles, Candelabra, or Candlestick Stand
+• 1× Silver Bowl, Gold Bowl, Silver Chalice, Gold Chalice, Gold Skull, Emerald Skull, Sapphire Skull, or Ruby Skull
+
+[b]Baron[/b]
+Required Furniture:
+• 4× Armchair or Royal Armchair
+• 1× Royal Table 2x2
+• 2× Rustic Bookshelf or Royal Bookshelf
+• 3× Candle, Candles, Candelabra, or Candlestick Stand
+• 2× Silver Bowl, Gold Bowl, Silver Chalice, Gold Chalice, Gold Skull, Emerald Skull, Sapphire Skull, or Ruby Skull
+• 1× Animal Rug (Hyena, Wolf Timber, Wolf Arctic, Cougar, Panther, Grizzly Bear, Polar Bear, Rox, Thrumbo, Human, or Daer)
+
+[b]Count[/b]
+Required Furniture:
+• 4× Armchair or Royal Armchair
+• 1× Royal Table 2x2
+• 1× Rustic Bookshelf or Royal Bookshelf
+• 1× Armor Statue
+• 4× Candle, Candles, Candelabra, or Candlestick Stand
+• 3× Silver Bowl, Gold Bowl, Silver Chalice, Gold Chalice, Gold Skull, Emerald Skull, Sapphire Skull, or Ruby Skull
+• 3× Animal Rugs (various types)
+• 1× Daer Rug (2x4 or larger - mandatory)
+
+[b]Throne Room & Common Additions[/b]
+All royal titles now have access to:
+• Royal Throne (alternative to vanilla Throne)
+• Medieval Candlestick Stands (Brazier alternative)
+• Medieval Columns (Column alternative)
+• Medieval Furniture - Beds, End Tables, Dressers, Chests, and Room Dividers
