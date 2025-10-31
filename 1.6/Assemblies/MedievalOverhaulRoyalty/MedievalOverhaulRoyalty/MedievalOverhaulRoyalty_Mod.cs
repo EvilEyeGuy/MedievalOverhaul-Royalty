@@ -45,9 +45,6 @@ namespace MedievalOverhaulRoyalty
                 MedievalOverhaulRoyalty_ModSettings.enabledSettings.Add(key);
             else
                 MedievalOverhaulRoyalty_ModSettings.enabledSettings.Remove(key);
-
-            // debug: schreibt in output_log.txt, hilft zu sehen, was Translate() liefert
-            Log.Message($"[MOR] {key}: label='{label}' desc='{desc}'");
         }
 
         public override string SettingsCategory()

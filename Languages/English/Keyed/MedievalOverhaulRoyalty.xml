@@ -8,15 +8,15 @@
   <EEG_RoyaltyTrader_Label>Medieval Overhaul - Empire Trader Integration</EEG_RoyaltyTrader_Label>
   <EEG_RoyaltyTrader_Desc>When ACTIVE: Replace Empire trader stocks with Medieval Overhaul goods (no orbital trader; guarded caravan). When INACTIVE: Add Medieval goods to vanilla Empire traders.</EEG_RoyaltyTrader_Desc>
 
-  <!-- Legacy/Display -->
-  <EEGRoyalty_Title>Medieval Overhaul - Royalty</EEGRoyalty_Title>
-  
   <!-- Settings for Source/Compiled implementations -->
   <EEG_Settings_RoyaltyTitle>Medieval Overhaul - Furniture Integration</EEG_Settings_RoyaltyTitle>
   <EEG_Settings_RoyaltyTitle_Tooltip>Replaces royal title furniture requirements with Medieval Overhaul items. When ACTIVE: comprehensive medieval integration for all titles. When INACTIVE: medieval items added as supplementary options to vanilla requirements.</EEG_Settings_RoyaltyTitle_Tooltip>
   
   <EEG_Settings_RoyaltyTrader>Medieval Overhaul - Empire Trader Integration</EEG_Settings_RoyaltyTrader>
   <EEG_Settings_RoyaltyTrader_Tooltip>When ACTIVE: Replace Empire trader stocks with Medieval Overhaul goods (no orbital trader; guarded caravan). When INACTIVE: Add Medieval goods to vanilla Empire traders.</EEG_Settings_RoyaltyTrader_Tooltip>
+
+  <!-- Legacy/Display -->
+  <EEGRoyalty_Title>Medieval Overhaul - Royalty</EEGRoyalty_Title>
 </LanguageData>
 
 
