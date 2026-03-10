@@ -7,4 +7,8 @@
   <!-- Empire Trader Setting -->
   <EEG_RoyaltyTrader_Label>Empire Händler - Medieval Overhaul Bestand</EEG_RoyaltyTrader_Label>
   <EEG_RoyaltyTrader_Desc>Wenn AKTIV: Ersetze Empire Trader Bestände durch Medieval Overhaul Waren. Wenn INAKTIV: Füge Medieval Items zu Vanilla Trader Optionen hinzu.</EEG_RoyaltyTrader_Desc>
+
+  <!-- Royal Permits Setting -->
+  <EEG_RoyalPermits_Label>Königliche Erlaubnisse - Medieval Overhaul Integration</EEG_RoyalPermits_Label>
+  <EEG_RoyalPermits_Desc>Durch das Aktivieren dieser Einstellung wird der Patch zur Integration der königlichen Erlaubnisse rückgängig gemacht.</EEG_RoyalPermits_Desc>
 </LanguageData>

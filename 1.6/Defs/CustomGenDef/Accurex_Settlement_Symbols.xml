@@ -637,9 +637,16 @@
 
 <!-- P R O D U C T I O N -->
 
-<KCSG.SymbolDef>
+<!--KCSG.SymbolDef>
   <defName>DankPyon_TailorsBench_WoodLog_East</defName>
   <thing>DankPyon_TailorsBench</thing>
+  <stuff>WoodLog</stuff>
+  <rotation>East</rotation>
+</KCSG.SymbolDef-->
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_TailorsBench_WoodLog_East</defName>
+  <thing>TailorsBench</thing>
   <stuff>WoodLog</stuff>
   <rotation>East</rotation>
 </KCSG.SymbolDef>

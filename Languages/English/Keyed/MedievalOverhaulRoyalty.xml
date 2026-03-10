@@ -7,6 +7,10 @@
   <!-- Royal Traders Setting -->
   <EEG_RoyaltyTrader_Label>Medieval Overhaul - Empire Trader Integration</EEG_RoyaltyTrader_Label>
   <EEG_RoyaltyTrader_Desc>When ACTIVE: Replace Empire trader stocks with Medieval Overhaul goods (no orbital trader; guarded caravan). When INACTIVE: Add Medieval goods to vanilla Empire traders.</EEG_RoyaltyTrader_Desc>
+
+  <!-- Royal Permits Setting -->
+  <EEG_RoyalPermits_Label>Medieval Overhaul - Royal Permits Integration</EEG_RoyalPermits_Label>
+  <EEG_RoyalPermits_Desc>When ACTIVE: Disables Medieval Overhaul permit integration. When INACTIVE (default): Customizes royal permits with medieval themes, labels, descriptions, and pawn types.</EEG_RoyalPermits_Desc>
 </LanguageData>
 
 
