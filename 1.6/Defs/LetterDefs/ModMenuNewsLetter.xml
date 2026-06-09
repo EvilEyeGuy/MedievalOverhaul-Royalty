@@ -1,8 +1,0 @@
-<Defs>
-  <LetterDef ParentName="ThreatBig">
-    <defName>MOR_ModMenuNewsLetter</defName>
-    <label>MO:R</label>
-    <color>(1, 0.84, 0)</color>
-    <arriveSound>LetterArrive</arriveSound>
-  </LetterDef>
-</Defs>
