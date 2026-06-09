@@ -115,29 +115,79 @@
 								</value>
 							</li>
 							
-							<li Class="PatchOperationConditional">
-								<xpath>//RoyalTitleDef/bedroomRequirements/li[@Class="RoomRequirement_ThingCount" and thingDef="Drape"]</xpath>
-								<match Class="PatchOperationReplace">
-								<xpath>//RoyalTitleDef/bedroomRequirements/li[@Class="RoomRequirement_ThingCount" and thingDef="Drape"]</xpath>
-									<value>
-										<li Class="RoomRequirement_ThingAnyOfCount">
-											<things>
-												<li>DankPyon_RusticRoomDivider1x2c</li>
-												<li>DankPyon_RusticThickRoomDivider_Open1x2c</li>
-												<li>DankPyon_RusticThickRoomDivider_Closed1x2c</li>
-											</things>
-											<count>1</count>
-										</li>
-									</value>
-								</match>
-								<nomatch Class="PatchOperationAdd">
-									<xpath>//RoyalTitleDef/bedroomRequirements/li[contains(., "Drape")]/things</xpath>
-									<value>
-										<li>DankPyon_RusticRoomDivider1x2c</li>
-										<li>DankPyon_RusticThickRoomDivider_Open1x2c</li>
-										<li>DankPyon_RusticThickRoomDivider_Closed1x2c</li>
-									</value>
-								</nomatch>
+							<!-- Drape -> medieval room dividers as ALTERNATIVE, preserving each rank's drape count
+							     (VFEE escalates Drape 1->2->4->6; the old blanket replace flattened all to 1) -->
+							<li Class="PatchOperationSequence">
+								<operations>
+									<li Class="PatchOperationConditional">
+										<xpath>//RoyalTitleDef/bedroomRequirements/li[@Class="RoomRequirement_ThingCount" and thingDef="Drape" and count=1]</xpath>
+										<match Class="PatchOperationReplace">
+											<xpath>//RoyalTitleDef/bedroomRequirements/li[@Class="RoomRequirement_ThingCount" and thingDef="Drape" and count=1]</xpath>
+											<value>
+												<li Class="RoomRequirement_ThingAnyOfCount">
+													<things>
+														<li>Drape</li>
+														<li>DankPyon_RusticRoomDivider1x2c</li>
+														<li>DankPyon_RusticThickRoomDivider_Open1x2c</li>
+														<li>DankPyon_RusticThickRoomDivider_Closed1x2c</li>
+													</things>
+													<count>1</count>
+												</li>
+											</value>
+										</match>
+									</li>
+									<li Class="PatchOperationConditional">
+										<xpath>//RoyalTitleDef/bedroomRequirements/li[@Class="RoomRequirement_ThingCount" and thingDef="Drape" and count=2]</xpath>
+										<match Class="PatchOperationReplace">
+											<xpath>//RoyalTitleDef/bedroomRequirements/li[@Class="RoomRequirement_ThingCount" and thingDef="Drape" and count=2]</xpath>
+											<value>
+												<li Class="RoomRequirement_ThingAnyOfCount">
+													<things>
+														<li>Drape</li>
+														<li>DankPyon_RusticRoomDivider1x2c</li>
+														<li>DankPyon_RusticThickRoomDivider_Open1x2c</li>
+														<li>DankPyon_RusticThickRoomDivider_Closed1x2c</li>
+													</things>
+													<count>2</count>
+												</li>
+											</value>
+										</match>
+									</li>
+									<li Class="PatchOperationConditional">
+										<xpath>//RoyalTitleDef/bedroomRequirements/li[@Class="RoomRequirement_ThingCount" and thingDef="Drape" and count=4]</xpath>
+										<match Class="PatchOperationReplace">
+											<xpath>//RoyalTitleDef/bedroomRequirements/li[@Class="RoomRequirement_ThingCount" and thingDef="Drape" and count=4]</xpath>
+											<value>
+												<li Class="RoomRequirement_ThingAnyOfCount">
+													<things>
+														<li>Drape</li>
+														<li>DankPyon_RusticRoomDivider1x2c</li>
+														<li>DankPyon_RusticThickRoomDivider_Open1x2c</li>
+														<li>DankPyon_RusticThickRoomDivider_Closed1x2c</li>
+													</things>
+													<count>4</count>
+												</li>
+											</value>
+										</match>
+									</li>
+									<li Class="PatchOperationConditional">
+										<xpath>//RoyalTitleDef/bedroomRequirements/li[@Class="RoomRequirement_ThingCount" and thingDef="Drape" and count=6]</xpath>
+										<match Class="PatchOperationReplace">
+											<xpath>//RoyalTitleDef/bedroomRequirements/li[@Class="RoomRequirement_ThingCount" and thingDef="Drape" and count=6]</xpath>
+											<value>
+												<li Class="RoomRequirement_ThingAnyOfCount">
+													<things>
+														<li>Drape</li>
+														<li>DankPyon_RusticRoomDivider1x2c</li>
+														<li>DankPyon_RusticThickRoomDivider_Open1x2c</li>
+														<li>DankPyon_RusticThickRoomDivider_Closed1x2c</li>
+													</things>
+													<count>6</count>
+												</li>
+											</value>
+										</match>
+									</li>
+								</operations>
 							</li>
 														
 							<li Class="PatchOperationAdd">
@@ -529,29 +579,79 @@
 								</value>
 							</li>
 							
-							<li Class="PatchOperationConditional">
-								<xpath>//RoyalTitleDef/bedroomRequirements/li[@Class="RoomRequirement_ThingCount" and thingDef="Drape"]</xpath>
-								<match Class="PatchOperationReplace">
-								<xpath>//RoyalTitleDef/bedroomRequirements/li[@Class="RoomRequirement_ThingCount" and thingDef="Drape"]</xpath>
-									<value>
-										<li Class="RoomRequirement_ThingAnyOfCount">
-											<things>
-												<li>DankPyon_RusticRoomDivider1x2c</li>
-												<li>DankPyon_RusticThickRoomDivider_Open1x2c</li>
-												<li>DankPyon_RusticThickRoomDivider_Closed1x2c</li>
-											</things>
-											<count>1</count>
-										</li>
-									</value>
-								</match>
-								<nomatch Class="PatchOperationAdd">
-									<xpath>//RoyalTitleDef/bedroomRequirements/li[contains(., "Drape")]/things</xpath>
-									<value>
-										<li>DankPyon_RusticRoomDivider1x2c</li>
-										<li>DankPyon_RusticThickRoomDivider_Open1x2c</li>
-										<li>DankPyon_RusticThickRoomDivider_Closed1x2c</li>
-									</value>
-								</nomatch>
+							<!-- Drape -> medieval room dividers as ALTERNATIVE, preserving each rank's drape count
+							     (VFEE escalates Drape 1->2->4->6; the old blanket replace flattened all to 1) -->
+							<li Class="PatchOperationSequence">
+								<operations>
+									<li Class="PatchOperationConditional">
+										<xpath>//RoyalTitleDef/bedroomRequirements/li[@Class="RoomRequirement_ThingCount" and thingDef="Drape" and count=1]</xpath>
+										<match Class="PatchOperationReplace">
+											<xpath>//RoyalTitleDef/bedroomRequirements/li[@Class="RoomRequirement_ThingCount" and thingDef="Drape" and count=1]</xpath>
+											<value>
+												<li Class="RoomRequirement_ThingAnyOfCount">
+													<things>
+														<li>Drape</li>
+														<li>DankPyon_RusticRoomDivider1x2c</li>
+														<li>DankPyon_RusticThickRoomDivider_Open1x2c</li>
+														<li>DankPyon_RusticThickRoomDivider_Closed1x2c</li>
+													</things>
+													<count>1</count>
+												</li>
+											</value>
+										</match>
+									</li>
+									<li Class="PatchOperationConditional">
+										<xpath>//RoyalTitleDef/bedroomRequirements/li[@Class="RoomRequirement_ThingCount" and thingDef="Drape" and count=2]</xpath>
+										<match Class="PatchOperationReplace">
+											<xpath>//RoyalTitleDef/bedroomRequirements/li[@Class="RoomRequirement_ThingCount" and thingDef="Drape" and count=2]</xpath>
+											<value>
+												<li Class="RoomRequirement_ThingAnyOfCount">
+													<things>
+														<li>Drape</li>
+														<li>DankPyon_RusticRoomDivider1x2c</li>
+														<li>DankPyon_RusticThickRoomDivider_Open1x2c</li>
+														<li>DankPyon_RusticThickRoomDivider_Closed1x2c</li>
+													</things>
+													<count>2</count>
+												</li>
+											</value>
+										</match>
+									</li>
+									<li Class="PatchOperationConditional">
+										<xpath>//RoyalTitleDef/bedroomRequirements/li[@Class="RoomRequirement_ThingCount" and thingDef="Drape" and count=4]</xpath>
+										<match Class="PatchOperationReplace">
+											<xpath>//RoyalTitleDef/bedroomRequirements/li[@Class="RoomRequirement_ThingCount" and thingDef="Drape" and count=4]</xpath>
+											<value>
+												<li Class="RoomRequirement_ThingAnyOfCount">
+													<things>
+														<li>Drape</li>
+														<li>DankPyon_RusticRoomDivider1x2c</li>
+														<li>DankPyon_RusticThickRoomDivider_Open1x2c</li>
+														<li>DankPyon_RusticThickRoomDivider_Closed1x2c</li>
+													</things>
+													<count>4</count>
+												</li>
+											</value>
+										</match>
+									</li>
+									<li Class="PatchOperationConditional">
+										<xpath>//RoyalTitleDef/bedroomRequirements/li[@Class="RoomRequirement_ThingCount" and thingDef="Drape" and count=6]</xpath>
+										<match Class="PatchOperationReplace">
+											<xpath>//RoyalTitleDef/bedroomRequirements/li[@Class="RoomRequirement_ThingCount" and thingDef="Drape" and count=6]</xpath>
+											<value>
+												<li Class="RoomRequirement_ThingAnyOfCount">
+													<things>
+														<li>Drape</li>
+														<li>DankPyon_RusticRoomDivider1x2c</li>
+														<li>DankPyon_RusticThickRoomDivider_Open1x2c</li>
+														<li>DankPyon_RusticThickRoomDivider_Closed1x2c</li>
+													</things>
+													<count>6</count>
+												</li>
+											</value>
+										</match>
+									</li>
+								</operations>
 							</li>
 														
 							<li Class="PatchOperationAdd">
@@ -563,6 +663,97 @@
 											<li>DankPyon_RusticHearth</li>
 										</things>
 										<count>1</count>
+									</li>
+								</value>
+							</li>
+
+							<!-- ===== VFEE higher-rank parity: medieval alternatives for VFEE-only items =====
+							     These rows only exist on the higher Empire titles (Archcount .. HighStellarch,
+							     incl. the 1.6 additions Magister & Despot) and on the abstract *Base titles they
+							     inherit from, so keying on the VFEE defName covers every higher rank at once. -->
+
+							<!-- VFEE_LargeRoyalRug (Archduke+) -> medieval royal rug alternative -->
+							<li Class="PatchOperationAdd">
+								<xpath>//RoyalTitleDef/bedroomRequirements/li[contains(., "VFEE_LargeRoyalRug")]/things</xpath>
+								<value>
+									<li>DankPyon_RugRoyal_LongLys2x4c</li>
+									<li>DankPyon_RugRoyal_LongLys3x3c</li>
+								</value>
+							</li>
+
+							<!-- VFEE_GrandRoyalRug (Consul+) -> medieval grand royal rug alternative -->
+							<li Class="PatchOperationAdd">
+								<xpath>//RoyalTitleDef/bedroomRequirements/li[contains(., "VFEE_GrandRoyalRug")]/things</xpath>
+								<value>
+									<li>DankPyon_RugRoyal_GrandCross3x3c</li>
+								</value>
+							</li>
+
+							<!-- Seat_RoyalArmchair (Despot+) -> medieval armchair alternatives -->
+							<li Class="PatchOperationAdd">
+								<xpath>//RoyalTitleDef/bedroomRequirements/li[contains(., "Seat_RoyalArmchair")]/things</xpath>
+								<value>
+									<li>DankPyon_RoyalArmchair</li>
+									<li>DankPyon_RusticNobleChair</li>
+								</value>
+							</li>
+
+							<!-- VFEE_Candelabra (Despot+, count 2) -> allow medieval candelabra, keep count -->
+							<li Class="PatchOperationReplace">
+								<xpath>//RoyalTitleDef/bedroomRequirements/li[@Class="RoomRequirement_ThingCount" and thingDef="VFEE_Candelabra"]</xpath>
+								<value>
+									<li Class="RoomRequirement_ThingAnyOfCount">
+										<things>
+											<li>VFEE_Candelabra</li>
+											<li>DankPyon_Candelabra</li>
+											<li>DankPyon_CandleStand</li>
+										</things>
+										<count>2</count>
+									</li>
+								</value>
+							</li>
+
+							<!-- VFEE_RoyalSculptureSmall (Despot count 1) -> allow medieval sculptures, keep count -->
+							<li Class="PatchOperationReplace">
+								<xpath>//RoyalTitleDef/bedroomRequirements/li[@Class="RoomRequirement_ThingCount" and thingDef="VFEE_RoyalSculptureSmall" and count=1]</xpath>
+								<value>
+									<li Class="RoomRequirement_ThingAnyOfCount">
+										<things>
+											<li>VFEE_RoyalSculptureSmall</li>
+											<li>DankPyon_Bust</li>
+											<li>DankPyon_ArchonSculpture2x2c</li>
+											<li>DankPyon_ArmorStatue</li>
+										</things>
+										<count>1</count>
+									</li>
+								</value>
+							</li>
+
+							<!-- VFEE_RoyalSculptureSmall (Stellarch+ count 2) -> allow medieval sculptures, keep count -->
+							<li Class="PatchOperationReplace">
+								<xpath>//RoyalTitleDef/bedroomRequirements/li[@Class="RoomRequirement_ThingCount" and thingDef="VFEE_RoyalSculptureSmall" and count=2]</xpath>
+								<value>
+									<li Class="RoomRequirement_ThingAnyOfCount">
+										<things>
+											<li>VFEE_RoyalSculptureSmall</li>
+											<li>DankPyon_Bust</li>
+											<li>DankPyon_ArchonSculpture2x2c</li>
+											<li>DankPyon_ArmorStatue</li>
+										</things>
+										<count>2</count>
+									</li>
+								</value>
+							</li>
+
+							<!-- VFEE_RoyalMirror (Marquess+) -> add gothic mirror alternative where that mod is present -->
+							<li Class="PatchOperationReplace">
+								<xpath>//RoyalTitleDef/bedroomRequirements/li[@Class="RoomRequirement_Thing" and thingDef="VFEE_RoyalMirror"]</xpath>
+								<value>
+									<li Class="RoomRequirement_ThingAnyOf">
+										<things>
+											<li>VFEE_RoyalMirror</li>
+											<li MayRequire="mingtuwuxiang.GothicDecorative">MUS_Gothicstyle_Mirror</li>
+										</things>
 									</li>
 								</value>
 							</li>
@@ -956,29 +1147,79 @@
 								</value>
 							</li>
 							
-							<li Class="PatchOperationConditional">
-								<xpath>//RoyalTitleDef/bedroomRequirements/li[@Class="RoomRequirement_ThingCount" and thingDef="Drape"]</xpath>
-								<match Class="PatchOperationReplace">
-								<xpath>//RoyalTitleDef/bedroomRequirements/li[@Class="RoomRequirement_ThingCount" and thingDef="Drape"]</xpath>
-									<value>
-										<li Class="RoomRequirement_ThingAnyOfCount">
-											<things>
-												<li>DankPyon_RusticRoomDivider1x2c</li>
-												<li>DankPyon_RusticThickRoomDivider_Open1x2c</li>
-												<li>DankPyon_RusticThickRoomDivider_Closed1x2c</li>
-											</things>
-											<count>1</count>
-										</li>
-									</value>
-								</match>
-								<nomatch Class="PatchOperationAdd">
-									<xpath>//RoyalTitleDef/bedroomRequirements/li[contains(., "Drape")]/things</xpath>
-									<value>
-										<li>DankPyon_RusticRoomDivider1x2c</li>
-										<li>DankPyon_RusticThickRoomDivider_Open1x2c</li>
-										<li>DankPyon_RusticThickRoomDivider_Closed1x2c</li>
-									</value>
-								</nomatch>
+							<!-- Drape -> medieval room dividers as ALTERNATIVE, preserving each rank's drape count
+							     (VFEE escalates Drape 1->2->4->6; the old blanket replace flattened all to 1) -->
+							<li Class="PatchOperationSequence">
+								<operations>
+									<li Class="PatchOperationConditional">
+										<xpath>//RoyalTitleDef/bedroomRequirements/li[@Class="RoomRequirement_ThingCount" and thingDef="Drape" and count=1]</xpath>
+										<match Class="PatchOperationReplace">
+											<xpath>//RoyalTitleDef/bedroomRequirements/li[@Class="RoomRequirement_ThingCount" and thingDef="Drape" and count=1]</xpath>
+											<value>
+												<li Class="RoomRequirement_ThingAnyOfCount">
+													<things>
+														<li>Drape</li>
+														<li>DankPyon_RusticRoomDivider1x2c</li>
+														<li>DankPyon_RusticThickRoomDivider_Open1x2c</li>
+														<li>DankPyon_RusticThickRoomDivider_Closed1x2c</li>
+													</things>
+													<count>1</count>
+												</li>
+											</value>
+										</match>
+									</li>
+									<li Class="PatchOperationConditional">
+										<xpath>//RoyalTitleDef/bedroomRequirements/li[@Class="RoomRequirement_ThingCount" and thingDef="Drape" and count=2]</xpath>
+										<match Class="PatchOperationReplace">
+											<xpath>//RoyalTitleDef/bedroomRequirements/li[@Class="RoomRequirement_ThingCount" and thingDef="Drape" and count=2]</xpath>
+											<value>
+												<li Class="RoomRequirement_ThingAnyOfCount">
+													<things>
+														<li>Drape</li>
+														<li>DankPyon_RusticRoomDivider1x2c</li>
+														<li>DankPyon_RusticThickRoomDivider_Open1x2c</li>
+														<li>DankPyon_RusticThickRoomDivider_Closed1x2c</li>
+													</things>
+													<count>2</count>
+												</li>
+											</value>
+										</match>
+									</li>
+									<li Class="PatchOperationConditional">
+										<xpath>//RoyalTitleDef/bedroomRequirements/li[@Class="RoomRequirement_ThingCount" and thingDef="Drape" and count=4]</xpath>
+										<match Class="PatchOperationReplace">
+											<xpath>//RoyalTitleDef/bedroomRequirements/li[@Class="RoomRequirement_ThingCount" and thingDef="Drape" and count=4]</xpath>
+											<value>
+												<li Class="RoomRequirement_ThingAnyOfCount">
+													<things>
+														<li>Drape</li>
+														<li>DankPyon_RusticRoomDivider1x2c</li>
+														<li>DankPyon_RusticThickRoomDivider_Open1x2c</li>
+														<li>DankPyon_RusticThickRoomDivider_Closed1x2c</li>
+													</things>
+													<count>4</count>
+												</li>
+											</value>
+										</match>
+									</li>
+									<li Class="PatchOperationConditional">
+										<xpath>//RoyalTitleDef/bedroomRequirements/li[@Class="RoomRequirement_ThingCount" and thingDef="Drape" and count=6]</xpath>
+										<match Class="PatchOperationReplace">
+											<xpath>//RoyalTitleDef/bedroomRequirements/li[@Class="RoomRequirement_ThingCount" and thingDef="Drape" and count=6]</xpath>
+											<value>
+												<li Class="RoomRequirement_ThingAnyOfCount">
+													<things>
+														<li>Drape</li>
+														<li>DankPyon_RusticRoomDivider1x2c</li>
+														<li>DankPyon_RusticThickRoomDivider_Open1x2c</li>
+														<li>DankPyon_RusticThickRoomDivider_Closed1x2c</li>
+													</things>
+													<count>6</count>
+												</li>
+											</value>
+										</match>
+									</li>
+								</operations>
 							</li>
 							
 							<li Class="PatchOperationAdd">
