@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <LanguageData>
+  <!-- Empire Units Setting (on by default) -->
+  <EEG_MedievalUnits_Label>Medieval Empire units</EEG_MedievalUnits_Label>
+  <EEG_MedievalUnits_Desc>ON (default): Empire pawns are rebuilt as medieval troops. Their weapons, armour and clothing are replaced with Medieval Overhaul gear, and raids and visits draw on medieval squads. OFF: the Empire keeps its vanilla units and squads, for playthroughs that reach the industrial era.</EEG_MedievalUnits_Desc>
+
   <!-- Royal Titles Setting -->
   <EEG_RoyaltyTitle_Label>Medieval Overhaul - Furniture Integration</EEG_RoyaltyTitle_Label>
   <EEG_RoyaltyTitle_Desc>Replaces royal title furniture requirements with Medieval Overhaul items. When ACTIVE: comprehensive medieval integration for all titles. When INACTIVE: medieval items added as supplementary options to vanilla requirements.</EEG_RoyaltyTitle_Desc>
@@ -8,9 +12,36 @@
   <EEG_RoyaltyTrader_Label>Medieval Overhaul - Empire Trader Integration</EEG_RoyaltyTrader_Label>
   <EEG_RoyaltyTrader_Desc>When ACTIVE: Replace Empire trader stocks with Medieval Overhaul goods (no orbital trader; guarded caravan). When INACTIVE: Add Medieval goods to vanilla Empire traders.</EEG_RoyaltyTrader_Desc>
 
-  <!-- Royal Permits Setting -->
-  <EEG_RoyalPermits_Label>Medieval Overhaul - Royal Permits Integration</EEG_RoyalPermits_Label>
-  <EEG_RoyalPermits_Desc>When ACTIVE: Disables Medieval Overhaul permit integration. When INACTIVE (default): Customizes royal permits with medieval themes, labels, descriptions, and pawn types.</EEG_RoyalPermits_Desc>
+  <!-- Royal Permits Setting (inverted: ticking the box switches the integration OFF) -->
+  <EEG_RoyalPermits_Label>Disable royal permit integration</EEG_RoyalPermits_Label>
+  <EEG_RoyalPermits_Desc>Leave unticked (default) for the medieval rework: orbital strikes, orbital salvos and food drops are removed, labourer permits call medieval pawns, and a mercenary permit is added. Tick the box to switch that rework off and keep the permits exactly as Royalty ships them.</EEG_RoyalPermits_Desc>
+
+  <!-- Wiki button -->
+  <MOR_OpenWiki>Rank overview</MOR_OpenWiki>
+  <MOR_OpenWiki_Desc>Lists what every Empire rank needs, read from the defs loaded in this game. Each entry can open RimWorld’s own info card for that title.</MOR_OpenWiki_Desc>
+  <MOR_WikiTemplateMissing>Could not find the wiki template in the mod folder.</MOR_WikiTemplateMissing>
+  <MOR_WikiFailed>Could not open the rank overview. See the log for details.</MOR_WikiFailed>
+
+  <!-- Wiki page -->
+  <MOR_Wiki_Title>Empire ranks</MOR_Wiki_Title>
+  <MOR_Wiki_Intro>Built from the defs loaded in this game.</MOR_Wiki_Intro>
+  <MOR_Wiki_NpcOnly>NPC only</MOR_Wiki_NpcOnly>
+  <MOR_Wiki_ScopeAward>Attainable</MOR_Wiki_ScopeAward>
+  <MOR_Wiki_ScopeAll>All</MOR_Wiki_ScopeAll>
+  <MOR_Wiki_Ranks>Ranks</MOR_Wiki_Ranks>
+  <MOR_Wiki_Conditions>Room conditions</MOR_Wiki_Conditions>
+  <MOR_Wiki_Show>Show</MOR_Wiki_Show>
+  <MOR_Wiki_Hide>Hide</MOR_Wiki_Hide>
+  <MOR_Wiki_NoFurniture>No furniture required.</MOR_Wiki_NoFurniture>
+  <MOR_Wiki_FirstRank>First rank with room requirements</MOR_Wiki_FirstRank>
+  <MOR_Wiki_VsPrev>Compared with {0}</MOR_Wiki_VsPrev>
+  <MOR_Wiki_Unchanged>Unchanged.</MOR_Wiki_Unchanged>
+  <MOR_Wiki_SrcCore>Vanilla / DLC</MOR_Wiki_SrcCore>
+  <MOR_Wiki_SrcMO>Medieval Overhaul</MOR_Wiki_SrcMO>
+  <MOR_Wiki_SrcMod>Other mod</MOR_Wiki_SrcMod>
+  <MOR_Wiki_Note>Only the throne room blocks a title being granted. An unmet bedroom causes the mood penalty alone.</MOR_Wiki_Note>
+  <MOR_Wiki_GeneratedAt>Generated {0}</MOR_Wiki_GeneratedAt>
+  <MOR_OpenWikiBrowser>Open as a web page instead</MOR_OpenWikiBrowser>
+  <MOR_Wiki_Info>Info</MOR_Wiki_Info>
+  <MOR_Wiki_Favor>honor</MOR_Wiki_Favor>
 </LanguageData>
-
-

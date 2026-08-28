@@ -30,21 +30,22 @@
   <loadAfter>
     <li>Ludeon.RimWorld</li>
     <li>Ludeon.RimWorld.Royalty</li>
-	<li>Ogam.Rimedieval</li>
-	<li>pphhyy.demigryphsmod</li>
-	<li>vanillaexpanded.varme</li>
-	<li>NunahurAlShamikh.MedMed</li>
-	<li>oskarpotocki.vfe.empire</li>
-	<li>Ogam.Rimedieval.Royalty</li>
-	<li>vanillaexpanded.vpsycastse</li>
-	<li>DankPyon.Medieval.Overhaul</li>
-	<li>VanillaExpanded.BaseGeneration</li>
-	<li>oskarpotocki.vanillafactionsexpanded.medievalmodule</li>
+    <li>Ogam.Rimedieval</li>
+    <li>pphhyy.demigryphsmod</li>
+    <li>vanillaexpanded.varme</li>
+    <li>NunahurAlShamikh.MedMed</li>
+    <li>oskarpotocki.vfe.empire</li>
+    <li>Ogam.Rimedieval.Royalty</li>
+    <li>vanillaexpanded.vpsycastse</li>
+    <li>DankPyon.Medieval.Overhaul</li>
+    <li>VanillaExpanded.BaseGeneration</li>
+    <li>oskarpotocki.vanillafactionsexpanded.medievalmodule</li>
   </loadAfter>
   <forceLoadAfter>
-	<li>oskarpotocki.vanillafactionsexpanded.core</li>
-	<li>DankPyon.Medieval.Overhaul</li>
-	<li>oskarpotocki.vfe.empire</li>
-	<li>devdesigner.blood</li>
+    <li>oskarpotocki.vanillafactionsexpanded.core</li>
+    <li>DankPyon.Medieval.Overhaul</li>
+    <li>oskarpotocki.vfe.empire</li>
+    <li>devdesigner.blood</li>
+    <li>VanillaExpanded.VPsycastsE</li>
   </forceLoadAfter>  
 </ModMetaData>

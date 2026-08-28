@@ -1,0 +1,381 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Empire</title>
+<style>
+:root{
+  --ground:#F6F5F8; --surface:#FFFFFF; --surface-2:#F0EEF4;
+  --ink:#23212C; --ink-soft:#605C70; --ink-faint:#8B8699;
+  --rule:#DEDBE6; --rule-soft:#EBE9F0;
+  --accent:#6D4C8F; --accent-soft:#EDE6F5; --accent-ink:#563A73;
+  --mo:#3F7A57; --mo-soft:#E4F0E8; --mo-ink:#2F5D42;
+  --ext:#9A6B18; --ext-soft:#F6EEDC; --ext-ink:#7A5412;
+  --shadow:0 1px 2px rgba(35,33,44,.06), 0 6px 20px -12px rgba(35,33,44,.28);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --ground:#15141B; --surface:#1D1B25; --surface-2:#24222D;
+    --ink:#E9E7F0; --ink-soft:#A5A0B5; --ink-faint:#7E798D;
+    --rule:#302D3C; --rule-soft:#26232F;
+    --accent:#B294D6; --accent-soft:#2B2338; --accent-ink:#CDB6E6;
+    --mo:#74B08D; --mo-soft:#1E2E25; --mo-ink:#8FC7A6;
+    --ext:#D2A24E; --ext-soft:#302713; --ext-ink:#E0B76D;
+    --shadow:0 1px 2px rgba(0,0,0,.4), 0 6px 22px -14px rgba(0,0,0,.8);
+  }
+}
+:root[data-theme="dark"]{
+  --ground:#15141B; --surface:#1D1B25; --surface-2:#24222D;
+  --ink:#E9E7F0; --ink-soft:#A5A0B5; --ink-faint:#7E798D;
+  --rule:#302D3C; --rule-soft:#26232F;
+  --accent:#B294D6; --accent-soft:#2B2338; --accent-ink:#CDB6E6;
+  --mo:#74B08D; --mo-soft:#1E2E25; --mo-ink:#8FC7A6;
+  --ext:#D2A24E; --ext-soft:#302713; --ext-ink:#E0B76D;
+  --shadow:0 1px 2px rgba(0,0,0,.4), 0 6px 22px -14px rgba(0,0,0,.8);
+}
+*{box-sizing:border-box}
+body{margin:0; background:var(--ground); color:var(--ink);
+  font-family:"Segoe UI",-apple-system,BlinkMacSystemFont,Roboto,sans-serif;
+  font-size:15px; line-height:1.55; -webkit-font-smoothing:antialiased}
+.wrap{max-width:1060px; margin:0 auto; padding:0 24px 80px}
+
+header.mast{padding:40px 0 18px; border-bottom:1px solid var(--rule)}
+h1{font-family:Georgia,"Times New Roman",serif; font-weight:600;
+   font-size:clamp(26px,4vw,38px); line-height:1.15; margin:0 0 6px}
+.lede{margin:0; color:var(--ink-faint); font-size:13.5px}
+.opts{display:flex; flex-wrap:wrap; gap:7px; margin:16px 0 0}
+.optchip{display:flex; align-items:center; gap:7px; font-size:12.5px; padding:4px 10px;
+  border-radius:6px; border:1px solid var(--rule); background:var(--surface); color:var(--ink-soft)}
+.optchip .dot{width:7px; height:7px; border-radius:50%; background:var(--ink-faint); flex:none}
+.optchip.on{background:var(--mo-soft); border-color:transparent; color:var(--mo-ink); font-weight:600}
+.optchip.on .dot{background:var(--mo)}
+
+.controls{position:sticky; top:0; z-index:20; background:var(--ground);
+  border-bottom:1px solid var(--rule); padding:12px 0;
+  display:flex; flex-wrap:wrap; gap:12px 22px; align-items:center}
+.ctl{display:flex; align-items:center; gap:9px}
+.ctl > span{font-size:10.5px; letter-spacing:.1em; text-transform:uppercase;
+  color:var(--ink-faint); font-weight:700}
+.seg{display:flex; background:var(--surface-2); border:1px solid var(--rule);
+  border-radius:7px; padding:2px; gap:2px}
+.seg button{font:inherit; font-size:13px; font-weight:500; color:var(--ink-soft);
+  background:none; border:0; border-radius:5px; padding:4px 12px; cursor:pointer}
+.seg button:hover{color:var(--ink)}
+.seg button[aria-pressed="true"]{background:var(--surface); color:var(--ink);
+  box-shadow:var(--shadow); font-weight:600}
+.seg button:focus-visible{outline:2px solid var(--accent); outline-offset:1px}
+.legend{margin-left:auto; display:flex; flex-wrap:wrap; gap:6px; font-size:12px}
+
+#ranks{padding-top:26px}
+.rank{background:var(--surface); border:1px solid var(--rule); border-radius:11px;
+  margin-bottom:14px; box-shadow:var(--shadow); overflow:hidden}
+.rank-head{display:flex; flex-wrap:wrap; align-items:baseline; gap:11px; padding:14px 20px;
+  border-bottom:1px solid var(--rule-soft); background:var(--surface-2)}
+.rank-name{font-family:Georgia,serif; font-size:20px; font-weight:600; margin:0}
+.rank-def{font-family:Consolas,"Courier New",monospace; font-size:11px; color:var(--ink-faint)}
+.favor{margin-left:auto; text-align:right}
+.favor b{display:block; font-size:17px; font-weight:700; font-variant-numeric:tabular-nums; line-height:1.15}
+.favor span{font-size:10px; letter-spacing:.09em; text-transform:uppercase;
+  color:var(--ink-faint); font-weight:700}
+.npc-badge{font-size:10px; letter-spacing:.07em; text-transform:uppercase; font-weight:700;
+  color:var(--ink-faint); background:var(--surface); border:1px solid var(--rule);
+  border-radius:4px; padding:2px 7px}
+
+.delta{padding:10px 20px; border-bottom:1px solid var(--rule-soft);
+  background:linear-gradient(to bottom,var(--accent-soft),transparent);
+  display:flex; flex-wrap:wrap; gap:5px 16px; align-items:baseline}
+.delta > h4{margin:0; flex:0 0 100%; font-size:10px; letter-spacing:.11em;
+  text-transform:uppercase; font-weight:700; color:var(--ink-faint)}
+.dline{display:flex; align-items:baseline; gap:6px; font-size:13px}
+.dmark{font-family:Consolas,monospace; font-size:13px; font-weight:700; line-height:1;
+  width:15px; text-align:center; flex:none; color:var(--ink-faint)}
+.dline.new .dmark{color:var(--accent-ink)}
+.dline.up  .dmark{color:var(--ext-ink)}
+.dline .droom{color:var(--ink-faint); font-size:11px}
+
+.rooms{display:grid; grid-template-columns:1fr 1fr}
+@media (max-width:760px){ .rooms{grid-template-columns:1fr} }
+.room{padding:16px 20px 18px}
+.room + .room{border-left:1px solid var(--rule-soft)}
+@media (max-width:760px){ .room + .room{border-left:0; border-top:1px solid var(--rule-soft)} }
+.room > h4{margin:0 0 12px; font-size:10.5px; letter-spacing:.11em; text-transform:uppercase;
+  font-weight:700; color:var(--accent-ink)}
+.reqs{display:flex; flex-direction:column; gap:11px}
+.req{display:flex; flex-direction:column; gap:5px}
+.req-label{font-size:12.5px; color:var(--ink); font-weight:600}
+.chips{display:flex; flex-wrap:wrap; gap:4px}
+.chip{font-size:12px; line-height:1.3; padding:3px 8px; border-radius:5px;
+  border:1px solid var(--rule); background:var(--surface-2); color:var(--ink-soft)}
+.chip.mo{background:var(--mo-soft); border-color:transparent; color:var(--mo-ink); font-weight:600}
+.chip.mod{background:var(--ext-soft); border-color:var(--ext); border-style:dashed; color:var(--ext-ink)}
+.cond{font-size:12.5px; color:var(--ink-faint)}
+footer{margin-top:44px; padding-top:18px; border-top:1px solid var(--rule);
+  color:var(--ink-faint); font-size:12.5px}
+footer p{max-width:72ch; margin:0 0 4px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="mast">
+  <h1 id="h1"></h1>
+  <p class="lede" id="lede"></p>
+  <div class="opts" id="opts"></div>
+</header>
+
+<div class="controls">
+  <div class="ctl"><span id="lblRanks"></span>
+    <div class="seg" id="seg-scope">
+      <button data-v="award" aria-pressed="true"></button>
+      <button data-v="all" aria-pressed="false"></button>
+    </div>
+  </div>
+  <div class="ctl"><span id="lblCond"></span>
+    <div class="seg" id="seg-cond">
+      <button data-v="hide" aria-pressed="true"></button>
+      <button data-v="show" aria-pressed="false"></button>
+    </div>
+  </div>
+  <div class="legend" id="legend"></div>
+</div>
+
+<div id="ranks"></div>
+
+<footer>
+  <p id="note"></p>
+  <p id="gen"></p>
+</footer>
+</div>
+
+<script>
+const D = "__DATA__";
+const U = D.ui;
+const state = {scope:'award', cond:'hide'};
+const COND = new Set(['ForbiddenBuildings','ForbidAltars','TerrainWithTags']);
+const MARK = {new:'+', up:'↑', gone:'−'};
+
+const cap = s => s ? s.charAt(0).toUpperCase() + s.slice(1) : s;
+
+function chip(t){
+  const el = document.createElement('span');
+  el.className = 'chip' + (t.source === 'mo' ? ' mo' : (t.source === 'mod' ? ' mod' : ''));
+  el.textContent = t.label || t.defName;
+  el.title = t.defName;
+  return el;
+}
+
+const hasThings = r => r.things && r.things.length > 0;
+
+function renderReqs(list){
+  const box = document.createElement('div');
+  box.className = 'reqs';
+  let shown = 0;
+  for (const r of list){
+    if (COND.has(r.kind) && state.cond === 'hide') continue;
+    shown++;
+    const row = document.createElement('div');
+    row.className = 'req';
+    const lab = document.createElement('div');
+    lab.className = hasThings(r) ? 'req-label' : 'cond';
+    lab.textContent = r.label || r.kind;
+    row.appendChild(lab);
+    if (hasThings(r)){
+      const chips = document.createElement('div');
+      chips.className = 'chips';
+      r.things.forEach(t => chips.appendChild(chip(t)));
+      row.appendChild(chips);
+    }
+    box.appendChild(row);
+  }
+  if (!shown){
+    const p = document.createElement('div');
+    p.className = 'cond';
+    p.textContent = U.none;
+    box.appendChild(p);
+  }
+  return box;
+}
+
+/* ---- Delta ---- */
+function comparable(list){ return list.filter(r => !COND.has(r.kind)); }
+
+function keyOf(r){
+  if (r.area != null) return 'area';
+  if (r.impressiveness != null) return 'imp';
+  return null;
+}
+
+function overlap(a, b){
+  if (!hasThings(a) || !hasThings(b)) return 0;
+  const A = new Set(a.things.map(t => t.defName)), B = new Set(b.things.map(t => t.defName));
+  let inter = 0;
+  A.forEach(x => { if (B.has(x)) inter++; });
+  return inter / new Set([...A, ...B]).size;
+}
+
+function deltaOf(cur, prev){
+  const out = [];
+  for (const [room, name] of [['throne', U.throne], ['bedroom', U.bedroom]]){
+    const c = comparable(cur[room]), p = comparable(prev[room]);
+    const used = new Set();
+    for (const r of c){
+      const k = keyOf(r);
+      if (k){
+        const q = p.find(x => keyOf(x) === k);
+        if (q){
+          used.add(p.indexOf(q));
+          const a = k === 'area' ? q.area : q.impressiveness;
+          const b = k === 'area' ? r.area : r.impressiveness;
+          if (b > a) out.push({t:'up', room:name, text:r.label});
+        } else {
+          out.push({t:'new', room:name, text:r.label});
+        }
+        continue;
+      }
+      let bi = -1, bs = 0;
+      p.forEach((q, i) => { if (used.has(i)) return; const s = overlap(r, q); if (s > bs){ bs = s; bi = i; } });
+      if (bs > 0.15){
+        used.add(bi);
+        if ((r.count || 1) > (p[bi].count || 1)) out.push({t:'up', room:name, text:r.label});
+      } else {
+        out.push({t:'new', room:name, text:r.label});
+      }
+    }
+    p.forEach((q, i) => { if (!used.has(i)) out.push({t:'gone', room:name, text:q.label}); });
+  }
+  // erst alles Neue, dann alles Erhoehte, dann Entfallenes
+  const ORDER = {new:0, up:1, gone:2};
+  out.sort((a, b) => (ORDER[a.t] - ORDER[b.t]) || a.room.localeCompare(b.room));
+  return out;
+}
+
+function renderDelta(cur, prev){
+  const box = document.createElement('div');
+  box.className = 'delta';
+  const h = document.createElement('h4');
+  if (!prev){
+    h.textContent = U.firstRank;
+    box.appendChild(h);
+    return box;
+  }
+  h.textContent = U.vsPrev.replace('{0}', cap(prev.label || prev.defName));
+  box.appendChild(h);
+  const list = deltaOf(cur, prev);
+  if (!list.length){
+    const s = document.createElement('span');
+    s.className = 'dline';
+    s.innerHTML = '<span class="droom"></span>';
+    s.firstChild.textContent = U.unchanged;
+    box.appendChild(s);
+    return box;
+  }
+  for (const d of list){
+    const el = document.createElement('span');
+    el.className = 'dline ' + d.t;
+    const m = document.createElement('span'); m.className = 'dmark'; m.textContent = MARK[d.t];
+    const t = document.createElement('span'); t.textContent = d.text;
+    const r = document.createElement('span'); r.className = 'droom'; r.textContent = d.room;
+    el.append(m, t, r);
+    box.appendChild(el);
+  }
+  return box;
+}
+
+function render(){
+  const rows = state.scope === 'award' ? D.titles.filter(t => t.awardable) : D.titles;
+  const host = document.getElementById('ranks');
+  host.textContent = '';
+
+  rows.forEach((r, idx) => {
+    const prev = idx > 0 ? rows[idx - 1] : null;
+    const card = document.createElement('article');
+    card.className = 'rank';
+
+    const head = document.createElement('div');
+    head.className = 'rank-head';
+    const h = document.createElement('h3');
+    h.className = 'rank-name';
+    h.textContent = cap(r.label || r.defName);
+    head.appendChild(h);
+    const dn = document.createElement('span');
+    dn.className = 'rank-def';
+    dn.textContent = r.defName;
+    head.appendChild(dn);
+    if (!r.awardable){
+      const b = document.createElement('span');
+      b.className = 'npc-badge';
+      b.textContent = U.npcOnly;
+      head.appendChild(b);
+    } else if (r.favor){
+      const f = document.createElement('div');
+      f.className = 'favor';
+      const v = document.createElement('b'); v.textContent = r.favor;
+      const c = document.createElement('span'); c.textContent = U.favor;
+      f.append(v, c);
+      head.appendChild(f);
+    }
+    card.appendChild(head);
+    card.appendChild(renderDelta(r, prev));
+
+    const rooms = document.createElement('div');
+    rooms.className = 'rooms';
+    for (const [title, list] of [[U.throne, r.throne], [U.bedroom, r.bedroom]]){
+      const room = document.createElement('div');
+      room.className = 'room';
+      const h4 = document.createElement('h4');
+      h4.textContent = title;
+      room.append(h4, renderReqs(list));
+      rooms.appendChild(room);
+    }
+    card.appendChild(rooms);
+    host.appendChild(card);
+  });
+}
+
+function boot(){
+  document.title = U.title;
+  document.getElementById('h1').textContent = U.title;
+  document.getElementById('lede').textContent = U.intro;
+  document.getElementById('lblRanks').textContent = U.ranks;
+  document.getElementById('lblCond').textContent = U.conditions;
+  document.getElementById('note').textContent = U.note;
+  document.getElementById('gen').textContent = U.generatedAt.replace('{0}', D.generated);
+
+  const sc = document.querySelectorAll('#seg-scope button');
+  sc[0].textContent = U.scopeAward; sc[1].textContent = U.scopeAll;
+  const cd = document.querySelectorAll('#seg-cond button');
+  cd[0].textContent = U.hide; cd[1].textContent = U.show;
+
+  const legend = document.getElementById('legend');
+  for (const [cls, txt] of [['', U.srcCore], ['mo', U.srcMO], ['mod', U.srcMod]]){
+    const s = document.createElement('span');
+    s.className = 'chip ' + cls;
+    s.textContent = txt;
+    legend.appendChild(s);
+  }
+
+  const opts = document.getElementById('opts');
+  for (const o of D.options){
+    const el = document.createElement('span');
+    el.className = 'optchip' + (o.on ? ' on' : '');
+    const dot = document.createElement('span'); dot.className = 'dot';
+    const t = document.createElement('span'); t.textContent = o.label;
+    el.append(dot, t);
+    opts.appendChild(el);
+  }
+
+  for (const [id, field] of [['seg-scope','scope'], ['seg-cond','cond']]){
+    document.getElementById(id).addEventListener('click', e => {
+      const btn = e.target.closest('button');
+      if (!btn) return;
+      state[field] = btn.dataset.v;
+      [...btn.parentElement.children].forEach(b => b.setAttribute('aria-pressed', String(b === btn)));
+      render();
+    });
+  }
+  render();
+}
+boot();
+</script>
+</body>
+</html>

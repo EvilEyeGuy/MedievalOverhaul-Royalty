@@ -1,14 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
-  <!-- Königliche Titel Setting -->
+  <!-- Empire-Einheiten (standardmäßig an) -->
+  <EEG_MedievalUnits_Label>Mittelalterliche Empire-Einheiten</EEG_MedievalUnits_Label>
+  <EEG_MedievalUnits_Desc>AN (Standard): Die Einheiten des Empire werden zu mittelalterlichen Truppen umgebaut. Waffen, Rüstung und Kleidung kommen aus Medieval Overhaul, und Überfälle wie Besuche greifen auf mittelalterliche Trupps zurück. AUS: Das Empire behält seine Vanilla-Einheiten und -Trupps, für Spielstände, die das Industriezeitalter erreichen.</EEG_MedievalUnits_Desc>
+
+  <!-- Königliche Titel -->
   <EEG_RoyaltyTitle_Label>Königliche Titel - Medieval Overhaul Möbel</EEG_RoyaltyTitle_Label>
   <EEG_RoyaltyTitle_Desc>Wenn AKTIV: Ersetze alle Möbelanforderungen der königlichen Titel durch Medieval Overhaul Items. Wenn INAKTIV: Füge Medieval Items als ergänzende Optionen zu Vanilla-Anforderungen hinzu.</EEG_RoyaltyTitle_Desc>
 
-  <!-- Empire Trader Setting -->
+  <!-- Empire-Händler -->
   <EEG_RoyaltyTrader_Label>Empire Händler - Medieval Overhaul Bestand</EEG_RoyaltyTrader_Label>
   <EEG_RoyaltyTrader_Desc>Wenn AKTIV: Ersetze Empire Trader Bestände durch Medieval Overhaul Waren. Wenn INAKTIV: Füge Medieval Items zu Vanilla Trader Optionen hinzu.</EEG_RoyaltyTrader_Desc>
 
-  <!-- Royal Permits Setting -->
-  <EEG_RoyalPermits_Label>Königliche Erlaubnisse - Medieval Overhaul Integration</EEG_RoyalPermits_Label>
-  <EEG_RoyalPermits_Desc>Durch das Aktivieren dieser Einstellung wird der Patch zur Integration der königlichen Erlaubnisse rückgängig gemacht.</EEG_RoyalPermits_Desc>
+  <!-- Königliche Erlaubnisse (invertiert: Haken setzen schaltet die Integration AB) -->
+  <EEG_RoyalPermits_Label>Königliche Erlaubnisse: Integration abschalten</EEG_RoyalPermits_Label>
+  <EEG_RoyalPermits_Desc>Haken weglassen (Standard) für den mittelalterlichen Umbau: Orbitalschlag, Orbitalsalve und Essensabwurf entfallen, Arbeitertrupps rufen mittelalterliche Pawns, und ein Söldner-Privileg kommt dazu. Haken setzen, um diesen Umbau abzuschalten und die Erlaubnisse so zu lassen, wie Royalty sie ausliefert.</EEG_RoyalPermits_Desc>
+
+  <!-- Wiki-Button -->
+  <MOR_OpenWiki>Rang-Übersicht</MOR_OpenWiki>
+  <MOR_OpenWiki_Desc>Zeigt, was jeder Empire-Rang verlangt, gelesen aus den Defs dieses Spiels. Zu jedem Eintrag lässt sich RimWorlds eigene Infokarte öffnen.</MOR_OpenWiki_Desc>
+  <MOR_WikiTemplateMissing>Die Wiki-Vorlage wurde im Mod-Ordner nicht gefunden.</MOR_WikiTemplateMissing>
+  <MOR_WikiFailed>Die Rang-Übersicht konnte nicht geöffnet werden. Details stehen im Log.</MOR_WikiFailed>
+
+  <!-- Wiki-Seite -->
+  <MOR_Wiki_Title>Empire-Ränge</MOR_Wiki_Title>
+  <MOR_Wiki_Intro>Erzeugt aus den Defs, die in diesem Spiel geladen sind.</MOR_Wiki_Intro>
+  <MOR_Wiki_NpcOnly>nur NPC</MOR_Wiki_NpcOnly>
+  <MOR_Wiki_ScopeAward>Erreichbare</MOR_Wiki_ScopeAward>
+  <MOR_Wiki_ScopeAll>Alle</MOR_Wiki_ScopeAll>
+  <MOR_Wiki_Ranks>Ränge</MOR_Wiki_Ranks>
+  <MOR_Wiki_Conditions>Raumbedingungen</MOR_Wiki_Conditions>
+  <MOR_Wiki_Show>Zeigen</MOR_Wiki_Show>
+  <MOR_Wiki_Hide>Ausblenden</MOR_Wiki_Hide>
+  <MOR_Wiki_NoFurniture>Keine Möbel nötig.</MOR_Wiki_NoFurniture>
+  <MOR_Wiki_FirstRank>Erster Rang mit Raumanforderungen</MOR_Wiki_FirstRank>
+  <MOR_Wiki_VsPrev>Gegenüber {0}</MOR_Wiki_VsPrev>
+  <MOR_Wiki_Unchanged>Unverändert.</MOR_Wiki_Unchanged>
+  <MOR_Wiki_SrcCore>Vanilla / DLC</MOR_Wiki_SrcCore>
+  <MOR_Wiki_SrcMO>Medieval Overhaul</MOR_Wiki_SrcMO>
+  <MOR_Wiki_SrcMod>Anderer Mod</MOR_Wiki_SrcMod>
+  <MOR_Wiki_Note>Nur der Thronsaal blockiert die Titelvergabe. Ein nicht erfülltes Schlafzimmer erzeugt allein den Stimmungsmalus.</MOR_Wiki_Note>
+  <MOR_Wiki_GeneratedAt>Erzeugt {0}</MOR_Wiki_GeneratedAt>
+  <MOR_OpenWikiBrowser>Stattdessen als Webseite öffnen</MOR_OpenWikiBrowser>
+  <MOR_Wiki_Info>Info</MOR_Wiki_Info>
+  <MOR_Wiki_Favor>Ehre</MOR_Wiki_Favor>
 </LanguageData>
