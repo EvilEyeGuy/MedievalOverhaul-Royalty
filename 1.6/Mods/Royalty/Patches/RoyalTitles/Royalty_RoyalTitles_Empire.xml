@@ -442,6 +442,20 @@
 								<li>DankPyon_RugThrumbo3x3c</li>
 								<li>DankPyon_RugHuman1x2c</li>
 								<li>DankPyon_RugDaer4x4c</li>
+								<li>DankPyon_RugRoyal_GrandCross3x3c</li>
+								<li>DankPyon_RugRoyal_LongLys2x4c</li>
+								<li>DankPyon_RugRoyal_LongLys3x3c</li>
+								<li>DankPyon_RugRoyal_Lys2x3c</li>
+								<li>DankPyon_RugPatched_Cloth1x1c</li>
+								<li>DankPyon_RugPatched_Cloth1x2c</li>
+								<li>DankPyon_RugPatched_Cloth2x2c</li>
+								<li>DankPyon_RugPatched_Cloth2x4c</li>
+								<li>DankPyon_RugPatched_Cloth3x3c</li>
+								<li>DankPyon_RugPatched_Leather1x1c</li>
+								<li>DankPyon_RugPatched_Leather1x2c</li>
+								<li>DankPyon_RugPatched_Leather2x2c</li>
+								<li>DankPyon_RugPatched_Leather2x4c</li>
+								<li>DankPyon_RugPatched_Leather3x3c</li>
 							</things>
 							<count>1</count>
 						</li>
@@ -587,6 +601,10 @@
 								<li>DankPyon_RugThrumbo3x3c</li>
 								<li>DankPyon_RugHuman1x2c</li>
 								<li>DankPyon_RugDaer4x4c</li>
+								<li>DankPyon_RugRoyal_GrandCross3x3c</li>
+								<li>DankPyon_RugRoyal_LongLys2x4c</li>
+								<li>DankPyon_RugRoyal_LongLys3x3c</li>
+								<li>DankPyon_RugRoyal_Lys2x3c</li>
 							</things>
 							<count>3</count>
 						</li>
@@ -814,16 +832,6 @@
 									<li>DankPyon_RugRoyal_LongLys2x4c</li>
 									<li>DankPyon_RugRoyal_LongLys3x3c</li>
 									<li>DankPyon_RugRoyal_Lys2x3c</li>
-									<li>DankPyon_RugPatched_Cloth1x1c</li>
-									<li>DankPyon_RugPatched_Cloth1x2c</li>
-									<li>DankPyon_RugPatched_Cloth2x2c</li>
-									<li>DankPyon_RugPatched_Cloth2x4c</li>
-									<li>DankPyon_RugPatched_Cloth3x3c</li>
-									<li>DankPyon_RugPatched_Leather1x1c</li>
-									<li>DankPyon_RugPatched_Leather1x2c</li>
-									<li>DankPyon_RugPatched_Leather2x2c</li>
-									<li>DankPyon_RugPatched_Leather2x4c</li>
-									<li>DankPyon_RugPatched_Leather3x3c</li>
 								</things>
 								<count>4</count>
 							</li>
@@ -962,16 +970,6 @@
 										<li>DankPyon_RugRoyal_LongLys2x4c</li>
 										<li>DankPyon_RugRoyal_LongLys3x3c</li>
 										<li>DankPyon_RugRoyal_Lys2x3c</li>
-										<li>DankPyon_RugPatched_Cloth1x1c</li>
-										<li>DankPyon_RugPatched_Cloth1x2c</li>
-										<li>DankPyon_RugPatched_Cloth2x2c</li>
-										<li>DankPyon_RugPatched_Cloth2x4c</li>
-										<li>DankPyon_RugPatched_Cloth3x3c</li>
-										<li>DankPyon_RugPatched_Leather1x1c</li>
-										<li>DankPyon_RugPatched_Leather1x2c</li>
-										<li>DankPyon_RugPatched_Leather2x2c</li>
-										<li>DankPyon_RugPatched_Leather2x4c</li>
-										<li>DankPyon_RugPatched_Leather3x3c</li>
 									</things>
 									<count>4</count>
 								</li>
@@ -1058,16 +1056,6 @@
 									<li>DankPyon_RugRoyal_LongLys2x4c</li>
 									<li>DankPyon_RugRoyal_LongLys3x3c</li>
 									<li>DankPyon_RugRoyal_Lys2x3c</li>
-									<li>DankPyon_RugPatched_Cloth1x1c</li>
-									<li>DankPyon_RugPatched_Cloth1x2c</li>
-									<li>DankPyon_RugPatched_Cloth2x2c</li>
-									<li>DankPyon_RugPatched_Cloth2x4c</li>
-									<li>DankPyon_RugPatched_Cloth3x3c</li>
-									<li>DankPyon_RugPatched_Leather1x1c</li>
-									<li>DankPyon_RugPatched_Leather1x2c</li>
-									<li>DankPyon_RugPatched_Leather2x2c</li>
-									<li>DankPyon_RugPatched_Leather2x4c</li>
-									<li>DankPyon_RugPatched_Leather3x3c</li>
 								</things>
 								<count>5</count>
 							</li>
@@ -1206,16 +1194,6 @@
 										<li>DankPyon_RugRoyal_LongLys2x4c</li>
 										<li>DankPyon_RugRoyal_LongLys3x3c</li>
 										<li>DankPyon_RugRoyal_Lys2x3c</li>
-										<li>DankPyon_RugPatched_Cloth1x1c</li>
-										<li>DankPyon_RugPatched_Cloth1x2c</li>
-										<li>DankPyon_RugPatched_Cloth2x2c</li>
-										<li>DankPyon_RugPatched_Cloth2x4c</li>
-										<li>DankPyon_RugPatched_Cloth3x3c</li>
-										<li>DankPyon_RugPatched_Leather1x1c</li>
-										<li>DankPyon_RugPatched_Leather1x2c</li>
-										<li>DankPyon_RugPatched_Leather2x2c</li>
-										<li>DankPyon_RugPatched_Leather2x4c</li>
-										<li>DankPyon_RugPatched_Leather3x3c</li>
 									</things>
 									<count>5</count>
 								</li>
@@ -1302,16 +1280,6 @@
 									<li>DankPyon_RugRoyal_LongLys2x4c</li>
 									<li>DankPyon_RugRoyal_LongLys3x3c</li>
 									<li>DankPyon_RugRoyal_Lys2x3c</li>
-									<li>DankPyon_RugPatched_Cloth1x1c</li>
-									<li>DankPyon_RugPatched_Cloth1x2c</li>
-									<li>DankPyon_RugPatched_Cloth2x2c</li>
-									<li>DankPyon_RugPatched_Cloth2x4c</li>
-									<li>DankPyon_RugPatched_Cloth3x3c</li>
-									<li>DankPyon_RugPatched_Leather1x1c</li>
-									<li>DankPyon_RugPatched_Leather1x2c</li>
-									<li>DankPyon_RugPatched_Leather2x2c</li>
-									<li>DankPyon_RugPatched_Leather2x4c</li>
-									<li>DankPyon_RugPatched_Leather3x3c</li>
 								</things>
 								<count>6</count>
 							</li>
@@ -1450,16 +1418,6 @@
 										<li>DankPyon_RugRoyal_LongLys2x4c</li>
 										<li>DankPyon_RugRoyal_LongLys3x3c</li>
 										<li>DankPyon_RugRoyal_Lys2x3c</li>
-										<li>DankPyon_RugPatched_Cloth1x1c</li>
-										<li>DankPyon_RugPatched_Cloth1x2c</li>
-										<li>DankPyon_RugPatched_Cloth2x2c</li>
-										<li>DankPyon_RugPatched_Cloth2x4c</li>
-										<li>DankPyon_RugPatched_Cloth3x3c</li>
-										<li>DankPyon_RugPatched_Leather1x1c</li>
-										<li>DankPyon_RugPatched_Leather1x2c</li>
-										<li>DankPyon_RugPatched_Leather2x2c</li>
-										<li>DankPyon_RugPatched_Leather2x4c</li>
-										<li>DankPyon_RugPatched_Leather3x3c</li>
 									</things>
 									<count>6</count>
 								</li>
@@ -1546,16 +1504,6 @@
 									<li>DankPyon_RugRoyal_LongLys2x4c</li>
 									<li>DankPyon_RugRoyal_LongLys3x3c</li>
 									<li>DankPyon_RugRoyal_Lys2x3c</li>
-									<li>DankPyon_RugPatched_Cloth1x1c</li>
-									<li>DankPyon_RugPatched_Cloth1x2c</li>
-									<li>DankPyon_RugPatched_Cloth2x2c</li>
-									<li>DankPyon_RugPatched_Cloth2x4c</li>
-									<li>DankPyon_RugPatched_Cloth3x3c</li>
-									<li>DankPyon_RugPatched_Leather1x1c</li>
-									<li>DankPyon_RugPatched_Leather1x2c</li>
-									<li>DankPyon_RugPatched_Leather2x2c</li>
-									<li>DankPyon_RugPatched_Leather2x4c</li>
-									<li>DankPyon_RugPatched_Leather3x3c</li>
 								</things>
 								<count>6</count>
 							</li>
@@ -1694,16 +1642,6 @@
 										<li>DankPyon_RugRoyal_LongLys2x4c</li>
 										<li>DankPyon_RugRoyal_LongLys3x3c</li>
 										<li>DankPyon_RugRoyal_Lys2x3c</li>
-										<li>DankPyon_RugPatched_Cloth1x1c</li>
-										<li>DankPyon_RugPatched_Cloth1x2c</li>
-										<li>DankPyon_RugPatched_Cloth2x2c</li>
-										<li>DankPyon_RugPatched_Cloth2x4c</li>
-										<li>DankPyon_RugPatched_Cloth3x3c</li>
-										<li>DankPyon_RugPatched_Leather1x1c</li>
-										<li>DankPyon_RugPatched_Leather1x2c</li>
-										<li>DankPyon_RugPatched_Leather2x2c</li>
-										<li>DankPyon_RugPatched_Leather2x4c</li>
-										<li>DankPyon_RugPatched_Leather3x3c</li>
 									</things>
 									<count>6</count>
 								</li>
@@ -2209,6 +2147,20 @@
 								<li>DankPyon_RugThrumbo3x3c</li>
 								<li>DankPyon_RugHuman1x2c</li>
 								<li>DankPyon_RugDaer4x4c</li>
+								<li>DankPyon_RugRoyal_GrandCross3x3c</li>
+								<li>DankPyon_RugRoyal_LongLys2x4c</li>
+								<li>DankPyon_RugRoyal_LongLys3x3c</li>
+								<li>DankPyon_RugRoyal_Lys2x3c</li>
+								<li>DankPyon_RugPatched_Cloth1x1c</li>
+								<li>DankPyon_RugPatched_Cloth1x2c</li>
+								<li>DankPyon_RugPatched_Cloth2x2c</li>
+								<li>DankPyon_RugPatched_Cloth2x4c</li>
+								<li>DankPyon_RugPatched_Cloth3x3c</li>
+								<li>DankPyon_RugPatched_Leather1x1c</li>
+								<li>DankPyon_RugPatched_Leather1x2c</li>
+								<li>DankPyon_RugPatched_Leather2x2c</li>
+								<li>DankPyon_RugPatched_Leather2x4c</li>
+								<li>DankPyon_RugPatched_Leather3x3c</li>
 							</things>
 							<count>1</count>
 						</li>
@@ -2380,6 +2332,10 @@
 								<li>DankPyon_RugThrumbo3x3c</li>
 								<li>DankPyon_RugHuman1x2c</li>
 								<li>DankPyon_RugDaer4x4c</li>
+								<li>DankPyon_RugRoyal_GrandCross3x3c</li>
+								<li>DankPyon_RugRoyal_LongLys2x4c</li>
+								<li>DankPyon_RugRoyal_LongLys3x3c</li>
+								<li>DankPyon_RugRoyal_Lys2x3c</li>
 							</things>
 							<count>3</count>
 						</li>
@@ -3782,16 +3738,6 @@
 									<li>DankPyon_RugRoyal_LongLys2x4c</li>
 									<li>DankPyon_RugRoyal_LongLys3x3c</li>
 									<li>DankPyon_RugRoyal_Lys2x3c</li>
-									<li>DankPyon_RugPatched_Cloth1x1c</li>
-									<li>DankPyon_RugPatched_Cloth1x2c</li>
-									<li>DankPyon_RugPatched_Cloth2x2c</li>
-									<li>DankPyon_RugPatched_Cloth2x4c</li>
-									<li>DankPyon_RugPatched_Cloth3x3c</li>
-									<li>DankPyon_RugPatched_Leather1x1c</li>
-									<li>DankPyon_RugPatched_Leather1x2c</li>
-									<li>DankPyon_RugPatched_Leather2x2c</li>
-									<li>DankPyon_RugPatched_Leather2x4c</li>
-									<li>DankPyon_RugPatched_Leather3x3c</li>
 								</things>
 								<count>3</count>
 							</li>
@@ -3933,16 +3879,6 @@
 										<li>DankPyon_RugRoyal_LongLys2x4c</li>
 										<li>DankPyon_RugRoyal_LongLys3x3c</li>
 										<li>DankPyon_RugRoyal_Lys2x3c</li>
-										<li>DankPyon_RugPatched_Cloth1x1c</li>
-										<li>DankPyon_RugPatched_Cloth1x2c</li>
-										<li>DankPyon_RugPatched_Cloth2x2c</li>
-										<li>DankPyon_RugPatched_Cloth2x4c</li>
-										<li>DankPyon_RugPatched_Cloth3x3c</li>
-										<li>DankPyon_RugPatched_Leather1x1c</li>
-										<li>DankPyon_RugPatched_Leather1x2c</li>
-										<li>DankPyon_RugPatched_Leather2x2c</li>
-										<li>DankPyon_RugPatched_Leather2x4c</li>
-										<li>DankPyon_RugPatched_Leather3x3c</li>
 									</things>
 									<count>3</count>
 								</li>
@@ -4029,16 +3965,6 @@
 									<li>DankPyon_RugRoyal_LongLys2x4c</li>
 									<li>DankPyon_RugRoyal_LongLys3x3c</li>
 									<li>DankPyon_RugRoyal_Lys2x3c</li>
-									<li>DankPyon_RugPatched_Cloth1x1c</li>
-									<li>DankPyon_RugPatched_Cloth1x2c</li>
-									<li>DankPyon_RugPatched_Cloth2x2c</li>
-									<li>DankPyon_RugPatched_Cloth2x4c</li>
-									<li>DankPyon_RugPatched_Cloth3x3c</li>
-									<li>DankPyon_RugPatched_Leather1x1c</li>
-									<li>DankPyon_RugPatched_Leather1x2c</li>
-									<li>DankPyon_RugPatched_Leather2x2c</li>
-									<li>DankPyon_RugPatched_Leather2x4c</li>
-									<li>DankPyon_RugPatched_Leather3x3c</li>
 								</things>
 								<count>4</count>
 							</li>
@@ -4183,16 +4109,6 @@
 										<li>DankPyon_RugRoyal_LongLys2x4c</li>
 										<li>DankPyon_RugRoyal_LongLys3x3c</li>
 										<li>DankPyon_RugRoyal_Lys2x3c</li>
-										<li>DankPyon_RugPatched_Cloth1x1c</li>
-										<li>DankPyon_RugPatched_Cloth1x2c</li>
-										<li>DankPyon_RugPatched_Cloth2x2c</li>
-										<li>DankPyon_RugPatched_Cloth2x4c</li>
-										<li>DankPyon_RugPatched_Cloth3x3c</li>
-										<li>DankPyon_RugPatched_Leather1x1c</li>
-										<li>DankPyon_RugPatched_Leather1x2c</li>
-										<li>DankPyon_RugPatched_Leather2x2c</li>
-										<li>DankPyon_RugPatched_Leather2x4c</li>
-										<li>DankPyon_RugPatched_Leather3x3c</li>
 									</things>
 									<count>4</count>
 								</li>
@@ -4279,16 +4195,6 @@
 									<li>DankPyon_RugRoyal_LongLys2x4c</li>
 									<li>DankPyon_RugRoyal_LongLys3x3c</li>
 									<li>DankPyon_RugRoyal_Lys2x3c</li>
-									<li>DankPyon_RugPatched_Cloth1x1c</li>
-									<li>DankPyon_RugPatched_Cloth1x2c</li>
-									<li>DankPyon_RugPatched_Cloth2x2c</li>
-									<li>DankPyon_RugPatched_Cloth2x4c</li>
-									<li>DankPyon_RugPatched_Cloth3x3c</li>
-									<li>DankPyon_RugPatched_Leather1x1c</li>
-									<li>DankPyon_RugPatched_Leather1x2c</li>
-									<li>DankPyon_RugPatched_Leather2x2c</li>
-									<li>DankPyon_RugPatched_Leather2x4c</li>
-									<li>DankPyon_RugPatched_Leather3x3c</li>
 								</things>
 								<count>4</count>
 							</li>
@@ -4441,16 +4347,6 @@
 										<li>DankPyon_RugRoyal_LongLys2x4c</li>
 										<li>DankPyon_RugRoyal_LongLys3x3c</li>
 										<li>DankPyon_RugRoyal_Lys2x3c</li>
-										<li>DankPyon_RugPatched_Cloth1x1c</li>
-										<li>DankPyon_RugPatched_Cloth1x2c</li>
-										<li>DankPyon_RugPatched_Cloth2x2c</li>
-										<li>DankPyon_RugPatched_Cloth2x4c</li>
-										<li>DankPyon_RugPatched_Cloth3x3c</li>
-										<li>DankPyon_RugPatched_Leather1x1c</li>
-										<li>DankPyon_RugPatched_Leather1x2c</li>
-										<li>DankPyon_RugPatched_Leather2x2c</li>
-										<li>DankPyon_RugPatched_Leather2x4c</li>
-										<li>DankPyon_RugPatched_Leather3x3c</li>
 									</things>
 									<count>4</count>
 								</li>
@@ -4537,16 +4433,6 @@
 									<li>DankPyon_RugRoyal_LongLys2x4c</li>
 									<li>DankPyon_RugRoyal_LongLys3x3c</li>
 									<li>DankPyon_RugRoyal_Lys2x3c</li>
-									<li>DankPyon_RugPatched_Cloth1x1c</li>
-									<li>DankPyon_RugPatched_Cloth1x2c</li>
-									<li>DankPyon_RugPatched_Cloth2x2c</li>
-									<li>DankPyon_RugPatched_Cloth2x4c</li>
-									<li>DankPyon_RugPatched_Cloth3x3c</li>
-									<li>DankPyon_RugPatched_Leather1x1c</li>
-									<li>DankPyon_RugPatched_Leather1x2c</li>
-									<li>DankPyon_RugPatched_Leather2x2c</li>
-									<li>DankPyon_RugPatched_Leather2x4c</li>
-									<li>DankPyon_RugPatched_Leather3x3c</li>
 								</things>
 								<count>4</count>
 							</li>
@@ -4707,16 +4593,6 @@
 										<li>DankPyon_RugRoyal_LongLys2x4c</li>
 										<li>DankPyon_RugRoyal_LongLys3x3c</li>
 										<li>DankPyon_RugRoyal_Lys2x3c</li>
-										<li>DankPyon_RugPatched_Cloth1x1c</li>
-										<li>DankPyon_RugPatched_Cloth1x2c</li>
-										<li>DankPyon_RugPatched_Cloth2x2c</li>
-										<li>DankPyon_RugPatched_Cloth2x4c</li>
-										<li>DankPyon_RugPatched_Cloth3x3c</li>
-										<li>DankPyon_RugPatched_Leather1x1c</li>
-										<li>DankPyon_RugPatched_Leather1x2c</li>
-										<li>DankPyon_RugPatched_Leather2x2c</li>
-										<li>DankPyon_RugPatched_Leather2x4c</li>
-										<li>DankPyon_RugPatched_Leather3x3c</li>
 									</things>
 									<count>4</count>
 								</li>
@@ -4803,16 +4679,6 @@
 									<li>DankPyon_RugRoyal_LongLys2x4c</li>
 									<li>DankPyon_RugRoyal_LongLys3x3c</li>
 									<li>DankPyon_RugRoyal_Lys2x3c</li>
-									<li>DankPyon_RugPatched_Cloth1x1c</li>
-									<li>DankPyon_RugPatched_Cloth1x2c</li>
-									<li>DankPyon_RugPatched_Cloth2x2c</li>
-									<li>DankPyon_RugPatched_Cloth2x4c</li>
-									<li>DankPyon_RugPatched_Cloth3x3c</li>
-									<li>DankPyon_RugPatched_Leather1x1c</li>
-									<li>DankPyon_RugPatched_Leather1x2c</li>
-									<li>DankPyon_RugPatched_Leather2x2c</li>
-									<li>DankPyon_RugPatched_Leather2x4c</li>
-									<li>DankPyon_RugPatched_Leather3x3c</li>
 								</things>
 								<count>5</count>
 							</li>
@@ -4981,16 +4847,6 @@
 										<li>DankPyon_RugRoyal_LongLys2x4c</li>
 										<li>DankPyon_RugRoyal_LongLys3x3c</li>
 										<li>DankPyon_RugRoyal_Lys2x3c</li>
-										<li>DankPyon_RugPatched_Cloth1x1c</li>
-										<li>DankPyon_RugPatched_Cloth1x2c</li>
-										<li>DankPyon_RugPatched_Cloth2x2c</li>
-										<li>DankPyon_RugPatched_Cloth2x4c</li>
-										<li>DankPyon_RugPatched_Cloth3x3c</li>
-										<li>DankPyon_RugPatched_Leather1x1c</li>
-										<li>DankPyon_RugPatched_Leather1x2c</li>
-										<li>DankPyon_RugPatched_Leather2x2c</li>
-										<li>DankPyon_RugPatched_Leather2x4c</li>
-										<li>DankPyon_RugPatched_Leather3x3c</li>
 									</things>
 									<count>5</count>
 								</li>
@@ -5077,16 +4933,6 @@
 									<li>DankPyon_RugRoyal_LongLys2x4c</li>
 									<li>DankPyon_RugRoyal_LongLys3x3c</li>
 									<li>DankPyon_RugRoyal_Lys2x3c</li>
-									<li>DankPyon_RugPatched_Cloth1x1c</li>
-									<li>DankPyon_RugPatched_Cloth1x2c</li>
-									<li>DankPyon_RugPatched_Cloth2x2c</li>
-									<li>DankPyon_RugPatched_Cloth2x4c</li>
-									<li>DankPyon_RugPatched_Cloth3x3c</li>
-									<li>DankPyon_RugPatched_Leather1x1c</li>
-									<li>DankPyon_RugPatched_Leather1x2c</li>
-									<li>DankPyon_RugPatched_Leather2x2c</li>
-									<li>DankPyon_RugPatched_Leather2x4c</li>
-									<li>DankPyon_RugPatched_Leather3x3c</li>
 								</things>
 								<count>5</count>
 							</li>
@@ -5255,16 +5101,6 @@
 										<li>DankPyon_RugRoyal_LongLys2x4c</li>
 										<li>DankPyon_RugRoyal_LongLys3x3c</li>
 										<li>DankPyon_RugRoyal_Lys2x3c</li>
-										<li>DankPyon_RugPatched_Cloth1x1c</li>
-										<li>DankPyon_RugPatched_Cloth1x2c</li>
-										<li>DankPyon_RugPatched_Cloth2x2c</li>
-										<li>DankPyon_RugPatched_Cloth2x4c</li>
-										<li>DankPyon_RugPatched_Cloth3x3c</li>
-										<li>DankPyon_RugPatched_Leather1x1c</li>
-										<li>DankPyon_RugPatched_Leather1x2c</li>
-										<li>DankPyon_RugPatched_Leather2x2c</li>
-										<li>DankPyon_RugPatched_Leather2x4c</li>
-										<li>DankPyon_RugPatched_Leather3x3c</li>
 									</things>
 									<count>5</count>
 								</li>
@@ -5351,16 +5187,6 @@
 									<li>DankPyon_RugRoyal_LongLys2x4c</li>
 									<li>DankPyon_RugRoyal_LongLys3x3c</li>
 									<li>DankPyon_RugRoyal_Lys2x3c</li>
-									<li>DankPyon_RugPatched_Cloth1x1c</li>
-									<li>DankPyon_RugPatched_Cloth1x2c</li>
-									<li>DankPyon_RugPatched_Cloth2x2c</li>
-									<li>DankPyon_RugPatched_Cloth2x4c</li>
-									<li>DankPyon_RugPatched_Cloth3x3c</li>
-									<li>DankPyon_RugPatched_Leather1x1c</li>
-									<li>DankPyon_RugPatched_Leather1x2c</li>
-									<li>DankPyon_RugPatched_Leather2x2c</li>
-									<li>DankPyon_RugPatched_Leather2x4c</li>
-									<li>DankPyon_RugPatched_Leather3x3c</li>
 								</things>
 								<count>5</count>
 							</li>
@@ -5544,16 +5370,6 @@
 										<li>DankPyon_RugRoyal_LongLys2x4c</li>
 										<li>DankPyon_RugRoyal_LongLys3x3c</li>
 										<li>DankPyon_RugRoyal_Lys2x3c</li>
-										<li>DankPyon_RugPatched_Cloth1x1c</li>
-										<li>DankPyon_RugPatched_Cloth1x2c</li>
-										<li>DankPyon_RugPatched_Cloth2x2c</li>
-										<li>DankPyon_RugPatched_Cloth2x4c</li>
-										<li>DankPyon_RugPatched_Cloth3x3c</li>
-										<li>DankPyon_RugPatched_Leather1x1c</li>
-										<li>DankPyon_RugPatched_Leather1x2c</li>
-										<li>DankPyon_RugPatched_Leather2x2c</li>
-										<li>DankPyon_RugPatched_Leather2x4c</li>
-										<li>DankPyon_RugPatched_Leather3x3c</li>
 									</things>
 									<count>5</count>
 								</li>
@@ -5640,16 +5456,6 @@
 									<li>DankPyon_RugRoyal_LongLys2x4c</li>
 									<li>DankPyon_RugRoyal_LongLys3x3c</li>
 									<li>DankPyon_RugRoyal_Lys2x3c</li>
-									<li>DankPyon_RugPatched_Cloth1x1c</li>
-									<li>DankPyon_RugPatched_Cloth1x2c</li>
-									<li>DankPyon_RugPatched_Cloth2x2c</li>
-									<li>DankPyon_RugPatched_Cloth2x4c</li>
-									<li>DankPyon_RugPatched_Cloth3x3c</li>
-									<li>DankPyon_RugPatched_Leather1x1c</li>
-									<li>DankPyon_RugPatched_Leather1x2c</li>
-									<li>DankPyon_RugPatched_Leather2x2c</li>
-									<li>DankPyon_RugPatched_Leather2x4c</li>
-									<li>DankPyon_RugPatched_Leather3x3c</li>
 								</things>
 								<count>6</count>
 							</li>
@@ -5833,16 +5639,6 @@
 										<li>DankPyon_RugRoyal_LongLys2x4c</li>
 										<li>DankPyon_RugRoyal_LongLys3x3c</li>
 										<li>DankPyon_RugRoyal_Lys2x3c</li>
-										<li>DankPyon_RugPatched_Cloth1x1c</li>
-										<li>DankPyon_RugPatched_Cloth1x2c</li>
-										<li>DankPyon_RugPatched_Cloth2x2c</li>
-										<li>DankPyon_RugPatched_Cloth2x4c</li>
-										<li>DankPyon_RugPatched_Cloth3x3c</li>
-										<li>DankPyon_RugPatched_Leather1x1c</li>
-										<li>DankPyon_RugPatched_Leather1x2c</li>
-										<li>DankPyon_RugPatched_Leather2x2c</li>
-										<li>DankPyon_RugPatched_Leather2x4c</li>
-										<li>DankPyon_RugPatched_Leather3x3c</li>
 									</things>
 									<count>6</count>
 								</li>
@@ -5929,16 +5725,6 @@
 									<li>DankPyon_RugRoyal_LongLys2x4c</li>
 									<li>DankPyon_RugRoyal_LongLys3x3c</li>
 									<li>DankPyon_RugRoyal_Lys2x3c</li>
-									<li>DankPyon_RugPatched_Cloth1x1c</li>
-									<li>DankPyon_RugPatched_Cloth1x2c</li>
-									<li>DankPyon_RugPatched_Cloth2x2c</li>
-									<li>DankPyon_RugPatched_Cloth2x4c</li>
-									<li>DankPyon_RugPatched_Cloth3x3c</li>
-									<li>DankPyon_RugPatched_Leather1x1c</li>
-									<li>DankPyon_RugPatched_Leather1x2c</li>
-									<li>DankPyon_RugPatched_Leather2x2c</li>
-									<li>DankPyon_RugPatched_Leather2x4c</li>
-									<li>DankPyon_RugPatched_Leather3x3c</li>
 								</things>
 								<count>6</count>
 							</li>
@@ -6122,16 +5908,6 @@
 										<li>DankPyon_RugRoyal_LongLys2x4c</li>
 										<li>DankPyon_RugRoyal_LongLys3x3c</li>
 										<li>DankPyon_RugRoyal_Lys2x3c</li>
-										<li>DankPyon_RugPatched_Cloth1x1c</li>
-										<li>DankPyon_RugPatched_Cloth1x2c</li>
-										<li>DankPyon_RugPatched_Cloth2x2c</li>
-										<li>DankPyon_RugPatched_Cloth2x4c</li>
-										<li>DankPyon_RugPatched_Cloth3x3c</li>
-										<li>DankPyon_RugPatched_Leather1x1c</li>
-										<li>DankPyon_RugPatched_Leather1x2c</li>
-										<li>DankPyon_RugPatched_Leather2x2c</li>
-										<li>DankPyon_RugPatched_Leather2x4c</li>
-										<li>DankPyon_RugPatched_Leather3x3c</li>
 									</things>
 									<count>6</count>
 								</li>
@@ -6218,16 +5994,6 @@
 									<li>DankPyon_RugRoyal_LongLys2x4c</li>
 									<li>DankPyon_RugRoyal_LongLys3x3c</li>
 									<li>DankPyon_RugRoyal_Lys2x3c</li>
-									<li>DankPyon_RugPatched_Cloth1x1c</li>
-									<li>DankPyon_RugPatched_Cloth1x2c</li>
-									<li>DankPyon_RugPatched_Cloth2x2c</li>
-									<li>DankPyon_RugPatched_Cloth2x4c</li>
-									<li>DankPyon_RugPatched_Cloth3x3c</li>
-									<li>DankPyon_RugPatched_Leather1x1c</li>
-									<li>DankPyon_RugPatched_Leather1x2c</li>
-									<li>DankPyon_RugPatched_Leather2x2c</li>
-									<li>DankPyon_RugPatched_Leather2x4c</li>
-									<li>DankPyon_RugPatched_Leather3x3c</li>
 								</things>
 								<count>6</count>
 							</li>
@@ -6366,16 +6132,6 @@
 										<li>DankPyon_RugRoyal_LongLys2x4c</li>
 										<li>DankPyon_RugRoyal_LongLys3x3c</li>
 										<li>DankPyon_RugRoyal_Lys2x3c</li>
-										<li>DankPyon_RugPatched_Cloth1x1c</li>
-										<li>DankPyon_RugPatched_Cloth1x2c</li>
-										<li>DankPyon_RugPatched_Cloth2x2c</li>
-										<li>DankPyon_RugPatched_Cloth2x4c</li>
-										<li>DankPyon_RugPatched_Cloth3x3c</li>
-										<li>DankPyon_RugPatched_Leather1x1c</li>
-										<li>DankPyon_RugPatched_Leather1x2c</li>
-										<li>DankPyon_RugPatched_Leather2x2c</li>
-										<li>DankPyon_RugPatched_Leather2x4c</li>
-										<li>DankPyon_RugPatched_Leather3x3c</li>
 									</things>
 									<count>6</count>
 								</li>
@@ -6392,6 +6148,248 @@
 							</bedroomRequirements>
 						</value>
 					</nomatch>
+				</li>
+
+				<!-- VFEE_Archduke: MO-Teppiche zu VFEEs Teppich-Anforderung -->
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/RoyalTitleDef[defName="VFEE_Archduke"]/bedroomRequirements/li[@Class="RoomRequirement_ThingAnyOfCount"][things/li="VFEE_LargeRoyalRug"]/things</xpath>
+					<value>
+						<li>DankPyon_RugHyena2x2c</li>
+						<li>DankPyon_RugWolfTimber2x2c</li>
+						<li>DankPyon_RugWolfArctic2x2c</li>
+						<li>DankPyon_RugCougar2x2c</li>
+						<li>DankPyon_RugPanther2x2c</li>
+						<li>DankPyon_RugGrizzlyBear3x3c</li>
+						<li>DankPyon_RugPolarBear3x3c</li>
+						<li>DankPyon_RugRox3x3c</li>
+						<li>DankPyon_RugThrumbo3x3c</li>
+						<li>DankPyon_RugHuman1x2c</li>
+						<li>DankPyon_RugDaer4x4c</li>
+						<li>DankPyon_RugRoyal_GrandCross3x3c</li>
+						<li>DankPyon_RugRoyal_LongLys2x4c</li>
+						<li>DankPyon_RugRoyal_LongLys3x3c</li>
+						<li>DankPyon_RugRoyal_Lys2x3c</li>
+					</value>
+				</li>
+
+				<!-- Consul: MO-Teppiche zu VFEEs Teppich-Anforderung -->
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/RoyalTitleDef[@ParentName="ConsulBase" and not(defName)]/bedroomRequirements/li[@Class="RoomRequirement_ThingAnyOfCount"][things/li="VFEE_LargeRoyalRug"]/things</xpath>
+					<value>
+						<li>DankPyon_RugHyena2x2c</li>
+						<li>DankPyon_RugWolfTimber2x2c</li>
+						<li>DankPyon_RugWolfArctic2x2c</li>
+						<li>DankPyon_RugCougar2x2c</li>
+						<li>DankPyon_RugPanther2x2c</li>
+						<li>DankPyon_RugGrizzlyBear3x3c</li>
+						<li>DankPyon_RugPolarBear3x3c</li>
+						<li>DankPyon_RugRox3x3c</li>
+						<li>DankPyon_RugThrumbo3x3c</li>
+						<li>DankPyon_RugHuman1x2c</li>
+						<li>DankPyon_RugDaer4x4c</li>
+						<li>DankPyon_RugRoyal_GrandCross3x3c</li>
+						<li>DankPyon_RugRoyal_LongLys2x4c</li>
+						<li>DankPyon_RugRoyal_LongLys3x3c</li>
+						<li>DankPyon_RugRoyal_Lys2x3c</li>
+					</value>
+				</li>
+
+				<!-- Consul: MO-Teppiche zu VFEEs Teppich-Anforderung -->
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/RoyalTitleDef[@ParentName="ConsulBase" and not(defName)]/bedroomRequirements/li[@Class="RoomRequirement_ThingAnyOfCount"][things/li="VFEE_GrandRoyalRug"]/things</xpath>
+					<value>
+						<li>DankPyon_RugHyena2x2c</li>
+						<li>DankPyon_RugWolfTimber2x2c</li>
+						<li>DankPyon_RugWolfArctic2x2c</li>
+						<li>DankPyon_RugCougar2x2c</li>
+						<li>DankPyon_RugPanther2x2c</li>
+						<li>DankPyon_RugGrizzlyBear3x3c</li>
+						<li>DankPyon_RugPolarBear3x3c</li>
+						<li>DankPyon_RugRox3x3c</li>
+						<li>DankPyon_RugThrumbo3x3c</li>
+						<li>DankPyon_RugHuman1x2c</li>
+						<li>DankPyon_RugDaer4x4c</li>
+						<li>DankPyon_RugRoyal_GrandCross3x3c</li>
+						<li>DankPyon_RugRoyal_LongLys2x4c</li>
+						<li>DankPyon_RugRoyal_LongLys3x3c</li>
+						<li>DankPyon_RugRoyal_Lys2x3c</li>
+					</value>
+				</li>
+
+				<!-- VFEE_Magister: MO-Teppiche zu VFEEs Teppich-Anforderung -->
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/RoyalTitleDef[defName="VFEE_Magister"]/bedroomRequirements/li[@Class="RoomRequirement_ThingAnyOfCount"][things/li="VFEE_LargeRoyalRug"]/things</xpath>
+					<value>
+						<li>DankPyon_RugHyena2x2c</li>
+						<li>DankPyon_RugWolfTimber2x2c</li>
+						<li>DankPyon_RugWolfArctic2x2c</li>
+						<li>DankPyon_RugCougar2x2c</li>
+						<li>DankPyon_RugPanther2x2c</li>
+						<li>DankPyon_RugGrizzlyBear3x3c</li>
+						<li>DankPyon_RugPolarBear3x3c</li>
+						<li>DankPyon_RugRox3x3c</li>
+						<li>DankPyon_RugThrumbo3x3c</li>
+						<li>DankPyon_RugHuman1x2c</li>
+						<li>DankPyon_RugDaer4x4c</li>
+						<li>DankPyon_RugRoyal_GrandCross3x3c</li>
+						<li>DankPyon_RugRoyal_LongLys2x4c</li>
+						<li>DankPyon_RugRoyal_LongLys3x3c</li>
+						<li>DankPyon_RugRoyal_Lys2x3c</li>
+					</value>
+				</li>
+
+				<!-- VFEE_Magister: MO-Teppiche zu VFEEs Teppich-Anforderung -->
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/RoyalTitleDef[defName="VFEE_Magister"]/bedroomRequirements/li[@Class="RoomRequirement_ThingAnyOfCount"][things/li="VFEE_GrandRoyalRug"]/things</xpath>
+					<value>
+						<li>DankPyon_RugHyena2x2c</li>
+						<li>DankPyon_RugWolfTimber2x2c</li>
+						<li>DankPyon_RugWolfArctic2x2c</li>
+						<li>DankPyon_RugCougar2x2c</li>
+						<li>DankPyon_RugPanther2x2c</li>
+						<li>DankPyon_RugGrizzlyBear3x3c</li>
+						<li>DankPyon_RugPolarBear3x3c</li>
+						<li>DankPyon_RugRox3x3c</li>
+						<li>DankPyon_RugThrumbo3x3c</li>
+						<li>DankPyon_RugHuman1x2c</li>
+						<li>DankPyon_RugDaer4x4c</li>
+						<li>DankPyon_RugRoyal_GrandCross3x3c</li>
+						<li>DankPyon_RugRoyal_LongLys2x4c</li>
+						<li>DankPyon_RugRoyal_LongLys3x3c</li>
+						<li>DankPyon_RugRoyal_Lys2x3c</li>
+					</value>
+				</li>
+
+				<!-- VFEE_Despot: MO-Teppiche zu VFEEs Teppich-Anforderung -->
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/RoyalTitleDef[defName="VFEE_Despot"]/bedroomRequirements/li[@Class="RoomRequirement_ThingAnyOfCount"][things/li="VFEE_LargeRoyalRug"]/things</xpath>
+					<value>
+						<li>DankPyon_RugHyena2x2c</li>
+						<li>DankPyon_RugWolfTimber2x2c</li>
+						<li>DankPyon_RugWolfArctic2x2c</li>
+						<li>DankPyon_RugCougar2x2c</li>
+						<li>DankPyon_RugPanther2x2c</li>
+						<li>DankPyon_RugGrizzlyBear3x3c</li>
+						<li>DankPyon_RugPolarBear3x3c</li>
+						<li>DankPyon_RugRox3x3c</li>
+						<li>DankPyon_RugThrumbo3x3c</li>
+						<li>DankPyon_RugHuman1x2c</li>
+						<li>DankPyon_RugDaer4x4c</li>
+						<li>DankPyon_RugRoyal_GrandCross3x3c</li>
+						<li>DankPyon_RugRoyal_LongLys2x4c</li>
+						<li>DankPyon_RugRoyal_LongLys3x3c</li>
+						<li>DankPyon_RugRoyal_Lys2x3c</li>
+					</value>
+				</li>
+
+				<!-- VFEE_Despot: MO-Teppiche zu VFEEs Teppich-Anforderung -->
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/RoyalTitleDef[defName="VFEE_Despot"]/bedroomRequirements/li[@Class="RoomRequirement_ThingAnyOfCount"][things/li="VFEE_GrandRoyalRug"]/things</xpath>
+					<value>
+						<li>DankPyon_RugHyena2x2c</li>
+						<li>DankPyon_RugWolfTimber2x2c</li>
+						<li>DankPyon_RugWolfArctic2x2c</li>
+						<li>DankPyon_RugCougar2x2c</li>
+						<li>DankPyon_RugPanther2x2c</li>
+						<li>DankPyon_RugGrizzlyBear3x3c</li>
+						<li>DankPyon_RugPolarBear3x3c</li>
+						<li>DankPyon_RugRox3x3c</li>
+						<li>DankPyon_RugThrumbo3x3c</li>
+						<li>DankPyon_RugHuman1x2c</li>
+						<li>DankPyon_RugDaer4x4c</li>
+						<li>DankPyon_RugRoyal_GrandCross3x3c</li>
+						<li>DankPyon_RugRoyal_LongLys2x4c</li>
+						<li>DankPyon_RugRoyal_LongLys3x3c</li>
+						<li>DankPyon_RugRoyal_Lys2x3c</li>
+					</value>
+				</li>
+
+				<!-- Stellarch: MO-Teppiche zu VFEEs Teppich-Anforderung -->
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/RoyalTitleDef[@ParentName="StellarchBase" and not(defName)]/bedroomRequirements/li[@Class="RoomRequirement_ThingAnyOfCount"][things/li="VFEE_LargeRoyalRug"]/things</xpath>
+					<value>
+						<li>DankPyon_RugHyena2x2c</li>
+						<li>DankPyon_RugWolfTimber2x2c</li>
+						<li>DankPyon_RugWolfArctic2x2c</li>
+						<li>DankPyon_RugCougar2x2c</li>
+						<li>DankPyon_RugPanther2x2c</li>
+						<li>DankPyon_RugGrizzlyBear3x3c</li>
+						<li>DankPyon_RugPolarBear3x3c</li>
+						<li>DankPyon_RugRox3x3c</li>
+						<li>DankPyon_RugThrumbo3x3c</li>
+						<li>DankPyon_RugHuman1x2c</li>
+						<li>DankPyon_RugDaer4x4c</li>
+						<li>DankPyon_RugRoyal_GrandCross3x3c</li>
+						<li>DankPyon_RugRoyal_LongLys2x4c</li>
+						<li>DankPyon_RugRoyal_LongLys3x3c</li>
+						<li>DankPyon_RugRoyal_Lys2x3c</li>
+					</value>
+				</li>
+
+				<!-- Stellarch: MO-Teppiche zu VFEEs Teppich-Anforderung -->
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/RoyalTitleDef[@ParentName="StellarchBase" and not(defName)]/bedroomRequirements/li[@Class="RoomRequirement_ThingAnyOfCount"][things/li="VFEE_GrandRoyalRug"]/things</xpath>
+					<value>
+						<li>DankPyon_RugHyena2x2c</li>
+						<li>DankPyon_RugWolfTimber2x2c</li>
+						<li>DankPyon_RugWolfArctic2x2c</li>
+						<li>DankPyon_RugCougar2x2c</li>
+						<li>DankPyon_RugPanther2x2c</li>
+						<li>DankPyon_RugGrizzlyBear3x3c</li>
+						<li>DankPyon_RugPolarBear3x3c</li>
+						<li>DankPyon_RugRox3x3c</li>
+						<li>DankPyon_RugThrumbo3x3c</li>
+						<li>DankPyon_RugHuman1x2c</li>
+						<li>DankPyon_RugDaer4x4c</li>
+						<li>DankPyon_RugRoyal_GrandCross3x3c</li>
+						<li>DankPyon_RugRoyal_LongLys2x4c</li>
+						<li>DankPyon_RugRoyal_LongLys3x3c</li>
+						<li>DankPyon_RugRoyal_Lys2x3c</li>
+					</value>
+				</li>
+
+				<!-- VFEE_HighStellarch: MO-Teppiche zu VFEEs Teppich-Anforderung -->
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/RoyalTitleDef[defName="VFEE_HighStellarch"]/bedroomRequirements/li[@Class="RoomRequirement_ThingAnyOfCount"][things/li="VFEE_LargeRoyalRug"]/things</xpath>
+					<value>
+						<li>DankPyon_RugHyena2x2c</li>
+						<li>DankPyon_RugWolfTimber2x2c</li>
+						<li>DankPyon_RugWolfArctic2x2c</li>
+						<li>DankPyon_RugCougar2x2c</li>
+						<li>DankPyon_RugPanther2x2c</li>
+						<li>DankPyon_RugGrizzlyBear3x3c</li>
+						<li>DankPyon_RugPolarBear3x3c</li>
+						<li>DankPyon_RugRox3x3c</li>
+						<li>DankPyon_RugThrumbo3x3c</li>
+						<li>DankPyon_RugHuman1x2c</li>
+						<li>DankPyon_RugDaer4x4c</li>
+						<li>DankPyon_RugRoyal_GrandCross3x3c</li>
+						<li>DankPyon_RugRoyal_LongLys2x4c</li>
+						<li>DankPyon_RugRoyal_LongLys3x3c</li>
+						<li>DankPyon_RugRoyal_Lys2x3c</li>
+					</value>
+				</li>
+
+				<!-- VFEE_HighStellarch: MO-Teppiche zu VFEEs Teppich-Anforderung -->
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/RoyalTitleDef[defName="VFEE_HighStellarch"]/bedroomRequirements/li[@Class="RoomRequirement_ThingAnyOfCount"][things/li="VFEE_GrandRoyalRug"]/things</xpath>
+					<value>
+						<li>DankPyon_RugHyena2x2c</li>
+						<li>DankPyon_RugWolfTimber2x2c</li>
+						<li>DankPyon_RugWolfArctic2x2c</li>
+						<li>DankPyon_RugCougar2x2c</li>
+						<li>DankPyon_RugPanther2x2c</li>
+						<li>DankPyon_RugGrizzlyBear3x3c</li>
+						<li>DankPyon_RugPolarBear3x3c</li>
+						<li>DankPyon_RugRox3x3c</li>
+						<li>DankPyon_RugThrumbo3x3c</li>
+						<li>DankPyon_RugHuman1x2c</li>
+						<li>DankPyon_RugDaer4x4c</li>
+						<li>DankPyon_RugRoyal_GrandCross3x3c</li>
+						<li>DankPyon_RugRoyal_LongLys2x4c</li>
+						<li>DankPyon_RugRoyal_LongLys3x3c</li>
+						<li>DankPyon_RugRoyal_Lys2x3c</li>
+					</value>
 				</li>
 
 			</operations>
@@ -7270,6 +7268,248 @@
 							</things>
 							<count>1</count>
 						</li>
+					</value>
+				</li>
+
+				<!-- VFEE_Archduke: MO-Teppiche zu VFEEs Teppich-Anforderung -->
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/RoyalTitleDef[defName="VFEE_Archduke"]/bedroomRequirements/li[@Class="RoomRequirement_ThingAnyOfCount"][things/li="VFEE_LargeRoyalRug"]/things</xpath>
+					<value>
+						<li>DankPyon_RugHyena2x2c</li>
+						<li>DankPyon_RugWolfTimber2x2c</li>
+						<li>DankPyon_RugWolfArctic2x2c</li>
+						<li>DankPyon_RugCougar2x2c</li>
+						<li>DankPyon_RugPanther2x2c</li>
+						<li>DankPyon_RugGrizzlyBear3x3c</li>
+						<li>DankPyon_RugPolarBear3x3c</li>
+						<li>DankPyon_RugRox3x3c</li>
+						<li>DankPyon_RugThrumbo3x3c</li>
+						<li>DankPyon_RugHuman1x2c</li>
+						<li>DankPyon_RugDaer4x4c</li>
+						<li>DankPyon_RugRoyal_GrandCross3x3c</li>
+						<li>DankPyon_RugRoyal_LongLys2x4c</li>
+						<li>DankPyon_RugRoyal_LongLys3x3c</li>
+						<li>DankPyon_RugRoyal_Lys2x3c</li>
+					</value>
+				</li>
+
+				<!-- Consul: MO-Teppiche zu VFEEs Teppich-Anforderung -->
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/RoyalTitleDef[@ParentName="ConsulBase" and not(defName)]/bedroomRequirements/li[@Class="RoomRequirement_ThingAnyOfCount"][things/li="VFEE_LargeRoyalRug"]/things</xpath>
+					<value>
+						<li>DankPyon_RugHyena2x2c</li>
+						<li>DankPyon_RugWolfTimber2x2c</li>
+						<li>DankPyon_RugWolfArctic2x2c</li>
+						<li>DankPyon_RugCougar2x2c</li>
+						<li>DankPyon_RugPanther2x2c</li>
+						<li>DankPyon_RugGrizzlyBear3x3c</li>
+						<li>DankPyon_RugPolarBear3x3c</li>
+						<li>DankPyon_RugRox3x3c</li>
+						<li>DankPyon_RugThrumbo3x3c</li>
+						<li>DankPyon_RugHuman1x2c</li>
+						<li>DankPyon_RugDaer4x4c</li>
+						<li>DankPyon_RugRoyal_GrandCross3x3c</li>
+						<li>DankPyon_RugRoyal_LongLys2x4c</li>
+						<li>DankPyon_RugRoyal_LongLys3x3c</li>
+						<li>DankPyon_RugRoyal_Lys2x3c</li>
+					</value>
+				</li>
+
+				<!-- Consul: MO-Teppiche zu VFEEs Teppich-Anforderung -->
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/RoyalTitleDef[@ParentName="ConsulBase" and not(defName)]/bedroomRequirements/li[@Class="RoomRequirement_ThingAnyOfCount"][things/li="VFEE_GrandRoyalRug"]/things</xpath>
+					<value>
+						<li>DankPyon_RugHyena2x2c</li>
+						<li>DankPyon_RugWolfTimber2x2c</li>
+						<li>DankPyon_RugWolfArctic2x2c</li>
+						<li>DankPyon_RugCougar2x2c</li>
+						<li>DankPyon_RugPanther2x2c</li>
+						<li>DankPyon_RugGrizzlyBear3x3c</li>
+						<li>DankPyon_RugPolarBear3x3c</li>
+						<li>DankPyon_RugRox3x3c</li>
+						<li>DankPyon_RugThrumbo3x3c</li>
+						<li>DankPyon_RugHuman1x2c</li>
+						<li>DankPyon_RugDaer4x4c</li>
+						<li>DankPyon_RugRoyal_GrandCross3x3c</li>
+						<li>DankPyon_RugRoyal_LongLys2x4c</li>
+						<li>DankPyon_RugRoyal_LongLys3x3c</li>
+						<li>DankPyon_RugRoyal_Lys2x3c</li>
+					</value>
+				</li>
+
+				<!-- VFEE_Magister: MO-Teppiche zu VFEEs Teppich-Anforderung -->
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/RoyalTitleDef[defName="VFEE_Magister"]/bedroomRequirements/li[@Class="RoomRequirement_ThingAnyOfCount"][things/li="VFEE_LargeRoyalRug"]/things</xpath>
+					<value>
+						<li>DankPyon_RugHyena2x2c</li>
+						<li>DankPyon_RugWolfTimber2x2c</li>
+						<li>DankPyon_RugWolfArctic2x2c</li>
+						<li>DankPyon_RugCougar2x2c</li>
+						<li>DankPyon_RugPanther2x2c</li>
+						<li>DankPyon_RugGrizzlyBear3x3c</li>
+						<li>DankPyon_RugPolarBear3x3c</li>
+						<li>DankPyon_RugRox3x3c</li>
+						<li>DankPyon_RugThrumbo3x3c</li>
+						<li>DankPyon_RugHuman1x2c</li>
+						<li>DankPyon_RugDaer4x4c</li>
+						<li>DankPyon_RugRoyal_GrandCross3x3c</li>
+						<li>DankPyon_RugRoyal_LongLys2x4c</li>
+						<li>DankPyon_RugRoyal_LongLys3x3c</li>
+						<li>DankPyon_RugRoyal_Lys2x3c</li>
+					</value>
+				</li>
+
+				<!-- VFEE_Magister: MO-Teppiche zu VFEEs Teppich-Anforderung -->
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/RoyalTitleDef[defName="VFEE_Magister"]/bedroomRequirements/li[@Class="RoomRequirement_ThingAnyOfCount"][things/li="VFEE_GrandRoyalRug"]/things</xpath>
+					<value>
+						<li>DankPyon_RugHyena2x2c</li>
+						<li>DankPyon_RugWolfTimber2x2c</li>
+						<li>DankPyon_RugWolfArctic2x2c</li>
+						<li>DankPyon_RugCougar2x2c</li>
+						<li>DankPyon_RugPanther2x2c</li>
+						<li>DankPyon_RugGrizzlyBear3x3c</li>
+						<li>DankPyon_RugPolarBear3x3c</li>
+						<li>DankPyon_RugRox3x3c</li>
+						<li>DankPyon_RugThrumbo3x3c</li>
+						<li>DankPyon_RugHuman1x2c</li>
+						<li>DankPyon_RugDaer4x4c</li>
+						<li>DankPyon_RugRoyal_GrandCross3x3c</li>
+						<li>DankPyon_RugRoyal_LongLys2x4c</li>
+						<li>DankPyon_RugRoyal_LongLys3x3c</li>
+						<li>DankPyon_RugRoyal_Lys2x3c</li>
+					</value>
+				</li>
+
+				<!-- VFEE_Despot: MO-Teppiche zu VFEEs Teppich-Anforderung -->
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/RoyalTitleDef[defName="VFEE_Despot"]/bedroomRequirements/li[@Class="RoomRequirement_ThingAnyOfCount"][things/li="VFEE_LargeRoyalRug"]/things</xpath>
+					<value>
+						<li>DankPyon_RugHyena2x2c</li>
+						<li>DankPyon_RugWolfTimber2x2c</li>
+						<li>DankPyon_RugWolfArctic2x2c</li>
+						<li>DankPyon_RugCougar2x2c</li>
+						<li>DankPyon_RugPanther2x2c</li>
+						<li>DankPyon_RugGrizzlyBear3x3c</li>
+						<li>DankPyon_RugPolarBear3x3c</li>
+						<li>DankPyon_RugRox3x3c</li>
+						<li>DankPyon_RugThrumbo3x3c</li>
+						<li>DankPyon_RugHuman1x2c</li>
+						<li>DankPyon_RugDaer4x4c</li>
+						<li>DankPyon_RugRoyal_GrandCross3x3c</li>
+						<li>DankPyon_RugRoyal_LongLys2x4c</li>
+						<li>DankPyon_RugRoyal_LongLys3x3c</li>
+						<li>DankPyon_RugRoyal_Lys2x3c</li>
+					</value>
+				</li>
+
+				<!-- VFEE_Despot: MO-Teppiche zu VFEEs Teppich-Anforderung -->
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/RoyalTitleDef[defName="VFEE_Despot"]/bedroomRequirements/li[@Class="RoomRequirement_ThingAnyOfCount"][things/li="VFEE_GrandRoyalRug"]/things</xpath>
+					<value>
+						<li>DankPyon_RugHyena2x2c</li>
+						<li>DankPyon_RugWolfTimber2x2c</li>
+						<li>DankPyon_RugWolfArctic2x2c</li>
+						<li>DankPyon_RugCougar2x2c</li>
+						<li>DankPyon_RugPanther2x2c</li>
+						<li>DankPyon_RugGrizzlyBear3x3c</li>
+						<li>DankPyon_RugPolarBear3x3c</li>
+						<li>DankPyon_RugRox3x3c</li>
+						<li>DankPyon_RugThrumbo3x3c</li>
+						<li>DankPyon_RugHuman1x2c</li>
+						<li>DankPyon_RugDaer4x4c</li>
+						<li>DankPyon_RugRoyal_GrandCross3x3c</li>
+						<li>DankPyon_RugRoyal_LongLys2x4c</li>
+						<li>DankPyon_RugRoyal_LongLys3x3c</li>
+						<li>DankPyon_RugRoyal_Lys2x3c</li>
+					</value>
+				</li>
+
+				<!-- Stellarch: MO-Teppiche zu VFEEs Teppich-Anforderung -->
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/RoyalTitleDef[@ParentName="StellarchBase" and not(defName)]/bedroomRequirements/li[@Class="RoomRequirement_ThingAnyOfCount"][things/li="VFEE_LargeRoyalRug"]/things</xpath>
+					<value>
+						<li>DankPyon_RugHyena2x2c</li>
+						<li>DankPyon_RugWolfTimber2x2c</li>
+						<li>DankPyon_RugWolfArctic2x2c</li>
+						<li>DankPyon_RugCougar2x2c</li>
+						<li>DankPyon_RugPanther2x2c</li>
+						<li>DankPyon_RugGrizzlyBear3x3c</li>
+						<li>DankPyon_RugPolarBear3x3c</li>
+						<li>DankPyon_RugRox3x3c</li>
+						<li>DankPyon_RugThrumbo3x3c</li>
+						<li>DankPyon_RugHuman1x2c</li>
+						<li>DankPyon_RugDaer4x4c</li>
+						<li>DankPyon_RugRoyal_GrandCross3x3c</li>
+						<li>DankPyon_RugRoyal_LongLys2x4c</li>
+						<li>DankPyon_RugRoyal_LongLys3x3c</li>
+						<li>DankPyon_RugRoyal_Lys2x3c</li>
+					</value>
+				</li>
+
+				<!-- Stellarch: MO-Teppiche zu VFEEs Teppich-Anforderung -->
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/RoyalTitleDef[@ParentName="StellarchBase" and not(defName)]/bedroomRequirements/li[@Class="RoomRequirement_ThingAnyOfCount"][things/li="VFEE_GrandRoyalRug"]/things</xpath>
+					<value>
+						<li>DankPyon_RugHyena2x2c</li>
+						<li>DankPyon_RugWolfTimber2x2c</li>
+						<li>DankPyon_RugWolfArctic2x2c</li>
+						<li>DankPyon_RugCougar2x2c</li>
+						<li>DankPyon_RugPanther2x2c</li>
+						<li>DankPyon_RugGrizzlyBear3x3c</li>
+						<li>DankPyon_RugPolarBear3x3c</li>
+						<li>DankPyon_RugRox3x3c</li>
+						<li>DankPyon_RugThrumbo3x3c</li>
+						<li>DankPyon_RugHuman1x2c</li>
+						<li>DankPyon_RugDaer4x4c</li>
+						<li>DankPyon_RugRoyal_GrandCross3x3c</li>
+						<li>DankPyon_RugRoyal_LongLys2x4c</li>
+						<li>DankPyon_RugRoyal_LongLys3x3c</li>
+						<li>DankPyon_RugRoyal_Lys2x3c</li>
+					</value>
+				</li>
+
+				<!-- VFEE_HighStellarch: MO-Teppiche zu VFEEs Teppich-Anforderung -->
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/RoyalTitleDef[defName="VFEE_HighStellarch"]/bedroomRequirements/li[@Class="RoomRequirement_ThingAnyOfCount"][things/li="VFEE_LargeRoyalRug"]/things</xpath>
+					<value>
+						<li>DankPyon_RugHyena2x2c</li>
+						<li>DankPyon_RugWolfTimber2x2c</li>
+						<li>DankPyon_RugWolfArctic2x2c</li>
+						<li>DankPyon_RugCougar2x2c</li>
+						<li>DankPyon_RugPanther2x2c</li>
+						<li>DankPyon_RugGrizzlyBear3x3c</li>
+						<li>DankPyon_RugPolarBear3x3c</li>
+						<li>DankPyon_RugRox3x3c</li>
+						<li>DankPyon_RugThrumbo3x3c</li>
+						<li>DankPyon_RugHuman1x2c</li>
+						<li>DankPyon_RugDaer4x4c</li>
+						<li>DankPyon_RugRoyal_GrandCross3x3c</li>
+						<li>DankPyon_RugRoyal_LongLys2x4c</li>
+						<li>DankPyon_RugRoyal_LongLys3x3c</li>
+						<li>DankPyon_RugRoyal_Lys2x3c</li>
+					</value>
+				</li>
+
+				<!-- VFEE_HighStellarch: MO-Teppiche zu VFEEs Teppich-Anforderung -->
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/RoyalTitleDef[defName="VFEE_HighStellarch"]/bedroomRequirements/li[@Class="RoomRequirement_ThingAnyOfCount"][things/li="VFEE_GrandRoyalRug"]/things</xpath>
+					<value>
+						<li>DankPyon_RugHyena2x2c</li>
+						<li>DankPyon_RugWolfTimber2x2c</li>
+						<li>DankPyon_RugWolfArctic2x2c</li>
+						<li>DankPyon_RugCougar2x2c</li>
+						<li>DankPyon_RugPanther2x2c</li>
+						<li>DankPyon_RugGrizzlyBear3x3c</li>
+						<li>DankPyon_RugPolarBear3x3c</li>
+						<li>DankPyon_RugRox3x3c</li>
+						<li>DankPyon_RugThrumbo3x3c</li>
+						<li>DankPyon_RugHuman1x2c</li>
+						<li>DankPyon_RugDaer4x4c</li>
+						<li>DankPyon_RugRoyal_GrandCross3x3c</li>
+						<li>DankPyon_RugRoyal_LongLys2x4c</li>
+						<li>DankPyon_RugRoyal_LongLys3x3c</li>
+						<li>DankPyon_RugRoyal_Lys2x3c</li>
 					</value>
 				</li>
 
