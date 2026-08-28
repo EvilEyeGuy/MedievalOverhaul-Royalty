@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<!-- ==========================================================================
+	     Notreparatur fuer unvollstaendige Medieval-Overhaul-Installationen.
+
+	     Medieval Overhaul ist nicht mehr im Steam Workshop, die Leute laden den
+	     Mod von Hand herunter. Bei manchen Kopien fehlen die Defs aus
+	     Defs/TraderKindDefs. Die vier Noble-House-Fraktionen erben ihre
+	     Haendlerlisten aber aus DankPyon_NobleHouseFactionBase und zeigen dann
+	     ins Leere, 36 Meldungen beim Start:
+
+	       Could not resolve cross-reference to RimWorld.TraderKindDef
+	       named DankPyon_Caravan_Medieval_BulkGoodsMerchant
+	       (wanter=caravanTraderKinds)
+
+	     Folge im Spiel: die Noble Houses schicken keine Karawanen mehr.
+
+	     Jede Operation prueft vorher, ob der Fehler ueberhaupt vorliegt. Der
+	     Ausdruck "not(/Defs/TraderKindDef/defName = .)" trifft genau die
+	     Eintraege, zu denen es im fertig zusammengesetzten Dokument keinen
+	     TraderKindDef gibt. Ist die MO-Installation vollstaendig, greift
+	     nichts davon, und es wird auch nichts protokolliert.
+	     ========================================================================== -->
+
+	<!-- ===== 1. Karawanenhaendler: tote Verweise entfernen ===== -->
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/FactionDef[@Name="DankPyon_NobleHouseFactionBase"]/caravanTraderKinds/li[not(/Defs/TraderKindDef/defName = .)]</xpath>
+		<match Class="PatchOperationRemove">
+			<xpath>Defs/FactionDef[@Name="DankPyon_NobleHouseFactionBase"]/caravanTraderKinds/li[not(/Defs/TraderKindDef/defName = .)]</xpath>
+		</match>
+	</Operation>
+
+	<!-- Bleibt danach nichts uebrig, springt ein Vanilla-Ersatz ein, damit die
+	     Fraktionen weiterhin Handelskarawanen schicken koennen. -->
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/FactionDef[@Name="DankPyon_NobleHouseFactionBase"]/caravanTraderKinds[not(li)]</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/FactionDef[@Name="DankPyon_NobleHouseFactionBase"]/caravanTraderKinds</xpath>
+			<value>
+				<caravanTraderKinds>
+					<li>Caravan_Neolithic_BulkGoods</li>
+					<li>Caravan_Neolithic_WarMerchant</li>
+				</caravanTraderKinds>
+			</value>
+		</match>
+	</Operation>
+
+	<!-- ===== 2. Besuchshaendler ===== -->
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/FactionDef[@Name="DankPyon_NobleHouseFactionBase"]/visitorTraderKinds/li[not(/Defs/TraderKindDef/defName = .)]</xpath>
+		<match Class="PatchOperationRemove">
+			<xpath>Defs/FactionDef[@Name="DankPyon_NobleHouseFactionBase"]/visitorTraderKinds/li[not(/Defs/TraderKindDef/defName = .)]</xpath>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/FactionDef[@Name="DankPyon_NobleHouseFactionBase"]/visitorTraderKinds[not(li)]</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/FactionDef[@Name="DankPyon_NobleHouseFactionBase"]/visitorTraderKinds</xpath>
+			<value>
+				<visitorTraderKinds>
+					<li>Visitor_Neolithic_Standard</li>
+				</visitorTraderKinds>
+			</value>
+		</match>
+	</Operation>
+
+	<!-- ===== 3. Siedlungshaendler ===== -->
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/FactionDef[@Name="DankPyon_NobleHouseFactionBase"]/baseTraderKinds/li[not(/Defs/TraderKindDef/defName = .)]</xpath>
+		<match Class="PatchOperationRemove">
+			<xpath>Defs/FactionDef[@Name="DankPyon_NobleHouseFactionBase"]/baseTraderKinds/li[not(/Defs/TraderKindDef/defName = .)]</xpath>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/FactionDef[@Name="DankPyon_NobleHouseFactionBase"]/baseTraderKinds[not(li)]</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/FactionDef[@Name="DankPyon_NobleHouseFactionBase"]/baseTraderKinds</xpath>
+			<value>
+				<baseTraderKinds>
+					<li>Base_Neolithic_Standard</li>
+				</baseTraderKinds>
+			</value>
+		</match>
+	</Operation>
+
+</Patch>
