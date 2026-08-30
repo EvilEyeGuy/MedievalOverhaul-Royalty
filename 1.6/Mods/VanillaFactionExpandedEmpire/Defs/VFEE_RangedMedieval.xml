@@ -34,14 +34,17 @@
 	  <li>Ranged</li>
 	  <li>RangedHeavy</li>
 	</weaponClasses>
-	<recipeMaker>
-	  <recipeUsers Inherit="False">
-	  </recipeUsers>
-	  <researchPrerequisite>DankPyon_HeavyCrossbow</researchPrerequisite>
-	  <skillRequirements>
-		<Crafting>20</Crafting>
-	  </skillRequirements>
-	</recipeMaker>
+	<!-- IsNull statt leerer recipeUsers: BaseWeaponNeolithic bringt selbst einen
+	     recipeMaker mit, ein Weglassen wuerde den erben. So entsteht gar kein
+	     Rezept, das andere Mods einer Werkbank zuordnen koennten. -->
+	<recipeMaker IsNull="True" />
+	<!-- CompQuality steht sonst im Elternteil und ginge durch eigenes comps verloren. -->
+	<comps>
+	  <li>
+		<compClass>CompQuality</compClass>
+	  </li>
+	  <li Class="CompProperties_Biocodable" />
+	</comps>
 	<verbs>
 	  <li>
 		<verbClass>Verb_Shoot</verbClass>

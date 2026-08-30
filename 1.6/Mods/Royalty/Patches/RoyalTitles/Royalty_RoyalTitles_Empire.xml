@@ -25,9 +25,7 @@
 		<li>EEG_RoyaltyTitle</li>
 	</settings>
 
-	<!-- ############################################################
-	     AKTIV - volle Medieval-Overhaul-Integration
-	     ############################################################ -->
+	<!-- ===== AKTIV - volle Medieval-Overhaul-Integration ===== -->
 	<active Class="PatchOperationFindMod">
 		<mods>
 			<li>Vanilla Factions Expanded - Empire</li>
@@ -5279,8 +5277,12 @@
 									</things>
 									<count>2</count>
 								</li>
-								<li Class="RoomRequirement_ThingCount">
-									<thingDef>VFEE_Candelabra</thingDef>
+								<li Class="RoomRequirement_ThingAnyOfCount">
+									<things>
+										<li>VFEE_Candelabra</li>
+										<li>DankPyon_Candelabra</li>
+										<li>DankPyon_CandleStand</li>
+									</things>
 									<count>2</count>
 								</li>
 								<li Class="RoomRequirement_ThingCount">
@@ -5548,8 +5550,12 @@
 									</things>
 									<count>2</count>
 								</li>
-								<li Class="RoomRequirement_ThingCount">
-									<thingDef>VFEE_Candelabra</thingDef>
+								<li Class="RoomRequirement_ThingAnyOfCount">
+									<things>
+										<li>VFEE_Candelabra</li>
+										<li>DankPyon_Candelabra</li>
+										<li>DankPyon_CandleStand</li>
+									</things>
 									<count>2</count>
 								</li>
 								<li Class="RoomRequirement_ThingCount">
@@ -5817,8 +5823,12 @@
 									</things>
 									<count>2</count>
 								</li>
-								<li Class="RoomRequirement_ThingCount">
-									<thingDef>VFEE_Candelabra</thingDef>
+								<li Class="RoomRequirement_ThingAnyOfCount">
+									<things>
+										<li>VFEE_Candelabra</li>
+										<li>DankPyon_Candelabra</li>
+										<li>DankPyon_CandleStand</li>
+									</things>
 									<count>2</count>
 								</li>
 								<li Class="RoomRequirement_ThingCount">
@@ -6396,9 +6406,7 @@
 		</match>
 	</active>
 
-	<!-- ############################################################
-	     INAKTIV - MO-Items nur ergaenzen
-	     ############################################################ -->
+	<!-- ===== INAKTIV - MO-Items nur ergaenzen ===== -->
 	<inactive Class="PatchOperationFindMod">
 		<mods>
 			<li>Vanilla Factions Expanded - Empire</li>

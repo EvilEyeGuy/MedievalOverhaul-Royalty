@@ -2,3 +2,4 @@
 /1.6/Source/MedievalOverhaulRoyalty/obj
 *.pdb
 1.6/Assemblies/MedievalOverhaul.dll
+.mcp.json

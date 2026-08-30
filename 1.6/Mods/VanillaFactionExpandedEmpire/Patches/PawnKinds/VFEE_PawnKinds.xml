@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8" ?>
 <Patch>
 
 <!-- VFEE_Deserter -->
@@ -316,6 +316,21 @@
 						<weaponTags Inherit="False">
 						  <li>EEG_AbsolversCrossbow</li>
 						</weaponTags>
+					</value>
+				</match>
+			</li>
+			<li Class="PatchOperationConditional">
+				<xpath>Defs/PawnKindDef[defName="VFEE_Empire_Fighter_Absolver"]/biocodeWeaponChance</xpath>
+				<nomatch Class="PatchOperationAdd">
+					<xpath>Defs/PawnKindDef[defName="VFEE_Empire_Fighter_Absolver"]</xpath>
+					<value>
+						<biocodeWeaponChance>1</biocodeWeaponChance>
+					</value>
+				</nomatch>
+				<match Class="PatchOperationReplace">
+					<xpath>Defs/PawnKindDef[defName="VFEE_Empire_Fighter_Absolver"]/biocodeWeaponChance</xpath>
+					<value>
+						<biocodeWeaponChance>1</biocodeWeaponChance>
 					</value>
 				</match>
 			</li>
