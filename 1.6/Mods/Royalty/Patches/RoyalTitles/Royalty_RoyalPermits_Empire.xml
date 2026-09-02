@@ -502,25 +502,35 @@
 						</value>
 					</li>
 
-					<li Class="PatchOperationReplace">
-						<xpath>Defs/RoyalTitlePermitDef[defName="VFEI_HEShellsDrop"]/label</xpath>
-						<value>
-							<label>Ballista bolts drop</label>
-						</value>
-					</li>
-					<li Class="PatchOperationReplace">
-						<xpath>Defs/RoyalTitlePermitDef[defName="VFEI_HEShellsDrop"]/description</xpath>
-						<value>
-							<description>Call for a drop of 20 balista bolts.</description>
-						</value>
-					</li>
-					<li Class="PatchOperationReplace">
-						<xpath>Defs/RoyalTitlePermitDef[defName="VFEI_HEShellsDrop"]/royalAid/itemsToDrop</xpath>
-						<value>
-							<itemsToDrop>
-								<DankPyon_BallistaBolt>20</DankPyon_BallistaBolt>
-							</itemsToDrop>
-						</value>
+					<!-- Nur wenn es den Bolzen wirklich gibt. Combat Extended entfernt
+					     DankPyon_BallistaBolt und setzt hier selbst Pila ein; ohne die
+					     Bedingung zeigt das Permit danach auf einen geloeschten Def. -->
+					<li Class="PatchOperationConditional">
+						<xpath>Defs/ThingDef[defName="DankPyon_BallistaBolt"]</xpath>
+						<match Class="PatchOperationSequence">
+							<operations>
+								<li Class="PatchOperationReplace">
+									<xpath>Defs/RoyalTitlePermitDef[defName="VFEI_HEShellsDrop"]/label</xpath>
+									<value>
+										<label>Ballista bolts drop</label>
+									</value>
+								</li>
+								<li Class="PatchOperationReplace">
+									<xpath>Defs/RoyalTitlePermitDef[defName="VFEI_HEShellsDrop"]/description</xpath>
+									<value>
+										<description>Call for a drop of 20 balista bolts.</description>
+									</value>
+								</li>
+								<li Class="PatchOperationReplace">
+									<xpath>Defs/RoyalTitlePermitDef[defName="VFEI_HEShellsDrop"]/royalAid/itemsToDrop</xpath>
+									<value>
+										<itemsToDrop>
+											<DankPyon_BallistaBolt>20</DankPyon_BallistaBolt>
+										</itemsToDrop>
+									</value>
+								</li>
+							</operations>
+						</match>
 					</li>
 
 					<li Class="PatchOperationReplace">

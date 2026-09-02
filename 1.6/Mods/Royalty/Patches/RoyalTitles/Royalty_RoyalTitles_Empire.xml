@@ -357,18 +357,21 @@
 						</li>
 					</value>
 				</li>
-				<li Class="PatchOperationReplace">
+				<li Class="PatchOperationConditional">
 					<xpath>Defs/RoyalTitleDef[defName="Baron"]/bedroomRequirements/li[@Class="RoomRequirement_ThingCount"][thingDef="Drape"]</xpath>
-					<value>
-						<li Class="RoomRequirement_ThingAnyOfCount">
-							<things>
-								<li>DankPyon_RusticRoomDivider1x2c</li>
-								<li>DankPyon_RusticThickRoomDivider_Open1x2c</li>
-								<li>DankPyon_RusticThickRoomDivider_Closed1x2c</li>
-							</things>
-							<count>1</count>
-						</li>
-					</value>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/RoyalTitleDef[defName="Baron"]/bedroomRequirements/li[@Class="RoomRequirement_ThingCount"][thingDef="Drape"]</xpath>
+						<value>
+							<li Class="RoomRequirement_ThingAnyOfCount">
+								<things>
+									<li>DankPyon_RusticRoomDivider1x2c</li>
+									<li>DankPyon_RusticThickRoomDivider_Open1x2c</li>
+									<li>DankPyon_RusticThickRoomDivider_Closed1x2c</li>
+								</things>
+								<count>1</count>
+							</li>
+						</value>
+					</match>
 				</li>
 				<li Class="PatchOperationAdd">
 					<xpath>Defs/RoyalTitleDef[defName="Baron"]/bedroomRequirements</xpath>
@@ -510,18 +513,21 @@
 						</li>
 					</value>
 				</li>
-				<li Class="PatchOperationReplace">
+				<li Class="PatchOperationConditional">
 					<xpath>Defs/RoyalTitleDef[defName="Count"]/bedroomRequirements/li[@Class="RoomRequirement_ThingCount"][thingDef="Drape"]</xpath>
-					<value>
-						<li Class="RoomRequirement_ThingAnyOfCount">
-							<things>
-								<li>DankPyon_RusticRoomDivider1x2c</li>
-								<li>DankPyon_RusticThickRoomDivider_Open1x2c</li>
-								<li>DankPyon_RusticThickRoomDivider_Closed1x2c</li>
-							</things>
-							<count>1</count>
-						</li>
-					</value>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/RoyalTitleDef[defName="Count"]/bedroomRequirements/li[@Class="RoomRequirement_ThingCount"][thingDef="Drape"]</xpath>
+						<value>
+							<li Class="RoomRequirement_ThingAnyOfCount">
+								<things>
+									<li>DankPyon_RusticRoomDivider1x2c</li>
+									<li>DankPyon_RusticThickRoomDivider_Open1x2c</li>
+									<li>DankPyon_RusticThickRoomDivider_Closed1x2c</li>
+								</things>
+								<count>1</count>
+							</li>
+						</value>
+					</match>
 				</li>
 				<li Class="PatchOperationAdd">
 					<xpath>Defs/RoyalTitleDef[defName="Count"]/bedroomRequirements</xpath>
@@ -700,18 +706,21 @@
 						</li>
 					</value>
 				</li>
-				<li Class="PatchOperationReplace">
+				<li Class="PatchOperationConditional">
 					<xpath>Defs/RoyalTitleDef[@Name="BaseEmpireTitleNPC"]/bedroomRequirements/li[@Class="RoomRequirement_ThingCount"][thingDef="Drape"]</xpath>
-					<value>
-						<li Class="RoomRequirement_ThingAnyOfCount">
-							<things>
-								<li>DankPyon_RusticRoomDivider1x2c</li>
-								<li>DankPyon_RusticThickRoomDivider_Open1x2c</li>
-								<li>DankPyon_RusticThickRoomDivider_Closed1x2c</li>
-							</things>
-							<count>1</count>
-						</li>
-					</value>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/RoyalTitleDef[@Name="BaseEmpireTitleNPC"]/bedroomRequirements/li[@Class="RoomRequirement_ThingCount"][thingDef="Drape"]</xpath>
+						<value>
+							<li Class="RoomRequirement_ThingAnyOfCount">
+								<things>
+									<li>DankPyon_RusticRoomDivider1x2c</li>
+									<li>DankPyon_RusticThickRoomDivider_Open1x2c</li>
+									<li>DankPyon_RusticThickRoomDivider_Closed1x2c</li>
+								</things>
+								<count>1</count>
+							</li>
+						</value>
+					</match>
 				</li>
 				<li Class="PatchOperationAdd">
 					<xpath>Defs/RoyalTitleDef[@Name="BaseEmpireTitleNPC"]/bedroomRequirements</xpath>
@@ -1751,18 +1760,21 @@
 						<li MayRequire="mingtuwuxiang.GothicDecorative">MUS_Gothicstyle_Mirror</li>
 					</value>
 				</li>
-				<li Class="PatchOperationReplace">
+				<li Class="PatchOperationConditional">
 					<xpath>Defs/RoyalTitleDef[defName="Knight"]/bedroomRequirements/li[@Class="RoomRequirement_ThingAnyOf"][things/li="Dresser"]</xpath>
-					<value>
-						<li Class="RoomRequirement_ThingAnyOfCount">
-							<things>
-								<li>Dresser</li>
-								<li MayRequire="VanillaExpanded.VFECore">Table_RoyalDresser</li>
-								<li MayRequire="VanillaExpanded.VFESpacer">Table_IlluminatedDresser</li>
-							</things>
-							<count>1</count>
-						</li>
-					</value>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/RoyalTitleDef[defName="Knight"]/bedroomRequirements/li[@Class="RoomRequirement_ThingAnyOf"][things/li="Dresser"]</xpath>
+						<value>
+							<li Class="RoomRequirement_ThingAnyOfCount">
+								<things>
+									<li>Dresser</li>
+									<li MayRequire="VanillaExpanded.VFECore">Table_RoyalDresser</li>
+									<li MayRequire="VanillaExpanded.VFESpacer">Table_IlluminatedDresser</li>
+								</things>
+								<count>1</count>
+							</li>
+						</value>
+					</match>
 				</li>
 				<li Class="PatchOperationAdd">
 					<xpath>Defs/RoyalTitleDef[defName="Knight"]/bedroomRequirements/li[@Class="RoomRequirement_ThingAnyOfCount"][things/li="Dresser"]/things</xpath>
@@ -1881,18 +1893,21 @@
 						<li MayRequire="mingtuwuxiang.GothicDecorative">MUS_Gothicstyle_Mirror</li>
 					</value>
 				</li>
-				<li Class="PatchOperationReplace">
+				<li Class="PatchOperationConditional">
 					<xpath>Defs/RoyalTitleDef[defName="Praetor"]/bedroomRequirements/li[@Class="RoomRequirement_ThingAnyOf"][things/li="Dresser"]</xpath>
-					<value>
-						<li Class="RoomRequirement_ThingAnyOfCount">
-							<things>
-								<li>Dresser</li>
-								<li MayRequire="VanillaExpanded.VFECore">Table_RoyalDresser</li>
-								<li MayRequire="VanillaExpanded.VFESpacer">Table_IlluminatedDresser</li>
-							</things>
-							<count>1</count>
-						</li>
-					</value>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/RoyalTitleDef[defName="Praetor"]/bedroomRequirements/li[@Class="RoomRequirement_ThingAnyOf"][things/li="Dresser"]</xpath>
+						<value>
+							<li Class="RoomRequirement_ThingAnyOfCount">
+								<things>
+									<li>Dresser</li>
+									<li MayRequire="VanillaExpanded.VFECore">Table_RoyalDresser</li>
+									<li MayRequire="VanillaExpanded.VFESpacer">Table_IlluminatedDresser</li>
+								</things>
+								<count>1</count>
+							</li>
+						</value>
+					</match>
 				</li>
 				<li Class="PatchOperationAdd">
 					<xpath>Defs/RoyalTitleDef[defName="Praetor"]/bedroomRequirements/li[@Class="RoomRequirement_ThingAnyOfCount"][things/li="Dresser"]/things</xpath>
@@ -1986,11 +2001,14 @@
 						</li>
 					</value>
 				</li>
-				<li Class="PatchOperationReplace">
+				<li Class="PatchOperationConditional">
 					<xpath>Defs/RoyalTitleDef[defName="Praetor"]/bedroomRequirements/li[@Class="RoomRequirement_ThingAnyOfCount"][things/li="Dresser"]/count</xpath>
-					<value>
-						<count>2</count>
-					</value>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/RoyalTitleDef[defName="Praetor"]/bedroomRequirements/li[@Class="RoomRequirement_ThingAnyOfCount"][things/li="Dresser"]/count</xpath>
+						<value>
+							<count>2</count>
+						</value>
+					</match>
 				</li>
 				<li Class="PatchOperationReplace">
 					<xpath>Defs/RoyalTitleDef[defName="Praetor"]/bedroomRequirements/li[@Class="RoomRequirement_Impressiveness"]</xpath>
@@ -2028,18 +2046,21 @@
 						<li MayRequire="mingtuwuxiang.GothicDecorative">MUS_Gothicstyle_Mirror</li>
 					</value>
 				</li>
-				<li Class="PatchOperationReplace">
+				<li Class="PatchOperationConditional">
 					<xpath>Defs/RoyalTitleDef[defName="Baron"]/bedroomRequirements/li[@Class="RoomRequirement_ThingAnyOf"][things/li="Dresser"]</xpath>
-					<value>
-						<li Class="RoomRequirement_ThingAnyOfCount">
-							<things>
-								<li>Dresser</li>
-								<li MayRequire="VanillaExpanded.VFECore">Table_RoyalDresser</li>
-								<li MayRequire="VanillaExpanded.VFESpacer">Table_IlluminatedDresser</li>
-							</things>
-							<count>1</count>
-						</li>
-					</value>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/RoyalTitleDef[defName="Baron"]/bedroomRequirements/li[@Class="RoomRequirement_ThingAnyOf"][things/li="Dresser"]</xpath>
+						<value>
+							<li Class="RoomRequirement_ThingAnyOfCount">
+								<things>
+									<li>Dresser</li>
+									<li MayRequire="VanillaExpanded.VFECore">Table_RoyalDresser</li>
+									<li MayRequire="VanillaExpanded.VFESpacer">Table_IlluminatedDresser</li>
+								</things>
+								<count>1</count>
+							</li>
+						</value>
+					</match>
 				</li>
 				<li Class="PatchOperationAdd">
 					<xpath>Defs/RoyalTitleDef[defName="Baron"]/bedroomRequirements/li[@Class="RoomRequirement_ThingAnyOfCount"][things/li="Dresser"]/things</xpath>
@@ -2059,18 +2080,21 @@
 						</li>
 					</value>
 				</li>
-				<li Class="PatchOperationReplace">
+				<li Class="PatchOperationConditional">
 					<xpath>Defs/RoyalTitleDef[defName="Baron"]/bedroomRequirements/li[@Class="RoomRequirement_ThingCount"][thingDef="Drape"]</xpath>
-					<value>
-						<li Class="RoomRequirement_ThingAnyOfCount">
-							<things>
-								<li>DankPyon_RusticRoomDivider1x2c</li>
-								<li>DankPyon_RusticThickRoomDivider_Open1x2c</li>
-								<li>DankPyon_RusticThickRoomDivider_Closed1x2c</li>
-							</things>
-							<count>1</count>
-						</li>
-					</value>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/RoyalTitleDef[defName="Baron"]/bedroomRequirements/li[@Class="RoomRequirement_ThingCount"][thingDef="Drape"]</xpath>
+						<value>
+							<li Class="RoomRequirement_ThingAnyOfCount">
+								<things>
+									<li>DankPyon_RusticRoomDivider1x2c</li>
+									<li>DankPyon_RusticThickRoomDivider_Open1x2c</li>
+									<li>DankPyon_RusticThickRoomDivider_Closed1x2c</li>
+								</things>
+								<count>1</count>
+							</li>
+						</value>
+					</match>
 				</li>
 				<li Class="PatchOperationAdd">
 					<xpath>Defs/RoyalTitleDef[defName="Baron"]/bedroomRequirements</xpath>
@@ -2198,18 +2222,21 @@
 						<li MayRequire="mingtuwuxiang.GothicDecorative">MUS_Gothicstyle_Mirror</li>
 					</value>
 				</li>
-				<li Class="PatchOperationReplace">
+				<li Class="PatchOperationConditional">
 					<xpath>Defs/RoyalTitleDef[defName="Count"]/bedroomRequirements/li[@Class="RoomRequirement_ThingAnyOf"][things/li="Dresser"]</xpath>
-					<value>
-						<li Class="RoomRequirement_ThingAnyOfCount">
-							<things>
-								<li>Dresser</li>
-								<li MayRequire="VanillaExpanded.VFECore">Table_RoyalDresser</li>
-								<li MayRequire="VanillaExpanded.VFESpacer">Table_IlluminatedDresser</li>
-							</things>
-							<count>1</count>
-						</li>
-					</value>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/RoyalTitleDef[defName="Count"]/bedroomRequirements/li[@Class="RoomRequirement_ThingAnyOf"][things/li="Dresser"]</xpath>
+						<value>
+							<li Class="RoomRequirement_ThingAnyOfCount">
+								<things>
+									<li>Dresser</li>
+									<li MayRequire="VanillaExpanded.VFECore">Table_RoyalDresser</li>
+									<li MayRequire="VanillaExpanded.VFESpacer">Table_IlluminatedDresser</li>
+								</things>
+								<count>1</count>
+							</li>
+						</value>
+					</match>
 				</li>
 				<li Class="PatchOperationAdd">
 					<xpath>Defs/RoyalTitleDef[defName="Count"]/bedroomRequirements/li[@Class="RoomRequirement_ThingAnyOfCount"][things/li="Dresser"]/things</xpath>
@@ -2229,18 +2256,21 @@
 						</li>
 					</value>
 				</li>
-				<li Class="PatchOperationReplace">
+				<li Class="PatchOperationConditional">
 					<xpath>Defs/RoyalTitleDef[defName="Count"]/bedroomRequirements/li[@Class="RoomRequirement_ThingCount"][thingDef="Drape"]</xpath>
-					<value>
-						<li Class="RoomRequirement_ThingAnyOfCount">
-							<things>
-								<li>DankPyon_RusticRoomDivider1x2c</li>
-								<li>DankPyon_RusticThickRoomDivider_Open1x2c</li>
-								<li>DankPyon_RusticThickRoomDivider_Closed1x2c</li>
-							</things>
-							<count>1</count>
-						</li>
-					</value>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/RoyalTitleDef[defName="Count"]/bedroomRequirements/li[@Class="RoomRequirement_ThingCount"][thingDef="Drape"]</xpath>
+						<value>
+							<li Class="RoomRequirement_ThingAnyOfCount">
+								<things>
+									<li>DankPyon_RusticRoomDivider1x2c</li>
+									<li>DankPyon_RusticThickRoomDivider_Open1x2c</li>
+									<li>DankPyon_RusticThickRoomDivider_Closed1x2c</li>
+								</things>
+								<count>1</count>
+							</li>
+						</value>
+					</match>
 				</li>
 				<li Class="PatchOperationAdd">
 					<xpath>Defs/RoyalTitleDef[defName="Count"]/bedroomRequirements</xpath>
@@ -2413,18 +2443,21 @@
 						<li MayRequire="mingtuwuxiang.GothicDecorative">MUS_Gothicstyle_Mirror</li>
 					</value>
 				</li>
-				<li Class="PatchOperationReplace">
+				<li Class="PatchOperationConditional">
 					<xpath>Defs/RoyalTitleDef[defName="VFEE_Archcount"]/bedroomRequirements/li[@Class="RoomRequirement_ThingAnyOf"][things/li="Dresser"]</xpath>
-					<value>
-						<li Class="RoomRequirement_ThingAnyOfCount">
-							<things>
-								<li>Dresser</li>
-								<li MayRequire="VanillaExpanded.VFECore">Table_RoyalDresser</li>
-								<li MayRequire="VanillaExpanded.VFESpacer">Table_IlluminatedDresser</li>
-							</things>
-							<count>1</count>
-						</li>
-					</value>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/RoyalTitleDef[defName="VFEE_Archcount"]/bedroomRequirements/li[@Class="RoomRequirement_ThingAnyOf"][things/li="Dresser"]</xpath>
+						<value>
+							<li Class="RoomRequirement_ThingAnyOfCount">
+								<things>
+									<li>Dresser</li>
+									<li MayRequire="VanillaExpanded.VFECore">Table_RoyalDresser</li>
+									<li MayRequire="VanillaExpanded.VFESpacer">Table_IlluminatedDresser</li>
+								</things>
+								<count>1</count>
+							</li>
+						</value>
+					</match>
 				</li>
 				<li Class="PatchOperationAdd">
 					<xpath>Defs/RoyalTitleDef[defName="VFEE_Archcount"]/bedroomRequirements/li[@Class="RoomRequirement_ThingAnyOfCount"][things/li="Dresser"]/things</xpath>
@@ -2448,18 +2481,21 @@
 						</li>
 					</value>
 				</li>
-				<li Class="PatchOperationReplace">
+				<li Class="PatchOperationConditional">
 					<xpath>Defs/RoyalTitleDef[defName="VFEE_Archcount"]/bedroomRequirements/li[@Class="RoomRequirement_ThingCount"][thingDef="Drape"]</xpath>
-					<value>
-						<li Class="RoomRequirement_ThingAnyOfCount">
-							<things>
-								<li>DankPyon_RusticRoomDivider1x2c</li>
-								<li>DankPyon_RusticThickRoomDivider_Open1x2c</li>
-								<li>DankPyon_RusticThickRoomDivider_Closed1x2c</li>
-							</things>
-							<count>1</count>
-						</li>
-					</value>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/RoyalTitleDef[defName="VFEE_Archcount"]/bedroomRequirements/li[@Class="RoomRequirement_ThingCount"][thingDef="Drape"]</xpath>
+						<value>
+							<li Class="RoomRequirement_ThingAnyOfCount">
+								<things>
+									<li>DankPyon_RusticRoomDivider1x2c</li>
+									<li>DankPyon_RusticThickRoomDivider_Open1x2c</li>
+									<li>DankPyon_RusticThickRoomDivider_Closed1x2c</li>
+								</things>
+								<count>1</count>
+							</li>
+						</value>
+					</match>
 				</li>
 				<li Class="PatchOperationAdd">
 					<xpath>Defs/RoyalTitleDef[defName="VFEE_Archcount"]/bedroomRequirements</xpath>
@@ -2544,18 +2580,21 @@
 						<li MayRequire="mingtuwuxiang.GothicDecorative">MUS_Gothicstyle_Mirror</li>
 					</value>
 				</li>
-				<li Class="PatchOperationReplace">
+				<li Class="PatchOperationConditional">
 					<xpath>Defs/RoyalTitleDef[defName="VFEE_Marquess"]/bedroomRequirements/li[@Class="RoomRequirement_ThingAnyOf"][things/li="Dresser"]</xpath>
-					<value>
-						<li Class="RoomRequirement_ThingAnyOfCount">
-							<things>
-								<li>Dresser</li>
-								<li MayRequire="VanillaExpanded.VFECore">Table_RoyalDresser</li>
-								<li MayRequire="VanillaExpanded.VFESpacer">Table_IlluminatedDresser</li>
-							</things>
-							<count>1</count>
-						</li>
-					</value>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/RoyalTitleDef[defName="VFEE_Marquess"]/bedroomRequirements/li[@Class="RoomRequirement_ThingAnyOf"][things/li="Dresser"]</xpath>
+						<value>
+							<li Class="RoomRequirement_ThingAnyOfCount">
+								<things>
+									<li>Dresser</li>
+									<li MayRequire="VanillaExpanded.VFECore">Table_RoyalDresser</li>
+									<li MayRequire="VanillaExpanded.VFESpacer">Table_IlluminatedDresser</li>
+								</things>
+								<count>1</count>
+							</li>
+						</value>
+					</match>
 				</li>
 				<li Class="PatchOperationAdd">
 					<xpath>Defs/RoyalTitleDef[defName="VFEE_Marquess"]/bedroomRequirements/li[@Class="RoomRequirement_ThingAnyOfCount"][things/li="Dresser"]/things</xpath>
@@ -2579,18 +2618,21 @@
 						</li>
 					</value>
 				</li>
-				<li Class="PatchOperationReplace">
+				<li Class="PatchOperationConditional">
 					<xpath>Defs/RoyalTitleDef[defName="VFEE_Marquess"]/bedroomRequirements/li[@Class="RoomRequirement_ThingCount"][thingDef="Drape"]</xpath>
-					<value>
-						<li Class="RoomRequirement_ThingAnyOfCount">
-							<things>
-								<li>DankPyon_RusticRoomDivider1x2c</li>
-								<li>DankPyon_RusticThickRoomDivider_Open1x2c</li>
-								<li>DankPyon_RusticThickRoomDivider_Closed1x2c</li>
-							</things>
-							<count>1</count>
-						</li>
-					</value>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/RoyalTitleDef[defName="VFEE_Marquess"]/bedroomRequirements/li[@Class="RoomRequirement_ThingCount"][thingDef="Drape"]</xpath>
+						<value>
+							<li Class="RoomRequirement_ThingAnyOfCount">
+								<things>
+									<li>DankPyon_RusticRoomDivider1x2c</li>
+									<li>DankPyon_RusticThickRoomDivider_Open1x2c</li>
+									<li>DankPyon_RusticThickRoomDivider_Closed1x2c</li>
+								</things>
+								<count>1</count>
+							</li>
+						</value>
+					</match>
 				</li>
 				<li Class="PatchOperationAdd">
 					<xpath>Defs/RoyalTitleDef[defName="VFEE_Marquess"]/bedroomRequirements</xpath>
@@ -2675,18 +2717,21 @@
 						<li MayRequire="mingtuwuxiang.GothicDecorative">MUS_Gothicstyle_Mirror</li>
 					</value>
 				</li>
-				<li Class="PatchOperationReplace">
+				<li Class="PatchOperationConditional">
 					<xpath>Defs/RoyalTitleDef[@ParentName="DukeBase" and not(defName)]/bedroomRequirements/li[@Class="RoomRequirement_ThingAnyOf"][things/li="Dresser"]</xpath>
-					<value>
-						<li Class="RoomRequirement_ThingAnyOfCount">
-							<things>
-								<li>Dresser</li>
-								<li MayRequire="VanillaExpanded.VFECore">Table_RoyalDresser</li>
-								<li MayRequire="VanillaExpanded.VFESpacer">Table_IlluminatedDresser</li>
-							</things>
-							<count>1</count>
-						</li>
-					</value>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/RoyalTitleDef[@ParentName="DukeBase" and not(defName)]/bedroomRequirements/li[@Class="RoomRequirement_ThingAnyOf"][things/li="Dresser"]</xpath>
+						<value>
+							<li Class="RoomRequirement_ThingAnyOfCount">
+								<things>
+									<li>Dresser</li>
+									<li MayRequire="VanillaExpanded.VFECore">Table_RoyalDresser</li>
+									<li MayRequire="VanillaExpanded.VFESpacer">Table_IlluminatedDresser</li>
+								</things>
+								<count>1</count>
+							</li>
+						</value>
+					</match>
 				</li>
 				<li Class="PatchOperationAdd">
 					<xpath>Defs/RoyalTitleDef[@ParentName="DukeBase" and not(defName)]/bedroomRequirements/li[@Class="RoomRequirement_ThingAnyOfCount"][things/li="Dresser"]/things</xpath>
@@ -2710,18 +2755,21 @@
 						</li>
 					</value>
 				</li>
-				<li Class="PatchOperationReplace">
+				<li Class="PatchOperationConditional">
 					<xpath>Defs/RoyalTitleDef[@ParentName="DukeBase" and not(defName)]/bedroomRequirements/li[@Class="RoomRequirement_ThingCount"][thingDef="Drape"]</xpath>
-					<value>
-						<li Class="RoomRequirement_ThingAnyOfCount">
-							<things>
-								<li>DankPyon_RusticRoomDivider1x2c</li>
-								<li>DankPyon_RusticThickRoomDivider_Open1x2c</li>
-								<li>DankPyon_RusticThickRoomDivider_Closed1x2c</li>
-							</things>
-							<count>1</count>
-						</li>
-					</value>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/RoyalTitleDef[@ParentName="DukeBase" and not(defName)]/bedroomRequirements/li[@Class="RoomRequirement_ThingCount"][thingDef="Drape"]</xpath>
+						<value>
+							<li Class="RoomRequirement_ThingAnyOfCount">
+								<things>
+									<li>DankPyon_RusticRoomDivider1x2c</li>
+									<li>DankPyon_RusticThickRoomDivider_Open1x2c</li>
+									<li>DankPyon_RusticThickRoomDivider_Closed1x2c</li>
+								</things>
+								<count>1</count>
+							</li>
+						</value>
+					</match>
 				</li>
 				<li Class="PatchOperationAdd">
 					<xpath>Defs/RoyalTitleDef[@ParentName="DukeBase" and not(defName)]/bedroomRequirements</xpath>
@@ -2808,18 +2856,21 @@
 						<li MayRequire="mingtuwuxiang.GothicDecorative">MUS_Gothicstyle_Mirror</li>
 					</value>
 				</li>
-				<li Class="PatchOperationReplace">
+				<li Class="PatchOperationConditional">
 					<xpath>Defs/RoyalTitleDef[defName="VFEE_Archduke"]/bedroomRequirements/li[@Class="RoomRequirement_ThingAnyOf"][things/li="Dresser"]</xpath>
-					<value>
-						<li Class="RoomRequirement_ThingAnyOfCount">
-							<things>
-								<li>Dresser</li>
-								<li MayRequire="VanillaExpanded.VFECore">Table_RoyalDresser</li>
-								<li MayRequire="VanillaExpanded.VFESpacer">Table_IlluminatedDresser</li>
-							</things>
-							<count>1</count>
-						</li>
-					</value>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/RoyalTitleDef[defName="VFEE_Archduke"]/bedroomRequirements/li[@Class="RoomRequirement_ThingAnyOf"][things/li="Dresser"]</xpath>
+						<value>
+							<li Class="RoomRequirement_ThingAnyOfCount">
+								<things>
+									<li>Dresser</li>
+									<li MayRequire="VanillaExpanded.VFECore">Table_RoyalDresser</li>
+									<li MayRequire="VanillaExpanded.VFESpacer">Table_IlluminatedDresser</li>
+								</things>
+								<count>1</count>
+							</li>
+						</value>
+					</match>
 				</li>
 				<li Class="PatchOperationAdd">
 					<xpath>Defs/RoyalTitleDef[defName="VFEE_Archduke"]/bedroomRequirements/li[@Class="RoomRequirement_ThingAnyOfCount"][things/li="Dresser"]/things</xpath>
@@ -2843,18 +2894,21 @@
 						</li>
 					</value>
 				</li>
-				<li Class="PatchOperationReplace">
+				<li Class="PatchOperationConditional">
 					<xpath>Defs/RoyalTitleDef[defName="VFEE_Archduke"]/bedroomRequirements/li[@Class="RoomRequirement_ThingCount"][thingDef="Drape"]</xpath>
-					<value>
-						<li Class="RoomRequirement_ThingAnyOfCount">
-							<things>
-								<li>DankPyon_RusticRoomDivider1x2c</li>
-								<li>DankPyon_RusticThickRoomDivider_Open1x2c</li>
-								<li>DankPyon_RusticThickRoomDivider_Closed1x2c</li>
-							</things>
-							<count>1</count>
-						</li>
-					</value>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/RoyalTitleDef[defName="VFEE_Archduke"]/bedroomRequirements/li[@Class="RoomRequirement_ThingCount"][thingDef="Drape"]</xpath>
+						<value>
+							<li Class="RoomRequirement_ThingAnyOfCount">
+								<things>
+									<li>DankPyon_RusticRoomDivider1x2c</li>
+									<li>DankPyon_RusticThickRoomDivider_Open1x2c</li>
+									<li>DankPyon_RusticThickRoomDivider_Closed1x2c</li>
+								</things>
+								<count>1</count>
+							</li>
+						</value>
+					</match>
 				</li>
 				<li Class="PatchOperationAdd">
 					<xpath>Defs/RoyalTitleDef[defName="VFEE_Archduke"]/bedroomRequirements</xpath>
@@ -2939,18 +2993,21 @@
 						<li MayRequire="mingtuwuxiang.GothicDecorative">MUS_Gothicstyle_Mirror</li>
 					</value>
 				</li>
-				<li Class="PatchOperationReplace">
+				<li Class="PatchOperationConditional">
 					<xpath>Defs/RoyalTitleDef[@ParentName="ConsulBase" and not(defName)]/bedroomRequirements/li[@Class="RoomRequirement_ThingAnyOf"][things/li="Dresser"]</xpath>
-					<value>
-						<li Class="RoomRequirement_ThingAnyOfCount">
-							<things>
-								<li>Dresser</li>
-								<li MayRequire="VanillaExpanded.VFECore">Table_RoyalDresser</li>
-								<li MayRequire="VanillaExpanded.VFESpacer">Table_IlluminatedDresser</li>
-							</things>
-							<count>1</count>
-						</li>
-					</value>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/RoyalTitleDef[@ParentName="ConsulBase" and not(defName)]/bedroomRequirements/li[@Class="RoomRequirement_ThingAnyOf"][things/li="Dresser"]</xpath>
+						<value>
+							<li Class="RoomRequirement_ThingAnyOfCount">
+								<things>
+									<li>Dresser</li>
+									<li MayRequire="VanillaExpanded.VFECore">Table_RoyalDresser</li>
+									<li MayRequire="VanillaExpanded.VFESpacer">Table_IlluminatedDresser</li>
+								</things>
+								<count>1</count>
+							</li>
+						</value>
+					</match>
 				</li>
 				<li Class="PatchOperationAdd">
 					<xpath>Defs/RoyalTitleDef[@ParentName="ConsulBase" and not(defName)]/bedroomRequirements/li[@Class="RoomRequirement_ThingAnyOfCount"][things/li="Dresser"]/things</xpath>
@@ -2974,18 +3031,21 @@
 						</li>
 					</value>
 				</li>
-				<li Class="PatchOperationReplace">
+				<li Class="PatchOperationConditional">
 					<xpath>Defs/RoyalTitleDef[@ParentName="ConsulBase" and not(defName)]/bedroomRequirements/li[@Class="RoomRequirement_ThingCount"][thingDef="Drape"]</xpath>
-					<value>
-						<li Class="RoomRequirement_ThingAnyOfCount">
-							<things>
-								<li>DankPyon_RusticRoomDivider1x2c</li>
-								<li>DankPyon_RusticThickRoomDivider_Open1x2c</li>
-								<li>DankPyon_RusticThickRoomDivider_Closed1x2c</li>
-							</things>
-							<count>1</count>
-						</li>
-					</value>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/RoyalTitleDef[@ParentName="ConsulBase" and not(defName)]/bedroomRequirements/li[@Class="RoomRequirement_ThingCount"][thingDef="Drape"]</xpath>
+						<value>
+							<li Class="RoomRequirement_ThingAnyOfCount">
+								<things>
+									<li>DankPyon_RusticRoomDivider1x2c</li>
+									<li>DankPyon_RusticThickRoomDivider_Open1x2c</li>
+									<li>DankPyon_RusticThickRoomDivider_Closed1x2c</li>
+								</things>
+								<count>1</count>
+							</li>
+						</value>
+					</match>
 				</li>
 				<li Class="PatchOperationAdd">
 					<xpath>Defs/RoyalTitleDef[@ParentName="ConsulBase" and not(defName)]/bedroomRequirements</xpath>
@@ -3072,18 +3132,21 @@
 						<li MayRequire="mingtuwuxiang.GothicDecorative">MUS_Gothicstyle_Mirror</li>
 					</value>
 				</li>
-				<li Class="PatchOperationReplace">
+				<li Class="PatchOperationConditional">
 					<xpath>Defs/RoyalTitleDef[defName="VFEE_Magister"]/bedroomRequirements/li[@Class="RoomRequirement_ThingAnyOf"][things/li="Dresser"]</xpath>
-					<value>
-						<li Class="RoomRequirement_ThingAnyOfCount">
-							<things>
-								<li>Dresser</li>
-								<li MayRequire="VanillaExpanded.VFECore">Table_RoyalDresser</li>
-								<li MayRequire="VanillaExpanded.VFESpacer">Table_IlluminatedDresser</li>
-							</things>
-							<count>1</count>
-						</li>
-					</value>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/RoyalTitleDef[defName="VFEE_Magister"]/bedroomRequirements/li[@Class="RoomRequirement_ThingAnyOf"][things/li="Dresser"]</xpath>
+						<value>
+							<li Class="RoomRequirement_ThingAnyOfCount">
+								<things>
+									<li>Dresser</li>
+									<li MayRequire="VanillaExpanded.VFECore">Table_RoyalDresser</li>
+									<li MayRequire="VanillaExpanded.VFESpacer">Table_IlluminatedDresser</li>
+								</things>
+								<count>1</count>
+							</li>
+						</value>
+					</match>
 				</li>
 				<li Class="PatchOperationAdd">
 					<xpath>Defs/RoyalTitleDef[defName="VFEE_Magister"]/bedroomRequirements/li[@Class="RoomRequirement_ThingAnyOfCount"][things/li="Dresser"]/things</xpath>
@@ -3107,18 +3170,21 @@
 						</li>
 					</value>
 				</li>
-				<li Class="PatchOperationReplace">
+				<li Class="PatchOperationConditional">
 					<xpath>Defs/RoyalTitleDef[defName="VFEE_Magister"]/bedroomRequirements/li[@Class="RoomRequirement_ThingCount"][thingDef="Drape"]</xpath>
-					<value>
-						<li Class="RoomRequirement_ThingAnyOfCount">
-							<things>
-								<li>DankPyon_RusticRoomDivider1x2c</li>
-								<li>DankPyon_RusticThickRoomDivider_Open1x2c</li>
-								<li>DankPyon_RusticThickRoomDivider_Closed1x2c</li>
-							</things>
-							<count>1</count>
-						</li>
-					</value>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/RoyalTitleDef[defName="VFEE_Magister"]/bedroomRequirements/li[@Class="RoomRequirement_ThingCount"][thingDef="Drape"]</xpath>
+						<value>
+							<li Class="RoomRequirement_ThingAnyOfCount">
+								<things>
+									<li>DankPyon_RusticRoomDivider1x2c</li>
+									<li>DankPyon_RusticThickRoomDivider_Open1x2c</li>
+									<li>DankPyon_RusticThickRoomDivider_Closed1x2c</li>
+								</things>
+								<count>1</count>
+							</li>
+						</value>
+					</match>
 				</li>
 				<li Class="PatchOperationAdd">
 					<xpath>Defs/RoyalTitleDef[defName="VFEE_Magister"]/bedroomRequirements</xpath>
@@ -3203,18 +3269,21 @@
 						<li MayRequire="mingtuwuxiang.GothicDecorative">MUS_Gothicstyle_Mirror</li>
 					</value>
 				</li>
-				<li Class="PatchOperationReplace">
+				<li Class="PatchOperationConditional">
 					<xpath>Defs/RoyalTitleDef[defName="VFEE_Despot"]/bedroomRequirements/li[@Class="RoomRequirement_ThingAnyOf"][things/li="Dresser"]</xpath>
-					<value>
-						<li Class="RoomRequirement_ThingAnyOfCount">
-							<things>
-								<li>Dresser</li>
-								<li MayRequire="VanillaExpanded.VFECore">Table_RoyalDresser</li>
-								<li MayRequire="VanillaExpanded.VFESpacer">Table_IlluminatedDresser</li>
-							</things>
-							<count>1</count>
-						</li>
-					</value>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/RoyalTitleDef[defName="VFEE_Despot"]/bedroomRequirements/li[@Class="RoomRequirement_ThingAnyOf"][things/li="Dresser"]</xpath>
+						<value>
+							<li Class="RoomRequirement_ThingAnyOfCount">
+								<things>
+									<li>Dresser</li>
+									<li MayRequire="VanillaExpanded.VFECore">Table_RoyalDresser</li>
+									<li MayRequire="VanillaExpanded.VFESpacer">Table_IlluminatedDresser</li>
+								</things>
+								<count>1</count>
+							</li>
+						</value>
+					</match>
 				</li>
 				<li Class="PatchOperationAdd">
 					<xpath>Defs/RoyalTitleDef[defName="VFEE_Despot"]/bedroomRequirements/li[@Class="RoomRequirement_ThingAnyOfCount"][things/li="Dresser"]/things</xpath>
@@ -3238,18 +3307,21 @@
 						</li>
 					</value>
 				</li>
-				<li Class="PatchOperationReplace">
+				<li Class="PatchOperationConditional">
 					<xpath>Defs/RoyalTitleDef[defName="VFEE_Despot"]/bedroomRequirements/li[@Class="RoomRequirement_ThingCount"][thingDef="Drape"]</xpath>
-					<value>
-						<li Class="RoomRequirement_ThingAnyOfCount">
-							<things>
-								<li>DankPyon_RusticRoomDivider1x2c</li>
-								<li>DankPyon_RusticThickRoomDivider_Open1x2c</li>
-								<li>DankPyon_RusticThickRoomDivider_Closed1x2c</li>
-							</things>
-							<count>1</count>
-						</li>
-					</value>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/RoyalTitleDef[defName="VFEE_Despot"]/bedroomRequirements/li[@Class="RoomRequirement_ThingCount"][thingDef="Drape"]</xpath>
+						<value>
+							<li Class="RoomRequirement_ThingAnyOfCount">
+								<things>
+									<li>DankPyon_RusticRoomDivider1x2c</li>
+									<li>DankPyon_RusticThickRoomDivider_Open1x2c</li>
+									<li>DankPyon_RusticThickRoomDivider_Closed1x2c</li>
+								</things>
+								<count>1</count>
+							</li>
+						</value>
+					</match>
 				</li>
 				<li Class="PatchOperationAdd">
 					<xpath>Defs/RoyalTitleDef[defName="VFEE_Despot"]/bedroomRequirements</xpath>
@@ -3334,18 +3406,21 @@
 						<li MayRequire="mingtuwuxiang.GothicDecorative">MUS_Gothicstyle_Mirror</li>
 					</value>
 				</li>
-				<li Class="PatchOperationReplace">
+				<li Class="PatchOperationConditional">
 					<xpath>Defs/RoyalTitleDef[@ParentName="StellarchBase" and not(defName)]/bedroomRequirements/li[@Class="RoomRequirement_ThingAnyOf"][things/li="Dresser"]</xpath>
-					<value>
-						<li Class="RoomRequirement_ThingAnyOfCount">
-							<things>
-								<li>Dresser</li>
-								<li MayRequire="VanillaExpanded.VFECore">Table_RoyalDresser</li>
-								<li MayRequire="VanillaExpanded.VFESpacer">Table_IlluminatedDresser</li>
-							</things>
-							<count>1</count>
-						</li>
-					</value>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/RoyalTitleDef[@ParentName="StellarchBase" and not(defName)]/bedroomRequirements/li[@Class="RoomRequirement_ThingAnyOf"][things/li="Dresser"]</xpath>
+						<value>
+							<li Class="RoomRequirement_ThingAnyOfCount">
+								<things>
+									<li>Dresser</li>
+									<li MayRequire="VanillaExpanded.VFECore">Table_RoyalDresser</li>
+									<li MayRequire="VanillaExpanded.VFESpacer">Table_IlluminatedDresser</li>
+								</things>
+								<count>1</count>
+							</li>
+						</value>
+					</match>
 				</li>
 				<li Class="PatchOperationAdd">
 					<xpath>Defs/RoyalTitleDef[@ParentName="StellarchBase" and not(defName)]/bedroomRequirements/li[@Class="RoomRequirement_ThingAnyOfCount"][things/li="Dresser"]/things</xpath>
@@ -3369,18 +3444,21 @@
 						</li>
 					</value>
 				</li>
-				<li Class="PatchOperationReplace">
+				<li Class="PatchOperationConditional">
 					<xpath>Defs/RoyalTitleDef[@ParentName="StellarchBase" and not(defName)]/bedroomRequirements/li[@Class="RoomRequirement_ThingCount"][thingDef="Drape"]</xpath>
-					<value>
-						<li Class="RoomRequirement_ThingAnyOfCount">
-							<things>
-								<li>DankPyon_RusticRoomDivider1x2c</li>
-								<li>DankPyon_RusticThickRoomDivider_Open1x2c</li>
-								<li>DankPyon_RusticThickRoomDivider_Closed1x2c</li>
-							</things>
-							<count>1</count>
-						</li>
-					</value>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/RoyalTitleDef[@ParentName="StellarchBase" and not(defName)]/bedroomRequirements/li[@Class="RoomRequirement_ThingCount"][thingDef="Drape"]</xpath>
+						<value>
+							<li Class="RoomRequirement_ThingAnyOfCount">
+								<things>
+									<li>DankPyon_RusticRoomDivider1x2c</li>
+									<li>DankPyon_RusticThickRoomDivider_Open1x2c</li>
+									<li>DankPyon_RusticThickRoomDivider_Closed1x2c</li>
+								</things>
+								<count>1</count>
+							</li>
+						</value>
+					</match>
 				</li>
 				<li Class="PatchOperationAdd">
 					<xpath>Defs/RoyalTitleDef[@ParentName="StellarchBase" and not(defName)]/bedroomRequirements</xpath>
@@ -3467,18 +3545,21 @@
 						<li MayRequire="mingtuwuxiang.GothicDecorative">MUS_Gothicstyle_Mirror</li>
 					</value>
 				</li>
-				<li Class="PatchOperationReplace">
+				<li Class="PatchOperationConditional">
 					<xpath>Defs/RoyalTitleDef[defName="VFEE_HighStellarch"]/bedroomRequirements/li[@Class="RoomRequirement_ThingAnyOf"][things/li="Dresser"]</xpath>
-					<value>
-						<li Class="RoomRequirement_ThingAnyOfCount">
-							<things>
-								<li>Dresser</li>
-								<li MayRequire="VanillaExpanded.VFECore">Table_RoyalDresser</li>
-								<li MayRequire="VanillaExpanded.VFESpacer">Table_IlluminatedDresser</li>
-							</things>
-							<count>1</count>
-						</li>
-					</value>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/RoyalTitleDef[defName="VFEE_HighStellarch"]/bedroomRequirements/li[@Class="RoomRequirement_ThingAnyOf"][things/li="Dresser"]</xpath>
+						<value>
+							<li Class="RoomRequirement_ThingAnyOfCount">
+								<things>
+									<li>Dresser</li>
+									<li MayRequire="VanillaExpanded.VFECore">Table_RoyalDresser</li>
+									<li MayRequire="VanillaExpanded.VFESpacer">Table_IlluminatedDresser</li>
+								</things>
+								<count>1</count>
+							</li>
+						</value>
+					</match>
 				</li>
 				<li Class="PatchOperationAdd">
 					<xpath>Defs/RoyalTitleDef[defName="VFEE_HighStellarch"]/bedroomRequirements/li[@Class="RoomRequirement_ThingAnyOfCount"][things/li="Dresser"]/things</xpath>
@@ -3502,18 +3583,21 @@
 						</li>
 					</value>
 				</li>
-				<li Class="PatchOperationReplace">
+				<li Class="PatchOperationConditional">
 					<xpath>Defs/RoyalTitleDef[defName="VFEE_HighStellarch"]/bedroomRequirements/li[@Class="RoomRequirement_ThingCount"][thingDef="Drape"]</xpath>
-					<value>
-						<li Class="RoomRequirement_ThingAnyOfCount">
-							<things>
-								<li>DankPyon_RusticRoomDivider1x2c</li>
-								<li>DankPyon_RusticThickRoomDivider_Open1x2c</li>
-								<li>DankPyon_RusticThickRoomDivider_Closed1x2c</li>
-							</things>
-							<count>1</count>
-						</li>
-					</value>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/RoyalTitleDef[defName="VFEE_HighStellarch"]/bedroomRequirements/li[@Class="RoomRequirement_ThingCount"][thingDef="Drape"]</xpath>
+						<value>
+							<li Class="RoomRequirement_ThingAnyOfCount">
+								<things>
+									<li>DankPyon_RusticRoomDivider1x2c</li>
+									<li>DankPyon_RusticThickRoomDivider_Open1x2c</li>
+									<li>DankPyon_RusticThickRoomDivider_Closed1x2c</li>
+								</things>
+								<count>1</count>
+							</li>
+						</value>
+					</match>
 				</li>
 				<li Class="PatchOperationAdd">
 					<xpath>Defs/RoyalTitleDef[defName="VFEE_HighStellarch"]/bedroomRequirements</xpath>
@@ -3575,18 +3659,21 @@
 						<li MayRequire="mingtuwuxiang.GothicDecorative">MUS_Gothicstyle_Mirror</li>
 					</value>
 				</li>
-				<li Class="PatchOperationReplace">
+				<li Class="PatchOperationConditional">
 					<xpath>Defs/RoyalTitleDef[@Name="BaseEmpireTitleNPC"]/bedroomRequirements/li[@Class="RoomRequirement_ThingAnyOf"][things/li="Dresser"]</xpath>
-					<value>
-						<li Class="RoomRequirement_ThingAnyOfCount">
-							<things>
-								<li>Dresser</li>
-								<li MayRequire="VanillaExpanded.VFECore">Table_RoyalDresser</li>
-								<li MayRequire="VanillaExpanded.VFESpacer">Table_IlluminatedDresser</li>
-							</things>
-							<count>1</count>
-						</li>
-					</value>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/RoyalTitleDef[@Name="BaseEmpireTitleNPC"]/bedroomRequirements/li[@Class="RoomRequirement_ThingAnyOf"][things/li="Dresser"]</xpath>
+						<value>
+							<li Class="RoomRequirement_ThingAnyOfCount">
+								<things>
+									<li>Dresser</li>
+									<li MayRequire="VanillaExpanded.VFECore">Table_RoyalDresser</li>
+									<li MayRequire="VanillaExpanded.VFESpacer">Table_IlluminatedDresser</li>
+								</things>
+								<count>1</count>
+							</li>
+						</value>
+					</match>
 				</li>
 				<li Class="PatchOperationAdd">
 					<xpath>Defs/RoyalTitleDef[@Name="BaseEmpireTitleNPC"]/bedroomRequirements/li[@Class="RoomRequirement_ThingAnyOfCount"][things/li="Dresser"]/things</xpath>
@@ -3606,18 +3693,21 @@
 						</li>
 					</value>
 				</li>
-				<li Class="PatchOperationReplace">
+				<li Class="PatchOperationConditional">
 					<xpath>Defs/RoyalTitleDef[@Name="BaseEmpireTitleNPC"]/bedroomRequirements/li[@Class="RoomRequirement_ThingCount"][thingDef="Drape"]</xpath>
-					<value>
-						<li Class="RoomRequirement_ThingAnyOfCount">
-							<things>
-								<li>DankPyon_RusticRoomDivider1x2c</li>
-								<li>DankPyon_RusticThickRoomDivider_Open1x2c</li>
-								<li>DankPyon_RusticThickRoomDivider_Closed1x2c</li>
-							</things>
-							<count>1</count>
-						</li>
-					</value>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/RoyalTitleDef[@Name="BaseEmpireTitleNPC"]/bedroomRequirements/li[@Class="RoomRequirement_ThingCount"][thingDef="Drape"]</xpath>
+						<value>
+							<li Class="RoomRequirement_ThingAnyOfCount">
+								<things>
+									<li>DankPyon_RusticRoomDivider1x2c</li>
+									<li>DankPyon_RusticThickRoomDivider_Open1x2c</li>
+									<li>DankPyon_RusticThickRoomDivider_Closed1x2c</li>
+								</things>
+								<count>1</count>
+							</li>
+						</value>
+					</match>
 				</li>
 				<li Class="PatchOperationAdd">
 					<xpath>Defs/RoyalTitleDef[@Name="BaseEmpireTitleNPC"]/bedroomRequirements</xpath>
@@ -6502,19 +6592,22 @@
 						<li>EEG_GrandColumn</li>
 					</value>
 				</li>
-				<li Class="PatchOperationReplace">
+				<li Class="PatchOperationConditional">
 					<xpath>Defs/RoyalTitleDef[defName="Baron"]/bedroomRequirements/li[@Class="RoomRequirement_ThingCount"][thingDef="Drape"]</xpath>
-					<value>
-						<li Class="RoomRequirement_ThingAnyOfCount">
-							<things>
-								<li>Drape</li>
-								<li>DankPyon_RusticRoomDivider1x2c</li>
-								<li>DankPyon_RusticThickRoomDivider_Open1x2c</li>
-								<li>DankPyon_RusticThickRoomDivider_Closed1x2c</li>
-							</things>
-							<count>1</count>
-						</li>
-					</value>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/RoyalTitleDef[defName="Baron"]/bedroomRequirements/li[@Class="RoomRequirement_ThingCount"][thingDef="Drape"]</xpath>
+						<value>
+							<li Class="RoomRequirement_ThingAnyOfCount">
+								<things>
+									<li>Drape</li>
+									<li>DankPyon_RusticRoomDivider1x2c</li>
+									<li>DankPyon_RusticThickRoomDivider_Open1x2c</li>
+									<li>DankPyon_RusticThickRoomDivider_Closed1x2c</li>
+								</things>
+								<count>1</count>
+							</li>
+						</value>
+					</match>
 				</li>
 
 				<!-- ===== Count ===== -->
@@ -6526,19 +6619,22 @@
 						<li>EEG_GrandColumn</li>
 					</value>
 				</li>
-				<li Class="PatchOperationReplace">
+				<li Class="PatchOperationConditional">
 					<xpath>Defs/RoyalTitleDef[defName="Count"]/bedroomRequirements/li[@Class="RoomRequirement_ThingCount"][thingDef="Drape"]</xpath>
-					<value>
-						<li Class="RoomRequirement_ThingAnyOfCount">
-							<things>
-								<li>Drape</li>
-								<li>DankPyon_RusticRoomDivider1x2c</li>
-								<li>DankPyon_RusticThickRoomDivider_Open1x2c</li>
-								<li>DankPyon_RusticThickRoomDivider_Closed1x2c</li>
-							</things>
-							<count>1</count>
-						</li>
-					</value>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/RoyalTitleDef[defName="Count"]/bedroomRequirements/li[@Class="RoomRequirement_ThingCount"][thingDef="Drape"]</xpath>
+						<value>
+							<li Class="RoomRequirement_ThingAnyOfCount">
+								<things>
+									<li>Drape</li>
+									<li>DankPyon_RusticRoomDivider1x2c</li>
+									<li>DankPyon_RusticThickRoomDivider_Open1x2c</li>
+									<li>DankPyon_RusticThickRoomDivider_Closed1x2c</li>
+								</things>
+								<count>1</count>
+							</li>
+						</value>
+					</match>
 				</li>
 
 				<!-- ===== BaseEmpireTitleNPC  (abstrakte Basis) ===== -->
@@ -6550,19 +6646,22 @@
 						<li>EEG_GrandColumn</li>
 					</value>
 				</li>
-				<li Class="PatchOperationReplace">
+				<li Class="PatchOperationConditional">
 					<xpath>Defs/RoyalTitleDef[@Name="BaseEmpireTitleNPC"]/bedroomRequirements/li[@Class="RoomRequirement_ThingCount"][thingDef="Drape"]</xpath>
-					<value>
-						<li Class="RoomRequirement_ThingAnyOfCount">
-							<things>
-								<li>Drape</li>
-								<li>DankPyon_RusticRoomDivider1x2c</li>
-								<li>DankPyon_RusticThickRoomDivider_Open1x2c</li>
-								<li>DankPyon_RusticThickRoomDivider_Closed1x2c</li>
-							</things>
-							<count>1</count>
-						</li>
-					</value>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/RoyalTitleDef[@Name="BaseEmpireTitleNPC"]/bedroomRequirements/li[@Class="RoomRequirement_ThingCount"][thingDef="Drape"]</xpath>
+						<value>
+							<li Class="RoomRequirement_ThingAnyOfCount">
+								<things>
+									<li>Drape</li>
+									<li>DankPyon_RusticRoomDivider1x2c</li>
+									<li>DankPyon_RusticThickRoomDivider_Open1x2c</li>
+									<li>DankPyon_RusticThickRoomDivider_Closed1x2c</li>
+								</things>
+								<count>1</count>
+							</li>
+						</value>
+					</match>
 				</li>
 
 			</operations>
@@ -6658,19 +6757,22 @@
 						<li>EEG_GrandColumn</li>
 					</value>
 				</li>
-				<li Class="PatchOperationReplace">
+				<li Class="PatchOperationConditional">
 					<xpath>Defs/RoyalTitleDef[defName="Baron"]/bedroomRequirements/li[@Class="RoomRequirement_ThingCount"][thingDef="Drape"]</xpath>
-					<value>
-						<li Class="RoomRequirement_ThingAnyOfCount">
-							<things>
-								<li>Drape</li>
-								<li>DankPyon_RusticRoomDivider1x2c</li>
-								<li>DankPyon_RusticThickRoomDivider_Open1x2c</li>
-								<li>DankPyon_RusticThickRoomDivider_Closed1x2c</li>
-							</things>
-							<count>1</count>
-						</li>
-					</value>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/RoyalTitleDef[defName="Baron"]/bedroomRequirements/li[@Class="RoomRequirement_ThingCount"][thingDef="Drape"]</xpath>
+						<value>
+							<li Class="RoomRequirement_ThingAnyOfCount">
+								<things>
+									<li>Drape</li>
+									<li>DankPyon_RusticRoomDivider1x2c</li>
+									<li>DankPyon_RusticThickRoomDivider_Open1x2c</li>
+									<li>DankPyon_RusticThickRoomDivider_Closed1x2c</li>
+								</things>
+								<count>1</count>
+							</li>
+						</value>
+					</match>
 				</li>
 
 				<!-- ===== Count ===== -->
@@ -6682,19 +6784,22 @@
 						<li>EEG_GrandColumn</li>
 					</value>
 				</li>
-				<li Class="PatchOperationReplace">
+				<li Class="PatchOperationConditional">
 					<xpath>Defs/RoyalTitleDef[defName="Count"]/bedroomRequirements/li[@Class="RoomRequirement_ThingCount"][thingDef="Drape"]</xpath>
-					<value>
-						<li Class="RoomRequirement_ThingAnyOfCount">
-							<things>
-								<li>Drape</li>
-								<li>DankPyon_RusticRoomDivider1x2c</li>
-								<li>DankPyon_RusticThickRoomDivider_Open1x2c</li>
-								<li>DankPyon_RusticThickRoomDivider_Closed1x2c</li>
-							</things>
-							<count>1</count>
-						</li>
-					</value>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/RoyalTitleDef[defName="Count"]/bedroomRequirements/li[@Class="RoomRequirement_ThingCount"][thingDef="Drape"]</xpath>
+						<value>
+							<li Class="RoomRequirement_ThingAnyOfCount">
+								<things>
+									<li>Drape</li>
+									<li>DankPyon_RusticRoomDivider1x2c</li>
+									<li>DankPyon_RusticThickRoomDivider_Open1x2c</li>
+									<li>DankPyon_RusticThickRoomDivider_Closed1x2c</li>
+								</things>
+								<count>1</count>
+							</li>
+						</value>
+					</match>
 				</li>
 
 				<!-- ===== VFEE_Archcount ===== -->
@@ -6744,19 +6849,22 @@
 						<li>DankPyon_RoyalDresser</li>
 					</value>
 				</li>
-				<li Class="PatchOperationReplace">
+				<li Class="PatchOperationConditional">
 					<xpath>Defs/RoyalTitleDef[defName="VFEE_Archcount"]/bedroomRequirements/li[@Class="RoomRequirement_ThingCount"][thingDef="Drape"]</xpath>
-					<value>
-						<li Class="RoomRequirement_ThingAnyOfCount">
-							<things>
-								<li>Drape</li>
-								<li>DankPyon_RusticRoomDivider1x2c</li>
-								<li>DankPyon_RusticThickRoomDivider_Open1x2c</li>
-								<li>DankPyon_RusticThickRoomDivider_Closed1x2c</li>
-							</things>
-							<count>1</count>
-						</li>
-					</value>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/RoyalTitleDef[defName="VFEE_Archcount"]/bedroomRequirements/li[@Class="RoomRequirement_ThingCount"][thingDef="Drape"]</xpath>
+						<value>
+							<li Class="RoomRequirement_ThingAnyOfCount">
+								<things>
+									<li>Drape</li>
+									<li>DankPyon_RusticRoomDivider1x2c</li>
+									<li>DankPyon_RusticThickRoomDivider_Open1x2c</li>
+									<li>DankPyon_RusticThickRoomDivider_Closed1x2c</li>
+								</things>
+								<count>1</count>
+							</li>
+						</value>
+					</match>
 				</li>
 
 				<!-- ===== VFEE_Marquess ===== -->
@@ -6806,19 +6914,22 @@
 						<li>DankPyon_RoyalDresser</li>
 					</value>
 				</li>
-				<li Class="PatchOperationReplace">
+				<li Class="PatchOperationConditional">
 					<xpath>Defs/RoyalTitleDef[defName="VFEE_Marquess"]/bedroomRequirements/li[@Class="RoomRequirement_ThingCount"][thingDef="Drape"]</xpath>
-					<value>
-						<li Class="RoomRequirement_ThingAnyOfCount">
-							<things>
-								<li>Drape</li>
-								<li>DankPyon_RusticRoomDivider1x2c</li>
-								<li>DankPyon_RusticThickRoomDivider_Open1x2c</li>
-								<li>DankPyon_RusticThickRoomDivider_Closed1x2c</li>
-							</things>
-							<count>1</count>
-						</li>
-					</value>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/RoyalTitleDef[defName="VFEE_Marquess"]/bedroomRequirements/li[@Class="RoomRequirement_ThingCount"][thingDef="Drape"]</xpath>
+						<value>
+							<li Class="RoomRequirement_ThingAnyOfCount">
+								<things>
+									<li>Drape</li>
+									<li>DankPyon_RusticRoomDivider1x2c</li>
+									<li>DankPyon_RusticThickRoomDivider_Open1x2c</li>
+									<li>DankPyon_RusticThickRoomDivider_Closed1x2c</li>
+								</things>
+								<count>1</count>
+							</li>
+						</value>
+					</match>
 				</li>
 
 				<!-- ===== Duke  (VFEE-Fassung, erbt defName von DukeBase) ===== -->
@@ -6868,19 +6979,22 @@
 						<li>DankPyon_RoyalDresser</li>
 					</value>
 				</li>
-				<li Class="PatchOperationReplace">
+				<li Class="PatchOperationConditional">
 					<xpath>Defs/RoyalTitleDef[@ParentName="DukeBase" and not(defName)]/bedroomRequirements/li[@Class="RoomRequirement_ThingCount"][thingDef="Drape"]</xpath>
-					<value>
-						<li Class="RoomRequirement_ThingAnyOfCount">
-							<things>
-								<li>Drape</li>
-								<li>DankPyon_RusticRoomDivider1x2c</li>
-								<li>DankPyon_RusticThickRoomDivider_Open1x2c</li>
-								<li>DankPyon_RusticThickRoomDivider_Closed1x2c</li>
-							</things>
-							<count>1</count>
-						</li>
-					</value>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/RoyalTitleDef[@ParentName="DukeBase" and not(defName)]/bedroomRequirements/li[@Class="RoomRequirement_ThingCount"][thingDef="Drape"]</xpath>
+						<value>
+							<li Class="RoomRequirement_ThingAnyOfCount">
+								<things>
+									<li>Drape</li>
+									<li>DankPyon_RusticRoomDivider1x2c</li>
+									<li>DankPyon_RusticThickRoomDivider_Open1x2c</li>
+									<li>DankPyon_RusticThickRoomDivider_Closed1x2c</li>
+								</things>
+								<count>1</count>
+							</li>
+						</value>
+					</match>
 				</li>
 
 				<!-- ===== VFEE_Archduke ===== -->
@@ -6930,19 +7044,22 @@
 						<li>DankPyon_RoyalDresser</li>
 					</value>
 				</li>
-				<li Class="PatchOperationReplace">
+				<li Class="PatchOperationConditional">
 					<xpath>Defs/RoyalTitleDef[defName="VFEE_Archduke"]/bedroomRequirements/li[@Class="RoomRequirement_ThingCount"][thingDef="Drape"]</xpath>
-					<value>
-						<li Class="RoomRequirement_ThingAnyOfCount">
-							<things>
-								<li>Drape</li>
-								<li>DankPyon_RusticRoomDivider1x2c</li>
-								<li>DankPyon_RusticThickRoomDivider_Open1x2c</li>
-								<li>DankPyon_RusticThickRoomDivider_Closed1x2c</li>
-							</things>
-							<count>1</count>
-						</li>
-					</value>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/RoyalTitleDef[defName="VFEE_Archduke"]/bedroomRequirements/li[@Class="RoomRequirement_ThingCount"][thingDef="Drape"]</xpath>
+						<value>
+							<li Class="RoomRequirement_ThingAnyOfCount">
+								<things>
+									<li>Drape</li>
+									<li>DankPyon_RusticRoomDivider1x2c</li>
+									<li>DankPyon_RusticThickRoomDivider_Open1x2c</li>
+									<li>DankPyon_RusticThickRoomDivider_Closed1x2c</li>
+								</things>
+								<count>1</count>
+							</li>
+						</value>
+					</match>
 				</li>
 
 				<!-- ===== Consul  (VFEE-Fassung, erbt defName von ConsulBase) ===== -->
@@ -6992,19 +7109,22 @@
 						<li>DankPyon_RoyalDresser</li>
 					</value>
 				</li>
-				<li Class="PatchOperationReplace">
+				<li Class="PatchOperationConditional">
 					<xpath>Defs/RoyalTitleDef[@ParentName="ConsulBase" and not(defName)]/bedroomRequirements/li[@Class="RoomRequirement_ThingCount"][thingDef="Drape"]</xpath>
-					<value>
-						<li Class="RoomRequirement_ThingAnyOfCount">
-							<things>
-								<li>Drape</li>
-								<li>DankPyon_RusticRoomDivider1x2c</li>
-								<li>DankPyon_RusticThickRoomDivider_Open1x2c</li>
-								<li>DankPyon_RusticThickRoomDivider_Closed1x2c</li>
-							</things>
-							<count>1</count>
-						</li>
-					</value>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/RoyalTitleDef[@ParentName="ConsulBase" and not(defName)]/bedroomRequirements/li[@Class="RoomRequirement_ThingCount"][thingDef="Drape"]</xpath>
+						<value>
+							<li Class="RoomRequirement_ThingAnyOfCount">
+								<things>
+									<li>Drape</li>
+									<li>DankPyon_RusticRoomDivider1x2c</li>
+									<li>DankPyon_RusticThickRoomDivider_Open1x2c</li>
+									<li>DankPyon_RusticThickRoomDivider_Closed1x2c</li>
+								</things>
+								<count>1</count>
+							</li>
+						</value>
+					</match>
 				</li>
 
 				<!-- ===== VFEE_Magister ===== -->
@@ -7054,19 +7174,22 @@
 						<li>DankPyon_RoyalDresser</li>
 					</value>
 				</li>
-				<li Class="PatchOperationReplace">
+				<li Class="PatchOperationConditional">
 					<xpath>Defs/RoyalTitleDef[defName="VFEE_Magister"]/bedroomRequirements/li[@Class="RoomRequirement_ThingCount"][thingDef="Drape"]</xpath>
-					<value>
-						<li Class="RoomRequirement_ThingAnyOfCount">
-							<things>
-								<li>Drape</li>
-								<li>DankPyon_RusticRoomDivider1x2c</li>
-								<li>DankPyon_RusticThickRoomDivider_Open1x2c</li>
-								<li>DankPyon_RusticThickRoomDivider_Closed1x2c</li>
-							</things>
-							<count>1</count>
-						</li>
-					</value>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/RoyalTitleDef[defName="VFEE_Magister"]/bedroomRequirements/li[@Class="RoomRequirement_ThingCount"][thingDef="Drape"]</xpath>
+						<value>
+							<li Class="RoomRequirement_ThingAnyOfCount">
+								<things>
+									<li>Drape</li>
+									<li>DankPyon_RusticRoomDivider1x2c</li>
+									<li>DankPyon_RusticThickRoomDivider_Open1x2c</li>
+									<li>DankPyon_RusticThickRoomDivider_Closed1x2c</li>
+								</things>
+								<count>1</count>
+							</li>
+						</value>
+					</match>
 				</li>
 
 				<!-- ===== VFEE_Despot ===== -->
@@ -7116,19 +7239,22 @@
 						<li>DankPyon_RoyalDresser</li>
 					</value>
 				</li>
-				<li Class="PatchOperationReplace">
+				<li Class="PatchOperationConditional">
 					<xpath>Defs/RoyalTitleDef[defName="VFEE_Despot"]/bedroomRequirements/li[@Class="RoomRequirement_ThingCount"][thingDef="Drape"]</xpath>
-					<value>
-						<li Class="RoomRequirement_ThingAnyOfCount">
-							<things>
-								<li>Drape</li>
-								<li>DankPyon_RusticRoomDivider1x2c</li>
-								<li>DankPyon_RusticThickRoomDivider_Open1x2c</li>
-								<li>DankPyon_RusticThickRoomDivider_Closed1x2c</li>
-							</things>
-							<count>1</count>
-						</li>
-					</value>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/RoyalTitleDef[defName="VFEE_Despot"]/bedroomRequirements/li[@Class="RoomRequirement_ThingCount"][thingDef="Drape"]</xpath>
+						<value>
+							<li Class="RoomRequirement_ThingAnyOfCount">
+								<things>
+									<li>Drape</li>
+									<li>DankPyon_RusticRoomDivider1x2c</li>
+									<li>DankPyon_RusticThickRoomDivider_Open1x2c</li>
+									<li>DankPyon_RusticThickRoomDivider_Closed1x2c</li>
+								</things>
+								<count>1</count>
+							</li>
+						</value>
+					</match>
 				</li>
 
 				<!-- ===== Stellarch  (VFEE-Fassung, erbt defName von StellarchBase) ===== -->
@@ -7178,19 +7304,22 @@
 						<li>DankPyon_RoyalDresser</li>
 					</value>
 				</li>
-				<li Class="PatchOperationReplace">
+				<li Class="PatchOperationConditional">
 					<xpath>Defs/RoyalTitleDef[@ParentName="StellarchBase" and not(defName)]/bedroomRequirements/li[@Class="RoomRequirement_ThingCount"][thingDef="Drape"]</xpath>
-					<value>
-						<li Class="RoomRequirement_ThingAnyOfCount">
-							<things>
-								<li>Drape</li>
-								<li>DankPyon_RusticRoomDivider1x2c</li>
-								<li>DankPyon_RusticThickRoomDivider_Open1x2c</li>
-								<li>DankPyon_RusticThickRoomDivider_Closed1x2c</li>
-							</things>
-							<count>1</count>
-						</li>
-					</value>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/RoyalTitleDef[@ParentName="StellarchBase" and not(defName)]/bedroomRequirements/li[@Class="RoomRequirement_ThingCount"][thingDef="Drape"]</xpath>
+						<value>
+							<li Class="RoomRequirement_ThingAnyOfCount">
+								<things>
+									<li>Drape</li>
+									<li>DankPyon_RusticRoomDivider1x2c</li>
+									<li>DankPyon_RusticThickRoomDivider_Open1x2c</li>
+									<li>DankPyon_RusticThickRoomDivider_Closed1x2c</li>
+								</things>
+								<count>1</count>
+							</li>
+						</value>
+					</match>
 				</li>
 
 				<!-- ===== VFEE_HighStellarch ===== -->
@@ -7240,19 +7369,22 @@
 						<li>DankPyon_RoyalDresser</li>
 					</value>
 				</li>
-				<li Class="PatchOperationReplace">
+				<li Class="PatchOperationConditional">
 					<xpath>Defs/RoyalTitleDef[defName="VFEE_HighStellarch"]/bedroomRequirements/li[@Class="RoomRequirement_ThingCount"][thingDef="Drape"]</xpath>
-					<value>
-						<li Class="RoomRequirement_ThingAnyOfCount">
-							<things>
-								<li>Drape</li>
-								<li>DankPyon_RusticRoomDivider1x2c</li>
-								<li>DankPyon_RusticThickRoomDivider_Open1x2c</li>
-								<li>DankPyon_RusticThickRoomDivider_Closed1x2c</li>
-							</things>
-							<count>1</count>
-						</li>
-					</value>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/RoyalTitleDef[defName="VFEE_HighStellarch"]/bedroomRequirements/li[@Class="RoomRequirement_ThingCount"][thingDef="Drape"]</xpath>
+						<value>
+							<li Class="RoomRequirement_ThingAnyOfCount">
+								<things>
+									<li>Drape</li>
+									<li>DankPyon_RusticRoomDivider1x2c</li>
+									<li>DankPyon_RusticThickRoomDivider_Open1x2c</li>
+									<li>DankPyon_RusticThickRoomDivider_Closed1x2c</li>
+								</things>
+								<count>1</count>
+							</li>
+						</value>
+					</match>
 				</li>
 
 				<!-- ===== BaseEmpireTitleNPC  (abstrakte Basis) ===== -->
@@ -7264,19 +7396,22 @@
 						<li>EEG_GrandColumn</li>
 					</value>
 				</li>
-				<li Class="PatchOperationReplace">
+				<li Class="PatchOperationConditional">
 					<xpath>Defs/RoyalTitleDef[@Name="BaseEmpireTitleNPC"]/bedroomRequirements/li[@Class="RoomRequirement_ThingCount"][thingDef="Drape"]</xpath>
-					<value>
-						<li Class="RoomRequirement_ThingAnyOfCount">
-							<things>
-								<li>Drape</li>
-								<li>DankPyon_RusticRoomDivider1x2c</li>
-								<li>DankPyon_RusticThickRoomDivider_Open1x2c</li>
-								<li>DankPyon_RusticThickRoomDivider_Closed1x2c</li>
-							</things>
-							<count>1</count>
-						</li>
-					</value>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/RoyalTitleDef[@Name="BaseEmpireTitleNPC"]/bedroomRequirements/li[@Class="RoomRequirement_ThingCount"][thingDef="Drape"]</xpath>
+						<value>
+							<li Class="RoomRequirement_ThingAnyOfCount">
+								<things>
+									<li>Drape</li>
+									<li>DankPyon_RusticRoomDivider1x2c</li>
+									<li>DankPyon_RusticThickRoomDivider_Open1x2c</li>
+									<li>DankPyon_RusticThickRoomDivider_Closed1x2c</li>
+								</things>
+								<count>1</count>
+							</li>
+						</value>
+					</match>
 				</li>
 
 				<!-- VFEE_Archduke: MO-Teppiche zu VFEEs Teppich-Anforderung -->

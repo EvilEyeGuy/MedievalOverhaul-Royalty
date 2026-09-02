@@ -34,6 +34,9 @@
 	  <li>Ranged</li>
 	  <li>RangedHeavy</li>
 	</weaponClasses>
+	<!-- Sellable statt All: kein Haendler fuehrt sie, Beutestuecke bleiben verkaeuflich.
+	     Gekaufte Exemplare waeren nicht biocodiert und damit benutzbar. -->
+	<tradeability>Sellable</tradeability>
 	<!-- IsNull statt leerer recipeUsers: BaseWeaponNeolithic bringt selbst einen
 	     recipeMaker mit, ein Weglassen wuerde den erben. So entsteht gar kein
 	     Rezept, das andere Mods einer Werkbank zuordnen koennten. -->
