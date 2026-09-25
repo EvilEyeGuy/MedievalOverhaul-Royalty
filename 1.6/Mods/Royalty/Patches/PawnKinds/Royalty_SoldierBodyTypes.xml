@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+
+	<Operation Class="MedievalOverhaulRoyalty.PatchOperation_ResilientSequence">
+		<label>Empire-Soldaten: keine duennen oder dicken Statur</label>
+		<operations>
+
+			<li Class="PatchOperationConditional">
+				<xpath>Defs/PawnKindDef[
+					defName="Accurex_Medieval_Empire_Crusader" or
+					defName="Accurex_Medieval_Empire_Grenadier" or
+					defName="Accurex_Medieval_Empire_Heavy_Infantry" or
+					defName="Accurex_Medieval_Empire_Light_Infantry" or
+					defName="Accurex_Medieval_Empire_Lord" or
+					defName="Accurex_Medieval_Empire_Mercenary" or
+					defName="Empire_Fighter_Trooper" or
+					defName="Empire_Fighter_Janissary" or
+					defName="Empire_Fighter_Cataphract" or
+					defName="Empire_Fighter_Champion" or
+					defName="Empire_Fighter_Grenadier" or
+					defName="Empire_Fighter_StellicGuardMelee" or
+					defName="Empire_Fighter_StellicGuardRanged"]</xpath>
+				<match Class="PatchOperationAddModExtension">
+					<xpath>Defs/PawnKindDef[
+						defName="Accurex_Medieval_Empire_Crusader" or
+						defName="Accurex_Medieval_Empire_Grenadier" or
+						defName="Accurex_Medieval_Empire_Heavy_Infantry" or
+						defName="Accurex_Medieval_Empire_Light_Infantry" or
+						defName="Accurex_Medieval_Empire_Lord" or
+						defName="Accurex_Medieval_Empire_Mercenary" or
+						defName="Empire_Fighter_Trooper" or
+						defName="Empire_Fighter_Janissary" or
+						defName="Empire_Fighter_Cataphract" or
+						defName="Empire_Fighter_Champion" or
+						defName="Empire_Fighter_Grenadier" or
+						defName="Empire_Fighter_StellicGuardMelee" or
+						defName="Empire_Fighter_StellicGuardRanged"]</xpath>
+					<value>
+						<li Class="MedievalOverhaulRoyalty.BodyTypeRestriction">
+							<disallowed>
+								<li>Thin</li>
+								<li>Fat</li>
+							</disallowed>
+						</li>
+					</value>
+				</match>
+			</li>
+
+		</operations>
+	</Operation>
+
+</Patch>

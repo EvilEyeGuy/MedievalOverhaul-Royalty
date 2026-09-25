@@ -495,11 +495,11 @@
 	<apparelColor>(105,105,105,255)</apparelColor>
 		
 	<apparelRequired>
-		<li>DankPyon_Headgear_ArmetGilded</li>		<!-- bodyPartGroups: FullHead			| layers: Overhead -->
+		<li>EEG_Headgear_RoyalGreatHelm</li>		<!-- bodyPartGroups: FullHead			| layers: Overhead -->
 		<li>DankPyon_Apparel_Padded_Surcoat</li>			<!-- bodyPartGroups: Neck, Shoulder, Torso	| layers: OnSkin -->
 		<li>DankPyon_Apparel_Hauberk</li>			<!-- bodyPartGroups: Neck, Shoulder, Torso	| layers: Middle -->
 		<li>DankPyon_Apparel_Trousers</li>			<!-- bodyPartGroups: Legs; 					| layers: OnSkin -->
-		<li>DankPyon_Apparel_FullPlate</li>			<!-- bodyPartGroups: Neck, Shoulder, Torso, Arms, Legs	| layers: Shell -->
+		<li>EEG_Apparel_CoatOfPlates</li>			<!-- bodyPartGroups: Neck, Shoulder, Torso, Arms, Legs	| layers: Shell -->
 		<li>DankPyon_Handwear_GlovesPlate</li>		<!-- bodyPartGroups: Hands; 				| layers: Middle -->
 		<li>DankPyon_Footwear_BootsPlate</li>		<!-- bodyPartGroups: Feet; 					| layers: Middle -->
 	</apparelRequired>
@@ -509,7 +509,7 @@
 		<li>
 			<bodyPartGroup>FullHead</bodyPartGroup>
 			<apparelLayer>Overhead</apparelLayer>
-			<requiredTag>DankPyon_Headgear_ArmetGilded</requiredTag>
+			<apparelDef>EEG_Headgear_RoyalGreatHelm</apparelDef>
 			<stuff>Plasteel</stuff>
 		</li>
 		<!-- Torso -->
@@ -528,7 +528,7 @@
 		<li>
 			<bodyPartGroup>Torso</bodyPartGroup>
 			<apparelLayer>Shell</apparelLayer>
-			<requiredTag>DankPyon_Apparel_FullPlate</requiredTag>
+			<apparelDef>EEG_Apparel_CoatOfPlates</apparelDef>
 			<stuff>Plasteel</stuff>
 		</li>
 		<!-- Legs -->
@@ -574,11 +574,11 @@
 	<apparelColor>(105,105,105,255)</apparelColor>
 		
 	<apparelRequired>
-		<li>DankPyon_Headgear_ArmetGilded</li>		<!-- bodyPartGroups: FullHead			| layers: Overhead -->
+		<li>EEG_Headgear_RoyalGreatHelm</li>		<!-- bodyPartGroups: FullHead			| layers: Overhead -->
 		<li>DankPyon_Apparel_Padded_Surcoat</li>			<!-- bodyPartGroups: Neck, Shoulder, Torso	| layers: OnSkin -->
 		<li>DankPyon_Apparel_Hauberk</li>			<!-- bodyPartGroups: Neck, Shoulder, Torso	| layers: Middle -->
 		<li>DankPyon_Apparel_Trousers</li>			<!-- bodyPartGroups: Legs; 					| layers: OnSkin -->
-		<li>DankPyon_Apparel_FullPlate</li>			<!-- bodyPartGroups: Neck, Shoulder, Torso, Arms, Legs	| layers: Shell -->
+		<li>EEG_Apparel_CoatOfPlates</li>			<!-- bodyPartGroups: Neck, Shoulder, Torso, Arms, Legs	| layers: Shell -->
 		<li>DankPyon_Handwear_GlovesPlate</li>		<!-- bodyPartGroups: Hands; 				| layers: Middle -->
 		<li>DankPyon_Footwear_BootsPlate</li>		<!-- bodyPartGroups: Feet; 					| layers: Middle -->
 	</apparelRequired>
@@ -588,7 +588,7 @@
 		<li>
 			<bodyPartGroup>FullHead</bodyPartGroup>
 			<apparelLayer>Overhead</apparelLayer>
-			<requiredTag>DankPyon_Headgear_ArmetGilded</requiredTag>
+			<apparelDef>EEG_Headgear_RoyalGreatHelm</apparelDef>
 			<stuff>Plasteel</stuff>
 		</li>
 		<!-- Torso -->
@@ -607,7 +607,7 @@
 		<li>
 			<bodyPartGroup>Torso</bodyPartGroup>
 			<apparelLayer>Shell</apparelLayer>
-			<requiredTag>DankPyon_Apparel_FullPlate</requiredTag>
+			<apparelDef>EEG_Apparel_CoatOfPlates</apparelDef>
 			<stuff>Plasteel</stuff>
 		</li>
 		<!-- Legs -->

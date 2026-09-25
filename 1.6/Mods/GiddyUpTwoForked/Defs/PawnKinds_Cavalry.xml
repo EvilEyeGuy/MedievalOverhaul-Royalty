@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<PawnKindDef ParentName="Accurex_Medieval_Empire_Crusader">
+		<defName>Accurex_Medieval_Empire_Crusader_Mounted</defName>
+		<label>Crusader knight</label>
+		<combatPower>150</combatPower>
+
+		<weaponTags Inherit="False">
+			<li>DankPyon_Longsword</li>
+			<li>DankPyon_BoarSpear</li>
+			<li>DankPyon_WingedMace</li>
+		</weaponTags>
+
+		<skills Inherit="False">
+			<li>
+				<skill>Melee</skill>
+				<range>18~20</range>
+			</li>
+			<li>
+				<skill>Animals</skill>
+				<range>10~14</range>
+			</li>
+		</skills>
+
+		<modExtensions Inherit="False">
+			<li Class="GiddyUp.CustomMounts">
+				<mountChance>100</mountChance>
+				<possibleMounts>
+					<li>
+						<key>Horse</key>
+						<value>100</value>
+					</li>
+				</possibleMounts>
+			</li>
+			<li Class="MedievalOverhaulRoyalty.BodyTypeRestriction">
+				<disallowed>
+					<li>Thin</li>
+					<li>Fat</li>
+				</disallowed>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
+
+</Defs>

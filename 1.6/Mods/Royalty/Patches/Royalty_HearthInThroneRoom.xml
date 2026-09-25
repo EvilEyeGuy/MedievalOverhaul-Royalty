@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="DankPyon_RusticHearth"]/building</xpath>
+		<match Class="PatchOperationConditional">
+			<xpath>Defs/ThingDef[defName="DankPyon_RusticHearth"]/building/buildingTags</xpath>
+			<match Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="DankPyon_RusticHearth"]/building/buildingTags</xpath>
+				<value>
+					<buildingTags Inherit="False" />
+				</value>
+			</match>
+			<nomatch Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="DankPyon_RusticHearth"]/building</xpath>
+				<value>
+					<buildingTags Inherit="False" />
+				</value>
+			</nomatch>
+		</match>
+	</Operation>
+
+</Patch>

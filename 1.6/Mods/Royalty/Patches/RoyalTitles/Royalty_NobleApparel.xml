@@ -1,0 +1,827 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<!-- Adelstaugliche Kleidung. Gilt unabhaengig von den Mod-Einstellungen,
+	     deshalb eigene Datei ohne PatchOperation_ToggleSettings.
+	     Jede Zuweisung ist einzeln bedingt: Combat Extended entfernt einen Teil
+	     dieser Defs, und ein fehlender Def soll keine Meldung erzeugen. -->
+
+	<Operation Class="MedievalOverhaulRoyalty.PatchOperation_ResilientSequence">
+		<label>Adelskleidung: Tags</label>
+		<operations>
+			<li Class="PatchOperationConditional">
+				<xpath>Defs/ThingDef[defName="DankPyon_Apparel_FullPlate"]/apparel/tags</xpath>
+				<match Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="DankPyon_Apparel_FullPlate"]/apparel/tags</xpath>
+					<value>
+						<li>EEG_NobleGear</li>
+					</value>
+				</match>
+			</li>
+			<li Class="PatchOperationConditional">
+				<xpath>Defs/ThingDef[defName="DankPyon_Apparel_FullPlateGilded"]/apparel/tags</xpath>
+				<match Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="DankPyon_Apparel_FullPlateGilded"]/apparel/tags</xpath>
+					<value>
+						<li>EEG_NobleGear</li>
+					</value>
+				</match>
+			</li>
+			<li Class="PatchOperationConditional">
+				<xpath>Defs/ThingDef[defName="DankPyon_Apparel_ChaussesPlate"]/apparel/tags</xpath>
+				<match Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="DankPyon_Apparel_ChaussesPlate"]/apparel/tags</xpath>
+					<value>
+						<li>EEG_NobleGear</li>
+					</value>
+				</match>
+			</li>
+			<li Class="PatchOperationConditional">
+				<xpath>Defs/ThingDef[defName="DankPyon_Footwear_BootsPlate"]/apparel/tags</xpath>
+				<match Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="DankPyon_Footwear_BootsPlate"]/apparel/tags</xpath>
+					<value>
+						<li>EEG_NobleGear</li>
+					</value>
+				</match>
+			</li>
+			<li Class="PatchOperationConditional">
+				<xpath>Defs/ThingDef[defName="DankPyon_Handwear_GlovesPlate"]/apparel/tags</xpath>
+				<match Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="DankPyon_Handwear_GlovesPlate"]/apparel/tags</xpath>
+					<value>
+						<li>EEG_NobleGear</li>
+					</value>
+				</match>
+			</li>
+			<li Class="PatchOperationConditional">
+				<xpath>Defs/ThingDef[defName="DankPyon_Apparel_AdornedWarriorArmor"]/apparel/tags</xpath>
+				<match Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="DankPyon_Apparel_AdornedWarriorArmor"]/apparel/tags</xpath>
+					<value>
+						<li>EEG_NobleGear</li>
+					</value>
+				</match>
+			</li>
+			<li Class="PatchOperationConditional">
+				<xpath>Defs/ThingDef[defName="DankPyon_Apparel_AdornedMailShirt"]/apparel/tags</xpath>
+				<match Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="DankPyon_Apparel_AdornedMailShirt"]/apparel/tags</xpath>
+					<value>
+						<li>EEG_NobleGear</li>
+					</value>
+				</match>
+			</li>
+			<li Class="PatchOperationConditional">
+				<xpath>Defs/ThingDef[defName="DankPyon_Apparel_AdornedHeavyPlate"]/apparel/tags</xpath>
+				<match Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="DankPyon_Apparel_AdornedHeavyPlate"]/apparel/tags</xpath>
+					<value>
+						<li>EEG_NobleGear</li>
+					</value>
+				</match>
+			</li>
+			<li Class="PatchOperationConditional">
+				<xpath>Defs/ThingDef[defName="DankPyon_Apparel_FullPlateNamed"]/apparel/tags</xpath>
+				<match Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="DankPyon_Apparel_FullPlateNamed"]/apparel/tags</xpath>
+					<value>
+						<li>EEG_NobleGear</li>
+					</value>
+				</match>
+			</li>
+			<li Class="PatchOperationConditional">
+				<xpath>Defs/ThingDef[defName="DankPyon_Apparel_Zweihanders_Cuirass"]/apparel/tags</xpath>
+				<match Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="DankPyon_Apparel_Zweihanders_Cuirass"]/apparel/tags</xpath>
+					<value>
+						<li>EEG_NobleGear</li>
+					</value>
+				</match>
+			</li>
+			<li Class="PatchOperationConditional">
+				<xpath>Defs/ThingDef[defName="DankPyon_Apparel_Zweihanders_CuirassFloof"]/apparel/tags</xpath>
+				<match Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="DankPyon_Apparel_Zweihanders_CuirassFloof"]/apparel/tags</xpath>
+					<value>
+						<li>EEG_NobleGear</li>
+					</value>
+				</match>
+			</li>
+			<li Class="PatchOperationConditional">
+				<xpath>Defs/ThingDef[defName="EEG_Apparel_CoatOfPlates"]/apparel/tags</xpath>
+				<match Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="EEG_Apparel_CoatOfPlates"]/apparel/tags</xpath>
+					<value>
+						<li>EEG_NobleGear</li>
+					</value>
+				</match>
+			</li>
+
+			<li Class="PatchOperationConditional">
+				<xpath>Defs/ThingDef[defName="DankPyon_Headgear_Armet"]/apparel/tags</xpath>
+				<match Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="DankPyon_Headgear_Armet"]/apparel/tags</xpath>
+					<value>
+						<li>EEG_NobleHelmet</li>
+					</value>
+				</match>
+			</li>
+			<li Class="PatchOperationConditional">
+				<xpath>Defs/ThingDef[defName="DankPyon_Headgear_ArmetGilded"]/apparel/tags</xpath>
+				<match Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="DankPyon_Headgear_ArmetGilded"]/apparel/tags</xpath>
+					<value>
+						<li>EEG_NobleHelmet</li>
+					</value>
+				</match>
+			</li>
+			<li Class="PatchOperationConditional">
+				<xpath>Defs/ThingDef[defName="DankPyon_Headgear_ArmetNamed"]/apparel/tags</xpath>
+				<match Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="DankPyon_Headgear_ArmetNamed"]/apparel/tags</xpath>
+					<value>
+						<li>EEG_NobleHelmet</li>
+					</value>
+				</match>
+			</li>
+			<li Class="PatchOperationConditional">
+				<xpath>Defs/ThingDef[defName="DankPyon_Adorned_FlatTop"]/apparel/tags</xpath>
+				<match Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="DankPyon_Adorned_FlatTop"]/apparel/tags</xpath>
+					<value>
+						<li>EEG_NobleHelmet</li>
+					</value>
+				</match>
+			</li>
+			<li Class="PatchOperationConditional">
+				<xpath>Defs/ThingDef[defName="DankPyon_Adorned_GreatHelm"]/apparel/tags</xpath>
+				<match Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="DankPyon_Adorned_GreatHelm"]/apparel/tags</xpath>
+					<value>
+						<li>EEG_NobleHelmet</li>
+					</value>
+				</match>
+			</li>
+			<li Class="PatchOperationConditional">
+				<xpath>Defs/ThingDef[defName="DankPyon_Adorned_HeavyMailCoif"]/apparel/tags</xpath>
+				<match Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="DankPyon_Adorned_HeavyMailCoif"]/apparel/tags</xpath>
+					<value>
+						<li>EEG_NobleHelmet</li>
+					</value>
+				</match>
+			</li>
+			<li Class="PatchOperationConditional">
+				<xpath>Defs/ThingDef[defName="DankPyon_Headgear_GreatHelm"]/apparel/tags</xpath>
+				<match Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="DankPyon_Headgear_GreatHelm"]/apparel/tags</xpath>
+					<value>
+						<li>EEG_NobleHelmet</li>
+					</value>
+				</match>
+			</li>
+			<li Class="PatchOperationConditional">
+				<xpath>Defs/ThingDef[defName="DankPyon_Headgear_HeraldicGreatHelm1c"]/apparel/tags</xpath>
+				<match Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="DankPyon_Headgear_HeraldicGreatHelm1c"]/apparel/tags</xpath>
+					<value>
+						<li>EEG_NobleHelmet</li>
+					</value>
+				</match>
+			</li>
+			<li Class="PatchOperationConditional">
+				<xpath>Defs/ThingDef[defName="DankPyon_Headgear_HeraldicGreatHelm2c"]/apparel/tags</xpath>
+				<match Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="DankPyon_Headgear_HeraldicGreatHelm2c"]/apparel/tags</xpath>
+					<value>
+						<li>EEG_NobleHelmet</li>
+					</value>
+				</match>
+			</li>
+			<li Class="PatchOperationConditional">
+				<xpath>Defs/ThingDef[defName="DankPyon_Headgear_HeraldicGreatHelm3c"]/apparel/tags</xpath>
+				<match Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="DankPyon_Headgear_HeraldicGreatHelm3c"]/apparel/tags</xpath>
+					<value>
+						<li>EEG_NobleHelmet</li>
+					</value>
+				</match>
+			</li>
+			<li Class="PatchOperationConditional">
+				<xpath>Defs/ThingDef[defName="DankPyon_Headgear_HeraldicGreatHelm4c"]/apparel/tags</xpath>
+				<match Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="DankPyon_Headgear_HeraldicGreatHelm4c"]/apparel/tags</xpath>
+					<value>
+						<li>EEG_NobleHelmet</li>
+					</value>
+				</match>
+			</li>
+			<li Class="PatchOperationConditional">
+				<xpath>Defs/ThingDef[defName="DankPyon_Headgear_WolfTimber"]/apparel/tags</xpath>
+				<match Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="DankPyon_Headgear_WolfTimber"]/apparel/tags</xpath>
+					<value>
+						<li>EEG_NobleHelmet</li>
+					</value>
+				</match>
+			</li>
+			<li Class="PatchOperationConditional">
+				<xpath>Defs/ThingDef[defName="DankPyon_Headgear_BearGrizzly"]/apparel/tags</xpath>
+				<match Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="DankPyon_Headgear_BearGrizzly"]/apparel/tags</xpath>
+					<value>
+						<li>EEG_NobleHelmet</li>
+					</value>
+				</match>
+			</li>
+			<li Class="PatchOperationConditional">
+				<xpath>Defs/ThingDef[defName="DankPyon_Headgear_ZweihanderHelm"]/apparel/tags</xpath>
+				<match Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="DankPyon_Headgear_ZweihanderHelm"]/apparel/tags</xpath>
+					<value>
+						<li>EEG_NobleHelmet</li>
+					</value>
+				</match>
+			</li>
+			<li Class="PatchOperationConditional">
+				<xpath>Defs/ThingDef[defName="DankPyon_Headgear_ZweihanderHelmAmboise"]/apparel/tags</xpath>
+				<match Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="DankPyon_Headgear_ZweihanderHelmAmboise"]/apparel/tags</xpath>
+					<value>
+						<li>EEG_NobleHelmet</li>
+					</value>
+				</match>
+			</li>
+			<li Class="PatchOperationConditional">
+				<xpath>Defs/ThingDef[defName="DankPyon_Headgear_ZweihanderHelmSoren"]/apparel/tags</xpath>
+				<match Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="DankPyon_Headgear_ZweihanderHelmSoren"]/apparel/tags</xpath>
+					<value>
+						<li>EEG_NobleHelmet</li>
+					</value>
+				</match>
+			</li>
+			<li Class="PatchOperationConditional">
+				<xpath>Defs/ThingDef[defName="DankPyon_Headgear_ZweihanderHelmOswin"]/apparel/tags</xpath>
+				<match Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="DankPyon_Headgear_ZweihanderHelmOswin"]/apparel/tags</xpath>
+					<value>
+						<li>EEG_NobleHelmet</li>
+					</value>
+				</match>
+			</li>
+			<li Class="PatchOperationConditional">
+				<xpath>Defs/ThingDef[defName="DankPyon_Headgear_ZweihanderHelmHesse"]/apparel/tags</xpath>
+				<match Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="DankPyon_Headgear_ZweihanderHelmHesse"]/apparel/tags</xpath>
+					<value>
+						<li>EEG_NobleHelmet</li>
+					</value>
+				</match>
+			</li>
+			<li Class="PatchOperationConditional">
+				<xpath>Defs/ThingDef[defName="DankPyon_Headgear_ZweihandersHat"]/apparel/tags</xpath>
+				<match Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="DankPyon_Headgear_ZweihandersHat"]/apparel/tags</xpath>
+					<value>
+						<li>EEG_NobleHelmet</li>
+					</value>
+				</match>
+			</li>
+			<li Class="PatchOperationConditional">
+				<xpath>Defs/ThingDef[defName="EEG_Headgear_RoyalGreatHelm"]/apparel/tags</xpath>
+				<match Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="EEG_Headgear_RoyalGreatHelm"]/apparel/tags</xpath>
+					<value>
+						<li>EEG_NobleHelmet</li>
+					</value>
+				</match>
+			</li>
+		</operations>
+	</Operation>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Factions Expanded - Empire</li>
+		</mods>
+
+		<nomatch Class="MedievalOverhaulRoyalty.PatchOperation_ResilientSequence">
+			<label>Adelskleidung: Titel ohne VFEE</label>
+			<operations>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/RoyalTitleDef[defName="Acolyte"]/requiredApparel/li[bodyPartGroupsMatchAny/li="Torso"][requiredTags/li="RoyalTier2"]/allowedTags</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>Defs/RoyalTitleDef[defName="Acolyte"]/requiredApparel/li[bodyPartGroupsMatchAny/li="Torso"][requiredTags/li="RoyalTier2"]/allowedTags</xpath>
+						<value>
+							<li>EEG_NobleGear</li>
+						</value>
+					</match>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/RoyalTitleDef[defName="Acolyte"]/requiredApparel/li[bodyPartGroupsMatchAny/li="UpperHead"][requiredTags/li="RoyalTier2"]/allowedTags</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>Defs/RoyalTitleDef[defName="Acolyte"]/requiredApparel/li[bodyPartGroupsMatchAny/li="UpperHead"][requiredTags/li="RoyalTier2"]/allowedTags</xpath>
+						<value>
+							<li>EEG_NobleHelmet</li>
+						</value>
+					</match>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/RoyalTitleDef[defName="Knight"]/requiredApparel/li[bodyPartGroupsMatchAny/li="Torso"][requiredTags/li="RoyalTier2"]/allowedTags</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>Defs/RoyalTitleDef[defName="Knight"]/requiredApparel/li[bodyPartGroupsMatchAny/li="Torso"][requiredTags/li="RoyalTier2"]/allowedTags</xpath>
+						<value>
+							<li>EEG_NobleGear</li>
+						</value>
+					</match>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/RoyalTitleDef[defName="Knight"]/requiredApparel/li[bodyPartGroupsMatchAny/li="UpperHead"][requiredTags/li="RoyalTier2"]/allowedTags</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>Defs/RoyalTitleDef[defName="Knight"]/requiredApparel/li[bodyPartGroupsMatchAny/li="UpperHead"][requiredTags/li="RoyalTier2"]/allowedTags</xpath>
+						<value>
+							<li>EEG_NobleHelmet</li>
+						</value>
+					</match>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/RoyalTitleDef[defName="Praetor"]/requiredApparel/li[bodyPartGroupsMatchAny/li="Torso"][requiredTags/li="RoyalTier2"]/allowedTags</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>Defs/RoyalTitleDef[defName="Praetor"]/requiredApparel/li[bodyPartGroupsMatchAny/li="Torso"][requiredTags/li="RoyalTier2"]/allowedTags</xpath>
+						<value>
+							<li>EEG_NobleGear</li>
+						</value>
+					</match>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/RoyalTitleDef[defName="Praetor"]/requiredApparel/li[bodyPartGroupsMatchAny/li="UpperHead"][requiredTags/li="RoyalTier2"]/allowedTags</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>Defs/RoyalTitleDef[defName="Praetor"]/requiredApparel/li[bodyPartGroupsMatchAny/li="UpperHead"][requiredTags/li="RoyalTier2"]/allowedTags</xpath>
+						<value>
+							<li>EEG_NobleHelmet</li>
+						</value>
+					</match>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/RoyalTitleDef[defName="Baron"]/requiredApparel/li[bodyPartGroupsMatchAny/li="Torso"][requiredTags/li="RoyalTier2"]/allowedTags</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>Defs/RoyalTitleDef[defName="Baron"]/requiredApparel/li[bodyPartGroupsMatchAny/li="Torso"][requiredTags/li="RoyalTier2"]/allowedTags</xpath>
+						<value>
+							<li>EEG_NobleGear</li>
+						</value>
+					</match>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/RoyalTitleDef[defName="Baron"]/requiredApparel/li[bodyPartGroupsMatchAny/li="Torso"][requiredTags/li="RoyalTier5"]/allowedTags</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>Defs/RoyalTitleDef[defName="Baron"]/requiredApparel/li[bodyPartGroupsMatchAny/li="Torso"][requiredTags/li="RoyalTier5"]/allowedTags</xpath>
+						<value>
+							<li>EEG_NobleGear</li>
+						</value>
+					</match>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/RoyalTitleDef[defName="Baron"]/requiredApparel/li[bodyPartGroupsMatchAny/li="UpperHead"][requiredTags/li="RoyalTier5"]/allowedTags</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>Defs/RoyalTitleDef[defName="Baron"]/requiredApparel/li[bodyPartGroupsMatchAny/li="UpperHead"][requiredTags/li="RoyalTier5"]/allowedTags</xpath>
+						<value>
+							<li>EEG_NobleHelmet</li>
+						</value>
+					</match>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/RoyalTitleDef[defName="Count"]/requiredApparel/li[bodyPartGroupsMatchAny/li="Torso"][requiredTags/li="RoyalTier2"]/allowedTags</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>Defs/RoyalTitleDef[defName="Count"]/requiredApparel/li[bodyPartGroupsMatchAny/li="Torso"][requiredTags/li="RoyalTier2"]/allowedTags</xpath>
+						<value>
+							<li>EEG_NobleGear</li>
+						</value>
+					</match>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/RoyalTitleDef[defName="Count"]/requiredApparel/li[bodyPartGroupsMatchAny/li="Torso"][requiredTags/li="RoyalTier5"]/allowedTags</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>Defs/RoyalTitleDef[defName="Count"]/requiredApparel/li[bodyPartGroupsMatchAny/li="Torso"][requiredTags/li="RoyalTier5"]/allowedTags</xpath>
+						<value>
+							<li>EEG_NobleGear</li>
+						</value>
+					</match>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/RoyalTitleDef[defName="Count"]/requiredApparel/li[bodyPartGroupsMatchAny/li="Torso"][requiredTags/li="RoyalTier6"]/allowedTags</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>Defs/RoyalTitleDef[defName="Count"]/requiredApparel/li[bodyPartGroupsMatchAny/li="Torso"][requiredTags/li="RoyalTier6"]/allowedTags</xpath>
+						<value>
+							<li>EEG_NobleGear</li>
+						</value>
+					</match>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/RoyalTitleDef[defName="Count"]/requiredApparel/li[bodyPartGroupsMatchAny/li="UpperHead"][requiredTags/li="RoyalTier5"]/allowedTags</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>Defs/RoyalTitleDef[defName="Count"]/requiredApparel/li[bodyPartGroupsMatchAny/li="UpperHead"][requiredTags/li="RoyalTier5"]/allowedTags</xpath>
+						<value>
+							<li>EEG_NobleHelmet</li>
+						</value>
+					</match>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/RoyalTitleDef[defName="Duke"]/requiredApparel/li[bodyPartGroupsMatchAny/li="UpperHead"][requiredTags/li="RoyalTier6"]/allowedTags</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>Defs/RoyalTitleDef[defName="Duke"]/requiredApparel/li[bodyPartGroupsMatchAny/li="UpperHead"][requiredTags/li="RoyalTier6"]/allowedTags</xpath>
+						<value>
+							<li>EEG_NobleHelmet</li>
+						</value>
+					</match>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/RoyalTitleDef[defName="Consul"]/requiredApparel/li[bodyPartGroupsMatchAny/li="UpperHead"][requiredTags/li="RoyalTier6"]/allowedTags</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>Defs/RoyalTitleDef[defName="Consul"]/requiredApparel/li[bodyPartGroupsMatchAny/li="UpperHead"][requiredTags/li="RoyalTier6"]/allowedTags</xpath>
+						<value>
+							<li>EEG_NobleHelmet</li>
+						</value>
+					</match>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/RoyalTitleDef[defName="Stellarch"]/requiredApparel/li[bodyPartGroupsMatchAny/li="UpperHead"][requiredTags/li="RoyalTier7"]/allowedTags</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>Defs/RoyalTitleDef[defName="Stellarch"]/requiredApparel/li[bodyPartGroupsMatchAny/li="UpperHead"][requiredTags/li="RoyalTier7"]/allowedTags</xpath>
+						<value>
+							<li>EEG_NobleHelmet</li>
+						</value>
+					</match>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/RoyalTitleDef[defName="Emperor"]/requiredApparel/li[bodyPartGroupsMatchAny/li="UpperHead"][requiredTags/li="RoyalTier7"]/allowedTags</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>Defs/RoyalTitleDef[defName="Emperor"]/requiredApparel/li[bodyPartGroupsMatchAny/li="UpperHead"][requiredTags/li="RoyalTier7"]/allowedTags</xpath>
+						<value>
+							<li>EEG_NobleHelmet</li>
+						</value>
+					</match>
+				</li>
+			</operations>
+		</nomatch>
+
+		<match Class="MedievalOverhaulRoyalty.PatchOperation_ResilientSequence">
+			<label>Adelskleidung: Titel mit VFEE</label>
+			<operations>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/RoyalTitleDef[defName="Acolyte"]/requiredApparel/li[bodyPartGroupsMatchAny/li="Torso"][requiredTags/li="RoyalTier2"]/allowedTags</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>Defs/RoyalTitleDef[defName="Acolyte"]/requiredApparel/li[bodyPartGroupsMatchAny/li="Torso"][requiredTags/li="RoyalTier2"]/allowedTags</xpath>
+						<value>
+							<li>EEG_NobleGear</li>
+						</value>
+					</match>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/RoyalTitleDef[defName="Acolyte"]/requiredApparel/li[bodyPartGroupsMatchAny/li="UpperHead"][requiredTags/li="RoyalTier2"]/allowedTags</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>Defs/RoyalTitleDef[defName="Acolyte"]/requiredApparel/li[bodyPartGroupsMatchAny/li="UpperHead"][requiredTags/li="RoyalTier2"]/allowedTags</xpath>
+						<value>
+							<li>EEG_NobleHelmet</li>
+						</value>
+					</match>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/RoyalTitleDef[defName="Knight"]/requiredApparel/li[bodyPartGroupsMatchAny/li="Torso"][requiredTags/li="RoyalTier2"]/allowedTags</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>Defs/RoyalTitleDef[defName="Knight"]/requiredApparel/li[bodyPartGroupsMatchAny/li="Torso"][requiredTags/li="RoyalTier2"]/allowedTags</xpath>
+						<value>
+							<li>EEG_NobleGear</li>
+						</value>
+					</match>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/RoyalTitleDef[defName="Knight"]/requiredApparel/li[bodyPartGroupsMatchAny/li="UpperHead"][requiredTags/li="RoyalTier2"]/allowedTags</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>Defs/RoyalTitleDef[defName="Knight"]/requiredApparel/li[bodyPartGroupsMatchAny/li="UpperHead"][requiredTags/li="RoyalTier2"]/allowedTags</xpath>
+						<value>
+							<li>EEG_NobleHelmet</li>
+						</value>
+					</match>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/RoyalTitleDef[defName="Praetor"]/requiredApparel/li[bodyPartGroupsMatchAny/li="Torso"][requiredTags/li="RoyalTier2"]/allowedTags</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>Defs/RoyalTitleDef[defName="Praetor"]/requiredApparel/li[bodyPartGroupsMatchAny/li="Torso"][requiredTags/li="RoyalTier2"]/allowedTags</xpath>
+						<value>
+							<li>EEG_NobleGear</li>
+						</value>
+					</match>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/RoyalTitleDef[defName="Praetor"]/requiredApparel/li[bodyPartGroupsMatchAny/li="UpperHead"][requiredTags/li="RoyalTier2"]/allowedTags</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>Defs/RoyalTitleDef[defName="Praetor"]/requiredApparel/li[bodyPartGroupsMatchAny/li="UpperHead"][requiredTags/li="RoyalTier2"]/allowedTags</xpath>
+						<value>
+							<li>EEG_NobleHelmet</li>
+						</value>
+					</match>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/RoyalTitleDef[defName="Baron"]/requiredApparel/li[bodyPartGroupsMatchAny/li="Torso"][requiredTags/li="RoyalTier2"]/allowedTags</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>Defs/RoyalTitleDef[defName="Baron"]/requiredApparel/li[bodyPartGroupsMatchAny/li="Torso"][requiredTags/li="RoyalTier2"]/allowedTags</xpath>
+						<value>
+							<li>EEG_NobleGear</li>
+						</value>
+					</match>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/RoyalTitleDef[defName="Baron"]/requiredApparel/li[bodyPartGroupsMatchAny/li="Torso"][requiredTags/li="RoyalTier5"]/allowedTags</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>Defs/RoyalTitleDef[defName="Baron"]/requiredApparel/li[bodyPartGroupsMatchAny/li="Torso"][requiredTags/li="RoyalTier5"]/allowedTags</xpath>
+						<value>
+							<li>EEG_NobleGear</li>
+						</value>
+					</match>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/RoyalTitleDef[defName="Baron"]/requiredApparel/li[bodyPartGroupsMatchAny/li="UpperHead"][requiredTags/li="RoyalTier5"]/allowedTags</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>Defs/RoyalTitleDef[defName="Baron"]/requiredApparel/li[bodyPartGroupsMatchAny/li="UpperHead"][requiredTags/li="RoyalTier5"]/allowedTags</xpath>
+						<value>
+							<li>EEG_NobleHelmet</li>
+						</value>
+					</match>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/RoyalTitleDef[defName="Count"]/requiredApparel/li[bodyPartGroupsMatchAny/li="Torso"][requiredTags/li="RoyalTier2"]/allowedTags</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>Defs/RoyalTitleDef[defName="Count"]/requiredApparel/li[bodyPartGroupsMatchAny/li="Torso"][requiredTags/li="RoyalTier2"]/allowedTags</xpath>
+						<value>
+							<li>EEG_NobleGear</li>
+						</value>
+					</match>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/RoyalTitleDef[defName="Count"]/requiredApparel/li[bodyPartGroupsMatchAny/li="Torso"][requiredTags/li="RoyalTier5"]/allowedTags</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>Defs/RoyalTitleDef[defName="Count"]/requiredApparel/li[bodyPartGroupsMatchAny/li="Torso"][requiredTags/li="RoyalTier5"]/allowedTags</xpath>
+						<value>
+							<li>EEG_NobleGear</li>
+						</value>
+					</match>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/RoyalTitleDef[defName="Count"]/requiredApparel/li[bodyPartGroupsMatchAny/li="Torso"][requiredTags/li="RoyalTier6"]/allowedTags</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>Defs/RoyalTitleDef[defName="Count"]/requiredApparel/li[bodyPartGroupsMatchAny/li="Torso"][requiredTags/li="RoyalTier6"]/allowedTags</xpath>
+						<value>
+							<li>EEG_NobleGear</li>
+						</value>
+					</match>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/RoyalTitleDef[defName="Count"]/requiredApparel/li[bodyPartGroupsMatchAny/li="UpperHead"][requiredTags/li="RoyalTier5"]/allowedTags</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>Defs/RoyalTitleDef[defName="Count"]/requiredApparel/li[bodyPartGroupsMatchAny/li="UpperHead"][requiredTags/li="RoyalTier5"]/allowedTags</xpath>
+						<value>
+							<li>EEG_NobleHelmet</li>
+						</value>
+					</match>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/RoyalTitleDef[@ParentName="DukeBase" and not(defName)]/requiredApparel/li[bodyPartGroupsMatchAny/li="UpperHead"][requiredTags/li="RoyalTier6"]/allowedTags</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>Defs/RoyalTitleDef[@ParentName="DukeBase" and not(defName)]/requiredApparel/li[bodyPartGroupsMatchAny/li="UpperHead"][requiredTags/li="RoyalTier6"]/allowedTags</xpath>
+						<value>
+							<li>EEG_NobleHelmet</li>
+						</value>
+					</match>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/RoyalTitleDef[@ParentName="ConsulBase" and not(defName)]/requiredApparel/li[bodyPartGroupsMatchAny/li="UpperHead"][requiredTags/li="RoyalTier6"]/allowedTags</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>Defs/RoyalTitleDef[@ParentName="ConsulBase" and not(defName)]/requiredApparel/li[bodyPartGroupsMatchAny/li="UpperHead"][requiredTags/li="RoyalTier6"]/allowedTags</xpath>
+						<value>
+							<li>EEG_NobleHelmet</li>
+						</value>
+					</match>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/RoyalTitleDef[@ParentName="StellarchBase" and not(defName)]/requiredApparel/li[bodyPartGroupsMatchAny/li="UpperHead"][requiredTags/li="RoyalTier7"]/allowedTags</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>Defs/RoyalTitleDef[@ParentName="StellarchBase" and not(defName)]/requiredApparel/li[bodyPartGroupsMatchAny/li="UpperHead"][requiredTags/li="RoyalTier7"]/allowedTags</xpath>
+						<value>
+							<li>EEG_NobleHelmet</li>
+						</value>
+					</match>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/RoyalTitleDef[defName="Emperor"]/requiredApparel/li[bodyPartGroupsMatchAny/li="UpperHead"][requiredTags/li="RoyalTier7"]/allowedTags</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>Defs/RoyalTitleDef[defName="Emperor"]/requiredApparel/li[bodyPartGroupsMatchAny/li="UpperHead"][requiredTags/li="RoyalTier7"]/allowedTags</xpath>
+						<value>
+							<li>EEG_NobleHelmet</li>
+						</value>
+					</match>
+				</li>
+
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/RoyalTitleDef[defName="VFEE_Archcount"]/requiredApparel/li[bodyPartGroupsMatchAny/li="Torso"][requiredTags/li="RoyalTier2"]/allowedTags</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>Defs/RoyalTitleDef[defName="VFEE_Archcount"]/requiredApparel/li[bodyPartGroupsMatchAny/li="Torso"][requiredTags/li="RoyalTier2"]/allowedTags</xpath>
+						<value>
+							<li>EEG_NobleGear</li>
+						</value>
+					</match>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/RoyalTitleDef[defName="VFEE_Archcount"]/requiredApparel/li[bodyPartGroupsMatchAny/li="Torso"][requiredTags/li="RoyalTier5"]/allowedTags</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>Defs/RoyalTitleDef[defName="VFEE_Archcount"]/requiredApparel/li[bodyPartGroupsMatchAny/li="Torso"][requiredTags/li="RoyalTier5"]/allowedTags</xpath>
+						<value>
+							<li>EEG_NobleGear</li>
+						</value>
+					</match>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/RoyalTitleDef[defName="VFEE_Archcount"]/requiredApparel/li[bodyPartGroupsMatchAny/li="Torso"][requiredTags/li="RoyalTier6"]/allowedTags</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>Defs/RoyalTitleDef[defName="VFEE_Archcount"]/requiredApparel/li[bodyPartGroupsMatchAny/li="Torso"][requiredTags/li="RoyalTier6"]/allowedTags</xpath>
+						<value>
+							<li>EEG_NobleGear</li>
+						</value>
+					</match>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/RoyalTitleDef[defName="VFEE_Archcount"]/requiredApparel/li[bodyPartGroupsMatchAny/li="UpperHead"][requiredTags/li="RoyalTier5"]/allowedTags</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>Defs/RoyalTitleDef[defName="VFEE_Archcount"]/requiredApparel/li[bodyPartGroupsMatchAny/li="UpperHead"][requiredTags/li="RoyalTier5"]/allowedTags</xpath>
+						<value>
+							<li>EEG_NobleHelmet</li>
+						</value>
+					</match>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/RoyalTitleDef[defName="VFEE_Marquess"]/requiredApparel/li[bodyPartGroupsMatchAny/li="Torso"][requiredTags/li="RoyalTier2"]/allowedTags</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>Defs/RoyalTitleDef[defName="VFEE_Marquess"]/requiredApparel/li[bodyPartGroupsMatchAny/li="Torso"][requiredTags/li="RoyalTier2"]/allowedTags</xpath>
+						<value>
+							<li>EEG_NobleGear</li>
+						</value>
+					</match>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/RoyalTitleDef[defName="VFEE_Marquess"]/requiredApparel/li[bodyPartGroupsMatchAny/li="Torso"][requiredTags/li="RoyalTier5"]/allowedTags</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>Defs/RoyalTitleDef[defName="VFEE_Marquess"]/requiredApparel/li[bodyPartGroupsMatchAny/li="Torso"][requiredTags/li="RoyalTier5"]/allowedTags</xpath>
+						<value>
+							<li>EEG_NobleGear</li>
+						</value>
+					</match>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/RoyalTitleDef[defName="VFEE_Marquess"]/requiredApparel/li[bodyPartGroupsMatchAny/li="Torso"][requiredTags/li="RoyalTier6"]/allowedTags</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>Defs/RoyalTitleDef[defName="VFEE_Marquess"]/requiredApparel/li[bodyPartGroupsMatchAny/li="Torso"][requiredTags/li="RoyalTier6"]/allowedTags</xpath>
+						<value>
+							<li>EEG_NobleGear</li>
+						</value>
+					</match>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/RoyalTitleDef[defName="VFEE_Marquess"]/requiredApparel/li[bodyPartGroupsMatchAny/li="UpperHead"][requiredTags/li="RoyalTier5"]/allowedTags</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>Defs/RoyalTitleDef[defName="VFEE_Marquess"]/requiredApparel/li[bodyPartGroupsMatchAny/li="UpperHead"][requiredTags/li="RoyalTier5"]/allowedTags</xpath>
+						<value>
+							<li>EEG_NobleHelmet</li>
+						</value>
+					</match>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/RoyalTitleDef[defName="VFEE_Archduke"]/requiredApparel/li[bodyPartGroupsMatchAny/li="Torso"][requiredTags/li="RoyalTier2"]/allowedTags</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>Defs/RoyalTitleDef[defName="VFEE_Archduke"]/requiredApparel/li[bodyPartGroupsMatchAny/li="Torso"][requiredTags/li="RoyalTier2"]/allowedTags</xpath>
+						<value>
+							<li>EEG_NobleGear</li>
+						</value>
+					</match>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/RoyalTitleDef[defName="VFEE_Archduke"]/requiredApparel/li[bodyPartGroupsMatchAny/li="Torso"][requiredTags/li="RoyalTier5"]/allowedTags</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>Defs/RoyalTitleDef[defName="VFEE_Archduke"]/requiredApparel/li[bodyPartGroupsMatchAny/li="Torso"][requiredTags/li="RoyalTier5"]/allowedTags</xpath>
+						<value>
+							<li>EEG_NobleGear</li>
+						</value>
+					</match>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/RoyalTitleDef[defName="VFEE_Archduke"]/requiredApparel/li[bodyPartGroupsMatchAny/li="Torso"][requiredTags/li="RoyalTier6"]/allowedTags</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>Defs/RoyalTitleDef[defName="VFEE_Archduke"]/requiredApparel/li[bodyPartGroupsMatchAny/li="Torso"][requiredTags/li="RoyalTier6"]/allowedTags</xpath>
+						<value>
+							<li>EEG_NobleGear</li>
+						</value>
+					</match>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/RoyalTitleDef[defName="VFEE_Archduke"]/requiredApparel/li[bodyPartGroupsMatchAny/li="UpperHead"][requiredTags/li="RoyalTier5"]/allowedTags</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>Defs/RoyalTitleDef[defName="VFEE_Archduke"]/requiredApparel/li[bodyPartGroupsMatchAny/li="UpperHead"][requiredTags/li="RoyalTier5"]/allowedTags</xpath>
+						<value>
+							<li>EEG_NobleHelmet</li>
+						</value>
+					</match>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/RoyalTitleDef[defName="VFEE_Magister"]/requiredApparel/li[bodyPartGroupsMatchAny/li="Torso"][requiredTags/li="RoyalTier2"]/allowedTags</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>Defs/RoyalTitleDef[defName="VFEE_Magister"]/requiredApparel/li[bodyPartGroupsMatchAny/li="Torso"][requiredTags/li="RoyalTier2"]/allowedTags</xpath>
+						<value>
+							<li>EEG_NobleGear</li>
+						</value>
+					</match>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/RoyalTitleDef[defName="VFEE_Magister"]/requiredApparel/li[bodyPartGroupsMatchAny/li="Torso"][requiredTags/li="RoyalTier5"]/allowedTags</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>Defs/RoyalTitleDef[defName="VFEE_Magister"]/requiredApparel/li[bodyPartGroupsMatchAny/li="Torso"][requiredTags/li="RoyalTier5"]/allowedTags</xpath>
+						<value>
+							<li>EEG_NobleGear</li>
+						</value>
+					</match>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/RoyalTitleDef[defName="VFEE_Magister"]/requiredApparel/li[bodyPartGroupsMatchAny/li="Torso"][requiredTags/li="RoyalTier6"]/allowedTags</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>Defs/RoyalTitleDef[defName="VFEE_Magister"]/requiredApparel/li[bodyPartGroupsMatchAny/li="Torso"][requiredTags/li="RoyalTier6"]/allowedTags</xpath>
+						<value>
+							<li>EEG_NobleGear</li>
+						</value>
+					</match>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/RoyalTitleDef[defName="VFEE_Magister"]/requiredApparel/li[bodyPartGroupsMatchAny/li="UpperHead"][requiredTags/li="RoyalTier5"]/allowedTags</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>Defs/RoyalTitleDef[defName="VFEE_Magister"]/requiredApparel/li[bodyPartGroupsMatchAny/li="UpperHead"][requiredTags/li="RoyalTier5"]/allowedTags</xpath>
+						<value>
+							<li>EEG_NobleHelmet</li>
+						</value>
+					</match>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/RoyalTitleDef[defName="VFEE_Despot"]/requiredApparel/li[bodyPartGroupsMatchAny/li="Torso"][requiredTags/li="RoyalTier2"]/allowedTags</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>Defs/RoyalTitleDef[defName="VFEE_Despot"]/requiredApparel/li[bodyPartGroupsMatchAny/li="Torso"][requiredTags/li="RoyalTier2"]/allowedTags</xpath>
+						<value>
+							<li>EEG_NobleGear</li>
+						</value>
+					</match>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/RoyalTitleDef[defName="VFEE_Despot"]/requiredApparel/li[bodyPartGroupsMatchAny/li="Torso"][requiredTags/li="RoyalTier5"]/allowedTags</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>Defs/RoyalTitleDef[defName="VFEE_Despot"]/requiredApparel/li[bodyPartGroupsMatchAny/li="Torso"][requiredTags/li="RoyalTier5"]/allowedTags</xpath>
+						<value>
+							<li>EEG_NobleGear</li>
+						</value>
+					</match>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/RoyalTitleDef[defName="VFEE_Despot"]/requiredApparel/li[bodyPartGroupsMatchAny/li="Torso"][requiredTags/li="RoyalTier7"]/allowedTags</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>Defs/RoyalTitleDef[defName="VFEE_Despot"]/requiredApparel/li[bodyPartGroupsMatchAny/li="Torso"][requiredTags/li="RoyalTier7"]/allowedTags</xpath>
+						<value>
+							<li>EEG_NobleGear</li>
+						</value>
+					</match>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/RoyalTitleDef[defName="VFEE_Despot"]/requiredApparel/li[bodyPartGroupsMatchAny/li="UpperHead"][requiredTags/li="RoyalTier7"]/allowedTags</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>Defs/RoyalTitleDef[defName="VFEE_Despot"]/requiredApparel/li[bodyPartGroupsMatchAny/li="UpperHead"][requiredTags/li="RoyalTier7"]/allowedTags</xpath>
+						<value>
+							<li>EEG_NobleHelmet</li>
+						</value>
+					</match>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/RoyalTitleDef[defName="VFEE_HighStellarch"]/requiredApparel/li[bodyPartGroupsMatchAny/li="Torso"][requiredTags/li="RoyalTier7"]/allowedTags</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>Defs/RoyalTitleDef[defName="VFEE_HighStellarch"]/requiredApparel/li[bodyPartGroupsMatchAny/li="Torso"][requiredTags/li="RoyalTier7"]/allowedTags</xpath>
+						<value>
+							<li>EEG_NobleGear</li>
+						</value>
+					</match>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/RoyalTitleDef[defName="VFEE_HighStellarch"]/requiredApparel/li[bodyPartGroupsMatchAny/li="UpperHead"][requiredTags/li="RoyalTier7"]/allowedTags</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>Defs/RoyalTitleDef[defName="VFEE_HighStellarch"]/requiredApparel/li[bodyPartGroupsMatchAny/li="UpperHead"][requiredTags/li="RoyalTier7"]/allowedTags</xpath>
+						<value>
+							<li>EEG_NobleHelmet</li>
+						</value>
+					</match>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+
+</Patch>

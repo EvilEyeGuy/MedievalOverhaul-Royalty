@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- Beides liegt in Medieval Overhaul auskommentiert vor, die Texturen sind
+	     vollstaendig vorhanden. Hier als nicht herstellbare Ausruestung der
+	     Kreuzritter wieder aufgenommen. IsNull ist noetig, weil die Elterndefs
+	     selbst einen recipeMaker mitbringen, den wir sonst erben wuerden. -->
+
+	<ThingDef ParentName="ArmorSmithableBase">
+		<defName>EEG_Apparel_CoatOfPlates</defName>
+		<label>coat of plates</label>
+		<description>Two layers of armor give way to this fantastically protective, yet cumbersome, suit, consisting of strong-forged chains beset by overlapping layers of metal plates to protect vitals and extremities.</description>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/HeavyArmor/Coat_Of_Plates</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<techLevel>Medieval</techLevel>
+		<recipeMaker IsNull="True" />
+		<!-- Materialbasiert wie MOs Vollplatte. Noetig, weil die
+		     specificApparelRequirements der Kreuzritter ein Material vorschreiben:
+		     PawnApparelGenerator.ApparelRequirementCanUseStuff lehnt jedes Stueck
+		     ohne stuff ab, sobald fuer Koerperteil und Lage ein stuff verlangt ist. -->
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>150</costStuffCount>
+		<statBases>
+			<WorkToMake>38000</WorkToMake>
+			<MaxHitPoints>290</MaxHitPoints>
+			<Mass>15</Mass>
+			<StuffEffectMultiplierArmor>0.73</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>1.0</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>15</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.8</MoveSpeed>
+		</equippedStatOffsets>
+		<thingCategories>
+			<li>Apparel</li>
+		</thingCategories>
+		<apparel>
+			<bodyPartGroups>
+				<li>Neck</li>
+				<li>Torso</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Legs</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/HeavyArmor/Coat_Of_Plates</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+			<layers>
+				<li>Shell</li>
+			</layers>
+			<tags>
+				<li>EEG_NobleGear</li>
+				<li>MedievalMilitary</li>
+				<li>MedievalMilitaryAdvanced</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+		</apparel>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_ArmorHelmetMakeableBase">
+		<defName>EEG_Headgear_RoyalGreatHelm</defName>
+		<label>royal great helm</label>
+		<description>An ornamented construction of an archaic full-head helmet, which provides excellent protection of the entire head and face at the cost of hindered eyesight and constricted breathing.</description>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/Headgear/RoyalGreatHelm/RoyalGreatHelm</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<techLevel>Medieval</techLevel>
+		<recipeMaker IsNull="True" />
+		<statBases>
+			<WorkToMake>20000</WorkToMake>
+			<MaxHitPoints>250</MaxHitPoints>
+			<Mass>3.5</Mass>
+			<StuffEffectMultiplierArmor>1.02</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.15</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>10</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<ShootingAccuracyPawn>-3</ShootingAccuracyPawn>
+			<PainShockThreshold>0.10</PainShockThreshold>
+			<SocialImpact>0.15</SocialImpact>
+		</equippedStatOffsets>
+		<costStuffCount>80</costStuffCount>
+		<apparel>
+			<bodyPartGroups>
+				<li>FullHead</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/Headgear/RoyalGreatHelm/RoyalGreatHelm</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<tags>
+				<li>EEG_NobleHelmet</li>
+				<li>DankPyon_LordHelmet</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+		</apparel>
+	</ThingDef>
+
+</Defs>
